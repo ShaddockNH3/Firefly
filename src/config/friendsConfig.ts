@@ -23,6 +23,17 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
+		title: "Schariac125",
+		imgurl: 
+			"https://github.com/schariac125.png",
+		desc: "Schariac125's Blog",
+		siteurl: "https://schariac125.online/",
+		tags: ["Blog"],
+		weight: 10,
+		enabled: true,
+	}
+	/*
+	{
 		title: "夏夜流萤",
 		imgurl:
 			"https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
@@ -50,6 +61,7 @@ export const friendsConfig: FriendLink[] = [
 		weight: 8,
 		enabled: true,
 	},
+	*/
 ];
 
 // 获取启用的友链并进行排序
