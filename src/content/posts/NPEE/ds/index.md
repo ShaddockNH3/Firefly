@@ -25,7 +25,7 @@ seriesOrder: 3
 
 首先辨析几个概念：数据，数据项，数据元素，数据对象，数据类型，数据结构。
 
-数据仅仅是单纯的数据，数据元素是数据的基本单位，由数据项组成数据元素。
+数据是信息的载体，数据元素是数据的基本单位，数据元素由数据项组成。
 
 例如一个喵娘结构体：
 
@@ -81,25 +81,31 @@ CatGirl catGirls[100]; // 数据对象
 
 ### 算法的时间复杂度
 
-时间复杂度是指算法执行时间与问题规模之间的关系，需要辨析的是，一个算法的时间复杂度并不代表问题的规模，例如求邻接矩阵的出度和入度，时间复杂度为 O(n^2)，但问题规模为 O(n)。
+时间复杂度是指算法执行时间与问题规模之间的关系，需要辨析：
+算法的时间复杂度并不代表问题规模。例如求邻接矩阵的出度和入度，
+时间复杂度为 $O(n^2)$，但问题规模为 $O(n)$。
 
 空间复杂度是指算法执行空间与问题规模之间的关系。
 
 简单的算时间复杂度和空间复杂度就不写了，主要要注意如何计算难的，例如：
 
-```c 2022 真题
+```c title="2022 真题"
 int sum = 0;
-for (int i = 0; i < n; i *= 2){
+for (int i = 1; i < n; i *= 2){
     for(int j = 0; j < i; j++){
         sum++;
     }
 }
 ```
 
-执行时间为 $1+2+4+8+…+2^t$，其中 $t<=log_2n$。前者由等比数列求和公式可得 $2^{t+1}-1 \leq n$，将 $t<=log_2n$ 代入，显然是 $n$ 的规模。所以时间复杂度为 $O(n)$。
+执行时间为 $1+2+4+8+\cdots+2^t$，其中 $2^t<n$。由等比数列求和公式可得
+$\sum_{i=0}^{t}2^i=2^{t+1}-1<2n$，所以时间复杂度为 $O(n)$。
 
-```c 2025 真题
-int count = 0, i, j;
+> **校验：** 原代码从 $i=0$ 开始执行 $i*=2$，循环变量不会变化；已改为从
+> $i=1$ 开始，并按等比数列重新推导复杂度。
+
+```c title="2025 真题"
+int count = 0;
 for (int i = 1; i*i <=n; i++){
     for(int j = 1;j<=i;j++){
         count++;
@@ -107,7 +113,8 @@ for (int i = 1; i*i <=n; i++){
 }
 ```
 
-显然，执行时间为 $1+2+3+…+t$，其中 $t^2<=n$。前者由数列求和公式可得 $(1+t)t/2$，将 $t<=sqrt{n}$ 代入，显然是 $n$ 的规模。所以时间复杂度为 $O(n)$。
+显然，执行时间为 $1+2+3+\cdots+t$，其中 $t^2\le n$。由数列求和公式可得
+$\sum_{i=1}^{t}i=\frac{t(t+1)}{2}$。由于 $t=\lfloor\sqrt{n}\rfloor$，所以时间复杂度为 $O(n)$。
 
 ## 第 2 章 - 线性表
 
@@ -129,7 +136,7 @@ for (int i = 1; i*i <=n; i++){
 ### 线性表的顺序存储
 
 ```c
-# define MAXSIZE 100
+#define MAXSIZE 100
 
 /* 顺序表的结构体定义 */
 typedef struct ArrayList {
@@ -138,61 +145,65 @@ typedef struct ArrayList {
 } ArrayList;
 
 /* 初始化顺序表 */
-bool InitList(ArrayList L) {
-    L.length = 0;
+bool InitList(ArrayList *L) {
+    L->length = 0;
     return true;
 }
 
 /* 销毁顺序表 */
-bool DestroyList(ArrayList L) {
-    free(L);
+bool DestroyList(ArrayList *L) {
+    L->length = 0;
     return true;
 }
 
 /* 清空顺序表 */
-bool ClearList(ArrayList L) {
-    L.length = 0;
+bool ClearList(ArrayList *L) {
+    L->length = 0;
     return true;
 }
 
 /* 插入元素 */
-bool ListInsert(ArrayList L, int i, int e) {
-    if(i<1 || i>L.length+1) return false;
-    if(L.length >= MAXSIZE) return false;
-    for(int j = L.length; j>=i; j--) {
-        L.data[j] = L.data[j-1];
+bool ListInsert(ArrayList *L, int i, int e) {
+    if(i < 1 || i > L->length + 1) return false;
+    if(L->length >= MAXSIZE) return false;
+    for(int j = L->length; j >= i; j--) {
+        L->data[j] = L->data[j - 1];
     }
-    L.data[i-1] = e;
-    L.length++;
+    L->data[i - 1] = e;
+    L->length++;
     return true;
 }
 
 /* 删除元素 */
-bool ListDelete(ArrayList L, int i, int e) {
-    if(i<1 || i>L.length) return false;
-    e = L.data[i-1];
-    for(int j = i; j<L.length; j++) {
-        L.data[j-1] = L.data[j];
+bool ListDelete(ArrayList *L, int i, int *e) {
+    if(i < 1 || i > L->length) return false;
+    *e = L->data[i - 1];
+    for(int j = i; j < L->length; j++) {
+        L->data[j - 1] = L->data[j];
     }
-    L.length--;
+    L->length--;
     return true;
 }
 
 /* 获取元素 */
-bool GetElem(ArrayList L, int i, int e) {
-    if(i<1 || i>L.length) return false;
-    e = L.data[i-1];
+bool GetElem(const ArrayList *L, int i, int *e) {
+    if(i < 1 || i > L->length) return false;
+    *e = L->data[i - 1];
     return true;
 }
 
 /* 查找元素 */
-bool LocateElem(ArrayList L, int e) {
-    for(int i = 0; i<L.length; i++) {
-        if(L.data[i] == e) return i+1;
+int LocateElem(const ArrayList *L, int e) {
+    for(int i = 0; i < L->length; i++) {
+        if(L->data[i] == e) return i + 1;
     }
     return 0;
 }
 ```
+
+> **校验：** 原代码按值传递顺序表，导致插入、删除和清空无法修改原表；
+> `ListDelete` 与 `GetElem` 也按值传递输出参数，并且对静态数组调用了 `free`。
+> 已改为指针传递，使用 `int *e` 返回元素，并将销毁操作改为重置长度。
 
 上述思路都非常清晰了其实，可以略过了。
 
@@ -207,31 +218,41 @@ struct LNode {
     struct LNode *next;
 };
 
+using LinkList = LNode *;
+
 /* 初始化带头节点的单链表 */
-bool InitList(LinkList L) {
-    L LNode = new LNode;
-    L->data = 0;
-    L->next = NULL;
+bool InitList(LinkList &L) {
+    L = new LNode{0, nullptr};
     return true;
 }
 
 /* 销毁带头节点的单链表 */
-bool DestroyList(LinkList L) {
-    free(L);
+bool DestroyList(LinkList &L) {
+    while (L != nullptr) {
+        LNode *next = L->next;
+        delete L;
+        L = next;
+    }
     return true;
 }
 
 /* 清空带头节点的单链表 */
 bool ClearList(LinkList L) {
-    L->next = NULL;
+    if (L == nullptr) return false;
+    while (L->next != nullptr) {
+        LNode *node = L->next;
+        L->next = node->next;
+        delete node;
+    }
     return true;
 }
 
 /* 插入元素 */
 bool ListInsert(LinkList L, int i, int e) {
-    if(i<1) return false;
-    LNode *p = L->next;
-    for(int j = 0; j<i-1; j++) {
+    if (L == nullptr || i < 1) return false;
+    LNode *p = L;
+    for (int j = 1; j < i; j++) {
+        if (p->next == nullptr) return false;
         p = p->next;
     }
     LNode *s = new LNode;
@@ -243,38 +264,47 @@ bool ListInsert(LinkList L, int i, int e) {
 
 /* 删除元素 */
 bool ListDelete(LinkList L, int i, int *e) {
-    if(i<1) return false;
-    LNode *p = L->next;
-    for(int j = 0; j<i-1; j++) {
+    if (L == nullptr || e == nullptr || i < 1) return false;
+    LNode *p = L;
+    for (int j = 1; j < i; j++) {
+        if (p->next == nullptr) return false;
         p = p->next;
     }
     LNode *q = p->next;
+    if (q == nullptr) return false;
     *e = q->data;
     p->next = q->next;
-    free(q);
+    delete q;
     return true;
 }
 
 /* 获取元素 */
-bool GetElem(LinkList L, int i, int e) {
-    if(i<1) return false;
-    LNode *p = L->next;
-    for(int j = 0; j<i-1; j++) {
+bool GetElem(LinkList L, int i, int *e) {
+    if (L == nullptr || e == nullptr || i < 1) return false;
+    LNode *p = L;
+    for (int j = 1; j <= i; j++) {
+        if (p->next == nullptr) return false;
         p = p->next;
     }
-    e = p->data;
+    *e = p->data;
     return true;
 }
 
 /* 查找元素 */
-bool LocateElem(LinkList L, int e) {
+int LocateElem(LinkList L, int e) {
+    if (L == nullptr) return 0;
     LNode *p = L->next;
-    for(int i = 0; i<L->length; i++) {
-        if(p->data == e) return i+1;
+    for (int i = 1; p != nullptr; i++) {
+        if (p->data == e) return i;
+        p = p->next;
     }
     return 0;
 }
 ```
+
+> **校验：** 原代码初始化时修改了局部指针，插入位置从首元结点开始，
+> 删除和查找还缺少边界处理，`LocateElem` 也没有移动指针；已改为引用传递，
+> 从头结点定位前驱，并补充空指针、越界和释放结点处理。
 
 可以在操作系统中充当队列使用。
 
@@ -287,42 +317,43 @@ struct LNode {
     struct LNode *next;
 };
 
+using LinkList = LNode *;
+
 /* 头插法创建带头结点的循环单链表，可用于逆序 */
-bool CreateList_H(LinkList L, int n) {
-    L = new LNode;
-    L->next = NULL;
-    for(int i = 0; i<n; i++) {
+bool CreateList_H(LinkList &L, int n) {
+    L = new LNode{0, nullptr};
+    L->next = L;
+    for (int i = 0; i < n; i++) {
         LNode *s = new LNode;
         s->data = i;
         s->next = L->next;
         L->next = s;
     }
-    L->next = L;
     return true;
 }
 
-/* 尾插法创建带头结点的循环单链表，可用于顺序 */
-bool CreateList_R(LinkList L, int n) {
-    L = new LNode;
-    L->next = NULL;
+/* 尾插法创建带头结点的循环单链表，可用于正序 */
+bool CreateList_R(LinkList &L, int n) {
+    L = new LNode{0, nullptr};
+    L->next = L;
     LNode *r = L;
-    for(int i = 0; i<n; i++) {
+    for (int i = 0; i < n; i++) {
         LNode *s = new LNode;
         s->data = i;
-        s->next = NULL;
+        s->next = L;
         r->next = s;
         r = s;
     }
-    r->next = L;
     return true;
 }
 
 /* 插入元素 */
 bool ListInsert(LinkList L, int i, int e) {
-    if(i<1) return false;
-    LNode *p = L->next;
-    for(int j = 0; j<i-1; j++) {
+    if (L == nullptr || i < 1) return false;
+    LNode *p = L;
+    for (int j = 1; j < i; j++) {
         p = p->next;
+        if (p == L) return false;
     }
     LNode *s = new LNode;
     s->data = e;
@@ -333,17 +364,24 @@ bool ListInsert(LinkList L, int i, int e) {
 
 /* 删除元素 */
 bool ListDelete(LinkList L, int i, int *e) {
-    if(i<1) return false;
-    LNode *p = L->next;
-    for(int j = 0; j<i-1; j++) {
+    if (L == nullptr || e == nullptr || i < 1) return false;
+    LNode *p = L;
+    for (int j = 1; j < i; j++) {
         p = p->next;
+        if (p == L) return false;
     }
-    *e = p->data;
-    p->next = p->next->next;
-    free(p->next);
+    LNode *q = p->next;
+    if (q == L) return false;
+    *e = q->data;
+    p->next = q->next;
+    delete q;
     return true;
 }
 ```
+
+> **校验：** 原代码先将循环单链表置为非循环状态，创建完成后又把头结点
+> 直接连回自身，导致已创建结点丢失；删除时也释放了错误的结点。已统一使用
+> 头结点自环初始化，并按“前驱结点 + 待删结点”完成插入和删除。
 
 ### 带头节点的双链表
 
@@ -355,17 +393,20 @@ struct DNode {
     struct DNode *prev;
 };
 
+using DList = DNode *;
+
 /* 插入元素 */
 bool ListInsert(DList L, int i, int e) {
-    if(i<1) return false;
-    DNode *p = L->next;
-    for(int j = 0; j<i-1; j++) {
+    if (L == nullptr || i < 1) return false;
+    DNode *p = L;
+    for (int j = 1; j < i; j++) {
+        if (p->next == nullptr) return false;
         p = p->next;
     }
     DNode *s = new DNode;
     s->data = e;
     s->next = p->next;
-    p->next->prev = s;
+    if (p->next != nullptr) p->next->prev = s;
     p->next = s;
     s->prev = p;
     return true;
@@ -373,15 +414,18 @@ bool ListInsert(DList L, int i, int e) {
 
 /* 删除元素 */
 bool ListDelete(DList L, int i, int *e) {
-    if(i<1) return false;
-    DNode *p = L->next;
-    for(int j = 0; j<i-1; j++) {
+    if (L == nullptr || e == nullptr || i < 1) return false;
+    DNode *p = L;
+    for (int j = 1; j < i; j++) {
+        if (p->next == nullptr) return false;
         p = p->next;
     }
-    *e = p->data;
-    p->next->prev = p->prev;
-    p->prev->next = p->next;
-    free(p);
+    DNode *q = p->next;
+    if (q == nullptr) return false;
+    *e = q->data;
+    p->next = q->next;
+    if (q->next != nullptr) q->next->prev = p;
+    delete q;
     return true;
 }
 ```
@@ -397,7 +441,7 @@ struct DNode {
 };
 
 /* 初始化带头节点的循环双链表 */
-bool InitList(DList L) {
+bool InitList(DList &L) {
     L = new DNode;
     L->next = L;
     L->prev = L;
@@ -406,10 +450,11 @@ bool InitList(DList L) {
 
 /* 插入元素 */
 bool ListInsert(DList L, int i, int e) {
-    if(i<1) return false;
-    DNode *p = L->next;
-    for(int j = 0; j<i-1; j++) {
+    if (L == nullptr || i < 1) return false;
+    DNode *p = L;
+    for (int j = 1; j < i; j++) {
         p = p->next;
+        if (p == L) return false;
     }
     DNode *s = new DNode;
     s->data = e;
@@ -422,18 +467,25 @@ bool ListInsert(DList L, int i, int e) {
 
 /* 删除元素 */
 bool ListDelete(DList L, int i, int *e) {
-    if(i<1) return false;
-    DNode *p = L->next;
-    for(int j = 0; j<i-1; j++) {
+    if (L == nullptr || e == nullptr || i < 1) return false;
+    DNode *p = L;
+    for (int j = 1; j < i; j++) {
         p = p->next;
+        if (p == L) return false;
     }
-    *e = p->data;
-    p->next->prev = p->prev;
-    p->prev->next = p->next;
-    free(p);
+    DNode *q = p->next;
+    if (q == L) return false;
+    *e = q->data;
+    q->next->prev = q->prev;
+    q->prev->next = q->next;
+    delete q;
     return true;
 }
 ```
+
+> **校验：** 双链表插入时应从头结点定位待插位置的前驱，删除时应定位待删
+> 结点；原代码从首元结点开始，导致位置整体偏移。已修正定位方式，并同步维护
+> 前驱、后继指针及循环双链表的头结点引用。
 
 ### 静态链表
 
@@ -443,10 +495,10 @@ bool ListDelete(DList L, int i, int *e) {
 
 | 操作 | 顺序表 | 链表 |
 | --- | --- | --- |
-| 插入 | O(n) | O(1) |
-| 删除 | O(n) | O(1) |
-| 查找 | O(n) | O(n) |
-| 访问 | O(1) | O(n) |
+| 插入 | $O(n)$ | $O(1)$ |
+| 删除 | $O(n)$ | $O(1)$ |
+| 查找 | $O(n)$ | $O(n)$ |
+| 访问 | $O(1)$ | $O(n)$ |
 
 注意，这里链表的插入和删除的前提是设置了特定的指针。
 
@@ -517,15 +569,17 @@ struct StackNode {
     struct StackNode *next;
 };
 
+using Stack = StackNode *;
+
 /* 初始化栈 */
-bool InitStack(Stack *S) {
-    S = new StackNode;
-    S->next = NULL;
+bool InitStack(Stack &S) {
+    S = new StackNode{0, nullptr};
     return true;
 }
 
 /* 入栈 */
-bool Push(Stack *S, int x) {
+bool Push(Stack S, int x) {
+    if (S == nullptr) return false;
     StackNode *p = new StackNode;
     p->data = x;
     p->next = S->next;
@@ -534,36 +588,40 @@ bool Push(Stack *S, int x) {
 }
 
 /* 出栈 */
-bool Pop(Stack *S, int *x) {
-    if(S->next == NULL) return false;
+bool Pop(Stack S, int *x) {
+    if (S == nullptr || x == nullptr || S->next == nullptr) return false;
     *x = S->next->data;
     StackNode *p = S->next;
     S->next = S->next->next;
-    free(p);
+    delete p;
     return true;
 }
 
 /* 获取栈顶元素 */
-bool GetTop(Stack *S, int *x) {
-    if(S->next == NULL) return false;
+bool GetTop(Stack S, int *x) {
+    if (S == nullptr || x == nullptr || S->next == nullptr) return false;
     *x = S->next->data;
     return true;
 }
 
 /* 判断栈是否为空 */
-bool IsEmpty(Stack *S) {
-    return S->next == NULL;
+bool IsEmpty(Stack S) {
+    return S == nullptr || S->next == nullptr;
 }
 
 /* 判断栈是否满 */
-bool IsFull(Stack *S) {
-    return S->next == NULL;
+bool IsFull(Stack) {
+    return false;
 }
 ```
 
+> **校验：** 链式栈没有固定数组容量，原代码把“空”误作为“满”，并且初始化
+> 只修改了局部指针；已改为引用初始化，链式栈的 `IsFull` 固定返回 `false`。
+
 ### 队列的顺序存储
 
-采用循环队列模拟队列，并且 front 和 rear 可以采用均指向第一个元素的方法，然后 rear 回退一格即为初始状态。
+采用循环队列模拟队列，`front` 指向队头元素，`rear` 指向下一个入队位置；
+初始化时令二者相等。
 
 对于下面的代码，front 指向当前元素，rear 指向当前元素的下一个元素。
 
@@ -575,23 +633,23 @@ int rear = 0;
 
 // 入队
 bool EnQueue(int x) {
-    if((rear+1)%MAXSIZE == front) return false;
+    if ((rear + 1) % MAXSIZE == front) return false;
     queue[rear] = x;
-    rear = (rear+1)%MAXSIZE;
+    rear = (rear + 1) % MAXSIZE;
     return true;
 }
 
 // 出队
 bool DeQueue(int *x) {
-    if(front == rear) return false;
+    if (x == nullptr || front == rear) return false;
     *x = queue[front];
-    front = (front+1)%MAXSIZE;
+    front = (front + 1) % MAXSIZE;
     return true;
 }
 
 // 获取队头元素
 bool GetFront(int *x) {
-    if(front == rear) return false;
+    if (x == nullptr || front == rear) return false;
     *x = queue[front];
     return true;
 }
@@ -603,7 +661,7 @@ bool IsEmpty() {
 
 // 判断队列是否满
 bool IsFull() {
-    return (rear+1)%MAXSIZE == front;
+    return (rear + 1) % MAXSIZE == front;
 }
 ```
 
@@ -628,9 +686,8 @@ bool IsFull() {
 使用栈来实现括号匹配，具体思路是：
 
 1. 遍历字符串，遇到左括号入栈。
-2. 遇到右括号，出栈，判断是否匹配。
-3. 如果栈为空，则匹配成功。
-4. 如果栈不为空，则匹配失败。
+2. 遇到右括号时，若栈为空则匹配失败；否则出栈并判断类型是否匹配。
+3. 遍历结束后，只有栈为空才表示匹配成功。
 
 ```c++
 bool isMatch(string s) {
@@ -694,6 +751,7 @@ int fib(int n) {
 
 ```c++
 void levelOrder(TreeNode *root) {
+    if (root == nullptr) return;
     queue<TreeNode *> q;
     q.push(root);
     while(!q.empty()) {
@@ -705,6 +763,10 @@ void levelOrder(TreeNode *root) {
     }
 }
 ```
+
+> **校验：** 原括号匹配说明把“中途栈为空”和“遍历结束时栈为空”混为一谈；
+> 已改为在遇到右括号时检查栈，在遍历结束时检查剩余左括号。层次遍历原代码
+> 未处理空树，已补充空指针判断，避免解引用空指针。
 
 ### 数组
 
@@ -720,7 +782,7 @@ void levelOrder(TreeNode *root) {
 
 三元组法使用一个三元组来存储矩阵的非零元素，包括行号、列号和元素值。
 
-而十字链表法是有向图的方法，可以用于存储稀疏矩阵。
+十字链表法通过行、列两个方向的链接存储非零元素，适用于稀疏矩阵。
 
 ## 第 4 章 - 串
 
@@ -796,7 +858,7 @@ void postOrder(TreeNode *root) {
 
 层次遍历：从上到下，从左到右
 
-对于树的算法，一定是基于上述四种遍历进行修改的。
+很多树的算法都可以在上述四种遍历的基础上修改。
 
 也就是：先判断结束条件，然后判断采用哪种遍历，接下来判断做出递归之前要做什么，做出递归之后要做什么。
 
@@ -809,7 +871,7 @@ int getBalanceFactor(TreeNode *root) {
     if(root == NULL) return 0;
     int leftHeight = getBalanceFactor(root->left);
     int rightHeight = getBalanceFactor(root->right);
-    
+
     root->balanceFactor = leftHeight - rightHeight;
     return max(leftHeight, rightHeight) + 1;
 }
@@ -819,17 +881,29 @@ int getBalanceFactor(TreeNode *root) {
 
 树的线索化，指的是将树的结点按照某种遍历方式进行线索化，使得每个结点都有两个指针，一个指向其前驱，一个指向其后继。
 
-尤其需要注意的是，假设该树的线索指示为 1，那么该结点一定是叶子结点 ... ... 吗？不一定！只有当 ltag == 1 且 rtag == 1 的时候，该结点才是叶子结点。
+在线索二叉树中，`ltag` 或 `rtag` 为 `1` 表示对应指针是线索，
+为 `0` 表示对应指针指向孩子。只有当 `ltag == 1` 且 `rtag == 1` 时，
+该结点才是叶子结点。
 
-模拟一遍，如果是中序遍历线索化，且现在只是正常的先序遍历，那么可以遍历吗？
+如果是中序线索化，而现在要进行普通的先序遍历，不能直接把线索当作孩子访问。
 
-只需要修改条件即可，把 root -> lchild != nullptr 改为 root -> ltag ==0 && root -> lchild != nullptr，把 root -> rchild != nullptr 改为 root -> rtag ==0 && root -> rchild != nullptr。
+需要把左、右孩子的判断分别改为
+`root->ltag == 0 && root->lchild != nullptr` 和
+`root->rtag == 0 && root->rchild != nullptr`。
 
-中序遍历线索化，节点的前驱为左子树的最右结点，后继为右子树的最左结点。
+中序线索化时，若左子树存在，结点的前驱是左子树的最右结点；
+若右子树存在，结点的后继是右子树的最左结点。
 
-先序遍历线索化，无法找到前驱，后继为若 p 有左孩子，其先序后继就是它的左孩子 p->lchild，若 p 没有左孩子、但有右孩子，其先序后继就是它的右孩子 p->rchild。
+先序线索化时，仅依靠左右指针通常不能直接找到前驱；
+若 `p` 有左孩子，先序后继优先是 `p->lchild`，否则是 `p->rchild`
+或向上回溯后找到的结点。
 
-后序遍历线索化，若 p 有右孩子，其后序前驱就是它的右孩子 p->rchild，若 p 没有右孩子、但有左孩子，其后序前驱就是它的左孩子 p->lchild。无法找到后继。
+后序线索化时，若 `p` 有右孩子，后序前驱优先是 `p->rchild`；
+否则是 `p->lchild`。后序后继通常需要父指针、栈或额外线索才能直接找到。
+
+> **校验：** 原文把线索指针与孩子指针混用，并把“先序无法找前驱、
+> 后序无法找后继”写成了无条件结论；已补充 `ltag`、`rtag` 的含义，
+> 并明确这些结论依赖于是否有额外的父指针、栈或线索。
 
 #### 已知先序遍历序列和中序遍历序列，求树
 
@@ -861,7 +935,7 @@ int getBalanceFactor(TreeNode *root) {
 
 #### 孩子兄弟表示法
 
-兄弟孩子表示法，指的是左孩子右兄弟。
+孩子兄弟表示法，指的是左孩子右兄弟。
 
 #### 树的先序遍历
 
@@ -883,7 +957,9 @@ int getBalanceFactor(TreeNode *root) {
 
 哈夫曼树的构建，以及哈夫曼编码。
 
-WPL 为带权路径长度，指的是每个叶子结点的权值乘以该结点到根结点的路径长度之和。
+WPL（带权路径长度）为
+$\mathrm{WPL}=\sum_{i=1}^{n}w_i l_i$，其中 $w_i$ 是叶子结点的权值，
+$l_i$ 是该叶子结点到根结点的路径长度。
 
 ### 并查集
 
@@ -898,16 +974,16 @@ void init(int n) {
     }
 }
 // 朴素版本
-int find(int x) {
+int findNaive(int x) {
     while(parent[x] != -1) {
         x = parent[x];
     }
-    return parent[x];
+    return x;
 }
 // 朴素版本合并
-void union(int x, int y) {
-    int rootX = find(x);
-    int rootY = find(y);
+void uniteNaive(int x, int y) {
+    int rootX = findNaive(x);
+    int rootY = findNaive(y);
     if(rootX != rootY) {
         parent[rootX] = rootY;
     }
@@ -929,7 +1005,7 @@ int find(int x) {
     return root;
 }
 // 按秩合并
-void union(int x, int y) {
+void unite(int x, int y) {
     int rootX = find(x);
     int rootY = find(y);
     if(rootX != rootY) {
@@ -946,6 +1022,10 @@ void union(int x, int y) {
 
 ```
 
+> **校验：** 原代码的朴素查找在循环结束后返回了根结点的父值 `-1`，
+> 两组函数还使用了 C++ 关键字 `union` 并造成同名冲突；已改为返回根下标，
+> 并分别命名为 `findNaive`、`uniteNaive`、`find` 和 `unite`。
+
 ## 第 6 章 - 图
 
 ### 考纲 - 图
@@ -960,16 +1040,19 @@ void union(int x, int y) {
 
 ### 图的定义
 
-- 图是由顶点集 V 和边集 E 组成的数据结构，记作 G = (V, E)。
-- 图的顶点数记作 n，边数记作 e。
-- 完全图：任意两个顶点之间都有边，记作 Kn。
-- 子图：图 G' = (V', E') 是图 G = (V, E) 的子图，如果 V' 是 V 的子集，E' 是 E 的子集。
+- 图是由顶点集 $V$ 和边集 $E$ 组成的数据结构，记作 $G=(V,E)$。
+- 图的顶点数记作 $n$，边数记作 $e$。
+- 完全图：任意两个顶点之间都有边，记作 $K_n$。
+- 子图：图 $G'=(V',E')$ 是图 $G=(V,E)$ 的子图，如果 $V'$ 是 $V$ 的子集，
+  $E'$ 是 $E$ 的子集。
 - 连通图：如果图中任意两个顶点之间都存在路径，则称该图是连通图。
-- 极大联通子图：如果图 G 的某个子图是连通图，并且不存在更大的连通子图，则称该子图是极大联通子图。（适用于无向图），概念等同于连通分量
-- 极小连通子图：如果图 G 的某个子图是连通图，并且不存在更小的连通子图，则称该子图是极小连通子图。（即最小生成树）（适用于无向图）
-- 连通分量：如果图 G 的某个子图是连通图，并且不存在更大的连通子图，则称该子图是连通分量。
-- 强连通图：如果图中任意两个顶点之间都存在路径，则称该图是强连通图。（适用于有向图）
-- 弱连通图：如果图中任意两个顶点之间都存在路径，则称该图是弱连通图。（适用于有向图）
+- 极大连通子图：如果图 $G$ 的某个子图是连通图，并且不存在包含它的更大连通子图，
+  则称该子图为极大连通子图（适用于无向图），也就是连通分量。
+- 极小连通子图：如果一个连通子图删除任意一条边都会变得不连通，则称其为极小连通子图；
+  无向图中的极小连通子图是树，但不一定是最小生成树。
+- 连通分量：无向图的极大连通子图称为连通分量。
+- 强连通图：有向图中任意两个顶点 $u,v$ 都满足 $u$ 可达 $v$ 且 $v$ 可达 $u$。
+- 弱连通图：有向图忽略边的方向后得到的无向图是连通图。
 - 简单路径：路径上顶点不重复的路径。（适用于有向图和无向图）
 - 简单回路：路径上顶点不重复的回路。（适用于有向图和无向图）
 
@@ -1003,30 +1086,35 @@ void union(int x, int y) {
 
 #### 广度优先
 
-广度优先搜索，指的是从图的某个顶点出发，沿着一条路径一直走到底，然后回溯，继续走其他路径。
+广度优先搜索，指的是从图的某个顶点出发，先访问距离为 $1$ 的顶点，
+再访问距离为 $2$ 的顶点，逐层向外扩展。
 
-广度优先可以生成广度优先生成树，采用邻接矩阵存储表示唯一，采用邻接表存储不唯一。
+广度优先可以生成广度优先生成树。生成树是否唯一取决于邻接点的访问顺序，
+与采用邻接矩阵还是邻接表没有必然关系。
 
 与此同时，广度优先遍历可以用来求单源最短路径，只需要在遍历的同时记录每个点到起点的距离即可。
 
 #### 深度优先
 
-深度优先搜索，指的是从图的某个顶点出发，沿着一条路径一直走到底，然后回溯，继续走其他路径。
+深度优先搜索，指的是从图的某个顶点出发，沿着一条路径尽可能深入，
+到达不能继续访问的顶点后回溯，再访问其他路径。
 
-深度优先可以生成深度优先生成树，采用邻接矩阵存储表示唯一，采用邻接表存储不唯一。
+深度优先可以生成深度优先生成树。生成树是否唯一同样取决于邻接点的访问顺序。
 
 #### 存储结构与性能比较
 
-广度优先：邻接矩阵 O(n^2)，邻接表 O(n+e)
-深度优先：邻接矩阵 O(n^2)，邻接表 O(n+e)
+广度优先：邻接矩阵 $O(n^2)$，邻接表 $O(n+e)$。
+深度优先：邻接矩阵 $O(n^2)$，邻接表 $O(n+e)$。
 
 #### 图的连通性与遍历
 
-对于联通无向图，只需要一次遍历；对于非联通无向图，需要连通分量个数的遍历。
+对于连通无向图，只需要从一个顶点开始遍历；对于非连通无向图，
+需要从每个尚未访问的顶点开始遍历，遍历次数等于连通分量数。
 
-而对于有向图，情况比较复杂，得分为强联通和弱联通讨论。强联通是顺着箭头走，任何两个人可以相互连着，而弱联通是不管箭头方向，只要不散架即可。
+对于有向图，需要区分强连通和弱连通：强连通要求任意两个顶点相互可达；
+弱连通只要求忽略边方向后连通。
 
-需要注意，强连通图 a 到 b，且 b 到 a 都可以到，所以才有方向。
+需要注意，强连通要求从 $a$ 到 $b$，以及从 $b$ 到 $a$ 都存在有向路径。
 
 ### 图的应用
 
@@ -1034,13 +1122,16 @@ void union(int x, int y) {
 
 - Prim 算法
 
-  每次选取一个点，然后选取该点连接的权值最小的边，直到所有点都被选取。
+  每次从已选顶点集合与未选顶点集合之间的所有边中，选取权值最小的一条，
+  将对应的未选顶点加入集合，直到选入所有顶点。
 
 - kruskal 算法
 
-  每次选取一条权值最小的边，直到所有点都被选取。
+  将所有边按权值从小到大排序，依次选取不会形成环的边，
+  直到选取 $V-1$ 条边或图已经连通。
 
-二者选取出来的最小生成树可能不一样，但是权值一定是一样的。
+二者得到的最小生成树可能不一样，但在同一个带权无向连通图中，
+最小生成树的总权值一定相同。
 
 对于这种题，一定是要注意题设给的条件，比如说权值最小的边的总数，或者干脆权值各不相同。
 
@@ -1052,20 +1143,20 @@ void union(int x, int y) {
 
   - 凭感觉法
 
-  - 手算算法：首先要有三个数组记录，分别为 dist、path、visited，分别记录最短路径、最短路径的前驱、是否访问过。然后每次选取一个未访问过的点，然后选取该点连接的权值最小的边，直到所有点都被选取。
+  - 手算算法：使用 `dist`、`path`、`visited` 分别记录当前最短距离、
+    最短路径前驱和访问状态。每轮从未访问顶点中选取 `dist` 最小的顶点，
+    再用它松弛所有出边，直到没有可改进的顶点。
 
-  - 时间复杂度：O(V^2)
+  - 时间复杂度：$O(V^2)$。
 
-  - 空间复杂度：O(V)
+  - 空间复杂度：$O(V)$。
 
-  - 需要注意的点：可以用来求最短路径，不可以用来判环，不可以有负权边。
+  - 需要注意的点：Dijkstra 算法要求边权非负；它用于求最短路径，
+    不能把“是否存在环”作为其主要判定功能。
 
 - Floyd 算法
 
   - 手算法：
-
-
-
 
 #### 有向图无环图应用
 
@@ -1082,9 +1173,12 @@ void union(int x, int y) {
         int V;
         int E;
         int adj[MAXSIZE][MAXSIZE];
-    };
+    } Graph;
 
     void getInDegree(Graph G, int inDegree[]) {
+        for (int i = 0; i < G.V; i++) {
+            inDegree[i] = 0;
+        }
         for(int i = 0; i < G.V; i++) {
             for(int j = 0; j < G.V; j++) {
                 if(G.adj[i][j] != 0) {
@@ -1095,7 +1189,7 @@ void union(int x, int y) {
     }
 
     bool topoSort(Graph G, int topo[]) {
-        int inDegree[MAXSIZE];
+        int inDegree[MAXSIZE] = {0};
         getInDegree(G, inDegree);
         int queue[MAXSIZE]; // 队列
         int front = 0, rear = 0;
@@ -1117,7 +1211,6 @@ void union(int x, int y) {
                     inDegree[i]--;
                     if(inDegree[i] == 0) {
                         queue[rear++] = i;
-                        break;
                     }
                 }
             }
@@ -1126,11 +1219,15 @@ void union(int x, int y) {
     }
     ```
 
-  - 时间复杂度：O(V+E)
+  - 时间复杂度：$O(V^2)$。
 
-  - 空间复杂度：O(V)
+  - 空间复杂度：$O(V^2)$。
 
-  - 拓扑排序需要注意的点：可以用来判环存不存在
+  - 拓扑排序需要注意的点：若最终输出顶点数小于 $V$，则图中存在环。
+
+> **校验：** 原代码未初始化入度数组，处理到一个入度降为 $0$ 的邻接点后又
+> `break`，会漏掉同一顶点的其他邻接点；此外 `Graph` 的 `typedef` 不完整。
+> 已补充初始化、删除 `break`，并补全类型别名。
 
 #### 关键路径
 
@@ -1138,15 +1235,19 @@ void union(int x, int y) {
 
 4 个活动时间：最早开始时间、最早结束时间、最晚开始时间、最晚结束时间。
 
-最早开始时间：从前往后推，最早开始时间 = 最早结束时间 - 活动时间
+最早开始时间：从前往后推，活动的最早开始时间等于其所有前驱活动最早结束时间的最大值。
 
-最早结束时间：从前往后推，最早结束时间 = 最早开始时间 + 活动时间
+最早结束时间：从前往后推，$\mathrm{EF}=\mathrm{ES}+\text{活动时间}$。
 
-最晚开始时间：从后往前推，最晚开始时间 = 最晚结束时间 - 活动时间
+最晚开始时间：从后往前推，$\mathrm{LS}=\mathrm{LF}-\text{活动时间}$。
 
-最晚结束时间：从后往前推，最晚结束时间 = 最晚开始时间 + 活动时间
+最晚结束时间：从后往前推，活动的最晚结束时间等于其所有后继活动最晚开始时间的最小值。
 
-关键路径是最慢的那一条，需要注意关键路径的各种判断。
+关键路径是总持续时间最长的路径，关键活动通常满足总时差为 $0$。
+
+> **校验：** 原文把最早开始时间写成“最早结束时间减活动时间”，
+> 把最晚结束时间写成“最晚开始时间加活动时间”，方向和定义均不对；
+> 已按前向最大值、后向最小值修正四个时间量。
 
 | 认知误区 | 修正结论 |
 | :--- | :--- |
@@ -1160,8 +1261,8 @@ void union(int x, int y) {
 ### 考纲 - 查找
 
 - 查找的基本方法
-- 顺序查找发
-- 分块查找发
+- 顺序查找法
+- 分块查找法
 - 折半查找法
 - 树形查找（二叉搜索树；平衡二叉树；红黑树）
 - B 树及其基本操作、B+ 树的基本概念
@@ -1172,11 +1273,18 @@ void union(int x, int y) {
 
 ASL 分析：平均查找长度，指的是查找成功时，需要查找的次数的平均值。
 
-ASL = (1/n) * (1*P1 + 2*P2 + ... + k*Pk)
+$$
+\mathrm{ASL}_{\mathrm{success}}=\sum_{i=1}^{n} iP_i,
+\qquad \sum_{i=1}^{n}P_i=1.
+$$
 
-其中，n 是查找表中元素的个数，P1, P2, ..., Pk 是查找表中每个元素的查找概率。
+其中，$n$ 是查找表中元素的个数，$P_i$ 是查找成功时第 $i$ 个元素的查找概率。
 
-ASL 是查找成功时的平均查找长度，查找不成功时的平均查找长度是 ASL 不成功。
+ASL 是查找成功时的平均查找长度；查找不成功时，应根据失败结点或失败区间的概率
+单独计算平均查找长度。
+
+> **校验：** 原公式在 $P_i$ 已表示概率时又乘以 $1/n$，会重复除以元素个数；
+> 已改为概率加权和，并明确概率和为 $1$。
 
 ### 朴素查找与有序表查找的简单优化
 
@@ -1203,12 +1311,13 @@ int binarySearch(int A[], int n, int key) {
 }
 ```
 
-时间复杂度：O(log2(n))
-空间复杂度：O(1)
+时间复杂度：$O(\log n)$。
+空间复杂度：$O(1)$。
 
 二分查找适用于顺序表。
 
-二分查找查找树，即二叉平衡树，需要根据二叉平衡树的特点从右向左构建。
+二叉搜索树的查找效率取决于树高；只有树高为 $O(\log n)$ 时，
+查找才具有对数级复杂度。根据序列从右向左构建并不能保证得到平衡树。
 
 注意计算 ASL，空结点不能算次数。
 
@@ -1220,56 +1329,72 @@ int binarySearch(int A[], int n, int key) {
 
 需要注意的是，块间按照数组存储，然后按照孩子表示法进行拉链，形成链表。
 
-最好的排布式 √n 块，每块 n/√n = √n 个元素。
+较常见的均匀分块方案是 $\sqrt{n}$ 块，每块约有
+$\frac{n}{\sqrt{n}}=\sqrt{n}$ 个元素。
 
 ### 二叉搜索树
 
-又叫二叉排序树，满足左子树 < 根 < 右子树，即中序遍历。
+又叫二叉排序树。若规定关键字不重复，则满足左子树关键字
+$<$ 根关键字 $<$ 右子树关键字，中序遍历结果递增。
 
-如何判断一棵树是否是二叉搜索树，只需要设置 pre 和 curr 指针，即：
+如何判断一棵树是否是二叉搜索树，可以在中序遍历中检查关键字是否严格递增：
 
-```c
-int pre = 0x80000000;
-bool flag = true;
-void isBST(TreeNode* root) {
-    if(root == nullptr) return;
-    isBST(root->left);
-    if(root->val <= pre) flag = false;
-    pre = root->val;
-    isBST(root->right);
-}
-bool isBST(TreeNode* root) {
-    isBST(root);
-    return flag;
+```c++
+bool isBSTInOrder(TreeNode *root, long long &previous, bool &hasPrevious) {
+    if (root == nullptr) return true;
+    if (!isBSTInOrder(root->left, previous, hasPrevious)) return false;
+    if (hasPrevious && root->val <= previous) return false;
+    previous = root->val;
+    hasPrevious = true;
+    return isBSTInOrder(root->right, previous, hasPrevious);
 }
 
+bool isBST(TreeNode *root) {
+    long long previous = 0;
+    bool hasPrevious = false;
+    return isBSTInOrder(root, previous, hasPrevious);
+}
 ```
+
+> **校验：** 原代码用返回值重载同名函数，这是 C++ 不允许的；递归还会调用到
+> 错误的重载，且全局 `flag` 和 `0x80000000` 无法稳妥处理重复值及最小整数。
+> 已改为显式传递中序状态，并使用 `long long` 保存前一个关键字。
 
 ### 二叉平衡树
 
 二叉平衡树，即 AVL 树，满足左右子树高度差不超过 1。
 
-如何求结点最少的 AVL 树，利用斐波那契数列，即：
+若以结点数定义高度并令空树高度为 $-1$，则结点数最少的 AVL 树满足：
 
-$ a_n = a_{n-1} + a_{n-2} $
+$$
+N_{-1}=0,\qquad N_0=1,\qquad
+N_h=N_{h-1}+N_{h-2}+1\quad(h\ge 1).
+$$
 
-结点为 Sn，也就是斐波那契数列的前 n 项和，即 $ S_n = \sum_{i=1}^{n} a_i $。
+它与斐波那契数列相关，但不能直接写成斐波那契数列前若干项的简单求和。
 
 #### LL
 
-表述为一个结点的左子树不平衡，是因为他左子树的左结点导致的，那么需要将左子树的根节点作为新的根节点进行左旋。
+表述为一个结点的左子树不平衡，是因为其左子树的左子树过高，
+需要对失衡结点进行右旋。
 
 #### LR
 
-表述为一个结点的左子树不平衡，是因为他左子树的右结点导致的，那么需要先右旋，再左旋。
+表述为一个结点的左子树不平衡，是因为其左子树的右子树过高，
+需要先对左孩子左旋，再对失衡结点右旋。
 
 #### RL
 
-表述为一个结点的右子树不平衡，是因为他右子树的左结点导致的，那么需要先左旋，再右旋。
+表述为一个结点的右子树不平衡，是因为其右子树的左子树过高，
+需要先对右孩子右旋，再对失衡结点左旋。
 
 #### RR
 
-表述为一个结点的右子树不平衡，是因为他右子树的右结点导致的，那么需要将右子树的根节点作为新的根节点进行右旋。
+表述为一个结点的右子树不平衡，是因为其右子树的右子树过高，
+需要对失衡结点进行左旋。
+
+> **校验：** 原文把 AVL 的四种旋转方向全部写反，并遗漏了最少结点递推式中的
+> `+1` 及初值；已按 LL、LR、RL、RR 的标准旋转方式和高度定义修正。
 
 #### 计算二叉平衡树的平衡因子
 
@@ -1286,24 +1411,25 @@ int getBalanceFactor(TreeNode* root) {
 
 ### 红黑树
 
-左根右，根页黑，不红红，黑路同。
+左根右，根黑，红不连，黑路同。
 
-叶节点为空结点。
+叶节点通常用黑色的空结点（`NIL`）表示。
 
 ### B 树 & B+ 树
 
-| 比较维度 | $m$ 阶 B 树 (B-Tree) | $m$ 阶 B+ 树 (B+ Tree) |
+| 比较维度 | $m$ 阶 B 树（B-Tree） | $m$ 阶 B+ 树（B+ Tree） |
 | :--- | :--- | :--- |
-| **非根内部结点的子树（边）数 $k$** | $\lceil m/2 \rceil \le k \le m$ | $\lceil m/2 \rceil \le k \le m$ |
-| **非根内部结点的关键字数 $n$** | $\lceil m/2 \rceil - 1 \le n \le m - 1$ | 规范通常为 $k$ 个（部分教材定义为 $k-1$），即 $\lceil m/2 \rceil \le n \le m$ |
-| **根结点的特殊约束** | 若非叶，子树数 $2 \le k \le m$，关键字 $1 \le n \le m - 1$ | 若非叶，子树数 $2 \le k \le m$，关键字数等于子树数（或 $k-1$） |
-| **关键字与子树的关系** | 子树数 = 关键字数 $+ 1$ | 子树数 = 关键字数（或一一对应索引） |
+| **非根内部子树数 $k$** | $\lceil m/2\rceil\le k\le m$ | 同左 |
+| **非根内部关键字数 $n$** | $\lceil m/2\rceil-1\le n\le m-1$ | 同左，均为分隔键 |
+| **根结点约束** | 非叶：$2\le k\le m$，$1\le n\le m-1$ | 非叶：$2\le k\le m$；索引数通常为 $k-1$ |
+| **关键字与子树的关系** | 子树数 = 关键字数 $+1$ | 内部结点子树数 = 分隔关键字数 $+1$，叶子记录数另行规定 |
 
 #### 数据存储与检索机制对比
 
 B 树：每一个结点（包括根、内部结点、叶子结点）都同时存储关键字和实际数据记录（或数据指针）。只要在某一层命中关键字，就可以立刻返回数据，不需要走到叶子层。
 
-B+ 树：所有实际数据记录全部且仅存储在叶子结点；非叶子结点只充当纯粹的“路由索引”，不挂载实际数据。检索任何数据都必须一路走到最底层的叶子结点。
+B+ 树：所有实际数据记录全部且仅存储在叶子结点；非叶子结点只充当纯粹的“路由索引”，
+不挂载实际数据。检索任何数据都必须一路走到最底层的叶子结点。
 
 #### 叶子结点的连接（链表结构）
 
@@ -1319,7 +1445,12 @@ B+ 树：叶子结点包含全树的所有关键字全集；出现在内部结�
 
 #### 需要注意
 
-最后需要注意的是，B 树和 B+ 树的树高都不要算空结点的，对于 B 树，其叶子节点是空的，对于 B+ 树，其叶子节点是信息。
+最后需要注意的是，B 树和 B+ 树的树高都不要把空指针或空结点计入。
+B 树的叶子结点可以存储关键字和数据记录；B+ 树的实际数据记录统一存储在叶子结点。
+
+> **校验：** 原文把 B 树的叶子结点误写成空结点，并将 B+ 树内部结点的关键字数
+> 与子树数关系写反；已按常见“阶数等于最大子树数”的定义修正，并保留不同教材
+> 对叶子装载量的定义差异。
 
 ### 散列表
 
@@ -1391,9 +1522,9 @@ B+ 树：叶子结点包含全树的所有关键字全集；出现在内部结�
 
 #### 自下而上的归并
 
-线性扫描归并：时间复杂度为 O(Nk)
+线性扫描归并：时间复杂度为 $O(Nk)$。
 
-利用败者树进行归并：时间复杂度为 O(Nlogk)
+利用败者树进行归并：时间复杂度为 $O(N\log k)$。
 
 ## 真题辨析
 
@@ -1402,8 +1533,8 @@ B+ 树：叶子结点包含全树的所有关键字全集；出现在内部结�
 #### 数组相关基本操作
 
 - 快速排序
-  
-  ```c
+
+```c++
   int partition(int A[], int l, int r) {
     int pivot = A[l];
     while (l < r) {
@@ -1424,8 +1555,8 @@ B+ 树：叶子结点包含全树的所有关键字全集；出现在内部结�
   ```
 
 - 归并排序
-  
-  ```c
+
+  ```c++
   void merge(int A[], int l, int mid, int r) {
     int i = l, j = mid + 1, k = 0;
     int temp[r - l + 1];
@@ -1448,7 +1579,7 @@ B+ 树：叶子结点包含全树的所有关键字全集；出现在内部结�
 
 - 二分查找及其变式
 
-  ```c
+  ```c++
   // 普通二分查找
   int binarySearch(int A[], int n, int key) {
     int left = 0, right = n - 1;
@@ -1462,58 +1593,66 @@ B+ 树：叶子结点包含全树的所有关键字全集；出现在内部结�
   }
   // 查找第一个大于等于 key 的元素
   int binarySearchFirst(int A[], int n, int key) {
-    int left = 0, right = n - 1;
-    while(left <= right) {
-      int mid = (left + right) / 2;
-      if(A[mid] >= key) right = mid - 1;
+    int left = 0, right = n;
+    while (left < right) {
+      int mid = left + (right - left) / 2;
+      if (A[mid] >= key) right = mid;
+      else left = mid + 1;
     }
-    if(left >= 0 && left < n && A[left] == key) return left;
-    return -1;
+    return left < n ? left : -1;
   }
   // 查找最后一个小于等于 key 的元素
   int binarySearchLast(int A[], int n, int key) {
-    int left = 0, right = n - 1;
-    while(left <= right) {
-      int mid = (left + right) / 2;
-      if(A[mid] <= key) left = mid + 1;
-      else right = mid - 1;
+    int left = 0, right = n;
+    while (left < right) {
+      int mid = left + (right - left) / 2;
+      if (A[mid] <= key) left = mid + 1;
+      else right = mid;
     }
-    if(right >= 0 && right < n && A[right] == key) return right;
-    return -1;
+    return left > 0 ? left - 1 : -1;
   }
   ```
+
+> **校验：** 原代码的 `binarySearchFirst` 在 `A[mid] < key` 时不更新边界，
+> 会陷入死循环；两个变式也只在恰好等于 `key` 时返回，无法处理“第一个大于等于”
+> 或“最后一个小于等于”的情况。已改为半开区间写法。
 
 ### 代码题 - 链表相关
 
 #### 单链表相关操作
 
 - 反转链表（使用带头节点的单链表，头插法置换）
-  
-  ```c
-  void reverseList(ListNode* list) {
-    ListNode* tail = list->next;
-    ListNode* curr = list->next;
-    while (curr != tail) {
-        tail->next = curr->next;
-        curr->next = list->next;
-        list->next = curr;
-        curr = tail->next;
+
+```c++
+  void reverseList(ListNode *list) {
+    if (list == nullptr) return;
+    ListNode *prev = nullptr;
+    ListNode *curr = list->next;
+    while (curr != nullptr) {
+      ListNode *next = curr->next;
+      curr->next = prev;
+      prev = curr;
+      curr = next;
     }
+    list->next = prev;
   }
   ```
 
 - 反转链表（使用不带头节点的单链表，原地置换）
-  
-  ```c
-  void reverseList(ListNode* list) {
-    ListNode* prev = nullptr;
-    ListNode* curr = list;
-    while (curr != nullptr) {
-      ListNode* temp = curr->next;
-      curr->next = prev;
-      prev = curr;
-      curr = temp;
+
+  ```c++
+  ListNode *reverseList(ListNode *list) {
+    ListNode *prev = nullptr;
+    while (list != nullptr) {
+      ListNode *next = list->next;
+      list->next = prev;
+      prev = list;
+      list = next;
     }
-    list = prev;
+    return prev;
   }
   ```
+
+> **校验：** 原带头结点版本的循环条件一开始就为假，实际上没有执行反转；
+> 无头结点版本只修改了局部变量 `list`，调用者拿不到新头结点。已分别改为
+> 普通单链表反转，并让无头结点版本返回反转后的头指针。
