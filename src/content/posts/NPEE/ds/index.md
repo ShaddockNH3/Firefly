@@ -1055,3 +1055,165 @@ void union(int x, int y) {
 #### 拓扑排序
 
 #### 关键路径
+
+## 第 7 章 - 查找
+
+### 考纲 - 查找
+
+### 有序表的朴素查找与简单优化
+
+### 二分查找与二分查找树
+
+### 分块查找
+
+### 二叉搜索树
+
+### 二叉平衡树
+
+### 红黑树
+
+### B 树
+
+### B+ 树
+
+### 散列表
+
+## 第 8 章 - 排序
+
+### 插入排序
+
+#### 直接插入排序
+
+#### 折半插入排序
+
+#### 希尔排序
+
+### 交换排序
+
+#### 冒泡排序
+
+#### 快速排序
+
+### 选择排序
+
+#### 简单选择排序
+
+#### 堆排序
+
+### 归并排序
+
+### 基数排序
+
+### 计数排序
+
+### 各种排序方法的比较
+
+### 外部排序
+
+#### 外部排序三部曲
+
+生成归并段 - 生成归并顺序 - 自下而上的归并
+
+#### 生成归并段
+
+土办法生成归并段
+
+利用置换选择排序生成归并段
+
+#### 生成归并顺序
+
+不生成归并顺序随意归并
+
+利用 k 叉哈夫曼树，即最佳归并树
+
+#### 自下而上的归并
+
+线性扫描归并：时间复杂度为 O(Nk)
+
+利用败者树进行归并：时间复杂度为 O(Nlogk)
+
+## 真题辨析
+
+### 代码题 - 数组相关
+
+#### 数组相关基本操作
+
+- 快速排序
+  
+  ```c
+  int partition(int A[], int l, int r) {
+    int pivot = A[l];
+    while (l < r) {
+      while (l < r && A[r] >= pivot) r--;
+      A[l] = A[r];
+      while (l < r && A[l] <= pivot) l++;
+      A[r] = A[l];
+    }
+    A[l] = pivot;
+    return l;
+  }
+  void quickSort(int A[], int l, int r) {
+    if (l >= r) return;
+    int pivot = partition(A, l, r);
+    quickSort(A, l, pivot - 1);
+    quickSort(A, pivot + 1, r);
+  }
+  ```
+
+- 归并排序
+  
+  ```c
+  void merge(int A[], int l, int mid, int r) {
+    int i = l, j = mid + 1, k = 0;
+    int temp[r - l + 1];
+    while (i <= mid && j <= r) {
+      if (A[i] <= A[j]) temp[k++] = A[i++];
+      else temp[k++] = A[j++];
+    }
+    while (i <= mid) temp[k++] = A[i++];
+    while (j <= r) temp[k++] = A[j++];
+    for (int i = 0; i < k; i++) A[l + i] = temp[i];
+  }
+  void mergeSort(int A[], int l, int r) {
+    if (l >= r) return;
+    int mid = (l + r) / 2;
+    mergeSort(A, l, mid);
+    mergeSort(A, mid + 1, r);
+    merge(A, l, mid, r);
+  }
+  ```
+
+### 代码题 - 链表相关
+
+#### 单链表相关操作
+
+- 反转链表（使用带头节点的单链表，头插法置换）
+  
+  ```c
+  void reverseList(ListNode* list) {
+    ListNode* tail = list->next;
+    ListNode* curr = list->next;
+    while (curr != tail) {
+        tail->next = curr->next;
+        curr->next = list->next;
+        list->next = curr;
+        curr = tail->next;
+    }
+  }
+  ```
+
+- 反转链表（使用不带头节点的单链表，原地置换）
+  
+  ```c
+  void reverseList(ListNode* list) {
+    ListNode* prev = nullptr;
+    ListNode* curr = list;
+    while (curr != nullptr) {
+      ListNode* temp = curr->next;
+      curr->next = prev;
+      prev = curr;
+      curr = temp;
+    }
+    list = prev;
+  }
+  ```
