@@ -24,7 +24,7 @@ const pages = resolvePageToggles({
 	// 书签导航页面开关
 	booknav: true,
 	// 哔哩哔哩追番页面开关
-	bilibili: false,
+	bilibili: true,
 	// 番组计划页面开关
 	bangumi: false,
 	// VNDB页面开关
@@ -65,9 +65,9 @@ export const siteConfig: SiteConfig = {
 	// 主题色
 	themeColor: {
 		// 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
-		hue: 165,
+		hue: 360,
 		// 默认模式："light" 亮色，"dark" 暗色，"system" 跟随系统
-		defaultMode: "system",
+		defaultMode: "light",
 	},
 
 	// 页面整体宽度（单位：rem）
@@ -239,7 +239,7 @@ export const siteConfig: SiteConfig = {
 	// ── Bilibili配置 ──────────────────────────────────
 	bilibili: {
 		// 你的 Bilibili 用户 UID
-		uid: "38932988",
+		uid: "1293086369",
 	},
 
 	// ── 番组计划bangumi配置 ──────────────────────────────────
