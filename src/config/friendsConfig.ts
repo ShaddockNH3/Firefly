@@ -24,14 +24,13 @@ export const friendsPageConfig: FriendsPageConfig = {
 export const friendsConfig: FriendLink[] = [
 	{
 		title: "Schariac125",
-		imgurl: 
-			"https://github.com/schariac125.png",
+		imgurl: "https://github.com/schariac125.png",
 		desc: "Schariac125's Blog",
 		siteurl: "https://schariac125.online/",
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-	}
+	},
 	/*
 	{
 		title: "夏夜流萤",

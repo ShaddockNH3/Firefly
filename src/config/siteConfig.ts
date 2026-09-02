@@ -49,8 +49,7 @@ export const siteConfig: SiteConfig = {
 	site_url: "https://blog.attilio.cc",
 
 	// 站点描述
-	description:
-		"波光粼粼的航路上的童话日常。",
+	description: "波光粼粼的航路上的童话日常。",
 	// 站点关键词
 	keywords: [
 		"Firefly",
