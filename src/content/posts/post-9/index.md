@@ -1,7 +1,7 @@
 ---
 title: 如何使用 AI
 published: 2026-09-08
-description: 
+description: "如何使用 AI"
 image: ./cover.png
 tags: [AI, API]
 category: AI
