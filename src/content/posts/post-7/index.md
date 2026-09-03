@@ -34,7 +34,7 @@ AI 时代，相信大家对 AI 都不陌生。
 
 以访问 deepseek web 端为例，进入 [deepseek 官网](https://chat.deepseek.com/)，登陆后进入这样的界面：
 
-[deepseek web 端界面](./assets/deepseek-web.png)
+![deepseek web 端界面](./assets/deepseek-web.png)
 
 直接在输入框内输入问题，等待 AI 的回答即可。
 
@@ -275,17 +275,13 @@ rikkahub 是专门针对手机端的 AI 工具，可以让你在手机上使用 
 - 官网地址：<https://rikka-ai.com/>
 - GitHub 仓库：<https://github.com/rikkahub/rikkahub>
 
-你可以在 [release](https://github.com/rikkahub/rikkahub/releases) 页面下载到最新版本的 rikkahub。
-
-下载下来之后，点击配置模型厂商，将上一节所说的奶龙 api 导入。
-
 ![rikkahub 设置](./assets/rikkahub-set.jpg)
 
-> 注意一下，一般而言对话的模型不需要开 response，这里只是示例用了 response。
+一般而言对话的模型不需要开 response，这里只是示例用了 response。
+
+![rikkahub 对话](./assets/rikkahub-use.jpg)
 
 通过默认助手，或者你配置的助手，和它进行聊天。
-
-![rikkahub 使用](./assets/rikkahub-use.jpg)
 
 需要注意的是，如果模型不支持图的识别，你需要额外在 rikkahub 中配置图的识别。
 
@@ -316,7 +312,7 @@ cherry studio 专门给 PC 使用，尤其适用于知识库的检索。
 
 SillyTavern 的特点是可以导入角色卡，从而让 AI 扮演某个角色。
 
-通常和 NFSW 场景相关，这里不进行展开。
+通常和 NSFW 场景相关，这里不进行展开。
 
 ## 使用 AI IDE / API 编程
 
@@ -408,11 +404,12 @@ Cursor 是唯一推荐的 AI IDE，但其价格昂贵，依旧不如直接使用
 - 腾讯混元开放平台：<https://console.cloud.tencent.com/hunyuan>
 - 腾讯 CodeBuddy 官网：<https://codebuddy.tencent.com/>
 
-#### kimi + 专武
+#### kimi + kimicode
 
 - Moonshot 开放平台：<https://platform.kimi.com/>
 - 接口文档地址：<https://platform.kimi.com/docs/overview>
 - Kimi 官网入口：<https://www.kimi.com/>
+- Kimi Code：<https://github.com/MoonshotAI/kimi-code>
 
 #### codex
 
