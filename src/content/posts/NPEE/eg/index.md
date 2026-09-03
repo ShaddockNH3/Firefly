@@ -5,7 +5,6 @@ description: 考研冲刺前的总结 —— 英语 2
 tags: [英语, 考研, 总结]
 category: 考研
 draft: true
-image: ./cover.png
 series: "考研冲刺前的总结"
 seriesOrder: 7
 ---
@@ -33,6 +32,8 @@ seriesOrder: 7
 意思相同同时不选。
 
 首段首句为全文中心，段落首句为段落中心。
+
+感觉后面再看课没什么意义了，就这样吧。
 
 ## 阅读
 

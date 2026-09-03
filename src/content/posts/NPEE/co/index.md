@@ -5,6 +5,7 @@ description: 考研冲刺前的总结 —— 计算机组成原理
 tags: [计算机组成原理, 考研, 总结]
 category: 考研
 draft: false
+image: ./cover.png
 series: "考研冲刺前的总结"
 seriesOrder: 4
 ---
