@@ -5,6 +5,7 @@ description: 考研冲刺前的总结 —— 数学 2 高数
 tags: [数学, 考研, 总结]
 category: 考研
 draft: false
+image: ./cover.png
 series: "考研冲刺前的总结"
 seriesOrder: 1
 ---
