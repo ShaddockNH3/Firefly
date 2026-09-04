@@ -25,10 +25,19 @@ export const friendsConfig: FriendLink[] = [
 	{
 		title: "Schariac125",
 		imgurl: "https://github.com/schariac125.png",
-		desc: "Schariac125's Blog",
+		desc: "雌小🍊",
 		siteurl: "https://schariac125.online/",
 		tags: ["Blog"],
 		weight: 10,
+		enabled: true,
+	},
+	{
+		title: "CuteBread",
+		imgurl: "https://github.com/CuteBreadCat.png",
+		desc: "小🍞",
+		siteurl: "https://breadtut.me",
+		tags: ["Blog"],
+		weight: 9,
 		enabled: true,
 	},
 	/*
