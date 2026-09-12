@@ -6,7 +6,7 @@ tags: [数据结构, 考研, 总结]
 category: 考研
 draft: false
 image: ./cover.png
-series: "考研冲刺前的总结"
+series: "考研"
 seriesOrder: 3
 ---
 

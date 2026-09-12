@@ -6,7 +6,7 @@ tags: [线代, 考研, 总结]
 category: 考研
 draft: false
 image: ./cover.png
-series: "考研冲刺前的总结"
+series: "考研"
 seriesOrder: 2
 ---
 
@@ -93,6 +93,14 @@ $r(AB) \le \min(r(A), r(B))$。
 ### AB=BA 可以怎么用
 
 利用特征值。
+
+### 计算 PA=B 和 AX=B
+
+| 目标形式 | 核心未知量 | 构造的分块矩阵 | 允许的操作方式 | 终极目标形态 | 核心原理解析 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **$AX = B$** | $X$（解向量/右乘） | **$[A \mid B]$** | **仅初等行变换** | **$[E \mid X]$** | $A^{-1}[A \mid B] = [E \mid A^{-1}B]$ |
+| **$PA = B$** | $P$（变换核/左乘） | **$[A \mid E]$** | **仅初等行变换** | **$[B \mid P]$** | $P[A \mid E] = [PA \mid P] = [B \mid P]$ |
+| **$YA = B$** | $Y$（解矩阵/左乘） | **$\begin{bmatrix} A \\ E \end{bmatrix}$** | **仅初等列变换** | **$\begin{bmatrix} B \\ Y \end{bmatrix}$** | $\begin{bmatrix} A \\ E \end{bmatrix} A^{-1} = \begin{bmatrix} E \\ A^{-1} \end{bmatrix}$ |
 
 ## 向量组
 

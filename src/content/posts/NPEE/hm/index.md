@@ -6,7 +6,7 @@ tags: [数学, 考研, 总结]
 category: 考研
 draft: false
 image: ./cover.png
-series: "考研冲刺前的总结"
+series: "考研"
 seriesOrder: 1
 ---
 
@@ -652,6 +652,8 @@ f\left(u+i\cdot\frac{v-u}{n}\right)\cdot\frac{v-u}{n}
 $$
 
 ![880](./assets/p17.png)
+
+此外，在做这类题的时候，一定要完完整整的把步骤写出来，不可以利用夹逼定理只放缩一边就说极限是这个，事实上可能两边夹出来不一样，导致错误。
 
 ### 积分概念辨析
 
