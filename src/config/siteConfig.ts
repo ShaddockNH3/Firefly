@@ -26,7 +26,7 @@ const pages = resolvePageToggles({
 	// 哔哩哔哩追番页面开关
 	bilibili: true,
 	// 番组计划页面开关
-	bangumi: false,
+	bangumi: true,
 	// VNDB页面开关
 	vndb: false,
 	// MyAnimeList页面开关
@@ -244,7 +244,7 @@ export const siteConfig: SiteConfig = {
 	// ── 番组计划bangumi配置 ──────────────────────────────────
 	bangumi: {
 		// Bangumi用户ID
-		userId: "1143164",
+		userId: "1281832",
 		// 数据模式：static=构建时获取，dynamic=客户端实时获取
 		// static 模式在构建时获取数据并静态渲染，部署后数据不更新
 		// dynamic 模式在浏览器中实时请求 API，始终显示最新数据
@@ -262,7 +262,7 @@ export const siteConfig: SiteConfig = {
 		// 	game: false, // 禁用游戏分类显示
 		// },
 		// NSFW 处理："off" 不过滤 | "blur" 仅模糊封面 | "hide" 隐藏条目
-		nsfw: "hide",
+		nsfw: "off",
 	},
 
 	// ── VNDB配置 ──────────────────────────────────
