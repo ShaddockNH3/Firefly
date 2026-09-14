@@ -214,10 +214,15 @@ Hugging Face 更多是作为 NLP 开源模型的集散地，大家日常打比�
 
 Claude Code，Codex 各种纯自动化工具接管了终端与部署链条。人类程序员正不可逆转地从敲代码的搬砖工转型为审核逻辑的架构师与给 Agent 擦屁股的运维员。
 
-<details>
-<summary style="cursor: pointer; color: #eab308; font-weight: bold; padding: 8px; border: 1px dashed #ca8a04; border-radius: 6px; user-select: none;">
+<!-- 1. 点击控制条 -->
+<div 
+  onclick="var c = document.getElementById('draft-content'); if(c.style.display==='none'){c.style.display='block'; this.innerText='🔼 折叠施工草稿';}else{c.style.display='none'; this.innerText='⚠️ 施工预警：2026 西二学习路线分析（点击展开预览草稿）';}"
+  style="cursor: pointer; background: rgba(234, 179, 8, 0.1); color: #ca8a04; font-weight: bold; padding: 12px; border: 1px dashed #ca8a04; border-radius: 8px; text-align: center; user-select: none; margin: 20px 0;"
+>
   ⚠️ 施工预警：2026 西二学习路线分析（点击展开预览草稿）
-</summary>
+</div>
+<!-- 2. 默认被 display: none 彻底锁死的大段正文 -->
+<div id="draft-content" style="display: none; border-left: 2px dashed #ca8a04; padding-left: 16px; margin-top: 16px;">
 
 ## 2026 学习指南
 
@@ -395,7 +400,7 @@ AI 应用
 
 由于本人的经历与精力限制，并没有涉猎。
 
-</details>
+</div>
 
 ## 结语：在不确定的浪潮中锚定自己的坐标
 
