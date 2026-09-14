@@ -42,7 +42,7 @@ AI 以 Python 的躯体降临，宣告一个新纪元的破晓。
 
 ```mermaid
 graph TD
-    % 2024 版 AI 学习路线总览
+    %% 2024 版 AI 学习路线总览
     A[Python 语法基础与面向对象] --> B[爬虫与简单数据分析] --> C[AI 底层学习]
 ```
 
@@ -214,7 +214,10 @@ Hugging Face 更多是作为 NLP 开源模型的集散地，大家日常打比�
 
 Claude Code，Codex 各种纯自动化工具接管了终端与部署链条。人类程序员正不可逆转地从敲代码的搬砖工转型为审核逻辑的架构师与给 Agent 擦屁股的运维员。
 
-<CollapseDraft title="⚠️ 施工预警：2026 西二学习路线分析（点击查看）">
+<details>
+<summary style="cursor: pointer; color: #eab308; font-weight: bold; padding: 8px; border: 1px dashed #ca8a04; border-radius: 6px; user-select: none;">
+  ⚠️ 施工预警：2026 西二学习路线分析（点击展开预览草稿）
+</summary>
 
 ## 2026 学习指南
 
@@ -392,7 +395,7 @@ AI 应用
 
 由于本人的经历与精力限制，并没有涉猎。
 
-</CollapseDraft>
+</details>
 
 ## 结语：在不确定的浪潮中锚定自己的坐标
 
