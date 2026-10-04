@@ -5,15 +5,15 @@ export const spineModelConfig: SpineModelConfig = {
 	// Spine 看板娘开关
 	enable: false,
 
-	// Spine模型配置
+	// Spine 模型配置
 	model: {
-		// Spine模型文件路径
+		// Spine 模型文件路径
 		path: "/pio/models/spine/firefly/1310.json",
 		// 模型缩放比例
 		scale: 1.0,
-		// X轴偏移
+		// X 轴偏移
 		x: 0,
-		// Y轴偏移
+		// Y 轴偏移
 		y: 0,
 	},
 
@@ -21,9 +21,9 @@ export const spineModelConfig: SpineModelConfig = {
 	position: {
 		// 显示位置 bottom-left，bottom-right，top-left，top-right，注意：在右下角可能会挡住返回顶部按钮
 		corner: "bottom-left",
-		// 距离边缘0px
+		// 距离边缘 0px
 		offsetX: 0,
-		// 距离下边缘0px
+		// 距离下边缘 0px
 		offsetY: 0,
 	},
 
@@ -89,15 +89,15 @@ export const live2dWidgetConfig: Live2DWidgetConfig = {
 	// 模型配置，支持单个模型或数组（多模型切换）
 	model: [
 		{
-			// Live2D模型本地文件路径
+			// Live2D 模型本地文件路径
 			path: "/pio/models/live2d/snow_miku/model.json",
-			// 动作声音音量 范围0~1，默认 0（静音）
+			// 动作声音音量 范围 0~1，默认 0（静音）
 			volume: 0,
 			// 模型缩放比例
 			scale: 1,
-			// X轴偏移，范围 -2~2，正值向右
+			// X 轴偏移，范围 -2~2，正值向右
 			x: 0,
-			// Y轴偏移，范围 -2~2，正值向上
+			// Y 轴偏移，范围 -2~2，正值向上
 			y: 0,
 		},
 		{

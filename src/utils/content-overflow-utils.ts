@@ -4,7 +4,7 @@
  */
 
 function initCustomScrollbar(): void {
-	// 只处理katex元素的滚动条，使用浏览器原生滚动条
+	// 只处理 katex 元素的滚动条，使用浏览器原生滚动条
 	const katexElements = document.querySelectorAll(
 		".katex-display:not([data-scrollbar-initialized])",
 	) as NodeListOf<HTMLElement>;

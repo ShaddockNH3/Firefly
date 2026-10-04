@@ -61,7 +61,7 @@ export function initLayout(): void {
 	initScroll();
 	initTouchCodeCopyReveal();
 
-	// 页面加载完成后初始化banner和内容溢出容器
+	// 页面加载完成后初始化 banner 和内容溢出容器
 	if (document.readyState === "loading") {
 		document.addEventListener("DOMContentLoaded", () => {
 			scheduleContentOverflowEnhancements();

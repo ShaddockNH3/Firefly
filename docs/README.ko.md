@@ -59,15 +59,15 @@
 
 >[!TIP]
 >
->Firefly는 Astro 프레임워크와 Fuwari 템플릿을 기반으로 개발된 산뜻하고 아름다운 현대식 개인 블로그 테마 템플릿입니다. 기술 애호가와 콘텐츠 제작자를 위해 설계되었으며, 현대적인 웹 기술 스택과 다양한 기능 모듈, 자유롭게 사용자 지정할 수 있는 인터페이스를 제공하여 전문적이고 보기 좋은 개인 블로그를 손쉽게 만들 수 있습니다.
+>Firefly 는 Astro 프레임워크와 Fuwari 템플릿을 기반으로 개발된 산뜻하고 아름다운 현대식 개인 블로그 테마 템플릿입니다. 기술 애호가와 콘텐츠 제작자를 위해 설계되었으며, 현대적인 웹 기술 스택과 다양한 기능 모듈, 자유롭게 사용자 지정할 수 있는 인터페이스를 제공하여 전문적이고 보기 좋은 개인 블로그를 손쉽게 만들 수 있습니다.
 >
->**Firefly의 컴포넌트 디자인이나 관련 코드를 참고하거나 사용하는 경우, 출처가 Firefly임을 밝혀 주세요.**
+>**Firefly 의 컴포넌트 디자인이나 관련 코드를 참고하거나 사용하는 경우, 출처가 Firefly 임을 밝혀 주세요.**
 >
->Firefly는 원본 fuwari 레이아웃도 유지하고 있어 구성 파일에서 취향에 맞게 자유롭게 전환할 수 있습니다.
+>Firefly 는 원본 fuwari 레이아웃도 유지하고 있어 구성 파일에서 취향에 맞게 자유롭게 전환할 수 있습니다.
 >
 >**더 많은 레이아웃 구성과 데모는 [Firefly 레이아웃 시스템 상세 안내](https://firefly.cuteleaf.cn/posts/guide/firefly-layout-system/)를 확인해 주세요.**
 >
->Firefly는 i18n 다국어 UI를 지원하지만, 중국어 간체를 제외한 언어는 AI로 번역되었습니다. 오류를 발견하면 [Pull Request](https://github.com/CuteLeaf/Firefly/pulls)를 보내 개선에 참여해 주세요.
+>Firefly 는 i18n 다국어 UI 를 지원하지만, 중국어 간체를 제외한 언어는 AI 로 번역되었습니다. 오류를 발견하면 [Pull Request](https://github.com/CuteLeaf/Firefly/pulls)를 보내 개선에 참여해 주세요.
 
 ## ✨ 기능
 
@@ -76,12 +76,12 @@
 - [x] **Astro + Tailwind CSS** - 현대적인 기술 스택을 기반으로 한 초고속 정적 사이트 생성
 - [x] **부드러운 애니메이션** - Swup 페이지 전환 애니메이션으로 매끄러운 탐색 환경 제공
 - [x] **반응형 디자인** - 데스크톱, 태블릿, 모바일 기기에 완벽하게 대응
-- [x] **다국어 지원** - i18n 국제화 UI로 중국어 간체, 중국어 번체, 영어, 일본어, 러시아어, 한국어 지원
+- [x] **다국어 지원** - i18n 국제화 UI 로 중국어 간체, 중국어 번체, 영어, 일본어, 러시아어, 한국어 지원
 - [x] **전문 검색** - Pagefind 기반 클라이언트 검색과 게시물 콘텐츠 색인 지원
 
 ### 개인화
 - [x] **동적 사이드바** - 단일 및 이중 사이드바 구성 지원
-- [x] **게시물 레이아웃** - 목록(단일 열) 및 그리드(다중 열/메이슨리) 레이아웃 지원
+- [x] **게시물 레이아웃** - 목록 (단일 열) 및 그리드 (다중 열/메이슨리) 레이아웃 지원
 - [x] **글꼴 관리** - 사용자 지정 글꼴과 다양한 글꼴 선택기 지원
 - [x] **푸터 구성** - HTML 콘텐츠 삽입을 통한 완전한 사용자 지정
 - [x] **라이트/다크 모드** - 라이트, 다크, 시스템 설정 따르기 모드 지원
@@ -107,7 +107,7 @@
    cd Firefly
    ```
 
-   **먼저 자신의 저장소로 [Fork](https://github.com/CuteLeaf/Firefly/fork)한 다음 복제하는 것을 권장합니다. Fork 전에 Star를 누르는 것도 잊지 마세요!**
+   **먼저 자신의 저장소로 [Fork](https://github.com/CuteLeaf/Firefly/fork)한 다음 복제하는 것을 권장합니다. Fork 전에 Star 를 누르는 것도 잊지 마세요!**
 
    ```bash
    git clone https://github.com/you-github-name/Firefly.git
@@ -238,13 +238,13 @@ location: China # Location
 일상 내용은 Markdown을 지원합니다.
 ```
 
-[Memos](https://www.usememos.com/)를 데이터 소스로 사용할 수도 있습니다. `src/config/dynamicConfig.ts`의 `memos` 옵션을 구성하면 고정 항목 동기화와 이미지 첨부 표시를 지원하면서 Memos의 일상을 실시간으로 가져옵니다. 자세한 내용은 [일상 문서](https://docs-firefly.cuteleaf.cn/en/guide/dynamic.html)를 확인하세요.
+[Memos](https://www.usememos.com/)를 데이터 소스로 사용할 수도 있습니다. `src/config/dynamicConfig.ts`의 `memos` 옵션을 구성하면 고정 항목 동기화와 이미지 첨부 표시를 지원하면서 Memos 의 일상을 실시간으로 가져옵니다. 자세한 내용은 [일상 문서](https://docs-firefly.cuteleaf.cn/en/guide/dynamic.html)를 확인하세요.
 
 ## 🧩 Markdown 확장 문법
 
-Astro가 기본으로 지원하는 [GitHub Flavored Markdown](https://github.github.com/gfm/) 외에도 다음과 같은 Markdown 기능을 제공합니다.
+Astro 가 기본으로 지원하는 [GitHub Flavored Markdown](https://github.github.com/gfm/) 외에도 다음과 같은 Markdown 기능을 제공합니다.
 
-- 알림 블록(Admonitions) - GitHub, Obsidian, VitePress, Docusaurus 테마 구성 지원 ([미리 보기 및 사용법](https://firefly.cuteleaf.cn/posts/markdown-extended/))
+- 알림 블록 (Admonitions) - GitHub, Obsidian, VitePress, Docusaurus 테마 구성 지원 ([미리 보기 및 사용법](https://firefly.cuteleaf.cn/posts/markdown-extended/))
 - GitHub 저장소 카드 ([미리 보기 및 사용법](https://firefly.cuteleaf.cn/posts/markdown-extended/))
 - Expressive Code 기반의 향상된 코드 블록 ([미리 보기](http://firefly.cuteleaf.cn/posts/code-examples/) / [문서](https://expressive-code.com/))
 
@@ -259,16 +259,16 @@ Astro가 기본으로 지원하는 [GitHub Flavored Markdown](https://github.git
 | `pnpm build`               | 사이트를 `./dist/`에 빌드                           |
 | `pnpm preview`             | 빌드된 사이트를 로컬에서 미리 보기                  |
 | `pnpm check`               | 코드 오류 검사                                      |
-| `pnpm format`              | Biome으로 코드 서식 정리                            |
+| `pnpm format`              | Biome 으로 코드 서식 정리                            |
 | `pnpm new-post <filename>` | 새 게시물 생성                                      |
 | `pnpm new-d <content>`     | 새 일상 생성                                        |
-| `pnpm new-dynamic <content>` | 새 일상 생성(전체 명령)                           |
+| `pnpm new-dynamic <content>` | 새 일상 생성 (전체 명령)                           |
 | `pnpm astro ...`           | `astro add`, `astro check` 및 기타 명령 실행         |
 | `pnpm astro --help`        | Astro CLI 도움말 표시                               |
 
 ## 🙏 감사의 말
 
-Firefly의 2차 개발 기반이 된 [fuwari](https://github.com/saicaca/fuwari) 템플릿을 개발한 [saicaca](https://github.com/saicaca) 님께 특별히 감사드립니다.
+Firefly 의 2 차 개발 기반이 된 [fuwari](https://github.com/saicaca/fuwari) 템플릿을 개발한 [saicaca](https://github.com/saicaca) 님께 특별히 감사드립니다.
 
 Firefly 관련 이미지 에셋의 저작권은 게임 ["붕괴: 스타레일"](https://sr.mihoyo.com/)의 개발사인 [miHoYo](https://www.mihoyo.com/)에 있습니다.
 
@@ -293,7 +293,7 @@ Firefly 관련 이미지 에셋의 저작권은 게임 ["붕괴: 스타레일"](
 
 이 프로젝트는 [MIT 라이선스](https://mit-license.org/)에 따라 배포됩니다. 자세한 내용은 [LICENSE](../LICENSE) 파일을 확인하세요.
 
-원래 [saicaca/fuwari](https://github.com/saicaca/fuwari)에서 fork되었습니다. 기여해 주신 원작자에게 감사드립니다.
+원래 [saicaca/fuwari](https://github.com/saicaca/fuwari)에서 fork 되었습니다. 기여해 주신 원작자에게 감사드립니다.
 
 **저작권 고지:**
 - Copyright (c) 2024 [saicaca](https://github.com/saicaca) - [fuwari](https://github.com/saicaca/fuwari)

@@ -6,7 +6,7 @@ export type MusicPlayerConfig = {
 	// 默认音量 (0-1)
 	volume?: number;
 
-	// 播放模式：'list'=列表循环, 'one'=单曲循环, 'random'=随机播放
+	// 播放模式：'list'=列表循环，'one'=单曲循环，'random'=随机播放
 	playMode?: "list" | "one" | "random";
 
 	// 是否显示歌词
@@ -23,10 +23,10 @@ export type MusicPlayerConfig = {
 		// Meting API 地址
 		api?: string;
 
-		// 音乐平台：netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
+		// 音乐平台：netease=网易云音乐，tencent=QQ 音乐，kugou=酷狗音乐，xiami=虾米音乐，baidu=百度音乐
 		server?: "netease" | "tencent" | "kugou" | "xiami" | "baidu";
 
-		// 类型：song=单曲, playlist=歌单, album=专辑, search=搜索, artist=艺术家
+		// 类型：song=单曲，playlist=歌单，album=专辑，search=搜索，artist=艺术家
 		type?: "song" | "playlist" | "album" | "search" | "artist";
 
 		// 歌单/专辑/单曲 ID 或搜索关键词

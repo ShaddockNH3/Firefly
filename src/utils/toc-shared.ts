@@ -18,9 +18,9 @@ export interface TocInput {
 export interface TocItem {
 	headingId: string;
 	href: string;
-	/** 0=最浅层, 1=次层, 2=更深层，对应 .toc-level-* */
+	/** 0=最浅层，1=次层，2=更深层，对应 .toc-level-* */
 	depthLevel: 0 | 1 | 2;
-	/** index=编号徽章, dot=圆点, dot-sm=小圆点 */
+	/** index=编号徽章，dot=圆点，dot-sm=小圆点 */
 	badgeKind: "index" | "dot" | "dot-sm";
 	/** badgeKind 为 index 时的编号（从 1 递增） */
 	badgeIndex?: number;

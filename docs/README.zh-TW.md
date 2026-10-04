@@ -17,7 +17,7 @@
 > 
 > [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z41NQALY)
 >
-> **QQ交流群：[1087127207](https://qm.qq.com/q/ZGsFa8qX2G)**
+> **QQ 交流群：[1087127207](https://qm.qq.com/q/ZGsFa8qX2G)**
 > 
 > ![GitHub License](https://img.shields.io/github/license/CuteLeaf/Firefly)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/CuteLeaf/Firefly)
@@ -35,13 +35,13 @@
 [**📝使用文檔**](https://docs-firefly.cuteleaf.cn/) /
 [**🍀我的部落格**](https://blog.cuteleaf.cn) 
 
-⚡ 靜態站點生成: 基於 Astro 的超快載入速度和 SEO 優化
+⚡ 靜態站點生成：基於 Astro 的超快載入速度和 SEO 優化
 
-🎨 現代化設計: 簡潔美觀的介面，支援自訂主題色
+🎨 現代化設計：簡潔美觀的介面，支援自訂主題色
 
-📱 行動裝置友善: 完美的響應式體驗，行動端專項優化
+📱 行動裝置友善：完美的響應式體驗，行動端專項優化
 
-🔧 高度可配置: 大部分功能模組均可透過配置檔案自訂
+🔧 高度可配置：大部分功能模組均可透過配置檔案自訂
 
 <table width="100%" align="center">
   <tr>
@@ -77,12 +77,12 @@
 - [x] **Astro + Tailwind CSS** - 基於現代技術堆疊的超快靜態站點生成
 - [x] **流暢動畫** - Swup 頁面過渡動畫，提供絲滑的瀏覽體驗
 - [x] **響應式設計** - 完美適配桌面端、平板和行動裝置
-- [x] **多語言支援** - i18n 國際化UI，支援簡體中文、繁體中文、英文、日文、俄語、韓文
+- [x] **多語言支援** - i18n 國際化 UI，支援簡體中文、繁體中文、英文、日文、俄語、韓文
 - [x] **全文搜尋** - 基於 Pagefind 的客戶端搜尋，支援文章內容索引。
 
 ### 個性化
 - [x] **動態側邊欄** - 支援配置單側邊欄、雙側邊欄
-- [x] **文章版面配置** - 支援配置(單列)列表、網格(多列/瀑布流)版面配置
+- [x] **文章版面配置** - 支援配置 (單列) 列表、網格 (多列/瀑布流) 版面配置
 - [x] **字型管理** - 支援自訂字型，豐富的字型選擇器
 - [x] **頁尾配置** - HTML 內容注入，完全自訂
 - [x] **亮暗色模式** - 支援亮色/暗色/跟隨系統三種模式
@@ -154,7 +154,7 @@ Cloudflare Workers 部署：[【不用服务器，无需备案，零成本搭建
 
 ## 📖 配置說明
 
-> 📚 **詳細配置文檔**: 查看 [Firefly使用文檔](https://docs-firefly.cuteleaf.cn/) 獲取完整的配置指南
+> 📚 **詳細配置文檔**: 查看 [Firefly 使用文檔](https://docs-firefly.cuteleaf.cn/) 獲取完整的配置指南
 
 ### 設定網站語言
 
@@ -289,7 +289,7 @@ location: China # 位置
 
 ### 其他參考
 - 部落客`霞葉`的 [Bangumi 收藏](https://kasuha.com/posts/fuwari-enhance-ep2/) 頁面元件
-- 嗶哩嗶哩up主 `公公的日常` 的Q版 [流螢看板娘 Spine 切片資料](https://www.bilibili.com/video/BV1fuVzzdE5y)
+- 嗶哩嗶哩 up 主 `公公的日常` 的 Q 版 [流螢看板娘 Spine 切片資料](https://www.bilibili.com/video/BV1fuVzzdE5y)
 
 ## 📝 許可協議
 

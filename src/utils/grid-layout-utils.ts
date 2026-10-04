@@ -103,7 +103,7 @@ export function updateMainGridCols(): void {
 	for (const cls of newGridClasses.split(" "))
 		if (cls) mainGrid.classList.add(cls);
 
-	// position为right时，swup导航不会替换静态元素的class，需手动更新列定位
+	// position 为 right 时，swup 导航不会替换静态元素的 class，需手动更新列定位
 	if (sidebarPosition === "right") {
 		const rightSidebar = document.getElementById("right-sidebar");
 		const swupContainer = document.getElementById("swup-container");
@@ -111,7 +111,7 @@ export function updateMainGridCols(): void {
 		const footer = mainGrid.querySelector(".footer");
 
 		if (shouldBothSidebars) {
-			// 文章页临时双侧栏：主内容移到第2列，右侧栏移到第3列，页脚居中
+			// 文章页临时双侧栏：主内容移到第 2 列，右侧栏移到第 3 列，页脚居中
 			clearColPositioning(swupContainer, swupWrapper, footer);
 			swupContainer?.classList.add(
 				"md:col-start-2",
@@ -122,7 +122,7 @@ export function updateMainGridCols(): void {
 			rightSidebar?.classList.add("xl:col-start-3");
 			footer?.classList.add("md:col-start-2", "xl:col-start-2");
 		} else {
-			// 非文章页：恢复2列布局定位（右侧栏保持 md:col-start-2 不变）
+			// 非文章页：恢复 2 列布局定位（右侧栏保持 md:col-start-2 不变）
 			clearColPositioning(swupContainer, swupWrapper, footer);
 			rightSidebar?.classList.remove("xl:col-start-3");
 			swupContainer?.classList.add("md:col-start-1");

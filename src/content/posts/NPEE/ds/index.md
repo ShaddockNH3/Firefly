@@ -2,7 +2,7 @@
 title: 考研冲刺前的总结 —— 数据结构
 published: 2026-09-01
 description: 考研冲刺前的总结 —— 数据结构
-tags: [数据结构, 考研, 总结]
+tags: [数据结构，考研，总结]
 category: 考研
 draft: false
 image: ./cover.png
@@ -1110,7 +1110,7 @@ void unite(int x, int y) {
 
 对于这种题，一定是要注意题设给的条件，比如说权值最小的边的总数，或者干脆权值各不相同。
 
-所以上述是 “可能” 不一样。
+所以上述是“可能”不一样。
 
 #### 最短路径
 
@@ -1405,7 +1405,7 @@ B+ 树：叶子结点包含全树的所有关键字全集；出现在内部结�
 最后需要注意的是，B 树和 B+ 树的树高都不要把空指针或空结点计入。
 B 树的叶子结点可以存储关键字和数据记录；B+ 树的实际数据记录统一存储在叶子结点。
 
-叶子节点指的是 “空” 结点，即非索引结点，为数据结点。
+叶子节点指的是“空”结点，即非索引结点，为数据结点。
 
 ### 散列表
 
@@ -2030,7 +2030,7 @@ bool TopologicalSort(ALGraph G) {
 
     int queue[MAX_VERTEX_NUM], front = 0, rear = 0;
     for (int i = 0; i < G.vexnum; i++) {
-        if (indegree[i] == 0) queue[rear++] = i; // 入度为0入队
+        if (indegree[i] == 0) queue[rear++] = i; // 入度为 0 入队
     }
 
     int count = 0;
@@ -2041,11 +2041,11 @@ bool TopologicalSort(ALGraph G) {
         for (ArcNode *p = G.vertices[u].firstarc; p != NULL; p = p->nextarc) {
             int v = p->adjvex;
             if (--indegree[v] == 0) {
-                queue[rear++] = v; // 入度减为0入队
+                queue[rear++] = v; // 入度减为 0 入队
             }
         }
     }
-    return count == G.vexnum; // 若count等于顶点数，说明无环
+    return count == G.vexnum; // 若 count 等于顶点数，说明无环
 }
 ```
 
@@ -2060,7 +2060,7 @@ bool TopologicalSort(ALGraph G) {
   - 每次队头出队，遍历其所有未访问过的邻接点，更新邻接点距离为当前距离加 1，记录前驱并将其入队。
 
 ```c
-// BFS求无权图单源最短路径
+// BFS 求无权图单源最短路径
 void BFS_ShortestPath(Graph G, int u) {
     int d[MAX_VERTEX_NUM];       // 存储到各结点的最短路径长度
     int path[MAX_VERTEX_NUM];    // 存储路径前驱
@@ -2080,7 +2080,7 @@ void BFS_ShortestPath(Graph G, int u) {
         int curr = queue[front++];
         for (int w = FirstNeighbor(G, curr); w >= 0; w = NextNeighbor(G, curr, w)) {
             if (!visited[w]) {
-                d[w] = d[curr] + 1;  // 路径长度加1
+                d[w] = d[curr] + 1;  // 路径长度加 1
                 path[w] = curr;      // 记录前驱
                 visited[w] = true;
                 queue[rear++] = w;
@@ -2101,7 +2101,7 @@ void BFS_ShortestPath(Graph G, int u) {
   - 递归返回时完成回溯。
 
 ```c
-// DFS遍历图及应用（统计连通分量）
+// DFS 遍历图及应用（统计连通分量）
 bool visited[MAX_VERTEX_NUM] = {false};
 
 void DFS(Graph G, int v) {
@@ -2120,7 +2120,7 @@ int DFSTraverse(Graph G) {
     for (int v = 0; v < G.vexnum; v++) {
         if (!visited[v]) {
             DFS(G, v);
-            component_count++; // 每次DFS调用完代表发现一个新的连通分量
+            component_count++; // 每次 DFS 调用完代表发现一个新的连通分量
         }
     }
     return component_count;
@@ -2317,7 +2317,7 @@ $WPL = \sum_{i=1}^{n} w_i \times l_i$
 
 传统方法（内部快排等）：每次只能把内存装满 $w$ 个数据，排好序直接输出为一段。所以每个归并段的长度固定就是 $w$。
 
-置换-选择排序：由于新读入的数据只要 $\ge MIN$ 就能顺带输出，归并段就像“扫雪机”一样一边走一边往前推：
+置换 - 选择排序：由于新读入的数据只要 $\ge MIN$ 就能顺带输出，归并段就像“扫雪机”一样一边走一边往前推：
 
 平均长度：约为内存容量的 $2w$；
 

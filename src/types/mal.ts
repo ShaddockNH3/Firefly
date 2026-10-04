@@ -25,7 +25,7 @@ export type MalNode = {
 	main_picture?: MalMainPicture | null;
 	alternative_titles?: MalAlternativeTitles | null;
 	mean?: number | null; // 0-10，null 表示评分不足
-	media_type?: string; // 动画: "tv" | "movie" | "ova" | ...；漫画: "manga" | "manhwa" | "novel" | ...
+	media_type?: string; // 动画："tv" | "movie" | "ova" | ...；漫画："manga" | "manhwa" | "novel" | ...
 	genres?: MalGenre[];
 	start_date?: string; // 漫画起始日期
 	status?: string; // 连载状态 "currently_airing" | "finished_airing" | "publishing" | ...
@@ -38,7 +38,7 @@ export type MalNode = {
 };
 
 export type MalListStatus = {
-	status?: string; // 动画: "watching" | "completed" | "on_hold" | "dropped" | "plan_to_watch"；漫画: "reading" | ... | "plan_to_read"
+	status?: string; // 动画："watching" | "completed" | "on_hold" | "dropped" | "plan_to_watch"；漫画："reading" | ... | "plan_to_read"
 	score?: number; // 0-10，0 表示未评分
 	updated_at?: string;
 	start_date?: string;

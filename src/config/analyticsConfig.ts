@@ -9,7 +9,7 @@ export const analyticsConfig: AnalyticsConfig = {
 	umamiAnalytics: {
 		// Umami Website ID
 		websiteId: "",
-		// Umami JS地址，支持使用自建
+		// Umami JS 地址，支持使用自建
 		scriptUrl: "https://cloud.umami.is/script.js",
 		// Umami 会话回放脚本地址，支持使用自建
 		replaysScriptUrl: "https://cloud.umami.is/recorder.js",
@@ -41,7 +41,7 @@ export const analyticsConfig: AnalyticsConfig = {
 		ck: "",
 		// 是否开启事件分析功能
 		autoTrack: false,
-		//  Hash路由模式, 项目使用History API路由, 所以不必开启默认false
+		//  Hash 路由模式，项目使用 History API 路由，所以不必开启默认 false
 		hashMode: false,
 		// 是否开启网站录屏功能
 		screenRecord: true,

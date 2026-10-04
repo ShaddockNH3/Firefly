@@ -13,7 +13,7 @@
     { "name": "root", "scaleX": 0.9, "scaleY": 0.9 },
     { "name": "身体", "parent": "root", "x": 0.67, "y": 246.84 },
     {
-      "name": "身体28",
+      "name": "身体 28",
       "parent": "身体",
       "length": 95.22,
       "x": 0.14,
@@ -21,16 +21,16 @@
       "color": "007effff"
     },
     {
-      "name": "身体2",
-      "parent": "身体28",
+      "name": "身体 2",
+      "parent": "身体 28",
       "length": 275.55,
       "rotation": 90,
       "x": -1.42,
       "y": -0.2
     },
     {
-      "name": "身体31",
-      "parent": "身体2",
+      "name": "身体 31",
+      "parent": "身体 2",
       "length": 104.57,
       "rotation": 51.93,
       "x": 275.94,
@@ -38,16 +38,16 @@
       "color": "007effff"
     },
     {
-      "name": "身体3",
-      "parent": "身体31",
+      "name": "身体 3",
+      "parent": "身体 31",
       "length": 103.33,
       "rotation": -51.93,
       "x": -1.47,
       "y": -0.65
     },
     {
-      "name": "身体32",
-      "parent": "身体3",
+      "name": "身体 32",
+      "parent": "身体 3",
       "length": 111.38,
       "rotation": 50.78,
       "x": 102.56,
@@ -55,8 +55,8 @@
       "color": "007effff"
     },
     {
-      "name": "身体4",
-      "parent": "身体32",
+      "name": "身体 4",
+      "parent": "身体 32",
       "length": 274.38,
       "rotation": -49.18,
       "x": 0.05,
@@ -72,15 +72,15 @@
       "y": -107.91
     },
     {
-      "name": "左大腿2",
+      "name": "左大腿 2",
       "parent": "左大腿",
       "length": 269.2,
       "rotation": -105.17,
       "x": 268.87
     },
     {
-      "name": "左大腿3",
-      "parent": "左大腿2",
+      "name": "左大腿 3",
+      "parent": "左大腿 2",
       "length": 128.21,
       "rotation": -9.8,
       "x": 268.69,
@@ -96,23 +96,23 @@
       "y": -110.94
     },
     {
-      "name": "右大腿2",
+      "name": "右大腿 2",
       "parent": "右大腿",
       "length": 280.83,
       "rotation": -85.18,
       "x": 246.68
     },
     {
-      "name": "右大腿3",
-      "parent": "右大腿2",
+      "name": "右大腿 3",
+      "parent": "右大腿 2",
       "length": 126.95,
       "rotation": -2.38,
       "x": 280.83,
       "color": "abe323ff"
     },
-    { "name": "身体5", "parent": "右大腿", "x": 268.45, "y": 62.44 },
-    { "name": "左大腿4", "parent": "左大腿", "x": 125.1, "y": 13.15 },
-    { "name": "身体6", "parent": "身体", "x": -148.2, "y": -97.81 },
+    { "name": "身体 5", "parent": "右大腿", "x": 268.45, "y": 62.44 },
+    { "name": "左大腿 4", "parent": "左大腿", "x": 125.1, "y": 13.15 },
+    { "name": "身体 6", "parent": "身体", "x": -148.2, "y": -97.81 },
     {
       "name": "后摆",
       "parent": "root",
@@ -122,7 +122,7 @@
       "y": 0.67
     },
     {
-      "name": "后摆2",
+      "name": "后摆 2",
       "parent": "后摆",
       "length": 111.27,
       "rotation": -126.73,
@@ -131,7 +131,7 @@
       "inherit": "onlyTranslation"
     },
     {
-      "name": "后摆3",
+      "name": "后摆 3",
       "parent": "后摆",
       "length": 240,
       "rotation": 1.92,
@@ -139,8 +139,8 @@
       "y": 3.55
     },
     {
-      "name": "后摆4",
-      "parent": "后摆3",
+      "name": "后摆 4",
+      "parent": "后摆 3",
       "length": 95.02,
       "rotation": -62.46,
       "x": 136.56,
@@ -148,40 +148,40 @@
       "inherit": "onlyTranslation"
     },
     {
-      "name": "后摆4b",
-      "parent": "后摆4",
+      "name": "后摆 4b",
+      "parent": "后摆 4",
       "length": 95.02,
       "rotation": -62.46,
       "x": 95.02,
       "inherit": "onlyTranslation"
     },
     {
-      "name": "后摆4c",
-      "parent": "后摆4b",
+      "name": "后摆 4c",
+      "parent": "后摆 4b",
       "length": 95.02,
       "rotation": -62.46,
       "x": 95.02,
       "inherit": "onlyTranslation"
     },
     {
-      "name": "后摆2b",
-      "parent": "后摆2",
+      "name": "后摆 2b",
+      "parent": "后摆 2",
       "length": 111.27,
       "rotation": -126.73,
       "x": 111.27,
       "inherit": "onlyTranslation"
     },
     {
-      "name": "后摆2c",
-      "parent": "后摆2b",
+      "name": "后摆 2c",
+      "parent": "后摆 2b",
       "length": 111.27,
       "rotation": -126.73,
       "x": 111.27,
       "inherit": "onlyTranslation"
     },
     {
-      "name": "身体30",
-      "parent": "身体2",
+      "name": "身体 30",
+      "parent": "身体 2",
       "length": 98.15,
       "rotation": 165.96,
       "x": 268.01,
@@ -190,16 +190,16 @@
       "color": "007effff"
     },
     {
-      "name": "身体7",
-      "parent": "身体30",
+      "name": "身体 7",
+      "parent": "身体 30",
       "length": 150.34,
       "rotation": 21.88,
       "x": 1.15,
       "y": 1.49
     },
     {
-      "name": "身体34",
-      "parent": "身体7",
+      "name": "身体 34",
+      "parent": "身体 7",
       "length": 143.05,
       "rotation": 160.56,
       "x": 148.61,
@@ -208,8 +208,8 @@
       "color": "007effff"
     },
     {
-      "name": "身体8",
-      "parent": "身体34",
+      "name": "身体 8",
+      "parent": "身体 34",
       "length": 226.75,
       "rotation": 99.57,
       "x": 1.25,
@@ -217,8 +217,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "身体9",
-      "parent": "身体8",
+      "name": "身体 9",
+      "parent": "身体 8",
       "length": 219.44,
       "rotation": -11.78,
       "x": 226.75,
@@ -226,16 +226,16 @@
       "color": "abe323ff"
     },
     {
-      "name": "身体10",
-      "parent": "身体9",
+      "name": "身体 10",
+      "parent": "身体 9",
       "length": 126.71,
       "rotation": -136.38,
       "x": 219.44,
       "inherit": "onlyTranslation"
     },
     {
-      "name": "身体29",
-      "parent": "身体2",
+      "name": "身体 29",
+      "parent": "身体 2",
       "length": 116.22,
       "rotation": 15.34,
       "x": 268.01,
@@ -244,16 +244,16 @@
       "color": "008bffff"
     },
     {
-      "name": "身体11",
-      "parent": "身体29",
+      "name": "身体 11",
+      "parent": "身体 29",
       "length": 128.83,
       "rotation": -30.89,
       "x": -0.02,
       "y": -2.09
     },
     {
-      "name": "身体33",
-      "parent": "身体11",
+      "name": "身体 33",
+      "parent": "身体 11",
       "length": 111.49,
       "rotation": 23.6,
       "x": 130.09,
@@ -262,8 +262,8 @@
       "color": "007effff"
     },
     {
-      "name": "R大臂",
-      "parent": "身体33",
+      "name": "R 大臂",
+      "parent": "身体 33",
       "length": 225.45,
       "rotation": -101.16,
       "x": -0.14,
@@ -271,26 +271,26 @@
       "color": "abe323ff"
     },
     {
-      "name": "R大臂2",
-      "parent": "R大臂",
+      "name": "R 大臂 2",
+      "parent": "R 大臂",
       "length": 102.8,
       "rotation": -8.23,
       "x": 225.45,
       "inherit": "noScale"
     },
     {
-      "name": "R手",
-      "parent": "R大臂2",
+      "name": "R 手",
+      "parent": "R 大臂 2",
       "length": 69.08,
       "rotation": -90.9,
       "x": 75.06,
       "y": 5.29,
       "inherit": "onlyTranslation"
     },
-    { "name": "身体12", "parent": "身体2", "x": 125.79, "y": -67.64 },
+    { "name": "身体 12", "parent": "身体 2", "x": 125.79, "y": -67.64 },
     {
       "name": "领结",
-      "parent": "身体12",
+      "parent": "身体 12",
       "length": 78.78,
       "rotation": -131.11,
       "x": -41.01,
@@ -298,7 +298,7 @@
       "inherit": "onlyTranslation"
     },
     {
-      "name": "领结2",
+      "name": "领结 2",
       "parent": "领结",
       "length": 79.6,
       "rotation": -130.6,
@@ -306,8 +306,8 @@
       "inherit": "onlyTranslation"
     },
     {
-      "name": "身体13",
-      "parent": "身体12",
+      "name": "身体 13",
+      "parent": "身体 12",
       "length": 68.83,
       "rotation": -48.81,
       "x": -31.3,
@@ -315,16 +315,16 @@
       "inherit": "onlyTranslation"
     },
     {
-      "name": "身体14",
-      "parent": "身体13",
+      "name": "身体 14",
+      "parent": "身体 13",
       "length": 70.8,
       "rotation": -52.43,
       "x": 68.83,
       "inherit": "onlyTranslation"
     },
     {
-      "name": "L大臂衣袖后",
-      "parent": "身体8",
+      "name": "L 大臂衣袖后",
+      "parent": "身体 8",
       "length": 161.84,
       "rotation": -8.37,
       "x": 233.17,
@@ -333,8 +333,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "R大臂衣袖后",
-      "parent": "R大臂",
+      "name": "R 大臂衣袖后",
+      "parent": "R 大臂",
       "length": 110.78,
       "rotation": 1.71,
       "x": 224.42,
@@ -342,13 +342,13 @@
       "inherit": "noScale",
       "color": "abe323ff"
     },
-    { "name": "后摆5", "parent": "身体2", "x": 230.69, "y": 144.96 },
-    { "name": "身体15", "parent": "身体4", "x": 201.42, "y": 127.28 },
-    { "name": "身体16", "parent": "身体4", "x": 189.63, "y": -226.71 },
-    { "name": "身体17", "parent": "身体4", "x": 570.26, "y": -79.75 },
+    { "name": "后摆 5", "parent": "身体 2", "x": 230.69, "y": 144.96 },
+    { "name": "身体 15", "parent": "身体 4", "x": 201.42, "y": 127.28 },
+    { "name": "身体 16", "parent": "身体 4", "x": 189.63, "y": -226.71 },
+    { "name": "身体 17", "parent": "身体 4", "x": 570.26, "y": -79.75 },
     {
-      "name": "身体18",
-      "parent": "身体17",
+      "name": "身体 18",
+      "parent": "身体 17",
       "length": 171.13,
       "rotation": -170.66,
       "x": -50.92,
@@ -356,18 +356,18 @@
       "color": "abe323ff"
     },
     {
-      "name": "身体19",
-      "parent": "身体18",
+      "name": "身体 19",
+      "parent": "身体 18",
       "length": 183.63,
       "rotation": 3.82,
       "x": 199.58,
       "y": 1.31,
       "color": "abe323ff"
     },
-    { "name": "发6", "parent": "身体4", "x": 486.35, "y": -143.3 },
+    { "name": "发 6", "parent": "身体 4", "x": 486.35, "y": -143.3 },
     {
-      "name": "发7",
-      "parent": "发6",
+      "name": "发 7",
+      "parent": "发 6",
       "length": 170.89,
       "rotation": 178.72,
       "x": -22.08,
@@ -375,18 +375,18 @@
       "color": "abe323ff"
     },
     {
-      "name": "发8",
-      "parent": "发7",
+      "name": "发 8",
+      "parent": "发 7",
       "length": 136.55,
       "rotation": -31.01,
       "x": 210.93,
       "y": -9.77,
       "color": "abe323ff"
     },
-    { "name": "发9", "parent": "身体4", "x": 566.7, "y": 66.47 },
+    { "name": "发 9", "parent": "身体 4", "x": 566.7, "y": 66.47 },
     {
-      "name": "发10",
-      "parent": "发9",
+      "name": "发 10",
+      "parent": "发 9",
       "length": 168.14,
       "rotation": -170.8,
       "x": -64.1,
@@ -394,18 +394,18 @@
       "color": "abe323ff"
     },
     {
-      "name": "发11",
-      "parent": "发10",
+      "name": "发 11",
+      "parent": "发 10",
       "length": 140.47,
       "rotation": 15.42,
       "x": 214.54,
       "y": 3.78,
       "color": "abe323ff"
     },
-    { "name": "发12", "parent": "身体4", "x": 580.05, "y": -207.99 },
+    { "name": "发 12", "parent": "身体 4", "x": 580.05, "y": -207.99 },
     {
-      "name": "发13",
-      "parent": "发12",
+      "name": "发 13",
+      "parent": "发 12",
       "length": 154.46,
       "rotation": -175.92,
       "x": -69.98,
@@ -413,18 +413,18 @@
       "color": "abe323ff"
     },
     {
-      "name": "发14",
-      "parent": "发13",
+      "name": "发 14",
+      "parent": "发 13",
       "length": 115.84,
       "rotation": -14.21,
       "x": 191.32,
       "y": -5.58,
       "color": "abe323ff"
     },
-    { "name": "发4", "parent": "身体4", "x": 552.74, "y": -467.96 },
+    { "name": "发 4", "parent": "身体 4", "x": 552.74, "y": -467.96 },
     {
-      "name": "发5",
-      "parent": "发4",
+      "name": "发 5",
+      "parent": "发 4",
       "length": 234.27,
       "rotation": 175.13,
       "x": -87,
@@ -432,8 +432,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发15",
-      "parent": "发5",
+      "name": "发 15",
+      "parent": "发 5",
       "length": 116.62,
       "rotation": -21.41,
       "x": 283.48,
@@ -441,18 +441,18 @@
       "color": "abe323ff"
     },
     {
-      "name": "发16",
-      "parent": "发15",
+      "name": "发 16",
+      "parent": "发 15",
       "length": 100.24,
       "rotation": -28.45,
       "x": 152.07,
       "y": -13.13,
       "color": "abe323ff"
     },
-    { "name": "发1", "parent": "身体4", "x": 518.24, "y": 451.75 },
+    { "name": "发 1", "parent": "身体 4", "x": 518.24, "y": 451.75 },
     {
-      "name": "发2",
-      "parent": "发1",
+      "name": "发 2",
+      "parent": "发 1",
       "length": 144.61,
       "rotation": -177.05,
       "x": -67.49,
@@ -460,8 +460,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发3",
-      "parent": "发2",
+      "name": "发 3",
+      "parent": "发 2",
       "length": 142.71,
       "rotation": 24.25,
       "x": 189.22,
@@ -469,18 +469,18 @@
       "color": "abe323ff"
     },
     {
-      "name": "发17",
-      "parent": "发3",
+      "name": "发 17",
+      "parent": "发 3",
       "length": 143.28,
       "rotation": 26.25,
       "x": 187,
       "y": 7.25,
       "color": "abe323ff"
     },
-    { "name": "发18", "parent": "身体4", "x": 475.65, "y": 568.5 },
+    { "name": "发 18", "parent": "身体 4", "x": 475.65, "y": 568.5 },
     {
-      "name": "发19",
-      "parent": "发18",
+      "name": "发 19",
+      "parent": "发 18",
       "length": 190.99,
       "rotation": 179.83,
       "x": -63.01,
@@ -488,8 +488,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发20",
-      "parent": "发19",
+      "name": "发 20",
+      "parent": "发 19",
       "length": 125.92,
       "rotation": 15.77,
       "x": 224.47,
@@ -497,18 +497,18 @@
       "color": "abe323ff"
     },
     {
-      "name": "发21",
-      "parent": "发20",
+      "name": "发 21",
+      "parent": "发 20",
       "length": 79.24,
       "rotation": 18.98,
       "x": 143.12,
       "y": 0.67,
       "color": "abe323ff"
     },
-    { "name": "发22", "parent": "身体4", "x": 494.73, "y": -493.08 },
+    { "name": "发 22", "parent": "身体 4", "x": 494.73, "y": -493.08 },
     {
-      "name": "发23",
-      "parent": "发22",
+      "name": "发 23",
+      "parent": "发 22",
       "length": 158.56,
       "rotation": -164.8,
       "x": -41.33,
@@ -516,8 +516,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发24",
-      "parent": "发23",
+      "name": "发 24",
+      "parent": "发 23",
       "length": 121.34,
       "rotation": -14.54,
       "x": 206.19,
@@ -525,18 +525,18 @@
       "color": "abe323ff"
     },
     {
-      "name": "发25",
-      "parent": "发24",
+      "name": "发 25",
+      "parent": "发 24",
       "length": 78.28,
       "rotation": -14.93,
       "x": 146.98,
       "y": -3.88,
       "color": "abe323ff"
     },
-    { "name": "发饰3", "parent": "身体4", "x": 410.15, "y": -478.3 },
+    { "name": "发饰 3", "parent": "身体 4", "x": 410.15, "y": -478.3 },
     {
-      "name": "发饰4",
-      "parent": "发饰3",
+      "name": "发饰 4",
+      "parent": "发饰 3",
       "length": 204.33,
       "rotation": -84.37,
       "x": -15.4,
@@ -545,8 +545,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发饰5",
-      "parent": "发饰4",
+      "name": "发饰 5",
+      "parent": "发饰 4",
       "length": 138.55,
       "rotation": -87.63,
       "x": 230.08,
@@ -555,8 +555,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发饰6",
-      "parent": "发饰5",
+      "name": "发饰 6",
+      "parent": "发饰 5",
       "length": 94.53,
       "rotation": -88.84,
       "x": 153.81,
@@ -565,8 +565,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发饰2",
-      "parent": "发饰3",
+      "name": "发饰 2",
+      "parent": "发饰 3",
       "length": 124.27,
       "rotation": -150.11,
       "x": 21.71,
@@ -574,8 +574,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发饰7",
-      "parent": "发饰2",
+      "name": "发饰 7",
+      "parent": "发饰 2",
       "length": 76.62,
       "rotation": -0.77,
       "x": 140.16,
@@ -583,8 +583,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发饰8",
-      "parent": "发饰3",
+      "name": "发饰 8",
+      "parent": "发饰 3",
       "length": 95.47,
       "rotation": 162.14,
       "x": 27.6,
@@ -592,18 +592,18 @@
       "color": "abe323ff"
     },
     {
-      "name": "发饰9",
-      "parent": "发饰8",
+      "name": "发饰 9",
+      "parent": "发饰 8",
       "length": 82.66,
       "rotation": 2.22,
       "x": 118.15,
       "y": 0.65,
       "color": "abe323ff"
     },
-    { "name": "发26", "parent": "身体4", "x": 509.3, "y": 610.54 },
+    { "name": "发 26", "parent": "身体 4", "x": 509.3, "y": 610.54 },
     {
-      "name": "发27",
-      "parent": "发26",
+      "name": "发 27",
+      "parent": "发 26",
       "length": 147.72,
       "rotation": 151.51,
       "x": -34.7,
@@ -611,8 +611,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发28",
-      "parent": "发27",
+      "name": "发 28",
+      "parent": "发 27",
       "length": 87.96,
       "rotation": 23.79,
       "x": 171.6,
@@ -620,8 +620,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发29",
-      "parent": "发28",
+      "name": "发 29",
+      "parent": "发 28",
       "length": 80.49,
       "rotation": 25.42,
       "x": 108.93,
@@ -629,15 +629,15 @@
       "color": "abe323ff"
     },
     {
-      "name": "后发2",
-      "parent": "身体4",
+      "name": "后发 2",
+      "parent": "身体 4",
       "x": 325.55,
       "y": 555.11,
       "color": "ff0000ff"
     },
     {
-      "name": "后发3",
-      "parent": "后发2",
+      "name": "后发 3",
+      "parent": "后发 2",
       "length": 287.71,
       "rotation": -100.69,
       "x": -42.56,
@@ -646,15 +646,15 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发4",
-      "parent": "身体4",
+      "name": "后发 4",
+      "parent": "身体 4",
       "x": 136.11,
       "y": -326.11,
       "color": "ff0000ff"
     },
     {
-      "name": "后发5",
-      "parent": "后发4",
+      "name": "后发 5",
+      "parent": "后发 4",
       "length": 231.57,
       "rotation": -78.62,
       "x": -34.36,
@@ -663,15 +663,15 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发6",
-      "parent": "身体4",
+      "name": "后发 6",
+      "parent": "身体 4",
       "x": 475.7,
       "y": 647.76,
       "color": "ff0000ff"
     },
     {
-      "name": "后发7",
-      "parent": "后发6",
+      "name": "后发 7",
+      "parent": "后发 6",
       "length": 242.44,
       "rotation": -98.01,
       "x": -13.76,
@@ -680,15 +680,15 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发8",
-      "parent": "身体4",
+      "name": "后发 8",
+      "parent": "身体 4",
       "x": 221.41,
       "y": -409.19,
       "color": "ff0000ff"
     },
     {
-      "name": "后发9",
-      "parent": "后发8",
+      "name": "后发 9",
+      "parent": "后发 8",
       "length": 169.26,
       "rotation": -93.12,
       "x": -21.79,
@@ -697,15 +697,15 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发1",
-      "parent": "身体4",
+      "name": "后发 1",
+      "parent": "身体 4",
       "x": 186.88,
       "y": 377.99,
       "color": "ff0000ff"
     },
     {
-      "name": "后发10",
-      "parent": "后发1",
+      "name": "后发 10",
+      "parent": "后发 1",
       "length": 212.56,
       "rotation": -87.93,
       "x": -23.13,
@@ -714,15 +714,15 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发11",
-      "parent": "身体4",
+      "name": "后发 11",
+      "parent": "身体 4",
       "x": 103.67,
       "y": -249.12,
       "color": "ff0000ff"
     },
     {
-      "name": "后发12",
-      "parent": "后发11",
+      "name": "后发 12",
+      "parent": "后发 11",
       "length": 195.81,
       "rotation": -93.15,
       "x": -16.06,
@@ -731,15 +731,15 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发13",
-      "parent": "身体4",
+      "name": "后发 13",
+      "parent": "身体 4",
       "x": 275.63,
       "y": 376.02,
       "color": "ff0000ff"
     },
     {
-      "name": "后发14",
-      "parent": "后发13",
+      "name": "后发 14",
+      "parent": "后发 13",
       "length": 290.44,
       "rotation": -90.99,
       "x": -26.53,
@@ -748,15 +748,15 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发15",
-      "parent": "身体4",
+      "name": "后发 15",
+      "parent": "身体 4",
       "x": 278.03,
       "y": -239,
       "color": "ff0000ff"
     },
     {
-      "name": "后发16",
-      "parent": "后发15",
+      "name": "后发 16",
+      "parent": "后发 15",
       "length": 305.92,
       "rotation": -88.13,
       "x": -19.55,
@@ -765,8 +765,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发16b",
-      "parent": "后发16",
+      "name": "后发 16b",
+      "parent": "后发 16",
       "length": 305.92,
       "rotation": -88.13,
       "x": 305.92,
@@ -774,8 +774,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发16c",
-      "parent": "后发16b",
+      "name": "后发 16c",
+      "parent": "后发 16b",
       "length": 305.92,
       "rotation": -88.13,
       "x": 305.92,
@@ -783,8 +783,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发7b",
-      "parent": "后发7",
+      "name": "后发 7b",
+      "parent": "后发 7",
       "length": 242.44,
       "rotation": -98.01,
       "x": 242.44,
@@ -792,8 +792,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发7c",
-      "parent": "后发7b",
+      "name": "后发 7c",
+      "parent": "后发 7b",
       "length": 242.44,
       "rotation": -98.01,
       "x": 242.44,
@@ -801,8 +801,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发3b",
-      "parent": "后发3",
+      "name": "后发 3b",
+      "parent": "后发 3",
       "length": 287.71,
       "rotation": -100.69,
       "x": 287.71,
@@ -810,8 +810,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发3c",
-      "parent": "后发3b",
+      "name": "后发 3c",
+      "parent": "后发 3b",
       "length": 287.71,
       "rotation": -100.69,
       "x": 287.71,
@@ -819,8 +819,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发14b",
-      "parent": "后发14",
+      "name": "后发 14b",
+      "parent": "后发 14",
       "length": 290.44,
       "rotation": -90.99,
       "x": 290.44,
@@ -828,8 +828,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发14c",
-      "parent": "后发14b",
+      "name": "后发 14c",
+      "parent": "后发 14b",
       "length": 290.44,
       "rotation": -90.99,
       "x": 290.44,
@@ -837,8 +837,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发10b",
-      "parent": "后发10",
+      "name": "后发 10b",
+      "parent": "后发 10",
       "length": 212.56,
       "rotation": -87.93,
       "x": 212.56,
@@ -846,8 +846,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发10c",
-      "parent": "后发10b",
+      "name": "后发 10c",
+      "parent": "后发 10b",
       "length": 212.56,
       "rotation": -87.93,
       "x": 212.56,
@@ -855,8 +855,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发12b",
-      "parent": "后发12",
+      "name": "后发 12b",
+      "parent": "后发 12",
       "length": 195.81,
       "rotation": -93.15,
       "x": 195.81,
@@ -864,8 +864,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发12c",
-      "parent": "后发12b",
+      "name": "后发 12c",
+      "parent": "后发 12b",
       "length": 195.81,
       "rotation": -93.15,
       "x": 195.81,
@@ -873,8 +873,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发5b",
-      "parent": "后发5",
+      "name": "后发 5b",
+      "parent": "后发 5",
       "length": 231.57,
       "rotation": -78.62,
       "x": 231.57,
@@ -882,8 +882,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发5c",
-      "parent": "后发5b",
+      "name": "后发 5c",
+      "parent": "后发 5b",
       "length": 231.57,
       "rotation": -78.62,
       "x": 231.57,
@@ -891,8 +891,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发9b",
-      "parent": "后发9",
+      "name": "后发 9b",
+      "parent": "后发 9",
       "length": 169.26,
       "rotation": -93.12,
       "x": 169.26,
@@ -900,8 +900,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "后发9c",
-      "parent": "后发9b",
+      "name": "后发 9c",
+      "parent": "后发 9b",
       "length": 169.26,
       "rotation": -93.12,
       "x": 169.26,
@@ -911,7 +911,7 @@
     { "name": "bone", "parent": "root", "x": -13.14, "y": 1871.72 },
     {
       "name": "问号",
-      "parent": "身体4",
+      "parent": "身体 4",
       "length": 410.49,
       "rotation": -36.92,
       "x": 377.84,
@@ -919,8 +919,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "生气符号1",
-      "parent": "身体4",
+      "name": "生气符号 1",
+      "parent": "身体 4",
       "length": 397.09,
       "rotation": -79.38,
       "x": 151.59,
@@ -928,8 +928,8 @@
       "color": "ff0000ff"
     },
     {
-      "name": "生气符号2",
-      "parent": "身体4",
+      "name": "生气符号 2",
+      "parent": "身体 4",
       "length": 202.67,
       "rotation": -123.64,
       "x": 36.24,
@@ -937,50 +937,50 @@
       "color": "ff0000ff"
     },
     {
-      "name": "星星1",
-      "parent": "身体4",
+      "name": "星星 1",
+      "parent": "身体 4",
       "x": 391.16,
       "y": -746.45,
       "color": "ff0000ff"
     },
     {
-      "name": "星星2",
-      "parent": "身体4",
+      "name": "星星 2",
+      "parent": "身体 4",
       "x": 739.9,
       "y": 806.68,
       "color": "ff0000ff"
     },
     {
-      "name": "星星3",
-      "parent": "身体4",
+      "name": "星星 3",
+      "parent": "身体 4",
       "x": 372.4,
       "y": 973.96,
       "color": "ff0000ff"
     },
     {
-      "name": "星星4",
-      "parent": "身体4",
+      "name": "星星 4",
+      "parent": "身体 4",
       "x": 117.12,
       "y": -774.66,
       "color": "ff0000ff"
     },
     {
       "name": "可爱花朵",
-      "parent": "身体4",
+      "parent": "身体 4",
       "x": 988.12,
       "y": 707.02,
       "color": "e9ff00ff"
     },
     {
-      "name": "可爱花朵2",
-      "parent": "身体4",
+      "name": "可爱花朵 2",
+      "parent": "身体 4",
       "x": 840.95,
       "y": 882.99,
       "color": "e9ff00ff"
     },
     {
-      "name": "可爱花朵3",
-      "parent": "身体4",
+      "name": "可爱花朵 3",
+      "parent": "身体 4",
       "length": 106.85,
       "rotation": -132.85,
       "x": 760.04,
@@ -988,36 +988,36 @@
       "color": "e9ff00ff"
     },
     {
-      "name": "可爱花朵4",
-      "parent": "身体4",
+      "name": "可爱花朵 4",
+      "parent": "身体 4",
       "x": 620.17,
       "y": 858.24,
       "color": "e9ff00ff"
     },
     {
-      "name": "可爱花朵5",
-      "parent": "身体4",
+      "name": "可爱花朵 5",
+      "parent": "身体 4",
       "x": 443.88,
       "y": 921.27,
       "color": "e9ff00ff"
     },
     {
-      "name": "可爱花朵6",
-      "parent": "身体4",
+      "name": "可爱花朵 6",
+      "parent": "身体 4",
       "x": 602.43,
       "y": -752.34,
       "color": "e9ff00ff"
     },
     {
-      "name": "可爱花朵7",
-      "parent": "身体4",
+      "name": "可爱花朵 7",
+      "parent": "身体 4",
       "x": 440.6,
       "y": -880.13,
       "color": "e9ff00ff"
     },
     {
-      "name": "可爱花朵8",
-      "parent": "身体4",
+      "name": "可爱花朵 8",
+      "parent": "身体 4",
       "length": 68.65,
       "rotation": 101.94,
       "x": 401.18,
@@ -1025,22 +1025,22 @@
       "color": "e9ff00ff"
     },
     {
-      "name": "可爱花朵9",
-      "parent": "身体4",
+      "name": "可爱花朵 9",
+      "parent": "身体 4",
       "x": 314.52,
       "y": -790.06,
       "color": "e9ff00ff"
     },
     {
-      "name": "身体20",
-      "parent": "身体9",
+      "name": "身体 20",
+      "parent": "身体 9",
       "x": 183.54,
       "y": 18,
       "inherit": "noScale"
     },
     {
-      "name": "身体21",
-      "parent": "身体20",
+      "name": "身体 21",
+      "parent": "身体 20",
       "length": 108.04,
       "rotation": 35.14,
       "x": 8.35,
@@ -1048,15 +1048,15 @@
       "color": "abe323ff"
     },
     {
-      "name": "身体22",
-      "parent": "身体9",
+      "name": "身体 22",
+      "parent": "身体 9",
       "x": 184.7,
       "y": -30.52,
       "inherit": "noScale"
     },
     {
-      "name": "身体23",
-      "parent": "身体22",
+      "name": "身体 23",
+      "parent": "身体 22",
       "length": 101.75,
       "rotation": -54.41,
       "x": 6.22,
@@ -1064,22 +1064,22 @@
       "color": "abe323ff"
     },
     {
-      "name": "R大臂3",
-      "parent": "R大臂2",
+      "name": "R 大臂 3",
+      "parent": "R 大臂 2",
       "x": 102.89,
       "y": 0.09,
       "inherit": "noScale"
     },
     {
-      "name": "身体24",
-      "parent": "身体4",
+      "name": "身体 24",
+      "parent": "身体 4",
       "x": 899.18,
       "y": -57.13,
       "color": "e9ff00ff"
     },
     {
-      "name": "发饰1",
-      "parent": "发饰3",
+      "name": "发饰 1",
+      "parent": "发饰 3",
       "length": 160.08,
       "rotation": -27.33,
       "x": 10.24,
@@ -1087,8 +1087,8 @@
       "color": "abe323ff"
     },
     {
-      "name": "发饰10",
-      "parent": "发饰1",
+      "name": "发饰 10",
+      "parent": "发饰 1",
       "length": 149.49,
       "rotation": 4.15,
       "x": 160.08,
@@ -1096,13 +1096,13 @@
     },
     {
       "name": "领子",
-      "parent": "身体7",
+      "parent": "身体 7",
       "rotation": -97.84,
       "x": 117.78,
       "y": -56.72
     },
     {
-      "name": "领子2",
+      "name": "领子 2",
       "parent": "领子",
       "length": 108.92,
       "rotation": 114.57,
@@ -1110,31 +1110,31 @@
       "y": 6.47
     },
     {
-      "name": "领子3",
-      "parent": "身体11",
+      "name": "领子 3",
+      "parent": "身体 11",
       "rotation": 105.55,
       "x": 54.25,
       "y": 56.08
     },
     {
-      "name": "领子4",
-      "parent": "领子3",
+      "name": "领子 4",
+      "parent": "领子 3",
       "length": 98.72,
       "rotation": -122.65,
       "x": -3.48,
       "y": -4.48
     },
     {
-      "name": "领子5",
-      "parent": "领子2",
+      "name": "领子 5",
+      "parent": "领子 2",
       "length": 313.89,
       "rotation": 135.01,
       "x": 108.22,
       "y": 0.87
     },
     {
-      "name": "领子6",
-      "parent": "领子4",
+      "name": "领子 6",
+      "parent": "领子 4",
       "length": 147.48,
       "rotation": -103.04,
       "x": 91.06,
@@ -1142,7 +1142,7 @@
     },
     {
       "name": "target",
-      "parent": "身体12",
+      "parent": "身体 12",
       "rotation": -90,
       "x": 21.4,
       "y": 16.36,
@@ -1150,8 +1150,8 @@
       "icon": "ik"
     },
     {
-      "name": "身体25",
-      "parent": "身体4",
+      "name": "身体 25",
+      "parent": "身体 4",
       "length": 81.63,
       "rotation": 180,
       "x": 302.64,
@@ -1159,29 +1159,29 @@
       "color": "0088ffff"
     },
     {
-      "name": "身体25b",
-      "parent": "身体25",
+      "name": "身体 25b",
+      "parent": "身体 25",
       "length": 81.63,
       "x": 81.63,
       "color": "0088ffff"
     },
     {
-      "name": "身体25c",
-      "parent": "身体25b",
+      "name": "身体 25c",
+      "parent": "身体 25b",
       "length": 81.63,
       "x": 81.63,
       "color": "0088ffff"
     },
     {
-      "name": "身体26",
-      "parent": "身体25c",
+      "name": "身体 26",
+      "parent": "身体 25c",
       "x": 81.64,
       "color": "ff0000ff",
       "icon": "arrows"
     },
     {
-      "name": "身体27",
-      "parent": "身体4",
+      "name": "身体 27",
+      "parent": "身体 4",
       "x": 122.91,
       "y": 783.9,
       "color": "ff0000ff",
@@ -1204,32 +1204,32 @@
       "icon": "ik"
     },
     {
-      "name": "身体35",
-      "parent": "身体10",
+      "name": "身体 35",
+      "parent": "身体 10",
       "length": 136.88,
       "rotation": -126.75,
       "x": 130.46,
       "y": -78.73
     },
     {
-      "name": "身体36",
-      "parent": "身体10",
+      "name": "身体 36",
+      "parent": "身体 10",
       "length": 192.41,
       "rotation": -138.99,
       "x": 58.92,
       "y": -65.81
     },
     {
-      "name": "身体37",
-      "parent": "身体10",
+      "name": "身体 37",
+      "parent": "身体 10",
       "length": 154.3,
       "rotation": 151.45,
       "x": 45.47,
       "y": 65.73
     },
     {
-      "name": "身体38",
-      "parent": "身体10",
+      "name": "身体 38",
+      "parent": "身体 10",
       "length": 184.22,
       "rotation": 137.14,
       "x": 110.98,
@@ -1237,84 +1237,84 @@
     }
   ],
   "slots": [
-    { "name": "腿-衣摆-后发/后脑勺", "bone": "root", "attachment": "后脑勺" },
-    { "name": "腿-衣摆-后发/后发4", "bone": "后发15", "attachment": "后发4" },
-    { "name": "腿-衣摆-后发/后发3", "bone": "后发9", "attachment": "后发3" },
-    { "name": "腿-衣摆-后发/后发2", "bone": "后发4", "attachment": "后发2" },
-    { "name": "腿-衣摆-后发/后发1", "bone": "后发12", "attachment": "后发1" },
-    { "name": "腿-衣摆-后发/后摆", "bone": "后摆5", "attachment": "后摆" },
-    { "name": "腿-衣摆-后发/裙边", "bone": "身体5", "attachment": "裙边" },
-    { "name": "腿-衣摆-后发/右大腿", "bone": "右大腿", "attachment": "右大腿" },
-    { "name": "腿-衣摆-后发/右小腿", "bone": "右大腿", "attachment": "右小腿" },
-    { "name": "腿-衣摆-后发/左大腿", "bone": "左大腿", "attachment": "左大腿" },
-    { "name": "腿-衣摆-后发/左小腿", "bone": "root", "attachment": "左小腿" },
+    { "name": "腿 - 衣摆 - 后发/后脑勺", "bone": "root", "attachment": "后脑勺" },
+    { "name": "腿 - 衣摆 - 后发/后发 4", "bone": "后发 15", "attachment": "后发 4" },
+    { "name": "腿 - 衣摆 - 后发/后发 3", "bone": "后发 9", "attachment": "后发 3" },
+    { "name": "腿 - 衣摆 - 后发/后发 2", "bone": "后发 4", "attachment": "后发 2" },
+    { "name": "腿 - 衣摆 - 后发/后发 1", "bone": "后发 12", "attachment": "后发 1" },
+    { "name": "腿 - 衣摆 - 后发/后摆", "bone": "后摆 5", "attachment": "后摆" },
+    { "name": "腿 - 衣摆 - 后发/裙边", "bone": "身体 5", "attachment": "裙边" },
+    { "name": "腿 - 衣摆 - 后发/右大腿", "bone": "右大腿", "attachment": "右大腿" },
+    { "name": "腿 - 衣摆 - 后发/右小腿", "bone": "右大腿", "attachment": "右小腿" },
+    { "name": "腿 - 衣摆 - 后发/左大腿", "bone": "左大腿", "attachment": "左大腿" },
+    { "name": "腿 - 衣摆 - 后发/左小腿", "bone": "root", "attachment": "左小腿" },
     {
-      "name": "R大臂衣袖后",
-      "bone": "R大臂衣袖后",
-      "attachment": "R大臂衣袖后"
+      "name": "R 大臂衣袖后",
+      "bone": "R 大臂衣袖后",
+      "attachment": "R 大臂衣袖后"
     },
-    { "name": "R大臂", "bone": "R大臂", "attachment": "R大臂" },
-    { "name": "R大臂衣袖", "bone": "root", "attachment": "R大臂衣袖" },
-    { "name": "身体", "bone": "身体5", "attachment": "身体" },
-    { "name": "R袖口", "bone": "root" },
-    { "name": "R手", "bone": "root" },
-    { "name": "R小臂", "bone": "root", "attachment": "R正常右小臂" },
-    { "name": "R正常手", "bone": "root", "attachment": "R正常右手" },
-    { "name": "R挡左边", "bone": "root" },
-    { "name": "R挡右边", "bone": "root" },
+    { "name": "R 大臂", "bone": "R 大臂", "attachment": "R 大臂" },
+    { "name": "R 大臂衣袖", "bone": "root", "attachment": "R 大臂衣袖" },
+    { "name": "身体", "bone": "身体 5", "attachment": "身体" },
+    { "name": "R 袖口", "bone": "root" },
+    { "name": "R 手", "bone": "root" },
+    { "name": "R 小臂", "bone": "root", "attachment": "R 正常右小臂" },
+    { "name": "R 正常手", "bone": "root", "attachment": "R 正常右手" },
+    { "name": "R 挡左边", "bone": "root" },
+    { "name": "R 挡右边", "bone": "root" },
     { "name": "领结", "bone": "领结", "attachment": "领结" },
-    { "name": "身体遮挡", "bone": "身体5" },
+    { "name": "身体遮挡", "bone": "身体 5" },
     {
-      "name": "L大臂衣袖后",
-      "bone": "L大臂衣袖后",
-      "attachment": "L大臂衣袖后"
+      "name": "L 大臂衣袖后",
+      "bone": "L 大臂衣袖后",
+      "attachment": "L 大臂衣袖后"
     },
-    { "name": "L大臂", "bone": "root", "attachment": "L大臂" },
-    { "name": "L袖口", "bone": "root", "attachment": "L正常左袖口" },
-    { "name": "L手", "bone": "root", "attachment": "L正常左手" },
-    { "name": "L小臂", "bone": "root", "attachment": "L正常左小臂" },
-    { "name": "L大臂衣袖", "bone": "root", "attachment": "L大臂衣袖" },
-    { "name": "L挡右边", "bone": "root" },
-    { "name": "环抱遮挡", "bone": "身体8" },
-    { "name": "L挡左边", "bone": "root" },
-    { "name": "领子", "bone": "领子3", "attachment": "领子" },
+    { "name": "L 大臂", "bone": "root", "attachment": "L 大臂" },
+    { "name": "L 袖口", "bone": "root", "attachment": "L 正常左袖口" },
+    { "name": "L 手", "bone": "root", "attachment": "L 正常左手" },
+    { "name": "L 小臂", "bone": "root", "attachment": "L 正常左小臂" },
+    { "name": "L 大臂衣袖", "bone": "root", "attachment": "L 大臂衣袖" },
+    { "name": "L 挡右边", "bone": "root" },
+    { "name": "环抱遮挡", "bone": "身体 8" },
+    { "name": "L 挡左边", "bone": "root" },
+    { "name": "领子", "bone": "领子 3", "attachment": "领子" },
     { "name": "胸饰", "bone": "root", "attachment": "胸饰" },
-    { "name": "面部/发饰3", "bone": "发饰4", "attachment": "发饰3" },
-    { "name": "面部/发饰2", "bone": "发饰8", "attachment": "发饰2" },
-    { "name": "面部/发饰1", "bone": "发饰1", "attachment": "发饰1" },
-    { "name": "面部/E眼白", "bone": "root", "attachment": "E眼白" },
-    { "name": "面部/E眼珠", "bone": "root", "attachment": "E眼珠" },
-    { "name": "面部/E脸2", "bone": "root" },
-    { "name": "面部/E脸1", "bone": "root", "attachment": "E脸1" },
+    { "name": "面部/发饰 3", "bone": "发饰 4", "attachment": "发饰 3" },
+    { "name": "面部/发饰 2", "bone": "发饰 8", "attachment": "发饰 2" },
+    { "name": "面部/发饰 1", "bone": "发饰 1", "attachment": "发饰 1" },
+    { "name": "面部/E 眼白", "bone": "root", "attachment": "E 眼白" },
+    { "name": "面部/E 眼珠", "bone": "root", "attachment": "E 眼珠" },
+    { "name": "面部/E 脸 2", "bone": "root" },
+    { "name": "面部/E 脸 1", "bone": "root", "attachment": "E 脸 1" },
     { "name": "面部/鼻子", "bone": "root", "attachment": "鼻子" },
-    { "name": "面部/M嘴巴", "bone": "root", "attachment": "M正常嘴巴" },
-    { "name": "面部/E眼角", "bone": "root", "attachment": "E眼角" },
-    { "name": "面部/E睫毛", "bone": "root", "attachment": "E睫毛" },
-    { "name": "面部/E眼皮", "bone": "root", "attachment": "E眼皮" },
-    { "name": "面部/X眼", "bone": "root" },
+    { "name": "面部/M 嘴巴", "bone": "root", "attachment": "M 正常嘴巴" },
+    { "name": "面部/E 眼角", "bone": "root", "attachment": "E 眼角" },
+    { "name": "面部/E 睫毛", "bone": "root", "attachment": "E 睫毛" },
+    { "name": "面部/E 眼皮", "bone": "root", "attachment": "E 眼皮" },
+    { "name": "面部/X 眼", "bone": "root" },
     {
       "name": "前发/发影子",
       "bone": "root",
       "color": "ffffff7e",
       "attachment": "发影子"
     },
-    { "name": "前发/发11内阴影", "bone": "root", "attachment": "发11内阴影" },
-    { "name": "前发/发10", "bone": "root", "attachment": "发10" },
-    { "name": "前发/发9", "bone": "root", "attachment": "发9" },
-    { "name": "前发/发8", "bone": "发13", "attachment": "发8" },
-    { "name": "前发/发7", "bone": "root", "attachment": "发7" },
-    { "name": "前发/发6", "bone": "发6", "attachment": "发6" },
+    { "name": "前发/发 11 内阴影", "bone": "root", "attachment": "发 11 内阴影" },
+    { "name": "前发/发 10", "bone": "root", "attachment": "发 10" },
+    { "name": "前发/发 9", "bone": "root", "attachment": "发 9" },
+    { "name": "前发/发 8", "bone": "发 13", "attachment": "发 8" },
+    { "name": "前发/发 7", "bone": "root", "attachment": "发 7" },
+    { "name": "前发/发 6", "bone": "发 6", "attachment": "发 6" },
     { "name": "前发/发带", "bone": "root", "attachment": "发带" },
-    { "name": "前发/发5", "bone": "发22", "attachment": "发5" },
-    { "name": "前发/发4", "bone": "发4", "attachment": "发4" },
-    { "name": "前发/发3", "bone": "发19", "attachment": "发3" },
-    { "name": "前发/发2", "bone": "发26", "attachment": "发2" },
-    { "name": "前发/发1", "bone": "发1", "attachment": "发1" },
-    { "name": "前发/E眉毛", "bone": "root", "attachment": "E眉毛" },
-    { "name": "c参考", "bone": "root", "color": "ff00008b" },
+    { "name": "前发/发 5", "bone": "发 22", "attachment": "发 5" },
+    { "name": "前发/发 4", "bone": "发 4", "attachment": "发 4" },
+    { "name": "前发/发 3", "bone": "发 19", "attachment": "发 3" },
+    { "name": "前发/发 2", "bone": "发 26", "attachment": "发 2" },
+    { "name": "前发/发 1", "bone": "发 1", "attachment": "发 1" },
+    { "name": "前发/E 眉毛", "bone": "root", "attachment": "E 眉毛" },
+    { "name": "c 参考", "bone": "root", "color": "ff00008b" },
     {
       "name": "附件/可爱花朵",
-      "bone": "可爱花朵9",
+      "bone": "可爱花朵 9",
       "color": "ffffff00",
       "attachment": "可爱花朵"
     },
@@ -1325,16 +1325,16 @@
       "attachment": "脸红"
     },
     {
-      "name": "附件/生气符号2",
-      "bone": "生气符号2",
+      "name": "附件/生气符号 2",
+      "bone": "生气符号 2",
       "color": "ffffff00",
-      "attachment": "生气符号2"
+      "attachment": "生气符号 2"
     },
     {
-      "name": "附件/生气符号1",
-      "bone": "生气符号1",
+      "name": "附件/生气符号 1",
+      "bone": "生气符号 1",
       "color": "ffffff00",
-      "attachment": "生气符号1"
+      "attachment": "生气符号 1"
     },
     {
       "name": "附件/问号",
@@ -1343,37 +1343,37 @@
       "attachment": "问号"
     },
     {
-      "name": "附件/星星4",
-      "bone": "星星4",
+      "name": "附件/星星 4",
+      "bone": "星星 4",
       "color": "ffffff00",
-      "attachment": "星星4"
+      "attachment": "星星 4"
     },
     {
-      "name": "附件/星星3",
-      "bone": "星星3",
+      "name": "附件/星星 3",
+      "bone": "星星 3",
       "color": "ffffff00",
-      "attachment": "星星3"
+      "attachment": "星星 3"
     },
     {
-      "name": "附件/星星2",
-      "bone": "星星2",
+      "name": "附件/星星 2",
+      "bone": "星星 2",
       "color": "ffffff00",
-      "attachment": "星星2"
+      "attachment": "星星 2"
     },
     {
-      "name": "附件/星星1",
-      "bone": "星星1",
+      "name": "附件/星星 1",
+      "bone": "星星 1",
       "color": "ffffff00",
-      "attachment": "星星1"
+      "attachment": "星星 1"
     },
-    { "name": "变身器翅膀2", "bone": "root" },
-    { "name": "变身器翅膀1", "bone": "root" }
+    { "name": "变身器翅膀 2", "bone": "root" },
+    { "name": "变身器翅膀 1", "bone": "root" }
   ],
   "ik": [
     {
       "name": "L",
       "order": 7,
-      "bones": ["身体9"],
+      "bones": ["身体 9"],
       "target": "target23",
       "mix": 0,
       "compress": true,
@@ -1382,7 +1382,7 @@
     {
       "name": "R",
       "order": 6,
-      "bones": ["R大臂2"],
+      "bones": ["R 大臂 2"],
       "target": "target21",
       "mix": 0,
       "compress": true,
@@ -1391,7 +1391,7 @@
     {
       "name": "target",
       "order": 1,
-      "bones": ["领子5"],
+      "bones": ["领子 5"],
       "target": "target",
       "compress": true,
       "stretch": true
@@ -1399,7 +1399,7 @@
     {
       "name": "target2",
       "order": 3,
-      "bones": ["领子6"],
+      "bones": ["领子 6"],
       "target": "target",
       "compress": true,
       "stretch": true
@@ -1409,8 +1409,8 @@
     {
       "name": "1",
       "order": 8,
-      "bones": ["身体17"],
-      "target": "身体26",
+      "bones": ["身体 17"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -512.52,
       "y": -547.07,
@@ -1422,8 +1422,8 @@
     {
       "name": "2",
       "order": 9,
-      "bones": ["发12"],
-      "target": "身体26",
+      "bones": ["发 12"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -522.31,
       "y": -418.82,
@@ -1435,8 +1435,8 @@
     {
       "name": "3",
       "order": 10,
-      "bones": ["发4"],
-      "target": "身体26",
+      "bones": ["发 4"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -495,
       "y": -158.86,
@@ -1448,8 +1448,8 @@
     {
       "name": "4",
       "order": 11,
-      "bones": ["发22"],
-      "target": "身体26",
+      "bones": ["发 22"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -437,
       "y": -133.74,
@@ -1461,8 +1461,8 @@
     {
       "name": "5",
       "order": 12,
-      "bones": ["发饰3"],
-      "target": "身体26",
+      "bones": ["发饰 3"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -352.41,
       "y": -148.51,
@@ -1474,8 +1474,8 @@
     {
       "name": "6",
       "order": 13,
-      "bones": ["后发8"],
-      "target": "身体26",
+      "bones": ["后发 8"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -163.67,
       "y": -217.63,
@@ -1487,8 +1487,8 @@
     {
       "name": "7",
       "order": 14,
-      "bones": ["后发4"],
-      "target": "身体26",
+      "bones": ["后发 4"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -78.37,
       "y": -300.71,
@@ -1500,8 +1500,8 @@
     {
       "name": "8",
       "order": 15,
-      "bones": ["后发11"],
-      "target": "身体26",
+      "bones": ["后发 11"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -45.94,
       "y": -377.7,
@@ -1513,8 +1513,8 @@
     {
       "name": "9",
       "order": 16,
-      "bones": ["发9"],
-      "target": "身体26",
+      "bones": ["发 9"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -508.96,
       "y": -693.29,
@@ -1526,8 +1526,8 @@
     {
       "name": "10",
       "order": 17,
-      "bones": ["发1"],
-      "target": "身体26",
+      "bones": ["发 1"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -460.5,
       "y": -1078.57,
@@ -1539,8 +1539,8 @@
     {
       "name": "11",
       "order": 18,
-      "bones": ["发18"],
-      "target": "身体26",
+      "bones": ["发 18"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -417.91,
       "y": -1195.32,
@@ -1552,8 +1552,8 @@
     {
       "name": "12",
       "order": 19,
-      "bones": ["发26"],
-      "target": "身体26",
+      "bones": ["发 26"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -451.56,
       "y": -1237.36,
@@ -1565,8 +1565,8 @@
     {
       "name": "13",
       "order": 20,
-      "bones": ["后发6"],
-      "target": "身体26",
+      "bones": ["后发 6"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -417.96,
       "y": -1274.57,
@@ -1578,8 +1578,8 @@
     {
       "name": "14",
       "order": 21,
-      "bones": ["后发2"],
-      "target": "身体26",
+      "bones": ["后发 2"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -267.81,
       "y": -1181.93,
@@ -1591,8 +1591,8 @@
     {
       "name": "15",
       "order": 22,
-      "bones": ["后发13"],
-      "target": "身体26",
+      "bones": ["后发 13"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -217.89,
       "y": -1002.84,
@@ -1604,8 +1604,8 @@
     {
       "name": "16",
       "order": 23,
-      "bones": ["后发1"],
-      "target": "身体26",
+      "bones": ["后发 1"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -129.15,
       "y": -1004.81,
@@ -1617,8 +1617,8 @@
     {
       "name": "17",
       "order": 24,
-      "bones": ["身体24"],
-      "target": "身体26",
+      "bones": ["身体 24"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -841.44,
       "y": -569.69,
@@ -1630,8 +1630,8 @@
     {
       "name": "18",
       "order": 25,
-      "bones": ["发6"],
-      "target": "身体26",
+      "bones": ["发 6"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -428.61,
       "y": -483.52,
@@ -1643,8 +1643,8 @@
     {
       "name": "19",
       "order": 26,
-      "bones": ["后发15"],
-      "target": "身体26",
+      "bones": ["后发 15"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -220.29,
       "y": -387.82,
@@ -1656,8 +1656,8 @@
     {
       "name": "e1",
       "order": 27,
-      "bones": ["身体15"],
-      "target": "身体26",
+      "bones": ["身体 15"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -143.68,
       "y": -754.1,
@@ -1669,8 +1669,8 @@
     {
       "name": "e2",
       "order": 28,
-      "bones": ["身体16"],
-      "target": "身体26",
+      "bones": ["身体 16"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -131.9,
       "y": -400.11,
@@ -1682,8 +1682,8 @@
     {
       "name": "face",
       "order": 29,
-      "bones": ["身体27"],
-      "target": "身体26",
+      "bones": ["身体 27"],
+      "target": "身体 26",
       "rotation": 180,
       "x": -65.17,
       "y": -1410.71,
@@ -1693,10 +1693,10 @@
       "mixShearY": -1
     },
     {
-      "name": "R大臂",
+      "name": "R 大臂",
       "order": 2,
-      "bones": ["领子4"],
-      "target": "R大臂",
+      "bones": ["领子 4"],
+      "target": "R 大臂",
       "rotation": 44.91,
       "x": -86.24,
       "y": -33.46,
@@ -1706,10 +1706,10 @@
       "mixShearY": 0
     },
     {
-      "name": "R大臂衣袖后",
+      "name": "R 大臂衣袖后",
       "order": 5,
-      "bones": ["R大臂2"],
-      "target": "R大臂衣袖后",
+      "bones": ["R 大臂 2"],
+      "target": "R 大臂衣袖后",
       "rotation": -9.93,
       "x": 1.1,
       "y": 2.07,
@@ -1719,9 +1719,9 @@
       "mixShearY": 0
     },
     {
-      "name": "身体8",
-      "bones": ["领子2"],
-      "target": "身体8",
+      "name": "身体 8",
+      "bones": ["领子 2"],
+      "target": "身体 8",
       "rotation": -55.56,
       "x": -58.41,
       "y": 8.16,
@@ -1731,10 +1731,10 @@
       "mixShearY": 0
     },
     {
-      "name": "身体9",
+      "name": "身体 9",
       "order": 31,
-      "bones": ["L大臂衣袖后"],
-      "target": "身体9",
+      "bones": ["L 大臂衣袖后"],
+      "target": "身体 9",
       "rotation": 3.41,
       "x": 6.42,
       "y": 0.67,
@@ -1746,497 +1746,497 @@
   ],
   "physics": [
     {
-      "name": "L大臂衣袖后",
+      "name": "L 大臂衣袖后",
       "order": 30,
-      "bone": "L大臂衣袖后",
+      "bone": "L 大臂衣袖后",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "R大臂衣袖后",
+      "name": "R 大臂衣袖后",
       "order": 4,
-      "bone": "R大臂衣袖后",
+      "bone": "R 大臂衣袖后",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "右大腿3",
+      "name": "右大腿 3",
       "order": 91,
-      "bone": "右大腿3",
+      "bone": "右大腿 3",
       "rotate": 0.394,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "左大腿3",
+      "name": "左大腿 3",
       "order": 90,
-      "bone": "左大腿3",
+      "bone": "左大腿 3",
       "rotate": 0.3533,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "身体21",
+      "name": "身体 21",
       "order": 33,
-      "bone": "身体21",
+      "bone": "身体 21",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "身体23",
+      "name": "身体 23",
       "order": 32,
-      "bone": "身体23",
+      "bone": "身体 23",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发2",
+      "name": "头发物理/发 2",
       "order": 78,
-      "bone": "发2",
+      "bone": "发 2",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发3",
+      "name": "头发物理/发 3",
       "order": 79,
-      "bone": "发3",
+      "bone": "发 3",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发5",
+      "name": "头发物理/发 5",
       "order": 55,
-      "bone": "发5",
+      "bone": "发 5",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发7",
+      "name": "头发物理/发 7",
       "order": 68,
-      "bone": "发7",
+      "bone": "发 7",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发8",
+      "name": "头发物理/发 8",
       "order": 69,
-      "bone": "发8",
+      "bone": "发 8",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发10",
+      "name": "头发物理/发 10",
       "order": 66,
-      "bone": "发10",
+      "bone": "发 10",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发11",
+      "name": "头发物理/发 11",
       "order": 67,
-      "bone": "发11",
+      "bone": "发 11",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发13",
+      "name": "头发物理/发 13",
       "order": 64,
-      "bone": "发13",
+      "bone": "发 13",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发14",
+      "name": "头发物理/发 14",
       "order": 65,
-      "bone": "发14",
+      "bone": "发 14",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发15",
+      "name": "头发物理/发 15",
       "order": 56,
-      "bone": "发15",
+      "bone": "发 15",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发16",
+      "name": "头发物理/发 16",
       "order": 57,
-      "bone": "发16",
+      "bone": "发 16",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发17",
+      "name": "头发物理/发 17",
       "order": 80,
-      "bone": "发17",
+      "bone": "发 17",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发19",
+      "name": "头发物理/发 19",
       "order": 81,
-      "bone": "发19",
+      "bone": "发 19",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发20",
+      "name": "头发物理/发 20",
       "order": 82,
-      "bone": "发20",
+      "bone": "发 20",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发21",
+      "name": "头发物理/发 21",
       "order": 83,
-      "bone": "发21",
+      "bone": "发 21",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发23",
+      "name": "头发物理/发 23",
       "order": 52,
-      "bone": "发23",
+      "bone": "发 23",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发24",
+      "name": "头发物理/发 24",
       "order": 53,
-      "bone": "发24",
+      "bone": "发 24",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发25",
+      "name": "头发物理/发 25",
       "order": 54,
-      "bone": "发25",
+      "bone": "发 25",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发27",
+      "name": "头发物理/发 27",
       "order": 34,
-      "bone": "发27",
+      "bone": "发 27",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发28",
+      "name": "头发物理/发 28",
       "order": 35,
-      "bone": "发28",
+      "bone": "发 28",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发29",
+      "name": "头发物理/发 29",
       "order": 36,
-      "bone": "发29",
+      "bone": "发 29",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发饰1",
+      "name": "头发物理/发饰 1",
       "order": 62,
-      "bone": "发饰1",
+      "bone": "发饰 1",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发饰2",
+      "name": "头发物理/发饰 2",
       "order": 60,
-      "bone": "发饰2",
+      "bone": "发饰 2",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发饰4",
+      "name": "头发物理/发饰 4",
       "order": 49,
-      "bone": "发饰4",
+      "bone": "发饰 4",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发饰5",
+      "name": "头发物理/发饰 5",
       "order": 50,
-      "bone": "发饰5",
+      "bone": "发饰 5",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发饰6",
+      "name": "头发物理/发饰 6",
       "order": 51,
-      "bone": "发饰6",
+      "bone": "发饰 6",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发饰7",
+      "name": "头发物理/发饰 7",
       "order": 61,
-      "bone": "发饰7",
+      "bone": "发饰 7",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发饰8",
+      "name": "头发物理/发饰 8",
       "order": 58,
-      "bone": "发饰8",
+      "bone": "发饰 8",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发饰9",
+      "name": "头发物理/发饰 9",
       "order": 59,
-      "bone": "发饰9",
+      "bone": "发饰 9",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/发饰10",
+      "name": "头发物理/发饰 10",
       "order": 63,
-      "bone": "发饰10",
+      "bone": "发饰 10",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发3",
+      "name": "头发物理/后发 3",
       "order": 84,
-      "bone": "后发3",
+      "bone": "后发 3",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发3b",
+      "name": "头发物理/后发 3b",
       "order": 85,
-      "bone": "后发3b",
+      "bone": "后发 3b",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发3c",
+      "name": "头发物理/后发 3c",
       "order": 86,
-      "bone": "后发3c",
+      "bone": "后发 3c",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发5",
+      "name": "头发物理/后发 5",
       "order": 43,
-      "bone": "后发5",
+      "bone": "后发 5",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发5b",
+      "name": "头发物理/后发 5b",
       "order": 44,
-      "bone": "后发5b",
+      "bone": "后发 5b",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发5c",
+      "name": "头发物理/后发 5c",
       "order": 45,
-      "bone": "后发5c",
+      "bone": "后发 5c",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发7",
+      "name": "头发物理/后发 7",
       "order": 87,
-      "bone": "后发7",
+      "bone": "后发 7",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发7b",
+      "name": "头发物理/后发 7b",
       "order": 88,
-      "bone": "后发7b",
+      "bone": "后发 7b",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发7c",
+      "name": "头发物理/后发 7c",
       "order": 89,
-      "bone": "后发7c",
+      "bone": "后发 7c",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发9",
+      "name": "头发物理/后发 9",
       "order": 46,
-      "bone": "后发9",
+      "bone": "后发 9",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发9b",
+      "name": "头发物理/后发 9b",
       "order": 47,
-      "bone": "后发9b",
+      "bone": "后发 9b",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发9c",
+      "name": "头发物理/后发 9c",
       "order": 48,
-      "bone": "后发9c",
+      "bone": "后发 9c",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发10",
+      "name": "头发物理/后发 10",
       "order": 72,
-      "bone": "后发10",
+      "bone": "后发 10",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发10b",
+      "name": "头发物理/后发 10b",
       "order": 73,
-      "bone": "后发10b",
+      "bone": "后发 10b",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发10c",
+      "name": "头发物理/后发 10c",
       "order": 74,
-      "bone": "后发10c",
+      "bone": "后发 10c",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发12",
+      "name": "头发物理/后发 12",
       "order": 37,
-      "bone": "后发12",
+      "bone": "后发 12",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发12b",
+      "name": "头发物理/后发 12b",
       "order": 38,
-      "bone": "后发12b",
+      "bone": "后发 12b",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发12c",
+      "name": "头发物理/后发 12c",
       "order": 39,
-      "bone": "后发12c",
+      "bone": "后发 12c",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发14",
+      "name": "头发物理/后发 14",
       "order": 75,
-      "bone": "后发14",
+      "bone": "后发 14",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发14b",
+      "name": "头发物理/后发 14b",
       "order": 76,
-      "bone": "后发14b",
+      "bone": "后发 14b",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发14c",
+      "name": "头发物理/后发 14c",
       "order": 77,
-      "bone": "后发14c",
+      "bone": "后发 14c",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发16",
+      "name": "头发物理/后发 16",
       "order": 40,
-      "bone": "后发16",
+      "bone": "后发 16",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发16b",
+      "name": "头发物理/后发 16b",
       "order": 41,
-      "bone": "后发16b",
+      "bone": "后发 16b",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/后发16c",
+      "name": "头发物理/后发 16c",
       "order": 42,
-      "bone": "后发16c",
+      "bone": "后发 16c",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/身体18",
+      "name": "头发物理/身体 18",
       "order": 70,
-      "bone": "身体18",
+      "bone": "身体 18",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
     },
     {
-      "name": "头发物理/身体19",
+      "name": "头发物理/身体 19",
       "order": 71,
-      "bone": "身体19",
+      "bone": "身体 19",
       "rotate": 1,
       "inertia": 0.5,
       "damping": 0.85
@@ -3001,7 +3001,7 @@
         "环抱遮挡": {
           "环抱遮挡": {
             "type": "clipping",
-            "end": "L挡左边",
+            "end": "L 挡左边",
             "vertexCount": 9,
             "vertices": [
               1, 36, 73.38, 40.6, 1, 1, 28, 675.66, -77.29, 1, 1, 28, 530.09,
@@ -3241,7 +3241,7 @@
         "身体遮挡": {
           "身体遮挡": {
             "type": "clipping",
-            "end": "L挡左边",
+            "end": "L 挡左边",
             "vertexCount": 21,
             "vertices": [
               -497.4, 74.85, -491.07, 60.19, -489.43, 28.53, -488.32, 8.29,
@@ -6815,7 +6815,7 @@
           },
           "E脸2": {
             "type": "linkedmesh",
-            "parent": "E脸1",
+            "parent": "E 脸 1",
             "width": 1078,
             "height": 966
           }
@@ -6823,7 +6823,7 @@
         "面部/M嘴巴": {
           "M正常嘴巴": {
             "type": "mesh",
-            "path": "M嘴巴",
+            "path": "M 嘴巴",
             "uvs": [
               0.59504, 0.42683, 0.57241, 0.44377, 0.54183, 0.45484, 0.50391,
               0.45795, 0.46354, 0.45276, 0.42745, 0.44654, 0.39228, 0.43098,
@@ -7947,9 +7947,9 @@
         "面部/E眼皮": { "attachment": [{}] },
         "面部/E眼角": { "attachment": [{}] },
         "面部/E睫毛": { "attachment": [{}] },
-        "面部/E脸1": { "attachment": [{ "name": "E脸2" }] },
-        "面部/M嘴巴": { "attachment": [{ "name": "M笑口" }] },
-        "面部/X眼": { "attachment": [{ "name": "X眼" }] }
+        "面部/E脸1": { "attachment": [{ "name": "E 脸 2" }] },
+        "面部/M嘴巴": { "attachment": [{ "name": "M 笑口" }] },
+        "面部/X眼": { "attachment": [{ "name": "X 眼" }] }
       },
       "bones": {
         "可爱花朵9": {
@@ -8862,7 +8862,7 @@
       }
     },
     "emoji_5": {
-      "slots": { "面部/M嘴巴": { "attachment": [{ "name": "M说话" }] } },
+      "slots": { "面部/M嘴巴": { "attachment": [{ "name": "M 说话" }] } },
       "attachments": {
         "default": {
           "面部/E眼珠": {

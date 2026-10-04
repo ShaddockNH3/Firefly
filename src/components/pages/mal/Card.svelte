@@ -61,7 +61,7 @@ const meanScore = $derived(node.mean || 0);
 // NSFW 封面模糊：mode === "blur" 且命中时模糊封面
 const imageNsfw = $derived(nsfw === "blur" && isMalNsfw(item));
 
-// 日期：动画用季度+年份，漫画用起始日期年份
+// 日期：动画用季度 + 年份，漫画用起始日期年份
 const seasonText = $derived(
 	isManga
 		? ""

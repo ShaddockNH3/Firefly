@@ -57,13 +57,13 @@ export function initIconLoader(): void {
 
 		// 监听图标加载错误
 		iconElement.addEventListener("error", () => {
-			// 保持显示fallback
+			// 保持显示 fallback
 			if (iconName) {
 				console.warn(`Failed to load icon: ${iconName}`);
 			}
 		});
 
-		// 使用MutationObserver监听shadow DOM变化
+		// 使用 MutationObserver 监听 shadow DOM 变化
 		if (window.MutationObserver) {
 			const observer = new MutationObserver(() => {
 				if (checkIconLoaded()) {
@@ -71,7 +71,7 @@ export function initIconLoader(): void {
 				}
 			});
 
-			// 监听iconify-icon元素的变化
+			// 监听 iconify-icon 元素的变化
 			observer.observe(iconElement, {
 				childList: true,
 				subtree: true,

@@ -24,13 +24,13 @@ export const coverImageConfig: CoverImageConfig = {
 	// 是否使用标题和元数据叠加在封面上的布局
 	enableInPostOverlay: false,
 
-	// 是否显示转圈圈加载动画，会替代掉LQIP
+	// 是否显示转圈圈加载动画，会替代掉 LQIP
 	showLoading: false,
 
 	randomCoverImage: {
 		// 随机封面图功能开关
 		enable: false,
-		// 封面图API列表
+		// 封面图 API 列表
 		apis: [
 			"https://t.alcy.cc/pc",
 			"https://www.dmoe.cc/random.php",

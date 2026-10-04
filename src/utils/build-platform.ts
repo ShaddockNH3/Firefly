@@ -27,7 +27,7 @@ function envUrlHostEquals(
 	}
 
 	try {
-		// ESA 当前构建环境里没有平台专属键名，用稳定的内部er_address键值 host 做识别
+		// ESA 当前构建环境里没有平台专属键名，用稳定的内部 er_address 键值 host 做识别
 		return new URL(value).host.toLowerCase() === expectedHost.toLowerCase();
 	} catch {
 		return false;
@@ -50,7 +50,7 @@ export function detectBuildPlatform({
 	if (ciName?.trim()) {
 		return ciName.trim();
 	}
-	//补充EdgeOne Pages 和 ESA Pages 识别逻辑
+	//补充 EdgeOne Pages 和 ESA Pages 识别逻辑
 	if (hasNonEmptyEnv(env, "EDGEONE_PROJECT_ID")) {
 		return "EdgeOne Pages";
 	}

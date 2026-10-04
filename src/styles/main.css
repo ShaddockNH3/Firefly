@@ -585,7 +585,7 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.4;
-  max-height: 2.8em; /* 2行的高度 */
+  max-height: 2.8em; /* 2 行的高度 */
 }
 
 .post-list-container.grid-mode .post-card-item a[aria-label] {

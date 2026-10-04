@@ -10,10 +10,10 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	// 侧边栏位置：
 	// left: 仅显示左侧边栏
 	// right: 仅显示右侧边栏
-	// both: 双侧边栏，1280px以上同时显示左右，769-1279px根据tabletSidebar配置显示其中一侧
+	// both: 双侧边栏，1280px 以上同时显示左右，769-1279px 根据 tabletSidebar 配置显示其中一侧
 	position: "both",
 
-	// 平板端(769-1279px)显示哪侧侧边栏，仅position为both时生效
+	// 平板端 (769-1279px) 显示哪侧侧边栏，仅 position 为 both 时生效
 	// left: 平板端显示左侧边栏
 	// right: 平板端显示右侧边栏
 	tabletSidebar: "left",
@@ -22,18 +22,18 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	hideSidebarOnPostPage: false,
 
 	// 文章详情页保持双侧栏
-	// 使用单侧栏(position为left或right)时，是否在文章详情页显示双侧边栏，（hideSidebarOnPostPage需要保持false）
-	// 当position为left时开启此项，文章详情页将额外显示右侧边栏
-	// 当position为right时开启此项，文章详情页将额外显示左侧边栏
+	// 使用单侧栏 (position 为 left 或 right) 时，是否在文章详情页显示双侧边栏，（hideSidebarOnPostPage 需要保持 false）
+	// 当 position 为 left 时开启此项，文章详情页将额外显示右侧边栏
+	// 当 position 为 right 时开启此项，文章详情页将额外显示左侧边栏
 	// 适用在只想用单侧栏，但在文章详情页想用对侧栏的目录等组件的场景
 	showBothSidebarsOnPostPage: true,
 
 	// 左侧边栏组件配置列表
-	// 组件的渲染顺序完全取决于它们在配置数组中出现的顺序，但top的组件会优先于sticky位置的组件渲染
+	// 组件的渲染顺序完全取决于它们在配置数组中出现的顺序，但 top 的组件会优先于 sticky 位置的组件渲染
 	// type 组件类型
 	// enable 是否启用该组件
-	// showTitle 是否显示该组件标题，默认true
-	// position 组件位置：top固定顶部，sticky粘性定位(会跟随页面滚动)
+	// showTitle 是否显示该组件标题，默认 true
+	// position 组件位置：top 固定顶部，sticky 粘性定位 (会跟随页面滚动)
 	// showOnPostPage 是否在文章详情页显示该组件
 	// hideOnNonPostPage 是否在非文章详情页隐藏该组件（true=仅文章详情页显示）
 	// specificConfig 组件专属配置
@@ -79,7 +79,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			showOnPostPage: true,
 			// 组件专属配置
 			specificConfig: {
-				// 折叠阈值：当分类数量超过>5个时自动折叠
+				// 折叠阈值：当分类数量超过>5 个时自动折叠
 				collapseThreshold: 5,
 			},
 		},
@@ -94,7 +94,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			showOnPostPage: true,
 			// 组件专属配置
 			specificConfig: {
-				// 折叠阈值：当标签数量超过>10个时自动折叠
+				// 折叠阈值：当标签数量超过>10 个时自动折叠
 				collapseThreshold: 10,
 			},
 		},
@@ -199,7 +199,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 					},
 					// 是否允许关闭广告
 					closable: false,
-					// 显示次数限制，-1为无限制
+					// 显示次数限制，-1 为无限制
 					displayCount: -1,
 					// 组件内边距配置
 					padding: {
@@ -236,7 +236,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	],
 
 	// 移动端底部组件配置列表
-	// 这些组件只在移动端(<768px)显示在页面底部，独立于左右侧边栏配置
+	// 这些组件只在移动端 (<768px) 显示在页面底部，独立于左右侧边栏配置
 	mobileBottomComponents: [
 		{
 			// 组件类型：用户资料组件
@@ -263,7 +263,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			showOnPostPage: true,
 			// 组件专属配置
 			specificConfig: {
-				// 折叠阈值：当分类数量超过5个时自动折叠
+				// 折叠阈值：当分类数量超过 5 个时自动折叠
 				collapseThreshold: 5,
 			},
 		},
@@ -276,7 +276,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			showOnPostPage: true,
 			// 组件专属配置
 			specificConfig: {
-				// 折叠阈值：当标签数量超过20个时自动折叠
+				// 折叠阈值：当标签数量超过 20 个时自动折叠
 				collapseThreshold: 10,
 			},
 		},

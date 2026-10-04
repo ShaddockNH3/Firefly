@@ -1,7 +1,7 @@
 /**
  * 水波纹特效管理器接口契约
  *
- * WavesEffect.astro 中的主线程 Canvas 2D 管理器实现该接口,
+ * WavesEffect.astro 中的主线程 Canvas 2D 管理器实现该接口，
  * 使初始化逻辑与具体实现解耦。
  */
 export interface WavesManagerLike {

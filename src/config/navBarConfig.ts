@@ -122,7 +122,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			},
 			/*
 			{
-				name: "Firefly文档",
+				name: "Firefly 文档",
 				url: "https://docs-firefly.cuteleaf.cn",
 				external: true,
 				icon: "material-symbols:docs",
@@ -148,7 +148,7 @@ export const navBarSearchConfig: NavBarSearchConfig = {
 };
 
 // ============================================================================
-// 链接预设 - 可自由自定义导航栏链接的名称、图标和URL
+// 链接预设 - 可自由自定义导航栏链接的名称、图标和 URL
 // Link Presets - Allows free customization of the name, icon, and URL of navigation bar links
 // ============================================================================
 export const LinkPresets: Record<string, NavBarLink> = {

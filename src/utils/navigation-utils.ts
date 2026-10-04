@@ -6,7 +6,7 @@ import { url } from "@/utils/url-utils";
 
 /**
  * 导航到指定页面
- * @param url 目标页面URL
+ * @param url 目标页面 URL
  * @param options 导航选项
  */
 export function navigateToPage(
@@ -120,7 +120,7 @@ export function waitForSwup(timeout = 5000): Promise<boolean> {
 
 /**
  * 预加载页面
- * @param url 要预加载的页面URL
+ * @param url 要预加载的页面 URL
  */
 export function preloadPage(url: string): void {
 	if (!url || typeof url !== "string") {

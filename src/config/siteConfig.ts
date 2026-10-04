@@ -6,7 +6,7 @@ import { resolveSiteLang } from "../utils/site-config-utils";
 // 语言代码，例如：'zh_CN', 'zh_TW', 'en', 'ja', 'ru', 'ko'。
 const SITE_LANG = resolveSiteLang("zh_CN");
 
-// 页面开关配置 - 控制特定页面的访问权限，设为false会返回404并自动隐藏对应的导航栏菜单项
+// 页面开关配置 - 控制特定页面的访问权限，设为 false 会返回 404 并自动隐藏对应的导航栏菜单项
 const pages = resolvePageToggles({
 	// ── 社交 (Social) ──────────────────────────────────
 
@@ -27,9 +27,9 @@ const pages = resolvePageToggles({
 	bilibili: true,
 	// 番组计划页面开关
 	bangumi: true,
-	// VNDB页面开关
+	// VNDB 页面开关
 	vndb: false,
-	// MyAnimeList页面开关
+	// MyAnimeList 页面开关
 	mal: false,
 
 	// ── 关于 (About) ──────────────────────────────────
@@ -74,7 +74,7 @@ export const siteConfig: SiteConfig = {
 	// 在使用单侧栏边栏时，建议调低一些宽度以获得更好的视觉效果。
 	pageWidth: 100,
 
-	// 网站Card样式配置
+	// 网站 Card 样式配置
 	card: {
 		// 是否开启卡片边框和阴影，开启后让网站更有立体感
 		border: false,
@@ -83,7 +83,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	// Favicon 配置
-	// 如果启用了OpenGraph图片功能，数组中需要包含png格式的favicon图标
+	// 如果启用了 OpenGraph 图片功能，数组中需要包含 png 格式的 favicon 图标
 	favicon: [
 		{
 			// 图标文件路径
@@ -97,14 +97,14 @@ export const siteConfig: SiteConfig = {
 
 	// 导航栏配置
 	navbar: {
-		// 导航栏Logo
+		// 导航栏 Logo
 		// 支持三种类型：
-		// 1. Astro图标库: { type: "icon", value: "material-symbols:home-pin-outline" }
-		// 2. 本地图片（public目录，不优化）: { type: "image", value: "/assets/images/logo.webp", alt: "Logo" }
-		// 3. 本地图片（src目录，自动优化但会增加构建时间）: { type: "image", value: "assets/images/logo.webp", alt: "Logo" }
-		// 4. 网络图片: { type: "url", value: "https://example.com/logo.png", alt: "Logo" }
+		// 1. Astro 图标库：{ type: "icon", value: "material-symbols:home-pin-outline" }
+		// 2. 本地图片（public 目录，不优化）: { type: "image", value: "/assets/images/logo.webp", alt: "Logo" }
+		// 3. 本地图片（src 目录，自动优化但会增加构建时间）: { type: "image", value: "assets/images/logo.webp", alt: "Logo" }
+		// 4. 网络图片：{ type: "url", value: "https://example.com/logo.png", alt: "Logo" }
 		// image 和 url 类型可额外设置 valueDark，用于暗色模式下显示另一张图片，不设置则亮暗色共用 value
-		// 例如: { type: "image", value: "assets/images/logo.png", valueDark: "assets/images/logo-dark.png", alt: "Logo" }
+		// 例如：{ type: "image", value: "assets/images/logo.png", valueDark: "assets/images/logo-dark.png", alt: "Logo" }
 		// 使用 Astro 图标库时不需要设置 valueDark，图标会自动跟随主题亮暗色切换
 		logo: {
 			type: "image",
@@ -127,11 +127,11 @@ export const siteConfig: SiteConfig = {
 	// 站点开始日期，用于统计运行天数
 	siteStartDate: "2023-12-21",
 
-	// 站点时区（IANA 时区字符串），用于格式化bangumi、rss里的构建日期时间等等..
+	// 站点时区（IANA 时区字符串），用于格式化 bangumi、rss 里的构建日期时间等等..
 	// 示例："Asia/Shanghai", "UTC", 如果为空，则按照构建服务器的时区进行时区转换
 	timezone: "Asia/Shanghai",
 
-	// 页面开关配置 - 控制特定页面的访问权限，设为false会返回404并自动隐藏对应的导航栏菜单项
+	// 页面开关配置 - 控制特定页面的访问权限，设为 false 会返回 404 并自动隐藏对应的导航栏菜单项
 
 	// 分类导航栏开关，在首页和归档页顶部显示分类快捷导航
 	categoryBar: true,
@@ -165,7 +165,7 @@ export const siteConfig: SiteConfig = {
 		showStatsIcons: true,
 		// 标签显示位置
 		// 设置为"meta"：显示在文章标题下的元数据
-		// 设置为"bottom"：顶替stats在底部显示
+		// 设置为"bottom"：顶替 stats 在底部显示
 		tagsPosition: "bottom",
 		// 底部标签样式，仅在 tagsPosition 为 "bottom" 时生效
 		// "chip"：按钮样式，形状跟随上方的 tagStyle 配置
@@ -187,7 +187,7 @@ export const siteConfig: SiteConfig = {
 			showReadingTime: false,
 		},
 		// 底部 PostStats 统计信息显示控制
-		// 如果tagsPosition设置为"bottom"，则stats将不显示
+		// 如果 tagsPosition 设置为"bottom"，则 stats 将不显示
 		stats: {
 			// 是否显示发布日期
 			showPublished: true,
@@ -200,7 +200,7 @@ export const siteConfig: SiteConfig = {
 		grid: {
 			// 是否开启瀑布流布局，同时有封面图和无封面图的混合文章推荐开启
 			masonry: false,
-			// 网格模式卡片最小宽度(px)，浏览器根据容器宽度自动计算列数
+			// 网格模式卡片最小宽度 (px)，浏览器根据容器宽度自动计算列数
 			columnWidth: 320,
 			// 网格模式封面是否撑满卡片贴边
 			// true：封面顶到卡片左右和上边缘，只有上面两角是圆角
@@ -221,7 +221,7 @@ export const siteConfig: SiteConfig = {
 		// 主题：'github' | 'obsidian' | 'vitepress' | 'docusaurus'，每个主题风格和语法不同，可根据喜好选择
 		rehypeCallouts: {
 			theme: "github",
-			// 是否启用兼容 Python-Markdown 风格的 admonition 语法（!!!和???语法）
+			// 是否启用兼容 Python-Markdown 风格的 admonition 语法（!!! 和？??语法）
 			// 注意：只有 theme 配置成 obsidian 主题才能基本支持这些语法，其他主题会有样式问题或不兼容的情况
 			enablePythonMarkdownAdmonitions: false,
 		},
@@ -231,19 +231,19 @@ export const siteConfig: SiteConfig = {
 		outdatedThreshold: 30,
 		// 是否开启分享海报生成功能
 		sharePoster: true,
-		// OpenGraph图片功能，注意开启后要渲染很长时间，不建议本地调试的时候开启
+		// OpenGraph 图片功能，注意开启后要渲染很长时间，不建议本地调试的时候开启
 		generateOgImages: true,
 	},
 
-	// ── Bilibili配置 ──────────────────────────────────
+	// ── Bilibili 配置 ──────────────────────────────────
 	bilibili: {
 		// 你的 Bilibili 用户 UID
 		uid: "1293086369",
 	},
 
-	// ── 番组计划bangumi配置 ──────────────────────────────────
+	// ── 番组计划 bangumi 配置 ──────────────────────────────────
 	bangumi: {
-		// Bangumi用户ID
+		// Bangumi 用户 ID
 		userId: "1281832",
 		// 数据模式：static=构建时获取，dynamic=客户端实时获取
 		// static 模式在构建时获取数据并静态渲染，部署后数据不更新
@@ -254,7 +254,7 @@ export const siteConfig: SiteConfig = {
 		// 详情页地址
 		subjectBaseUrl: "https://api.bangumi.pro/subject/",
 		// 条目类型排序，数组中的类型将按顺序优先展示
-		// 可选值: "anime" | "book" | "music" | "game" | "real" (暂不支持"real"类型)
+		// 可选值："anime" | "book" | "music" | "game" | "real" (暂不支持"real"类型)
 		// 未列出的类型将按默认顺序排在后面
 		categoryOrder: ["anime", "book", "music", "game"],
 		// 控制各分类的启用状态（true/false），未指定的分类默认启用
@@ -265,7 +265,7 @@ export const siteConfig: SiteConfig = {
 		nsfw: "off",
 	},
 
-	// ── VNDB配置 ──────────────────────────────────
+	// ── VNDB 配置 ──────────────────────────────────
 	vndb: {
 		// VNDB 用户 ID
 		userId: "u358128",
@@ -285,7 +285,7 @@ export const siteConfig: SiteConfig = {
 		nsfw: "hide",
 	},
 
-	// ── MyAnimeList配置 ──────────────────────────────────
+	// ── MyAnimeList 配置 ──────────────────────────────────
 	mal: {
 		// MyAnimeList 用户名（列表需为公开状态，私密列表无法读取）
 		username: "cuteleaf",
@@ -302,7 +302,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	// ── 图像优化配置 ──────────────────────────────────
-	// 图像优化压缩只保留avif或webp
+	// 图像优化压缩只保留 avif 或 webp
 	// 响应式图像是为在不同设备上提高性能而调整的图像。这些图像可以调整大小以适应其容器，并且可以根据访问者的屏幕尺寸和分辨率以不同的大小提供。
 	// Astro 仅能对 src 目录下的图像进行优化，src 目录下的图像越多，构建时间会越长
 	// Astro 图像文档 https://docs.astro.build/zh-cn/guides/images/
@@ -325,9 +325,9 @@ export const siteConfig: SiteConfig = {
 		],
 	},
 
-	// 站点语言，在本配置文件顶部SITE_LANG定义
+	// 站点语言，在本配置文件顶部 SITE_LANG 定义
 	lang: SITE_LANG,
 
-	// 页面开关配置，在本配置文件顶部pages定义
+	// 页面开关配置，在本配置文件顶部 pages 定义
 	pages,
 };

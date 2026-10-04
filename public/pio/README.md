@@ -14,13 +14,13 @@ export const spineModelConfig: SpineModelConfig = {
   model: {
     path: "/pio/models/shizuku/shizuku.model.json", // 模型文件路径
     scale: 1.0, // 模型缩放比例
-    x: 0, // X轴偏移
-    y: 0, // Y轴偏移
+    x: 0, // X 轴偏移
+    y: 0, // Y 轴偏移
   },
   position: {
-    corner: "bottom-right", // 显示位置: "bottom-left" | "bottom-right" | "top-left" | "top-right"
-    offsetX: 20, // 距离边缘的X轴偏移（像素）
-    offsetY: 20, // 距离边缘的Y轴偏移（像素）
+    corner: "bottom-right", // 显示位置："bottom-left" | "bottom-right" | "top-left" | "top-right"
+    offsetX: 20, // 距离边缘的 X 轴偏移（像素）
+    offsetY: 20, // 距离边缘的 Y 轴偏移（像素）
   },
   size: {
     width: 280, // 容器宽度（像素）
@@ -50,8 +50,8 @@ export const spineModelConfig: SpineModelConfig = {
 - `public/pio/static/spine-player.js`
 
 您可以从以下来源获取：
-- [Spine官方运行时](http://esotericsoftware.com/spine-runtimes)
-- [spine-ts运行时](https://github.com/EsotericSoftware/spine-runtimes/tree/4.1/spine-ts)
+- [Spine 官方运行时](http://esotericsoftware.com/spine-runtimes)
+- [spine-ts 运行时](https://github.com/EsotericSoftware/spine-runtimes/tree/4.1/spine-ts)
 
 ### 2. Spine 模型文件
 将您的 Spine 模型文件放置在：
@@ -128,7 +128,7 @@ export const spineModelConfig: SpineModelConfig = {
 ## 获取 Spine 模型
 
 您可以从以下渠道获取或制作 Spine 模型：
-- [Spine官方网站](http://esotericsoftware.com/)
+- [Spine 官方网站](http://esotericsoftware.com/)
 - 各种开源 Live2D/Spine 模型资源
 - 自制或委托制作
 

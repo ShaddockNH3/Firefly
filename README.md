@@ -17,7 +17,7 @@
 > 
 > [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z41NQALY)
 >
-> **QQ交流群：[1087127207](https://qm.qq.com/q/ZGsFa8qX2G)**
+> **QQ 交流群：[1087127207](https://qm.qq.com/q/ZGsFa8qX2G)**
 > 
 > ![GitHub License](https://img.shields.io/github/license/CuteLeaf/Firefly)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/CuteLeaf/Firefly)
@@ -35,13 +35,13 @@
 [**📝使用文档**](https://docs-firefly.cuteleaf.cn/) /
 [**🍀我的博客**](https://blog.cuteleaf.cn) 
 
-⚡ 静态站点生成: 基于 Astro 的超快加载速度和 SEO 优化
+⚡ 静态站点生成：基于 Astro 的超快加载速度和 SEO 优化
 
-🎨 现代化设计: 简洁美观的界面，支持自定义主题色
+🎨 现代化设计：简洁美观的界面，支持自定义主题色
 
-📱 移动友好: 完美的响应式体验，移动端专项优化
+📱 移动友好：完美的响应式体验，移动端专项优化
 
-🔧 高度可配置: 大部分功能模块均可通过配置文件自定义
+🔧 高度可配置：大部分功能模块均可通过配置文件自定义
 
 <table width="100%" align="center">
   <tr>
@@ -82,7 +82,7 @@
 
 ### 个性化
 - [x] **动态侧边栏** - 支持配置单侧边栏、双侧边栏
-- [x] **文章布局** - 支持配置(单列)列表、网格(多列/瀑布流)布局
+- [x] **文章布局** - 支持配置 (单列) 列表、网格 (多列/瀑布流) 布局
 - [x] **字体管理** - 支持自定义字体，丰富的字体选择器
 - [x] **页脚配置** - HTML 内容注入，完全自定义
 - [x] **亮暗色模式** - 支持亮色/暗色/跟随系统三种模式
@@ -286,7 +286,7 @@ location: China # 位置
 
 ### 其他参考
 - 博主`霞葉`的 [Bangumi 收藏](https://kasuha.com/posts/fuwari-enhance-ep2/) 页面组件
-- 哔哩哔哩up主 `公公的日常` 的Q版 [流萤看板娘 Spine 切片数据](https://www.bilibili.com/video/BV1fuVzzdE5y) 
+- 哔哩哔哩 up 主 `公公的日常` 的 Q 版 [流萤看板娘 Spine 切片数据](https://www.bilibili.com/video/BV1fuVzzdE5y) 
 
 ## 📝 许可协议
 

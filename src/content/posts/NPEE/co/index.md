@@ -2,7 +2,7 @@
 title: 考研冲刺前的总结 —— 计算机组成原理
 published: 2026-09-11
 description: 考研冲刺前的总结 —— 计算机组成原理
-tags: [计算机组成原理, 考研, 总结]
+tags: [计算机组成原理，考研，总结]
 category: 考研
 draft: false
 image: ./cover.png
@@ -501,14 +501,14 @@ $N = (-1)^S - M - R^E$
 
 | 类型 | 符号位 (S) | 阶码位 (E) | 尾数位 (M) | 阶码偏置值 (Bias) | 最小正非规范化数 (绝对值极小) | 最小正规范化数 | 最大正规范化数 (绝对值极大) | 十进制有效数字位数 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 单精度 (float, 32位) | 1位 | 8位 | 23位 | 127 | $2^{-149} \approx 1.40 \times 10^{-45}$ | $2^{-126} \approx 1.18 \times 10^{-38}$ | $(2 - 2^{-23}) \times 2^{127} \approx 3.40 \times 10^{38}$ | 约 6 ~ 7 位 |
-| 双精度 (double, 64位) | 1位 | 11位 | 52位 | 1023 | $2^{-1074} \approx 4.94 \times 10^{-324}$ | $2^{-1022} \approx 2.23 \times 10^{-308}$ | $(2 - 2^{-52}) \times 2^{1023} \approx 1.80 \times 10^{308}$ | 约 15 ~ 17 位 |
+| 单精度 (float, 32 位) | 1 位 | 8 位 | 23 位 | 127 | $2^{-149} \approx 1.40 \times 10^{-45}$ | $2^{-126} \approx 1.18 \times 10^{-38}$ | $(2 - 2^{-23}) \times 2^{127} \approx 3.40 \times 10^{38}$ | 约 6 ~ 7 位 |
+| 双精度 (double, 64 位) | 1 位 | 11 位 | 52 位 | 1023 | $2^{-1074} \approx 4.94 \times 10^{-324}$ | $2^{-1022} \approx 2.23 \times 10^{-308}$ | $(2 - 2^{-52}) \times 2^{1023} \approx 1.80 \times 10^{308}$ | 约 15 ~ 17 位 |
 
 | 特殊数值名称 | 阶码字段 (E) | 尾数字段 (M) | 含义与说明 |
 | :--- | :--- | :--- | :--- |
 | 正零 / 负零 ($\pm 0$) | 全 0 | 全 0 | 符号位 $S=0$ 表示 $+0$，$S=1$ 表示 $-0$。在逻辑比较上通常 $+0 == -0$。 |
-| 正无穷 / 负无穷 ($\pm \infty$) | 全 1 (单精度为255，双精度为2047) | 全 0 | 符号位 $S=0$ 表示 $+\infty$，$S=1$ 表示 $-\infty$。通常出现在溢出或除以0的情况。 |
-| 非数 (NaN, Not a Number) | 全 1 (单精度为255，双精度为2047) | 不全为 0 | 表示无效的未定义操作（例如 $0/0$、$\infty - \infty$ 或计算负数的 $(x)^{1/2}$ 次方时产生）。分为静默NaN (qNaN) 和发信号NaN (sNaN)。 |
+| 正无穷 / 负无穷 ($\pm \infty$) | 全 1 (单精度为 255，双精度为 2047) | 全 0 | 符号位 $S=0$ 表示 $+\infty$，$S=1$ 表示 $-\infty$。通常出现在溢出或除以 0 的情况。 |
+| 非数 (NaN, Not a Number) | 全 1 (单精度为 255，双精度为 2047) | 不全为 0 | 表示无效的未定义操作（例如 $0/0$、$\infty - \infty$ 或计算负数的 $(x)^{1/2}$ 次方时产生）。分为静默 NaN (qNaN) 和发信号 NaN (sNaN)。 |
 | 非规范化数 (Subnormal) | 全 0 | 不全为 0 | 用于实现“渐进下溢”（Gradual Underflow），隐藏位变为 $0$（即 $0.M \times 2^{1-\text{Bias}}$），填补 $0$ 到最小规范化数之间的空隙。 |
 
 #### 浮点数的相关计算
@@ -773,7 +773,7 @@ cache 块大小和 cache 本身大小无关。
 
 需要辨析，不要相互混淆，尤其是在做题的时候，给的是第 x 块，而不可以将之当成具体地址去算 cache。
 
-由于边界对齐，所以很多时候都不需要存完整的地址，存 “块” 地址即可。
+由于边界对齐，所以很多时候都不需要存完整的地址，存“块”地址即可。
 
 ### cache 命中率分析
 
@@ -877,10 +877,10 @@ cache 块大小和 cache 本身大小无关。
 - 访问模式：外层按列循环，内层按行循环（依次访问第 0 列的 `A[0][0] ~ A[1023][0]`，接着第 1 列……）。
 - 跨度与块内渗透：
   - 访问 `A[0][0]`：缺失（Miss）！系统从内存调入包含 `A[0][0] ~ A[3][3]` 的整整 64 字节块。
-  - 访问 `A[1][0]`：命中（Hit）！ 它就在刚才载入的块的第 2 个 16B 槽位里。
-  - 访问 `A[2][0]`：命中（Hit）！ 它在同一个块的第 3 个 16B 槽位里。
-  - 访问 `A[3][0]`：命中（Hit）！ 同样命中！
-  - 访问 `A[4][0]`：跳出当前块范围，缺失（Miss）！ 调入下一块（包含第 4~7 行）。
+  - 访问 `A[1][0]`：命中（Hit）！它就在刚才载入的块的第 2 个 16B 槽位里。
+  - 访问 `A[2][0]`：命中（Hit）！它在同一个块的第 3 个 16B 槽位里。
+  - 访问 `A[3][0]`：命中（Hit）！同样命中！
+  - 访问 `A[4][0]`：跳出当前块范围，缺失（Miss）！调入下一块（包含第 4~7 行）。
   - 访问 `A[5][0], A[6][0], A[7][0]`：连续 3 次命中！
 - 容量颠簸效应：
   - 当第 0 列全部遍历完时，共访问了 1024 个元素，消耗了 256 个 Cache 块的装载。
@@ -976,7 +976,7 @@ cache 块大小和 cache 本身大小无关。
 2. 查询 Cache：
     - 用 PA 的中间 6 位定位 Cache 组，比对该组内 4 个路（Way）的 16 位 Cache Tag。
 3. Cache Miss：
-    - 因为 Cache 初始全空，发生Cache 冷缺失。
+    - 因为 Cache 初始全空，发生 Cache 冷缺失。
 4. 从主存装入 Cache：
     - 发出 PA 向主存（刚才刚刚从磁盘调入指令的物理页中）读取该指令所在的 64B 数据块。
     - 将 64B 载入到 Cache 对应组的一个空闲槽位中，填入 Cache Tag，有效位置 1。
@@ -1095,7 +1095,7 @@ int f(int n) {
 }
 ```
 
-| 内存虚拟地址 | 机器指令（32位十六进制） | MIPS 汇编指令 | 指令功能说明 |
+| 内存虚拟地址 | 机器指令（32 位十六进制） | MIPS 汇编指令 | 指令功能说明 |
 | :--- | :--- | :--- | :--- |
 | `0040 0100H` | `27 BD FF E8` | `addiu $sp, $sp, -24` | 分配 24 字节栈帧空间 |
 | `0040 0104H` | `AF BF 00 14` | `sw $ra, 20($sp)` | 保存返回地址寄存器 `$ra` |
@@ -1448,30 +1448,30 @@ CPU 大致可以分为负责做决策的 CU 以及下面负责干活的数据通
 
 | 时钟节拍 | 功能（微操作） | 有效控制信号 | 所属阶段与总线行为机制 |
 | :---: | :--- | :--- | :--- |
-| C1 | $\text{MAR} \leftarrow (\text{PC})$ | `PCout, MARin` | 【取指】 PC 地址送内部总线打入 MAR |
-| C2 | $\text{MDR} \leftarrow M(\text{MAR})$, $\text{PC} \leftarrow (\text{PC}) + 1$ | `MemR, MDRinE, PC+1` | 【取指】 启动读主存（走外总线），PC 硬件自增 |
-| C3 | $\text{IR} \leftarrow (\text{MDR})$ | `MDRout, IRin` | 【取指】 指令码经内部总线送入指令寄存器 |
-| C4 | 指令译码 | 无 | 【译码】 控制器硬件组合逻辑/微码解析操作码 |
-| C5 | $\text{A} \leftarrow (\text{R0})$ | `R0out, Ain` | 【执行】 源操作数 R0 送入 ALU 暂存器 A 锁存 |
-| C6 | $\text{MAR} \leftarrow (\text{R1})$ | `R1out, MARin` | 【执行】 目的操作数内存地址（R1）送入 MAR |
-| C7 | $\text{MDR} \leftarrow M(\text{MAR})$ | `MemR, MDRinE` | 【执行】 启动读主存，操作数从外总线读入 MDR |
-| C8 | $\text{AC} \leftarrow (\text{A}) + (\text{MDR})$ | `MDRout, ADD, ACin` | 【执行】 MDR 送内总线，ALU 加法，结果进 AC |
-| C9 | $\text{MDR} \leftarrow (\text{AC})$ | `ACout, MDRin` | 【写回】 运算结果从 AC 经内总线送入 MDR |
-| C10| $M(\text{MAR}) \leftarrow (\text{MDR})$ | `MemW, MDRoutE` | 【写回】 启动写主存，MDR 数据经外总线写入内存 |
+| C1 | $\text{MAR} \leftarrow (\text{PC})$ | `PCout, MARin` | 【取指】PC 地址送内部总线打入 MAR |
+| C2 | $\text{MDR} \leftarrow M(\text{MAR})$, $\text{PC} \leftarrow (\text{PC}) + 1$ | `MemR, MDRinE, PC+1` | 【取指】启动读主存（走外总线），PC 硬件自增 |
+| C3 | $\text{IR} \leftarrow (\text{MDR})$ | `MDRout, IRin` | 【取指】指令码经内部总线送入指令寄存器 |
+| C4 | 指令译码 | 无 | 【译码】控制器硬件组合逻辑/微码解析操作码 |
+| C5 | $\text{A} \leftarrow (\text{R0})$ | `R0out, Ain` | 【执行】源操作数 R0 送入 ALU 暂存器 A 锁存 |
+| C6 | $\text{MAR} \leftarrow (\text{R1})$ | `R1out, MARin` | 【执行】目的操作数内存地址（R1）送入 MAR |
+| C7 | $\text{MDR} \leftarrow M(\text{MAR})$ | `MemR, MDRinE` | 【执行】启动读主存，操作数从外总线读入 MDR |
+| C8 | $\text{AC} \leftarrow (\text{A}) + (\text{MDR})$ | `MDRout, ADD, ACin` | 【执行】MDR 送内总线，ALU 加法，结果进 AC |
+| C9 | $\text{MDR} \leftarrow (\text{AC})$ | `ACout, MDRin` | 【写回】运算结果从 AC 经内总线送入 MDR |
+| C10| $M(\text{MAR}) \leftarrow (\text{MDR})$ | `MemW, MDRoutE` | 【写回】启动写主存，MDR 数据经外总线写入内存 |
 
 注意到 C7 时，CPU 内部总线是空闲的，所以可以重排如下：
 
 | 时钟节拍 | 功能（微操作） | 有效控制信号 | 总线并行与硬件动作机制说明 |
 | :---: | :--- | :--- | :--- |
-| C1 | $\text{MAR} \leftarrow (\text{PC})$ | `PCout, MARin` | 【取指】 PC 地址送入内部总线，打入 MAR |
-| C2 | $\text{MDR} \leftarrow M(\text{MAR})$<br>$\text{PC} \leftarrow (\text{PC}) + 1$ | `MemR, MDRinE, PC+1` | 【取指】 启动读主存（走外总线），PC 硬件自增 |
-| C3 | $\text{IR} \leftarrow (\text{MDR})$ | `MDRout, IRin` | 【取指】 指令机器码经内部总线打入指令寄存器 IR |
-| C4 | 指令译码 | 无 | 【译码】 控制器逻辑对操作码进行译码，内部无总线流动 |
-| C5 | $\text{MAR} \leftarrow (\text{R1})$ | `R1out, MARin` | 【重排前置】 优先将目标内存地址（R1）经内总线打入 MAR |
+| C1 | $\text{MAR} \leftarrow (\text{PC})$ | `PCout, MARin` | 【取指】PC 地址送入内部总线，打入 MAR |
+| C2 | $\text{MDR} \leftarrow M(\text{MAR})$<br>$\text{PC} \leftarrow (\text{PC}) + 1$ | `MemR, MDRinE, PC+1` | 【取指】启动读主存（走外总线），PC 硬件自增 |
+| C3 | $\text{IR} \leftarrow (\text{MDR})$ | `MDRout, IRin` | 【取指】指令机器码经内部总线打入指令寄存器 IR |
+| C4 | 指令译码 | 无 | 【译码】控制器逻辑对操作码进行译码，内部无总线流动 |
+| C5 | $\text{MAR} \leftarrow (\text{R1})$ | `R1out, MARin` | 【重排前置】优先将目标内存地址（R1）经内总线打入 MAR |
 | C6 | $\text{MDR} \leftarrow M(\text{MAR})$<br>$\text{A} \leftarrow (\text{R0})$ | `MemR, MDRinE, R0out, Ain` | 【双总线并行·核心优化】<br>① 外总线：启动主存读，数据由外总线打入 MDR (`MemR, MDRinE`)；<br>② 内总线：利用内总线空闲，将 R0 数据打入暂存器 A (`R0out, Ain`)。<br>👉 两组操作互不抢占总线，单周期同时完成，净省 1 拍！ |
-| C7 | $\text{AC} \leftarrow (\text{A}) + (\text{MDR})$ | `MDRout, ADD, ACin` | 【执行加法】 MDR 读出的操作数送内总线，与暂存器 A 相加，结果存入累加器 AC |
-| C8 | $\text{MDR} \leftarrow (\text{AC})$ | `ACout, MDRin` | 【写回准备】 运算结果从 AC 经内部总线打入 MDR 缓冲锁存 |
-| C9 | $M(\text{MAR}) \leftarrow (\text{MDR})$ | `MemW, MDRoutE` | 【写回主存】 启动主存写，MDR 数据经外部数据总线写入 R1 所指主存单元 |
+| C7 | $\text{AC} \leftarrow (\text{A}) + (\text{MDR})$ | `MDRout, ADD, ACin` | 【执行加法】MDR 读出的操作数送内总线，与暂存器 A 相加，结果存入累加器 AC |
+| C8 | $\text{MDR} \leftarrow (\text{AC})$ | `ACout, MDRin` | 【写回准备】运算结果从 AC 经内部总线打入 MDR 缓冲锁存 |
+| C9 | $M(\text{MAR}) \leftarrow (\text{MDR})$ | `MemW, MDRoutE` | 【写回主存】启动主存写，MDR 数据经外部数据总线写入 R1 所指主存单元 |
 
 ### 一条指令的不同阶段
 
@@ -1484,7 +1484,7 @@ CPU 大致可以分为负责做决策的 CU 以及下面负责干活的数据通
 语义：$R1 \leftarrow R2 + R3$（寄存器之间运算，完全不碰内存）
 
 ```text
-[IF] 取指 -> [ID] 译码+读R2/R3 -> [EX] ALU算加法 -> [MEM] 旁路空闲 -> [WB] 写回R1
+[IF] 取指 -> [ID] 译码 + 读 R2/R3 -> [EX] ALU 算加法 -> [MEM] 旁路空闲 -> [WB] 写回 R1
 ```
 
 1. 取指令阶段（IF）：
@@ -1509,7 +1509,7 @@ CPU 大致可以分为负责做决策的 CU 以及下面负责干活的数据通
 语义：$\text{Mem}[R2 + 0] \leftarrow R1$（纯地址计算并写入内存，不修改通用寄存器）
 
 ```text
-[IF] 取指 -> [ID] 译码+读基址R2/数据R1+符号扩展 -> [EX] ALU算地址 -> [MEM] 写内存 -> [WB] 空操作
+[IF] 取指 -> [ID] 译码 + 读基址 R2/数据 R1+ 符号扩展 -> [EX] ALU 算地址 -> [MEM] 写内存 -> [WB] 空操作
 ```
 
 1. 取指令阶段（IF）：
@@ -1681,12 +1681,12 @@ IO 端口是寄存器
 ```text
 [外设/内部异常触发]
         │
-   ======【 第一阶段：硬件主场（中断隐指令完成）】======
+   ======【第一阶段：硬件主场（中断隐指令完成）】======
         ├─ 1. 关中断（硬件置锁）
         ├─ 2. 保存断点（PC 和 PSW 压栈）
         └─ 3. 引出中断服务程序（根据中断向量查表并跳到 ISR 入口）
         │
-   ======【 第二阶段：软件主场（操作系统中断服务程序 ISR 执行）】======
+   ======【第二阶段：软件主场（操作系统中断服务程序 ISR 执行）】======
         ├─ 4. 保存现场与屏蔽字（通用寄存器压栈、设置屏蔽字）
         ├─ 5. 执行具体的中断处理例程（干具体脏活累活）
         └─ 6. 恢复现场并中断返回（出栈通用寄存器，开中断并返回原程序）

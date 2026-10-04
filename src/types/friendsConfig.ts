@@ -1,7 +1,7 @@
 // 友链配置
 export type FriendLink = {
 	title: string; // 友链标题
-	imgurl: string; // 头像图片URL
+	imgurl: string; // 头像图片 URL
 	desc: string; // 友链描述
 	siteurl: string; // 友链地址
 	tags?: string[]; // 标签数组

@@ -268,7 +268,7 @@ html.is-page-transitioning .banner-home-text-overlay {
     }
 }
 
-/* 平板和手机端非首页隐藏banner - 改进的分阶段动画 (1024px以下) */
+/* 平板和手机端非首页隐藏 banner - 改进的分阶段动画 (1024px 以下) */
 @media (max-width: 1023px) {
     #wallpaper-wrapper {
         transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease-out;
@@ -285,10 +285,10 @@ html.is-page-transitioning .banner-home-text-overlay {
     /* 手机端非首页时主内容区域从顶部开始 - 延迟出现的动画 */
         
     
-    /* 移动端非首页隐藏横幅时，移除main-grid的transform偏移 */
+    /* 移动端非首页隐藏横幅时，移除 main-grid 的 transform 偏移 */
     }
 
-/* 移动端banner性能优化 */
+/* 移动端 banner 性能优化 */
 @media (max-width: 1023px) {
     .carousel-item {
         /* 硬件加速 */
@@ -372,7 +372,7 @@ html.is-page-transitioning .banner-home-text-overlay {
     animation-play-state: running;
 }
 
-/* 当banner被禁用时的布局样式 */
+/* 当 banner 被禁用时的布局样式 */
 
 /* 全屏壁纸模式：主内容在壁纸下方 */
 
@@ -383,15 +383,15 @@ html.is-page-transitioning .banner-home-text-overlay {
 @media (max-width: 1023px) {
     }
 
-/* 移动端当banner被禁用时的布局样式 */
+/* 移动端当 banner 被禁用时的布局样式 */
 @media (max-width: 1023px) {
     }
 
-/* 小屏手机当banner被禁用时的布局样式 */
+/* 小屏手机当 banner 被禁用时的布局样式 */
 @media (max-width: 480px) {
     }
 
-/* 平板设备当banner被禁用时的布局样式 */
+/* 平板设备当 banner 被禁用时的布局样式 */
 @media (min-width: 768px) and (max-width: 1023px) {
     }
 
@@ -400,7 +400,7 @@ html.is-page-transitioning .banner-home-text-overlay {
     #wallpaper-wrapper:not(.mobile-hide-banner) {
         top: 0 !important; /* 横屏模式从顶部开始，避免被导航栏覆盖 */
         height: 65vh !important;
-        transform: none !important; /* 移除桌面端的translateY偏移 */
+        transform: none !important; /* 移除桌面端的 translateY 偏移 */
     }
     
     .banner-home-text-overlay {
@@ -435,7 +435,7 @@ html.is-page-transitioning .banner-home-text-overlay {
 }
 
 
-/* 基于屏幕高度的banner优化 - 优先显示banner */
+/* 基于屏幕高度的 banner 优化 - 优先显示 banner */
 /* 极小高度屏幕 (高度 ≤ 500px) - 仅移动端 */
 @media (max-width: 1023px) and (max-height: 500px) {
     #wallpaper-wrapper {
@@ -520,7 +520,7 @@ html.is-page-transitioning .banner-home-text-overlay {
     
 }
 
-/* 横屏模式特殊处理 - 优先显示banner - 仅移动端 */
+/* 横屏模式特殊处理 - 优先显示 banner - 仅移动端 */
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 500px) {
     #wallpaper-wrapper {
         height: 90vh !important;
@@ -866,7 +866,7 @@ html[data-wallpaper-mode="fullscreen"] #wallpaper-wrapper .scroll-down-indicator
 }
 
 /* 点击滚动指示器跳转到文章列表时，避免被固定导航栏遮挡 */
-/* 排除overlay和none模式和banner模式，避免scroll-margin-top影响视觉间距 */
+/* 排除 overlay 和 none 模式和 banner 模式，避免 scroll-margin-top 影响视觉间距 */
 html:not([data-wallpaper-mode="overlay"]):not([data-wallpaper-mode="none"]):not([data-wallpaper-mode="banner"]) body.sticky-navbar #main-grid {
     scroll-margin-top: 5.5rem;
 }

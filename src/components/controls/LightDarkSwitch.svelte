@@ -25,7 +25,7 @@ interface SwupInstance {
 type WindowWithSwup = Window & { swup?: SwupInstance };
 
 let mode: LIGHT_DARK_MODE = $state(LIGHT_MODE);
-let displayedMode: LIGHT_DARK_MODE = $state(LIGHT_MODE); // 显示的实际主题（在system模式下会随系统变化）
+let displayedMode: LIGHT_DARK_MODE = $state(LIGHT_MODE); // 显示的实际主题（在 system 模式下会随系统变化）
 
 function switchScheme(newMode: LIGHT_DARK_MODE) {
 	mode = newMode;
@@ -36,7 +36,7 @@ function switchScheme(newMode: LIGHT_DARK_MODE) {
 // 更新显示的主题（用于显示当前实际主题）
 function updateDisplayedMode() {
 	if (mode === SYSTEM_MODE) {
-		// 如果是system模式，显示实际的系统主题
+		// 如果是 system 模式，显示实际的系统主题
 		const isSystemDark = window.matchMedia(
 			"(prefers-color-scheme: dark)",
 		).matches;
@@ -46,14 +46,14 @@ function updateDisplayedMode() {
 	}
 }
 
-// 使用onMount确保在组件挂载后正确初始化
+// 使用 onMount 确保在组件挂载后正确初始化
 onMount(() => {
 	// 立即获取并设置正确的主题
 	const storedTheme = getStoredTheme();
 	mode = storedTheme;
 	updateDisplayedMode();
 
-	// 确保DOM状态与存储的主题一致（只对非system模式检查）
+	// 确保 DOM 状态与存储的主题一致（只对非 system 模式检查）
 	if (storedTheme !== SYSTEM_MODE) {
 		const currentTheme = document.documentElement.classList.contains("dark")
 			? DARK_MODE
@@ -63,7 +63,7 @@ onMount(() => {
 		}
 	}
 
-	// 如果是system模式，监听系统主题变化
+	// 如果是 system 模式，监听系统主题变化
 	if (storedTheme === SYSTEM_MODE) {
 		const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 		const handleSystemChange = () => {
@@ -72,14 +72,14 @@ onMount(() => {
 		mediaQuery.addEventListener("change", handleSystemChange);
 	}
 
-	// 添加Swup监听
+	// 添加 Swup 监听
 	const handleContentReplace = () => {
 		const newTheme = getStoredTheme();
 		mode = newTheme;
 		updateDisplayedMode();
 	};
 
-	// 检查Swup是否已经加载
+	// 检查 Swup 是否已经加载
 	const win = window as WindowWithSwup;
 	if (win.swup?.hooks) {
 		win.swup.hooks.on("content:replace", handleContentReplace);
@@ -94,14 +94,14 @@ onMount(() => {
 
 	// 监听主题变化事件
 	const handleThemeChange = () => {
-		// 只有当mode不是system模式时才更新mode
-		// system模式下，mode应该保持为SYSTEM_MODE，displayedMode会自动更新
+		// 只有当 mode 不是 system 模式时才更新 mode
+		// system 模式下，mode 应该保持为 SYSTEM_MODE，displayedMode 会自动更新
 		if (mode !== SYSTEM_MODE) {
 			const newTheme = getStoredTheme();
 			mode = newTheme;
 			updateDisplayedMode();
 		} else {
-			// system模式下只需要更新displayedMode
+			// system 模式下只需要更新 displayedMode
 			updateDisplayedMode();
 		}
 	};

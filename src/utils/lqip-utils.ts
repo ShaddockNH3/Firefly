@@ -1,4 +1,4 @@
-// LQIP 方案来源: https://blog.cosine.ren/post/astro-lqip-implementation
+// LQIP 方案来源：https://blog.cosine.ren/post/astro-lqip-implementation
 
 import lqipData from "@constants/lqips.json";
 

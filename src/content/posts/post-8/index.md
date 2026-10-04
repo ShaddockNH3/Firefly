@@ -1,9 +1,9 @@
 ---
 title: 树莓派 5 安卓端 + PC 端 ALAS 挂机方案
 published: 2026-09-04
-description: 一种基于树莓派 5 运行 Android 系统、并通过局域网 PC 部署 ALAS 实施自动化控制的部署方法。 本文介绍了利用树莓派作为独立运行节点，通过网络 ADB 替代传统 PC 模拟器的方案，有效降低宿主机内存与 CPU 开销，实现《碧蓝航线》低负载、长时间的稳定托管。
+description: 一种基于树莓派 5 运行 Android 系统、并通过局域网 PC 部署 ALAS 实施自动化控制的部署方法。本文介绍了利用树莓派作为独立运行节点，通过网络 ADB 替代传统 PC 模拟器的方案，有效降低宿主机内存与 CPU 开销，实现《碧蓝航线》低负载、长时间的稳定托管。
 image: ./cover.png
-tags: [树莓派, ALAS, 碧蓝航线]
+tags: [树莓派，ALAS, 碧蓝航线]
 category: ALAS
 draft: false
 ---

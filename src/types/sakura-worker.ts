@@ -3,7 +3,7 @@ import type { SakuraConfig } from "./effectsConfig";
 /**
  * 樱花特效 Worker 通信消息类型
  *
- * 主线程 → Worker 的消息(通过 worker.postMessage 发送)
+ * 主线程 → Worker 的消息 (通过 worker.postMessage 发送)
  */
 export type SakuraWorkerInboundMessage =
 	| {
@@ -20,7 +20,7 @@ export type SakuraWorkerInboundMessage =
 	| { type: "visibilitychange"; hidden: boolean };
 
 /**
- * Worker → 主线程 的消息(通过 self.postMessage 发送)
+ * Worker → 主线程 的消息 (通过 self.postMessage 发送)
  */
 export type SakuraWorkerOutboundMessage =
 	| {
@@ -39,7 +39,7 @@ export type SakuraWorkerOutboundMessage =
 /**
  * 主线程侧的 sakuraManager 接口契约
  *
- * Worker 模式与主线程回退模式都需实现该接口,
+ * Worker 模式与主线程回退模式都需实现该接口，
  * 确保 setting-utils.ts 和 DisplaySettingsIntegrated.svelte 无需感知底层实现。
  */
 export interface SakuraManagerLike {

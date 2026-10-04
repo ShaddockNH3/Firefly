@@ -161,7 +161,7 @@ export const ko: Translation = {
 		"가능한 원인: 사용자 이름이 존재하지 않음, 네트워크 연결 문제, 또는 API 호출 제한",
 	[Key.bangumiFetchError]: "반구미 데이터 가져오기 실패",
 	[Key.bangumiFetchErrorDesc]:
-		"빌드 중 반구미 API에서 데이터를 가져오지 못했습니다. 이 페이지는 일시적으로 사용할 수 없습니다.",
+		"빌드 중 반구미 API 에서 데이터를 가져오지 못했습니다. 이 페이지는 일시적으로 사용할 수 없습니다.",
 	[Key.bangumiUsername]: "사용자 이름",
 	[Key.bangumiApi]: "API",
 	[Key.bangumiConfigTip]:
@@ -201,13 +201,13 @@ export const ko: Translation = {
 	[Key.vndbNoDataDescription]: "이 카테고리에는 항목이 없습니다",
 	[Key.vndbEmpty]: "데이터 없음",
 	[Key.vndbEmptyReason]:
-		"가능한 원인: 사용자 ID가 존재하지 않음, 목록이 비공개, 네트워크 연결 문제, 또는 API 호출 제한",
+		"가능한 원인: 사용자 ID 가 존재하지 않음, 목록이 비공개, 네트워크 연결 문제, 또는 API 호출 제한",
 	[Key.vndbFetchError]: "VNDB 데이터 가져오기 실패",
 	[Key.vndbFetchErrorDesc]:
-		"빌드 중 VNDB API에서 데이터를 가져오지 못했습니다. 이 페이지는 일시적으로 사용할 수 없습니다.",
-	[Key.vndbNotConfigured]: "VNDB 사용자 ID가 설정되지 않았습니다",
+		"빌드 중 VNDB API 에서 데이터를 가져오지 못했습니다. 이 페이지는 일시적으로 사용할 수 없습니다.",
+	[Key.vndbNotConfigured]: "VNDB 사용자 ID 가 설정되지 않았습니다",
 	[Key.vndbNotConfiguredDesc]:
-		"src/config/siteConfig.ts에서 VNDB 사용자 ID를 설정하세요",
+		"src/config/siteConfig.ts 에서 VNDB 사용자 ID 를 설정하세요",
 	[Key.vndbLastUpdated]: "데이터 업데이트 시각",
 	[Key.vndbVotes]: "표",
 	[Key.vndbLengthVeryShort]: "매우 짧음",
@@ -221,7 +221,7 @@ export const ko: Translation = {
 	[Key.bilibiliSubtitle]: "저의 Bilibili 시청 목록 (애니메이션 + 드라마)",
 	[Key.bilibiliNotConfigured]: "Bilibili 데이터 소스가 설정되지 않았습니다",
 	[Key.bilibiliNotConfiguredDesc]:
-		"src/config/siteConfig.ts에서 bilibili.uid를 설정하세요",
+		"src/config/siteConfig.ts 에서 bilibili.uid 를 설정하세요",
 
 	// Anime Tracking - Shared components
 	[Key.animeTotal]: "총계",
@@ -270,13 +270,13 @@ export const ko: Translation = {
 	[Key.malNoDataDescription]: "이 카테고리에는 항목이 없습니다",
 	[Key.malEmpty]: "데이터 없음",
 	[Key.malEmptyReason]:
-		"가능한 원인: 사용자 이름이 존재하지 않음, 목록이 비공개, Client ID가 유효하지 않음, 또는 네트워크 연결 문제",
+		"가능한 원인: 사용자 이름이 존재하지 않음, 목록이 비공개, Client ID 가 유효하지 않음, 또는 네트워크 연결 문제",
 	[Key.malFetchError]: "MyAnimeList 데이터 가져오기 실패",
 	[Key.malFetchErrorDesc]:
-		"빌드 중 MyAnimeList API에서 데이터를 가져오지 못했습니다. 사용자 이름과 Client ID를 확인하고 목록이 공개인지 확인하세요.",
-	[Key.malNotConfigured]: "MyAnimeList가 설정되지 않았습니다",
+		"빌드 중 MyAnimeList API 에서 데이터를 가져오지 못했습니다. 사용자 이름과 Client ID 를 확인하고 목록이 공개인지 확인하세요.",
+	[Key.malNotConfigured]: "MyAnimeList 가 설정되지 않았습니다",
 	[Key.malNotConfiguredDesc]:
-		"src/config/siteConfig.ts에서 MyAnimeList 사용자 이름과 Client ID를 설정하세요 (목록은 공개여야 합니다)",
+		"src/config/siteConfig.ts 에서 MyAnimeList 사용자 이름과 Client ID 를 설정하세요 (목록은 공개여야 합니다)",
 	[Key.malLastUpdated]: "데이터 업데이트 시각",
 	[Key.malSeasonWinter]: "겨울",
 	[Key.malSeasonSpring]: "봄",
@@ -304,14 +304,14 @@ export const ko: Translation = {
 	// RSS Page
 	[Key.rss]: "RSS 피드",
 	[Key.rssDescription]: "최신 소식을 구독하세요",
-	[Key.rssSubtitle]: "RSS를 구독하여 최신 글과 업데이트를 즉시 받아보세요",
+	[Key.rssSubtitle]: "RSS 를 구독하여 최신 글과 업데이트를 즉시 받아보세요",
 	[Key.rssLink]: "RSS 링크",
 	[Key.rssCopyToReader]: "링크를 RSS 리더기에 복사하세요",
 	[Key.rssCopyLink]: "링크 복사",
 	[Key.rssLatestPosts]: "최신 게시글",
-	[Key.rssWhatIsRSS]: "RSS란 무엇인가요?",
+	[Key.rssWhatIsRSS]: "RSS 란 무엇인가요?",
 	[Key.rssWhatIsRSSDescription]:
-		"RSS(Really Simple Syndication)는 자주 업데이트되는 콘텐츠를 게시하기 위한 표준 형식입니다. RSS를 사용하면 다음이 가능합니다:",
+		"RSS(Really Simple Syndication) 는 자주 업데이트되는 콘텐츠를 게시하기 위한 표준 형식입니다. RSS 를 사용하면 다음이 가능합니다:",
 	[Key.rssBenefit1]:
 		"직접 방문하지 않고도 최신 웹사이트 콘텐츠를 제때 받아볼 수 있습니다",
 	[Key.rssBenefit2]: "여러 웹사이트의 구독을 한 곳에서 관리할 수 있습니다",
@@ -450,18 +450,18 @@ export const ko: Translation = {
 	[Key.calendarThursday]: "목",
 	[Key.calendarFriday]: "금",
 	[Key.calendarSaturday]: "토",
-	[Key.calendarJanuary]: "1월",
-	[Key.calendarFebruary]: "2월",
-	[Key.calendarMarch]: "3월",
-	[Key.calendarApril]: "4월",
-	[Key.calendarMay]: "5월",
-	[Key.calendarJune]: "6월",
-	[Key.calendarJuly]: "7월",
-	[Key.calendarAugust]: "8월",
-	[Key.calendarSeptember]: "9월",
-	[Key.calendarOctober]: "10월",
-	[Key.calendarNovember]: "11월",
-	[Key.calendarDecember]: "12월",
+	[Key.calendarJanuary]: "1 월",
+	[Key.calendarFebruary]: "2 월",
+	[Key.calendarMarch]: "3 월",
+	[Key.calendarApril]: "4 월",
+	[Key.calendarMay]: "5 월",
+	[Key.calendarJune]: "6 월",
+	[Key.calendarJuly]: "7 월",
+	[Key.calendarAugust]: "8 월",
+	[Key.calendarSeptember]: "9 월",
+	[Key.calendarOctober]: "10 월",
+	[Key.calendarNovember]: "11 월",
+	[Key.calendarDecember]: "12 월",
 	[Key.calendar]: "사이트 캘린더",
 	[Key.calendarHeatmapWeek]: "{month}의 {week}주차, 게시글 {count}개",
 	[Key.advertisement]: "광고",

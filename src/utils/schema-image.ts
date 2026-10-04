@@ -26,7 +26,7 @@ async function loadLocalImage(
 	const loader = projectImages[key];
 	if (!loader) {
 		console.error(
-			`[schema-image] 图片资源未找到: ${key}（src="${src}", basePath="${basePath}"）`,
+			`[schema-image] 图片资源未找到：${key}（src="${src}", basePath="${basePath}"）`,
 		);
 		return null;
 	}

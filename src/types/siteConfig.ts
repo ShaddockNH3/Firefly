@@ -52,7 +52,7 @@ export type SiteConfig = {
 	};
 
 	// 站点开始日期，用于计算运行天数
-	siteStartDate?: string; // 格式: "YYYY-MM-DD"
+	siteStartDate?: string; // 格式："YYYY-MM-DD"
 
 	// 可选：站点时区，使用 IANA 时区标识，例如 "Asia/Shanghai"、"UTC"
 	timezone?: string;
@@ -64,12 +64,12 @@ export type SiteConfig = {
 	}>;
 
 	navbar: {
-		/** 导航栏Logo图标，可选类型：icon库、本地图片、网络图片链接 */
+		/** 导航栏 Logo 图标，可选类型：icon 库、本地图片、网络图片链接 */
 		logo?: {
 			type: "icon" | "image" | "url";
-			value: string; // icon名、本地图片路径或网络图片url
+			value: string; // icon 名、本地图片路径或网络图片 url
 			valueDark?: string; // 暗色模式下的图片，仅 image / url 类型生效，不设置则亮暗色共用 value
-			alt?: string; // 图片alt文本
+			alt?: string; // 图片 alt 文本
 		};
 		title?: string; // 导航栏标题，如果不设置则使用 title
 		widthFull?: boolean; // 导航栏是否占满屏幕宽度
@@ -107,12 +107,12 @@ export type SiteConfig = {
 	// 文章列表布局配置
 	postListLayout: {
 		defaultMode: "list" | "grid"; // 默认布局模式：list=列表模式，grid=网格模式
-		mobileDefaultMode?: "list" | "grid"; // 移动端默认布局模式（视口宽度<780px时使用），不设置则跟随 defaultMode
+		mobileDefaultMode?: "list" | "grid"; // 移动端默认布局模式（视口宽度<780px 时使用），不设置则跟随 defaultMode
 		// 列表模式下封面图的位置："right"=右侧（默认），"left"=左侧。网格模式封面固定在顶部，不受此项影响
 		coverPosition?: "left" | "right";
 		descriptionLines?: number; // 文章简介显示行数，设为 0 则不截断，默认 2
 		showStatsIcons?: boolean; // 文章卡片底部统计是否显示图标
-		// 标签显示位置："meta"=跟随元数据行（默认），"bottom"=卡片底部独立一行（将替换stats显示，二者只能选其一）
+		// 标签显示位置："meta"=跟随元数据行（默认），"bottom"=卡片底部独立一行（将替换 stats 显示，二者只能选其一）
 		tagsPosition?: "meta" | "bottom";
 		// 底部标签样式："chip"=按钮样式，跟随 tagStyle 的胶囊/矩形（默认），"text"=无底色，只有文字
 		tagsBottomStyle?: "chip" | "text";
@@ -135,7 +135,7 @@ export type SiteConfig = {
 			// 网格布局配置，仅在 defaultMode 为 "grid" 或允许切换布局时生效
 			// 是否开启瀑布流布局
 			masonry: boolean;
-			// 网格模式卡片最小宽度(px)，浏览器根据容器宽度自动计算列数，默认 320
+			// 网格模式卡片最小宽度 (px)，浏览器根据容器宽度自动计算列数，默认 320
 			columnWidth?: number;
 			// 网格模式封面是否撑满卡片贴边，false 则按卡片内边距内缩
 			coverFullWidth?: boolean;
@@ -155,13 +155,13 @@ export type SiteConfig = {
 		outdatedThreshold?: number;
 		// 是否显示分享海报按钮
 		sharePoster?: boolean;
-		// OpenGraph图片功能
+		// OpenGraph 图片功能
 		generateOgImages: boolean;
 	};
 
-	// bangumi配置
+	// bangumi 配置
 	bangumi?: {
-		userId?: string; // Bangumi用户ID
+		userId?: string; // Bangumi 用户 ID
 		mode?: "static" | "dynamic"; // 数据模式：static=构建时获取，dynamic=客户端实时获取
 		apiUrl?: string; // Bangumi API 地址
 		subjectBaseUrl?: string; // 条目详情页地址

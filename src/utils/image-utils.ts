@@ -5,7 +5,7 @@ import type { ImageFormat } from "../types/config";
 const { randomCoverImage } = coverImageConfig;
 
 /**
- * 根据seed生成确定性hash值
+ * 根据 seed 生成确定性 hash 值
  */
 function getSeedHash(seed?: string): number {
 	return seed

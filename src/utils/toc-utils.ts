@@ -104,7 +104,7 @@ export class TOCManager {
 	}
 
 	/**
-	 * 生成TOC HTML（客户端 fallback 路径，与服务端 SSR 输出保持一致）
+	 * 生成 TOC HTML（客户端 fallback 路径，与服务端 SSR 输出保持一致）
 	 */
 	public generateTOCHTML(): string {
 		const headings = this.getAllHeadings();
@@ -132,7 +132,7 @@ export class TOCManager {
 	}
 
 	/**
-	 * 更新TOC内容（重建，DOM 遍历路径）
+	 * 更新 TOC 内容（重建，DOM 遍历路径）
 	 */
 	public updateTOCContent(): void {
 		const tocContent = document.getElementById(this.contentId);
@@ -145,7 +145,7 @@ export class TOCManager {
 	}
 
 	/**
-	 * 获取可见的标题ID
+	 * 获取可见的标题 ID
 	 */
 	private getVisibleHeadingIds(): string[] {
 		const headings = this.getAllHeadings();
@@ -200,7 +200,7 @@ export class TOCManager {
 
 		const visibleHeadingIds = this.getVisibleHeadingIds();
 
-		// 找到对应的TOC项并添加活动状态
+		// 找到对应的 TOC 项并添加活动状态
 		const activeItems = this.tocItems.filter((item) => {
 			const headingId = item.dataset.headingId;
 			return headingId && visibleHeadingIds.includes(headingId);

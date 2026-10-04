@@ -25,7 +25,7 @@ export function scrollFunction(): void {
 	// 根据滚动位置动态更新侧边栏 sticky 间距
 	updateSidebarStickySpacing();
 
-	// 使用批量DOM操作优化性能
+	// 使用批量 DOM 操作优化性能
 	const operations: (() => void)[] = [];
 
 	if (backToTopBtn) {
@@ -78,7 +78,7 @@ export function scrollFunction(): void {
 		});
 	}
 
-	// 批量执行DOM操作
+	// 批量执行 DOM 操作
 	if (operations.length > 0) {
 		requestAnimationFrame(() => {
 			operations.forEach((op) => {

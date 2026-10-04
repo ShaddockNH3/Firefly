@@ -18,7 +18,7 @@
     }
 }
 
-/* 双侧边栏时减少卡片列数（1280px以上才同时显示两侧边栏） */
+/* 双侧边栏时减少卡片列数（1280px 以上才同时显示两侧边栏） */
 [data-sidebar-position="both"] .media-grid {
     grid-template-columns: repeat(2, 1fr) !important;
 }

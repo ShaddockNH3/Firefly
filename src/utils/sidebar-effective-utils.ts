@@ -51,12 +51,12 @@ export function buildFooterClass(config: ResponsiveSidebarConfig): string {
 			);
 		}
 	} else if (config.hasLeftComponents && !config.hasRightComponents) {
-		// 仅左侧栏：内容列在第2列
+		// 仅左侧栏：内容列在第 2 列
 		footerClass.push(
 			"md:col-start-2 md:col-span-1 xl:col-start-2 xl:col-span-1",
 		);
 	} else {
-		// 仅右侧栏或无侧栏：内容列在第1列
+		// 仅右侧栏或无侧栏：内容列在第 1 列
 		footerClass.push(
 			"md:col-start-1 md:col-span-1 xl:col-start-1 xl:col-span-1",
 		);
@@ -86,7 +86,7 @@ export function getEffectiveSidebarState(
 		sidebarLayoutConfig.position !== "both" &&
 		!!sidebarLayoutConfig.showBothSidebarsOnPostPage;
 
-	// position为left时，对侧为右侧；position为right时，对侧为左侧
+	// position 为 left 时，对侧为右侧；position 为 right 时，对侧为左侧
 	const shouldAddRightSidebar: boolean =
 		shouldShowBothSidebarsOnPostPage && sidebarLayoutConfig.position === "left";
 	const shouldAddLeftSidebar: boolean =
@@ -104,8 +104,8 @@ export function getEffectiveSidebarState(
 		(shouldAddLeftSidebar &&
 			sidebarLayoutConfig.leftComponents.some((comp) => comp.enable));
 
-	// 使用effective值重新生成网格类
-	// 当position为right且文章页临时显示左侧栏时，tabletSidebar应为right（保持显示主侧栏）
+	// 使用 effective 值重新生成网格类
+	// 当 position 为 right 且文章页临时显示左侧栏时，tabletSidebar 应为 right（保持显示主侧栏）
 	const effectiveTabletSidebar = shouldAddLeftSidebar
 		? ("right" as const)
 		: sidebarConfig.tabletSidebar;

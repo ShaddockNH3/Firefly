@@ -3,7 +3,7 @@ title: 树莓派 5 部署 ALAS
 published: 2025-12-14
 description: 记录在树莓派 5 上部署 ALAS 的完整过程，包括环境准备、依赖兼容问题、排错过程与最终解决方案，供同类场景参考。
 image: ./cover.png
-tags: [过时, 树莓派, ALAS, 碧蓝航线]
+tags: [过时，树莓派，ALAS, 碧蓝航线]
 category: ALAS
 draft: false
 password: "2004122120070130"
@@ -79,7 +79,7 @@ pipi5 使用 arm64 架构，Waydroid 模拟器可在 Linux 上提供安卓运行
 
 修改完毕后，需要重启树莓派使配置生效。
 
-> 参考：[树莓派5 raspbian 使用 waydroid](https://www.bilibili.com/opus/1066436733207314435)
+> 参考：[树莓派 5 raspbian 使用 waydroid](https://www.bilibili.com/opus/1066436733207314435)
 
 #### 2.3.2 内存与交换空间优化
 
@@ -526,7 +526,7 @@ def predict_enemy_genre(self):
 
     # 2. 遍历普通敌人模版
     for name, template in self._os_template_enemy.items():
-        # [Pipi注] 动态修复：如果模版是彩色的，强制转为灰度以匹配截图
+        # [Pipi 注] 动态修复：如果模版是彩色的，强制转为灰度以匹配截图
         if isinstance(template.image, list):
             template.image = [rgb2gray(img) if img.ndim == 3 else img for img in template.image]
 
@@ -538,7 +538,7 @@ def predict_enemy_genre(self):
 
     # 4. 遍历上方敌人模版 (如旗舰等)
     for name, template in self._os_template_enemy_upper.items():
-        # [Pipi注] 动态修复：同上，强制转灰度
+        # [Pipi 注] 动态修复：同上，强制转灰度
         if isinstance(template.image, list):
             template.image = [rgb2gray(img) if img.ndim == 3 else img for img in template.image]
 
@@ -587,7 +587,7 @@ def predict_enemy_genre(self):
                 # 这里是你的截图，已经被转成了灰度图
                 image_dic[scale] = rgb2gray(self.relative_crop((-0.5, -1, 0.5, 0), shape=shape))
 
-            # [Pipi注] 这里的魔法代码会把彩色的模版强制转成灰度
+            # [Pipi 注] 这里的魔法代码会把彩色的模版强制转成灰度
             if isinstance(template.image, list):
                 template.image = [rgb2gray(img) if img.ndim == 3 else img for img in template.image]
 
@@ -632,7 +632,7 @@ module/map_detection/grid_predictor.py 中增加灰度转换逻辑，
         if self.is_gif:
             for template in self.image:
                 # =========== Pipi ===========
-                # 如果输入图像是灰度的 (2维)，而模板图像是彩色的 (3维)，强制把模板图像转换为灰度
+                # 如果输入图像是灰度的 (2 维)，而模板图像是彩色的 (3 维)，强制把模板图像转换为灰度
                 if image.ndim == 2 and template.ndim == 3:
                     template = cv2.cvtColor(template, cv2.COLOR_RGB2GRAY)
                 # =========== Pipi ===========
@@ -649,7 +649,7 @@ module/map_detection/grid_predictor.py 中增加灰度转换逻辑，
             result = []
             for template in self.image:
                 # =========== Pipi ===========
-                # 如果输入图片是黑白的(2维)，而模版是彩色的(3维)，强制把模版转黑白
+                # 如果输入图片是黑白的 (2 维)，而模版是彩色的 (3 维)，强制把模版转黑白
                 if image.ndim == 2 and template.ndim == 3:
                     template = cv2.cvtColor(template, cv2.COLOR_RGB2GRAY)
                 # =========== Pipi ===========

@@ -1,7 +1,7 @@
 export type SakuraConfig = {
 	enable: boolean; // 是否启用樱花特效
-	sakuraNum: number; // 樱花数量，默认21
-	limitTimes: number; // 樱花越界限制次数，-1为无限循环
+	sakuraNum: number; // 樱花数量，默认 21
+	limitTimes: number; // 樱花越界限制次数，-1 为无限循环
 	size: {
 		min: number; // 樱花最小尺寸倍数
 		max: number; // 樱花最大尺寸倍数

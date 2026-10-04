@@ -503,34 +503,34 @@ onMount(() => {
 	mounted = true;
 	checkScreenSize();
 
-	// 从localStorage读取保存的壁纸模式
+	// 从 localStorage 读取保存的壁纸模式
 	wallpaperMode = getStoredWallpaperMode();
 
-	// 从localStorage读取水波纹动画状态
+	// 从 localStorage 读取水波纹动画状态
 	wavesEnabled = getStoredWavesEnabled();
 
-	// 从localStorage读取渐变过渡状态
+	// 从 localStorage 读取渐变过渡状态
 	gradientEnabled = getStoredGradientEnabled();
 
-	// 从localStorage读取横幅标题状态
+	// 从 localStorage 读取横幅标题状态
 	bannerTitleEnabled = getStoredBannerTitleEnabled();
 
-	// 从localStorage读取横幅轮播状态
+	// 从 localStorage 读取横幅轮播状态
 	bannerCarouselEnabled = getStoredBannerCarouselEnabled();
 
-	// 从localStorage读取樱花特效状态
+	// 从 localStorage 读取樱花特效状态
 	sakuraEnabled = getStoredSakuraEnabled();
 
-	// 从localStorage读取卡片样式状态
+	// 从 localStorage 读取卡片样式状态
 	cardBorderEnabled = getStoredCardBorderEnabled();
 	cardFollowThemeEnabled = getStoredCardFollowThemeEnabled();
 
-	// 从localStorage读取全屏透明设置状态
+	// 从 localStorage 读取全屏透明设置状态
 	overlayOpacity = getStoredOverlayOpacity();
 	overlayBlur = getStoredOverlayBlur();
 	overlayCardOpacity = getStoredOverlayCardOpacity();
 
-	// 从localStorage读取用户偏好布局
+	// 从 localStorage 读取用户偏好布局
 	const savedLayout = localStorage.getItem("postListLayout");
 	if (savedLayout && (savedLayout === "list" || savedLayout === "grid")) {
 		currentLayout = savedLayout;

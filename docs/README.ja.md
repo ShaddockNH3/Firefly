@@ -17,7 +17,7 @@
 > 
 > [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z41NQALY)
 >
-> **QQ交流群：[1087127207](https://qm.qq.com/q/ZGsFa8qX2G)**
+> **QQ 交流群：[1087127207](https://qm.qq.com/q/ZGsFa8qX2G)**
 > 
 > ![GitHub License](https://img.shields.io/github/license/CuteLeaf/Firefly)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/CuteLeaf/Firefly)
@@ -77,15 +77,15 @@
 - [x] **Astro + Tailwind CSS** - モダンな技術スタックベースの超高速静的サイト生成
 - [x] **スムーズなアニメーション** - Swup ページトランジションアニメーションで滑らかなブラウジング体験
 - [x] **レスポンシブデザイン** - デスクトップ、タブレット、モバイルデバイスに完璧に対応
-- [x] **多言語サポート** - i18n 国際化UI、簡体字中国語、繁体字中国語、英語、日本語、ロシア語、韓国語をサポート
+- [x] **多言語サポート** - i18n 国際化 UI、簡体字中国語、繁体字中国語、英語、日本語、ロシア語、韓国語をサポート
 - [x] **全文検索** - Pagefind ベースのクライアントサイド検索、記事コンテンツのインデックスをサポート
 
 ### パーソナライゼーション
 - [x] **動的サイドバー** - シングルサイドバー、デュアルサイドバー設定をサポート
 - [x] **記事レイアウト** - リスト（単列）、グリッド（多列/メーソンリー）レイアウトをサポート
 - [x] **フォント管理** - カスタムフォントをサポート、豊富なフォントセレクター
-- [x] **フッター設定** - HTMLコンテンツ注入、完全カスタマイズ可能
-- [x] **ライト/ダークモード** - ライト/ダーク/システム追従の3モードをサポート
+- [x] **フッター設定** - HTML コンテンツ注入、完全カスタマイズ可能
+- [x] **ライト/ダークモード** - ライト/ダーク/システム追従の 3 モードをサポート
 - [x] **ナビゲーションバーのカスタマイズ** - ロゴ、タイトル、リンクを完全カスタマイズ
 - [x] **壁紙モード切り替え** - バナー壁紙、フルスクリーン壁紙、フルスクリーン透明壁紙、単色背景
 - [x] **テーマカラーのカスタマイズ** - 360° 色相調整
@@ -116,7 +116,7 @@
    ```
 3. **依存関係のインストール：**
    ```bash
-   # pnpmがインストールされていない場合、まずインストール
+   # pnpm がインストールされていない場合、まずインストール
    npm install -g pnpm
    
    # プロジェクトの依存関係をインストール
@@ -151,7 +151,7 @@
 
 ## 📖 設定説明
 
-> 📚 **詳細な設定ドキュメント**：[Fireflyドキュメント](https://docs-firefly.cuteleaf.cn/)で完全な設定ガイドを確認してください
+> 📚 **詳細な設定ドキュメント**：[Firefly ドキュメント](https://docs-firefly.cuteleaf.cn/)で完全な設定ガイドを確認してください
 
 ### ウェブサイトの言語設定
 
@@ -201,7 +201,7 @@ src/
 │   └── sponsorConfig.ts          # スポンサー設定
 ```
 
-## ⚙️ 記事のFrontmatter
+## ⚙️ 記事の Frontmatter
 
 ```yaml
 ---
@@ -220,7 +220,7 @@ comment: true    # コメントを有効化
 
 ## モーメント
 
-モーメントは `src/content/dynamic/` に保存され、1つの Markdown ファイルが1件のモーメントに対応します。次のコマンドで作成できます：
+モーメントは `src/content/dynamic/` に保存され、1 つの Markdown ファイルが 1 件のモーメントに対応します。次のコマンドで作成できます：
 
 ```bash
 pnpm new-d 今日はとても良い天気です
@@ -240,11 +240,11 @@ location: China # 場所
 
 [Memos](https://www.usememos.com/) をデータソースとして接続することもできます。`src/config/dynamicConfig.ts` の `memos` オプションを設定すると、ピン留めの同期や画像添付ファイルの表示に対応したリアルタイムデータ取得が可能です。詳細は[モーメントドキュメント](https://docs-firefly.cuteleaf.cn/en/guide/dynamic.html)をご参照ください。
 
-## 🧩 Markdown拡張
+## 🧩 Markdown 拡張
 
 Astro がデフォルトで対応している[GitHub Flavored Markdown](https://github.github.com/gfm/)に加えて、いくつかの追加の Markdown 機能があります：
 
-- Admonitions（予告ブロック） - GitHub、Obsidian、VitePress、Docusaurus の4つのテーマ設定をサポート ([プレビューと使用方法](https://firefly.cuteleaf.cn/posts/markdown-extended/))
+- Admonitions（予告ブロック） - GitHub、Obsidian、VitePress、Docusaurus の 4 つのテーマ設定をサポート ([プレビューと使用方法](https://firefly.cuteleaf.cn/posts/markdown-extended/))
 - GitHub リポジトリカード ([プレビューと使用方法](https://firefly.cuteleaf.cn/posts/markdown-extended/))
 - Expressive Code ベースの強化コードブロック ([プレビュー](http://firefly.cuteleaf.cn/posts/code-examples/) / [ドキュメント](https://expressive-code.com/))
 
@@ -287,7 +287,7 @@ Astro がデフォルトで対応している[GitHub Flavored Markdown](https://
 
 ### その他の参考
 - ブロガー`霞葉`の [Bangumi コレクション](https://kasuha.com/posts/fuwari-enhance-ep2/) ページコンポーネント
-- Bilibili クリエイター `公公的日常` のQ版 [蛍看板娘 Spine モデル](https://www.bilibili.com/video/BV1fuVzzdE5y)
+- Bilibili クリエイター `公公的日常` の Q 版 [蛍看板娘 Spine モデル](https://www.bilibili.com/video/BV1fuVzzdE5y)
 
 ## 📝 ライセンス
 

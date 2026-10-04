@@ -63,7 +63,7 @@ Firefly 项目中所有可复用组件的集中管理。组件按照功能和职
 - `WidgetLayout.astro` - 小部件布局容器
 
 **内容和展示组件**
-- `CoverImage.astro` - 封面图组件（支持本地图片和随机图API）
+- `CoverImage.astro` - 封面图组件（支持本地图片和随机图 API）
 - `ImageWrapper.astro` - 图片包装器（支持本地和远程图片）
 - `Markdown.astro` - Markdown 内容样式包装器
 - `PioMessageBox.astro` - 消息框组件（Live2D/Spine 消息显示）

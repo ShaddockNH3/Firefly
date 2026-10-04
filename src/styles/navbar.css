@@ -39,7 +39,7 @@
 
 /* ============================================
  * 基础导航栏样式
- * 适用: 所有模式，所有设备
+ * 适用：所有模式，所有设备
  * ============================================ */
 #navbar>div {
     background-color: var(--card-bg);
@@ -88,9 +88,9 @@ html[data-has-wallpaper] #navbar[data-transparent-mode="semifull"]:not(.scrolled
 }
 
 /* ============================================
- * 桌面端 - 亮色主题 - Banner模式
- * 适用: 桌面端(≥1024px) + Banner模式 + 亮色主题
- * 遵循: transparentMode, blur 配置
+ * 桌面端 - 亮色主题 - Banner 模式
+ * 适用：桌面端 (≥1024px) + Banner 模式 + 亮色主题
+ * 遵循：transparentMode, blur 配置
  * ============================================ */
 @media (min-width: 1024px) {
 
@@ -130,8 +130,8 @@ html[data-has-wallpaper] #navbar[data-transparent-mode="semifull"]:not(.scrolled
 }
 
 /* ============================================
- * 移动端 - 亮色主题 - Banner模式
- * 适用: 移动端(≤1023px) + Banner模式 + 亮色主题 + 仅首页生效
+ * 移动端 - 亮色主题 - Banner 模式
+ * 适用：移动端 (≤1023px) + Banner 模式 + 亮色主题 + 仅首页生效
  * ============================================ */
 @media (max-width: 1023px) {
 
@@ -171,7 +171,7 @@ html[data-has-wallpaper] #navbar[data-transparent-mode="semifull"]:not(.scrolled
 }
 
 /* ============================================
- * 桌面端 - 暗色主题 - Banner模式
+ * 桌面端 - 暗色主题 - Banner 模式
  * ============================================ */
 @media (min-width: 1024px) {
 
@@ -203,7 +203,7 @@ html[data-has-wallpaper] #navbar[data-transparent-mode="semifull"]:not(.scrolled
 }
 
 /* ============================================
- * 移动端 - 暗色主题 - Banner模式
+ * 移动端 - 暗色主题 - Banner 模式
  * ============================================ */
 @media (max-width: 1023px) {
 
@@ -302,7 +302,7 @@ html:not([data-wallpaper-mode="none"])
 /* ============================================
  * 全宽导航栏适配 (Full Width Navbar)
  * 确保在开启全宽模式时覆盖所有圆角和宽度限制
- * 针对所有模式（Banner模式、壁纸模式、透明模式）统一去除圆角
+ * 针对所有模式（Banner 模式、壁纸模式、透明模式）统一去除圆角
  * 使用高优先级选择器确保覆盖原主题样式
  * ============================================ */
 #navbar-wrapper #navbar[data-full-width="true"] > div,
@@ -339,7 +339,7 @@ body.wallpaper-transparent #navbar-wrapper #navbar[data-full-width="true"] > div
 }
 
 /* ============================================
- * 小于1280px时隐藏导航栏菜单图标
+ * 小于 1280px 时隐藏导航栏菜单图标
  * ============================================ */
 @media (max-width: 1279px) {
     .navbar-icon {

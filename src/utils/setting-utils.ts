@@ -52,7 +52,7 @@ export function getSystemTheme(): LIGHT_DARK_MODE {
 		: LIGHT_MODE;
 }
 
-// 解析主题（如果是system模式，则获取系统主题）
+// 解析主题（如果是 system 模式，则获取系统主题）
 export function resolveTheme(theme: LIGHT_DARK_MODE): LIGHT_DARK_MODE {
 	if (theme === SYSTEM_MODE) {
 		return getSystemTheme();
@@ -115,8 +115,8 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE): void {
 	}
 
 	// 检测是否真的需要主题切换：
-	// 1. dark类状态是否改变
-	// 2. expressiveCode主题是否需要更新
+	// 1. dark 类状态是否改变
+	// 2. expressiveCode 主题是否需要更新
 	const needsThemeChange = currentIsDark !== targetIsDark;
 	const expectedTheme = targetIsDark
 		? expressiveCodeConfig.darkTheme
@@ -164,7 +164,7 @@ export function setTheme(theme: LIGHT_DARK_MODE): void {
 	// 先应用主题
 	applyThemeToDocument(theme);
 
-	// 保存到localStorage
+	// 保存到 localStorage
 	localStorage.setItem("theme", theme);
 
 	// 如果切换到 system 模式，需要监听系统主题变化
@@ -379,7 +379,7 @@ export function updateNavbarTransparency(mode: WALLPAPER_MODE): void {
 			blurAmount = 0;
 		}
 	} else {
-		// Banner模式：使用配置的透明模式和模糊效果
+		// Banner 模式：使用配置的透明模式和模糊效果
 		transparentMode =
 			backgroundWallpaper.banner?.navbar?.transparentMode || "semi";
 		blurAmount = backgroundWallpaper.banner?.navbar?.blur ?? 20;
@@ -396,7 +396,7 @@ export function updateNavbarTransparency(mode: WALLPAPER_MODE): void {
 		"navbar-transparent-semifull",
 	);
 
-	// 移除scrolled类
+	// 移除 scrolled 类
 	navbar.classList.remove("scrolled");
 
 	// 滚动检测功能
@@ -405,7 +405,7 @@ export function updateNavbarTransparency(mode: WALLPAPER_MODE): void {
 		(mode === WALLPAPER_BANNER || mode === WALLPAPER_FULLSCREEN) &&
 		typeof window.initSemifullScrollDetection === "function"
 	) {
-		// 在Banner和全屏壁纸模式的semifull下启用滚动检测
+		// 在 Banner 和全屏壁纸模式的 semifull 下启用滚动检测
 		window.initSemifullScrollDetection();
 	} else if (window.semifullScrollHandler) {
 		// 移除滚动监听器

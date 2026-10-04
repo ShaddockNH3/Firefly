@@ -1,4 +1,4 @@
-// LQIP 方案来源: https://blog.cosine.ren/post/astro-lqip-implementation
+// LQIP 方案来源：https://blog.cosine.ren/post/astro-lqip-implementation
 
 import fs from "node:fs/promises";
 import path from "node:path";

@@ -1,6 +1,6 @@
 import type { FriendLink, FriendsPageConfig } from "../types/friendsConfig";
 
-// 可以在src/content/spec/friends.md中编写友链页面下方的自定义内容
+// 可以在 src/content/spec/friends.md 中编写友链页面下方的自定义内容
 
 // 友链页面配置
 export const friendsPageConfig: FriendsPageConfig = {
@@ -13,7 +13,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 	// 是否显示底部自定义内容（friends.mdx 中的内容）
 	showCustomContent: true,
 
-	// 是否显示评论区，需要先在commentConfig.ts启用评论系统
+	// 是否显示评论区，需要先在 commentConfig.ts 启用评论系统
 	showComment: true,
 
 	// 是否开启随机排序配置，如果开启，就会忽略权重，构建时进行一次随机排序
@@ -63,7 +63,7 @@ export const friendsConfig: FriendLink[] = [
 	{
 		title: "Firefly Docs",
 		imgurl: "https://docs-firefly.cuteleaf.cn/logo.png",
-		desc: "Firefly主题模板文档",
+		desc: "Firefly 主题模板文档",
 		siteurl: "https://docs-firefly.cuteleaf.cn",
 		tags: ["Docs"],
 		weight: 9,

@@ -1,5 +1,5 @@
 export type AnnouncementConfig = {
-	// enable属性已移除，现在通过sidebarLayoutConfig统一控制
+	// enable 属性已移除，现在通过 sidebarLayoutConfig 统一控制
 	title?: string; // 公告栏标题
 	content: string; // 公告栏内容
 	icon?: string; // 公告栏图标

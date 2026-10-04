@@ -118,7 +118,7 @@ function registerSwupHooks(): void {
 		// 侧边栏组件可见性由 page:view 统一更新（含 refreshSidebarStickyState 的
 		// offsetHeight 布局读取），content:replace 不重复执行，避免每趟切页强制布局两次
 
-		// 只处理katex元素的容器，使用浏览器原生滚动条
+		// 只处理 katex 元素的容器，使用浏览器原生滚动条
 		scheduleContentOverflowEnhancements();
 
 		// 重新初始化图标加载器
@@ -126,7 +126,7 @@ function registerSwupHooks(): void {
 			initIconLoader();
 		});
 
-		// 检查当前页面是否为文章页面（有TOC元素）
+		// 检查当前页面是否为文章页面（有 TOC 元素）
 		const tocWrapper = document.getElementById("toc-wrapper");
 		const isArticlePage = tocWrapper !== null;
 
@@ -141,7 +141,7 @@ function registerSwupHooks(): void {
 			}
 		}
 
-		// 重新初始化semifull模式的滚动检测
+		// 重新初始化 semifull 模式的滚动检测
 		// （全屏模式跳过：导航栏状态由 updateNavbarTransparency 统一管理，
 		//   避免切换页面时 initSemifullScrollDetection 重置 scrolled 导致背景闪烁）
 		const navbar = document.getElementById("navbar");
@@ -198,7 +198,7 @@ function registerSwupHooks(): void {
 		if (navbar) {
 			navbar.setAttribute("data-is-home", isHomePage.toString());
 
-			// 重新初始化semifull模式的滚动检测
+			// 重新初始化 semifull 模式的滚动检测
 			// （全屏模式跳过：导航栏状态由 updateNavbarTransparency 统一管理，
 			//   避免切换页面时 initSemifullScrollDetection 重置 scrolled 导致背景闪烁）
 			const transparentMode = navbar.getAttribute("data-transparent-mode");
@@ -316,7 +316,7 @@ function registerSwupHooks(): void {
 				});
 				document.dispatchEvent(pageLoadedEvent);
 				console.log(
-					"Layout: 触发 firefly:page:loaded 事件，路径:",
+					"Layout: 触发 firefly:page:loaded 事件，路径：",
 					window.location.pathname,
 				);
 			}

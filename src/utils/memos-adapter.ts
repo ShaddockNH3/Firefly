@@ -118,7 +118,7 @@ function extractImages(memo: Memo, memosApiUrl: string): DynamicImage[] {
 	if (memo.attachments) {
 		for (const attachment of memo.attachments) {
 			if (attachment.type.startsWith("image/")) {
-				// Memos 文件服务路径: /file/attachments/{id}/{filename}
+				// Memos 文件服务路径：/file/attachments/{id}/{filename}
 				const attachmentId = attachment.name.split("/").pop() || "";
 				const src =
 					attachment.externalLink ||

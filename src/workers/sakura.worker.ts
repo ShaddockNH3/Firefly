@@ -2,8 +2,8 @@
 /**
  * 樱花特效 Worker
  *
- * 在 Dedicated Worker 线程内运行樱花绘制循环,通过 OffscreenCanvas 绘制,
- * 完全脱离主线程,避免页面切换(Swup)时主线程阻塞导致樱花掉帧。
+ * 在 Dedicated Worker 线程内运行樱花绘制循环，通过 OffscreenCanvas 绘制，
+ * 完全脱离主线程，避免页面切换 (Swup) 时主线程阻塞导致樱花掉帧。
  *
  * 通信协议见 src/types/sakura-worker.ts
  */
@@ -22,7 +22,7 @@ let config: SakuraConfig | null = null;
 let windowWidth = 0;
 let windowHeight = 0;
 let isRunning = false;
-let isHidden = false; // 页面可见性,隐藏时暂停动画
+let isHidden = false; // 页面可见性，隐藏时暂停动画
 
 // ---------------------------------------------------------------------------
 // 工具:getRandom(逻辑与原 SakuraEffect.astro 完全一致)
@@ -129,7 +129,7 @@ class Sakura {
 
 	update() {
 		this.x = this.fn.x(this.x, this.y);
-		// 修复原实现笔误:第二参数应为 this.x(原 fuwari 写法)
+		// 修复原实现笔误：第二参数应为 this.x(原 fuwari 写法)
 		this.y = this.fn.y(this.x, this.y);
 		this.r = this.fn.r(this.r);
 		this.a = this.fn.a(this.a);
@@ -205,7 +205,7 @@ async function loadImage(): Promise<ImageBitmap> {
 }
 
 function createSakuraList(cfg: SakuraConfig, image: ImageBitmap): SakuraList {
-	// 用局部变量锁定 ctx,避免在循环中反复访问可空的模块级变量
+	// 用局部变量锁定 ctx，避免在循环中反复访问可空的模块级变量
 	const context = ctx;
 	if (!context) {
 		throw new Error("Canvas 2D context not initialized");
@@ -272,10 +272,10 @@ function clearCanvas() {
 /**
  * 清理 worker 持有的所有资源。
  *
- * 注意:主线程 stop() 会 worker.terminate(),本函数主要服务于:
- *  - init 失败时回滚已分配资源(避免残留状态干扰后续消息)
- *  - 收到 stop 消息时的显式清理(防御性,即使 terminate 抢先也不泄漏)
- * ImageBitmap 持有位图/GPU 资源,需显式 close() 释放,不能仅靠 GC。
+ * 注意：主线程 stop() 会 worker.terminate(),本函数主要服务于：
+ *  - init 失败时回滚已分配资源 (避免残留状态干扰后续消息)
+ *  - 收到 stop 消息时的显式清理 (防御性，即使 terminate 抢先也不泄漏)
+ * ImageBitmap 持有位图/GPU 资源，需显式 close() 释放，不能仅靠 GC。
  */
 function cleanup() {
 	cancelAnimation();
@@ -284,7 +284,7 @@ function cleanup() {
 		try {
 			img.close();
 		} catch {
-			// close 可能因重复调用或已释放而抛错,忽略
+			// close 可能因重复调用或已释放而抛错，忽略
 		}
 		img = null;
 	}
@@ -296,7 +296,7 @@ function cleanup() {
 }
 
 // ---------------------------------------------------------------------------
-// 错误上报:回传主线程
+// 错误上报：回传主线程
 // ---------------------------------------------------------------------------
 function reportError(scope: string, err: unknown) {
 	const message =
@@ -325,15 +325,15 @@ async function handleMessage(msg: SakuraWorkerInboundMessage) {
 				img = await loadImage();
 				sakuraList = createSakuraList(config, img);
 				isRunning = true;
-				// init 完成后自动启动动画(除非页面当前隐藏)
+				// init 完成后自动启动动画 (除非页面当前隐藏)
 				if (!isHidden) {
 					startAnimation();
 				}
 				self.postMessage({ type: "ready" });
 			} catch (err) {
 				reportError("init", err);
-				// 清理已分配的资源(尤其是 ImageBitmap),避免失败后残留;
-				// 主线程收到 error 后会调用 stop() terminate worker,但此处先自清理
+				// 清理已分配的资源 (尤其是 ImageBitmap),避免失败后残留;
+				// 主线程收到 error 后会调用 stop() terminate worker，但此处先自清理
 				cleanup();
 			}
 			break;
@@ -382,7 +382,7 @@ async function handleMessage(msg: SakuraWorkerInboundMessage) {
 			break;
 		}
 		default: {
-			// 未知消息类型,忽略
+			// 未知消息类型，忽略
 		}
 	}
 }
@@ -395,7 +395,7 @@ self.onmessage = (e: MessageEvent<SakuraWorkerInboundMessage>) => {
 	}
 };
 
-// 捕获未处理错误与消息反序列化错误,回传主线程
+// 捕获未处理错误与消息反序列化错误，回传主线程
 self.onerror = (
 	message: Event | string,
 	_source?: string,
@@ -408,7 +408,7 @@ self.onerror = (
 		message: String(message),
 		stack: error?.stack,
 	});
-	return true; // 阻止默认行为,避免污染控制台
+	return true; // 阻止默认行为，避免污染控制台
 };
 
 self.onmessageerror = (e: MessageEvent) => {

@@ -220,7 +220,7 @@ function jaccardSimilarity(a: Set<string>, b: Set<string>): number {
 
 /**
  * 获取相关文章推荐
- * 评分公式: totalScore = tagMatchScore + titleSimilarityScore + timeFreshnessScore + categoryBonus
+ * 评分公式：totalScore = tagMatchScore + titleSimilarityScore + timeFreshnessScore + categoryBonus
  * - tagMatchScore (0-100): 标签 Jaccard 相似度 × 100
  * - titleSimilarityScore (0-100): 标题分词 Jaccard 相似度 × 100
  * - timeFreshnessScore (0-30): 6 个月半衰期指数衰减

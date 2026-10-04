@@ -14,7 +14,7 @@ export const sponsorConfig: SponsorConfig = {
 	// 是否显示打赏者列表
 	showSponsorsList: true,
 
-	// 是否显示评论区，需要先在commentConfig.ts启用评论系统
+	// 是否显示评论区，需要先在 commentConfig.ts 启用评论系统
 	showComment: true,
 
 	// 是否在文章详情页底部显示打赏按钮

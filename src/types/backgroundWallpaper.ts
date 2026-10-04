@@ -1,6 +1,6 @@
 export type BackgroundWallpaperConfig = {
-	mode: "banner" | "fullscreen" | "overlay" | "none"; // 壁纸模式：banner横幅模式、fullscreen全屏壁纸、overlay全屏透明覆盖模式或none纯色背景
-	playerEnable?: boolean; // 是否启用背景视频播放，默认false
+	mode: "banner" | "fullscreen" | "overlay" | "none"; // 壁纸模式：banner 横幅模式、fullscreen 全屏壁纸、overlay 全屏透明覆盖模式或 none 纯色背景
+	playerEnable?: boolean; // 是否启用背景视频播放，默认 false
 	src:
 		| string
 		| string[]
@@ -11,7 +11,7 @@ export type BackgroundWallpaperConfig = {
 		  }; // 支持单个图片、图片数组或分别设置桌面端和移动端图片
 	// 横幅壁纸和全屏壁纸共享配置
 	common?: {
-		dimOpacity?: number; // 横幅文字遮罩暗度，0-1之间，值越大越暗，默认0.15
+		dimOpacity?: number; // 横幅文字遮罩暗度，0-1 之间，值越大越暗，默认 0.15
 		playerMode?: "order" | "random"; // 多视频播放模式："order" 顺序循环（默认），"random" 随机切换
 		homeText?: {
 			enable: boolean; // 是否在首页显示自定义文字（全局开关）
@@ -38,11 +38,11 @@ export type BackgroundWallpaperConfig = {
 		carousel?: {
 			enable: boolean; // 是否启用壁纸轮播
 			interval?: number; // 轮播间隔时间，单位毫秒
-			transitionEffect?: "fade" | "zoom" | "slide" | "kenburns"; // 过渡效果: 'fade' 渐变 | 'zoom' 缩放 | 'slide' 滑动 | 'kenburns' 旋转木马
+			transitionEffect?: "fade" | "zoom" | "slide" | "kenburns"; // 过渡效果：'fade' 渐变 | 'zoom' 缩放 | 'slide' 滑动 | 'kenburns' 旋转木马
 		};
 	};
 
-	// Banner模式特有配置
+	// Banner 模式特有配置
 	banner?: {
 		position?:
 			| "top"
@@ -63,7 +63,7 @@ export type BackgroundWallpaperConfig = {
 			| "right top"
 			| "right center"
 			| "right bottom"
-			| string; // 壁纸位置，支持CSS object-position的所有值，包括百分比和像素值
+			| string; // 壁纸位置，支持 CSS object-position 的所有值，包括百分比和像素值
 		// 文章横幅信息："description" 显示描述，"meta" 显示日期、字数和阅读时长
 		postInfo?: {
 			mode: "description" | "meta";
@@ -87,20 +87,20 @@ export type BackgroundWallpaperConfig = {
 				| {
 						desktop: boolean; // 桌面端是否启用渐变过渡
 						mobile: boolean; // 移动端是否启用渐变过渡
-				  }; // 是否启用渐变过渡，支持布尔值或分别设置桌面端和移动端，默认true（水波纹关闭时自动生效）
+				  }; // 是否启用渐变过渡，支持布尔值或分别设置桌面端和移动端，默认 true（水波纹关闭时自动生效）
 			height?: string; // 渐变高度，默认 "30vh"
 		};
 	};
 	// 全屏透明覆盖模式特有配置
 	overlay?: {
 		zIndex?: number; // 层级，确保壁纸在合适的层级显示
-		opacity?: number; // 壁纸透明度，0-1之间
-		blur?: number; // 背景模糊程度，单位px
-		cardOpacity?: number; // 卡片背景透明度，0-1之间
+		opacity?: number; // 壁纸透明度，0-1 之间
+		blur?: number; // 背景模糊程度，单位 px
+		cardOpacity?: number; // 卡片背景透明度，0-1 之间
 	};
 	// 全屏壁纸模式特有配置
 	fullscreen?: {
-		position?: string; // 壁纸位置，支持CSS object-position的所有值
+		position?: string; // 壁纸位置，支持 CSS object-position 的所有值
 		// 全屏壁纸模式的导航栏配置（动态透明仅首页生效）
 		navbar?: {
 			dynamicTransparent?: boolean; // 是否开启动态透明：开启后首页顶部导航栏透明，下滑后变不透明
