@@ -50,6 +50,10 @@ seriesOrder: 7
 - lean towards：倾向于
 - send out：分发
 - give away：泄露
+- self-deceptive：自欺欺人的
+- self-reliant：自立的
+- self-destructive：自毁的
+- self-evident：不言而喻的
 
 ## 阅读
 
@@ -125,3 +129,17 @@ seriesOrder: 7
 
 1. 被动变主动
 2. 并列句按照两个简单句处理
+
+## 单词
+
+- come to terms with sth：接受（令人不快的事实）
+- evaporate：蒸发，逐渐消失
+- in terms of sth：就...而言
+- identical：完全相同的
+- extraneous：无关的
+- ornament：装饰品
+- census：人口普查
+- exacerbate：使恶化
+- ethically：道德上的
+- conversation：交谈，谈话
+- pondar：沉思
