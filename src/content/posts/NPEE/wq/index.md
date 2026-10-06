@@ -269,6 +269,8 @@ Ln(cosx)/x 的平方，其中不可以直接利用 lnx<x，第一是因为这是
   - 大题：-13
 - 作答时间：165
 
+这份卷子才是真的还行，选填全对，大题倒三积分区间错误，最后一题确实没看懂什么意思
+
 ![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADuWrEuebAIMXOUyw-I6eqOwLfEhjwAALME2sbxNooVi6d3n9OGnBkAQADAgADeAADPQQ)
 
 属于低级错误，积分区间看错 x^2+y^2=1 和 (x-1)^2+y^2=1 是两码事。（-8）
@@ -291,6 +293,8 @@ Ln(cosx)/x 的平方，其中不可以直接利用 lnx<x，第一是因为这是
   - 填空：-10
   - 大题：-17
 - 作答时间：165
+
+这份卷子还差 2 题没检查完，分别是填空题第 13 题和倒数第二道大题，对个答案先。这份卷子全是计算问题
 
 ![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADu2rEx2hv-LEWCInyteSui0ODj8DvAALlE2sbxNooVkdEjtijdpbGAQADAgADeAADPQQ)
 
@@ -341,6 +345,8 @@ $f(x) = \begin{cases} \sin\left(\frac{2\pi}{x}\right), & x \neq 0 \\ 0, & x = 0 
   - 大题：-8
 - 作答时间：150
 
+选填问题有点大。第 5 题不管先，这道题我认为我确实会掉进坑里。第 14,15,16 全是错的，大题的第 1 题则是对积分区间理解问题，依旧是黎曼积分和，第 3 题则是漏乘了一项
+
 这份卷子总结下来不应该错那么多，这份卷子我非常自信可以拿比较不错的分数，结果选填扣那么多。
 
 ![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADwWrEyVH0LNoj6lqBZ9XAhsNFbViRAALsE2sbxNooVseW4CITWm5uAQADAgADeQADPQQ)
@@ -380,6 +386,46 @@ $(b-a)/n * (a+(b-a)i/n)$
 - 重复的错误（比如说黎曼积分和，多元函数不存在二阶导情况需要使用定义，牛莱公式代入）
 
 ## 26 李 6
+
+- 完成时间：20261006
+- 分数：132-15-10
+  - 选择：-10
+  - 大题：-8
+- 作答时间：150
+
+这份卷子写到后面发现太神秘了。而且这份卷子也是晚上写的，头脑晕晕的，对草稿纸我认为划分的还是不合理。
+
+做到最后半个小时没去检查，直接按照向下对答案，碰到错了看一遍草稿纸看看是不是简单错误或者一眼看出来的，是的分就加回去了。本来这份卷子应该选填额外 -15，不过选择 2 我知道这道题有其他可能性只是还没去写，填空 11 和 15 都是草稿纸上抄着抄着简单抄错，就算了，检查大概率是可以检查出来的（想了一下确实可以，因为这三题都画圈了）。
+
+此外对于大题，这份的大题太神秘了，我一开始写的时候感觉还好，但是越做越神秘，然后发现一堆奇奇怪怪的问题，好在最后把第 18 题，第 19 题，第 21 题第一问和第 22 题大部分做出来了，对于第 20 题知道大概怎么做，但是没做出来，最后问了一下 ai 才做出来的，重点是奇偶性问题，这个确实好久没做了忘光了。
+
+这份卷子按照自己的真实水平只有 115 附近，卷子还是要多练。还有就是写一步算一步的问题，这个也需要注意，一定要写一步算一步。想了一下，还是最后不想写了，感觉太难了想放弃。
+
+哈哈，迎难而上，坚持下去，从下一份开始又是全新的东西我说！吸取教训前进！
+
+但是没检查就是没检查，没得说，这份卷子我也会按照不合格来看待。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADxWrE-zeBdR8WKu8cIpfchMVmrPdDAAI2FGsbxNooVgAB4f3njlt0ZAEAAwIAA3gAAz0E)
+
+条件代入的时候直接代入错误。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADxmrE-0m5EUFbQd8vAAGQ6Zj--5YzGgACNxRrG8TaKFa3FdJb6OXd9AEAAwIAA3gAAz0E)
+
+特征值法判断合同只有实对称矩阵的时候才成立。
+
+所以直接排除一些选项。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADx2rE-2s642zEfNR_Tlx3i3_i8rL4AAI4FGsbxNooVnv8baIdTB5DAQADAgADeAADPQQ)
+
+利用凹凸性凸函数的性质。
+
+确实不会。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADyGrE-3w4XU_TWopGKNt0AAHyepKEaQACORRrG8TaKFYxFxg_IR3FgAEAAwIAA3gAAz0E)
+
+算到最后算昏头了，混淆了 a 和 b。
+
+其实不会难。
 
 ## 880 综合 2 刷
 
@@ -445,6 +491,16 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 这道题大体做的是对的，但是，在求变限积分导数的时候，对 -x^2 求导，求出来是 -2x，结果没有和前面的 1/2 运算，就带着这个 2 一直算到了最后。
 
+![3.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADyWrE_Ti5cP2yeOazw_qysbVLxszYAAJJFGsbxNooVreaMixFSRxdAQADAgADbQADPQQ)
+
+思路是对的，但是算错了，这道题草稿太乱了，也不知道哪算错了，再算一遍看看。（答案是 1 我算出来 2）
+
+找到了问题，x^2 乘 x 之后，求导还是按照 x^2 求的。
+
+以及最后一步 x/sinx 直接写成 0 了。
+
+![3.3.10 订正](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADymrE_7e1yiINzXTkcC0U5qsrvo8NAAJPFGsbxNooVhFPq1-Wukz9AQADAgADeQADPQQ)
+
 ## 24 超越 4-10
 
 ## 25 超越
@@ -468,6 +524,381 @@ $(b-a)/n * (a+(b-a)i/n)$
 ## 计网王道选择题 1 刷
 
 ## DS 王道选择题 2 刷
+
+### DS 王道选择题 2 刷第 1 章
+
+![1.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADy2rFHD9qCarlJkIZk02KjGRq7QFzAAK6FGsbxNooVmV88A6bSeh4AQADAgADbQADPQQ)
+
+错选为 D。考虑一个 n*n 大小的图，我的任务是得到这个图边 1 的入度，那么我只需要竖着遍历一次即可，即时间复杂度是 O(n)
+
+![1.2.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADzGrFHGf5DJSqDOiBLyahlGwAASDISQACuxRrG8TaKFaMq7pTKC5CfwEAAwIAA3gAAz0E)
+
+第 17 题错选为 C。显然，执行时间为 1+2+4+8+…+2^t，其中 t<=log2n。前者由等比数列求和公式可得 2^(t+1)-1，将 t<=log2n 代入，显然是 n 的规模。
+
+第 18 题错选为 C。显然，执行时间为 1+2+3+…+t，其中 t^2<=n。前者由数列求和公式可得 (1+t)t/2，将 t<=sqrtn 代入，显然是 n 的规模。
+
+### DS 王道选择题 2 刷第 2 章
+
+![2.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADzWrFHILmAwtvb4Z406DeocHKL_0UAAK8FGsbxNooVtCx9jGM2KTWAQADAgADeAADPQQ)
+
+本题错选为 D。数据元素的意思是一个 struct，而数据项是数据元素里的数据。
+
+![2.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADzmrFHKjJtuVvHrYazeHPM_PmJHhAAAK_FGsbxNooVlxL5Ae6KMpNAQADAgADeAADPQQ)
+
+本题错选为 C。这里注意是结点内的单元。
+
+![2.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADz2rFHL3ENueBMP4UsONhoOubdl5uAALAFGsbxNooVmsw80_Jg-xnAQADAgADeAADPQQ)
+
+本题错选为 B。注意这里是有序。
+
+并且可以注意，可以先对数组进行排序然后再插入，从而选 D。
+
+![2.3.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD0GrFHXGPQkmXUi67BxRVIDRXvCBCAALCFGsbxNooViUvHDhZZ9ubAQADAgADeAADPQQ)
+
+本题错选为 D。L 本身就是指针。
+
+![2.3.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD0WrFHaL1XAfBQaymsjaMxNkHh0mCAALDFGsbxNooVmntTF-HV-kOAQADAgADeAADPQQ)
+
+本题错选为 C。属于低级错误，没仔细看。
+
+![2.3.33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD0mrFHe8aPrzXkXMgtKZ7oBmjPp6QAALFFGsbxNooVpTg6zIAAd0F3QEAAwIAA3gAAz0E)
+
+第 33 题错选为 C。注意这道题是 a，e，f，最终的选项不是 a，f，e。
+
+第 34 题错选为 C。属于低级错误，模拟一遍既可以得到正确答案。
+
+### DS 王道选择题 2 刷第 3 章
+
+![3.1.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD02rFHhCbrX94o28Wysxwdwu-oM_YAALHFGsbxNooVhrrS6NHCHtEAQADAgADeAADPQQ)
+
+本题错选为 B。本题的意思是说，出栈的时候，必须 c 是第一个，d 是第二个。所以一开始必须 a 压进去，然后 b 压进去，c 压进去的时候必须立刻出去，然后 d 压进去的时候也必须立刻出去，然后出 b 和 a。这道题的意思不是 c 或 d 是最开始的，而是必须出栈顺序是 cd。
+
+![3.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD1GrFHi8Mfv6RKhOKDxEsusukmc8XAALIFGsbxNooVtUzf5iT0gHSAQADAgADbQADPQQ)
+
+本题错选为 D。漏看了选项。
+
+![3.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD1WrFHkXXkbMKIg2hKbQjfBlZDuvxAALKFGsbxNooVge7RIYYHLxtAQADAgADeAADPQQ)
+
+第 15 题错选为 A。全删的话，需要全部指向 null。其实多考虑几种情况，如果用的是循环双链表。
+
+第 16 题错选为 C。D 这个选项更好，应该是这个意思。
+
+![3.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD1mrFHmZuoyMejQE9JfgmOFXJnG6-AALLFGsbxNooVnDvouvgQLUbAQADAgADeAADPQQ)
+
+本题错选为 B。对于这类题有几个非常需要注意的地方，那就是调用最后不需要调用，这道题的思想反而在计组的 19 年大题理解了，以前还以为单纯是粗心大意。
+
+对于这类题只需要记住，如果 f(1)=1 而不是调用，则不需要算。绘制出调用树即可（只需要包含 f 的结点）
+
+![3.3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD12rFHpbbciptkWXPmg-09cNu3ugIAALMFGsbxNooVpuZe2b5zBFLAQADAgADeAADPQQ)
+
+本题错选为 D。显然栈只允许在一端进行操作。对于 A，例如可以用动态规划。
+
+![3.4.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD2GrFHrFjy9CCo5mZN9YQcLJ2zr9HAALPFGsbxNooVgb-Sw4AAdoXdgEAAwIAA3gAAz0E)
+
+本题错选为 B。对于 1，显然第一行和最后一行不是；对于 2，需要考虑 0 这个元素。
+
+### DS 王道选择题 2 刷第 4 章
+
+![4.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD2WrFHzZkHRpq37h2-El4TzP_fSuQAALQFGsbxNooVtPG6akP4PfwAQADAgADeAADPQQ)
+
+![4.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD2mrFH09Brg1P_ymqLlIe0B15hjLrAALSFGsbxNooVnr94f6sKhp_AQADAgADeAADPQQ)
+
+这两题放一起讲，属于同类错误。首先先分别计算出两道题的 nextval，next 数组，然后尤其注意这道题是“滑动”距离，移动到的下标。
+
+其他方面，注意一下下标问题。放在上面的是数字，放在下面的是移动到 xx，注意上面的开始是 0，下面的开始是 1。
+
+### DS 王道选择题 2 刷第 5 章
+
+![5.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD22rFH3oiQV2S2KbrEehwDlo4ge1RAALTFGsbxNooVtTvsRUs-mDsAQADAgADeAADPQQ)
+
+本题错选为 B。对于 1，显然正确；对于 2，显然根节点并非；对于 3，对于只有一个根节点的树并非。
+
+![5.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD3WrFIP0sxdii8yWWVD9_YyzGOj6gAALXFGsbxNooVhIil4SIUwxmAQADAgADeAADPQQ)
+
+本题错选为 D。这道题得考虑多种情况，而不是只考虑一种。
+
+![5.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD32rFIREPu3pWS2jBOhGYFHHbFKdWAALYFGsbxNooVh1FrRJ62LFnAQADAgADeAADPQQ)
+
+本题错选为 D。为想当然的错误。这道题一下子比较反直觉，不过想一下就知道应该是 C 了。
+
+![5.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD4GrFISsiT2zZeZbVtJYUzyjP19s2AALZFGsbxNooVpdGAAGjVpSHvQEAAwIAA3gAAz0E)
+
+本题错选为 A。首先后序遍历的最后一个 A 是根，所以选项 A 可以直接排除。然后再绘制出完全二叉树的位置，一个个填上去就行了。
+
+![5.3.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD4WrFIXYSjPNpDPCxong0-fWvwav6AALaFGsbxNooVtOmnZZvlocTAQADAgADeAADPQQ)
+
+本题错选为 D。T 的中序遍历是一个升序序列，也就是原本的顺序是左根右，现在需要的顺序是右根左，所以采用递归交换左右子树，也就是先递归交换最左子树，递归交换右子树，最后再向上传递。对于 C 和 D 显然错误。
+
+对于销毁，修改树而言，后序遍历一般是最优解也是最安全的。先把左右子树处理完之后再向上汇报。
+
+![5.3.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD4mrFIb0oGdAcYnc-SzK4s0QipVPvAALbFGsbxNooVqlEJl__dpIeAQADAgADbQADPQQ)
+
+本体错选为 B。线索二叉树的指针可能是指向下一个点，也可能是指向结点。对于 tag 而言，如果 tag==0，那么意味着该结点有孩子，如果 tag==1，那么意味着这个指针指的是下一个点。
+
+![5.3.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD42rFIdbugiZLQkwKBw5jXoCuspGDAALcFGsbxNooVuGEUOVLUwZ3AQADAgADeAADPQQ)
+
+本题错选为 A。首先排除 BC。对于 A，无法解决先序前驱问题，对于 D，无法解决后续后继问题。
+
+![5.5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD5GrFJVGiDGofjF0V6hJx5EalHsmIAAIFFWsbxNooVlAXsCRo6VlsAQADAgADeAADPQQ)
+
+本题错选为 A。首先辨析概念，什么是度为 m 的哈夫曼树。首先辨析一下什么是度，对于普通的二叉树来说，每个非叶结点最大的度数为 2，对于 m 叉树，每个非叶节点最大的度数为 m。这里这道题指的是 m 叉树。
+
+和后续的外部排序联系起来，这里可能会引入空结点。
+
+![5.5.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD5WrFKJEFyjNy1v7ztdVXlOX-JS6MAAIIFWsbxNooVqqbmqUw2bW4AQADAgADeAADPQQ)
+
+本题错选为 C，属于低级错误。显然对于 D，110，1100 重复。
+
+![5.5.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD5mrFKKlrj5lq1qF7s2QfQZD6AajiAAIJFWsbxNooVq3ZwWaZPNd7AQADAgADeAADPQQ)
+
+本题错选为 C。对于 T1 而言，显然可能成立可能不成立。对于这类题应该多考虑边界情况。
+
+### DS 王道选择题 2 刷第 6 章
+
+![6.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD52rFKTJRr4DDQzJXfcP3o906s-emAAIKFWsbxNooVpmWNOLn1wHKAQADAgADeAADPQQ)
+
+本题错选为 D。对于 D，图可能是不连通的，所以不成立
+
+![6.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD6GrFKVjL86tz-xqzZlVTqZ1riORNAAIMFWsbxNooVmNG1neYk4GiAQADAgADeAADPQQ)
+
+对于这道题，显然让一个结点孤立无援，剩下的所有节点成为完全图。所以 n(n-1)/2=28，可得 n=8，所以 n+1=9。注意这里不是 n(n+1)。
+
+![6.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD6WrFKW6lkFQvkwvLS1rMJIfycJnNAAINFWsbxNooVj4k_geqRVO2AQADAgADeAADPQQ)
+
+本题错选为 C。这道题一定要注意，连通分量指的是最大连通子图。
+
+![6.2.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD6mrFNKJzGcr3VeQyvzSmeLqNVwx9AAIXFWsbxNooVs7T4qClWewWAQADAgADeAADPQQ)
+
+第 14 题错选为 D。第 15 题错选为 D。对于这题，被求入度和删除结点被要遍历所有边影响了。辨析一下，这道题注意是 1 个，如果要求所有结点的入度的话，是 O(n^2+ne)（得注意 n 和 e 谁更大），当然如果用数组记录的话会是 n+e。D 属于经典迷惑项，需要注意。
+
+![6.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD62rFWEFEv7GWOiLmB2_bMOa2m-OfAALoD2sbxNowVkBJOzCZ86uUAQADAgADeAADPQQ)
+
+本题错选为 C。对于 1 和 2 显然是错误的。对于 4，非强连通图显然对于有向图 A->B->C，其只需要一次遍历即可。
+
+对于 2，可以采用返利 A->C，B->C。
+
+对于 4，可以采用 A->B，A->C。
+
+对于判环——
+
+对于无向图，可以采用 dfs/bfs。
+
+对于有向图，可以采用 bfs/拓扑排序。
+
+强连通图：全员两两互通、双向奔赴。
+
+![6.4.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD7GrFWHDK0zVKP6HXt3AlFu7jVHCFAALpD2sbxNowVhSZ70CjoL_GAQADAgADeAADPQQ)
+
+本题错选为 A。对于 1 和 3 显然正确，对于 2，这道题的意思是求所有的每一对顶点，所以是 On3。
+
+![6.4.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD7WrFWjLAWc51IY60KJji1QdqKUoYAALqD2sbxNowVtPJotDIhkUxAQADAgADeAADPQQ)
+
+本题错选为 D。对于 D，可能。对于 C，是从所有出发的活动里最迟开始时间的最小值，这里不需要再减去什么东西。
+
+![6.4.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD7mrFWm8Di4bJEv-5M0Rv4INSy6AtAALrD2sbxNowVkzWeH7DUhi9AQADAgADeAADPQQ)
+
+本题错选为 C。入度为 0，所以一定是起点。
+
+辨析一下符号的含义，对于无权图，1 代表有线，0 代表无线，对于带权图，具体的值为有线且权值为 w，而 0 只会出现在主对角线，无穷大代表没有路。
+
+![6.4.44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD72rFWqaFjHPGjwxvjY3Q1_locI05AALsD2sbxNowVvQ1-8hw4rrtAQADAgADeAADPQQ)
+
+![6.4.44 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD8GrFWtJSozUV4azG4PZUpJx4ae3OAALtD2sbxNowVqufDOQ0K7RoAQADAgADeAADPQQ)
+
+![6.4.46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD8WrFWuujI8OXY4Og3IhUdSWjqC64AALuD2sbxNowVujonMuMmjjiAQADAgADeAADPQQ)
+
+显然 1 和 2 是错的，3 是对的，所以是 B。
+
+### DS 王道选择题 2 刷第 7 章
+
+![7.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD8mrFWyKhKUQ0shciHWFovM0U3oLIAALvD2sbxNowVgNkLbGbbpn5AQADAgADeAADPQQ)
+
+本题错选为 C。对于这道题，想当然没有计算 ASL，想当然导致的错误。
+
+![7.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD82rFXEt1zqtaqRjaLGxZ36rzZMAlAALwD2sbxNowVr4NEpOmkeWFAQADAgADeAADPQQ)
+
+对于这类题，首先先开根号。65025 开根是 255。现在最开始 255 进行折半查找，得出 8 次比较，而因为是最好的情况，所以内部也是有序的，所以也是 8。
+
+![7.3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD9GrFXGgr5hVWDQLVfxfoE6j8iGQ7AALxD2sbxNowVtxQFY6NL_xKAQADAgADeAADPQQ)
+
+对于第 11 题和第 12 题，采用递推求解方式，也就是 Cn=Cn-1+Cn-2+1，代入计算即可。
+
+这个公式算的是总结点数，而不是那一层的结点数。
+
+$N_0 = 0$（空树，高度为 0）
+
+$N_1 = 1$
+
+$N_2 = 2$
+
+$N_3 = N_2 + N_1 + 1 = 2 + 1 + 1 = 4$
+
+$N_4 = N_3 + N_2 + 1 = 4 + 2 + 1 = 7$
+
+$N_5 = N_4 + N_3 + 1 = 7 + 4 + 1 = 12$
+
+$N_6 = N_5 + N_4 + 1 = 12 + 7 + 1 = 20$
+
+![7.3.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD9WrFXTNNXDzaIHEjMts-xnrGd3pZAALyD2sbxNowVqoWfBU4S_eQAQADAgADeAADPQQ)
+
+对于第 15 题，注意这道题只有一个根节点的二叉树高度是 0。
+
+对于第 16 题，显然 AB 正确。
+
+对于 3：
+
+AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），树高严格控制在约 1.44\log_2 n；
+
+红黑树是弱平衡的（最长路径不超过最短路径的 2 倍），树高最高可达 2\log_2 n；
+
+红黑树的优势在于减少旋转开销。
+
+对于 4：左右孩子可以左孩子高为 2，右孩子高为 1，孩子平衡但是自己不平衡。
+
+![7.4.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD9mrFXirTSRr0nw7DPIGnVDgMz8DaAALzD2sbxNowVl0O3SQ0Y36oAQADAgADeAADPQQ)
+
+本题错选为 A。如果是 4，那么 4/2 取高，也就是至少有 2 个分叉，至少 1 个结点，至多 3 个结点；如果是 3，那么 3/2 取高，也就是至少 2 个分叉，至少 1 个结点，但是至多 2 个结点；如果是 5，那么 5/2 取高，也就是至少 3 个分叉，至少 2 个结点，至多 4 个结点。所以可能是 4，5。
+
+![7.4.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD92rFXki-P__kAzYqGN6fqLjeQWZKAAL0D2sbxNowVsQeGcY3taN-AQADAgADeAADPQQ)
+
+第 4 题错选为 A。属于低级错误。显然应该是 B。
+
+第 5 题错选为 D。m 阶 B 树，假设 3 阶 B 树有 1 个关键字（需要注意 B 树的叶节点指的是 null），那么显然是 2 个页结点。
+
+![7.4.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD-GrFXrQI9qqynihRWli4iJwhfnyVAAL1D2sbxNowViXoXR2Pxoj2AQADAgADeAADPQQ)
+
+第 7 题错选为 A。一样注意 B 树的叶节点指的是 null，所以假设 m 为很大的数，n 为 1，那么关键字至少为 1，显然可以排除法做出为 D。
+
+第 8 题没做出来。注意 B 树树高只到终端节点，B+ 树树高到信息。
+
+假设是基本空的，也就是 5/2 取高 -1，也就是每层最少 2 个结点。所以当 h=1，总共是 2 个分叉，第 2 层 2*3 个分叉，第三层 2*3*3 个分叉，以此类推。
+
+所以 $54>=2*3^(h-1)$，即 hmax=4。（这道题用的是失败算的，也就是第 h+1 层的总数至少是 $2*3^(h-1)$。
+
+![7.4.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD_GrFXyqNbmRQY6xK5Q9nKfKKkQbUAAL2D2sbxNowVgbYCPoqTXEcAQADAgADeAADPQQ)
+
+本题错选为 C。根节点已经读入内存，所以不需要花费额外时间去读根。那么假设查找失败为 2017，也就是 2017>=2*7^(h-1)，可得 h=5
+
+![7.4.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD_WrFX1q0Xk9ADXM1N9wXg1oL6WmSAAL3D2sbxNowVmz-Fqrf2Q6MAQADAgADbQADPQQ)
+
+本题错选为 D，属于低级错误。显然对于 B 树只支持…
+
+![7.4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD_mrFX30JKeQpU1ECyE_O5nTwfXrUAAL4D2sbxNowVlbdWqQrYSNcAQADAgADeAADPQQ)
+
+第 23 题错选为 C。删除 260 后，可能用其直接前驱来补，所以也就是把 110 补上去。但是把 110 补上去又导致 100 那里缺了一个关键字，所以访问左右兄弟，发现左兄弟可以拿一个结点，所以变成 90，100；
+删除 260 后，从其直接后继补，也就是 280，300 缺了人，左右兄弟都补不了，所以需要合并，合并的时候，显然 A 是对的，B 也是对的。假设是 D，那么……
+
+对于这道题，直接把 D 带进去，会发现必然不可能成立，这道题分析不如直接带！
+
+第 24 题错选为 A。1 显然是正确的，3 显然是不正确的；对于 4，插入的关键字结点最终位于叶节点，不一定，可能通过调整调整上去了，所以综合上述，CD 可以排除。考虑 2，B 树的叶节点指的是最下面一层的空结点，一旦删除那么必然会导致也会节点变化。
+
+![7.5.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD_2rFX8Qi1mt5r-cTpq1UfW9Oio9QAAL5D2sbxNowVj7ic1uqKHDaAQADAgADbQADPQQ)
+
+本题错选为 C。很小也可以用哈希。
+
+![7.5.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQABasVf4veYzV67n9mfs8tlU0NouPYAAvsPaxvE2jBWW6s6y6Ns5v0BAAMCAAN4AAM9BA)
+
+本题错选为 A，属于低级错误。显然对于开放定址法，非同义词之间也有可能发生冲突。
+
+![7.5.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQFqxWAE8yGUFUdlAlY7q1G9b537DgAC_A9rG8TaMFYO-3RUBKe-WgEAAwIAA3gAAz0E)
+
+第 8 题错选为 B。为低级错误。如果选择一个很烂的散列函数。
+
+第 9 题错选为 C。为低级错误。
+
+第 10 提错选为 D。解决冲突的时候肯定不在原来的位置。
+
+![7.5.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQJqxWB7CJAiyXpK1nq4nSEJ0nI9hwAC_Q9rG8TaMFY9vfM5UxrejgEAAwIAA3gAAz0E)
+
+本题错选为 C，属于低级错误。拉链法构造，mod13 即可，这道题忽略了 1。
+
+![7.5.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQNqxWCaxHbQHWyqRP1AC-sFnUHzjgAC_g9rG8TaMFZMzzO5NDRepgEAAwIAA3gAAz0E)
+
+本题错选为 A。显然 AB 是肯定正确的，对于 C，不管有没有发生都 +1。
+
+### DS 王道选择题 2 刷第 8 章
+
+![8.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQRqxWEb0Feq4qO5v0in_GnJGxC6AwAC_w9rG8TaMFY8gh8Y7hMhJwEAAwIAA3gAAz0E)
+
+原本的：EASYQUESTION
+
+第一轮：EASIONESTYQU（总比较为 6 次）
+
+第二轮：4+4+3
+
+所以总共是 6+4+4+3=17 次。
+
+![8.3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQVqxWE8LxAh0u3-OmjlWy89E_0cDQADEGsbxNowVnima8HhEVTvAQADAgADeAADPQQ)
+
+本题错选为 D。扣个字眼，最。对于 D，可以 shuffle 一下，但是对于 B 却无法解决。
+
+![8.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQZqxWFXzg5w38HX-ZPt9YQoj1v4PgACARBrG8TaMFaqwpBcYoxhZAEAAwIAA3gAAz0E)
+
+本题错选为 A。注意，即便是最好的情况，也就是 12345678，以 4 开始划分，那么第 1 轮比较 7 次（这仅是第 1 轮的），第 2 轮 123 比较 2 次，5678 比较 3 次；第 3 轮 78 比较 1 次，总计 7+2+3+1=13。
+
+这里我思考成仅 1 轮。
+
+![8.3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQdqxWF4ehqi6rXYuCk4JAZrhSvZ9wACAhBrG8TaMFbIMMX_Di6-2QEAAwIAA3gAAz0E)
+
+本题错选为 B。快排的第二趟结果，意思是能不能找到 2 个轴。对于这类题一定要想到先找端点最值。对于 A，显然可以以 28 和 72 划分；对于 B，显然可以以 2 和 72 划分；对于 C，显然可以以 2 和 28 划分。
+
+![8.3.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQhqxWGh9Ln2PtqoPQ0_qjA6O84XvQACAxBrG8TaMFaevc1fSWiOAQEAAwIAA3gAAz0E)
+
+本题错选为 B，属于低级错误，低级到我都不想分析了。
+
+![8.4.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQlqxWIC6w0blmI-Mnl_255OLZ5zQgACBBBrG8TaMFbEazhgb5dffwEAAwIAA3gAAz0E)
+
+绘制树之后，22 换到最前面，先和 34，53 比较，22 和 53 换，然后再和 46 比较。总共 3 次。
+
+![8.5.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQpqxWIZX6-_YddjxlrQ-8pNmrzm7AACBRBrG8TaMFajmD_rkqM1ogEAAwIAA3gAAz0E)
+
+第 16 题错选为 D。我都不知道为啥我会选 D。插到最后一个比较两次啊。
+
+第 17 题错选为 D。我也不知道为啥会选错。
+
+总之上述三题属于同质错误，需要注意的是位于第一个要比较两次。
+
+![8.5.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQtqxWI0GYxSic_FtGgQ5iuVulaDlwACBhBrG8TaMFZ7GKKBwNH5EwEAAwIAA3gAAz0E)
+
+本题错选为 A，首先是分治过程，先切成 1，2，6，4，5，3，8，7。第一次比较是 1 和 2，6 和 4，5 和 3，8 和 7，共计 4 次比较，排序为 12，46，35，78；第二次比较是 1 和 4，2 和 4，3 和 7，5 和 7，所以总共 4 次比较，排序为 1246，3578；第三次比较是 1 和 3，2 和 3，4 和 3，4 和 5，6 和 5，6 和 7，这部分总计 6 次。所以总共为 4+4+6=14。
+
+![8.5.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQxqxWJPt-aGMfBRVhU1P0tyzYkkxgACBxBrG8TaMFbQ0SvalTC63gEAAwIAA3gAAz0E)
+
+本题错选为 C。判断稳定性，简单选择排序不稳定，直接插入排序稳定。由题设可知，先按照低位的排（不要被结构体排序的思维影响了），然后再排高位，所以排除 AC。由于第一次排已经确定了低位的顺序，所以高位不能采用非稳定的排序。综上述选 D。
+
+其实考虑 LSD，这道题意思是就是 k1k2，所以先排 k2 然后排 k1，由于简单选择排序不稳定，直接插入排序稳定，因为 k1 值不能改变 k2 的顺序，所以需要稳定。
+
+![8.6.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQ1qxWMvVsR8iq18io4gnCgNv12kTQACCBBrG8TaMFbbgYB9sCr6lAEAAwIAA3gAAz0E)
+
+第 7 题错选为 A。对于直接插入排序，排序的趟数显然一直是 n-1，不要和其他排序（例如冒泡排序混淆了）
+
+第 8 题错选为 D。显然可以排除快排和冒泡（冒泡默认优化）。
+
+第 9 题错选为 D。冒泡排序即便已经 ok 了，但是还是得再扫一次去判断。
+
+第 10 题错选为 B。这道题的意思不是说选项里面的 x 和 y 有相同的，而是问其本身是不是相同的。所以 A 显然。对于 B 的基数排序，不基于关键字比较，而是基于分配与收集
+
+第 11 题错选为 A。堆不是查找的。
+
+第 12 题错选为 C。对于 4，根节点的所有子树可以并行。
+
+![8.6.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQ5qxWNVoRc114DU03XN5vQRTzf_UAACCRBrG8TaMFYy2AKd0-ebSwEAAwIAA3gAAz0E)
+
+本体错选为 C。对于 1，2，3 都可以，而对于 4 和 5 利用了随机访问。
+
+![8.6.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQ9qxWN8E5-HdxTYkoyv3WXAm7u9SQACChBrG8TaMFa0QnGexi3Q0gEAAwIAA3gAAz0E)
+
+本题错选为 D。属于很低级的错误，其实也不想解释。
+
+![8.7.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARBqxWOT1TeOXM3GPc2wqgIXYpBUYgACCxBrG8TaMFauCVqfnkeW9AEAAwIAA3gAAz0E)
+
+第 4 题错选为 C。首先计算初始归并段，由于能容纳 600 个记录，所以 375000/600=625，625 个归并段一直除以 5 就好了，得到 4 趟归并。
+
+第 5 题错选为 B。显然 D 是错的（）我也不知道为什么要选其他选项。
+
+![8.7.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARFqxWOzuO68siEWQlRT1vviDxu9NgACDBBrG8TaMFbDl3qISnfPggEAAwIAA3gAAz0E)
+
+本题错选为 A。最佳归并树是外部排序得第二步。应该是 B。
 
 ## 计组王道选择题 2 刷
 
