@@ -387,6 +387,16 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 ## 26 李 6
 
+- 完成时间：20261006-
+- 平均分：
+- 平均作答时间：
+
+重新看了一遍遗憾邂逅的帖子，发现 26 李 6 质量很差，所以就先放弃了。
+
+正好 27 李 6 出了，转去做 27 李 6（听说质量不错）
+
+### 26 李 6 卷 1
+
 - 完成时间：20261006
 - 分数：132-15-10
   - 选择：-10
@@ -426,6 +436,18 @@ $(b-a)/n * (a+(b-a)i/n)$
 算到最后算昏头了，混淆了 a 和 b。
 
 其实不会难。
+
+## 27 李 6
+
+- 完成时间：20261007-
+- 平均分：
+- 平均作答时间：
+
+### 27 李 6 卷 1
+
+- 完成时间：20261007
+- 分数：
+- 作答时间：
 
 ## 880 综合 2 刷
 
@@ -500,6 +522,56 @@ $(b-a)/n * (a+(b-a)i/n)$
 以及最后一步 x/sinx 直接写成 0 了。
 
 ![3.3.10 订正](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADymrE_7e1yiINzXTkcC0U5qsrvo8NAAJPFGsbxNooVhFPq1-Wukz9AQADAgADeQADPQQ)
+
+![3.3.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARJqxhKAC09nkEpCNUhNKx3dEcmKngACaxNrGz_BMFawMsCylzL1sQEAAwIAA3gAAz0E)
+
+本题没什么思路，一刷的时候使用的是把 tanx 变成 secx，但是现在做不出来了。
+
+原来的方法是很容易可以解出来 an+an-2=1/(n-1)，然后就不会做了。
+
+再后面，显然 an < an-1，所以只要把 an 替换为 an-2 就可以做出来了，另一侧则是利用 an 和 an-2 的关系。
+
+瞄了一眼答案，是用换元法，就迎刃而解了（但是做的时候抄漏了 t^2 的 2）
+
+![3.3.22 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARNqxhNDUJj3ZLbKmI_-XbWcNlrnkAACbhNrGz_BMFaJUtby0MJEOgEAAwIAA3kAAz0E)
+
+![3.3.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARRqxhS7aN0sV-Usm4D0E07qmsnqtgACchNrGz_BMFYC5h-0_WlqLAEAAwIAA20AAz0E)
+
+这道题的第一问不适合用华里士公式（循环论证了），而第二问则是没想明白要怎么证明 an 的单调性，事实上只要做差相减即可。
+
+并且，这道题答案给的复杂了，可以先用区间再现消去 x，然后就可以很轻松的证明了（这也是为什么答案直接一上来就把 sinx 凑进去的原因）。
+
+![3.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARVqxhnQ-nnBByDjC1dAclPuwKdeKwACjBNrGz_BMFY25Imi7TVT5AEAAwIAA3gAAz0E)
+
+这道题其实有思路，但是最后没做出来，一开始比分部积分是对的，然后就不会做了。
+
+其实原因在于没有考虑 +1-1 的操作。
+
+![3.2.32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARZqxiiWwU4ZDEbkZBINSyf7kVBuYAACoBNrGz_BMFblaEl3saC12QEAAwIAA3gAAz0E)
+
+本题没想出来怎么做（第一问）
+
+答案是利用区间再现。
+
+所以，出现米奇妙妙 1/2 的时候，可以从两方面考虑，一方面是 x 从 0 到 1 的积分，第二是区间再现（尤其是三角函数和周期函数）
+
+![3.2.33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARdqxjFhB3JIe7AQJn9qNWm72Z0F4AAC0BNrGz_BMFbac5BkQwKAngEAAwIAA3gAAz0E)
+
+这道题做的是对的，利用的是换元法。
+
+不过这道题还可以用拉格朗日中值定理，值得注意。
+
+![3.2.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARhqxjKFTl0RyImU-uaMHVZTf4JPVAAC0RNrGz_BMFYR9hzivrDmDAEAAwIAA3gAAz0E)
+
+值得注意的低级错误，最后一步算错了。这道题最后一步算出来是 0 到根号 3，对根号下的 4-x^2 积分，此时可以利用几何法，但是要注意并不是 2/3 *pi。
+
+![3.2.36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARlqxjMbJErozudfKAcIpmLslYVsFAAC1RNrGz_BMFaC1_EGHzoX3QEAAwIAA3gAAz0E)
+
+本题单纯没算完，计算量太大了（三角函数的 4 次方，并且还是 pi/4 到 pi/2），这道题可以采用直角坐标系的方法来算。
+
+![3.2.37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARpqxjMxd37LW4ufrc9SyoUR159JfgAC1hNrGz_BMFanNlM1SYi_hQEAAwIAA3gAAz0E)
+
+注意定义域，x 的定义域是 0 到 pi，而没有 pi 到 2pi，以此类推。
 
 ## 24 超越 4-10
 
@@ -1528,3 +1600,9 @@ TCP 的序号字段一个需要就代表 1B，而不是需要考虑首部等东�
 总的来讲，为了赶进度导致很急（尤其是 3.6 和 4.2 节，都是匆匆做一遍然后也没检查，直接对的答案，做的也很赶）
 
 对于其他的其实还行，主要问题还是集中在遗忘和概念理解上。
+
+## 408 真题 2 刷（逐题分析 + 变式）
+
+### 2009 真题 2 刷
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARtqxjZVxFykGM7L_ln6lZW6n2E9NQAC5xNrGz_BMFZrl2tlKseJMQEAAwIAA3gAAz0E)
