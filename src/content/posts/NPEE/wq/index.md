@@ -38,7 +38,7 @@ seriesOrder: 0
 
 最开始没有写错题本，所以是后续补充的。
 
-## 张宇 30 讲基础高数 1 刷第 1 章
+### 张宇 30 讲基础高数 1 刷第 1 章
 
 ![1.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADY2rEbDgrtnm0uM3Khp0seiILh1PXAALoEmsbxNooVrEQjdCAbn6IAQADAgADeAADPQQ)
 
@@ -189,6 +189,106 @@ Ln(cosx)/x 的平方，其中不可以直接利用 lnx<x，第一是因为这是
 ![2.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADgWrEiG8OeWiwH8aBpozp6t-m_VecAAIgE2sbxNooVrgl_jm-iaI8AQADAgADbQADPQQ)
 
 本题为低级错误，根号 n 除下去的时候要注意。
+
+![2.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUlqxl12d-8HWWe0RNpOI6kmWWXZEAACshRrGz_BMFYEVSHwnvL3egEAAwIAA3gAAz0E)
+
+违规使用等价无穷小代换
+
+考虑夹逼定理，这题二刷差点没做出来。比较正规的做法是分块算，也就是把 1/n 和后面的一大坨给分开。
+
+![2.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUpqxl2OsjeRA3C2okXR9tgvZEsIyQACsxRrGz_BMFYv1gvqpordTAEAAwIAA3gAAz0E)
+
+一刷时没思路，错题重刷时没写，现在再做一次，二刷的时候再做一段时间才做出来。本质的思路是把 xn 解出来，然后 x1< x2，对应的函数单调递增，可得单调性，有界性对于 xn 而言显然。
+
+### 张宇 30 讲基础高数 1 刷第 3 章
+
+![3.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUtqxl2uTkzEtRQetIGxlkQBmixkFgACtBRrGz_BMFb86YJAucSN7gEAAwIAA3gAAz0E)
+
+关于这道题，1 刷的时候暴露了一个问题，那就是我不是不会做，而是总是在最后一两步的时候突然犯蠢。所以不只是得走一步看一步，还得着重检查最开始和最后，这些都是最容易让人懈怠的。
+
+![3.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUxqxl3thdvbaB7XEZN0mDktVRvyGAACthRrGz_BMFaYNCGtUOCWAAEBAAMCAAN4AAM9BA)
+
+![3.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAU1qxl4Ga5WW-LFZRdyCIvIxjwLoMgACtxRrGz_BMFbnyRbGMU7sqgEAAwIAA3gAAz0E)
+
+这两题可以放在一起讲。这道题其实是有结论的，具体结论在武忠祥老师的强化课基本搞明白了。包括我没放进来的下一题，重点是记住这两个：
+
+x|x|以及画图，画一张图就能理解函数的导数绝对值之间的关系了。
+
+当然也可以用传统做法做。
+
+例 3.5 就是想当然了，算一半直接选了错误选项。
+
+例 3.6 则是试根用长除法，但是 2 刷的时候才突然意识到，原来可以先因式分解，然后问题就迎刃而解了。
+
+开卷子初期时候补充：需要注意本身就不可导的点，例如 x 的 1/2 次方，x=0 不可导。
+
+![3.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAU5qxl4wMgtqXMqAkVneiaa77-DEwAACuRRrGz_BMFZg6O0XAdNL6gEAAwIAA3gAAz0E)
+
+这道题是一刷的时候没算完，只算出来了交点没算完极限。
+
+![3.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAU9qxl5KnUZN6evN71D-66hbgvnGvQACuhRrGz_BMFbNJvq1K_xXPgEAAwIAA3gAAz0E)
+
+![3.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVBqxl5iPLLv2bidZKjqjV-I2yWtMwACuxRrGz_BMFYmQceHkIQxUwEAAwIAA3gAAz0E)
+
+这两题可以放在一起讲，1 刷的时候明显对概念不熟悉，错题重刷的时候也一般，2 刷的时候险些没反应过来。
+
+对于不经常考的考点也需要注意。
+
+![3.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVFqxl57b8lSRA07C0n3TLAlfUXJhAACvBRrGz_BMFbZ6c-bkT5twgEAAwIAA3gAAz0E)
+
+本题是知识点的不熟悉，需要注意。
+
+![3.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVJqxl6TmhXes30m8qHYzqhS3JCm6QACvRRrGz_BMFaukBvp3zVpBgEAAwIAA3gAAz0E)
+
+没想到洛必达。
+
+2 刷的时候看了提示才想起来。
+
+在这里可以辨析一下洛必达可以洛几次，如果某个函数在一个区间内 k 阶可导，那么在这个区间内可以洛 k 次；如果一个函数在某点处 k 阶可导，那么在这个区间内只能洛 k-1 次。
+
+上面这个说法是错误的！一样只能洛 k-1 次。可以洛的前提是第 k 阶导存在（或为无穷）
+
+### 张宇 30 讲基础高数 1 刷第 4 章
+
+![4.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVNqxl75y2QOxcALDrvnnZLQ58wydwACvhRrGz_BMFaga02l5J1WFgEAAwIAA3gAAz0E)
+
+本题一开始想成相加，后来做的时候使用的是上一节的导数思想，然而在处理 tanpix4 的时候翻车了，这里 x 趋向于 1，而不是 0，所以在这里的处理需要小心。2 刷的时候用的是洛必达，感觉也是可以去凑一下的，但是没必要。
+
+本题答案的解法采用的是第 2 种，也就是采用 uv 的求导。
+
+![4.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVRqxl8UDT7SkjKtZpdtyiHDbdac7wACwBRrGz_BMFaMI0q27PcIYAEAAwIAA3gAAz0E)
+
+注意辨析 x 和 y 之间的关系，这里的 3+e 指的是 y，也就是当 y=3+e 的时候，x=1，而不是 x=3+e
+
+![4.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVVqxl82gXQyCywWaE7OorsbDjU6gwACwRRrGz_BMFZecPMH5_OK1gEAAwIAA3gAAz0E)
+
+连续的 yx 等的计算错误以及加减号
+
+![4.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVZqxl9K0JIUHoPer9M6xMy0ND2hYAACwhRrGz_BMFY6GQdwobYdowEAAwIAA3gAAz0E)
+
+这题错在利用公式法的时候，求解出 dy/dt 和 dx/dt，直接拿前者去对 t 求导，而不是拿 dy/dx 对 t 求导。本题 2 刷时尝试使用公式法。
+
+![4.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVdqxl9d1JcWM-gTed-dTnNN95wQrQACwxRrGz_BMFaq0qF9fvScmgEAAwIAA3gAAz0E)
+
+本题错在两个地方，第一，x=arctant 求导求出来最后是带 x 的，第二，一个经典的错误，标准的零分：除以 1/(1+t^2) 一定不是直接把这个写在分母。
+
+![4.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVhqxl-jZwGwg9rQOXETh76lqtWQEQACxBRrGz_BMFYII1TkMFaCoQEAAwIAA3gAAz0E)
+
+大量的计算错误，且一开始没注意到取对数。
+
+![4.1.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVlqxl-5e6LcxXLr8TNGkn0CWIma4wACxRRrGz_BMFaVlHFOISiQHAEAAwIAA3gAAz0E)
+
+题没看完，求的是 x=0 时的点，而不是完整的。
+
+![4.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVpqxl_MOTQ-0uLWIODi9nmVHqeYJgACxhRrGz_BMFapAYOGQ-5PWgEAAwIAA20AAz0E)
+
+本题可以采用归纳法，1 刷时采用牛莱公式，但是确在计算 C（上 1 下 n）时出现问题，做出来等于 1，实际上应该为 n。
+
+![4.1.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVtqxl_kR-KgUhTK8ucSLLym-vWo6AACyBRrGz_BMFa7R576nCaxBAEAAwIAA3gAAz0E)
+
+利用牛莱公式，结果 C(n,k) 再次记错公式。
+
+### 张宇 30 讲基础高数 1 刷第 5 章
 
 ## 张宇 30 讲基础线代 1 刷
 
@@ -843,7 +943,7 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 第 8 题没做出来。注意 B 树树高只到终端节点，B+ 树树高到信息。
 
-假设是基本空的，也就是 5/2 取高 -1，也就是每层最少 2 个结点。所以当 h=1，总共是 2 个分叉，第 2 层 2*3 个分叉，第三层 2*3*3 个分叉，以此类推。
+假设是基本空的，也就是 5/2 取高 -1，也就是每层最少 2 个结点。所以当 h=1，总共是 2 个分叉，第 2 层 2* 3 个分叉，第三层 2*3*3 个分叉，以此类推。
 
 所以 $54>=2*3^(h-1)$，即 hmax=4。（这道题用的是失败算的，也就是第 h+1 层的总数至少是 $2*3^(h-1)$。
 
@@ -1606,3 +1706,543 @@ TCP 的序号字段一个需要就代表 1B，而不是需要考虑首部等东�
 ### 2009 真题 2 刷
 
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARtqxjZVxFykGM7L_ln6lZW6n2E9NQAC5xNrGz_BMFZrl2tlKseJMQEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+分析 A，对于栈在计算机的应用主要是递归函数，自身的应用可以是求后缀表达式，dfs，先序遍历，中序遍历，后序遍历。
+
+分析 B，自身的应用例如树和图的层次遍历。在操作系统中，除了缓冲区之外，还可以在公平竞争的调用队列（比如说 RR 调度，比如说读写公平的读者写者问题）
+
+分析 C，树可以用来表示文件系统，也可以作为关系数据库的索引（例如 B+ 树）
+
+分析 D，图在操作系统里也可以表示文件系统，应用例如资源分配图，进程前驱图（和拓扑排序相关）
+
+本题考察的内容在王道书 3.3 小节。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARxqxjhqygqk0_N93LnK0yvsMVlOfAAC6xNrGz_BMFb0X_7s2YJa4wEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+队列是 FIFO，出队顺序等于出栈顺序，所以：
+
+a
+
+a，b
+
+a，c
+
+a，c，d
+
+a，e
+
+a，e，f
+
+g
+
+顺序如上所示，所以最长是 3。
+
+这类题的变式例如受限队列，也就是两端均可插入但只有一端可以出队，或者只有一端可以入队但是有两端可以出队。主要是要看清楚题目意思，不会难。
+
+还有的变式就是判断求后缀表达式值的时候，栈的大小，需要注意数在哪，求后缀表达式的时候，默认双操作符的数是：
+
+后弹出来的 op 先弹出来的。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAR1qxjnxgj3G44RVSOmR9HnpQ40RjQAC7hNrGz_BMFYe5vAeBlqzJQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+遍历方式主要有 4 种，先序遍历对应根左右，中序遍历对应左根右，后序遍历对应左右根，层次遍历没有对应的。
+
+但是需要注意一个特殊情况，也就是根右左，注意到根右左是后序遍历左根右的逆序。
+
+当然对于其他情况，例如右根左等也需要具体题目具体分析。
+
+本题显然是右根左的情况，所以是 RNL，也就是 D。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAR5qxjq0DUJw4H4rRg8gZh53U9bdkAAC8RNrGz_BMFZFPV2mt9FqqQEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+树这块考研大纲主要有以下几类：
+
+- 二叉树
+- 线索二叉树
+- 森林
+- 二叉排序树
+- 平衡二叉树
+- 红黑树
+- B 树/B+ 树
+- k 叉哈夫曼树
+
+对于树的形态辨析，主要是集中在二叉排序树（二叉搜索树），平衡二叉树，红黑树，B 树/B+ 树。
+
+对于二叉排序树，其只需要满足按照中序遍历为不减序列即可。
+
+对于平衡二叉树，则需要满足整棵树左子树和右子树高只差的绝对值小于等于 1 即可，可以注意最少结点的平衡二叉树公式，即变式的斐波那契数列。对于高为 h 的 AVL 树，和标准斐波那契数列的关系是 N(h)=F(h+2)-1。标准斐波那契数列是 0,1,1,2,3,5,8,13,21。例如对于高为 5 的平衡二叉树，其最小应该是 13-1 即 12 的高度。
+
+对于红黑树，则是 12 字咸鱼口诀：左根右，根叶黑，不红红，黑路同。注意红黑树查找略比平衡二叉树慢，红黑树相交易平衡二叉树的优化主要在减少了频繁调整上。
+
+对于 m 阶 B 树，一个结点最多可以有 m-1 个值，除了根节点之外，最少则是 m/2 向上取整 -1。
+
+对于 B+ 树，必须得查找到最后一层，且可以按照顺序查找的方式查找。
+
+此外还需要注意，红黑树，B 树，B+ 树的叶子结点都指的是空节点。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAR9qxj0zUb7UFtXxyVzyqdYjIu4hMgAC9RNrGz_BMFYZbFbaHcVkygEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+什么是完全二叉树，完全二叉树的意思是说以父亲表示法排列，必须从头开始连续到尾巴。
+
+这类题需要考虑两种情况，第一种是第 6 层是最后一层，第二种是第 7 层是最后一层。求最多一定是第 7 层是最后一层。
+
+完全二叉树结点的计算公式为：2^h-1，前 6 层是满的，那么也就是 2^6-1=63。对于第 7 层，当第七层是满的时候，应该有 2^(7-1)=64 个结点，为了让上一层有 8 个叶节点，那么也就是 64-8*2=64-16=48。
+
+所以，总共应该是 63+48=111，选 C。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASBqxj4HgCEIr2y8HhfBV1j4xRH7tgAC9xNrGz_BMFbvKxnek7GOvgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+森林和二叉树的关系，主要用特值法求解。
+
+但是有两个需要注意，森林的先根遍历=二叉树的先序遍历，森林的后根遍历=二叉树树的中序遍历，普通树的先序遍历=二叉树的先序遍历，普通树的中序遍历=二叉树的中序遍历。
+
+![6 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASFqxj8u9eLNEFCQ48c2EwyZ7kLn0gAC-xNrGz_BMFYCJ5zStCPnYQEAAwIAA3cAAz0E)
+
+本题的关系如图所示，可能有这四种关系。根据左孩子右兄弟可以进行如下分析：
+
+关系 1，u 是 v 的祖父
+
+关系 2，u 是 v 的父亲
+
+关系 3，u 是 v 的叔父，即 u 与 v 的父亲结点是兄弟
+
+关系 4，u 是 v 的兄弟
+
+综上所述，1 和 2 正确，3 错误，所以选择 B。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASJqxj_asGktsw89rEZiIDLQh9Jb7wAC_hNrGz_BMFZfBjbx4NfIKAEAAwIAA3gAAz0E)
+
+- A.只有 1
+- B.只有 2
+- C.1 和 2
+- D.1 和 3
+
+本题应该选 A。
+
+做这类题一般是用排除法和特值法。
+
+什么是无向连通图，无向连通图的意思是说从任意一个结点出发都可以到达另一个结点。
+
+对于 1，由于所有结点都必须和别人互通，所以图中的每一条边，都恰好为图的顶点度数之和贡献了 2 点（握手定理）
+
+对于 2，如果边数=顶点数 -1，在它是无向连通图的前提下，它是一棵树，一棵树显然是连通的，所以 2 错了，如果想让他正确，应该改为边数大于等于顶点个数 +1。还有一点需要注意，如果没有无向连通图这个前提，只说了边数大于等于顶点数 -1，不能判断其是否连通，因为可以一堆点自己排列，然后其他点使用最大的连接方式。
+
+对于 3，只有一个顶点的图也是连通图。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASNqxkG9rwN7PbTSaf-bdninAAEc2EAAAgIUaxs_wTBW0H_ofAh0XB8BAAMCAAN4AAM9BA)
+
+本题应该选 D。
+
+D 是 B+ 树的特性。关于 B 树和 B+ 树的区别，主要在于：
+
+m 阶 B 树一个结点内关键字最多 m-1 个，而 B+ 树则是 m 个，B 树最少是 m/2 向上取整 -1，而 B+ 树则是 m/2 向上取整。
+
+B+ 树非叶结点的关键字都只是为了查找，数据都在叶结点，所以必须要查找到最后一层，且 B+ 树支持顺序查找。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASRqxkLDzn5bNI138-bWKcR052R9LQACBBRrGz_BMFbjqaCKnU3oWwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+堆采用树的父亲表示法，用于排序（而不用于查找）。对于堆排序，首先先花费 On 的时间建堆，然后花费 nlogn 的时间排序。
+
+需要注意，排成升序序列采用大根堆，反之则采用小根堆。
+
+堆插入的时候是在最后一个位置插入，如图所示进行交换。
+
+![9 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASVqxkOz3HxSd-ygMnIAAWEWCg4fE_AAAgkUaxs_wTBWNUjRB3drUXkBAAMCAAN5AAM9BA)
+
+除了这种考法之外，还可以考比较次数。对于比较次数，尤其需要注意，假设 a 被换上来的，那么即便最终不会再换上去，也需要再和可能的比较一次（这个需要记住）
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASZqxkQjOBr2kg8TzkeDjs65rs2I-AACCxRrGz_BMFbh-MqPkdtOKgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+第二趟排序问题可能会考大纲里的所有排序，这里就不列举了。
+
+重要的是一定要记清楚每一个排序的过程是什么。对于这道题：
+
+11,12,13,7,8,9,23,4,5.
+
+对于冒泡排序，是“沉底”，也就是每次都交换出来一个最大的到最后或者最小的到最前，舍去。
+
+对于直接插入排序，是本题的结果。
+
+对于选择排序，简单选择排序是每次选择一个最小的数放在开头，然后开头标记 +1（或者最大的放末尾），舍去。
+
+对于二路归并排序，本题总共是 9 个数，所以应该切分为：11,12,13,7；8,9,23,4,5，然后再切分：11,12；13,7；8,9；23,4,5，然后再切分变成只有一个数，然后按照从后向前的顺序依次归并。显然这道题也不是，舍去。
+
+考的比较多的还有希尔排序和快排。
+
+还有一些其他考法，例如比较次数，交换次数等的比较，一定要分清楚比较次数和交换次数。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASdqxkVVpJLwaz2bFvY0FQ-XECVkUAACEBRrGz_BMFZ5578BsofiFwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+冯诺依曼计算机指令和数据都以二进制的形式存放在存储器中。
+
+对于 A，指令操作码的译码结果意思是把这条指令翻译成具体的意思，例如从内存 0x00h 中取出一个数（直接寻址）指令译码和数据毫无关系。
+
+对于 B，指令的寻址方式有 2 中，顺序寻址和跳跃寻址，数据的寻址方式有 10 种，隐含寻址，立即数寻址，直接寻址，间接寻址，寄存器寻址，寄存器间接寻址，相对寻址，基址寻址，变址寻址，堆栈寻址。跳跃寻址和相对寻址是类似的，所以不可以通过这两个来区分。
+
+对于 C，以指令流水段的不同阶段举例，一条指令需要经过五个阶段：取指令，分析指令，执行指令，访存和写回。显然对于一个取数指令，在取指令的阶段得到指令的数据，在分析指令的过程得到其含义，而通过这个含义去执行取数指令（简单的访存指令没有执行阶段），通过访存得到数据，从而找到数据。
+
+对于 D，显然错误。
+
+还可以注意冯诺依曼计算机是指令流驱动。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAShqxkbad4ulfYE12TQJCN1IbGnLTwACGxRrGz_BMFZjuFVXNRVUZgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+显然排除 A 和 B。127-9=118=7*16+6，所以选 D。
+
+这类题除了这么考，还可以考更深的数的扩展，数是否溢出，精度是否丢失，或者考 OF，ZF，SF，CF 的值。
+
+还可以注意，对于很多时候，都可以使用十进制计算来快速判断，而不是在那里二进制算半天。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASlqxkd_FlNH6lGgMLBBiYKie2InFwACIhRrGz_BMFbeOhiTufNtOwEAAwIAA3gAAz0E)
+
+本题应该选 D，这题先跳过，因为 2009 年之外，其他年份都是考 IEEE 浮点数。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASpqxkegh3YtKtTUWHkgs8xz_i_Y1wACJBRrGz_BMFbqbBwa40hijAEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+这类题在刚开始学计组的时候是难题，但是放在现在一定是简单题。cache 有 16 块，采用 2 路组相联，所以时 16/2=8 组，也就是需要 3 位。块内地址有 32B，也就是 5 位。
+
+主存单元 129 号，意思不是块，而是考虑了块内地址的（这个要和多少号主存单元区分）。
+
+129=1000,0001B，前 3 位为 100，所以是第 4 组。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAStqxkhuwI5HSAKWLIkfntRUg-4RQQACLxRrGz_BMFZytQ_teF0DUQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+4KB/(2KB)=2
+
+64K-4KB=60KB。
+
+60KB/(4K*4bit)=30
+
+这类题考起来也不会很难，难一点的需要将 16 进制转换为 2 进制进行分析。
+
+需要注意地址线可能会用不满，而且也需要根据题目具体题目具体分析地址线高位是 0 还是低位是 0。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACASxqxkkY49tA-QKr-kXJU-f1nQM71QACMxRrGz_BMFZIRypBpAHy6AEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+PC+“1”是硬件自动完成的，这道题的“1”是 +2，所以执行 2000H 的时候，地址是在 2002H，偏移字段为 06H，则 +6H 即可，也就是 C。
+
+但是要注意反套路，有些很神秘的题目是按字编址，
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAS1qxkmBEb6zKl32D82GAbTR6OqFkwACNRRrGz_BMFZVUwABNWMRuiQBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+辨析 RISC 和 CISC，其实也就是辨析 MIPS 和 x86 两套东西，这个和计组大题强相关。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAS5qxkm-bDn4WG65ZA6jE4vCZ8egIAACNhRrGz_BMFZE0pU3kfra8AEAAwIAA3gAAz0E)
+
+本题应该选 A，指令流水段根据最长的来定。
+
+同类知识点还可以注意指令流水段的相关概念，超标量技术，超流水线技术和超长指令字技术。
+
+对于超标量技术采用的加硬件的方法，并没有缩短流水段，对于超流水线技术才是缩短了流水段。
+
+知识可以迁移到单周期 CPU，单周期 CPU 由于要保证间隔相同，所以取决于最长的指令，也因此单周期 CPU 不适合乘法，因为乘法消耗太大了，所有东西都得为它让路。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAS9qxkqYajKaqwI5tW4_8-j_bE_CKgACQBRrGz_BMFZOH8D6j6GwqAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+这道题考的是背书，和 17 题一样，本质是两种架构的辨析。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATBqxkrBzlC1AQcvWJXHecxTOK2NEAACQxRrGz_BMFYpOXtFvGcV5QEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+本题时钟频率为 10MHz，一个总线周期传 4B 信息，一个总线周期占 2 时钟周期，那么 1 时钟周期传 2B 数据，所以带宽为 2B*10M=20MB。
+
+带宽计算，这种题其实非常坑，要非常小心去做。除了要分清楚时钟周期和总线周期之外，还要注意一些很恶心的东西，例如 24 年和 25 年的带宽计算。前者是给了一堆无用条件，后者是说了一大堆无用条件然后信息在括号里。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATFqxkuJq4Q4qkOrZifvjbDWFplQ0QACRhRrGz_BMFYGoPJFm7gFnwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+缺失 50 次，也就是命中 1000-50=950，950/1000*100%=95%
+
+cache 缺失次数，缺失率等，这类题考起来也很阴。主要可以考以下几个方面：
+
+- 一维数组
+- 一维数组一条指令访问多次该数
+- 二维数组
+  - 正常的二维数组
+  - 比 cache 小的二维数组
+  - 行比 cache 行小的二维数组
+
+此外还需要注意到地球的是命中率还是缺失率。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATJqxkxQQfRE_Xr6QaLj-H1jF2CllQACRxRrGz_BMFYXNMD7uVDeEwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+外中断与内中断，中断与异常。
+
+这类题考频非常高，除了像这样直接的考之外，还可能会结合具体场景，例如指令要不要返回当前指令。
+
+- 内中断（异常）
+  - 故障：缺页异常，除 0 异常（需要返回当前）
+  - 自陷：trap 指令，需要返回下一条
+  - 终止：访问主存错误
+- 外中断：请求设备，时钟中断
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATNqxkzXnRb-7hoLwrAE94UCW11oFQACShRrGz_BMFb3LiEwsto4mgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+处理机是否可以并行，需要注意并行和并发。并行指的是真正的同时，对于单处理机，进程与进程只能并发，所以选 D
+
+此外可以注意，多道处理程序具有并行和并发的特点（尽管并发就足够了），单处理机系统也可以是多道程序处理系统。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATRqxk03k4xU29sopEm3ZT8Y8y4jnQACTBRrGz_BMFYYK5i_pPuXPAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+本题考察的是进程调度算法，要对每一个算法有印象。
+
+对于高响应比优先调度，要记住公式：1+ 等待时间/运行时间
+
+RR 必然是抢占的。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATVqxk2es5QhywPLh3HsvRbWVHYy1gACThRrGz_BMFZhFoht7EKGswEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+8 个打印机，假设有 m 个进程，每个分 2 台，8/2=4
+
+这类题考察过很多次，不难但是要注意表述，有可能问的是可能会发生死锁 K 的最小值，也可能问的是不会发生死锁 K 的最大值。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATZqxk4Bd-aQhgFuX0o0ZHoaKMsYWgACTxRrGz_BMFajHhd-0kklNAEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+分区分配的意思是提前划分好内存以供使用，可以是同样的长度，也可以预先分配为特定的长度。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATdqxk5unD4jP1YjS-VcAAEG8AAB_NywAAJSFGsbP8EwVmx_0tdq1O7AAQADAgADeAADPQQ)
+
+本题应该选 C。
+
+地址长度 32 位，段号 8 位，所以段内地址有 24 位，所以一段最长是 C。
+
+分页管理，分段管理和段页式管理。和计组类似的，这类计算刚上手很难，但是到现在这个阶段应该要不成问题了。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAThqxk60BkVNii-Oe3Qox2cAAXrFLo8AAlUUaxs_wTBWDcLHz68pG28BAAMCAAN4AAM9BA)
+
+本题应该选 B。
+
+本题考的也是概念，要分析清楚三种文件组织方式。
+
+连续结构可以随机访问，但是扩展很不方便。
+
+链式结构分为隐式链接分配和显式链接分配，对于前者不需要额外的外部空间去存储信息，但是每个块最后需要存储指针信息，对于后者则需要额外使用静态链表存储，常用于 FAT32 系统。
+
+对于链式结构有三种，单级，多级以及混合索引，其中混合索引常用于 UFS 系统。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATlqxk9e_AABM3ejzWqAoqKuOXcTBAUAAlgUaxs_wTBWo_xT7Cq06skBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+需要增加，105 向后一定是 110，然后是 170 等。这道题应该选 A，对于 B 方向反了，对于 C 是 C-SCAN，D 啥也不是。
+
+这类题不难，但是要小心翼翼，看清楚题目意思（就是很恶心），首先辨析 SCAN，C-SCAN，LOOK 和 C-LOOK，SCAN 是从 0 到最大（假设一开始是从 0 开始），然后从最大到 0，C-SCAN 则是从 0 到最大，然后还是从 0 到最大，LOOK 则是看当前的值来决定（对 SCAN 的优化）
+
+但是，比较恶心的是：有的时候真题会混用这两个概念，但是大体上都不会混用。如果题目里实在没给前者的条件（最大），那么只能根据后者来处理，因为王道书上有这么一句，前者在实际工业意思是后者。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATpqxlBFFjyJsqvmTNn5CXs4pKIXHwACXhRrGz_BMFZzrminaxbS8QEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+这类题就是辨析概念。对于 A，需要辨析一下 UFS 和 FAT 系统的区别。UFS 的文件访问控制信息肯定是不存在 inode 里的，而是存在具体信息里；对于 FAT 则是存。
+
+文件分配表得分为系统文件打开表和进程文件打开表，对于前者一整个操作系统只有一张，对于后者一个进程有一张，且可以自行管理权限。需要注意，对于线程而言，没有自己的打开文件表，而是依托于进程存在的。
+
+用户口令表是访问控制信息的一种。
+
+系统注册表是软件在操作系统留下的东西。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATtqxlFBpWDJAAGuPyDHj0SqNqpIhXQAAmEUaxs_wTBW1s-ox9k9ke8BAAMCAAN4AAM9BA)
+
+本题应该选 B。
+
+辨析软连接和硬链接。这类题主要是记忆，考过挺多次的。
+
+F1 软链出去 F2，那 F2 就是一个独立新的，计数为 1，而 F1 硬链接出去 F3，所以 F1 和 F3 都是 2，删了 F1，F2 独立，不变，所以是 1，F3-1，所以也是 1。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACATxqxlGrGV-ZzB_pA71jhlpBVRI4PAACYhRrGz_BMFan9fStbQ3jzwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+面向程序员的是逻辑号，这样不需要每次写程序都需要根据电脑修改。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAT1qxlHsTlYTcuOiMfGIkcUIyVH-ggACYxRrGz_BMFbY-i7P9840SQEAAwIAA3gAAz0E)
+
+本题应该选择 B。
+
+这类题很恶心，纯记忆的题，关于 OSI 模型和 TCP/IP 模型有很大的不同，主要体现为：
+
+OSI 模型数据链路层就要实现差错控制，流量控制；网络层需要实现拥塞控制，并且可以无连接和有连接；会话层管理打断点和通信；表示层管理数据格式转换，加密。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAT5qxlKe4sgxKHa26YhtihbhCWO6IQACaBRrGz_BMFZVXr84H3MEewEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+2Wlog2V=2✖️3000✖️4=24kbps
+
+这类题才是真的非常不好上手，但是经过了 3 刷王道选择题，现在已经基本搞明白了。
+
+首先要注意有没有最大这两个字，没有最大这两个字不需要采用奈奎斯特定理，其次如果给了波特率和比特率的关系，才需要在香农定理的题目里都考虑。
+
+具体想要再练可以去看王道的选择题。
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAT9qxlNMnaRcm-gvNbbs_wwcqnGdggACbhRrGz_BMFbL5wlmZCoAAZ8BAAMCAAN4AAM9BA)
+
+本题应该选 C。
+
+三种方式：停止等待协议，GBN 协议和 SR 协议。中间那个可以累计确认，外面那俩不行。
+
+这几个协议在选择题里倒还好，但是在大题里，一定要引起高度重视。因为 TCP 采用的是类 SR 的协议，没有累计确认。
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUBqxlPZc3frsueUv11f-_2BybSH1wACbxRrGz_BMFa96p2iQ6nBsAEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+这类题就是背书题了，主要是看清题目就可以了。
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUFqxlQXpmJMNW85mtUt4fWZEwj-EwACcRRrGz_BMFaDy63gGS_soQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+假设站点距离为 x，那么 RTT 应该是 2x/(2✖️10^8)，而数据帧应该是 10x。
+
+数据帧 -800bit，那么那么也就是 10y=10x-800，解得 y=x-80，所以应该选 D。
+
+这类题感觉是必考题，除了题目给的信息之外，还需要注意一些字眼，例如单向传播时延，10BaseT，100BaseT 附带的隐含信息。
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUJqxlV1E9i4AV_7_d7ujqywqsjJxQACiBRrGz_BMFbOS66U8x8k1AEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+第一个段起始：200，结束：499
+
+第二个段起始：500，结束：999
+
+确认序号是我希望你发什么，也就是我希望你发 1000。
+
+这类题也是不难但是需要小心谨慎。
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUNqxlXl9lhD5mnOcv_EkYXm2tMAAcsAApUUaxs_wTBWnniisKjEMMoBAAMCAAN4AAM9BA)
+
+本题应该选 C。
+
+16KB 超时，也就是新门限值为 8KB。
+
+所以应该是：
+
+- 1
+- 2
+- 4
+- 8
+- 9
+
+过了 4 个 RTT 应该是 9。
+
+注意如果是发送窗口，要考虑对方的接受窗口大小。
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAURqxlZNMLQX8y68lha7zMeg0HxkywACmhRrGz_BMFbASzs0J11FFAEAAwIAA3gAAz0E)
+
+本题应该选 B，属于背书题。
+
+只有信号走的是控制连接。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUZqxlbyM89NmmGoNcVhA1KNIPwnogACnxRrGz_BMFa1x411HFlnkgEAAwIAA3gAAz0E)
+
+解：
+
+不可以，考虑这样一种情况：
+
+![41 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUVqxlbF4b5taJ0C2spGf94lDW5FUQACnRRrGz_BMFZIsg9RJuUIbAEAAwIAA3kAAz0E)
+
+假设要求 a 到 d 的距离，那么一开始 u 是 a，选择最短的路径是 a-b，那么从 b 出发继续，选择 b-d 到达中断，总花费为 101，然而显然花费最短的路径应该是 a-c-d，总共花费 5。
+
+这道题没什么好讲的，直接过就好了，不过初见端倪，图考的特别频繁。
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUdqxld38Y73ByuRWA09n2QKz2IyDwACoBRrGz_BMFZbOIC-2VNvRwEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+根据数学原理，假设链表长度为 n，将链表分成两部分，k 和 n-k，显然取一个指针先遍历 k 个单位，那么当前指针再向后遍历 n-k 个单位就为空，所以天然的得到 n-k 这个值，而题目要求正是得到第 n-k 个结点。
+
+(2)
+
+1. 定义两个指针 l1，l2，都指向带头结点链表 list 的下一个结点
+2. l1 先遍历 k 个单位，如果遍历过程中 l1 是空，那么意味着 k 大于 list 的长度 n，直接返回 0
+3. l2 与 l1 共同遍历，直到 l1 为空
+4. 此时 l2 指向的结点就是倒数第 k 个结点
+
+(3)
+
+```c++
+struct LNode{
+  int data;
+  LNode* link;
+}
+
+void solve(LNode *L){
+  // 为空直接返回 0
+  if(L->link==nullptr){
+    return 0;
+  }
+  LNode l1=L->link;
+  LNode l2=L->link;
+  // l1 指针向后 k 个位置
+  for(int i=0;i<k;i++){
+    // 如果 k 超过 l1 长度，那么直接返回 0
+    if (l1==nullptr){
+      return 0;
+    }
+    l1=l1->link;
+  }
+  // l1 和 l2 共同向前走
+  while(l1!=nullptr){
+    l1=l1->link;
+    l2=l2->link;
+  }
+  printf("%d",l2->data);
+  return 1;
+}
+
+```
+
+这道题是链表的基本操作，我觉得没什么好说的，过了。
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUhqxlrmbbfOfz5F31G-g7QoSuOD7wACqBRrGz_BMFafRcIer3ygMAEAAwIAA3gAAz0E)
+
+本题考察的是外设相关的知识，我认为这道母题十分重要。核心思路是以运行 1s 为例得到具体的字节数，这样计算会很方便。
+
+此外还需要注意题目的表述（即时钟周期和指令条数变来变去）
