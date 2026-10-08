@@ -1017,6 +1017,10 @@ theta 的定义域或者说积分定义域也一直是我的一个高频错误�
 
 错题重刷的时候利用的是洛必达法则，上下同时乘一个 x，推导出 xy'=0，继而 y'=0。
 
+或者感觉用下面的做法更严谨：
+
+![15.1.9 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdhqx2g_D-or6opZKCsC8idKINA18wACRBBrGz_BOFYjN7EREKJ8-wEAAwIAA3kAAz0E)
+
 ![15.1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdFqx2RIggtmBp0mSox7hiiAEe0iGQACORBrGz_BOFZy-Mqye6sIYAEAAwIAA3gAAz0E)
 
 对于这道题，虽然说不难，但是有几个点需要注意一下。首先是可以算一半的时候把常数项计算出来，这样可以提供一些化简的思路，然后就是和第 6 题类似的，我完全没有意识到其实 y’也可以被当作一个变量看待，然后将其解出来进行讨论，也就是忽略了“分离变量”这个最为核心的准则。
@@ -2984,6 +2988,10 @@ OSI 模型数据链路层就要实现差错控制，流量控制；网络层需�
 
 只有信号走的是控制连接。
 
+本题分析错误，应该选 A。
+
+控制指的是发号施令，协调动作的信息，请求下载，退出等。FTP 命令举例，比如说请求下载，请求下载肯定走的不是数据连接（因为只有传数据的时候才是走的数据连接，并且数据连接一旦传输完数据了之后就释放了）
+
 ![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUZqxlbyM89NmmGoNcVhA1KNIPwnogACnxRrGz_BMFa1x411HFlnkgEAAwIAA3gAAz0E)
 
 解：
@@ -3049,6 +3057,214 @@ void solve(LNode *L){
 
 ![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAUhqxlrmbbfOfz5F31G-g7QoSuOD7wACqBRrGz_BMFafRcIer3ygMAEAAwIAA3gAAz0E)
 
+解：
+
+(1)
+
+时钟周期：1/500M
+
+一条指令的执行时间：5/500M
+
+中断服务需要的时间：20*5/500M
+
+假设传输 1s 的数据，即传送 0.5MB 的数据，总共要传输 0.5MB/4B=0.125M 次中断。
+
+所以中断需要的时间是：0.125M✖️20✖️5/500M=0.125✖️20✖️5/500=0.025=2.5%
+
+(2)
+
+假设传输 1s 的数据，即传输 5MB的数据，总共要 DMA 处理 5MB/5000B=1K 次。
+
+依次 DMA 预处理和后处理开销时间为：500/500M=1/1M。
+
+所以 DMA 总共需要的处理开销时间是：1K/1M=0.1%。
+
 本题考察的是外设相关的知识，我认为这道母题十分重要。核心思路是以运行 1s 为例得到具体的字节数，这样计算会很方便。
 
 此外还需要注意题目的表述（即时钟周期和指令条数变来变去）
+
+总的来讲这类题不会难，但是需要注意这类题可以出变种，例如 2016 年的真题，一些问题留到那道题解释。
+
+![44 1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdlqx2waHjqnUDIi9RTLiQKLw7c75QACTxBrGz_BOFYiO0sBHz3kpwEAAwIAA3gAAz0E)
+
+![44 2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdpqx2wt96eMWfiXXxCKMfAkBIEjrQACUBBrGz_BOFaixxYCxqef3AEAAwIAA3gAAz0E)
+
+这类题非常经典，在 15/22 年真题也考了差不多的内容。
+
+主要就是要辨析清楚每一个小步骤到底做了什么事情。
+
+C5 (R0)->A R0out, Ain
+
+C6 (R1)->MAR R1out, MARin
+
+C7 M(MAR)->MDR MemR, MDRinE
+
+C8 (MDR)+(A)->AC MDRout, ACin, Add
+
+C9 (AC)->MDR ACout MDRinE
+
+C10 (MDR)->M(MAR) MemW, MDRoutE
+
+我觉得这类题还是得多做。
+
+假设换一个任务，将这些数据存入 (R3)，那么：
+
+C10 应该是：
+
+C10 (R3)->MAR
+
+C11 (MDR)->M(MAR) MemW, MDRoutE
+
+其实都是类似的，主要还是要记住具体流程，尤其是 C1 到 C4 指令阶段。
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdtqx2yKVXsqCuKFe0UZcLcm28U55QACUhBrGz_BOFYo25Q2feuGMAEAAwIAA3gAAz0E)
+
+```c 草稿
+func P1(){
+  while(1){
+    produce();
+    P(空位); N
+    互斥锁 1
+    put();
+    互斥锁
+    V(奇数);
+    V(偶数);
+  }
+}
+
+func P2(){
+  while(1){
+    P(奇数); 0
+    互斥锁
+    getodd();
+    互斥锁
+    V(空位);
+    countodd();
+  }
+}
+
+func P3(){
+  while(1){
+    P(偶数); 0
+    互斥锁
+    geteven();
+    互斥锁
+    V(空位);
+    counteven();
+  }
+}
+```
+
+```c
+semaphore mutex=1; // 互斥锁
+semaphore empty=N; // 缓冲区空位
+semaphore num_odd=0; // 奇数的个数
+semaphore num_even=0; // 偶数的个数
+func P1(){
+  while(1){
+    n=produce(); // 生成一个数
+    P(empty); // 请求缓冲区空位
+    P(mutex); // 互斥锁
+    put(); // 放数
+    V(mutex); // 释放互斥锁
+    if(n%2==1){ // 判断这个数是奇数还是偶数
+      V(num_odd); // 如果是奇数，则生成 num_odd 信号
+    }else{
+      V(num_even); // 如果是偶数，则生成 num_even 信号
+    }
+  }
+}
+
+func P2(){
+  while(1){
+    P(num_odd); // 消耗一个奇数位置
+    P(mutex);
+    getodd(); // 访问缓冲区得到奇数
+    V(mutex);
+    V(empty); // 释放一个缓冲区空位
+    countodd(); // 统计奇数个数
+  }
+}
+
+func P3(){
+  while(1){
+    P(num_even);
+    P(mutex);
+    getodd();
+    V(mutex);
+    V(empty);
+    countodd();
+  }
+}
+```
+
+咸鱼六部曲：
+
+1. 分析总共有几个人
+2. 用中文描述每个人的动作，以及是否需要循环
+3. 分析这个动作前需要 P 什么，有 P 就有 V
+4. 分析互斥锁以及变量初值
+5. 检查连续的 P 是否会导致死锁
+6. 誊写并且检查
+
+本题是经典的生产者消费者问题，只是做了一点简单的变式。
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdxqx3BWG6KI2qXLnnQL6b4R-xlcQAACfhBrGz_BOFb0V97EjWKhmQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+题目的表述是“访问”。访问虚地址的目的是为了得到物理地址，由于题目里没有提到 cache，所以得到物理地址之后还需要根据这个物理地址去拿到东西。
+
+页面大小为 4KB，则为低 12 位，所以：
+
+2362H 的页号为 2，1565H 的页号为 1，25A5H 的页号为 2.
+
+访问 2362H，首先访问 TLB，由于 TLB 为空，所以访问页表，根据页号 2 得到物理页框号 254H并写入 TLB，得到物理地址后再进行访问内存得到数据，总计：10+100+100=210ns
+
+访问 1565H，首先访问 TLB，由于 TLB 为空，所以访问页表，发现页表内没有，由于分配的物理页框是 101H 和 254H，且 254H 刚被访问了，由LRU ，将 101H 分配给页号 0，缺页异常结束后，信息写入页表和 TLB，指令回到读 TLB，， 得到物理地址后访存，总计：10+100+10^8+10+100=100000220ns
+
+访问 25A5H，读 TLB，得到物理地址后访存，总计：10+100=110ns
+
+(2)
+
+由上分析可知是 101H
+
+本题其实不难，不过近些年的考研不会考这么简单了。主要是要捋清楚页号，页框之间的逻辑以及分配问题（不过选择题还有可能这么考，例如 21 和 22 年的选择题都有）
+
+此外还需要注意，缺页异常结束后数据直接写入 TLB。
+
+![47 1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAd1qx3K_-wABGUe1v-ElbZ3cCnwUNQQAAocQaxs_wThWNn0zLs4YUFUBAAMCAAN4AAM9BA)
+
+![47 2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAd5qx3LUsOyvPuwIVOpUqBZ3CwlymAACiBBrGz_BOFZrfvan7j3GCQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+202.118.1.0/24，可以拆分为：
+
+202.118.1.0 - 202.118.1.127
+
+202.118.1.128 - 202.118.1.255
+
+所以，可以分配给局域网 1 的地址是：202.118.1.0/25，分配给局域网 2 的地址是：202.118.1.128/25。
+
+(2)
+
+局域网 1 的路由：202.118.1.0 255.255.255.128 / E1
+
+局域网 2 的路由：202.118.1.128 255.255.255.128 / E2
+
+域名服务器路由：202.118.3.2 255.255.255.255 202.118.2.2 L0
+
+互联网路由：0.0.0.0 0.0.0.0 202.118.2.2 L0
+
+(3)
+
+202.118.1.0 255.255.255.0 202.118.2.1 L0
+
+这道题我记得在最开始做的时候，云里雾里，是因为需要注意，采用/的记录方法等价于网络号+子网掩码。
+
+此外还可以注意，对这类题还可能结合NAT 考（而且非常常见）
