@@ -1,6 +1,6 @@
 ---
 title: 考研冲刺前的总结 —— 综合错题
-published: 2026-07-01
+published: 2026-10-01
 description: 考研冲刺前的总结 —— 综合错题
 tags: [错题，考研，总结]
 category: 考研
@@ -288,11 +288,288 @@ x|x|以及画图，画一张图就能理解函数的导数绝对值之间的关�
 
 利用牛莱公式，结果 C(n,k) 再次记错公式。
 
+![4.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVxqxn1AaXmvJdsUIv8vXvJ84f4GtwACEhVrGz_BMFbE-3Yph5AayAEAAwIAA20AAz0E)
+
+低级错误，漏抄了一个 2
+
+![4.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAV1qxn1WIFnCo5JljL5xXtYOeH4HtgACExVrGz_BMFbflYdWkd3EygEAAwIAA3gAAz0E)
+
+低级错误，求二阶导的时候求成 A+1 了。
+
+![4.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAV5qxn1riDUazGB23KPGklmJLHabJgACFBVrGz_BMFbAHRID_K3qswEAAwIAA3gAAz0E)
+
+低级错误，求 dy/dx 的时候忘记除以 dx/dt 了。
+
+![4.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAV9qxn2GSHk63kT4sf2i94UlnvWm7gACFRVrGz_BMFbtzvlJXylwpQEAAwIAA3gAAz0E)
+
+没想到用泰勒公式
+
+![4.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWBqxn2fHS3VCMXKOwKaUrHu_29OugACFhVrGz_BMFZIXo9CK0goEQEAAwIAA3gAAz0E)
+
+进行泰勒展开的时候需要尤其注意最后求的是什么，而不是直接把 x 的形式保留在那里。
+
 ### 张宇 30 讲基础高数 1 刷第 5 章
+
+![5.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWFqxn3P4uiXvDJXRlRahVMKbNbHggACGBVrGz_BMFb3GEwgUis4DAEAAwIAA3gAAz0E)
+
+看了半眼才反应过来是构造函数
+
+![5.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWJqxn3qI3GUrtAfVM5WgilC2WZ3wAACGRVrGz_BMFYI62cLAafJYQEAAwIAA3gAAz0E)
+
+严谨的证明是利用费马定理 + 举特例
+
+![5.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWNqxn44e2N28pRzCfz05PrNc5TR_gACGhVrGz_BMFYujSuMpTEHtAEAAwIAA20AAz0E)
+
+关于这题，需要注意两件事。第一，看到 e 的 x 次方一定要想到正无穷和负无穷；第二，关于无穷的时候 e^x>x>lnx，这个要记住。
+
+![5.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWRqxn5rCSsBWnWylf3T2u7D-ANZ_AACGxVrGz_BMFapO_jF3y-q2AEAAwIAA20AAz0E)
+
+数列。
+
+![5.1.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWVqxn9eanVO-h1NgPleyQABGAdIJTEAAiAVaxs_wTBWq_Pi2WxWuQYBAAMCAAN4AAM9BA)
+
+1 刷时已经根据不出草稿了判断出哪里计算错了，二刷时则是因为对 tanx 求导，求导求成 secx 求导。
+
+![5.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWZqxn98AuJ0pcKHvgoNFphELIYKzAACIRVrGz_BMFYpkV4DC14DigEAAwIAA3gAAz0E)
+
+低级错误。1 刷时做对了，但是选错选项了（答案是 B，错选为 D）
+
+![5.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWdqxn-OKwy0INE1RYTKzVJMtyfgZQACIhVrGz_BMFbU-et7jmWVlwEAAwIAA20AAz0E)
+
+本质是极限的计算错误：
+
+1 刷的时候错误在计算 y-ax 的时候，单独先算了前一项；错题重刷时错了是因为不知道为啥洛必达的时候，把-e^x 跳步成了-xe^x。
+
+### 张宇 30 讲基础高数 1 刷第 6 章
+
+![6.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWhqxn-oYippMztNv_JMmMoUKxMReAACIxVrGz_BMFYKm1ZcEl3pMwEAAwIAA3gAAz0E)
+
+注意零点定理的作用范围。在[a,b]连续，在 (a,b) 上有零点
+
+![6.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWlqxn-7fcbWOVT3FjLQTSwC9P2fVAACJBVrGz_BMFbsnrTJDP6JIQEAAwIAA3gAAz0E)
+
+做这题的时候完全没有任何思路，只尝试了一下用二阶导表达。但是显然二阶导不能用
+
+![6.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWpqxn_RkijWxHyplrD49wryXwqTmAACJRVrGz_BMFYL4Tj7tp9ynQEAAwIAA3gAAz0E)
+
+本题做的时候当时还没学为微分方程，所以没做出来。
+
+这题 2 刷的时候虽然做出来了，但是花了大量的时间，原因有以下两点：
+
+1. 被一阶线性非齐次微分方程的通解公式给影响了
+2. e^x，e 的次方上面的式子假设是 alnx，那么不可以变成 e 的 a 乘上 e 的 lnx，原因很简单，e 的乘法等于幂上的加法。
+
+![6.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWtqxn__RgY0TYU0JZhCvqakOAj7hQACJhVrGz_BMFa3Ie5K8NoNBAEAAwIAA3gAAz0E)
+
+应该是做了一会儿没思路直接看的答案。
+
+本题可以利用罗尔原话去做，具体就不讲了。
+
+![6.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWxqxoAdls5AyR4-cMgi0inNf4glMwACJxVrGz_BMFZtsNMZkHP-RwEAAwIAA3gAAz0E)
+
+这题证明的时候采用的是导数的定义，其实是可以做的，最后也是导向类似拉格朗日中值定理，但是当时做的时候完全没反应过来。
+
+![6.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAW1qxoBA4s9ryAcBg8ZBcoOnTSqeLQACKBVrGz_BMFbp397cH8cwRQEAAwIAA3gAAz0E)
+
+X^2>=0
+
+![6.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAW5qxoBysa_uHzBgde-eui-hxl-lcAACKRVrGz_BMFaaIAqcsmB3EAEAAwIAA3gAAz0E)
+
+这题做的是对的，不过除了构造法之外，还可以用拉格朗日中值定理。
+
+![6.1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAW9qxoCIELiOKArSZ0J1mLFn3jRhGAACKhVrGz_BMFbUg_WzH-p7AAEBAAMCAAN4AAM9BA)
+
+一刷时标记先跳过，结果也没看。
+
+![6.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXBqxoCe1h4ZQrk1C2WFXU0-uidOlAACKxVrGz_BMFZUxrAeUkeUcQEAAwIAA20AAz0E)
+
+这道题可以注意一下，可以看出有 3 个根，然后证唯一性可以用罗尔定理的推论来获得上界。
+
+![6.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXFqxoC8zOFHEazEQWtcc79wHr1OTAACLBVrGz_BMFZ2m_HqUKBIowEAAwIAA3gAAz0E)
+
+本题没看完题目（求正实根）
+
+![6.1.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXJqxoDzA1_5gAb9VNyl0-HHayYf-gACLRVrGz_BMFbRr9DHo4NCbwEAAwIAA20AAz0E)
+
+本题 1 刷时没做，2 刷时也没做，难度不高计算量很大，就放了。
+
+但是可以注意一开始如何设函数。
+
+![6.1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXNqxoEIBZAXEkuzBozZCl4BDoW8EgACLhVrGz_BMFYWHdE0gSWGVwEAAwIAA3gAAz0E)
+
+![6.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXRqxoEavzqqagABp19wZKZqnMvQU7cAAi8Vaxs_wTBW57lbeNmy8W4BAAMCAAN4AAM9BA)
+
+本题和答案方法不一样，利用罗尔原话！
+
+这道题我自己是在做的时候硬求导然后反复利用题设的结论。
+
+![6.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXVqxoEvRJtO9jmSYvz3r_6fsN59GwACMBVrGz_BMFZq-5eLIIFq9wEAAwIAA3gAAz0E)
+
+没做出来。对于这类题在强化的时候总结为要证两可以相等的，用两次拉个两日/柯西中值去凑。
+
+![6.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXZqxoFJxGoYSm5xyoUPJjPxj9Zp7QACMhVrGz_BMFYTqt2eysazGAEAAwIAA20AAz0E)
+
+本题采用隐函数反带入做的，但是和 2 刷时的 sinx 那个一样，可以采用罗尔原话！
+
+### 张宇 30 讲基础高数 1 刷第 7 章
+
+![7.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXdqxoFhLmcUHlCxDTHzNoh1ZkePjwACMxVrGz_BMFbn7tXXxIclMQEAAwIAA3gAAz0E)
+
+用定义去做
+
+![7.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXhqxoFxzX_BunoCjsT7nsNp6pJ_4QACNRVrGz_BMFZMRLAOWAP8pAEAAwIAA3gAAz0E)
+
+单位
+
+![7.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXlqxoGHMyoctb59W0RnPmG3fEbjbAACNhVrGz_BMFZc8ICXFAABHrcBAAMCAAN4AAM9BA)
+
+1 刷时没做。
+
+### 张宇 30 讲基础高数 1 刷第 8 章
+
+![8.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXpqxoG7zaimcgc6wT5ACXOBd_VOoAACNxVrGz_BMFaCAAHEvzf425kBAAMCAAN4AAM9BA)
+
+1 刷时没想到两边同时对 x 求导，需要注意这一点。同时求导可以消去积分号。
+
+错题重刷时这题算错了。
+
+![8.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXtqxoH4UC0kKXe3fLuseUVNYceahAACOBVrGz_BMFYMSa1-WXsNygEAAwIAA3gAAz0E)
+
+想到用几何法做了，但是在做的时候没有沉下心来捋清楚对应关系所以才做错了。沉下心来捋清楚关系其实不难。
+
+![8.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAXxqxoIWtnstMEBKh5x92VpRldaURgACORVrGz_BMFYUb9_3LnN8QgEAAwIAA3gAAz0E)
+
+3 没想到用几何法去做，而 2 则是想当然的直接认为是对的。
+
+事实上这题结合图像去做很简单。
+
+![8.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAX1qxoIq31d59EfdT7B1KsX_gOMvUgACOhVrGz_BMFZ1Az-lg6BZcQEAAwIAA3gAAz0E)
+
+想到强化阶段时武忠祥老师的一个简单结论，如果变化和 n 程度相当，大概率是往定积分方向去想，所以先提出一个 1/n，然后去凑形式。
+
+这题错是因为上下同时乘上 n，而不是一步步去凑形式。
+
+![8.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAX5qxoJBG3Muqb0nJgJbu8yuDj_zBgACOxVrGz_BMFZW1-vLS_NtwwEAAwIAA3gAAz0E)
+
+本题错在 2 个方面。第 1 是经典的错误标准的零分，tan(pi/4)=1，而不是 1/2，tan(pi/2) 不存在，而不是 1；第 2 是没有想到怎么放缩，也就是对放缩用的不熟练，这题是一个经典的放缩，并且在第 6 章的课后题有证明。
+
+![8.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAX9qxoJXkv4Gfp6Ld_NFZNx-ZfA1dQACPBVrGz_BMFaYRSoiuWrbfAEAAwIAA3gAAz0E)
+
+没想到怎么做。对于含三角的式子，第一反应就应该是区间再现。
+
+![8.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYBqxoJxsk1jN3q0T65UW__Io4v0CQACPRVrGz_BMFZflV8GKn_WYgEAAwIAA3gAAz0E)
+
+变限积分存在就连续，其他就是应用对于变限积分的讨论了。这题应该是不小心看到了答案，做的还是没问题的。
+
+![8.1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYFqxoKrqAiodaoG0VPVmwG9rwc_zwACPhVrGz_BMFaWLr1jcAmAjQEAAwIAA3gAAz0E)
+
+导函数在该点存在不意味着导函数在该点连续。事实上这道题只需要说明导函数在该点存在就可以了，显然这道题导函数的左右极限都相等，所以存在导数。
+
+又可以联想到此前的论证，函数极限存在和函数连续是两码事，函数的极限存在和函数的左极限=右极限一样，但是函数的左极限=右极限=函数在那个点的值才可以说明函数连续，这是一个我经常错误的点，需要注意。
+
+当然这道题用结论做就好了。
+
+![8.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYJqxoLF4t2N2zDzr5WSBEZkQZX1UgACPxVrGz_BMFaxoIHZf267tQEAAwIAA3gAAz0E)
+
+这道题没有思路，但是放在 2 刷来看的话，其实绰绰有余，不断地利用绝对值不等式以及积分不等式就可以了，对于这类题，必要的时候也应该联想到拉格朗日中值定理。
+
+![8.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYNqxoLYcBOherASuW2-eiaAGXgeOAACQBVrGz_BMFZP5IEj6c27sAEAAwIAA20AAz0E)
+
+这道题可以注意一下，是凭感觉直接做的。
+
+![8.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYRqxoL6Ek0hlp3hGUZkv3FaGJLe8QACQRVrGz_BMFa1MDld_2adrAEAAwIAA3gAAz0E)
+
+![8.1.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYVqxoMGBUB_8SWoAawUTDtzTmYBSwACQhVrGz_BMFZPCRkNQ-EyLgEAAwIAA3gAAz0E)
+
+这两题放在一起讨论。这两题张宇的课本给的都是很玄学的做法，导致我完全不能理解这一块内容。事实上，对于反常积分而言，并不是所有的点都是在 0 或者在 + 无穷处无定义，1 这个点只是常用分界点，而不是必然分界点。
+
+所以，对于第 18 题，观察到无定义点为 0 和 1，所以分区间讨论，分成 0-1/2 和 1/2 到 1。当 x->0，可以发现 lnx 对 x 无影响，所以由 p 积分可知 a<1；当 x->1 时，对 lnx 进行变形可以得到 x-1，对其进行讨论发现其无论如何都可以积出来，所以不影响收敛性。
+
+对于 19 题是类似的，这里就不展开了。
+
+![8.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYZqxoMZHG2lEzvGHsqSvp6h455WwAACQxVrGz_BMFbzD16-YgfZ0QEAAwIAA3gAAz0E)
+
+没想到简单做法，在那里硬算。
+
+![8.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYdqxoM1o2nxpyCIlsokjbF7wVRDUQAC7g5rGz_BOFaeY9oL9JX_0gEAAwIAA3gAAz0E)
+
+和前文同质错误，也就是原函数，可积和变限的可导连续判断。
+
+![8.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYhqxoNOFkCxy-kCVn14Iq_DNeSMxgAC7w5rGz_BOFYAAe7KOmpqx0gBAAMCAANtAAM9BA)
+
+本题没有踏踏实实计算，直接化简成了 (1/sqrt(1+x^2)) 去做，很是低级。
+
+![8.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYlqxoOJGEANvsg2chV87IHrn_RUzQAC8A5rGz_BOFYhefjQwX94mAEAAwIAA20AAz0E)
+
+没想到怎么做，本题是夹逼定理和积分的结合。
+
+![8.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYpqxoOtzJbCea77wH5eqakLQECh1AAC8Q5rGz_BOFa2xWpBTIeotQEAAwIAA3gAAz0E)
+
+本题采用一个很低效的办法做，也就是定义，而且最后还因为+-错误而错误。事实上，这道题可以利用本章第 1 题的做法，两边同时求导，就很轻松能做出来。
+
+![8.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAYxqxoQP_pMSsS67iBb2dSjwvjdLIgAC8g5rGz_BOFbFTbo8bklsxwEAAwIAA20AAz0E)
+
+和前文的敛散性判断同质错误。
+
+### 张宇 30 讲基础高数 1 刷第 9 章
+
+### 张宇 30 讲基础高数 1 刷第 10 章
+
+### 张宇 30 讲基础高数 1 刷第 11 章
+
+### 张宇 30 讲基础高数 1 刷第 12 章
+
+### 张宇 30 讲基础高数 1 刷第 13 章
+
+### 张宇 30 讲基础高数 1 刷第 14 章
+
+### 张宇 30 讲基础高数 1 刷第 15 章
 
 ## 张宇 30 讲基础线代 1 刷
 
+### 张宇 30 讲基础线代 1 刷第 1 章
+
+### 张宇 30 讲基础线代 1 刷第 2 章
+
+### 张宇 30 讲基础线代 1 刷第 3 章
+
+### 张宇 30 讲基础线代 1 刷第 4 章
+
+### 张宇 30 讲基础线代 1 刷第 5 章
+
+### 张宇 30 讲基础线代 1 刷第 6 章
+
 ## 张宇 1000 基础 1 刷
+
+### 张宇 1000 基础 1 刷第 1 章
+
+### 张宇 1000 基础 1 刷第 2 章
+
+### 张宇 1000 基础 1 刷第 3 章
+
+### 张宇 1000 基础 1 刷第 4 章
+
+### 张宇 1000 基础 1 刷第 5 章
+
+### 张宇 1000 基础 1 刷第 6 章
+
+### 张宇 1000 基础 1 刷第 7 章
+
+### 张宇 1000 基础 1 刷第 8 章
+
+### 张宇 1000 基础 1 刷第 9 章
+
+### 张宇 1000 基础 1 刷第 10 章
+
+### 张宇 1000 基础 1 刷第 11 章
+
+### 张宇 1000 基础 1 刷第 12 章
+
+### 张宇 1000 基础 1 刷第 13 章
+
+### 张宇 1000 基础 1 刷第 14 章
+
+### 张宇 1000 基础 1 刷第 15 章
 
 ## 武忠祥高数强化 1 刷
 
@@ -302,9 +579,538 @@ x|x|以及画图，画一张图就能理解函数的导数绝对值之间的关�
 
 ## 张宇 30 讲基础高数 2 刷
 
+### 张宇 30 讲基础高数 2 刷第 1 章
+
+![1.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADdmrEb62USAdkSRChuw7Fc2RuVZMeAAL_EmsbxNooVlGqqujdvEEFAQADAgADbQADPQQ)
+
+本题做错，原因是只考虑了 x 范围是[-pi/2，pi/2]的情况。
+
+做这题首先都考虑定义域，可知定义域就是 R。所以需要讨论其他情况。
+
+![1.2.11 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAY9qx01ad4h8X1kLUlHnW42s851YZgACzg9rGz_BOFaeVWRedpSCDwEAAwIAA3kAAz0E)
+
+这道题订正下来其实也是瞄到了答案才做出来的，无从下手分析，对于绘制函数图像，从函数的四个性态出发，显然本题应该从周期性考虑。
+
+### 张宇 30 讲基础高数 2 刷第 2 章
+
+![2.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAY1qxoV-8qo0C7vkqyuVB4BiylLrlAAC9A5rGz_BOFaPxORlF5YYLgEAAwIAA3gAAz0E)
+
+这一题可以注意一下，没说做错了，但是在证明有下界的时候，我是直接说他>0，所以有下界，从而必然有极限，但是可以更优雅一点。
+
+### 张宇 30 讲基础高数 2 刷第 3 章
+
+![3.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAZBqx02IBBENlkOcJE8rDvir_TrPegACzw9rGz_BOFbAh5lmmsHpKAEAAwIAA3gAAz0E)
+
+本题考虑了复数。但是需要注意一件事，以 x^3-1 举例，其虽然有 2 个复根，但是它们并没有对函数的性态产生影响（指的是并没有在 x 轴上产生多余的零点）。所以不需要考虑复根。
+
+### 张宇 30 讲基础高数 2 刷第 4 章
+
+![4.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVdqxl9d1JcWM-gTed-dTnNN95wQrQACwxRrGz_BMFaq0qF9fvScmgEAAwIAA3gAAz0E)
+
+经典的错误，标准的零分：除以 1/(1+t^2) 一定不是直接把这个写在分母，一刷也错在这个知识点上面。
+
+![4.1.10 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAZNqx05Y_sbY0lkosgJRaAmKPy7-HAAC0g9rGz_BOFaN-bLmB6ciKAEAAwIAA3kAAz0E)
+
+![4.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVhqxl-jZwGwg9rQOXETh76lqtWQEQACxBRrGz_BMFYII1TkMFaCoQEAAwIAA3gAAz0E)
+
+做了一阵子之后意识到要取对数，也意识到应该答案里不可以带 y’，但是最后一步的时候，忘了把 y’展开。
+
+![4.1.11 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAZVqx1AZAAEpwAbY-LTA_LWfDx25kHgAAtMPaxs_wThWFmDoCgr7pWgBAAMCAAN5AAM9BA)
+
+不过这道题订正的时候采用的是往回带的形式，我觉得比取对数更好想出来。
+
+![4.1.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAVtqxl_kR-KgUhTK8ucSLLym-vWo6AACyBRrGz_BMFa7R576nCaxBAEAAwIAA3gAAz0E)
+
+利用泰勒公式，先展开后面，但是在进行乘 x^2 时，只同步缩小了下面的 n，没有同步缩小上面的 n。尤其需要注意该漏洞。
+
+![4.1.19 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAZdqx1DaQrqrX1HXvi0PHp_HEHtITwAC1A9rGz_BOFa599KtClTZ2QEAAwIAA3kAAz0E)
+
+### 张宇 30 讲基础高数 2 刷第 5 章
+
+![5.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAZhqx1Drl1QOffJM5TW2D1I5uMPugwAC1Q9rGz_BOFZ7goukcpkE4wEAAwIAA20AAz0E)
+
+错选为 B。
+
+当准则失效了，那么就利用最基本的东西去看，也就是当 x<0 的时候，y 的二阶导的性质，当 x>0 的时候，y 的二阶导的性质。
+
+回归本源。
+
+另外对于拐点，极值点的东西，可以去翻一下 p149 页的二级结论（感觉也不大会去看）
+
+![5.1.6 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAZpqx1JXwvda4J48mphXIqsWTpBJzwAC1w9rGz_BOFbqJgU0DLx8qwEAAwIAA3kAAz0E)
+
+其实意思就是无定义点看附近。
+
+![5.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWZqxn98AuJ0pcKHvgoNFphELIYKzAACIRVrGz_BMFYpkV4DC14DigEAAwIAA3gAAz0E)
+
+做对了，但是这题需要着重注意：
+
+1.特值法只能排除，不可以确定答案
+2.针对这道题无从下手，为什么，因为没判断出函数的性质，所以需要对整体进行求导。
+
+![5.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAZxqx1KpdBbNRmhf2hGoMcmBpjViXwAC2g9rGz_BOFaS0VwicniTlAEAAwIAA20AAz0E)
+
+低级错误。uv 型求导的想当然：
+
+![5.2.5 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAZ1qx1K7iijkK0xnUe9MC5e90D2R5wAC2w9rGz_BOFa6zCUlCVdvEQEAAwIAA3gAAz0E)
+
+关于这里，所有需要变动正负号的时候都必须要注意作用范围。
+
+错题重刷的时候有歧义，主要是在 0 是不是拐点的讨论上。化简到最后，可以注意分母有一个是 x^4，所以 0 显然是不影响的。
+
+### 张宇 30 讲基础高数 2 刷第 6 章
+
+![6.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAWlqxn-7fcbWOVT3FjLQTSwC9P2fVAACJBVrGz_BMFbsnrTJDP6JIQEAAwIAA3gAAz0E)
+
+2 刷时，知道不妨令以及用导数定义区表达，并且可以通过画图得出结论，但是不知道怎么表达。
+
+忽略了费马定理：某点可导且为极值，该点导数值为 0。
+
+![6.1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAW9qxoCIELiOKArSZ0J1mLFn3jRhGAACKhVrGz_BMFbUg_WzH-p7AAEBAAMCAAN4AAM9BA)
+
+错选为 B。属于低级错误。意识到了是凹函数和凸函数的定义，但是直接想当然选选项，而没有细致分析。其实再多想一小下就可以意识到凹函数 f’’x>0，然后列出定义就可以做出来。
+
+正推法，泰勒展开，在 1/2 处展开；排除法，显然可以通过直线排除 A 和 C，然后通过特例，也就是 (x-1/2)^2-1 相关排除掉 B
+
+错题重刷也是用的特值法，特值法比较好想出来。
+
+![6.1.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAaBqx1U4yTncD2Frk0Gxk1JmSuay-wAC5A9rGz_BOFaKBZNzBSeA_wEAAwIAA20AAz0E)
+
+知道大概怎么做，但是不知道怎么表达。利用罗尔原话！
+
+或者讨论 sinx/x
+
+回过头来思考一下这道题。
+
+如果是利用罗尔原话，那么得在闭区间上讨论，求二阶导之后发现至多有 2 零点，并且被端点占了，所以闭区间内必然没有零点，所以随便找一点就可以说明其正负性
+
+而这道题也可以直接讨论，因为区间就是在 0-pi/2，不需要给自己加戏
+
+然后，这道题直接用凸函数弦弧法即可，也就是因为两端点为 0，且二阶导恒负，所以是上凸的，可以直接说明。
+
+![6.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAaFqx1Vl74402RSZnhJJ1b0GXOPqeAAC5g9rGz_BOFaZnJUubOMJwAEAAwIAA3gAAz0E)
+
+被强化的一道题影响了，注意这道题给定区间是[0,1]，而不是[a,b]
+
+### 张宇 30 讲基础高数 2 刷第 8 章
+
+![8.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAaJqx1YQ3rtJ4K7aw1ybFFb0E3zE6gAC6Q9rGz_BOFYKIoETAoSZ9AEAAwIAA20AAz0E)
+
+1 刷时没搞清楚原函数、定积分、变限积分和反常积分的概念，而二刷时这题也错了。
+
+这里总结一下，如果一个函数的导数在该区间内有第一类间断点或者无穷间断点，那么一定没有原函数。如果有震荡间断点，那么不一定。
+
+一个函数在某区间内可积的条件是连续，或者有界 + 有限个不包含无穷的间断点，或者单调，或者有有限个间断点。
+
+对于这题，通过上面的判别法可知，1 不存在原函数，但存在定积分；2 存在原函数，但是不存在定积分。这里判断定积分存不存在的粗浅的办法是可以看导函数的这个是不是无穷振荡间断点；4 存在原函数，由于他是趋于 0 的震荡间断点，所以可积分（有界 + 有一个震荡间断点）；3 没有原函数，也没有不定积分。
+
+这里又得和变限积分区别开来，假设变限积分里面的 f(t) 连续或者有可去间断点，那么变限积分可导，如果有跳跃间断点，那么是连续，如果有无穷间断点，那么是不连续。
+
+那么，变限积分和定积分在判别法上的区别是什么？我们讨论的是定积分存在与否，而变限积分这里有更高的要求，要求判断这个变限积分函数的性质。
+
+【定理】：如果函数 f(x) 在闭区间 [a, b] 上的定积分存在，那么 f(x) 在 [a, b] 上必定是有界函数！
+
+如果导函数 f(x) 在有限区间上【有界】，那么原函数 F(x) 必然【有界】！
+
+在有限区间上：若原函数 F(x)【无界】，导函数 f(x) 必然【无界】！
+
+重刷的时候是没问题的，判断出来 2 的导函数是无穷震荡间断点，所以定积分不存在（定积分存在得该函数是有界的，在 0 处无界）。
+
+![8.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAaNqx1a2hQLyGGm-X8RZE4dowQ3PHwAC7g9rGz_BOFZ3DJKn9b8x1wEAAwIAA3gAAz0E)
+
+积分中值定理证明这题会导致循环论证。
+
+必然存在一点 C 是正的，然后取微小区间，用矩阵面积来算。
+
+重刷，利用任取一点的附近证明，主要是思路得会（不可以用积分中值定理，因为涉及到循环论证）
+
+![8.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAaRqx1b-8zB09vI5lH1benibdtkBWwAC8A9rGz_BOFZMr1lVYAHbwgEAAwIAA3gAAz0E)
+
+本题变成先用介质定理创造一个 f(ε) 了，对介质定理理解错了。值得注意的是，这道题如果改成开区间，那么可以用拉格朗日中值定理证明。
+
+重刷，应该利用最大值最小值定理，而不可以用拉格朗日中值定理（后者是开区间）
+
+![8.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAaVqx1c70QMy5DHqfZKKZ96716jBZwAC8Q9rGz_BOFZ7V4wGQhPNcQEAAwIAA20AAz0E)
+
+想当然没有把具体的过程写出来，导致原积分是什么写错了。经典的错误，标准的零分，可以注意 1/n 只是形式，而不是要把 1/n 写成 x。而应该把 i/n 记作 x。
+
+错题重刷时没问题，主要是这类题比较经典，利用夹逼定理放缩一下就可以了。
+
+### 张宇 30 讲基础高数 2 刷第 9 章
+
+![9.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAaZqx1eaKHAGFZxXDUQto4ef8AUgUAAC8g9rGz_BOFZwTX7ttBMQCgEAAwIAA20AAz0E)
+
+本题没想到用还原法，而是直接硬解，结果就是即便是把下面的东西凑出去了，也算不出来。事实上，观察到这题 x=tant 可以很方便的解出来。
+
+重刷的时候没有具体计算，因为第一反应就是换元法了。
+
+![9.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAadqx1fiiwZhW9D6Rr-OfSDcv3GnHwAC8w9rGz_BOFanSpvAZR14qQEAAwIAA20AAz0E)
+
+本题轻视。需要着重注意这种带有重根式的项如何拆，以及计算问题：采用增广矩阵求方程组的时候，一定要注意是 ax+by+cz=u，而不是四个相加等于 0。
+
+重刷的时候把拆项的式子列出来了，这道题的主要问题就是不知道应该怎么拆项（或者说拆项的时候分子的系数不知道写什么）
+
+![9.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAahqx1g7gDXJ7owoYNqgsHMXuKlkmAAC9A9rGz_BOFaD8Jai6LvB5QEAAwIAA20AAz0E)
+
+1 刷没错，2 刷反而错了。想当然的将式子拆开然后没有验算是不是合理的。
+
+错题重刷的时候这道题没做，错的是低级错误，这更应验了要做一步算一步（我的速度肯定是够的）
+
+![9.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAalqx1ioywIROs5GsHmRscx56v0LRwAC9g9rGz_BOFZ4Ip5P6g7W_QEAAwIAA20AAz0E)
+
+![9.1.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAapqx1i_wjAkdbsTMF3X71ElithiiQAC9w9rGz_BOFbqCmTLPiVrswEAAwIAA20AAz0E)
+
+2 刷时这两题计算错误！！！！！！！
+
+这两题可以放一起讲，应该都是滥用区间再现导致的计算错误。利用区间再现的时候，尤其需要注意三角函数的变形，也就是诱导公式。Sinx(pi/2-x)=cosx，cos(pi-x)=-cosx。诱导公式需要尤其注意。
+
+然后有一个经典的错误，标准的零分，arcsin(sinx) 想拆开，需要注意其定义域！
+
+区间再现的本质其实就是对称性，如果算出来是“奇”的，那么恰巧就可以拆掉变成 0，如果算出来是“偶”的，那么假设是对 0-pi 区间再现，那么可以优化为 2 倍的 0-pi/2。
+
+错题重刷这两题都没问题，太经典了，尤其是考虑定义域的时候，这道题如果没有采用区间再现化简的话，会出现 arcsin(sinx)，其中 x 的范围是 pi/2 到 pi，所以非常阴。
+
+![9.1.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAatqx1jjDQp6IDpFgj9TroY_pF6UeAAC-A9rGz_BOFYXUTdEYRGKQwEAAwIAA3gAAz0E)
+
+这题是对的，不过可以注意一下原函数的表达，也就是利用变限积分+C。固定 (a,0) 点只是某点的，而不是全局的，最终还是要+C。
+
+![9.1.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAaxqx1j-dMD5PdJTYOwKEGf0wAw9uwAC-Q9rGz_BOFY4LHi8uyp2TAEAAwIAA20AAz0E)
+
+这题是对的，不过方法麻烦了，可以注意一下积分计算。对于 1/sqrt(x^2+-a) 来讲的原函数，一定要记住 ln(x+-sqrt(…))
+
+![9.1.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAa1qx1knLrMzHiU-CqrHe8M-UbjshwAC-w9rGz_BOFaQ8d1NmoCp3AEAAwIAA3gAAz0E)
+
+这道题没去背伽马函数，感觉也不需要去背，没考概率论。唯一就是需要注意一下，对 e 的^-x2/a 的积分是 asqrtpi，如何推导？感觉不需要会推导。
+
+![9.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAa5qx1k-a_Y0HfIOGuVEbQRbi--dCgAC_A9rGz_BOFYAAW0b9OuAJXsBAAMCAANtAAM9BA)
+
+Arctan(tan(x)/sqrt(2))，当 x=pi/4 的时候，里面算出来不是 1，从而推不出来 pi/4，属于低级错误。
+
+错题重刷没去做，主要就是注意一下几个低级错误：arctanpi/4=1，arctanpi/2 不存在，arctan 根号 2/2 是退不出来是 1 的。
+
+![9.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAa9qx1mSKwu71QQGUm3Jx7VSCIaZlwAC_g9rGz_BOFYqwwpFm0_sjAEAAwIAA20AAz0E)
+
+属于低级错误，-a(-b-b) 算成 abb。
+
+错题重刷没去做，思路比较经典，区间再现然后第一换元法。
+
+![9.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbBqx1nIlpbi548tCCistG0kwgR6SQADEGsbP8E4VsezQva95mvbAQADAgADbQADPQQ)
+
++C。但是这题为什么要+C 呢？f(x) 的原函数是 x(cosx+C)。当 x=0 时，显然不可以说 C=0。
+
+![9.2.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbFqx1nj8lBUupNzHi3aRm2Juip_BAACARBrGz_BOFbbWX8gLhbCOgEAAwIAA20AAz0E)
+
+无厘头错误，想到了要分 x<0 等情况讨论然后没写，然后区间在 0-1 内的算错了。
+
+其实这个无厘头问题感觉是一个新问题，也就是对 t 从 0-1 积分，忘记积分直接用上下限相减了，同时这道题也没意识到其实对 t^2 的积分可以直接算出来。
+
+然后，再次重刷之后发现了一个新的错误，那就是：
+
+X 在 0-1 时，对于 t 的取值范围的前半段，并不和 x<0 时一致，反而是和 x>1 时一致。我认为的原因是我们讨论拆绝对值（在此处），应该是先讨论 x 的范围，然后根据 x 去确认 t 的取值范围，毕竟是对 t 的积分，所以才会出现不能连续的情况。无论取取多少，t 的积分范围始终是 0-1，而根据 x 进行拆开只不过是去绝对值的手段。
+
+还有一个问题，是关于长除法的如果长除法最后一步要×-1，那么即便是×-1，也是对分解因式出来的东西的，而不是对于式子本身乘一个 -1，毕竟你已经是对因子进行长除了。
+
+错题重刷没去做，主要是神秘的计算问题，就略过了。
+
+其实会发现一个现象，对于计算问题，一旦这个式子非常难算，要么就是一遍算对，要么就是这错那错，我认为唯一的解决办法还是稳住心态一点一点咬下来计算，然后做一步检查一步。
+
+### 张宇 30 讲基础高数 2 刷第 10 章
+
+![10.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbJqx1pGk6SQlUweIrMglmpWizDUzQACAxBrGz_BOFbywU9xlxL0ZwEAAwIAA20AAz0E)
+
+对于这类题始终没有搞懂怎么计算 theta 的取值范围。但是事实上这道题属于低级错误，当 theta 取 pi/2 的时候，会发现后面是 -1。本质和下面的第 5 题错误类似，也就是没搞清楚积分区间就开始算。
+
+错题重刷没做，因为 880 二刷刚做过了一模一样的题目。
+
+theta 的定义域或者说积分定义域也一直是我的一个高频错误点。
+
+![10.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbNqx1qNq4ZSx5w5GppcIe0xuCOuRgACBBBrGz_BOFYwp9zr1y7LawEAAwIAA20AAz0E)
+
+算的是没问题的，但是没算 k 趋于无穷时的结果。
+
+错题重刷没做，这道题是 2019 年的真题。但是值得注意的是，在 26 李 4 卷有一道题是这道题的改变，那道题因为牛莱公式代入计算错误了。
+
+所以，积分定义域和牛莱公式的错误我是需要引发高度重视。
+
+![10.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbRqx1rhpDwVDjZ_pEy5ZDes6MnqHAACBRBrGz_BOFYeBdpgN3iRYwEAAwIAA3gAAz0E)
+
+属于低级错误，算一半题抄错了，把右边的根号抄到 e 的幂上去了，而且也没考虑定义域。
+
+在订正的时候，还是一上手就算了。一定要先考虑定义域，一定要先考虑定义域（也就是积分范围）
+
+错题重刷没做，880 二刷刚做过一模一样的题目，并且也错了。
+
+定义域。
+
+![10.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbVqx1sPYlB-59p5z8WPriUxQdymgwACBhBrGz_BOFZDJpAG6hUAAUMBAAMCAAN4AAM9BA)
+
+忘记形心坐标公式了。在重做的时候，犯了一个新的低级错误，就是在进行定积分的带入计算时，a+(b-c)|，算这种式子的时候，上面的带入了所有的，但是下面的那个只带入了局部的去算。
+
+用二重积分去记，而不是用一重积分去背诵。
+
+错题重刷没做，这道题是某年的真题。依旧是牛莱公式问题。
+
+![10.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbZqx1tDNzKO5ha2a6HF0Izy5MfeAAMJEGsbP8E4Vv-j6EdSxRUyAQADAgADeAADPQQ)
+
+属于低级错误。2(1/(1-x^2))，拆项后没算最前面的 2。
+
+错题重刷没做，这道题也是一个比较大的问题，同时在 26 李 4 卷 4 中也犯了这个错误。
+
+之前扫过 R 神的帖子，对于系数，一定是要放在积分号外面，这样不容易忘记。
+
+![10.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbdqx1t-LqMXxKB9aZKdFHpCYneV7QACChBrGz_BOFbILCGnnoXiIAEAAwIAA3gAAz0E)
+
+属于超级低级错误，这道题是 19 号晚上在数学结束之前写的，一方面是水群，另一方面是忘记走一步算一步，例如 1/4 开根没开根，并且 y 的积分忘记 1/2 的多连环错误。
+
+![10.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbhqx1uSaKYu1IFJXFvy_5dSgY2ACwACCxBrGz_BOFYAAd6rcnlT18kBAAMCAAN4AAM9BA)
+
+积分上下限错误，绘图错误。
+
+![10.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAblqx1upscW_TvXR3UWv7LCefrrs5AACDBBrGz_BOFYqJ79i4hqpcQEAAwIAA3gAAz0E)
+
+尽管采用轮椅法，但是忘记 2pi。忘记 2pi 的情况非常常见感觉。
+
+这道题错题重刷没做，是某一年的真题。采用武忠祥老师二重积分算面积体积一定要注意是当成周长来算，所以要 +2pi。
+
+![10.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbpqx1vmTF6XnFVToGnoBgX1y82yeQACDRBrGz_BOFYU7wO7SYDDogEAAwIAA3gAAz0E)
+
+有两个非常非常低级的错误，第一，1-cost=2sin^(t/2)，而不是=cos 啥的东西；第二，化简完了最后的那一小部分之后（也就是 32/(4*2*2)=2 后，没有乘上 3）
+
+![10.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbtqx1v7ba2IqJCTzbpQnUEqUZjq9AACDhBrGz_BOFZcc6CV6UVTBAEAAwIAA3gAAz0E)
+
+### 张宇 30 讲基础高数 2 刷第 11 章
+
+![11.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAbxqx1xvVYWbZCimCRHctioFrPECpwACEBBrGz_BOFZEeoea73_tBwEAAwIAA3gAAz0E)
+
+柯西中值定理，这里需要注意，记错了柯西中值定理的形式。这道题和一类题混淆了，也就是和同一个区间内多个可以相同的ε和η的问题，那个是利用多次柯西中值定理/拉格朗日中值定理。但是对于单独的每次柯西中值定理，得出来的项是相同的。
+
+![11.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAb1qx1yNh5OPSD5ShEAXLcsHZkBVBgACERBrGz_BOFaKTWNG8UfD0gEAAwIAA3gAAz0E)
+
+感觉是 1/2，这道题忘了一个极为重要的思想，也就是夹逼定理。
+
+对于这个经典函数，两个思考方向，放缩（夹逼）和图像化面积。
+
+错题重刷没做，这道题我觉得最重要的问题是没想到夹逼定理。碰到这类式子一定要绘图 + 想夹逼定理。
+
+![11.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAb5qx1zLy5Fvwu-w-4zLgO6Jfmg5aQACEhBrGz_BOFZI-7xgycmscQEAAwIAA3gAAz0E)
+
+有想到说在中间砍一刀，但是没想到中间可以是变量。为什么可以想到中间要切一刀，其实来自于不切一刀只能求出来 1/2，所以要切。这道题本来的想法是凑一个 x-1/4，这样可以恰好出来是 1/4，奈何如果加了绝对值算的话，积分的时候会超。
+
+但是这道题即便看了正确解法也没做出来，感觉会很奇怪。本质上是对放缩的想法问题。
+
+错题重刷做出来了，不过草稿很乱，就不放上来了。上面的问题这次重刷我也卡了一下，主要的原因在于没想清楚谁是 t，谁是 x，应该对谁进行讨论。
+
+总结一下莫名其妙出现的 1/2 怎么凑：
+
+1. x 的 0 到 1 的积分
+2. 积分中间砍一刀分批算
+3. 和 1 类似的，只不过是利用凹凸性的割线
+
+![11.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAb9qx15Oh60XoMs42W5VXICB1g0fzAACFxBrGz_BOFYsuaz0f3xAMgEAAwIAA3gAAz0E)
+
+![11.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcBqx15lGyE2haLP6c-09J9F7j0BpgACGBBrGz_BOFZJoloIHcXDhgEAAwIAA3gAAz0E)
+
+这两题放一起讲，属于低级错误，不相信自己，其实再做几步就做出来了。这两道题提醒自己，放缩的时候可能两边用的不是同一个套路，例如前半边采用的是直接算出来，后半边可以是 cosx<1。
+
+### 张宇 30 讲基础高数 2 刷第 12 章
+
+![12.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcFqx159jPEgk1sAAeqJMAPInO4jtdUAAhkQaxs_wThWzYA23IU5stcBAAMCAAN4AAM9BA)
+
+错题重刷没做。其实我对物理应用生物痛觉，不过经历了一整个暑假的研究，现在对这类题只要不是看错题目条件，其实都问题不大。
+
+### 张宇 30 讲基础高数 2 刷第 13 章
+
+![13.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcJqx17QvGAnexUMr08GVWGxd3kldQACGhBrGz_BOFbHdIQ1a54nAAEBAAMCAANtAAM9BA)
+
+主要犯了以下几个问题：在令 xt^2=u^2，并且正确求得换元前的一切信息（包括 du）后，代入的时候，想当然塞了一个 u，导致全盘错误；在纠正了这个错误后（订正过程中），想当然的认为 1/sqrt(x) 求导就是它本身。
+
+![13.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcNqx172lrUQ90dr4sjlqJCDLgl_JQACHBBrGz_BOFYccCCRuIw-ogEAAwIAA3gAAz0E)
+
+想不出来怎么做——忘记了隐函数存在定理。隐函数存在定理：对于 F(x,y)=0，确定的隐函数 y=f(x)，当 F’y(x,y)≠0 时，有 dy/dx=-Fx/Fy。所以充分性可证。
+对于这道题的反例，可以举 F(x,y)=y^3-x^3。
+
+错题重刷没做，我记得这道题是哪一年的真题。
+
+![13.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcRqx184vPVAefTpJsJWyEPYMy37LQACHhBrGz_BOFY28cnDnqVAGwEAAwIAA3gAAz0E)
+
+本题没问题，但事实凭感觉做的（前者需要四面八方而后者只需要两根线）。并且这里混淆了充分条件的概念，以前一直记的是小推大，但是其实应该记住的是严格推宽松。
+
+对于本题的反例，考虑 F(x,y)=x^2-y^2。
+
+还可以举同一极值但二元无极值的反例：f(xⓜ,y)=(y-x^2 )(y-2x^2 )。
+
+![13.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcVqx19T19bXKPFvlu0ZOdQv1ZVNswACHxBrGz_BOFYAAQ4brx7P4uMBAAMCAAN4AAM9BA)
+
+没做出来。可以取反例 F(x,y)=-x^2-y^2，以及 F(x,y)=-x^4-y^4 排除。
+
+这里可以总结一下一些经典的反例（本章的），其实无外乎都是 x^m+y^n，中间的符号可以变，总体的符号也可以变，m=n。
+
+错题重刷的思路是这样的，首先 AB 可以很容易排除，而对于 AC-B^2 的判定，如果为 0，那么是无法判断，所以再举一个特例就可以了。所以选 D。
+
+![13.1.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcZqx1_g6_yFOOg9l2R5WBSg8DfQbQACIBBrGz_BOFYfqboFKBcp5QEAAwIAA3gAAz0E)
+
+本题做的是对的，只是放在这里注意一下。对于这种范围的题需要从两方面考虑，第一，函数本身的极值（利用 AC-B^2），第二，边界的极值（利用拉格朗日乘数法或者带入计算或者不等式）
+
+![13.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcdqx1_6bKyj0I2kvdV4iEj50-F2GAACIRBrGz_BOFZ0-FmhlYP41wEAAwIAA3gAAz0E)
+
+对于全微分的不变性理解问题：对于这类题，采用全微分的不变性去做比采用隐函数求导法更方便，而求全微分的方法是将两边同时取 d，例如对于 sin(xy)=y 而言，同时取 d 即 d(sin(xy))=dy，而 d 的求导法则是将所有东西都当成单独的变量去算，所以是 (cosxy)(ydx+xdy)=dy。
+
+错题重刷没做，这道题提醒我不可以某类方法入脑（我记得这道题也是某年真题来着）
+
+![13.2.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAchqx2A3i6rDV2iAGwTNH-DkFzO6PwACIhBrGz_BOFbvDM49Arnz2gEAAwIAA3gAAz0E)
+
+对于这题，其实做的是对的，但是没敢继续往下写。
+
+需要注意的是，利用拉格朗日乘数法算完后得出极值，但是这道题有 x>=0,y>=0 的条件，当时在做的时候脑子抽了没想到这个条件，想着 x，y 不是可以取无穷吗。
+
+对于这道题，辨析一下拉格朗日乘数法。拉格朗日乘数法算出来的只能是驻点，所以题目里不会为难算出来的再去判断极大值极小值，带入边界条件去算就可以了。
+
+### 张宇 30 讲基础高数 2 刷第 14 章
+
+![14.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAclqx2C1t0KYGyJIkXcOO_6QE0AjvQACJBBrGz_BOFYdxxWRTlEffwEAAwIAA20AAz0E)
+
+属于低级错误，对于这种题应该先绘制出完整的积分范围（而不是只绘制一部分甚至不绘制）
+
+错题重刷碾过去了，还是要画出积分区间。
+
+![14.1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcpqx2Dwl-iiSFe0yVoFBspQFO58NAACJRBrGz_BOFYTFmTeoh3Q4gEAAwIAA20AAz0E)
+
+关于这题，如何求 a 完全没有任何头绪。事实上应该利用极限的 o(x) 去做？
+
+并非啊，事实上这道题属于低级错误，当上下同时化简了之后是 0/0 的式子，所以上面肯定是 0，从而可以算出来 a 的值。
+
+错题重刷：这道题我也不知道为什么会做错，这类题属于非常基础非常经典的题目。我做下来怀疑是当时把 e^x2 除下来的时候，直接没管 a 那一项，所以分析的很怪。
+
+![14.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAcxqx2G1Pd4NvWhU9N_-BeuYSl1FSgACKRBrGz_BOFYntWYvjZoBywEAAwIAA20AAz0E)
+
+对于这题没想到怎么做，但是隐约知道应该拆开来进行讨论……复盘了一下，发现想的是对的，但是没去算，这里的 x^2 和 y^2 只是数值而已，并不是积分区间。
+
+错题冲刷的时候想起来 26 李 4 卷 3 的倒数第二题，其实这类题都是类似的，通过 max 得到积分区间，然后分区间讨论即可。
+
+![14.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAc1qx2IQSDl3NXhSdbEkd1VVMCA-ZQACLxBrGz_BOFZ_a95-2vxDDgEAAwIAA3gAAz0E)
+
+对于本题，犯了一个经典的低级错误（我自己错了很多次了，甚至在化简的时候每次都会提醒自己：x=rcosθ，y=rsinθ。
+
+错题重刷的时候，想起来了这个，其实对于数 2 的来讲，大多数时候都是经典变形，也就是 x=pcosθ，y=psinθ，很少出现其他的，因为数 2 没有雅可比矩阵。
+
+当时错的时候应该把 x 和 y 想反了。
+
+### 张宇 30 讲基础高数 2 刷第 15 章
+
+本章需要注意一下，感觉掌握得不是很好，强化的时候当时应该也过的很快。
+
+错题重刷时想起来 09 年真题还是哪一年真题，忘记了形式。微分方程主要就是背诵了。
+
+![15.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAc5qx2KNU6fa3erraK4nNKIPoTudVwACMBBrGz_BOFbQXBXqZNm8fgEAAwIAA20AAz0E)
+
+本题犯了一个经典的错误，标准的零分，那就是+C，应该在化简到 ln 那个时候就+C 了，而不是等到算完之后最后再+C。
+
+![15.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAc9qx2KjasTk_zI5q3hsCBi3f8GilQACMRBrGz_BOFYro2yOhPdkvwEAAwIAA3gAAz0E)
+
+关于这题没想到怎么直接用 y/x 做，而是先同时平方然后做，结果就是没做出来。如果要取平方的话，最后会变成以 y’的方程，得解方程然后求出来 y’的表达式然后算。但是这道题其实是可以先判断齐次性。
+
+![15.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdBqx2QHLUtWz9GRYRDrwV6EkHkUNAACNxBrGz_BOFYlQFNynblq1wEAAwIAA3gAAz0E)
+
+关于这题，其实有想过正确想法，但是没敢往下推进。本题利用的是洛必达，也就是在推进的时候，忘记了自己正在讨论什么，在那里向自己应该怎么化简那个式子，却忘记了我们讨论的本来就是 y。
+
+叽里咕噜说啥呢？两边同时取极限就算出来了。
+
+错题重刷的时候利用的是洛必达法则，上下同时乘一个 x，推导出 xy'=0，继而 y'=0。
+
+![15.1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdFqx2RIggtmBp0mSox7hiiAEe0iGQACORBrGz_BOFZy-Mqye6sIYAEAAwIAA3gAAz0E)
+
+对于这道题，虽然说不难，但是有几个点需要注意一下。首先是可以算一半的时候把常数项计算出来，这样可以提供一些化简的思路，然后就是和第 6 题类似的，我完全没有意识到其实 y’也可以被当作一个变量看待，然后将其解出来进行讨论，也就是忽略了“分离变量”这个最为核心的准则。
+
+![15.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdJqx2TvIskGW4yPmcWZcOuBcNyNxgACOhBrGz_BOFZQ7HmOiXqAmwEAAwIAA20AAz0E)
+
+错题重刷的时候也有点忘了公式，还是想了一下才想出来的。
+
+![15.1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdNqx2URmeDhmdLUMO0TcooHn8ahzgACPBBrGz_BOFa9anxgOGMg5gEAAwIAA3gAAz0E)
+
+关于这题，我完全没有理解如何构建物理模型。感觉是被题目误导了，这题不要想什么自行车前后轮的接触点，也不要想什么物理，直接就是：
+
+两个点 P，Q，P 的初始值是（0，0），Q 的初始值是（1，0），保持 PQ=1，令 P 向上移动，求 Q 的轨迹，完全不用考虑哪里是地面。
+
+由于当 P（0，t），t>=1 时，Q 就变成直线向上运动了，所以仅考虑 t 在 0-1 的范围内。尤其需要注意，Q 不一定在 x 轴上，这也是我陷入迷糊的点。
+
+![15.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdRqx2U8klOmMBK_oM3xmwhwKn6BawACPRBrGz_BOFaTkSlFrqv94QEAAwIAA3gAAz0E)
+
+对于这种题完全没有任何头绪。但是呢，其实这道题并不是我想象中的强化阶段的那类题，所以还是那句话，没敢下手是现在最严重的问题？其实不是，这道题好像就是那类不一定是常系数的题？并非啊。
+
+y_h=(C_1+C_2 x) e^x
+
+好好写一遍这个解，本质上是忘了。
+
+![15.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdVqx2ViBMqnVqWO3Yb5JhvX0dWC7QACPhBrGz_BOFarpLo87_0bFwEAAwIAA20AAz0E)
+
+对于这题，本质上是忘记了公式，也就是和例 17 相同的问题，是 C1cosx+C2sinx，而不是 A(cosx+sinx)。
+
+此外对于第 2 问，三阶无穷小不等于等价三阶无穷小，所以三阶泰勒展开后，不需要三次为 1，只需要不为 0 即可。
+
+![15.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdZqx2V_CIEFw1Aw0RvKwj3LNF54wwACPxBrGz_BOFb7rnIWd1BD9wEAAwIAA3gAAz0E)
+
+直线方程的斜率是什么？是 k=tana，而不是 k=arctana。后续计算与例 12 类似。
+
+错题重刷安：不过这道题其实是个真题。
+
+![15.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAddqx2WoLMODTuY2vTJsjXb2Wlz74AACQBBrGz_BOFYboS1okwvI6AEAAwIAA3gAAz0E)
+
+本题错因为三角形底错误，三角形的底不是 T 的横坐标，而是 P-T。
+
+错题重刷安：这道题也是一个真题。
+
+### 张宇 30 讲基础高数 2 刷错题总结
+
+小总结
+
+综合上面来看，还是低级错误比较多，主要综合为以下几类：
+
+1.定积分使用牛莱公式时+-号问题
+2.漏抄系数以及最后忘记乘法乘进去
+3.Arctan 相关的计算
+4.怀疑自己，不敢往下继续算
+5.对于公式的背诵错误（尤其是关于第 10 章的计算）
+6.积分上下限的判断
+
+### 张宇 30 讲基础高数 2 刷错题重刷总结
+
+错题重刷以及过了一遍错题，我发现其实基础部分最重要的问题还是计算，思路谬误并不多。
+
+包括从我写了真题以及模拟卷几份再回头看这些，思路都是一眼出的，拟合肯定也是到位了的，所以最严重的问题就是非思路性丢分。
+
 ## 张宇 30 讲基础线代 2 刷
 
 ## 张宇 1000 基础 2 刷
+
+### 张宇 1000 基础 2 刷第 1 章
+
+### 张宇 1000 基础 2 刷第 2 章
+
+### 张宇 1000 基础 2 刷第 3 章
+
+### 张宇 1000 基础 2 刷第 4 章
+
+### 张宇 1000 基础 2 刷第 5 章
+
+### 张宇 1000 基础 2 刷第 6 章
+
+### 张宇 1000 基础 2 刷第 7 章
+
+### 张宇 1000 基础 2 刷第 8 章
+
+### 张宇 1000 基础 2 刷第 9 章
+
+### 张宇 1000 基础 2 刷第 10 章
+
+### 张宇 1000 基础 2 刷第 11 章
+
+### 张宇 1000 基础 2 刷第 12 章
+
+### 张宇 1000 基础 2 刷第 13 章
+
+### 张宇 1000 基础 2 刷第 14 章
+
+### 张宇 1000 基础 2 刷第 15 章
 
 ## 武忠祥高数强化 2 刷
 
@@ -545,7 +1351,7 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 ### 27 李 6 卷 1
 
-- 完成时间：20261007
+- 完成时间：20261008
 - 分数：
 - 作答时间：
 
