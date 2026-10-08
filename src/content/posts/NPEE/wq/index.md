@@ -1501,6 +1501,359 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 ## 计组王道选择题 1 刷
 
+### 计组王道选择题 1 刷第 1 章
+
+![1.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhBqx74qXxEDY63kUIb8GyY-_oofdAACHBNrGz_BQFYBv7FfOvSdoAEAAwIAA3gAAz0E)
+
+第 5 题错选为 B。本题没有搞清楚谁为谁提供服务，纯凭感觉选的。对于这道题，正确的理解方式应该是 2 刷那样，谁为谁提供服务。机器语言是硬件本身的，操作系统是最接近硬件的一层软件。
+
+第 6 题错选为 B。ISA 是指令体系结构，是计算机软/硬件之间的接口，而微体系结构是处理器内部的硬件组织方式，用于实现 ISA 定义的功能。如果说 ISA 定义了做什么，那么微架构定义了怎么做。以 x86 为例，不同的处理器遵循同一套规范，但是内部组织方式差别显著。根据课本 p6 的材料再来看这道题：对于 A，显然是错误的，机器上执行的只有机器指令；对于 B，ISA 定义指令功能，定义了指令格式，操作类型，寻址方式，可访问寄存器等，因此强关联硬件；C 由材料可知；对于 D，即便是解释类语言，也并非一一对应，一条可能会被翻译为多条机器指令。
+
+![1.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhFqx75xpIHo-SvV4oMPbhRsEdwBygACHRNrGz_BQFZMGjkYJBt5MwEAAwIAA3gAAz0E)
+
+错选为 B。CPI 指的是一条指令平均需要多少时钟周期，显然和时钟频率无关。
+
+![1.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhJqx76FkLCZdzoSZ5hwN0y_h_8a5wACHhNrGz_BQFa1FI5lAmgIkwEAAwIAA3gAAz0E)
+
+错选为 C。原因和 2 刷时一致，没有理解字长也是评价计算机系统性能的指标。
+
+### 计组王道选择题 1 刷第 2 章
+
+![2.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhNqx767Lyr1C7wP-NYcVjaMMx8GmgACHxNrGz_BQFYt916U1ZFOzgEAAwIAA3gAAz0E)
+
+本题错选为 C。模 4 补码指的是两个符号位进行运算，对于这个细节，尤其需要注意在存储的时候不可能出现 10，01 等情况，存储的符号是确定的，也就是必然为 00 或者 11，因此只需要存储 1 位即可。
+
+![2.2.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhRqx77fcregJ1fkcyt8-_9F8ISzEAACIBNrGz_BQFYjP6UnwQGndQEAAwIAA3gAAz0E)
+
+第 18 题错选为 C。本题没有理解加法器的底层原理，对于加法器而言，-y 只取反码，而最后的 +1 靠的是 cin 前一位的进位。
+
+第 19 题错选为 C。与 18 题一样的错误。
+
+![2.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhVqx7733USZSctBMxU0wneN2ELsXAACIRNrGz_BQFat0KVGcuZo2QEAAwIAA3gAAz0E)
+
+第 21 题错选为 B。DCH 即 1101 1100，×2 即 1011 1000，-2y 的补码也就是 0100 1000，所以 0100 0100H+0100 1000H=1000 1100H。由于原来是两个正数相加，却得到了负数，所以溢出（根据草稿来看其实是算对了，但是想错了）。
+
+![2.2.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhZqx78UWg--XLfeoBxFkYFZ67xdKwACJBNrGz_BQFZDgnqfyVfFUAEAAwIAA3gAAz0E)
+
+本题错选为 D。？我自己都看不懂我自己的草稿了。首先根据 FFFF FFDFH 可知 x=-1-32=-33，y=65……我大概知道我为什么错了，直接把 y 当 41 算了，导致全错了。
+
+![2.2.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhhqx78v8J5sGQHwwi9Mcp3NEAr5vwACJhNrGz_BQFZhhNvYBp4rnAEAAwIAA3gAAz0E)
+
+本题错选为 B。FFFF FFFFH=-1,FFFF FFF0=-1-15=-16。OF=0，而对于 CF 也为 0。本题本质上是没有理解 CF 到底是怎么计算的。
+
+![2.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhlqx79d3ttTD1Dqwu4hF4CIuc5kbAACJxNrGz_BQFb53m3Ffxz-QAEAAwIAA3gAAz0E)
+
+第 7 题错选为 C。原码≠无符号数。
+
+第 8 题错选为 B。与非规格浮点数相比，D 更对，但是为什么呢？因为规格化的意思就是把高位 0 抹去，只让有限的位数用来表述数字。
+
+### 计组王道选择题 1 刷第 3 章
+
+![3.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhtqx7-cZg4HSFnzJfIUV4ds1OFWwwACKBNrGz_BQFZqrvlZgy9mnQEAAwIAA3gAAz0E)
+
+第 10 题错选为 C。对于 1，显然正确，这就是 cache 思想；对于 2，虚拟存储器中主存和辅存之间的数据调动对于机器级语言程序员是透明的，但是再往上就不是了；对于 3，CPU 与主存交换信息可以不经过 cache，例如直写法。
+
+第 11 题直接看的答案。每次读出 16b=2B，由于存储周期是 250ns，1s 内由 1s/250ns=1/(250×10^-9)=10^9/250=4✖️10^6 个周期，所以 4✖️10^6✖️2B=8✖️10^6B/s，也就是 C。
+
+![3.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhxqx7_LjzCf79HNzwEJ_KVFFQpD-QACKRNrGz_BQFZOAAEfiOGygWMBAAMCAAN4AAM9BA)
+
+本题错选为 B。属于低级错误。对于 A，随机存储器因为需要随机访问，而不应该挑选到只读存储器。深度分析一下，随机存储器比如说 RAM，只读存储器比如说 ROM；统一编址的意思是 CPU 不需要区分芯片到底是 RAM 还是 ROM，而是看成一个连续统一的内存地址，只需要将某一个地址段分出给 ROM，另外的地址段分配出去给 RAM，对 CPU 来说，它只需要发出一个地址，地址译码器电路就会自动帮 CPU 找到对应的芯片去读取数据。CPU 用的是完全相同的读写指令。
+
+不需要统一编址的概念来源于 IO 设备。IO 设备有两种编制方式，一种是独立编址，例如 x86，地址可以相同，但由于属于不同的地址空间，所以不会发生冲突。CPU 通过专门的 IO 指令例如 in，out 来访问 IO 端口；统一编址将部分主存空间分配给 IO 端口，使 IO 端口与内存单元共享哦同一地址空间，CPU 使用普通的访存指令即可访问 IO 设备。
+
+![3.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAh1qx8AIXHwvFyoYUFhjJHBCpui8jgACKxNrGz_BQFYo3j85whR2QwEAAwIAA3gAAz0E)
+
+本题错选为 A。DRAM 采用地址复用技术，所以 8 数据线 +10/2 地址线=13。
+
+![3.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAh5qx8CG93bHFN3yZ9FtKd6TCzcUFQACLhNrGz_BQFbqgjpmgoTKqwEAAwIAA20AAz0E)
+
+第 12 题错选为 C。主存不包括 cache，而对于主存而言，其内部包含 BIOS，所以有一部分的 ROM。
+
+第 13 题错选为 A。EPROM 采用的是电擦除，擦除次数有限，这里的随机存储器指的是 RAM，显然不可以作为 RAM。
+
+![3.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAh9qx8DvKdjMPdCQ5tlaSCiTp3VoIAACMBNrGz_BQFa7aNWxcZzplQEAAwIAA3gAAz0E)
+
+本题错选为 A，DRAM 采用地址引脚复用技术，那么问题来了，如果数据线增加 8 根呢？和地址线是表示 2^n 不同，数据线表示的就是数据本身，也就是 8 位需要 8 根地址线，假设原本有 D 根地址线，那么也就是 (D+8)/D 倍。
+
+![3.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiFqx8EI7jwK0OTwyjPutDEd1Rgq4gACMRNrGz_BQFbXzrvhdNvkkQEAAwIAA20AAz0E)
+
+本题错选为 A。对于 A，DRAM 采用地址引脚复用技术，即 2^22，所以是 11；对于 B，由于采用的是地址引脚复用，所以仅需发送两次信号即可；对于 C，一行是 2^11，而数据是 4b，所以是 8Kb；对于 D，显然正确。
+
+![3.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiJqx8EfJ7inCppG-ciURrPxNxKvfgACMhNrGz_BQFaOwLNNtx53QgEAAwIAA3gAAz0E)
+
+本题错选为。首先辨析一下以下概念：
+
+低位交叉编制，轮流启动（流水线），把连续的内存地址交叉分配给不同的存储模块，CPU 发起连续的读取时间，不需要等待前一个模块彻底结束，只需要等很短的总线传输周期 t 就可以向下一个模块发送命令；
+
+地位交叉编址，同时启动（并行），CPU 直接向这 4 个模块发起读指令，然后再同一个时刻读取完毕。
+
+单体多字，在物理上的字是普通字的 m 倍。与低位交叉编址类似同时启动可以达到相似的效果。
+
+然后捋一下交叉编址带来的情况（指的是同时启动），假设有 4 个模块，同时启动只能读取同一个行下的 4 个字，第 0 行包含地址 0、1、2、3，第 1 行包含地址 4、5、6、7。
+
+1. 如果 CPU 突然要连续读取 4 个字，但是起始地址是 1，此时 4 个模块同时工作，读出第 0 行 0、1、2、3，并且丢弃 0，但是缺少 4，只能等 1 个 T 然后取 4、5、6、7，并且丢弃 5、6、7
+2. 类比遍历二维数组，假设恰好要取 0、4、8、12，会被一直卡
+3. 预取失败，也就是预测分支先执行了一些，结果浪费指令
+
+![3.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiNqx8G5464nDrb_tXVOIHzjHmU6uwACMxNrGz_BQFYlfIj-JrTBigEAAwIAA3gAAz0E)
+
+本题错选为 C。显然这道题只需要字扩展即可。本题属于想当然的低级错误。
+
+![3.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiRqx8MPxFbJiwYoHlq9jZxRqgVsVwACNRNrGz_BQFYK9YDPnv8WeQEAAwIAA3gAAz0E)
+
+第 6 题错选为 B。对于这道题尤其需要注意高位和低位。这道题 4K×4 位需要 16 个，也就是位扩展 + 字扩展，其中字扩展需要 4，而 16KB 总共占 2^14 个地址，所以也就是需要第 13 和第 14 个地址（从 1 开始算起），对应到题目里，也就是 A2 和 A3。本题错在想当然认为存储用满。
+
+第 7 题错选为 A。43FFH+1-4000H=4400H-4000H=400H=0100 0000 0000H，也就是 2^10，注意题设采用的是 4 块芯片，所以 2^10*16bit/4，从而选择答案。本题错在把 4 当 4 算，而不是当成 16 进制去算。
+
+![3.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiVqx8M90GupShB8AAG35yKq0hcz48sAAjcTaxs_wUBWefRy1D3rIdMBAAMCAAN4AAM9BA)
+
+第 6 题错选为 B。对于这道题尤其需要注意高位和低位。这道题 4K×4 位需要 16 个，也就是位扩展 + 字扩展，其中字扩展需要 4，而 16KB 总共占 2^14 个地址，所以也就是需要第 13 和第 14 个地址（从 1 开始算起），对应到题目里，也就是 A2 和 A3。本题错在想当然认为存储用满。
+
+第 7 题错选为 A。43FFH+1-4000H=4400H-4000H=400H=0100 0000 0000H，也就是 2^10，注意题设采用的是 4 块芯片，所以 2^10*16bit/4，从而选择答案。本题错在把 4 当 4 算，而不是当成 16 进制去算。
+
+![3.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiVqx8M90GupShB8AAG35yKq0hcz48sAAjcTaxs_wUBWefRy1D3rIdMBAAMCAAN4AAM9BA)
+
+本题错选为 A。CFFFFH+1-90000H=D0000H-90000H=40000H=0100 0000 0000 0000 0000H，即 2^18，16K=2^14，所以需要 16 片。
+
+![3.3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAidqx8NuUv2DG2no6mfqiGnVf5OXtAACOBNrGz_BQFZ4X9jw3GmrNwEAAwIAA3gAAz0E)
+
+本题不知道为啥放进来了，而可能是当时没思路。8K*8bit/2K*4bit=8 个，而其中每 2 个组成一个完整的字，所以实际上其实是 4 个 2K*8bit 的芯片，由于默认采用的是高位交叉编址，2^13-1=10 0000 0000 0000-1=1FFFH。也就是说 A12 和 A11 可以用来当符号位，所以根据 0000 1011 0001 1111H 来看，是 01 组，也就是第 2 组，第 2 组起始地址是 0000 1000 0000 0000H，也就是 0800H。
+
+需要注意，这种题是求一个范围！
+
+![3.4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAihqx8OJhCZhpsEJFk2jTfVsgXN_DgACORNrGz_BQFakkthwkJkB-wEAAwIAA20AAz0E)
+
+第 2 题错选为 C。对于 A，磁盘驱动器由磁道/柱面、磁头号/盘面号、扇区号组成，对于这一题的记忆可以联想磁盘的寻址，也就是磁盘移动磁盘/柱面是最好耗时的，而改变盘面不会那么耗时。
+
+第 3 题没选出来。显然 D 是错的，CPU 交换信息必须要经过 cache/内存。
+
+![3.4.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAilqx8PRSxKL4qo0CfUC-u7-a4OMzQACOhNrGz_BQFa29FI9OxPRUQEAAwIAA3gAAz0E)
+
+第 5 题没选出来。固态硬盘的读/写是以页为单位的，擦除是以块为单位的。
+
+第 6 题不知道为啥放在这里了。显然 D 是错的。
+
+第 7 题不知道为啥放在这里了。一个磁盘转速为 7200 转/分=120 转/s，假设磁盘运行 1s，也就是转 120 次。120✖️160✖️512B=960KB。
+
+第 8 题不知道为啥放在这里了。假设总共运行时间为 1s，则由于有 8 个扇区，所以磁盘在旋转一周的有效读取时间为 25ms-1.25s*8=15ms，一个磁道包含信息 60MB/200=0.3MB，所以 0.3MB/15ms=20MB/s
+
+第 9 题不知道为啥放这里了。读取时间：4KB/20MB/s=0.2ms；延迟：0.2ms；平均寻道时间：6ms；磁盘转到那个地方：10000 转/分，也就是 1 转/0.0001 分，所以半转也就是 0.00005min 也就是 3ms。总共加起来，也就是 9.4ms。
+
+![3.4.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAipqx8PzqsnQfLUPc6Q_hpf_PP71NAACOxNrGz_BQFYsSj-h60_Y5wEAAwIAA3gAAz0E)
+
+第 11 题不知道为啥放在这里。7200 转/分=120 转/s，即 1 转/ 1/120s，也就是平均转半圈需要 1/240s 所以 8ms+1/240s=12.167ms。
+
+![3.5.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAitqx8QOLc8QhVwj4DWwS7GgJmgycQACPBNrGz_BQFashudZaIWkfwEAAwIAA3gAAz0E)
+
+本题错选为 B。直接映射，随即替换和全写法均不需要额外位，cache 本身需要一个有效位，对于标记信息，也就是 12 位 tag，所以最终需要 12+1bit 也就是 13bit。
+
+对于这题分析一下要存储的信息是什么，直接映射也就是说分成 64 组，“组”这个信息是可以算出来的，所以不需要保存，真正需要比较的是 tag。
+
+![3.5.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAixqx8QkTfPCLuiEtZAF_gABbxrT6DcAAj0Taxs_wUBW2sPzUM3Qc1kBAAMCAAN4AAM9BA)
+
+第 20 题错选为。由于块大小为 16B，分别将上述单元变为 cache 行号。
+
+A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D：46/16=2，236/16=14。显然对比之下可以发现，本题应该选择 B。这道题错误是因为没有意识到多少号单元实际上指的不是块号。
+
+第 21 题错选为 C。一点一点分析，1 个字=32bit=4B，所以块内地址为 2，由于采用全相联，没有 cache 行号，所以有 30bit 用来存 tag。cache 本身需要 1 个有效位，回写法需要 1 个脏位，所以总共是 32 位。由于存放的数据是 1 字，所以总共 64 位。
+
+![3.5.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAi1qx8RDROjsksI7XMIVfXVEEB9zVQACPhNrGz_BQFb0bQfn7px7tQEAAwIAA3gAAz0E)
+
+第 25 题错选为 D。需要注意，在实际运行过程中，直接映射并不是顺序下来存的，而是随机存的，然后加时间戳或者先后顺序。
+
+或者可以注意下这种做法，其实不是时间戳。对于这个是固定顺序：第逻辑 0 换，第逻辑 1 换，到第逻辑 N-1 换，然后从逻辑 0 换。Logn 个。
+
+第 26 题错选为 A。主存块通常和 cache 的大小块一致，但是也只是块，而非 cache 容量，以三级 cache 举例，1 级缓存 64KB，二级缓存 1MB，三级缓存 32MB，所以容量是和 cache 块大小是无关的；而主存块从小变大，cache 缺失率会先变低再变高。块太大会导致总房间数 N 变小，从而产生抖动。
+
+但是和页表相比，页表的块越大缺失率越低，这是因为页表只存地址，不存数据，完全不会影响。事实上应该从视角的角度出发，假设 cache 角度为 32KB，块大小为 64 字节时，有 512 个 cache 行，而块大小变为 4KB 时，仅有 8 个 cache 块；假设主存有 16GB，不管采用页大小 4KB（四百万），还是采用 2MB 的页（8000 多），都不会发现太少而抖动的情况。页变大之后，TLB 还可以几乎完全命中。
+
+这是为什么呢，本质上是因为 cache 缺失只需要去主存读，也就是只需要花几 ns，而页表缺失需要去外存读，可能需要几 ms。
+
+![3.6.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAi5qx8RkgstRpoqNLG7TjP2qRh5TbQACPxNrGz_BQFZsP27wnOpWEwEAAwIAA3gAAz0E)
+
+第 2 题错选为 B。不全
+
+第 3 题错选为 C。学了操作系统就知道这道题应该是 D 了。
+
+![3.6.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAi9qx8R22cLyjC4ESaGy5v2Jl3MsggACQBNrGz_BQFaTUvQi7EIfSwEAAwIAA3gAAz0E)
+
+本题错选为 C。ABC 显然成立，分析 D，由于调入 TLB 的必在 Page 内，即便该进程下处理机，也会有专门的硬件将 TLB 内的有效位修改为 0，所以不可能出现 D 这种情况。
+
+### 计组王道选择题 1 刷第 4 章
+
+![4.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjBqx8SZSIOc3mFdxQGyDcny2t8yagACUhNrGz_BQFZkiaYpDOKXSQEAAwIAA20AAz0E)
+
+本题错选为 D。对于 ABD，本质上都是在控制程序流；对于 C，中断隐指令是程序由操作系统调度由 CPU 本身执行的（也就是硬件执行的指令），所以并不是程序控制类指令。
+
+![4.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjFqx8ToNeclhDDTiCUZ_TY8vYIMgwACUxNrGz_BQFadCPnFQmHtJAEAAwIAA20AAz0E)
+
+本题错选为 A。回顾扩展操作码的概念，其并不是减少指令字长度，而是采用哈夫曼树的思想。使操作码长度随地址码的减少而增加，并没有减少指令的长度。（比如说操作码 1bit，地址码 3bit，以及操作码 3bit，地址码 1bit）。
+
+![4.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjJqx8bWsD7VMZVrs57ejN4DIDW-RAACWBNrGz_BQFbrKmfup0oS9AEAAwIAA20AAz0E)
+
+本题错选为 D。属于想当然错误。对于 A，显然采用扩展操作码增加译码难度；对于 C，采用不同寻址方式和程序控制无关系，程序控制一般都是采用相对寻址。
+
+![4.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjNqx8brLD2i8aaaIg98l1aNDOU2vAACWRNrGz_BQFYzlqqh9c1RggEAAwIAA3gAAz0E)
+
+第 3 题错选为 C。一般而言，寄存器的个数非常少，所以最短的地址（如果有）是寄存器寻址。注意，这里指的是地址码，而不是最终需要获取到的地址位。
+
+第 4 题错选为 C。何为简化，也就是原来需要 2 个地址码现在只需要 1 个。对于隐含寻址而言，其操作数地址默认来自于 ACC。举两个例子，对于 1 位操作数的指令而言，不需要指明地址，因为已经隐含在 ACC 里了，例如取反，对于 2 位操作数而言，只需要指令一个操作数地址，另一个隐含在 ACC 里，例如相加。
+
+第 5 题错选为 D。显然，获取操作数最快的应该是立即数寻址，数本身就是操作数。
+
+![4.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjRqx8cEfVCBUcG5VM1QtIwVzzO4RQACWhNrGz_BQFYi-IPh8JP6aQEAAwIAA20AAz0E)
+
+本题错选为 C。PC 自动 + “1”。
+
+![4.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjVqx8dZ-Ocm84XYD2zjr-PiGmHV1wACXBNrGz_BQFYks-VcHSDXmwEAAwIAA3gAAz0E)
+
+本题错选为 D。由于存储字长=指令字长，所以有 16 位可以存储指令。97 种操作意味着需要 2^7=128，也就是 7 位；而寻址方式有 6 种，所以需要 2^3=8，也就是 3 位存储寻址方式。还剩下 16-7-3=6 位，采用补码表示即 -32-31。
+
+![4.2.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjZqx8d0EaHs8aqdrHv0S9lIan5iSgACXRNrGz_BQFY3NHU4mIL4GgEAAwIAA3gAAz0E)
+
+第 17 题错选为 B。寄存器寻址意味着操作数在寄存器内，寄存器寻址意味着操作数的地址在寄存器里，一定要看清楚题目问了什么。
+
+第 18 题没有理解题目的意思，这题的意思是说选两个选项。PC 当前值为 240，由于自动 + “1”，并且由题目可知地址为 2B，所以到了 242，290-242=48，由于 48=0000 0000 0011 0000H=0030H，采用小端方式，
+
+上面的解释是错的，可以联想真题的大题，得知事实上应该 + 指令长度的大小，也就是 3B，所以这里的 + “1”意思是 +3B，也就是到 243，290-243=47=0000 0000 0010 1111=002FH，由于采用小端方式，所以存储为 2F 00；同理，243-200=-43，-43=1111 1111 1101 0100=FFD5H，采用小端方式，即 D5 FF。
+
+之所以想错，是因为想着指令字长不可变。
+
+第 19 题错选为 A。LSB 指的是低地址部分。将 FF00H 扩展为 FFFF FF00H，即 EA=C000 0000H+FFFF FF00H=BFFF FF00H，由于采用的是大端法表示，所以 AB 存储在 BFFF FF00H 里，CDH 存储在 BFFF FF01H 里，00H 存储在 BFFF FF02H 里，FFH 存储在 BFFF FF03H 里。
+
+![4.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjdqx8fgeB-YG6_KPNchqwE99OJnxQACXhNrGz_BQFbUymLOAAFtXccBAAMCAAN4AAM9BA)
+
+本题错选为 D，理由也是没有捋清楚这里的 + “2”的具体意思以及没有捋清楚 CF，OF 等的作用。题设说明采用双字节字长指令，即 1 指令长=2B，由于采用 Imm8，也就是 8 位数，范围为 -128-127，带入公式可得偏移的具体单位最后/2，即 D 选项。若 bgt 采用的是无符号整数的比较，如果两个数字相加没有溢出或者相减没有溢出，在无符号数里必然为正数，所以 CF=0，加上一个 0，所以转移条件就是 CF+ZF=0。若 bgt 是有符号数的比较，则有符号数溢出的标志为 SF，假设两个小负数相加，那么 SF=1，OF=0，1 异或 0=1，可得该选项错误。
+
+![4.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjhqx8f-ym6qp9q1MOT5E4oNSc3bkQACYBNrGz_BQFaEHeLWlv_wcwEAAwIAA3gAAz0E)
+
+第 2 题错选为 D。本题是 CF 理解不清晰，对于 sub bx，ax，显然够减，所以 CF=0。7FE6-FFE8=7FE6+0018，显然不会溢出，所以 OF 也是 0。
+
+第 3 题错选为 A。由于采用小端存储，根据题目，xxxx 对应的是 imm 的机器码，所以由于 immm=-3=FFFDH，且采用小端存储，所以 2D FD FFH。
+
+![4.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjlqx8gXyVAx4fDUUOrtbQ01x1tcqgACYRNrGz_BQFajNokMTJkTIgEAAwIAA3gAAz0E)
+
+本题错选为 B。注意存储地址，i 存储在 eax 里，j 存储在 edx 里，由于题目为 i< j，显然这是不成立的，所以根据下一条指令需要跳转。根据题设可知 804846cH 为 2 字节指令，所以 PC=804846EH，再 +0dH，可得 27=16+11，也就是 D。
+
+![4.3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjpqx8iXlLwsAXFuytOhMhSFoBD-BgACZBNrGz_BQFb1rGcqz4N1pAEAAwIAA3gAAz0E)
+
+本题错选为 A。在 C 语言里写一个过程调用，经过编译后对应一个 call；对于 D，必须得告诉 CPU 去哪。
+
+对于函数的栈帧，ebp+8 为传参的第一个参数，ebp+4 为返回地址，ebp+0 为 call 函数上一层的老 ebp，ebp-4 开始是局部变量。
+
+![4.4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjtqx8kFOZJmy06MDIt0LN7V3F_BGAACZhNrGz_BQFae-5hGsK6fVgEAAwIAA20AAz0E)
+
+本题错选为 B。显然 B 是 CISC 的系统特点。
+
+### 计组王道选择题 1 刷第 5 章
+
+![5.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjxqx8khMSK3MEf8_-2Il76nq3CvhgACZxNrGz_BQFYml-tXOZfFMAEAAwIAA3gAAz0E)
+
+本题错选为 C。为低级错误，看错选项。用一条指令的流动来解释一下这道题。
+
+假设 CPU 需要执行一条指令 ADD R1,[X]，即把内存 X 地址里的数据加到寄存器 R1 中，结果存回 R1。
+
+阶段一：取指阶段，将指令从内存搬到 CPU，并让 PC 指向下一条指令。PC 首先拿出当前指令的内存地址，送入 MAR 中；MAR 将地址 1000H 放到地址总线上，控制器 CU 向控制总线发出读信号；内存收到读命令后，把 1000H 单元内存放的机器码放到数据总线上；数据总线上的机器码被写入 MDR 中；MDR 将这条指令机器码送给 IR，也就是指令寄存器；(PC)+“1”。
+
+阶段二：分析指令/译码。IR 把指令的操作码部分送入指令译码器，CU 解析出这是一条加法指令；CU 分析指令的寻址方式；根据寻址方式计算出操作数 X 在内存中的真是物理地址 EA；CPU 内部电路读取 R1 里的值，送入 ALU 的输入端。
+
+阶段三：访存。把上一阶段计算好的形式地址 EA 送入 MAR；发起读内存，MAR 将 EA 放到地址总线上，CU 再次通过控制总线发出都信号；内存把 EA 地址里的具体数据放到数据总线上，存入 MDR；MDR 将渠道的操作数送到 ALU 的输入暂存器中。
+
+阶段四：执行指令。CU 向 ALU 发送加法控制信号，将寄存器 R1 的值和暂存器 Y 的值相加；ALU 根据计算结果，更新 PSW 里的标志位（ZF，SF，OF，CF）。
+
+阶段五：写回。ALU 通过 CPU 总线写入目标寄存器并覆盖；CPU 根据 PC 发起下一条指令的取值阶段。
+
+根据上述分析可知，指令寄存器即 IR，用于暂存指令（因为 PC 会自动 + “1”，没法留住当前指令），地址寄存器用于暂存地址，例如存储 X 的地址。
+
+![5.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAj1qx8lKwCAoISCRmqwtiw5wgFk4ngACaBNrGz_BQFYVFSubEd4RjgEAAwIAA20AAz0E)
+
+本题错选为 B。指令从哪里读出，根据上一题的分析可知，指令总是从程序计数器，也就是 PC 内读出。对于转移指令，可能会改变 PC 值，但是指令仍然是从 PC 里读出来的；对于地址寄存器 MAR，它可能存乱七八糟的东西。
+
+![5.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAj5qx8l8iREXsRf_xIsMp-1jzz6WBgACbRNrGz_BQFb8NafO5VDTeAEAAwIAA3gAAz0E)
+
+![5.1.10 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAj9qx8mo9AO6AtEHAngCe2omBk6_4AACbxNrGz_BQFYhCblp4F0z7QEAAwIAA3gAAz0E)
+
+其实也不算，只要搞清楚一个公式就好了：PC = 存储容量 / IR。
+
+第 11 题错选为 C。对于这道题，以一个函数调用另一个函数来解释。执行 call 指令后，也就是先压入传参，执行 call 后 cpu 自定压入返回地址（原来的 PC 值），然后将新函数的入口地址赋予给 PC。进入新函数头部后，需要把旧的 ebp 保存在栈内，然后将当前栈顶指针 esp 赋予给 ebp。需要注意，函数栈和 PC 是两码事，可以理解为函数栈是正在执行的东西，而 PC 指向的是一块地方。
+
+第 12 题错选为 B。指令寄存器保存的是当前正在执行的指令，当前正在执行的指令来源是 PC 值“指向”的指令，这个指向的指令也就是指令字长。
+
+![5.1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkBqx8nqI-PHxaU6hNQnJJ3blvVRpwACcRNrGz_BQFadUGCja3KcoAEAAwIAA3gAAz0E)
+
+本题错选为 C。取指令，将指令从 PC 送入 IR，并且解析出指令本身，PC+“1”；分析指令，分析指令的寻址方式，计算出指令的操作数地址；访存；运行；写回。
+
+![5.1.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkFqx8oCWyne5KqPmHyBa679IqagxAACchNrGz_BQFb6KO0r9e4sHwEAAwIAA3gAAz0E)
+
+本题错选为 C。主存空间为 4GB，也就是 4*2^30B=2^32B，字长 32bit=4B。指令 32bit=4B。所以，PC，即程序计数器，可以用 2^32/2^2=2^30，即 30bit 来存储，剩下 2 位可以默认 00，指令寄存器是指令本身，即 32bit，所以本题应该选 B。
+这里解释一下按字边界对齐存放，也就是 0，4，8，12…
+
+![5.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkJqx8qpscumTDKlW0RyWmC9rXSF3gACdhNrGz_BQFYaEZnlh5ne_gEAAwIAA20AAz0E)
+
+本题错选为 D。ACD 显然正确，对于 B，考虑 CISC，指令长度可能不相等，所以取的字节数可能不相等。
+
+![5.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkNqx8rAWGr1oaK05fM-_xdaNluCrgACeBNrGz_BQFaFw2zq6Ud_4AEAAwIAA3gAAz0E)
+
+本题错选为 A。考虑 CPU 的五个阶段：取指令，分析指令，访存，执行，写回。CPU 在取指令的时候把指令读入内存，在分析指令的时候将操作码送入 CU 得出这是什么指令，然后根据其操作数进行访存，得到操作数的地址。访存阶段则是根据操作数的地址来得到操作数。
+
+显然对于 A，指令操作码译码出来的东西得到这个指令的作用是什么，对于 B，指令寻址和数据寻址，人类可以知道指令寻址的方式有顺序寻址和跳跃寻址，数据寻址的方式有那 10 种，但是 CPU 不知道。例如跳跃寻址本质其实是和相对寻址是一样的。对于 D，指令和数据所在的存储单元的物理地址由操作系统分配，是透明的（采用页式存储）
+
+![5.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkRqx8rpMh3U9PZTbtKzMzN65RAEswACeRNrGz_BQFZpiBoaUuEqVQEAAwIAA3gAAz0E)
+
+本题错选为 C。辨析一下这里的概念。CPU 主要由 CU 和数据通路组成，数据通路主要有操作原件（ALU）以及状态原件（MAR，MDR，PC 等）。
+
+![5.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkRqx8rpMh3U9PZTbtKzMzN65RAEswACeRNrGz_BQFZpiBoaUuEqVQEAAwIAA3gAAz0E)
+
+第 8 题错选为 C。对于 1，单总线数据通路完成一次主存读操作。由于是单总线，所以在主存读指令的时候得取指令等等，会有竞争，所以 1 排除。对于 2 显然为 1 个时钟周期，对于 4 和 3，这里需要注意式寄存器内部，所以 ok。对于 5，显然是小于一个时钟周期的。
+
+第 9 题错选为 D。对于 A，单周期的 CPU 如果支持乘除法，那么会让整个单周期更慢。对于 D，无论怎么编排 D，总是接近 1，不可能=1。
+
+![5.3.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkZqx8sZISv6JgT502H8MvsJoZyplwACexNrGz_BQFYLJWg8AAHUBDsBAAMCAAN4AAM9BA)
+
+本题错选为 B。即 Cin 和 Cout 线。Cin 代表想要写，Cout 代表进位读。显然 ABC 均正确，例如想要读数据，Cin=1，然后应该是数据流向 CPU，存储器流向总线。
+
+![5.4.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkdqx8zF5Er9Bg471greK9GwL7bv_AAChxNrGz_BQFaBCN08p2AVogEAAwIAA3gAAz0E)
+
+本题错选为 C。辨析一下这里的概念：一条机器指令=一个微程序=若干个微指令，微指令=若干个微命令，微命令=微操作。所以一个微程序周期等于一个机器指令周期，所以也就等于指令周期。
+
+![5.4.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkhqx84HtLpL3NrjdNJgCpmmUgiGXAACihNrGz_BQFaSKqNKoEedUgEAAwIAA3gAAz0E)
+
+本题错选为 D。操作控制字段主要有 3 种方式，直接编码法，字段直接编码，字段间接编码，对于直接编码而言，一位代表一个信号；对于字段直接编码，先花 x 位表示有多少个互斥类，然后每个再花 y 位。对于字段间接编码，则是 x+y 混杂编码器来，把互斥的操作可以放在一起编码成 2 个字段。需要注意的是，别忘了 000 代表空状态。
+
+对于这道题，5 个互斥类对应 5，也就是 3bit，对于后续的，7+1 需要 3bit，3+1 需要 2bit，12+1 需要 4 比特，5+1 需要 3bit，6+1 需要 3bit，总计 3+2+4+3+3=15，控制字段为 15bit。
+
+![5.4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAklqx84bMaP9xYBVLvm7UtaTcU-njwACixNrGz_BQFbWLqpNz99TDgEAAwIAA3gAAz0E)
+
+本题错选为 D。对于 CPU，想要翻译指令需要利用 CU，CU 有两种翻译指令的方式，一种是硬布线控制器，另一种式微程序控制器，即在 CU 内部再放一个微型控制器。主存（RAM）里存着机器指令；而 CPU 内部的控制存储器（ROM/CM）里，存着微指令。
+
+所以本题的意思是说普通的 PC 来指明下一条机器指令，那么 CU 内部也是自然有一个μPC，也就是微程序计数器。所以，当一条微指令执行完之后，μPC 怎么知道下一条微指令在哪呢？
+
+1. 增量方式，即计数器方式，也就是μPC 自动 +1
+2. 断定方式，即下地址字段方式，也就是当前微指令显式地指定下一条微指令，微指令包含下址字段，可以直接给出下一条微指令。在断定法种，每一条微指令的格式被分成了两半，操作控制字段，也就是存放 0 和 1，顺序控制字段，也就是下地址字段，里面存放着在控制存储器里的绝对地址。
+
+所以要确定总共有多少条（后地址）的，找绝对地址。总共 32 条指令，32*4=128，而需要额外的公共取值 2 个，也就是 128+2，总共 130。
+
+![5.5.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkpqx85t3_6eSxcowbSDf8vFf5HBbAACjRNrGz_BQFbVx8RP6yopzgEAAwIAA3gAAz0E)
+
+本体错选为 C。对于 C，内部异常的“响应”是在指令的执行过程中。当指令一条指令结束后的末尾进行响应？对于 D，～～内部异常处理完之后返回异常执指令的下一条执行，而不是本条～～。
+
+对于内部中断有三种情况，故障，陷阱和终止，分别对应返回本条，下一条，不反悔。对于外部中断一定是返回下一条指令执行，因为检查是在每条指令执行结束之后。
+
+![5.6.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAktqx86jTr0Yx1MdTohhH17ebPxFuQACjhNrGz_BQFZdnaZueKYzJgEAAwIAA3gAAz0E)
+
+第 12 题错选为 A。根据这道题总结一下所有的冒险。冒险主要分为 3 大类，结构冒险（资源冲突），数据冒险以及控制冒险。其中控制冒险主要分为 3 类，延迟执行相关指令，采用旁路转发技术以及采用 lode-use 技术。
+
+主要辨析一下旁路转发技术以及 load-use 技术。主要解决类似写后读的问题。
+
+对于旁路转发，即将执行指令的时候，下一个时间片直接把寄存器的脏数据送入下一条指令的执行阶段。例如连续执行 add，sub 的时候，这类可以使用旁路转发；
+
+对于 load-use 技术，指令 1，去内存里把数据读出来装进 R1，指令 2，立即使用刚刚读进 R1 的数据进行加法。指令 1 在 EX 阶段计算出来数据的地址，再 MEM 阶段访存取这个数据；指令 2 在 EX 阶段就要计算上一阶段取的数据（如果没有阻塞的话，则上一个指令处于 MEM），但是数据还在访问，怎么能取呢？所以阻塞指令二一个阶段，等待数据取完之后，把指令 1 的 MEM 通过软件方式发到指令 2 的 EX。
+
+这里需要注意，并不是所有的指令的 EX 阶段都是计算数，也有可能是计算数地址，然后在 MEM 访存。
+第 13 题错选为 A。经典 load-use，阻塞 1。
+
+### 计组王道选择题 1 刷第 6 章
+
 ## OS 王道选择题 1 刷
 
 ## 计网王道选择题 1 刷
@@ -1883,6 +2236,224 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 本题错选为 A。最佳归并树是外部排序得第二步。应该是 B。
 
 ## 计组王道选择题 2 刷
+
+### 计组王道选择题 2 刷第 1 章
+
+发生溢出和发生舍入是两个概念。
+
+IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生丢失。
+
+![1.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeBqx7QCBBKwwZEIlmkC9wywkYlEdgAC3hJrGz_BQFbS20Cs750TsgEAAwIAA3gAAz0E)
+
+第 1 题错选为 A。运算器 + 控制器 + 存储器是 CPU，而不是完整的计算机系统；主机 + 外设只有硬件，没有软件；主机 + 应用没有外设。
+
+第 2 题错选为 D。冯诺伊曼机也就是现代计算机的前身，根据汇编来看的话，事实上每一条指令都是数据（只是解释的方式不一样），所以采用的是数据流驱动。显然，前面是错误的解释。对于 A，现代的计算机是根据 PC 来进行的；对于 B，指的是多核 CPU；对于 C，指的是 CPU 内部控制器；对于 D，其打破了按照顺序驱动的方式，而是某条指令的数据需求好了就立刻开始运行。
+
+![1.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeJqx7RBmX0iaHvV6Pvgyf7izrqzOQAC3xJrGz_BQFaof20k8Rzw7QEAAwIAA3gAAz0E)
+
+本题错选为 A。本题可以从系统结构那门课的角度去看，并且操作系统事实上可以由汇编/高级语言编写，显然，前面是错误的解释。事实上应该从谁为谁服务的角度去考虑。机器语言只认识二进制指令，OS 对硬件（也就是裸机）进行扩展，提供了系统调用，操作系统是最接近硬件的软件；有了 OS 提供的基础服务后，程序员可以直接用汇编语言来写程序，不仅可以直接用硬件的机器指令，还可以调用 OS 提供的系统调用。
+
+![1.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeNqx7S-XWkPRKhnyBgSja1l4Xm8VAAC4RJrGz_BQFbfQvj_K6xiQQEAAwIAA3gAAz0E)
+
+本题错选为 D。梳理一下，这几个概念：链接指的是打包 exe；汇编指的是将汇编语言程序转换为机器级语言程序；编译指的是将高级语言转换为汇编或者机器级别语言；解释指的是将高级语言程序一条条翻译为机器级代码，不会生成代码文件。
+
+![1.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeRqx7Tn_hDZUPBMsoHscDR9wO2N-QAC4hJrGz_BQFaidsFNYLHRmAEAAwIAA3gAAz0E)
+
+本体错选为 B。平均 CPI 相等意味着每条指令的平均时钟周期数相等，功能完全相同意味着程序需要执行的指令数相同（存疑？），并且假设数量为 N。假设有两个主频，G1 和 G2，且 G1>G2，则时钟周期分别为 1/G1，1/G2，执行时间分别为 N/G1< N/G2，即 M1 中主频搞得计算机执行速度快。
+
+事实上，功能完全相同并不意味着指令的数量相同，所以无法确定哪一台机器更快。
+
+![1.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeVqx7UCsgT5thcNghNJX-JOLv6ujgAC4xJrGz_BQFZFTkDvUl1yowEAAwIAA3gAAz0E)
+
+第 7 题错选为。辨析一下各个概念，CPI 指的是平均一条指令执行需要多少个时钟周期，IPC 指的是一个时钟周期内可以执行多少条指令，IPS 指的是每秒指令执行条数；MIPS 指的是每秒执行百万条指令条数；字长可以分为 64 字，32 字等。
+
+第 8 题错选为 B/C。机器字长越大，意味着精读越高。对于 A，运算速度更和 CPU 主频之类的相关；对于 B，存取速度（并非效率）和硬件相关；对于 C，内存容量可以堆上去。
+
+### 计组王道选择题 2 刷第 2 章
+
+![2.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeZqx7Wg_KjAtFhVVD4S_6pLg4faHgAC5hJrGz_BQFazZ61K0zv5oQEAAwIAA3gAAz0E)
+
+第 9 题错选为 A，属于低级错误。对于这种题尤其需要注意补码的范围，千万不要想当然。补码可以表示 -2^63~2^63-1，对于无符号数则是 0~2^64-1。
+
+第 10 题错选为 C。本题需要注意，在没有 IEEE 的语境之下，移码的默认偏移量就是 2^(n-1)，而不是 IEEE 浮点数的标准。
+
+![2.1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAedqx7XVcI-Q68d3hXS2vb7-MjgqTwAC5xJrGz_BQFaikJMMJSsCHQEAAwIAA3gAAz0E)
+
+错选为 B。注意 0。
+
+![2.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAepqx7aRKECATAPy950wVRLcybw_zAAC6RJrGz_BQFYYGz89MddfbwEAAwIAA3gAAz0E)
+
+错选为 C。属于低级错误。
+
+![2.1.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAetqx7bF5zJfU38CX9h2kUBxI2-luwAC6hJrGz_BQFaBo37_v9d5KQEAAwIAA3gAAz0E)
+
+错选为 B。本题和后续的概念混淆，对于主存地址（显然没有负数），但是对于偏移寻址的偏移量而言，是有正负的概念之分的。
+
+![2.1.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAexqx7bsZTZt6YkguVQIwW7gKaejpQAC7BJrGz_BQFZf9aIUNRzvwAEAAwIAA3gAAz0E)
+
+本题错选为 A，属于低级错误，65536。unsigned short 首先先扩展为 unsigned int，也就是从 FFFA 扩展为 0000FFFA。
+
+![2.1.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAe1qx7b_4nFueqjvcv30_LGgaEGIWAAC7RJrGz_BQFa41dxmlQrAsAEAAwIAA3gAAz0E)
+
+错选为 B。对于这类题总结一下，首先先基于原来的性质去扩展位数，也就是从 short 先扩展为 int，从 -32767，也就是 1-2^15，即 8000 0000 0000 0001，扩展为 FFFF FFFF FFFF FFFF 8000 0000 0000 0001，然后再根据 unsigned int 去解释，也就是 2^32-1-(2^15-1-2)=2^32-2^15+1。
+
+![2.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAe5qx7cZmuDLt0R0MH8YgZpGX2E07AAC7hJrGz_BQFbZkS3CKXk8mAEAAwIAA3gAAz0E)
+
+本题错选为 C，为低级错误。算数左移不会发生溢出=符号位不变，向左移动一位，只有 D 的第一位是保持不变的。
+
+![2.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAe9qx7cvnXZoOshrt8KpF55v7atzmQAC7xJrGz_BQFYSplHsmYq7-AEAAwIAA3gAAz0E)
+
+本题错选为 C。根本。
+
+![2.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfFqx7eg1K7Qz-b-Y_UQtQX3QjcmtwAC8BJrGz_BQFax2nuCchZ0ogEAAwIAA3gAAz0E)
+
+本题错选为 B，逻辑混乱了，属于低级错误。[-y]补=10000010，[x]补+[-y]补=11110101+10000010=1 01110111，溢出，所以 OF 是 1。而由于是减法，所以补 1，所以这道题应该选 A。
+
+![2.2.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfJqx7f6rOlDIEBCQs3w2M-O943-RwAC9BJrGz_BQFYCv8IIDw_DfQEAAwIAA3gAAz0E)
+
+第 31 题错选为 B。按照朴素的想法，显然按照有符号数解释，FFFF FFFFH=-1，FFFF FFF0H=-16，相减后肯定不会溢出，所以 OF=0，而按照无符号数解释，FFFF FFFFH>FFFF FFF0H 显然成立，够减，所以显然 CF=0。
+
+对于这道题，理解错了 CF 的具体含义，CF 的计算方式是：A(加法为 0，减法为 1) 异或进位，朴素的可以理解为加法会不会溢出，减法够不够减，而不是判断有没有溢出。
+
+第 32 题错选为 A。本题错误原因与 31 类似。显然按照有符号数去解释是不会发生溢出的，而按照无符号数去解释，是一个小的数去减一个很大的数，肯定不够减，所以 CF=1。
+
+![2.3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfRqx7g4KLSMYrldnloQTCnj7OqKZgAC9hJrGz_BQFZLpqSaU1t6lgEAAwIAA3gAAz0E)
+
+本题错选为 C，忽略了非规格化小数。
+
+![2.3.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfVqx7hOwoDZYq5_I84KES26Z4WD_AAC9xJrGz_BQFaxSopylAaxVQEAAwIAA3gAAz0E)
+
+本题错选为 C。尤其需要注意“边界对齐”。观察这个 struct，char 占 1，unsigned(int) 占 4，char 占 1，所以每一个结构体都是 12，所以 phone 的起始地址是 +8，也就是 A。
+
+![2.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfZqx7hhBoFXMm3OQAzfx6GO0JL4RQAC-BJrGz_BQFYc3-3Na_wuIAEAAwIAA3gAAz0E)
+
+第 25 题错选为 C。属于低级错误，先计算再解释（也就是和别人合并的时候才强制类型转换，而不是一开始就强制类型转换。
+
+第 26 题错选为 B。先过。
+
+![2.3.30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfdqx7iHSynKFqS64wEY3qdogEKLmgAC-RJrGz_BQFaMreOzZ5zlOQEAAwIAA3gAAz0E)
+
+错选为 A。一样是边界对齐的问题。273=00 00 00 01 00 01 00 01，按照小端存储，第一个是 01，而对于 record.c，因为边界对齐，所以 short 必须得是偶数开头，所以得再 +1。
+
+![2.3.37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfhqx7ie6TF-XhTsGnk4D2t4pIF4fQAC-hJrGz_BQFbgb0Ue64saFQEAAwIAA3gAAz0E)
+
+本题错选为 B。short 为 2，int 为 4，边界对齐，所以 x2 的首地址为 2020FE04H，由于采用的是小端法存储，所以机器数 00 先存，也就是 00，00，34，12，也就是 D。
+
+![2.3.42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAflqx7i5NHiCt65xEZEISOeHyCkbJQAC-xJrGz_BQFZ0h2RodezjQQEAAwIAA3gAAz0E)
+
+本题错选为 B。1000 0000 0010 0000 0000 0000 0000 0000，即符号位：1，阶码：0000 0000，尾数：0100…，所以本题为非规格化的小数，-2^126(0.01)，也就是移两位，所以也就是 A。
+
+![2.3.45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfpqx7joavsNSE97ekxhtX_ZjrssSQAC_BJrGz_BQFY33U83JjBsVwEAAwIAA3gAAz0E)
+
+本题错选为 A，一样也是边界对齐问题，struct 结构体：4+10(+2)+4，所以 0000A0B0+20=0000A0C4，由于采用的是小端法，所以 78，56，也就是 C5。
+
+### 计组王道选择题 2 刷第 3 章
+
+![3.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAftqx7kSaWdDq_I80iK0_aZto76l6gAC_RJrGz_BQFa08emSl8hxTwEAAwIAA20AAz0E)
+
+本题错选为 D。本题主要是辨析存储时间和存储周期的概念，存储时间仅包含具体的 IO，而存储周期需要包含 IO 的恢复。
+
+![3.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfxqx7koyEEv6D__Bj9okpgGP5rG2wAC_hJrGz_BQFYue5dkAo5hXQEAAwIAA20AAz0E)
+
+本题错选为 A。本题与 1 刷时错因类似，随机存储器指的是 RAM
+
+![3.2.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAf1qx7lELimCeMrZT7zitwptDD2_QwAC_xJrGz_BQFaM5HhCzlfFiwEAAwIAA3gAAz0E)
+
+本题错选为 A。读取 6 个连续地址的存储字，重复 80 次，也就是需要 120 个 4 时间单位，读取 8 个连续地址单元存放的存储字，重复 60 次，也就是需要 120 个 4 时间单位，这是错误的想法。
+
+正确的想法应该是绘制时空图，存取 6 个连续地址的存储字，1 次需要 5 个时间单位，重复 80 次需要 400 个时间单位；读取 8 个连续地址单元的存放字，1 需要 5 个时间单位，重复 60 次需要 300 个时间单位，所以 400:300=4:3。
+
+本题需要注意这道题不是流水线，而是 1 次操作后重复。
+
+然而即便是采用流水线，本题稳定下来的时间 1 和 2 是一样的，所以只是看重复次数。
+
+![3.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAf5qx7lbkaLyGK0d8jVJ6Ulzqs6m0gADE2sbP8FAVqJEXHnb7DBEAQADAgADeAADPQQ)
+
+本题错选为 C。和 1 刷时错的地方类似。
+
+![3.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAf9qx7l3438jqDnC_fzCxawQe-iXrQACARNrGz_BQFa3LxJ5YlVjqAEAAwIAA3gAAz0E)
+
+本题错选为 C。注意高位和低位。
+
+![3.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgABase5yfoc6vVbBOh_yZWrjBFSCFcAAgMTaxs_wUBWpaIbLQq8YSYBAAMCAAN4AAM9BA)
+
+本题错选为 C。主存空间大小为 64MB，也就意味着至少需要 2^26，由于采用的是 4M*8 位的，也就是需要 4 块芯片来组成 32MB。由于你不知道这块主存放在哪，有可能放在后续的位置，所以还是需要 64MB。
+
+本题需要辨析主存地址空间大小和实际存储容量。主存地址空间是 CPU 主板硬件设计时允许的最大寻址范围，而实际主存容量是掏钱自己买的。
+
+![3.4.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgFqx7nrPgZK2dDTGaJO_aN8Hn-PVwACBBNrGz_BQFa1ssSDabBuwwEAAwIAA20AAz0E)
+
+本题错选为 B，本质是对 DMA 方式的不理解，磁盘采用的是 DMA 方式与主存交换数据，对于 D，显然错误。
+
+![3.5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgJqx7oJdI5cXa3fbKa26FBmZ7LJvgACBhNrGz_BQFYWiKw2Jiu50QEAAwIAA20AAz0E)
+
+本题错选为 A。对于 1，由于指令一般是顺序执行的，而数据只是数据，所以 1 正确；对于 2，“适当”，是正确的；对于 3，回写法是在修改的时候写 cache，而不是写主存，所以少于直写法。
+
+![3.5.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgNqx7ppkEPAmFHH_XzJOiRw0ue8dgACCRNrGz_BQFZ_F79FV1qQ8AEAAwIAA3gAAz0E)
+
+本题错选为 D。解题方法 1 刷复盘时写了。
+
+![3.5.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgRqx7qM4x0AAaGsqrO-7fcoI5nvefkAAgoTaxs_wUBWpJC1yF8mrcgBAAMCAAN4AAM9BA)
+
+本题错选为 B，具体原因 1 刷那里写了。
+
+![3.5.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgVqx7qxoMqLvDLQAAHNhWERD-saIiwAAgsTaxs_wUBWdSpGv_q8lOoBAAMCAAN4AAM9BA)
+
+第 29 题错选为 A。显然这道题是从 0 开始编址，129 号存储单元即 129/32=4，也就是存储在第 4 块主存块（按从 0 开始算）。采用 2 路组相联，所以需要 16/2=8，也就是 3 个 bit 存储 cache 行号。由于存储在 4 号主存块，所以 4%8=4，所以应该存放在第 4 组。
+
+通过这道题辨析一下主存单元的概念，主存单元来源于计算机如何编址，按照字节编址，一个主存单元就是一个字，其他同理。
+
+对于这类题，也可以直接展开为 16 进制取对应的位，也是一样的（其实等同于取模）
+
+第 30 题棍母，先跳了。
+
+![3.5.30 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgZqx7riWHbXWImryznfQz__Nc1G8gACDBNrGz_BQFZ3pvJevHvSfwEAAwIAA3gAAz0E)
+
+![3.5.32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgdqx7r2rj3zDFZCXiZoYpgiJPRNQwACDRNrGz_BQFbDnikVghCMbgEAAwIAA3gAAz0E)
+
+本题错选为 D。由于采用直接映射，每块可以存储 16B/4B=4 个 int 数据，所以每访问 4 个数据就有 1 次 cache 缺失，而需要注意的是，本题每次访问两次 a[k]，总共方位 2000 次，也就是每访问 8 个数据 1 次 cache 缺失，所以最终答案是 C。
+
+![3.6.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAghqx7uicMf5A_dEKQGDWj9H3WPZHQACDhNrGz_BQFb0OKiTdqN_7QEAAwIAA3gAAz0E)
+
+错选为 C，与 1 刷时错误原因类似。
+
+![3.6.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAglqx7wPZW1fi0tOrXToo6BmbJJP5QACERNrGz_BQFYjXGJPIjrd-AEAAwIAA3gAAz0E)
+
+本题错选为 C。本题错选为 C，显然 D 是错的。TLB 和 cache 都采用 SRAM，其中 TLB 也可以采用相联存储器 CAM。SRAM 是静态随机存储器。TLB 本质上是内存的一块区域。
+
+![3.6.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgpqx7wo0rOmCOTErZDsqJxjnIAXmQACEhNrGz_BQFaQy8xrOU7UNQEAAwIAA3gAAz0E)
+
+本题错选为 C。TLB 的标记字段是虚拟地址。由于 TLB 页大小为 1 个页，所以需要 10bit 来存储块内地址，由于采用 4 路组相联，所以 32/4=8，需要 3bit 来存储 TLB 行号，所以 32-3-10=19。
+
+### 计组王道选择题 2 刷第 4 章
+
+![4.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgtqx7xYPX_rGLBKvr87_Ovq_MblfwACExNrGz_BQFYHGIUaFaRq3wEAAwIAA3gAAz0E)
+
+本题错选为 B，与 1 刷时错误原因类似。
+
+![4.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgxqx7xtiRFe10PW6DZf4zPLoyCkiwACFBNrGz_BQFbnFVU1NwcjrQEAAwIAA20AAz0E)
+
+本题错选为 C，与 1 刷时错误原因类似，属于低级错误。
+
+![4.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAg1qx7yHKSmA9-KopZCz_FUsPBS1MAACFRNrGz_BQFapiTySaZZYfgEAAwIAA3gAAz0E)
+
+本题错选为 A。R2 的值为 1234H，1234H 存放的数据为 56H，由于寄存器是 16 位，所以应该是移动 2B 到寄存器里，所以是将 1234H 和 1235H 的内容移动到 R1，由于采用小端法，所以在以人类的视角阅读时，和计算机是反过来的，所以低地址的在后面，高地址的在前面，也就是 7856H。
+
+![4.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAg5qx7ydXCGa0-4yPDfKZMaMaVdMOAACFhNrGz_BQFZLTEiAcZeMLwEAAwIAA3gAAz0E)
+
+本题错选为 B。机器字长为 16 位，采用相对寻址，2 字节组成，显然一条指令长度为 2B，所以每次 PC 值应该 +2，所以由于本来在 2000H，自动 +2，也就是 2002H，转移 06H，即 2008H。
+
+![4.2.30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAg9qx7yy29PqJNDzNp9gL7IGsRtcKgACFxNrGz_BQFY8tHEWRvZwNwEAAwIAA3gAAz0E)
+
+第 30 题错选为。考虑 double 型数组占 64bit，即 8B。也就是说，2100H-2000H=100H 即 0001 0000 0000，100H>>3=20H=0010 0000H，即 32。本题没有搞清楚 16 进制和 2 进制的相关问题。
+
+第 31 题错选为。显然，该地址为 F000 0000H+FFFF FF12H=EFFF FF12H，由于采用大端法，所以 12H 作为高位存储在 EFFF FF12H，而 00H 存放在 EFFF FF15H。
+
+第 32 题错选为 C。48 条指令意味着意味着指令长度有 2^6，也就是需要用 6 位表达，寻址方式 4 种即 2 位表示，所以还剩下 16-2-6=8 位可以用来表示地址长度，由于直接寻址只有正数，主存地址不可能为负。
+
+### 计组王道选择题 2 刷第 5 章
+
+--------------
 
 ## OS 王道选择题 2 刷
 
@@ -3272,3 +3843,7 @@ func P3(){
 此外还可以注意，对这类题还可能结合 NAT 考（而且非常常见）
 
 ### 408 2010 真题 2 刷
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAd9qx7CDmiJU2MZ1spWrfrDErbyqXQAC1hJrGz_BQFZ7oiDf9VGuAQEAAwIAA3gAAz0E)
+
+本题应该选
