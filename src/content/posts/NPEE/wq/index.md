@@ -3472,49 +3472,49 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![1.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwxqyLiRx6CYeYGIGLkUW7b99eO4BgACqBJrG6T-SFaMCohDlYcyPwEAAwIAA3gAAz0E)
 
-本题第2空错选为B。数据无差错的传送，不应选择的方式是电路交换。这里辨析一下电路交换的特点，其是连接一条物理线路，没有差错校验，直接发，毕竟是纯硬件。
+本题第 2 空错选为 B。数据无差错的传送，不应选择的方式是电路交换。这里辨析一下电路交换的特点，其是连接一条物理线路，没有差错校验，直接发，毕竟是纯硬件。
 
 ![1.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAw1qyLiprP6gdW06QvXKCcktfJOD_wACqxJrG6T-SFYJM2_vkbrtGwEAAwIAA3gAAz0E)
 
 ![1.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAw5qyLi24xbUc1-7QH00Gegqe6zl6QACrBJrG6T-SFbuLHXJxfms9wEAAwIAA3gAAz0E)
 
-本题错选为A。与1刷时候一样的傻逼错误。
+本题错选为 A。与 1 刷时候一样的傻逼错误。
 
 ![1.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAw9qyLjzE9qi3tkr7cbmpWTTpC2x8QACrhJrG6T-SFbsOx2BwZAasgEAAwIAA3gAAz0E)
 
-本题错选为D。显然物理层向上运输的时候不会参与数据封装，对于表示层，表示层的作用是数据格式转换与压缩，会话层的作用是打断点。
+本题错选为 D。显然物理层向上运输的时候不会参与数据封装，对于表示层，表示层的作用是数据格式转换与压缩，会话层的作用是打断点。
 
 ![1.2.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxBqyLkG-JZhJHtJUeNuBUv2WEhbGwACtxJrG6T-SFbvhZuBtVhCWAEAAwIAA3gAAz0E)
 
-本题第3空错选为C。打断点是会话层的功能。
+本题第 3 空错选为 C。打断点是会话层的功能。
 
 ### 计网王道选择题 2 刷第 2 章
 
 ![2.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxJqyLk0aekJRt3OIat2ErQaCKWbnQACuBJrG6T-SFadfEIn_RMHzAEAAwIAA3gAAz0E)
 
-本题错选为C。不包含，属于低级错误。
+本题错选为 C。不包含，属于低级错误。
 
 ![2.1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxNqyLlF2Np_T1lxlMN81Eo27-hGKAACuRJrG6T-SFaDC2jRMR_YFQEAAwIAA3gAAz0E)
 
-第13题错选为B。信道带宽为3000Hz，信噪比为30dB，考虑无噪声的信道，也就是2*3000*log2V，本题没给V，忽略；考虑有噪声的信道，Wlog2(1+1000)=3000*10=30kb/s。
+第 13 题错选为 B。信道带宽为 3000Hz，信噪比为 30dB，考虑无噪声的信道，也就是 2*3000*log2V，本题没给 V，忽略；考虑有噪声的信道，Wlog2(1+1000)=3000*10=30kb/s。
 
-第14题没做出来，还是要理解频的概念，是个范围。
+第 14 题没做出来，还是要理解频的概念，是个范围。
 
 ![2.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxRqyLlXiivjsv1hi9RZ8I4aj6lUOAACuhJrG6T-SFbrV9UYA1PgRwEAAwIAA3gAAz0E)
 
-本题错选为D。每1/8s采样一次，固定上限是8Hz，所以Wlog2V=32。
+本题错选为 D。每 1/8s 采样一次，固定上限是 8Hz，所以 Wlog2V=32。
 
 ![2.1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxVqyLlqqKtU9FLKo3g8aHzNbiBK5wACuxJrG6T-SFZ5eYr-axtRRQEAAwIAA3gAAz0E)
 
-本体错选为C。信号传播速度指的是RTT相关，也就是光信号/电信号本身的传播速度，数据传输速率指的是发送时延，也就是bps。
+本体错选为 C。信号传播速度指的是 RTT 相关，也就是光信号/电信号本身的传播速度，数据传输速率指的是发送时延，也就是 bps。
 
 ![2.1.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxZqyLmMB24QuT6xrjR8MV_L84RBcgACvBJrG6T-SFbD5RYkBs7EsgEAAwIAA3gAAz0E)
 
-本题错选为C。考虑有噪声的信道，即Wlog2(1+1000)=8000*10=80kb/s，除以2即C。考虑无噪声的信道，即2Wlog2V，此处没有提供V，所以不需要考虑。
+本题错选为 C。考虑有噪声的信道，即 Wlog2(1+1000)=8000*10=80kb/s，除以 2 即 C。考虑无噪声的信道，即 2Wlog2V，此处没有提供 V，所以不需要考虑。
 
 ![2.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxdqyLmil5yklN1DvLfi2_6rX4Cy1QACvRJrG6T-SFZ5rWvh0nQ39gEAAwIAA3gAAz0E)
 
-电器特性指的是多少伏之类的，逻辑0和逻辑1对应的电压区间是什么；
+电器特性指的是多少伏之类的，逻辑 0 和逻辑 1 对应的电压区间是什么；
 
 功能特性：引脚的语义。
 
@@ -3522,267 +3522,267 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![2.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxhqyNXlsTEIAqd_n2cID-nTGt5j8QAC1RJrG6T-SFbyWS2HN2WHKwEAAwIAA3gAAz0E)
 
-本题错选为A，没看完选项。
+本题错选为 A，没看完选项。
 
-### 计网王道选择题 2 刷第3章
+### 计网王道选择题 2 刷第 3 章
 
 ![3.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxlqyNZXRPI2HEFtf5jUiWbXYsZ-twAC1xJrG6T-SFYqX2FD8il1pwEAAwIAA3gAAz0E)
 
-第3题错选为C。D是网络层的作用，对于C，可理解为MAC子层，MAC需要对特定的物理链路进行控制。
+第 3 题错选为 C。D 是网络层的作用，对于 C，可理解为 MAC 子层，MAC 需要对特定的物理链路进行控制。
 
-第4题错选为B。循环冗余校验是校验手段，而不是能保证帧重传。
+第 4 题错选为 B。循环冗余校验是校验手段，而不是能保证帧重传。
 
 ![3.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxpqyNZtv09cvMk6bsCL2BXlBzesqwAC2BJrG6T-SFa8SOWkg8Lm6AEAAwIAA3gAAz0E)
 
-本体错选为C。流量控制是对发送方的数据流量控制，拥塞控制是对接收方的数据流量控制。
+本体错选为 C。流量控制是对发送方的数据流量控制，拥塞控制是对接收方的数据流量控制。
 
 ![3.4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxtqyNZ9_CPwErnW7w0sqZl6ww7RWgAC2RJrG6T-SFa-WAjMOl5SagEAAwIAA3gAAz0E)
 
-本题错选为D，属于低级错误，和一刷时类似。
+本题错选为 D，属于低级错误，和一刷时类似。
 
 ![3.4.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxxqyNa34hADyYybaQh5qQwtQUWRKwAC3xJrG6T-SFYbGSGlr-g7GQEAAwIAA3gAAz0E)
 
-本题错选为B，和一刷时一样的错误。
+本题错选为 B，和一刷时一样的错误。
 
 ![3.4.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAx1qyNfDycwagF05QyMyj6vx1xduAgAC4RJrG6T-SFYlJp52tIRNngEAAwIAA3gAAz0E)
 
-本体错选为C。发送窗口最大为n-1。
+本体错选为 C。发送窗口最大为 n-1。
 
 ![3.4.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAx5qyNfZfCsKWmOwrl8uOzyshhmo8wAC4hJrG6T-SFaUSNFXV8wCYQEAAwIAA3gAAz0E)
 
-本题错选为B。假设数据帧长度为x，即(x/3000)/(x/3000+RTT)=0.4，即x=800bit。
+本题错选为 B。假设数据帧长度为 x，即 (x/3000)/(x/3000+RTT)=0.4，即 x=800bit。
 
 ![3.4.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAx9qyNf1UUhfvHk1hXslJ3lbw5oYgQAC4xJrG6T-SFYksGAtP2tvxQEAAwIAA3gAAz0E)
 
-第28题错选为A。和1刷一样的错误。
+第 28 题错选为 A。和 1 刷一样的错误。
 
-第29题错选为A。1000*8/10000=800ms，800/(800+800+400)=0.4。
+第 29 题错选为 A。1000*8/10000=800ms，800/(800+800+400)=0.4。
 
 ![3.5.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyBqyNgVor7PoMpAPwQsWn5Zz5aaNwAC5hJrG6T-SFbhlnZhFbzvGQEAAwIAA3gAAz0E)
 
-本题错选为C。对于C是物理层的作用，MAC层不提供可靠的数据传输，MAC子层上面还有一个小的层？那个层才是对上层协议提供服务。上半层是LLC子层，也就是逻辑链路。不同的MAC层上面必须得有一个一样的LLC。
+本题错选为 C。对于 C 是物理层的作用，MAC 层不提供可靠的数据传输，MAC 子层上面还有一个小的层？那个层才是对上层协议提供服务。上半层是 LLC 子层，也就是逻辑链路。不同的 MAC 层上面必须得有一个一样的 LLC。
 
 ![3.5.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyFqyNg3VyLtglTqiTZjImSOL5LqqgAC5xJrG6T-SFa2NCgiLnTp0gEAAwIAA3gAAz0E)
 
-这两题和1刷一样。
+这两题和 1 刷一样。
 
 ![3.5.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyJqyNhJMv-5VgflM15sQ2elomx6GwAC6BJrG6T-SFbgLMwChzuj5gEAAwIAA3gAAz0E)
 
-本体错选为A，脑子抽了选了A。
+本体错选为 A，脑子抽了选了 A。
 
 本质是理解问题，CSMA 的 1-坚持是空闲立刻发，不空闲死守；非坚持协议是空闲立刻发，不空闲立刻放弃；p-坚持是空闲以 p 的概率发送，不空闲死守。
 
 ![3.5.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyNqyNkZdbkeK8CSfGNLAxRvkuZrRwAC6RJrG6T-SFY2lwABYBSF178BAAMCAAN4AAM9BA)
 
-本体错选为D，和1刷的时候一样的错误。
+本体错选为 D，和 1 刷的时候一样的错误。
 
 ![3.5.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyVqyNnvGAnwVWSgw_u-eA617n6tJQAC6hJrG6T-SFbsrVbpayTsXAEAAwIAA3gAAz0E)
 
-本体错选为D。这道题只算了D的分别和a，而没有算他们之间相互也得正交。
+本体错选为 D。这道题只算了 D 的分别和 a，而没有算他们之间相互也得正交。
 
 ![3.6.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyZqyNoAATWZSSLfAZqfmQ8K1NEupEcAAuwSaxuk_khWI0I4_yE62HEBAAMCAAN4AAM9BA)
 
-本题错选为A。第2次重传，是0至2^2-1，所以最大是3，也就是3*争用期。
+本题错选为 A。第 2 次重传，是 0 至 2^2-1，所以最大是 3，也就是 3*争用期。
 
 ![3.6.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAydqyNoUi2UGVA_59LWEsET15g0Q9wAC7RJrG6T-SFaJZPvXelL8bQEAAwIAA3gAAz0E)
 
-本题错选为B，默认为粗同轴电缆，细同轴电缆也只是180m。
+本题错选为 B，默认为粗同轴电缆，细同轴电缆也只是 180m。
 
 ![3.6.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyhqyNq3hV7bv5bC6pNee_-Eq_srsQAC7xJrG6T-SFalkYv48Se6KQEAAwIAA3gAAz0E)
 
-本题和1刷一致的错误。
+本题和 1 刷一致的错误。
 
 ![3.7.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAylqyNrS_NH2uZmfm5pYGAmEZpS9IwAC8RJrG6T-SFZ1uAABRA8H-1sBAAMCAAN4AAM9BA)
 
 ![3.7.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAypqyNrliC-F4TnVPW4hWooP6EcrjwAC8hJrG6T-SFbF6D1rFrmQUAEAAwIAA3gAAz0E)
 
-第7题错选为C。第8题错选为A，均和1刷一样的错误。
+第 7 题错选为 C。第 8 题错选为 A，均和 1 刷一样的错误。
 
 ![3.8.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAytqyNr7sqAjZmtpyyJwW8b2HhTNPwAC9BJrG6T-SFZpU5HB5GvtYgEAAwIAA3gAAz0E)
 
 ![3.8.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyxqyNsO_otz9yeAaccgavukN5SwfQAC9hJrG6T-SFbhTF8HG5fxTAEAAwIAA3gAAz0E)
 
-第10题错选为D。与1刷一致的错误。
+第 10 题错选为 D。与 1 刷一致的错误。
 
-第11题错选为A，与1刷一直的错误。
+第 11 题错选为 A，与 1 刷一直的错误。
 
 ![3.8.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAy1qyNsoJm3CJETtiUQ6L58C5ixE0wAC9xJrG6T-SFYlLAJOkzB9oQEAAwIAA3gAAz0E)
 
-本题错选为A。这里是交换机，需要注意。ARP协议是主机干的。
+本题错选为 A。这里是交换机，需要注意。ARP 协议是主机干的。
 
 ![3.8.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAy5qyNtUvxAUIqnpE1C4xhOM0Z4rHgAC-BJrG6T-SFb6__OKrCdquAEAAwIAA3gAAz0E)
 
-本题错选为C，与1刷一致错误。
+本题错选为 C，与 1 刷一致错误。
 
 ### 计网王道选择题 2 刷第 4 章
 
 ![4.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAy9qyNuFWh4bQ1Hvojmm5kCFRKx2FAAC-RJrG6T-SFZQbZOCctsH0AEAAwIAA20AAz0E)
 
-本体错选为A。细想之下属于低级错误。
+本体错选为 A。细想之下属于低级错误。
 
 ![4.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzBqyNubSGHNv3zP9o0Y6g-VbT6hyAAC-hJrG6T-SFb7xu0OKcvbhwEAAwIAA3gAAz0E)
 
-本题错选为A，与1刷一致错误。
+本题错选为 A，与 1 刷一致错误。
 
 ![4.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzFqyNv4PrmehH26ce8UVg6uj9ialgAC_BJrG6T-SFZBe9zopPc0vgEAAwIAA3gAAz0E)
 
-本题错选为A，与1刷一样的错误。
+本题错选为 A，与 1 刷一样的错误。
 
 ![4.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzJqyNwwJ8kYypA1qIoPoqKKHGxk2gAC_hJrG6T-SFYQZQdfcrrqMwEAAwIAA3gAAz0E)
 
-本题错选为C。2，4显然正确，对于1，并非物理，对于3，并且位于交换机中。
+本题错选为 C。2，4 显然正确，对于 1，并非物理，对于 3，并且位于交换机中。
 
 ![4.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzNqyNxSVN_ywOlDwB0bD_Sgp_CzTAAC_xJrG6T-SFacXfK9UuTOyAEAAwIAA3gAAz0E)
 
-错选为D。对于B，需要汇报终点不可达。
+错选为 D。对于 B，需要汇报终点不可达。
 
 ![4.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzRqyNyr5sqOpeejviJlyn26coCWbwADE2sbpP5IVg8zYO1DFov8AQADAgADeAADPQQ)
 
-本题错选为C。属于低级错误。比对子网掩码即可。
+本题错选为 C。属于低级错误。比对子网掩码即可。
 
 ![4.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzVqyNzAa_d8byJDoOng--_uogUYTQACARNrG6T-SFZfvi5M3VJVGwEAAwIAA3gAAz0E)
 
-本题错选为C。和1刷一致的错误。
+本题错选为 C。和 1 刷一致的错误。
 
 ![4.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzZqyN5yq9dpxkPdAxPQRs716oulkQACAxNrG6T-SFbXpRhbIZEHHQEAAwIAA3gAAz0E)
 
-本题错选为D。划分为子网反而还减少了网络数量。
+本题错选为 D。划分为子网反而还减少了网络数量。
 
 ![4.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzdqyN6CQw3is-JyjN5IZ_STjIahYwACBBNrG6T-SFYRkVN73WvxKAEAAwIAA3gAAz0E)
 
-本题错选为D。为什么一个主机的两个网卡的IP地址必须属于不同的网络？IP地址是被网卡所拥有的，但是接受和发送是属于电脑的。所以进行ARP的时候，如果处于同一个网络，那么就都会回，发送也是一样的。
+本题错选为 D。为什么一个主机的两个网卡的 IP 地址必须属于不同的网络？IP 地址是被网卡所拥有的，但是接受和发送是属于电脑的。所以进行 ARP 的时候，如果处于同一个网络，那么就都会回，发送也是一样的。
 
 ![4.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzhqyN6pDtnKZdLqP0XtGdXojMm60AACBRNrG6T-SFbBmV0fTYyrZAEAAwIAA3gAAz0E)
 
-本题错选为A。如果配了不属于这个子网的，确实会炸，但是不是这道题的原因。
+本题错选为 A。如果配了不属于这个子网的，确实会炸，但是不是这道题的原因。
 
 ![4.2.40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzlqyN7AHrtfcnT6NsGVTuuYZd0NTAACBhNrG6T-SFaqGCgvpmcRswEAAwIAA3gAAz0E)
 
-第40题错选为A。和1刷时错误一样。
+第 40 题错选为 A。和 1 刷时错误一样。
 
-第41题错选为B。属于低级错误。
+第 41 题错选为 B。属于低级错误。
 
 ![4.2.54](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzpqyN7f1_c3gQxzGi-gs9MVviZ5aAACBxNrG6T-SFYEnYXcYUkGUQEAAwIAA3gAAz0E)
 
-本体错选为B。发送广播分组，意味着子网掩码非1的部分全为1。
+本体错选为 B。发送广播分组，意味着子网掩码非 1 的部分全为 1。
 
 ![4.2.58](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAztqyN8AAZciAxcq14wRQi908I8w7igAAggTaxuk_khWXlH1TuyylwEBAAMCAAN4AAM9BA)
 
-本题错选为B。假设初始什么都有没有。对于A，H1要向H2发送报文。首先检测到H1和H2在同一个子网，所以不需要交给默认路由，查询ARP表，发现没有ARP缓存，于是向子网内广播，收到H2的MAC地址后直接传输即可，对于H2向H1发送同理。对于B，H2要访问互联网，假设H2需要发信息包到8.8.8.8，检测到非本网络，于是发送到默认路由，因为没有ARP缓存，所以发送ARP请求。结果因为R2过滤了ARP，所以无论如何也拿不到R3的MAC地址，至此结束，不能访问因特网，H4要访问互联网，检测到非本网络，于是发给默认路由，因为没有ARP缓存，所以发送ARP请求，得到R2的MAC地址后，由R2转发到互联网。对于C，H1想和H3通信，检测到非本地网络，所以向默认路由发送ARP请求，得不到MAC地址，所以不能。对于D，显然可以。
+本题错选为 B。假设初始什么都有没有。对于 A，H1 要向 H2 发送报文。首先检测到 H1 和 H2 在同一个子网，所以不需要交给默认路由，查询 ARP 表，发现没有 ARP 缓存，于是向子网内广播，收到 H2 的 MAC 地址后直接传输即可，对于 H2 向 H1 发送同理。对于 B，H2 要访问互联网，假设 H2 需要发信息包到 8.8.8.8，检测到非本网络，于是发送到默认路由，因为没有 ARP 缓存，所以发送 ARP 请求。结果因为 R2 过滤了 ARP，所以无论如何也拿不到 R3 的 MAC 地址，至此结束，不能访问因特网，H4 要访问互联网，检测到非本网络，于是发给默认路由，因为没有 ARP 缓存，所以发送 ARP 请求，得到 R2 的 MAC 地址后，由 R2 转发到互联网。对于 C，H1 想和 H3 通信，检测到非本地网络，所以向默认路由发送 ARP 请求，得不到 MAC 地址，所以不能。对于 D，显然可以。
 
 ![4.2.63](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzxqyN8eZV7g5qC5wD1C3T5eyl_9-wACCRNrG6T-SFbjynlutSo2QgEAAwIAA3gAAz0E)
 
-本体错选为B。注意本题非CSMA/CA协议的以太网帧，但事实类似的。对于IP地址，过路由器不会换IP地址，但是会换MAC地址。本题只需要会读题，就能做对。
+本体错选为 B。注意本题非 CSMA/CA 协议的以太网帧，但事实类似的。对于 IP 地址，过路由器不会换 IP 地址，但是会换 MAC 地址。本题只需要会读题，就能做对。
 
 ![4.4.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAz1qyN9mor0AAR2GJKIfGfb34HqDdioAAgoTaxuk_khW2Mr3NMnwncABAAMCAAN4AAM9BA)
 
-本题错选为D，与1刷类似的错误。
+本题错选为 D，与 1 刷类似的错误。
 
 ![4.7.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAz5qyN-DFSqokF8QoI8o6vutzgHqJgACCxNrG6T-SFYHP1q-r5GhVAEAAwIAA20AAz0E)
 
-本题错选为D。和1刷时候错误类似。
+本题错选为 D。和 1 刷时候错误类似。
 
 ![4.7.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAz9qyN-f8p6N_ENbnHQmZdy0P24xnQACDBNrG6T-SFbfud0m0GTcmgEAAwIAA3gAAz0E)
 
-本题错选为D，与1刷时错误类似。
+本题错选为 D，与 1 刷时错误类似。
 
-### 计网王道选择题2刷第5章
+### 计网王道选择题 2 刷第 5 章
 
 ![5.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0BqyN_LJulkoSRr1w0hE3VtQtORhAACDRNrG6T-SFZX5FKAnaZ3VAEAAwIAA3gAAz0E)
 
-本题错选为D。200B，UDP8B，IP60B，以太网662N4。
+本题错选为 D。200B，UDP8B，IP60B，以太网 662N4。
 
 ![5.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0JqyN_xaKpP8hhzajETSBlZ2NeRSQACDhNrG6T-SFbE2YekqvbH4gEAAwIAA3gAAz0E)
 
-第15题错选为A。复用指的是根据源端口号去找其他的，分用是到达目的端口号。
+第 15 题错选为 A。复用指的是根据源端口号去找其他的，分用是到达目的端口号。
 
-第16题错选为B。注意回卷。
+第 16 题错选为 B。注意回卷。
 
 ![5.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0NqyOAIXVCjuzc7Z3nA25pCY-azPAACDxNrG6T-SFayKaghslz4_QEAAwIAA20AAz0E)
 
-本题错选为C。TCP的IP分组协议号为6，UDP的IP分组协议号为17。
+本题错选为 C。TCP 的 IP 分组协议号为 6，UDP 的 IP 分组协议号为 17。
 
 ![5.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0RqyOAgPlxWOPn5FmTpRDZGi6DcNAACEBNrG6T-SFZ0abhwmUn5BwEAAwIAA3gAAz0E)
 
-第10题错选为A。首先注意量纲，齐次，我可不可以发和我应不应该发是两码事，这里题目并没有说是不是连续收到了三个ack，没有其他条件，所以就直接B就好了。
+第 10 题错选为 A。首先注意量纲，齐次，我可不可以发和我应不应该发是两码事，这里题目并没有说是不是连续收到了三个 ack，没有其他条件，所以就直接 B 就好了。
 
-第11题错选为。A收到ack=100的确认报文段，意味着B希望A发起始为100的数据，所以末序号为99的报文段都已经收到。
+第 11 题错选为。A 收到 ack=100 的确认报文段，意味着 B 希望 A 发起始为 100 的数据，所以末序号为 99 的报文段都已经收到。
 
 ![5.3.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0VqyOA1keKhc8n7CArr2551ZvUaWQACERNrG6T-SFZnvSUJIhNguAEAAwIAA3gAAz0E)
 
-第13题错选为B。接受方允许的窗口=接收窗口，发送方允许的窗口=最大可以发送的窗口，发送方窗口大小=min。
+第 13 题错选为 B。接受方允许的窗口=接收窗口，发送方允许的窗口=最大可以发送的窗口，发送方窗口大小=min。
 
-第14题错选为B。背书。对于A，为超时，对于B，是长时间没有数据交互，对于C，是四次挥手主动关闭的最后等待2MSL时间。
+第 14 题错选为 B。背书。对于 A，为超时，对于 B，是长时间没有数据交互，对于 C，是四次挥手主动关闭的最后等待 2MSL 时间。
 
 ![5.3.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0ZqyOBUKZdI6nymAAGsyEWZdeAf5cEAAhITaxuk_khW1Dv0mMZ97rMBAAMCAAN4AAM9BA)
 
-本题错选为A。发送方窗口由2000变成3000，意味着可以发3000B的数据，这里没有提到MSS。
+本题错选为 A。发送方窗口由 2000 变成 3000，意味着可以发 3000B 的数据，这里没有提到 MSS。
 
 ![5.3.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0dqyOCIdahXuZuOMd0h-DJfWKETrQACExNrG6T-SFbWPL2_0RMkNAEAAwIAA3gAAz0E)
 
-本题错选为A。拥塞窗口为34KB，发生超时，则拥塞窗口减为17KB，接下来的RTT里，第一个RTT结束是2KB，第2个RTT结束为4KB，然后是8KB，16KB。
+本题错选为 A。拥塞窗口为 34KB，发生超时，则拥塞窗口减为 17KB，接下来的 RTT 里，第一个 RTT 结束是 2KB，第 2 个 RTT 结束为 4KB，然后是 8KB，16KB。
 
 ![5.3.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0hqyOCYX2pTT_nWp_R3AuHd7DOOWwACFBNrG6T-SFaFbUtzs0qzvAEAAwIAA3gAAz0E)
 
-第35题错选为C。发送k个数据段，下一个阶段就发送2k个段。
+第 35 题错选为 C。发送 k 个数据段，下一个阶段就发送 2k 个段。
 
-第36题错选为A。显然为C。新门限值是当前的一半。
+第 36 题错选为 A。显然为 C。新门限值是当前的一半。
 
-第37题错选为C。收到了3个冗余ACK，则变成17KB。1RTT结束后为18KB，2-19，3-20，4-21。
+第 37 题错选为 C。收到了 3 个冗余 ACK，则变成 17KB。1RTT 结束后为 18KB，2-19，3-20，4-21。
 
 ![5.3.56](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0lqyOCtV4Nkiq-5nyJQ2u0UhQmPkgACFRNrG6T-SFbY5KikAwJt8AEAAwIAA3gAAz0E)
 
-本题错选为A。需要注意，这里没有说收到3个ACK，所以不需要重传。注意窗口被划分为两块，已发送未收到确认和未发送的。
+本题错选为 A。需要注意，这里没有说收到 3 个 ACK，所以不需要重传。注意窗口被划分为两块，已发送未收到确认和未发送的。
 
 ![5.3.60](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0pqyODM6z0y_QVbdBDrlNkkkHScsgACFhNrG6T-SFb-f7nIvdcrvAEAAwIAA3gAAz0E)
 
-本题错选为C。这里需要辨析一个概念，也就是每收到一个ack窗口+1MSS，从宏观上来看，确实是翻倍，但是从围观上来看是一个ack+1MSS。
+本题错选为 C。这里需要辨析一个概念，也就是每收到一个 ack 窗口 +1MSS，从宏观上来看，确实是翻倍，但是从围观上来看是一个 ack+1MSS。
 
-所以对于这道题，我收到了一个ack=3001，所以+1MSS，此时发送窗口是3，而3001-4000的数据还在没被确认，不需要再发，也没有到达三次ACK，所以只能发4001-6000，所以段数也就是2。
+所以对于这道题，我收到了一个 ack=3001，所以 +1MSS，此时发送窗口是 3，而 3001-4000 的数据还在没被确认，不需要再发，也没有到达三次 ACK，所以只能发 4001-6000，所以段数也就是 2。
 
-### 计网王道选择题2刷第6章
+### 计网王道选择题 2 刷第 6 章
 
 ![6.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0tqyODtBN6_if1sQ7ZQngZ-TsEs_gACFxNrG6T-SFbVXvaHqorBUgEAAwIAA3gAAz0E)
 
-本题错选为B。首先先找本地域名服务器，然后再委托本地域名服务器进行查询。
+本题错选为 B。首先先找本地域名服务器，然后再委托本地域名服务器进行查询。
 
 ![6.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0xqyOFBuSLB2wl1fWuTou48TAABTaEAAhgTaxuk_khWKHiRAAFPxDRdAQADAgADeAADPQQ)
 
-第10题错选为A，第11题错选为B。
+第 10 题错选为 A，第 11 题错选为 B。
 
 这两题放在一起讲，都属于低级错误。本地域名服务器采用迭代查询，则本地域名服务器需要发送多条请求；而本地域名服务器采用递归查询，那么只需要查询一条。
 
 ![6.2.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA01qyOFSicjBg-DuocNOh1d16m0qRwACGRNrG6T-SFYBlt58njkAAXoBAAMCAAN4AAM9BA)
 
-本体错选为B。本题错误原因和1类似。
+本体错选为 B。本题错误原因和 1 类似。
 
 ![6.5.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA05qyOFrOxyDH2U7LUkvZpTNm3-ZhgACGhNrG6T-SFZyj2KR2aY0jAEAAwIAA3gAAz0E)
 
-错选为D，属于脑子抽了。
+错选为 D，属于脑子抽了。
 
 ![6.5.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA09qyOF53lTfRgMMeTFVJcCySIW1pAACGxNrG6T-SFZ6fU-7lQXQ9gEAAwIAA3gAAz0E)
 
-错选为C，属于低级错误。
+错选为 C，属于低级错误。
 
 ![6.5.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1BqyOGJeGsR4HlTmMzhBH01_kL-2wACHBNrG6T-SFYgYm23-0QHoAEAAwIAA3gAAz0E)
 
-不知道选什么，错误原因见1刷。
+不知道选什么，错误原因见 1 刷。
 
 ![6.5.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1FqyOLGEZ_Gwp3tnKhudZ3WJMK_-gACIBNrG6T-SFbhBdngP521nAEAAwIAA3gAAz0E)
 
-不知道选什么，错误原因见1刷。
+不知道选什么，错误原因见 1 刷。
 
 ![6.5.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1FqyOLGEZ_Gwp3tnKhudZ3WJMK_-gACIBNrG6T-SFbhBdngP521nAEAAwIAA3gAAz0E)
 
-错选为A。首先使用2个RTT时间获取到WEB页，然后用2个RTT获取到资源。
+错选为 A。首先使用 2 个 RTT 时间获取到 WEB 页，然后用 2 个 RTT 获取到资源。
 
 ![6.5.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1NqyOMF-Qr9fp7t1Q3sejNsu1_sdQACIhNrG6T-SFaSglhzMe8PUwEAAwIAA3gAAz0E)
 
-本题错选为D。委托本地域名服务器进行递归查询，本地域名服务器进行迭代查询，总共查询3次，也就是3RTT的时间获取到链接，随后使用1.5RTT的时间建立连接，在最后0.5RTT内不进行捎带返回index。1RTT时间获取到具体index，然后再使用1RTT的时间并行请求 3+2+1+1=7。
+本题错选为 D。委托本地域名服务器进行递归查询，本地域名服务器进行迭代查询，总共查询 3 次，也就是 3RTT 的时间获取到链接，随后使用 1.5RTT 的时间建立连接，在最后 0.5RTT 内不进行捎带返回 index。1RTT 时间获取到具体 index，然后再使用 1RTT 的时间并行请求 3+2+1+1=7。
 
 ![6.5.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1RqyOMYlzePoNdKdcQvyU94bB9SWQACIxNrG6T-SFbGl43XZg8xsQEAAwIAA3gAAz0E)
 
-本题错选为A。建立请求开始花费1.5RTT，0.5RTT用于捎带传输index。1RTT的时间获取2MSS的内容，再1RTT的时间获取最后1RTT的内容，总计4RTT。
+本题错选为 A。建立请求开始花费 1.5RTT，0.5RTT 用于捎带传输 index。1RTT 的时间获取 2MSS 的内容，再 1RTT 的时间获取最后 1RTT 的内容，总计 4RTT。
 
 ## 408 真题 1 刷
 
