@@ -2833,7 +2833,7 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 本题错选为 B。捋一下过程：
 
-本机委托本地域名服务器进行递归查询，此时不消耗 RTT，假设本地没有 DNS 缓存，那么本地域名服务器向根域名服务器查询，并且得到.com 的信息，消耗 1RTT，向顶级域名服务器查询，得到.abc.com 的信息，消耗 1RTT，向权限域名服务器查询，得到 www.abc.com 的 ip 地址，消耗 1RTT，递归结束。再对 ip 进行 get 请求，建立 TCP 连接，TCP 连接需要消耗 2 个 RTT，而 web 服务器传回来需要 1 个 RTT，所以综合上述，DNS 解析需要 5RTT。假设本地有 DNS 缓存，那么直接访问 ip 即可，即 2RTT。
+本机委托本地域名服务器进行递归查询，此时不消耗 RTT，假设本地没有 DNS 缓存，那么本地域名服务器向根域名服务器查询，并且得到.com 的信息，消耗 1RTT，向顶级域名服务器查询，得到.abc.com 的信息，消耗 1RTT，向权限域名服务器查询，得到 <www.abc.com> 的 ip 地址，消耗 1RTT，递归结束。再对 ip 进行 get 请求，建立 TCP 连接，TCP 连接需要消耗 2 个 RTT，而 web 服务器传回来需要 1 个 RTT，所以综合上述，DNS 解析需要 5RTT。假设本地有 DNS 缓存，那么直接访问 ip 即可，即 2RTT。
 
 ![6.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwRqyLe0iF1L9n_Ibw2olTqBTh23HgACnxJrG6T-SFZ2HATPSnaYrQEAAwIAA3gAAz0E)
 
@@ -5171,4 +5171,328 @@ func P3(){
 
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAd9qx7CDmiJU2MZ1spWrfrDErbyqXQAC1hJrGz_BQFZ7oiDf9VGuAQEAAwIAA3gAAz0E)
 
-本题应该选
+本题应该选 D。
+
+进行模拟：
+
+对于 A，进栈 abcd，退栈 dc，进栈 e，退栈 eb，进栈 f，退栈 fa。
+
+对于 B，进栈 abc，退栈 cb，进栈 d，退栈 da，进栈 e，退栈 e，进栈 f，退栈 f。
+
+对于 C，进栈 ab，退栈 b，进栈 c，退栈 ca，进栈 de，退栈 e，进栈 f，退栈 fd。
+
+对于 D，进栈 a，退栈 a，进栈 bcdef，退栈 fedcb。
+
+所以选择 D。
+
+对于这类题不会难，多检查一下就可以了。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1VqyOWUq2n5TGKsaenaRM29LWCDcAACKBNrG6T-SFYb5_-S5rQgXQEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+受限队列，两端入队一端出队。
+
+对于 A，a，ba，bac，bacd，bacde。
+
+对于 B，a，ba，bac，dbac，dbace。
+
+对于 C，a，不行了。
+
+对于 D，a，ba，cba，cbad，acbad。
+
+这类题也不难，主要还是要搞清楚受限如何受限
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1ZqyOcEI9D8vCzcOFvfcczLY3GYXgACLBNrG6T-SFazQgABNm1OJ38BAAMCAAN4AAM9BA)
+
+本题应该选 D。
+
+后序线索二叉树遍历即 dbca，后序线索二叉树是沿虚线走的，显然选 D。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1dqyOerPprN9wLKF0w95RAMvj7pcwACLRNrG6T-SFZBKvmLpzljYgEAAwIAA3gAAz0E)
+
+本题应该选 C，如下图所示：
+
+![4 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1hqyOkNcS6J1NpauJLvUg3tJVWl1wACLxNrG6T-SFZT6OcCVL_DXQEAAwIAA3cAAz0E)
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1lqyOkgFNQ-sO4lqZlvjigXNV0LRQACMBNrG6T-SFY3QwZfm2JfqAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+公式度的和 +1=边 +1=结点数。
+
+所以，20\*4+10\*3+1\*2+10\*1+1=123=20+10+1+10+n=41+n，所以 n=123-41=82。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1pqyOnKvqQxxf5rQ2qv7MoSStWlYwACMhNrG6T-SFaT1L8MEu4G8QEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+这类题应该在掌握哈夫曼树的基础上然后看清题目举反例做。显然取 1,2,3,4,5 构造出来的树不是完全二叉树。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1tqyOqe9NvrQBCT20FXy6wo2yWF9gACNBNrG6T-SFayNPlTguyefgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+必须连通，所以让 6 个结点的边最大 +1 即可，也就是 6*5/2+1=16，也就是 C。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1xqyOrennJ5opDZoViD7OFAGTeSNQACNRNrG6T-SFa-2LhkQMowZQEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+- a
+  - b
+    - ced
+    - ecd
+  - ebcd
+
+所以总共是 3 个，也就是 B。
+
+这类题也不难，重点是捋清楚。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA11qyOtNrnP_9kzw7dyrlHJomfR-1QACNxNrG6T-SFZwB1JQF8zs2wEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+本题考察的是折半查找判定树，绘制如图：
+
+![9 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA15qyOuuo2N7BlHCN5WBVpOa0raa8gACORNrG6T-SFZXqkP2KxllXQEAAwIAA3kAAz0E)
+
+所以应该是 5。
+
+搞清楚本质。
+
+还有一类考法就是计算关键字比较次数，这个也需要注意。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA19qyOvKVsnZ2lvJdb_jcixgxh3dQAACOhNrG6T-SFYg7Mz5fomlpQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+递归次数与一开始的初始数据有关，和长短分区和先后无关，因为无论是先处理谁，最后都是一样的结果（和处理顺序无关）
+
+这道题初上手反套路。
+
+比较可能考的是各类排序的性质，比如说快排不稳定等，以及优缺点。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2BqyOxiLleXUnKDpkPLa-PNdjAcFQACTBNrG6T-SFZKV3e0T5-LrgEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+比较的是排序猜测，09 年真题也考了。对每个排序理解清楚是什么意思就可以了。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2FqyOy-hihqHCKDFKbv9AKwaojg8AACdhNrG6T-SFZoUxTC93Ee1QEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 1，提高 CPU 时钟频率，在更高频的 CPU 跑程序肯定会更快，23 就不说了。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2NqyO0G1FEcjKkFpnUSgqHMEDjUzgACeBNrG6T-SFakT84MMGQKCAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+这类题转换成十进制计算然后判断是最快的，r1=FEH=1111,1110B=-2，r2=1111,0010B=-1-13=-14，r3=90H=1001,0000B=-128+16=-112，r4=F8H=1111,1000B=-8。
+
+所以，r2✖️r3 显然溢出
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2RqyO3IDblSadfxSd8cmOekYJEGoAACehNrG6T-SFZkKZmxQ6OzaQEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+1 显然正确，2 显然错误。
+
+对于 3，变大再变小不会，正确，对于 4 会导致精度丢失，所以错误。
+
+应该选 1,3
+
+考察单精度浮点数双精度浮点数，int，long，long long 等类型的转换，需要注意溢出和精度丢失问题。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2VqyO49goycw-4NQw5eUnFMhv_qUgACexNrG6T-SFZbcGNcGBqJ0QEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+2K✖️4 位需要 8 块组成 8K✖️8 位，但是由于先进行位扩展，所以可以视为 2K✖️8 位组成 8K✖️8 位的存储器。
+
+8KB=2^13B，也就是 000H-FFFH 地址 B1FH 的 B 是 1011，所以应该是第 2 块，2K✖️8 位，也就是 1000,0000,0000B=800H，所以选择 D。
+
+这类题也不会难，重点在于捋清楚。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2ZqyO8mzKuo32O_D3BXYX9Iv2eCswAChxNrG6T-SFadBElKMA7FhQEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 1,2,3 显然正确，对于 D，只有 RAM 需要刷新，ROM 不用刷新，所以应该选 C。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2hqyPCRyVEKygWPekvWU8I_f37hvAACiRNrG6T-SFbfbVDAQYIx-QEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+page 未命中说明不在内存，所以 tlb 和 cache 必不可能命中。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2lqyPDEOiFgy7ovIpvAuKAG4-nLAQACixNrG6T-SFbJ_HngYmTNwAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+可见与不可见需要深度辨析，汇编程序员可见的是 PC，通用寄存器组，状态寄存器（只能看到不能改）
+
+这类题也是经典题目，需要区分透明和可见。透明的意思是感觉好像不存在，所以这道题透明的应该是 MAR，MDR 和 IR。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2pqyPESQ92JRzzB3nmIjHQVJ3ymlQACjBNrG6T-SFa4jvvBtr--OAEAAwIAA3gAAz0E)
+
+本题应该选 A
+
+旁路转发是解决数据冲突的方式（除了 load-use），本题 BCD 则是三种冲突的方式。
+
+20 题超纲。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2tqyPFI5zxKdyVzc-Ng3nRZODapZgACjRNrG6T-SFbrKoG_LS0zAAEBAAMCAAN4AAM9BA)
+
+本题应该选。
+
+中断分为两个主要的阶段，中断响应与中断服务程序的执行。前者是硬件执行的，后者是操作系统负责的。
+
+硬件，也就是 CPU 负责硬件关中断，保存 PSW，PC 以及找到中断向量的入口地址。
+
+操作系统负责后续的。
+
+根据题目，BC 可以排除（因为一开始就是关中断）
+
+对比之下应该选择 A。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2xqyPJURPsYmp8AAQpjKGovmgWdD4sAAo4Taxuk_khWmNUH2iQbY9oBAAMCAAN4AAM9BA)
+
+本题应该选 D。
+
+其实吧所有数据乘起来就好了，也就是 1600✖️1200✖️24✖️85✖️2=D。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA21qyPLzJvwOFpNdOommcQgxU58KJwACjxNrG6T-SFYZrqzk4-5LFQEAAwIAA3gAAz0E)
+
+本题属于背书题，选 A。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA25qyPMC2kKOVmbKiRiDriW-rpp8DAACkBNrG6T-SFaLNs4UPRz_dAEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+导致创建新进程主要是看有没有创建新的 PCB，对于 1 和 3 都要，对于 2 则是让进程从运行态进入阻塞态，所以 2 排除，应该选 1 和 3。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA29qyPNl-zQ3sIPFeJHQ3SZc8EleowACkhNrG6T-SFYLUayf0dq01AEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+如果要有等待的进程，那么当前信号量应该是负数，所以 AC 排除，可用为 1，即 B。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3BqyPOpDAwIO2FfP_irG5Y62qAr4AACkxNrG6T-SFafnElii1JRwQEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+对于 BC，刚完成 io 应该提升优先级
+
+对于 D，考虑抢占式优先级调度，如果已从就绪态变成运行态，优先降低会导致完全一上处理机就下去。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3FqyPR5t4OLz8hSgMPMPfuju_uwwwAClRNrG6T-SFbmyWbdzCGOIwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+做这种题的时候考虑经典模型，显然这道题是皮特松算法，会导致让权等待，但是不会导致题目里这两个，所以选 B。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3JqyPS49rK_ct4vtoShvSoOWz2u7gAClhNrG6T-SFYr8JJq1TnmNgEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+这类题最重要的事情是：每次需要重新排序最短长度，而不是保持不变。
+
+![28 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3NqyPVUlCwuAn8b4Lr-i1wxEkPTSgACmhNrG6T-SFbnTVuuJJ8FMwEAAwIAA3cAAz0E)
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3RqyPV4HT8jb1v1LklQbp--x2IQBgACnRNrG6T-SFatUnP0G_wyXAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+一页内最多可以存在 512 个表项，也就是 9 位，所以 2 级页号是 9，页目录号是 16-9=7，所以选 B
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3VqyPhcy9qZiZRBKJSUHSTx67krzwACohNrG6T-SFb2wCA61qCu2wEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+256B/4B=64，即一块磁盘可以存 64 个，所以，总共应该是（4+2✖️64+64✖️64）✖️256B。
+
+也就是（1+2✖️16+64✖️16）KB=（1+32+2^10）KB=（1+32+1024）KB=1057KB。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3ZqyPj2Ad13UB566fUB7a7c3tdD4QACphNrG6T-SFa28s3pSRTh0QEAAwIAA3gAAz0E)
+
+本题应该选 C，显然不解释了。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3dqyPkWxCcSkdZa9OYtYx1w62smhQACpxNrG6T-SFa42fb80eoR5AEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+中断处理的全流程，见 [以 scanf 分析设备管理](https://blog.attilio.cc/posts/npee/os/#%E4%BB%A5-scanf-%E5%88%86%E6%9E%90%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86)
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3hqyPmmKCiM_YBgK9IqdtOjlIJu7QACqBNrG6T-SFYhCfXGjcQQdwEAAwIAA3gAAz0E)
+
+本题应该选 C，属于背书题，不解释了。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3lqyPnAlv_L-q95PFGFuplmi-fSkQACqRNrG6T-SFbdUCG9OYGP_wEAAwIAA3gAAz0E)
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3pqyPnNLZ38Y-qfqqfxFUQm4B2ZawACqhNrG6T-SFZR-YaZ2J8F8AEAAwIAA3gAAz0E)
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3tqyPnciDeXvAQLqItVdo7Dt3rz4wACqxNrG6T-SFattU5wXvV2lAEAAwIAA3kAAz0E)
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3xqyPnpahFnJYP4OMHFDNMbC9daYQACrBNrG6T-SFYzH6O_g2gBqwEAAwIAA3kAAz0E)
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA31qyPn6QAQns0ApyRQsHIEfovhvKwACrRNrG6T-SFbEPbAbenjayAEAAwIAA3gAAz0E)
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA35qyPoI0pffuHbofs4TZhGf0tRFUQACrhNrG6T-SFa_oqM4ZVA7UQEAAwIAA3kAAz0E)
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA39qyPoYnNhve5S2DB8W155dAAHhzIAAAq8Taxuk_khWakxhHUc5DpMBAAMCAAN5AAM9BA)
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4BqyPooi8mn3GA7l3Y3QHVP6vMQWwACsBNrG6T-SFadtTbfzbqMdQEAAwIAA3gAAz0E)
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4FqyPo3STA0nAQ0j3QqfXC6nvpiZAACsRNrG6T-SFbCfr0qkk9miwEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+(2)
+
+```c++
+void reverse(int A[],int l,int r){
+  while(l<r){
+    int tmp=A[l];
+    A[l]=A[r];
+    A[r]=tmp;
+    l++;
+    r--;
+  }
+}
+
+void solve(int A[],int p,int n){
+  reverse(A,0,p-1);
+  reverse(A,p,n-1);
+  reverse(A,0,n-1);
+}
+```
+
+(3)
+
+解 2：
+
+(1)
+
+(2)
+
+```c++
+void solve(int A[],int p,int n){
+  int tmp[n];
+  for(int i=0;i<n;i++){
+    tmp[i]=A[(i+p)%n]
+  }
+  for(int i=0;i<n;i++){
+    A[i]=tmp[i];
+  }
+}
+```
+
+(3)
+
+时间复杂度：O(n)
+
+空间复杂度：O(n)
