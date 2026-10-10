@@ -1084,6 +1084,66 @@ y_h=(C_1+C_2 x) e^x
 
 ## 张宇 30 讲基础线代 2 刷
 
+### 张宇 30 讲基础线代 2 刷第 1 章
+
+![1.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4JqyQH5xkiXwc-1bPOsEsNKHGWUXgACzBNrG6T-SFZYNtP2N2kGAwEAAwIAA20AAz0E)
+
+一边是对的，另一边计算错了。
+
+![1.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4NqyQIUFdJ-QFfZ1cKebqVgy3ayjwACzRNrG6T-SFbqKvvv8l9xCgEAAwIAA20AAz0E)
+
+属于低级错误，本题在做的时候最后一步在那里换行，明明换了 2 行，填了+，又想了一下注意换行，然后填了-。尤其注意。
+
+### 张宇 30 讲基础线代 2 刷第 2 章
+
+![2.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4VqyQKnYCBR0a8YuJ3xAWdJfu7_xQACzhNrG6T-SFYd6YnVwcbZswEAAwIAA3gAAz0E)
+
+再次看到这道题才意味着藏得有多深，这道题在 880 的大题里也出现过类似的化简手段，1 刷的时候是排除法做对的。
+这道题的变形是去凑，ab=a+b；ab-a-b=0；a(b-1)-b=0；a(b-1)-(b-1)=1；即 (a-1)(b-1)=1。
+
+![2.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4ZqyQK-AAGcjfq6sxkCJETz73o2ciMAAs8Taxuk_khWYW_ofIjsI2kBAAMCAAN4AAM9BA)
+
+![分块矩阵的逆](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4dqyQLOSiPyVOiV8uicaW8exI9ObAAC0BNrG6T-SFb9tKITJcp1fQEAAwIAA3gAAz0E)
+
+![2.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4hqyQLkgKISLh1Ml0vuRlB7hQ2tRgAC0RNrG6T-SFaxH5NjZxW_0wEAAwIAA3gAAz0E)
+
+第 2 问没有考虑到“可逆”，算出来通解了。
+
+![2.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4lqyQL4dHajlkOkZ5V_4UhSk2gljgAC0hNrG6T-SFb1QT9AioJoGQEAAwIAA3gAAz0E)
+
+属于低级错误，没有考虑成到取逆之后，数字也得取倒数。并且想当然，其实这道题我做出来的答案是 A-E。
+
+### 张宇 30 讲基础线代 2 刷第 3 章
+
+![3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4tqyQZo9yYb3V1sFTDgCAUYrOaFWwAC1xNrG6T-SFZDSRHhSbzXwwEAAwIAA20AAz0E)
+
+![3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4xqyQaCo8C6HxPsDQ-V-y3z6JCH0QAC2BNrG6T-SFa8ZJ0lqCVD2gEAAwIAA3gAAz0E)
+
+![3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA41qyQabWvmF8fJyf8xtwlzl5-Je4gAC2RNrG6T-SFYhuiizmKnLqgEAAwIAA3gAAz0E)
+
+这三题 1 刷的时候直接跳了，2 刷的时候想做，但是没想出方法。
+
+对于 9-10，这类题应该转换为向量组去做。
+
+对于 11，应该利用经典恒等式去证明，这道题是想复杂了。
+
+
+以下为错题重刷：
+
+若向量组 (I) 可由向量组 (II) 线性表出，则向量组 (I) 的极大线性无关组容量（秩）不超过向量组 (II) 的极大线性无关组容量（秩）
+
+只要证 ABj=B1ja1+B2ja2+...+bnjan
+
+![3.9 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4pqyQVc1sCZx1oY7mJuPoXcAAG2zggAAtUTaxuk_khWGl-A5NSl14EBAAMCAAN4AAM9BA)
+
+### 张宇 30 讲基础线代 2 刷第 3 章
+
+### 张宇 30 讲基础线代 2 刷第 4 章
+
+### 张宇 30 讲基础线代 2 刷第 5 章
+
+### 张宇 30 讲基础线代 2 刷第 6 章
+
 ## 张宇 1000 基础 2 刷
 
 ### 张宇 1000 基础 2 刷第 1 章
@@ -5431,25 +5491,137 @@ page 未命中说明不在内存，所以 tlb 和 cache 必不可能命中。
 
 ![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3lqyPnAlv_L-q95PFGFuplmi-fSkQACqRNrG6T-SFbdUCG9OYGP_wEAAwIAA3gAAz0E)
 
+本题应该选 C。
+
+首先计算分组数，1000x=98000+20x，解得 x=1000。
+
+走过一段链路的时间是 1000B/100Mbps=80us。
+
+显然平着走是最短的，经过 2 个路由器，也就是 3 段链路，所以 1002✖️10us=C。
+
+这类题感觉最难的也就是考 2025 年真题那样子，好好分析即可。
+
 ![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3pqyPnNLZ38Y-qfqqfxFUQm4B2ZawACqhNrG6T-SFZR-YaZ2J8F8AEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+背书题，RIP 协议 16 跳代表不可达。
 
 ![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3tqyPnciDeXvAQLqItVdo7Dt3rz4wACqxNrG6T-SFattU5wXvV2lAEAAwIAA3kAAz0E)
 
+本题应该选 C。
+
+背书题。
+
+不过值得注意的是，源点抑制在新版本的 ICMP 被废除了。
+
 ![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3xqyPnpahFnJYP4OMHFDNMbC9daYQACrBNrG6T-SFYzH6O_g2gBqwEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+248=255-7=1111,1000B。所以子网数为 32，可分配地址减去网络地址和广播地址是 6.
+
+此外还需要注意，可分配，可用都指的是应该挖去网络地址和广播地址，而 ip 数，之类的表述不需要挖去。
 
 ![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA31qyPn6QAQns0ApyRQsHIEfovhvKwACrRNrG6T-SFbEPbAbenjayAEAAwIAA3gAAz0E)
 
+本题应该选 D。
+
+属于背书题。
+
+广播风暴可以使用路由器和 vlan 抑制
+
+冲突域可以用网桥和交换机划分
+
+中继器和集线器只是对信号整形放大。
+
 ![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA35qyPoI0pffuHbofs4TZhGf0tRFUQACrhNrG6T-SFa_oqM4ZVA7UQEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+拥塞窗口为 4，也就意味着当前甲最多可以发送 4 个单位数据，题目要求是发 2 个单位，所以应该是：
+
+1,2，3 和 4 待发送。
+
+收到了 1 的确认，所以拥塞窗口：2,3,4,5（然后有可能是到 6，也有可能是 6,7,8,9）
+
+但是接收窗口只有 2 了，所以发送窗口变为 2,3
+
+而 2 已经发送未确认所以不需要再发，所以还可以发 3，也就是还可以发 1000B。
+
+这类题也是很经典的题目，从早年考到了近些年年份。
 
 ![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA39qyPoYnNhve5S2DB8W155dAAHhzIAAAq8Taxuk_khWakxhHUc5DpMBAAMCAAN5AAM9BA)
 
+本题应该选 A。
+
+背书题。
+
 ![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4BqyPooi8mn3GA7l3Y3QHVP6vMQWwACsBNrG6T-SFadtTbfzbqMdQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+| 关键字 | 关键字乘 3 | 最大 | 模 |
+| --- | --- | --- | --- |
+| 7 | 21 | 21 | 0 |
+| 8 | 24 | 21 | 3 |
+| 30 | 90 | 84 | 6 |
+| 11 | 33 | 28 | 5 |
+| 18 | 54 | 49 | 5 |
+| 9 | 27 | 21 | 6 |
+| 14 | 42 | 42 | 0 |
+
+由装填因子可知长度为 10。
+
+所以最终应该是：
+
+| 下标 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 关键字 | 7 | 14 | 空 | 8 | 空 | 11 | 30 | 18 | 9 | 空 |
+
+(2)
+
+查找成功的概率：
+
+| 关键字 | 查找次数 |
+| --- | --- |
+| 7 | 1 |
+| 8 | 1 |
+| 30 | 1 |
+| 11 | 1 |
+| 18 | 3 |
+| 9 | 3 |
+| 14 | 2 |
+| 总比较次数 | 12 |
+| 成功平均查找长度 | 12/7 |
+
+查找失败的概率：
+
+| 散列地址 | 比较次数 |
+| --- | --- |
+| 0 | 3 |
+| 1 | 2 |
+| 2 | 1 |
+| 3 | 2 |
+| 4 | 1 |
+| 5 | 5 |
+| 6 | 4 |
+| 总比较次数 | 18 |
+| 失败平均查找长度 | 18/7 |
+
+由于是 mod7，所以算到这里就结束了，总共是 18，也就是 18/7
+
+这种题历年考了 2 次，不难但是要注意留档。
 
 ![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4FqyPo3STA0nAQ0j3QqfXC6nvpiZAACsRNrG6T-SFbCfr0qkk9miwEAAwIAA3gAAz0E)
 
 解：
 
 (1)
+
+根据数学原理，以第 p 个数前的序列记为 a，后面记为 b，则 ab 的转置为 b 的转置 a 的转置，分别再对 b 的转置 和 a 的转置 进行转置，得到需要的序列。
 
 (2)
 
@@ -5473,9 +5645,17 @@ void solve(int A[],int p,int n){
 
 (3)
 
+时间复杂度：O(n)
+
+空间复杂度：O(1)
+
 解 2：
 
 (1)
+
+1. 设置一个辅助数组 tmp，长度为 n
+2. 将第 A[(i+p)%n] 位的数组复制到 tmp[i]
+3. 将 tmp 的每一位复制回 A
 
 (2)
 
@@ -5496,3 +5676,165 @@ void solve(int A[],int p,int n){
 时间复杂度：O(n)
 
 空间复杂度：O(n)
+
+考数组的题就看有没有写过了，几秒内没有想出最优解直接暴力也可以拿大多数分数。
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA45qyeiJkbEeVJ480g0ZfhmXAAFyr1gAAq0Raxuk_lBWBWpFKOuYZrsBAAMCAAN4AAM9BA)
+
+解：
+
+(1)
+
+OP 有 12 到 15 4 位，所以是 16 条指令。
+
+根据图，Md 有 3 位，Md 和 Rd 共 0 到 5 也就是 6 位，所以 Rd 是 3 位，也就是 8 条指令。
+
+由于贮存地址空间大小为 128KB，按 16 位的字编址，所以地址空间是 128KB/16bit=128KB/2B=64KB，也就是 2 的 16 次方，所以 MAR 是 16 位。
+
+字长 16 位，所以 MDR 需要 16 位。
+
+(2)
+
+看指令的最后一行，意思是当前寄存器中读一个值（该值为 16 位），以当前指令的下一条指令为基准，向上和向下偏移。
+
+显然整个地址空间都可以被覆盖，所以目标地址范围是 0000H-FFFFH。
+
+(3)
+
+确定 OP 码：0010B
+
+确定源操作数操作方式：寄存器间接寻址，001B
+
+确定源操作数 Rs：4，也就是 100B
+
+确定目的操作数操作方式：寄存器间接、自增，也就是 010B
+
+确定目的操作数 Rd：5，也就是 101B。
+
+组合起来，0010,0011,0001,0101B=2315H
+
+该指令的意思是：从 R4 中取出 1234H 解析数据得到 5678H；从 R5 中取出数据 5678H 解析数据得到 1234H，5678H+1234H=68ACH，覆盖 R4 中的地址数据 1234H 指向的数据 5678H，然后 R5 中的数据 5678H+1
+
+综上所述，存储单元 1234H 的数据从 5678H 变为 68ACH；R5 中的数据从 5678H 变为 5679H。
+
+这类题最重要的就是看清楚题目格式，不要想当然自己觉得怎么解释就是怎么解释。
+
+还有就是要注意按字编址还是按字节编址，这道题是少见的按字编址。
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA49qyejCV5RYuu0zbPtvoPPpKBPEzAACrxFrG6T-UFZ9q3WFfYNHnQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+主存空间：256MB，也就是 28 位。
+
+8 个 cache 行，也就是 3 位，采用直接映射，无需缩减位数。
+
+cache 行大小 64B，也就是 6 位。
+
+tag 位=28-3-6=19 位
+
+cache 至少需要 tag 位和有效位，所以每一个 cache 行需要额外的 20 个位。
+
+所以一个 cache 行需要 64✖️8bit+20bit=532bit，总共有 8 行，所以是 8✖️532bit=4256bit。
+
+(2)
+
+`a[0][0]` 放在 320=000,0140H。
+
+由于 31=1,1111B，31✖️4=111,1100=7CH，所以 `a[0][31]` 是 000,01BCH。将倒数第 2 位取出即 BH=1011B，取前三位也就是 101B=5。
+
+所以在第 5 组。
+
+由于一行是 256 个数据，又要 256+1，所以 257=1,0000,0001B，✖️4 也就是 100,0000,0100B=404H。所以 `a[1][1]` 是 000,0544H。将倒数第 2 位取出即 4H=0100，取前三位也就是 010B=2。
+
+所以在第 2 组。
+
+(3)
+
+一个 cache 行可以容纳 64B/4B=16 个数据。
+
+程序 A 数据命中率为 1-1/16=15/16=93.75%
+
+程序 B 数据命中率为 0%
+
+这类题挺常考的，可以注意一下几类 cache 的分析方式。
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5BqyejV58wmvCWSj8ZZzGHxSzYebQACsBFrG6T-UFZUyd-IXyf5ZQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+2KB=2✖️8Kbit=16Kbit=16✖️1024bit=16386bit。
+
+所以本题采用位图法进行管理。
+
+(2)
+
+没有明确给最大磁道是多少，所以只能将 CSCAN 视为 CLOCK。
+
+磁盘时延=寻道 + 旋转 + 寻址 + 读数据
+
+沿增大的方向移动，所以访问序列为：100,120,30,50,90，总共需要访问 20+90+60=180 个磁道。
+
+所以寻道消耗 180ms。
+
+一分钟旋转 6000 次，也就是 1 秒旋转 100 次，也就是 5ms 旋转 0.5 次。
+
+所以旋转消耗 20ms。
+
+对每个磁道随机读取 1 个分布的扇区，由于有 100 个扇区，所以可以视为 5ms/100，也就是 0.05ms
+
+所以寻磁道需要消耗 0.2ms。
+
+所以总计 200.2ms。
+
+(3)
+
+FIFO。
+
+Flash 存储器可以随机寻址，寻址时延接近为 0，所以按照 FIFO 最好。
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5Fqyejqot5jRqPRL335QaLO7OXV5wACsRFrG6T-UFaRqF_HHJHadAEAAwIAA3kAAz0E)
+
+(1)
+
+逻辑地址空间为 64KB，所以总计 16 位，由于页内地址为 1KB，占 10 位，所以页号为前 6 位。
+
+17CAH=0001,0111,1100,1010B，取前 6 位 00,0101B，也就是页号为 5。
+
+(2)
+
+采用 FIFO，显然应该替换掉最早装入的，也就是页号 0。将物理页框号 7 分配给页号 5，所以物理页号为 00,0111B，拼接也就是 0001,1111,1100,1010B=1FCAH。
+
+(3)
+
+采用 CLOCK 算法，找出近期访问位为 0 的页并淘汰，如果当前页为 1 那么将 1 改为 0。
+
+扫一圈所有页都是近期访问，所以都改为 0，从开始重新扫描，所以选逻辑页为 2 对应的物理页框 2=00,0010B，拼接可得 0000,1011,1100,1010B=0BCAH。
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5Jqyej-eycddQdOAzED_JCCVbKPLAACshFrG6T-UFaAkCUTVxJgRQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+RTT=4km/200000(km/s)=20us。
+
+所以最短经过 10us，最长经过 20us。
+
+(2)
+
+除数据帧之外总共消耗 6+6+2+4=18B，最大的数据是 1500B。
+
+甲的数据传输时间是 1518B/10Mbps，乙的数据传输时间是 64B/10Mbps
+
+所以总时间消耗是 RTT+(1518+64)B/10Mbps= RTT+(12656)/10Mbps=20us+1265.6us=1285.6us。
+
+所以数据传输速率是 1500B/1285.6us=1.16677B/us
+
+注意这里求的是有效数据传输速率，而不是求利用率。
+
+### 408 2011 真题 2 刷
