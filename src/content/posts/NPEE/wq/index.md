@@ -1127,7 +1127,6 @@ y_h=(C_1+C_2 x) e^x
 
 对于 11，应该利用经典恒等式去证明，这道题是想复杂了。
 
-
 以下为错题重刷：
 
 若向量组 (I) 可由向量组 (II) 线性表出，则向量组 (I) 的极大线性无关组容量（秩）不超过向量组 (II) 的极大线性无关组容量（秩）
@@ -1135,8 +1134,6 @@ y_h=(C_1+C_2 x) e^x
 只要证 ABj=B1ja1+B2ja2+...+bnjan
 
 ![3.9 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4pqyQVc1sCZx1oY7mJuPoXcAAG2zggAAtUTaxuk_khWGl-A5NSl14EBAAMCAAN4AAM9BA)
-
-### 张宇 30 讲基础线代 2 刷第 3 章
 
 ### 张宇 30 讲基础线代 2 刷第 4 章
 
@@ -4469,9 +4466,12 @@ TCP 的序号字段一个需要就代表 1B，而不是需要考虑首部等东�
 
 ## 408 真题 2 刷（逐题分析 + 变式）
 
+二刷采用分析 + 一遍过的方式，不允许检查。
+
 ### 408 2009 真题 2 刷
 
 - 分数为 148
+- 第 40 题错误，FTP 协议数据端口和控制端口分析问题
 
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARtqxjZVxFykGM7L_ln6lZW6n2E9NQAC5xNrGz_BMFZrl2tlKseJMQEAAwIAA3gAAz0E)
 
@@ -5229,6 +5229,13 @@ func P3(){
 
 ### 408 2010 真题 2 刷
 
+- 分数为 138
+- 第 16 题没有一个选项一个选项分析，用的显然正确分析，导致低级错误认为 3 也是对的
+- 第 27 题分析出来是皮特松算法了，但是仔细看选项直接选的
+- 第 43 题 -2，想当然分析导致错误，二地址指令默认存储在目的操作数，而不是源操作数。
+- 第 44 题 -2，想当然认为块内地址是 32B，实际上应该是 64B
+- 第 45 题 -4，这个需要着重注意，不是低级错误。首先是一个低级错误，加法减法算错；其次是算数据传输时延，也就是转一圈的时间除以磁道数，这个还是第一次想明白怎么算。
+
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAd9qx7CDmiJU2MZ1spWrfrDErbyqXQAC1hJrGz_BQFZ7oiDf9VGuAQEAAwIAA3gAAz0E)
 
 本题应该选 D。
@@ -5377,9 +5384,9 @@ func P3(){
 
 ![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2ZqyO8mzKuo32O_D3BXYX9Iv2eCswAChxNrG6T-SFadBElKMA7FhQEAAwIAA3gAAz0E)
 
-本题应该选 C。
+本题应该选 A。（低级错误选为 D，因为没分析 3）
 
-对于 1,2,3 显然正确，对于 D，只有 RAM 需要刷新，ROM 不用刷新，所以应该选 C。
+对于 1,2，显然正确。对于 3，ROM 显然不可以用来做 cache；对于 4，只有 RAM 需要刷新，ROM 不用刷新，所以应该选 C。
 
 ![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2hqyPCRyVEKygWPekvWU8I_f37hvAACiRNrG6T-SFbfbVDAQYIx-QEAAwIAA3gAAz0E)
 
@@ -5403,9 +5410,9 @@ page 未命中说明不在内存，所以 tlb 和 cache 必不可能命中。
 
 20 题超纲。
 
-![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2tqyPFI5zxKdyVzc-Ng3nRZODapZgACjRNrG6T-SFbrKoG_LS0zAAEBAAMCAAN4AAM9BA)
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2tqyPFI5zxKdyVzc-Ng3nRZODapZgACjRNrG6T-SFbrKoG_LS0zAAEBAAMCAAN4AAM9BA)
 
-本题应该选。
+本题应该选 A。
 
 中断分为两个主要的阶段，中断响应与中断服务程序的执行。前者是硬件执行的，后者是操作系统负责的。
 
@@ -5449,9 +5456,9 @@ page 未命中说明不在内存，所以 tlb 和 cache 必不可能命中。
 
 ![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3FqyPR5t4OLz8hSgMPMPfuju_uwwwAClRNrG6T-SFbmyWbdzCGOIwEAAwIAA3gAAz0E)
 
-本题应该选 B。
+本题应该选 D（低级错误选为 B，因为没看完题目）
 
-做这种题的时候考虑经典模型，显然这道题是皮特松算法，会导致让权等待，但是不会导致题目里这两个，所以选 B。
+做这种题的时候考虑经典模型，显然这道题是皮特松算法，会导致让权等待，但是不会导致题目里这两个，所以选 D。
 
 ![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3JqyPS49rK_ct4vtoShvSoOWz2u7gAClhNrG6T-SFYr8JJq1TnmNgEAAwIAA3kAAz0E)
 
@@ -5713,13 +5720,15 @@ OP 有 12 到 15 4 位，所以是 16 条指令。
 
 组合起来，0010,0011,0001,0101B=2315H
 
-该指令的意思是：从 R4 中取出 1234H 解析数据得到 5678H；从 R5 中取出数据 5678H 解析数据得到 1234H，5678H+1234H=68ACH，覆盖 R4 中的地址数据 1234H 指向的数据 5678H，然后 R5 中的数据 5678H+1
+该指令的意思是：从 R4 中取出 1234H 解析数据得到 5678H；从 R5 中取出数据 5678H 解析数据得到 1234H，5678H+1234H=68ACH，～～覆盖 R4 中的地址数据 1234H 指向的数据 5678H～～，然后 R5 中的数据 5678H+1
 
-综上所述，存储单元 1234H 的数据从 5678H 变为 68ACH；R5 中的数据从 5678H 变为 5679H。
+综上所述，～～存储单元 1234H 的数据从 5678H 变为 68ACH～～；R5 中的数据从 5678H 变为 5679H。
 
 这类题最重要的就是看清楚题目格式，不要想当然自己觉得怎么解释就是怎么解释。
 
 还有就是要注意按字编址还是按字节编址，这道题是少见的按字编址。
+
+本题 -2，想当然分析导致，二地址指令默认存储在目的操作数，而不是源操作数。
 
 ![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA49qyejCV5RYuu0zbPtvoPPpKBPEzAACrxFrG6T-UFZ9q3WFfYNHnQEAAwIAA3gAAz0E)
 
@@ -5743,13 +5752,19 @@ cache 至少需要 tag 位和有效位，所以每一个 cache 行需要额外�
 
 `a[0][0]` 放在 320=000,0140H。
 
-由于 31=1,1111B，31✖️4=111,1100=7CH，所以 `a[0][31]` 是 000,01BCH。将倒数第 2 位取出即 BH=1011B，取前三位也就是 101B=5。
+由于 31=1,1111B，31✖️4=111,1100=7CH，所以 `a[0][31]` 是 000,01BCH。～～将倒数第 2 位取出即 BH=1011B，取前三位也就是 101B=5。～～
 
-所以在第 5 组。
+～～所以在第 5 组。～～
 
-由于一行是 256 个数据，又要 256+1，所以 257=1,0000,0001B，✖️4 也就是 100,0000,0100B=404H。所以 `a[1][1]` 是 000,0544H。将倒数第 2 位取出即 4H=0100，取前三位也就是 010B=2。
+将 1BCH 展开，即 0001,1011,1100B，取 110B，也就是 6。
 
-所以在第 2 组。
+由于一行是 256 个数据，又要 256+1，所以 257=1,0000,0001B，✖️4 也就是 100,0000,0100B=404H。所以 `a[1][1]` 是 000,0544H。～～将倒数第 2 位取出即 4H=0100，取前三位也就是 010B=2。～～
+
+～～所以在第 2 组。～～
+
+将 544H 展开，即 0101,0100,0100B，取 101B，也就是 5。
+
+块内地址是 64B，而不是想当然的 32B
 
 (3)
 
@@ -5777,19 +5792,27 @@ cache 至少需要 tag 位和有效位，所以每一个 cache 行需要额外�
 
 磁盘时延=寻道 + 旋转 + 寻址 + 读数据
 
-沿增大的方向移动，所以访问序列为：100,120,30,50,90，总共需要访问 20+90+60=180 个磁道。
+沿增大的方向移动，所以访问序列为：100,120,30,50,90，总共需要访问 20+90+60=～～180～～ 个磁道。
 
-所以寻道消耗 180ms。
+～～所以寻道消耗 180ms。～～
+
+所以寻道消耗 170ms。
 
 一分钟旋转 6000 次，也就是 1 秒旋转 100 次，也就是 5ms 旋转 0.5 次。
 
 所以旋转消耗 20ms。
 
-对每个磁道随机读取 1 个分布的扇区，由于有 100 个扇区，所以可以视为 5ms/100，也就是 0.05ms
+～～对每个磁道随机读取 1 个分布的扇区，由于有 100 个扇区，所以可以视为 5ms/100，也就是 0.05ms～～
 
-所以寻磁道需要消耗 0.2ms。
+～～所以寻磁道需要消耗 0.2ms。～～
 
-所以总计 200.2ms。
+数据传输的意思是，10ms 转 1 次，所以 10ms/100=0.1ms，一圈的时间除以 100 得到数据传输时间。
+
+4 次总共是 0.4ms
+
+～～所以总计 200.2ms。～～
+
+所以总计为 190.4ms。
 
 (3)
 
@@ -5838,3 +5861,540 @@ RTT=4km/200000(km/s)=20us。
 注意这里求的是有效数据传输速率，而不是求利用率。
 
 ### 408 2011 真题 2 刷
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5NqygHvMaUDuO0PKKYGFbuAYdg0kAACsxFrG364UVbmLJKbCy5VYwEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+令 t 是次数，则 2 + 2✖️2+...+2✖️2^t=2^(t+2)-2=n/2
+
+变形得 t=logn，所以应该选择 A。
+
+这类题最重要的事情就是一步步算出来，而不是想当然直接脑子想。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5RqygLY-flLIBWVRstxlKpvZC983gACtBFrG364UVagoxdsmY0f7wEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+以 d 为开头的元素，也就是一开始的入栈顺序是 abcd，然后 d 出栈。
+
+所以从后面开始，有可能是：ecba，ceba，cbea，cbae，总共 4 种。
+
+这类题纯模拟，只要不出错就可以了。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5VqygM_NWC0xHXM_R1DTZUe0n4XwwACtRFrG364UVZK5WJoS8FuYAEAAwIAA3kAAz0E)
+
+本题应该选择 B。
+
+本题插入第一个元素后，f 指向 A0，r 指向 A0，出队，r-1，指向 n-1。
+
+这类题有 4 种变式，可以注意题目的要求。
+
+这类题的做法就是假设已经有了第一个元素，然后出队一次（只动 rear 指针），得到初始值。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5ZqygQFPTSUSI9koR1MdgXSfjellgACtxFrG364UVaudXAovhio-AEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+完全二叉树至多有一个度为 1 的结点，假设度为 0 的节点个数为 n0，度为 2 的节点个数位 n2，度为 1 的结点个数为 n1（只有可能是 0 或 1）。
+
+可以列出公式：n0+n1+n2=n1+2n2+1=768，化简可得 n0=n2+1，所以 2n2+1+n1=768，2n2+n1=767。
+
+为了让 n2 有解，所以 n1 取 1，所以 2n2=767-1=766，n2=766/2=383。
+
+所以 n1=n2+1=384，也就是 C。
+
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5dqygT0fcBW1mThPoIMON-25XBUpAACvBFrG364UVaas4JYRKgKQQEAAwIAA3kAAz0E)
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5hqygUEbnEm8KxkK5Qe8j3ysi307gACvRFrG364UVY2kVoahZ4QVwEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+这类题使用特值法会特别快，假设有一棵树，如图所示：
+
+![6 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5lqygXMWLK5j_rho5mq2xLyOb4bdQACvxFrG364UVZIxtWgKwza0gEAAwIAA3cAAz0E)
+
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5pqygXevZrWe8OxO5JxHAABgyt8_Q0AAsARaxt-uFFWR6Zbd04Wp9IBAAMCAAN5AAM9BA)
+
+本题应该选。
+
+二叉排序树。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5tqygYHtcKWOY7frf-UZ9eXB0uklQACwRFrG364UVagSdGQGc6GiwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+简单路径的意思是没有重复结点的路径，1 显然正确；对于 2 显然错误，对于 3 显然正确，所以应该选 D。
+
+多用特值法举例。
+
+需要注意，邻接矩阵存储稀疏图会有大量的 0（0 也是数据）。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5xqygZozgR1tWNQnD92XPQZAzDICQACwxFrG364UVZOxuq-dGPSlwEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+对于 1，装填因子越大，说明元素越多，越容易冲突，所以 1 错误。
+
+对于 2 和 3 显然正确。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA51qygcm5Suwzucq0IIGnVuaRYU_HgACxBFrG364UVbiBpNl07B3wgEAAwIAA3kAAz0E)
+
+快排只能用顺序存储，属于背书题。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA55qygdI2tF5Gychg96uUgrFZ4zhFAACxRFrG364UVabfm1hhEIxtQEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+如图所示，将 18 插入尾巴，先和 10 比较，交换，然后和 25 比较，不交换。
+
+![11 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA59qyge3kmuUyt1dcRkhoXfu9cDroQACxhFrG364UVbnziE--xM56gEAAwIAA3gAAz0E)
+
+这就是前面说的，需要注意即使不换也要比较。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6BqygfJDPhzwfZvi1yDXQmgDGhF1wACxxFrG364UVaH1PwlShleUwEAAwIAA3kAAz0E)
+
+本题应该选 D，背书题。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6FqygfchQJLUApH6h-vMVpn1wILAgACyBFrG364UVbjCW8nY-AJ3AEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+符号位：1
+
+8.25=1000.01=1.00001✖️2^3，所以阶码为 3+127=130=1000,0010B。
+
+尾数为 0001。
+
+拼起来，也就是 1100,0001,0000,0100,0000,0000,0000,0000B=C104,0000H，也就是 A。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6Jqygizp9VgmB8YrST3xgd5o_QuuAACyhFrG364UVbwnDYqZKlXzwEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+但是注意，CDROM 可以随机读，不能随机写。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6NqygjfejxfEEoGygH1gb1-XiQIcAACyxFrG364UVaSoth9eer_5AEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+由于存储器按字节编址，贮存空间大小为 64MB，可知需要 26 位。后面的是干扰条件，因为 MAR 是硬件，是寻址能力。
+
+后者类似于加内存条。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6RqygxwAktlWpYMFMKNmg7n3yp5dgAC0BFrG364UVbr3BDrhwABSdoBAAMCAAN5AAM9BA)
+
+本题属于背书题，选 A。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6VqygyAV3P_OmlPfEglkXJfFt63HQAC0RFrG364UVZBmNjnOGICDgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+无符号数看 CF 位有没有溢出，此外还要比较零，所以取 CF 和 ZF 标志位。
+
+由于是大于，所以 CF 应该不溢出，为 0，且 ZF 不等于 0，也就是 ZF=0，也就是 CF 和 ZF 同时为 0 的时候为真。
+
+本题背书 + 使用代入法即可很轻松地解出来。
+
+当然，这类题大题也有可能考，根据学过的数字电路知识解释就可以了。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6Zqyg3E318uja0vsTewO4uZ-FYmvwAC1xFrG364UVa3KFGqElt94wEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+本题属于背书题，流水线和 RICS 相关。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6dqyg6IeZgJOhYGVSrX4MCAkcRQbgAC2RFrG364UVY3hAiXJ89i-wEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+对于 A，由于没有 cache，所以地址转换之后必须去内存读数据。
+
+对于 B，没有采用超标量等技术，显然是对的。
+
+对于 C，即使是空操作指令，PC 也会 + “1”
+
+对于 D，开中断显然可以被打断。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6hqyg9C7haZKBpsPMRcNILCb7BUdAAC3RFrG364UVaOGCGNF2biRwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+总线分为数据总线，地址总线和控制总线，数据总线是双向的，地址总线是单向的，控制总线有的是双向的，有的是单向的。
+
+对于控制总线，只会传输信号，例如读写信号，时钟同步，中断信号等，而对于数据都是走的数据总线。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6lqyhBUUs8Dljq55wnS9iBi1iU-EQAC3xFrG364UVYGcPkW0xg51QEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+1 表示不能打断我，0 表示可以打断我，为了防止同级自身无限递归嵌套，所以自己要把自己屏蔽了。
+
+这个我一直搞混，属于我自己比较生的考点。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6pqyhHviSP1SWgM8Gz4v_CX_EEeWwAC4xFrG364UVasF-2a5vxfMgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+假设总共处理 1s，查询一次所需要的时间是 500/50M=10/M=10us。
+
+由于总共需要查询 200 次，所以总共需要的时间是 2000us=2ms=0.002，所以应该选 C。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6tqyhJWz7UFiHTaex9jshLiJnXXkgAC5RFrG364UVapLMLPFf-D1AEAAwIAA3gAAz0E)
+
+本题应该选 B，这道题不严谨，不用在意。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA6xqyhJw9CEiEeHjNtn2O9ry8QsCqgAC5hFrG364UVaW0gXF0-5hGwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+不知道该怎么解释，很神秘。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA61qyhKfpY9dwuDCpyChq8Asryoy2AAC5xFrG364UVaYWu_xNF0H0gEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+线程之间有独立的栈指针，可以独立占有 CPU 运行，其他基本都是进程的。
+
+线程与进程共享的是什么，属于重难点。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA65qyhLgysuDSXyGcBhTn9Gl1BthBgAC6RFrG364UVZg_avbTYy6gAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+本题套到 scanf 经典模型去理解，当然这些背书是可以背到的。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA69qyhQQlRtnxsD5Yz4ql63GkuicMwAC6hFrG364UVZ-gTQdPVeR8wEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+这道题是已经帮忙算好了，可用资源减去尚需分配，显然只有 P1 才可以，分配给 P1 后，可用资源变为 2,2,1，此时可以分配 P4，分配完之后可用资源变成 2,2,2。然后就分配不了了，所以选择 D。
+
+死锁避免的解决方法，死锁避免的计算。
+
+这类题不会难，主要还是小心谨慎。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7BqyhTFp1xBuNIMzLcO2aHGOVT76QAC7RFrG364UVai4SXEFQXOEQEAAwIAA3kAAz0E)
+
+对于 1，假设页表已经满了，此时需要替换一个页，1,2,3 都会发生。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7FqyhUAAaqxPzJeSGBqH1KfgQpTK8UAAu4Raxt-uFFWcOdMj_vttCcBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+系统发生抖动的主要原因是 CPU 很闲，内存 - 磁盘一直在缓入缓出，解决的根本办法只有扩大内存和撤销进程，所以应该选 A。
+
+对于 B 治标不治本。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7JqyhVA-E9bb2QS-WRWghcqN77n-gAC7xFrG364UVZmrGeJq3LTewEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+这道题很阴，前面说了那么多废话，然后最后问逻辑地址。
+
+逻辑地址形成是链接。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7NqyhVtD6HyKPGOCsl2YoddN781LQAC8RFrG364UVbm7AOdTdP77gEAAwIAA3kAAz0E)
+
+本题应该选 B
+
+单缓冲区双缓冲区的辨析，见下图：
+
+![31 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7RqyhdPAAEK_XGWA_DYeFTchDXd0dEAAvMRaxt-uFFWUfidrqzvkawBAAMCAAN5AAM9BA)
+
+这类题王道书上有很多。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7VqyhdlcB4iKN4N0_R1aEVRSnsKLQAC9BFrG364UVZf7mGQujLxjQEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+这类题的解题方法可以是先标号，也就是左侧标 1,2,3，右侧标 4,5,6，然后考虑不同的顺序对结果的影响。
+
+假设执行顺序为 1,2,3,4,5,6，那么 x 值为 1。
+
+假设执行顺序为 1,4，然后 3 是最后执行的，那么 x 值为 2；同理，执行顺序为 1,4，然后 6 是最后执行的，那么 x 值为 0
+
+综上，应该是 0,1,2，不可能是 -1。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7ZqyhgpFwZODuUa692IQFTOK3iQYwACAxJrG364UVaf5Fgir74gewEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+属于背书题，需要区分 OSI 和 TCP/IP。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7dqyhhZZlSojcHbCg_Ivatrq-Ag0gACBRJrG364UVZxRwjlNOAxsgEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+本题没说最大，所以按照正常算就好了，2400=Blog2 4，所以 B=1200
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7hqyhiJmxanFXPu3UChvF__VsgxYwACBxJrG364UVZAWixKiaYMYAEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+选择重传协议没有累计确认，而 0 和 2 超时，没提到 3，所以只用重传 0 和 2 就可以了，也就是 B。
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7lqyhi8KB8zBNf16DHAXbdTQEWpOQACCBJrG364UVZMdSg05frafwEAAwIAA3gAAz0E)
+
+本题应该选 D，属于背书题。
+
+CSMA/CA 协议用于无线网传输，使用类似停止等待协议的机制。而 CSMA/CD 协议不需要确认（因为用有线，几乎不会出错）。
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7pqyhk5Oh9W0jb1_CpaGynpy7yYJQACCxJrG364UVaGbi3ZZOejTwEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+首先排除 A 和 B。
+
+这道题考的是路由聚合，将 R2 连接的左右两个子网聚合，可得 192.168.2.0/24，也就是对应的 D。
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7tqyhmybZet-M2zox6Kndv1OjhWpgACEhJrG364UVaePqPBXQQAAasBAAMCAAN5AAM9BA)
+
+本题应该选 C。
+
+对于该子网，后者 IP 分组是一个广播地址，所以应该是 2 个主机。
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7xqyhn82tJLnn2oGsibmn5kHuUXoQACExJrG364UVbIuzO2iJ1U3wEAAwIAA3kAAz0E)
+
+本题应该选。
+
+首先确认乙的 ack，乙的 ack 意思是我期待你接下来要发什么，乙已经接收到 11220，所以期待收到 11221，所以 BD 可以排除。
+
+由于是建立 TCP 连接，所以显然是 C。
+
+这类题非常常见，可以注意。
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA71qyhpbLX3kghzuHh4JnfGKF0F76wACFBJrG364UVZnYqBmdU8grgEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+第三个段的初始序号为 900，那么第 2 个段的初始序号为 500，第一个段的初始序号为 200，仅收到第 1 和第 3 段，那么接收方的 ack 会始终要发送方发第 2 段的数据，也就是 500。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA75qyiQOKNTig9fjtFQLu-8Roo0evwACLBJrG364UVZQRbctNmNbiAEAAwIAA3kAAz0E)
+
+![41 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Fqyi8pjcVa5i3G1lJEMcUi1-aJdgAC3RJrG364UVYj3x5nsskBZAEAAwIAA3kAAz0E)
+
+无向图里，对角线为 0，没连接的线为 0；有向图里，对角线为 0，没连接的线为无穷。
+
+绘制数据结构的题以及横着存储的题，其实不会难，主要是要捋清楚。
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA79qyiRwp-BB3oHKm4mCJ8nSv_JNCAACLRJrG364UVbC7-kE_eEkDQEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+方法 1：
+
+1. 设一个长度为 2L 的数组 S，将 S1 复制到 S 的前半部分，S2 复制到 S 的后半部分
+2. 对 S 进行快速排序
+3. S[L-1] 即为题目要求的数
+
+方法 2：
+
+1. 设一个长度为 L 的数组 S
+2. 取 i，j，k，初值设 0，分别指向 S1，S2，S
+3. 如果 S1[i]<=S2[j]，S[k++]=S1[i++]；
+4. 如果 S1[i]>S2[j]，S[k++]=S1[j++]
+5. 重复上述过程，直至 k 的值=L
+6. S[L-1] 即为题目要求的数
+
+方法 3：
+
+1. 设一个长度为 L 的数组 S，以及一个变量 pre
+2. 取 i，j，k，初值设 0，分别指向 S1，S2，S
+3. 如果 S1[i]<=S2[j]，pre=S1[i++]；
+4. 如果 S1[i]>S2[j]，pre=S1[j++]
+5. 重复上述过程，直至 k 的值=L
+6. pre 即为题目要求的数
+
+方法 4：
+
+利用二分法。
+
+(2)
+
+```c
+int patition(int A[],int l,int r){
+    int p=A[l];
+    while(l<r){
+        while(A[r]>=p&&l<r){
+            r--;
+        }
+        A[l]=A[r];
+        while(A[l]<=p&&l<r){
+            l++;
+        }
+        A[r]=A[l];
+    }
+    A[l]=p;
+    return l;
+}
+
+void Qsort(int A[],int l,int r){
+    if(l>=r){
+        return;
+    }
+    int mid=patition(A, l, r);
+    Qsort(A,l,mid-1);
+    Qsort(A,mid+1,r);
+}
+
+int solve1(int S1[],int S2[],int L){
+    int S[2*L];
+    for(int i=0;i<L;i++){
+        S[i]=S1[i];
+        S[i+L]=S2[i];
+    }
+    Qsort(S, 0, 2 * L - 1);
+    return S[L-1];
+}
+
+int solve2(int S1[],int S2[],int L){
+    int S[2*L];
+    int i=0,j=0;
+    for(int k=0;k<L;k++){
+        if (S1[i]<=S2[j]){
+            S[k]=S1[i];
+            i++;
+        }else{
+            S[k]=S2[j];
+            j++;
+        }
+    }
+    return S[L-1];
+}
+
+int solve3(int S1[],int S2[],int L){
+    int pre=S1[0];
+    int i=0,j=0;
+    for(int k=0;k<L;k++){
+        if (S1[i]<=S2[j]){
+            pre=S1[i];
+            i++;
+        }else{
+            pre=S2[j];
+            j++;
+        }
+    }
+    return pre;
+}
+
+int solve4(int A[], int B[], int n) {
+    int s1 = 0, d1 = n - 1; // 序列 A 的起止下标
+    int s2 = 0, d2 = n - 1; // 序列 B 的起止下标
+    int m1, m2;
+    
+    while (s1 != d1 || s2 != d2) {
+        m1 = (s1 + d1) / 2;
+        m2 = (s2 + d2) / 2;
+        
+        if (A[m1] == B[m2]) {
+            return A[m1]; // 两个中位数相等，直接返回
+        }
+        
+        if (A[m1] < B[m2]) { // A 的中位数较小，舍弃 A 前半部分和 B 后半部分
+            if ((s1 + d1) % 2 == 0) { // 元素个数为奇数
+                s1 = m1;     // 包含中间点
+                d2 = m2;     // 包含中间点
+            } else {                 // 元素个数为偶数
+                s1 = m1 + 1; // 舍弃前半部分
+                d2 = m2;     // 保留后半部分
+            }
+        } else {             // B 的中位数较小，舍弃 B 前半部分和 A 后半部分
+            if ((s1 + d1) % 2 == 0) { // 元素个数为奇数
+                d1 = m1;
+                s2 = m2;
+            } else {                 // 元素个数为偶数
+                d1 = m1;
+                s2 = m2 + 1;
+            }
+        }
+    }
+    return A[s1] < B[s2] ? A[s1] : B[s2];
+}
+```
+
+(3)
+
+解法 1，时间复杂度：O(nlogn)，空间复杂度：O(n)
+
+解法 1，时间复杂度：O(n)，空间复杂度：O(n)
+
+解法 1，时间复杂度：O(n)，空间复杂度：O(1)
+
+解法 4，时间复杂度：O(logn)，空间复杂度：O(1)
+
+方法四不管他，前三种得会。方法四是 ai 生成的，其他都是自己写的。
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Bqyi4kpHcYlq-alrbRVGgpvLsmJwAC2RJrG364UVbEmEJ2Al8-jQEAAwIAA3kAAz0E)
+
+解：
+
+先分析：
+
+134=128+6=1000,0110B
+
+246=255-9=1111,0110B
+
+R1 寄存器内保存的值是 1000,0110B，解释为 134
+
+R2 寄存器内保存的值是 1111,0110B，解释为 246
+
+R3 寄存器内保存的值是 1000,0110B，解释为 -128+6=-122
+
+R4 寄存器内保存的值是 1111,0110B，解释为 -1-9=-10
+
+R5 寄存器内的值解释为 134+256-246=144=128+16=1001,0000B
+
+R6 寄存器内的值解释为 134+246-256=134-10=125=127-3=0111,1100B
+
+R7 寄存器内的值解释为 -122+10=-112
+
+R8 寄存器内的值解释为 -122-10+128=-132+128=-5
+
+(1)
+
+R1 内容是 86H
+
+R5 内容是 90H
+
+R6 内容是 7CH
+
+(2)
+
+m 值为 -122
+
+k1 值为 -112
+
+(3)
+
+可以。
+
+无符号数的减法等价于加上减数取补 +1，有符号数的减法等价于减数取反 +1。
+
+无符号数和有符号数的加减法实质上过程是一样的，只是解释方式不一样。
+
+(4)
+
+无符号整数加减法通过 CF 位，如果 CF=1 那么发生溢出，如果 CF=0 那么不发生溢出。
+
+有符号整数加减法通过 OF 位，如果 OF=1 那么发生溢出，如果 OF=0 那么不发生溢出。
+
+上述程序中：
+
+unsigned int z2=x+y
+
+int k2=m+n;
+
+发生溢出。
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Jqyi9PT-7IfxXl5EdMtsMM_xdp0AAC3hJrG364UVZ_w4keh93zGgEAAwIAA3kAAz0E)
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Nqyi9u9iFh6s6Dq9rtJS_sWefwWQAC3xJrG364UVZDG8subEEaYQEAAwIAA3kAAz0E)
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Rqyi9_4vzxDVtwJxxay2oJTdsizAAC4BJrG364UVY1XE6Xnc-czAEAAwIAA3kAAz0E)
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Vqyi-azQawSAvIO13vPbh_2HB9CAAC4RJrG364UVYaXfcHz8_i6AEAAwIAA3kAAz0E)
