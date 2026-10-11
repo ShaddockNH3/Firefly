@@ -5862,6 +5862,12 @@ RTT=4km/200000(km/s)=20us。
 
 ### 408 2011 真题 2 刷
 
+- 分数为 142
+- 第 9 题，回路的定义是 a-b-c-a，要回到本身，而简单路径的定义是没有重复路径的结点
+- 第 42 题 -1，算法题没写最优解（二分法），问题不大
+- 第 43 题 -2，第 4 问整体逻辑错误。第四问问的是带符号数，而我回答了有符号数相关的内容。并且这道题考察的是计算机内部如何比较，也就是得从硬件层面出发，而不是看 OF 标志位
+- 第 47 题 -3，文件系统与磁盘。本题结合磁盘来考，需要注意从磁盘的角度分析
+
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5NqygHvMaUDuO0PKKYGFbuAYdg0kAACsxFrG364UVbmLJKbCy5VYwEAAwIAA3kAAz0E)
 
 本题应该选 A。
@@ -5904,8 +5910,21 @@ RTT=4km/200000(km/s)=20us。
 
 所以 n1=n2+1=384，也就是 C。
 
-
 ![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5dqygT0fcBW1mThPoIMON-25XBUpAACvBFrG364UVaas4JYRKgKQQEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+对于 A，可以构造出全向右的树。
+
+对于 B，假设前序遍历为 1,2,3,4，中序遍历为 2,3,4,1，可以绘制出树，并且可以确认后序遍历确实是 4,3,2,1
+
+对于 C，假设前序遍历为 1,2,3,4，中序遍历为 3,2,4,1，可以的到后序遍历为 3,4,2,1。
+
+对于 D，可以构造全向左的树。
+
+先序/后序/层次遍历和中序遍历可以确认一棵树
+
+本题就是一个个去判断，主要是恶心。
 
 ![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5hqygUEbnEm8KxkK5Qe8j3ysi307gACvRFrG364UVY2kVoahZ4QVwEAAwIAA3kAAz0E)
 
@@ -5915,18 +5934,23 @@ RTT=4km/200000(km/s)=20us。
 
 ![6 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5lqygXMWLK5j_rho5mq2xLyOb4bdQACvxFrG364UVZIxtWgKwza0gEAAwIAA3cAAz0E)
 
-
 ![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5pqygXevZrWe8OxO5JxHAABgyt8_Q0AAsARaxt-uFFWR6Zbd04Wp9IBAAMCAAN5AAM9BA)
 
-本题应该选。
+本题应该选 A。
 
-二叉排序树。
+绘制出 A 对应的树求其中序遍历序列，发现 94 冲突。
+
+二叉排序树，我认为这类题求中序遍历比我一开始想的绘制树取硬想来的快很多。
 
 ![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5tqygYHtcKWOY7frf-UZ9eXB0uklQACwRFrG364UVagSdGQGc6GiwEAAwIAA3gAAz0E)
 
-本题应该选 D。
+～～本题应该选 D。～～
 
-简单路径的意思是没有重复结点的路径，1 显然正确；对于 2 显然错误，对于 3 显然正确，所以应该选 D。
+本题应该选 C。
+
+简单路径的意思是没有重复结点的路径，～～1 显然正确～～；对于 2 显然错误，对于 3 显然正确，所以应该选 D。
+
+因为上面的解释，回路是包含自己本身的，所以 1 是错的。
 
 多用特值法举例。
 
@@ -5941,6 +5965,8 @@ RTT=4km/200000(km/s)=20us。
 对于 2 和 3 显然正确。
 
 ![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA51qygcm5Suwzucq0IIGnVuaRYU_HgACxBFrG364UVbiBpNl07B3wgEAAwIAA3kAAz0E)
+
+本题应该选 A。
 
 快排只能用顺序存储，属于背书题。
 
@@ -6078,6 +6104,8 @@ RTT=4km/200000(km/s)=20us。
 
 ![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7BqyhTFp1xBuNIMzLcO2aHGOVT76QAC7RFrG364UVai4SXEFQXOEQEAAwIAA3kAAz0E)
 
+本题应该选 D。
+
 对于 1，假设页表已经满了，此时需要替换一个页，1,2,3 都会发生。
 
 ![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7FqyhUAAaqxPzJeSGBqH1KfgQpTK8UAAu4Raxt-uFFWcOdMj_vttCcBAAMCAAN4AAM9BA)
@@ -6158,7 +6186,7 @@ CSMA/CA 协议用于无线网传输，使用类似停止等待协议的机制。
 
 ![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA7xqyhn82tJLnn2oGsibmn5kHuUXoQACExJrG364UVbIuzO2iJ1U3wEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 C。
 
 首先确认乙的 ack，乙的 ack 意思是我期待你接下来要发什么，乙已经接收到 11220，所以期待收到 11221，所以 BD 可以排除。
 
@@ -6379,13 +6407,19 @@ k1 值为 -112
 
 (4)
 
-无符号整数加减法通过 CF 位，如果 CF=1 那么发生溢出，如果 CF=0 那么不发生溢出。
+～～无符号整数加减法通过 CF 位，如果 CF=1 那么发生溢出，如果 CF=0 那么不发生溢出。～～
 
-有符号整数加减法通过 OF 位，如果 OF=1 那么发生溢出，如果 OF=0 那么不发生溢出。
+～～有符号整数加减法通过 OF 位，如果 OF=1 那么发生溢出，如果 OF=0 那么不发生溢出。～～
+
+（计算机内部如何判断，而不是人类如何判断）
+
+最高位的进位和符号位的进位相同，则不发生溢出，相反则发生溢出。
 
 上述程序中：
 
-unsigned int z2=x+y
+～～unsigned int z2=x+y～～
+
+（题目要求的是带符号数，无符号数上面那俩都溢出了）
 
 int k2=m+n;
 
@@ -6393,8 +6427,181 @@ int k2=m+n;
 
 ![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Jqyi9PT-7IfxXl5EdMtsMM_xdp0AAC3hJrG364UVZ_w4keh93zGgEAAwIAA3kAAz0E)
 
+解：
+
+(1)
+
+虚拟地址空间大小为 16MB，也就是 2^24 B，所以虚拟地址共有 24 位。
+
+由于页面大小为 4KB，也就是 2^12B，所以页内地址是 12 位，所以虚页号有 24-12=12 位。
+
+物理地址空间大小为 1MB，也就是 2^20B，所以物理地址共有 20 位。
+
+由于页内地址占 12 位，所以页框号有 20-12=8 位。
+
+(2)
+
+物理地址空间为 20 位，cache 采用直接映射，共 8 行，需要 3 位存储。
+
+主存与 cache 块交换大小是 32B，占 5 位。
+
+所以 tag 号占 20-3-5=20-8=12 位。
+
+所以 tag 号前 12 位，cache 占中 3 位，块内地址占后五位。
+
+(3)
+
+00,1C60H，取前三位为虚页号 001 访问主存，由于有效位为 1，所以可知在主存里。
+
+由页号 001 得到物理页号 04，得到主存地址 0,4C60H。
+
+0,4C60H=0000,0100，1100,0110,0000B，第 5-7 位为 cache 号，即 011，也就是 3 号 cache。比较 tag 号，自己的 tag 号为 04C，而题中第 3 行是 105，所有 cache 不命中。
+
+(4)
+
+四路组相联需要可以存放 8 个表项，所以总共有 2 组 TLB，需要 1 位 TLB 号。
+
+所以虚拟地址空间前 11 位为 tag 号，tag 号后一位为 TLB 组号。
+
+02,4BACH=0000,0010,0100,1011,1010,1100B.
+
+可知在第 0 组 TLB。虚拟地址 tag 号为 000,0001,0010B=012H，对比 TLB 发现其有效位为 1。由于在 TLB 内必在页表内，所以必在主存。
+
 ![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Nqyi9u9iFh6s6Dq9rtJS_sWefwWQAC3xJrG364UVZDG8subEEaYQEAAwIAA3kAAz0E)
+
+```c 草稿
+cobegin{
+  process 顾客i
+  {
+    P（座位）； // 10
+    P（取号机）； // 1
+    从取号机获取一个号码；
+    V（取号机）；
+    V（顾客数量）；
+    等待叫号；
+    P（营业员空位）；// 0
+    V（座位）
+    获取服务；
+  }
+  process 营业员
+  {
+    while(1){
+      P（顾客数量）；// 0
+      叫号；
+      V（营业员空位）；
+      为顾客服务；
+    }
+  }
+}
+```
+
+```c
+semaphore seat=10;
+semaphore mutex=1;
+semaphore service=0;
+semaphore cust=0;
+
+cobegin{
+  process 顾客i
+  {
+    P(seat); // 10
+    P(mutex); // 1
+    从取号机获取一个号码;
+    V(mutex);
+    V(cust);
+    等待叫号;
+    P(service);// 0
+    V(seat);
+    获取服务;
+  }
+  process 营业员
+  {
+    while(1){
+      P(cust);// 0
+      叫号;
+      V(service);
+      为顾客服务;
+    }
+  }
+}
+```
+
+本题为理发师问题，属于生产者消费者问题的变种，历年考题只考过这一题。
 
 ![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Rqyi9_4vzxDVtwJxxay2oJTdsizAAC4BJrG364UVY1XE6Xnc-czAEAAwIAA3kAAz0E)
 
+解：
+
+(1)
+
+连续存储。
+
+使用连续存储具备随机访问的特点，减少磁盘移动距离。
+
+一次性写入数据，链式存储可以一次性写入数据，必须得慢慢写。
+
+采用索引结构额外需要索引块，对于不可修改的小文件存储开销太大。
+
+起始块号，长度。
+
+(2)
+
+集中存储。
+
+集中存储在查找 FCB 的时候可以减少磁头移动距离和磁盘 IO。（扫到了答案才想出来的）
+
 ![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Vqyi-azQawSAvIO13vPbh_2HB9CAAC4RJrG364UVYaXfcHz8_i6AEAAwIAA3kAAz0E)
+
+首先分析本题：
+
+00 21 27 21 51 ee 为目的 mac 地址，本题的目的 mac 地址应该是 R 的。
+
+00 15 c5 cl 5e 28 为源 mac 地址。
+
+08 00 为类型号
+
+45 为版本号和头部长度
+
+00 为服务类型
+
+01 ef 为总长度
+
+11 3b 为标识
+
+40 00 为标志和片偏移
+
+80 为 TTL
+
+06 为协议
+
+ba 9d 为头部校验和
+
+Oa 02 80 64 为源 IP 地址
+
+40 aa 62 20 为目的 IP 地址
+
+(1)
+
+Web 服务器 IP 地址即本题的目的地址，也就是 40H.AAH.62H.20H
+
+该主机默认网关 MAC 地址即 R 的 Mac 地址，也就是 00-21-27-21-51-ee
+
+(2)
+
+ARP 协议
+
+ff-ff-ff-ff-ff-ff
+
+(3)
+
+图中显然是已经建立好了 TCP 连接开始传输 HTTP 数据了。
+
+首先花费 1RTT 的时间得到 html，然后花 5RTT 的时间请求 5 次小图像，总共 6RTT。
+
+(4)
+
+TTL，目的 IP 地址，头部校验和
+
+![47 参考资料](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Zqyzh01Or0OTh7GeAUKcezjNZRmwACqhNrG364WVYc8JbQKO_BeAEAAwIAA3kAAz0E)
+
+408 不需要背诵 IP 和 TCP 的数据报，但是需要背以太网的。
