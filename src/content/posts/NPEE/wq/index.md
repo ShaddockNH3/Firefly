@@ -7182,6 +7182,11 @@ DMA 常用于传送高速设备数据块，如果 CPU 优先则可能会丢失�
 
 ### 408 2013 真题 2 刷
 
+- 分数为 143，分数没 1 刷高。1 刷的时候选择题全对，然后错的也是第 43 和第 44，错的点几乎一模一样
+- 第 3 题低级错误，图画的是对的，但是题看错了
+- 第 43 题 -4，IO 相关分析错误
+- 第 44 题 -1，为什么是指令寄存器？
+
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBAxqy4UkyyYgg4EWN607foVPwCjRzQACHRZrG364YVagRzuEtHgOAAEBAAMCAAN5AAM9BA)
 
 本题应该选 D。
@@ -7191,7 +7196,6 @@ DMA 常用于传送高速设备数据块，如果 CPU 优先则可能会丢失�
 本题和 2012 年的数据结构应用题类似，但这道题考的不是比对次数，而是合并次数。
 
 这里的坑和排序的交换次数、比较次数类似。
-
 
 ![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBA1qy4h9CnsfzDBacZd7DZh3jTBvvgACURZrG364YVZ3xHDsry83dwEAAwIAA3kAAz0E)
 
@@ -7205,22 +7209,83 @@ DMA 常用于传送高速设备数据块，如果 CPU 优先则可能会丢失�
 
 ![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBA5qy4nSsqgTcLVvDT2VfDuvgzfloAACZxZrG364YVYTvfqVISXUYgEAAwIAA3kAAz0E)
 
-本题应该选 A。
+～～本题应该选 A。～～
+
+本题应该选 D。
 
 本题属于模拟题，只要记住平衡二叉树的性质以及如何转转即可。
 
 ![3 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBA9qy4p3GS4ve7d38EDBUn9nk0V41QACcxZrG364YVa8lv2gLk1mKQEAAwIAA3cAAz0E)
 
+上述的解是对的，但是题看错了，上述为 0 的确实是 3。
+
 ![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBBBqy4qTvyb8gKp6qirDDUkSMQnvjAACdBZrG364YVbBUtQviIwWlAEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 B。
 
-本题考察的是哈夫曼树，绘制如图：
+本题考察的是多❌哈夫曼树，也就是最佳归并树。有 6 个叶节点，显然 (6-1)%(3-1)=1，所以要额外加 (3-1)-1=1 个虚段。
 
+绘图如下：
+
+![4 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGVqzeD0QIHfa_HRM5Kaq3ZSs6bHLAACUBFrG8y1aVY9l7uaF0uLKwEAAwIAA3kAAz0E)
+
+可以得到 B。
 
 ![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBBFqy4sOtgbS9jSMOLakvgzSPewdOAACdRZrG364YVZI4WjO2yvcTgEAAwIAA3kAAz0E)
 
+本题应该选 A。
 
+假设 Y 和 X 的父节点为 A，则由于左右根，X 是右，所以接下来应该是根，也就是 X 的父节点。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGZqzeF0vYKvpVT_zpiz5l52a059XwACURFrG8y1aVYv16B8wrLeEwEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+使用排除法，考虑一个树的结点只有 1,2,3，且 2 为根，删除叶节点 3 之后再插入，T1 和 T3 不变，所以 1 排除；考虑相同的结点，但是 1 为根，删去 2，此时插入的时候就不一样了。所以 4 排除。
+
+综上所述，叶节点的时候，T1 和 T3 相同，不是叶节点，T1 和 T3 不同，也就是 2,3 正确。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGdqzeIr1Fkmq7mwVoxjhwLBBUrvDAACVBFrG8y1aVaXmXL1p2OEjgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+按行之和求出来是出度，按列之和求出来是入度。
+
+所以第一行之和是 2，第一例之和是 1，所以第 0 个结点的度应该是 3，排除法可以选择出来是 C。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGhqzeJ1mkHckVgi7FattBiWd094FQACVRFrG8y1aVYYsGUJRdtjmQEAAwIAA3kAAz0E)
+
+本题应该选 D，D 是深度优先遍历。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGlqzeKZWAp3F-BATfAJA6vIhNQYMAACVhFrG8y1aVZ909Y2FkGNlwEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+求关键路径可得 本题关键路径有 3 条，也就是 1,3,2,4,6、1,3,2,5,6 和 1,3,5,6
+
+然后逐个分析。
+
+对于 A，取 c 和 e，也就是影响 2,4 和 2,5，完全不影响关键路径 3，舍去。
+
+对于 B，取 c 和 d，也就是影响 2,4 和 3,2，完全不影响关键路径 3，舍去。
+
+对于 C，去 d 和 f，也就是影响 3,2 和 3,5，均影响。
+
+对于 D，取 f 和 h，也就是影响 3,5 和 5,6，完全不影响关键路径 1，舍去。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGpqzeQq-DIYCVg57mEwaOSbj1G5bwACWxFrG8y1aVYaiVeg6Uj4QwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+5 阶 B 树非根最少需要含有 5/2 向上取整 -1=2 个结点，根最少得有一个结点也就是 2 ❌，所以最后应该选 A。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGtqzeRka26sfPptWYHrfCxRaPagIAACXBFrG8y1aVaSaUtAaq-t-QEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+逐个分析，第一趟排序的结果为：110,120,911,122,114,007,119；第二趟排序的结果为：007,110,911,114,119,120,122。
+
+对比可得本题应该选 C。
 
 ![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBBNqzJEHd99b9kUVO8EUjs2tNnKBjwACoxFrG8y1YVZNdMYxH-E-QQEAAwIAA3kAAz0E)
 
@@ -7412,8 +7477,7 @@ CD 可以直接存取（不能说随机读），但是定位之后，读写只�
 
 ![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBCdqzK086DhIx-nH9-mig7xtgF1dIAACGxJrG8y1YVZm4uTr8fYQZQEAAwIAA3gAAz0E)
 
-
-本题应该选。
+本题应该选 B。
 
 对于 A，银行家算法是死锁避免，死锁预防指的是破坏死锁的四个必要条件。
 
@@ -7421,7 +7485,7 @@ CD 可以直接存取（不能说随机读），但是定位之后，读写只�
 
 对于 C，处于不安全状态的时候，只是可能会出现死锁，而不是必然。假设现在系统处于不安全状态，进程一直都没去要他的 3 个设备。
 
-对于 D，银行还算法破坏了死锁必要条件里
+对于 D，破坏死锁必要条件是死锁预防干的事，银行家算法根本没破坏请求和保持。
 
 死锁的四个必要条件是：
 
@@ -7641,19 +7705,27 @@ CPU 时钟周期为 1/800M=1.25ns。
 
 (3)
 
-32B/4B=4，所以总共需要 5 个总线时钟周期。
+～～32B/4B=4，所以总共需要 5 个总线时钟周期。～～
 
-所以 5✖️5ns=25ns。
+～～所以 5✖️5ns=25ns。～～
+
+第 4 问考虑到了存储体的问题，但是第 3 问没考虑到，感觉属于比较低级的错误。
+
+传送地址 5s，启动第一个 40ns，然后启动 8 体，也就是 8✖️5ns，总共加起来也就是 85ns。
 
 (4)
 
 首先计算 100 条指令的时间花费，也就是 100✖️4✖️1.25ns=500ns。
 
-一条指令平均需要 1.2 次访存，也就意味着总共需要 120 次访存，120 次访存也就意味着总共需要访存 120/8✖️40ns=600ns
+～～一条指令平均需要 1.2 次访存，也就意味着总共需要 120 次访存，120 次访存也就意味着总共需要访存 120/8✖️40ns=600ns～～
 
-cache 缺失率为 5%，也就意味着 100 条指令里有 5 条指令 cache 缺失，也就意味着需要 5✖️25ns=125ns 去处理 cache 缺失问题传送数据。
+～～cache 缺失率为 5%，也就意味着 100 条指令里有 5 条指令 cache 缺失，也就意味着需要 5✖️25ns=125ns 去处理 cache 缺失问题传送数据。～～
 
-所以总共也就是 1225ns。
+～～所以总共也就是 1225ns。～～
+
+cache 缺失率为 5%，也就意味着 100 条指令里有 100✖️1.2=120 次访存，也就是 120✖️0.05=6 条指令 cache 缺失，也就意味着需要 6✖️85ns=510ns 去处理 cache 缺失问题传送数据。
+
+所以总共加在一起应该是 1010s。
 
 ![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBDNqzM87yCNB4etJ2otmkU7hMvryIQAChRJrG8y1YVZbhXp_miFE6QEAAwIAA3kAAz0E)
 
@@ -7665,7 +7737,7 @@ cache 缺失率为 5%，也就意味着 100 条指令里有 5 条指令 cache �
 
 按字节编址，因为 16 位定长本题采用是的 +2。
 
-OFFSET 为 8 位，按照有符号数的表示范围是 -128 到 127。由于已经 + 了 2，所以范围应该是 -127 到 128，所以向后最多可以跳转 127 条指令。
+OFFSET 为 8 位，按照有符号数的表示范围是 -128 到 127，所以向后最多可以跳转 127 条指令。
 
 (2)
 
@@ -7685,9 +7757,11 @@ N=0
 
 (4)
 
-1. 译码器
+1. ～～译码器～～
 2. 移位寄存器
 3. 加法器
+
+应该是指令寄存器，指令寄存器连着那个是多路选择器。
 
 ![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBDVqzNHOrdLEZV7_7YfTNGV6B4hWPgACihJrG8y1YVY59n2iUGlBGwEAAwIAA3kAAz0E)
 
@@ -7793,3 +7867,473 @@ cobegin
 BGP 协议
 
 TCP。
+
+### 408 2014 真题 2 刷
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBD1qzRkBOEJpt1a_8FWeNBu-ena-JQACpA9rG8y1aVY4o8vqsKAdsAEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+记当前为 1，那么也就是 n✖️n+n/2✖️n+...，也就是 C。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBD5qzRl05zX01IxUJCngoheBXiUy8gACpg9rG8y1aVaZ2DMtvs9zxQEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+属于模拟应该是 B。
+
+草稿太乱了，不放上来了。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGxqzg86s_eQU4riXiNrWtru-JxXCgACnhVrG7fmcVbVFxhqK72wNwEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+按照之前说的技巧，假设已经有一个元素了，然后 rear 指针回退一格，也就是有一个元素的时候，end1 指向 0，end2 指向 1，出队，也就是 end2 指向 0，所以初始为空的时候，end1==end2。
+
+当队伍满的时候，这类题采用空一位的做法，不应该是 mod M-1，应该是 mod M
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBG1qzg_NKh3XfAb_V9XdL46e2MFMQwACoRVrG7fmcVYyiej8LySAewEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+本质上这道题求的是中序遍历，所以对该二叉树中序遍历，也就是：
+
+d,e,b,x,a,c，所以左右线索分别指向 b 和 a，也就是 D。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBG5qzhApJAABV4NBEfQLcdK5BUWTlM0AAqQVaxu35nFWryr3ISiRDbABAAMCAAN4AAM9BA)
+
+本题应该选。
+
+这类题采用特值法排除是最快的，反例如图所示：
+
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBG9qzhE_GbFT1-DUymM8qr94poXD8QACpxVrG7fmcVbJFope3gXeggEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+这类题最简单的做法是观察，注意到 D 的 110 是 1100 的前缀。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHBqzhFzWPK1bb2RDkxCD7OxCiCgcwACqBVrG7fmcVaUeQ5u2WqbTQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+这类题最好的办法就是逐个模拟。
+
+对于 A，3,1 之后，对于 2 之前需要完成 4，所以舍去。
+
+对于 B，和 A 类似。
+
+对于 C。3,1,4,2 之后如果取 5 的话，则需要完成 6，舍去。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHFqzhHsKkJiO1kD45bswVKjw70L4AACqxVrG7fmcVZtMPcfzoBfvwEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+对于 A 和 C，不管寻址寻了多久，存储空间都是消耗那么多。
+
+对于 B 是提前固定的，显然不会受到影响。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHJqzhIoUszXbGsJv0J3oAS7oFXc_gACrBVrG7fmcVYHal7vsnC2gAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+一棵 4 阶 B 树，至少拥有 4/2 向上取整 -1 个的结点，也就是 1，要让关键字节点个数最多，也就是让单个结点内含有的关键字数量越少。
+
+一个结点内至少含有 1 个关键字，所以这道题应该选 D。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHNqzhLKMN2Fh_cXacGW98uEIMghHgACrxVrG7fmcVYq73vg8RiRUgEAAwIAA3kAAz0E)
+
+本题应该选 3。
+
+观察到 9 和 1，所以 d 不可能是 1。
+
+观察到 9 和 4，所以 d 不可能是 2。
+
+观察到 9,13,20；2,7,23；4,8,15，所以可能是 3。
+
+观察到 9,7，所以不可能是 4。
+
+观察到 9,8，所以不可能是 5。
+
+综上所述，应该是 3。
+
+这类题也没什么有技巧的，都是模拟。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBD9qzbjMVLhqVc32m-rjmTihQOidHQAC1RBrG8y1aVaM6OWaOuNDhwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 A，可以选择 2 和 9 分别作为轴。
+
+对于 B，可以选择 2 和 9 分别作为轴。
+
+对于 C，只能选出来 9 当轴。
+
+对于 D，可以选择 5 和 9 当轴。
+
+对于这类题，一定要优先想边界。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEBqzbnEXAq8P21CrHhcVJOU_SVk0wAC1hBrG8y1aVYoU-IaHxzHqwEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+假设 P 原本执行的指令数量是 N，CPI 是 X，主频为 M，那么也就是 NX/M=20。根据题目所说的公式，0.7N✖️1.2X/N，也就是 0.7✖️1.2✖️20=16.8。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEFqzbqxF5xsC0Nsgcjq-7x8baF8_AAC1xBrG8y1aVbk61W-b9QnhQEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+这道题应该按照十进制考虑，8 位定点补码运算的范围是 -128-127，那么显然 x-y =128 会溢出，所以应该选 C。
+
+本题应该选。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEJqzbrs3oAxlGglx7KfAAGy_CloGtIAAtgQaxvMtWlWqoWICPqJWhQBAAMCAAN5AAM9BA)
+
+本题应该选 A。
+
+CC90,0000H=1｜100,1100,1｜001,0000,0000,0000,0000,0000B.
+
+B0C0,0000H=1｜011,0000,1｜100,0000,0000,0000,0000,0000B.
+
+首先看符号位，f1 和 f2 的符号位都是 1，也就是都是负数，所以 x 和 y 符号相同。
+
+观察阶码，x 阶码显然大于 y 的阶码，所以 x 的次数显然大于 y 的次数，由于是负数，所以次数越大的数越小，所以 y 更大，也就是 x < y。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBENqzbuf7F2kR9PmGIIaORAt4bpRYgAC3RBrG8y1aVb6cakE8pl4cAEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+本题属于比较阴的题目，DRAM 芯片的地址引脚和数据引脚，而不是问的是存储器。
+
+对于 DRAM，没有特殊说明默认采用地址复用技术，所以总共 4M=2^22，也就是 11 根地址线。
+
+数据总线显然是 8 根，所以总共 19 根。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBERqzbxtAaGYzdpsCrx_OOYdiOBVBgAC3hBrG8y1aVYIAUG6s0Kp6wEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+指令 cache 和数据 cache 分离，是因为要减少访存冲突，也就是流水线冲突。
+
+从流水线的角度思考，一般是五段式流水线，取指令，分析指令，执行指令，访存，写回。如果指令和数据 cache 没有分离，那么取指令和访存冲突。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEVqzb_Qt3WWkcTxmP7hqnPzaMPlxAAC3xBrG8y1aVbv033cvIbGeAEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+16 个通用寄存器占 4 位，操作码字段占 8 位，由于 store 指令需要指令从谁存到谁，需要 2 个寄存器位，也就是 32-8-4-4=16。
+
+16 位的偏移应该是 A，因为 offset 的计算公式是当前指令 + “1”+offset✖️x 编址数
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEZqzb_ks5Fk--Oz-Zw6tZWAXfA-ZgAC4BBrG8y1aVZauiVUqfywRwEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+采用微程序控制器，共有 32 条指令，由于每条微指令平均由 4 条微指令组成，所以总共有 4✖️32=128 条微指令。
+
+由于还有公共的 2 条微指令，所以总共有 130 条微指令，也就是需要 8 位才能存储。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEhqzcKjKT16_4vkKT4aPXsg5rcHfwAC5hBrG8y1aVbM39Zt9krALQEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+由于地址/数据线有 32 根，所以一次最多传送 4B 的数据，由于每个时钟周期内传送 2 次数据，所以 1s 内可以传输 66M✖️2=132M 次数据，所以 132M✖️4B=528MB/s，也就是 C。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBElqzcMQkwsHgAwPqnPOelBkyjSHDwAC6BBrG8y1aVYDFNwc7VM4JwEAAwIAA3kAAz0E)
+
+本题应该选 C，属于背书题。
+
+对于 A 和 B 是并行和串行的概念，现代一般采用串行，因为并行很容易导致信号干扰。
+
+对于 D，同步传输、异步传输、半同步传输
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEpqzcQD3cmS8M4TJInHNN7jqc7csQAC7BBrG8y1aVbaSk1IAAH3VAgBAAMCAAN4AAM9BA)
+
+本题应该选 D。
+
+统一编址情况下，CPU 可以使用一样的访存指令访问 IO 接口，比如 Load 和 Use。
+
+控制寄存器，状态寄存器和数据寄存器。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEtqzcRck5pcK3-Y9OrLuLtaIJXW6QAC7RBrG8y1aVavaX7hCapq1QEAAwIAA3kAAz0E)
+
+本题应该选。
+
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBExqzcRt4zT2F64SjYUjSmKHfQgywAAC7hBrG8y1aVbd2KL-_jssRwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+对于 A 是绝对公平的算法，所以不会导致饥饿现象。
+
+对于 B，静态优先数优先，假设来了非常多高优先级的进程，低优先级的进程始终得不到满足，所以排除。
+
+对于 C 和 D，无论是抢占式短作业还是非抢占式短作业都会导致饥饿现象。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBE1qzchH8e5bTGuIuiEzoSCq8MJCzAAC9RBrG8y1aVbqmtIN86OXsQEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+先求会导致死锁的最大个数，也就是 2+3+4=9，所以不会导致死锁的是该个数 +1，也就是 10。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBE5qzciQwya61V4O_97Qm19MW9ietQAC9hBrG8y1aVa9mvKxCTF2hAEAAwIAA3gAAz0E)
+
+本题属于背书题，应该选 D。
+
+对于 A，trap 在用户态运行，让操作系统进入内核态执行系统调用。
+
+对于 B，可以考虑 jmp。
+
+对于 C，可以考虑递归函数调用。
+
+对于 D，关中断必须在内核态执行。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBE9qzc2awdXbKDhVO-fOwKbxQy_7mQACARFrG8y1aVZn0if8mdzGPgEAAwIAA3gAAz0E)
+
+本题应该选。
+
+对于 A，读磁盘操作完成的意思是 IO 完成，操作系统需要让其从阻塞态变成就绪态，所以 A 必然是需要执行的。
+
+对于 B 显然是错误的，除非故意这么做，一般来讲操作系统不改变其优先级或者增加进程优先级。
+
+对于 C，如果该进程前方还有其他进程正在执行，此时进程还在就绪态，所以不需要分配内存。
+
+对于 D 和 B 类似。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFBqzc57Beq0HYfBDpsy7pxZAoyKgAACAhFrG8y1aVbiPw6tFYKG9gEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+10GB 的磁盘分区，簇大小为 4KB，也就是总共有 10GB/4KB = 10✖️2^18 个簇，需要 10 ✖️2^15B 的存储空间，也就是 10✖️2^15B/4KB=80 个簇。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFFqzc9hJjFrRcKB490LZwo7JY2bvAACBRFrG8y1aVaC-MevpEO_8gEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 1，增大 TLB 容量可以使 TLB 命中提升，显然正确。
+
+对于 2，页表常驻内存可以让页表本身不会缺失，所以可以，对于这种情况可以考虑二级页表。
+
+对于 3，增大交换区的意思是让磁盘和内存的交换空间变大，交换空间变大并不意味着速度可以变快，只是空间变大了。
+
+所以应该选 1 和 3。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFJqzdDcn9PA17mwb_E8wlRrI4mU4QACCRFrG8y1aVadfIpLTGyF9AEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+这道题的本质是考察 open 和 read 的区别，本题题设意思是 open 之后，操作系统需要做什么。
+
+对于 ABD，open 需要文件名作为参数，需要将文件控制块读入内存中，然后在系统文件打开表中登记，read 的作用是根据文件描述符去磁盘中读具体的内容到内存里，然后返回用户进程文件的数据缓冲区。
+
+所以 A 错误，B 正确，D 错误。
+
+对于 C，打开文件的时候不需要修改文件控制块的读写权限，与之无关。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFNqzdG3LEKLVF76zbP69aMu2fjOqgACCxFrG8y1aVYJ2CXg7xF91wEAAwIAA3kAAz0E)
+
+本题应该选 A，属于背书题。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFRqzdHYpalNpviYdqpfEzJyqpROeQACDBFrG8y1aVaNC8p_6KC1qwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 A，管道是半双工的，所以不能实现双向数据传输。
+
+对于 B，管道的容量不受磁盘容量的大小限制，应该是受内存大小的限制。
+
+对于 C 和 D，考虑类似读者写者问题，假设一个管道内有读进程，那么可以允许其他读进程进入。
+
+这类题需要深度辨析管道和管程的区别。
+
+管程属于语法范围，作用是管理 PV 操作，但是其和 PV 操作有区别，管程的 P 操作如果在没有资源的时候，并不会 -1，而是等待。
+
+此外还可以注意，管程只允许一个读进程或者一个写进程进入（因为操作管程必须是互斥的），但是进入管程后（意思是在管程外）可以有多个读进程同时操作里面的东西，也就是说过通道需要互斥，但是里面的东西可以同时访问。
+
+这个通道指的是管程，这个里面的东西指的是管程外。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFVqzdNDJ8bseZY4iC1xmi1ffFs9wwACGBFrG8y1aVYRQfOSGlO_ZAEAAwIAA3gAAz0E)
+
+本题属于背书题，应该选 D。
+
+对于 ABC 属于多级页表的缺点，引入多级页表之后需要额外进行多次地址转换，同时缺页中断可能性也会增加，由于要管理页表的页表，所以页表项的个数会变多，不过不会改变页表项本身占的字节数。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFZqzdP24PMAAccYiR8NdmWzCwPthQMAAhsRaxvMtWlWrUN-dmVd5jQBAAMCAAN4AAM9BA)
+
+本题属于背书题，应该选 C。
+
+OSI 参考模型从下至上应该是物理层 - 数据链路层 - 网络层 - 传输层 - 会话层 - 表示层 - 应用层。为会话层提供服务的应该是传输层。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFdqzdRmzG1RGkqDNvigMaRm_PVcGQACHRFrG8y1aVYjqcvIIu142AEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+a1 向 c1 发送数据帧，经过交换机，交换机通过自学习功能先登记 a1 和端口 1，然后查表发现没有，所以发广播询问，得到 3 的回应后记录目的地址 c1 和端口 3。由于这个过程是广播，所以应该从除了 1 之外的所有端口发送，也就是 2,3
+
+c1 向 a1 发送确认帧，查转发表发现有对应的项，所以直接单播传输即可，也就是 1。
+
+综上应该选 B。
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFhqzdUjiEwI7H4K0TUBfhL9_oaBvQACHhFrG8y1aVZWlmJCFVhPsgEAAwIAA3gAAz0E)
+
+本题属于背书题，应该选 D。
+
+数据传输速率的意思是发送时延，发送时延显然和 ABC 相关，D 和 RTT 相关，属于传播时延。
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFlqzdVRtRXmSUici4uzIqZI1iaAlwACIBFrG8y1aVaFCJ0NDnI1YgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+首先计算发送一个数据帧的时间，也就是 1000B/100Mbps=8000bit/100Mbps=8✖️10^-5s=0.08ms，记为 Td，忽略 Ta。
+
+而 RTT=100ms
+
+所以最大发送窗口公式应该是：
+
+NTd/(Td+RTT)>=1，就算可得 N>=1251。而 N 最大是 1000，所以意味着数据率不可能打满。
+
+所以发送 1000✖️1000B 之后，就需要等待第一个帧回到手后才可以发送下一个 1000✖️1000B。发送 1000✖️1000B 所需要的时间是 80ms，RTT 是 100ms，所以第一个帧的回应应该是 100ms，也就意味着每间隔 100ms 才可以发送 1000✖️1000B。
+
+1s 内总共有 10 个 100ms，所以总共可以发送 10✖️1000✖️1000B 的数据，也就是 80Mbps。
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFpqzdg4jMeiYLgr45PeiWVsxNm9kgACKRFrG8y1aVaGllFRcVIwmAEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+码片的计算应该是按照向量乘法计算，A 的码片是 1111，C 受到的第一片是 2020，相乘单位化得到 1，第二片是 0，-2，0，-2，相乘单位化得到 -1，第三篇是 0202，相乘单位化得到 1。
+
+由于是 1,-1,1，译码得到 101，也就是 B。
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFtqzdj5AwEQQqia5WiFBVQfH8F94QACKxFrG8y1aVaMxMdkmfpydgEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+甲在发生超时的时候拥塞窗口为 8KB，也就意味着新的拥塞窗口是 4KB。
+
+所以 t 时刻的发送窗口是 min{1, 10}，t+1 时刻前者是 2，t+2 时刻前者是 4，t+3 时刻前者是 5，直到 t+8 时前者是 10，而当 t+9 时，前者是 11，但是后者接收窗口最大为 10。
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFxqzdmSc_U0CbWHYnYWByOYHsXksAACLBFrG8y1aVYnxuxSK-SkUQEAAwIAA3gAAz0E)
+
+本题应该选 B，属于背书题。
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBF1qzdmpnTNzbnxXWn1H5V3s_psxHQACLRFrG8y1aVar7Rxz6_isNAEAAwIAA3gAAz0E)
+
+本题应该选 D，属于背书题。
+
+PPP 协议是局域网接入广域网的协议，所以可能会用到，对于 D 是邮件传输协议，不可能使用到。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBF5qzdrlZ4cZpIefJDEzcn_F1a3CvwACLhFrG8y1aVbwc9I3uxXrYwEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+1. 设置一个全局变量 WPL
+2. 对该树进行先序遍历，如果结点为空，那么返回
+3. 如果该结点为叶结点，那么结算，WPL+=深度✖️权值
+4. 如果该结点不是叶节点，那么递归的遍历其左子树和右子树
+
+(2)
+
+```c++
+struct TNode{
+  int weight;
+  TNode* left;
+  TNode* right;
+}
+```
+
+(3)
+
+```c++
+int WPL=0;
+
+void getWPL(TNode* T,int depth){
+  if(T==nullptr){
+    return;
+  }
+  if(T->left==nullptr&&T->right==nullptr){
+    WPL+=T->weight*depth;
+  }
+  getWPL(T->left,depth+1);
+  getWPL(T->right,depth+1);
+}
+
+int solve(TNode* T){
+  getWPL(T,0);
+  return WPL;
+}
+```
+
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBF9qzdxY0FAYN8NIXAzdvb6vWqh4ggACMxFrG8y1aVagSf4LIiDfRgEAAwIAA3kAAz0E)
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGBqzdxzU0xo4VJkMNVpLCmmZMAiVwACNBFrG8y1aVb20rxemcjTdwEAAwIAA3kAAz0E)
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGFqzdyJjH7dJzHo7O3oguX1vSR45wACNRFrG8y1aVZaXV8Pu59g_wEAAwIAA3kAAz0E)
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGJqzdyjU1KaJ-FAdOK_Ze4-I7I42QACNhFrG8y1aVbJ9-DwdOVcSAEAAwIAA3kAAz0E)
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGNqzdy1xitqurSeBvDd4IszLPvCrwACNxFrG8y1aVbq_wceCXBTnAEAAwIAA3kAAz0E)
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGRqzdzEOrtevENwkzF-WBXNMBqJXAACOBFrG8y1aVZ3GdXZcZeWeQEAAwIAA3kAAz0E)
+
+解：
+
+```c 草稿
+func 生产者_i(){
+  while(1){
+    生产；
+    P（空位）； // 1000
+    P（mutex）； // 1
+    访问缓冲区；
+    V（mutex）；
+    V（生产）；
+  }
+}
+
+func 消费者_j(){
+  while(1){
+    P（锁）； // 1
+    // 执行 10 次
+    P（生产）；
+    P（mutex）；
+    访问缓冲区；
+    V（mutex）；
+    V（空位）；
+    V（锁）；
+  }
+}
+```
+
+```c
+semaphore mutex=1;
+semaphore empty=1000;
+semaphore product=0;
+semaphore key=1;
+
+func producer_i(){
+  while(1){
+    produce();
+    P(empty);
+    P(mutex);
+    putin();
+    V(mutex);
+    V(product);
+  }
+}
+
+func consumer_j(){
+  while(1){
+    P(key);
+    for(int i=0;i<10;i++){
+      P(product);
+      P(mutex);
+      get();
+      V(mutex);
+      V(empty);
+    }
+    V(key);
+  }
+}
+```
