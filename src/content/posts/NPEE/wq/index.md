@@ -4002,6 +4002,297 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ## OS 王道选择题 2 刷
 
+### OS 王道选择题 2 刷第 1 章
+
+![1.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRlqz5Tp7gzcJl3dYHVVGUjEzuqRAAPFFGsbt-Z5VqC-PY1SQJ7vAQADAgADeAADPQQ)
+
+第 13 题答案为 BACD，错选为 BADC。为低级错误。IBM-PC 是微型计算机，实时操作系统即使做出相应。这里提一嘴，实时操作系统分为软实时和硬实时，软实时比如说车票系统，不需要太强的时效性，硬实时比如说金融场景。
+
+第 14 题错选为 C，注意此处为并行，而非并发。与 1 刷第 16 题类似错误。并行意味着需要有多个处理器，因为并行意味着微观时间内也是同时
+
+![1.2.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRpqz5XnWiAPcb9ar0gB4Fg4fvpWJQACxxRrG7fmeVYkXlZJjartgAEAAwIAA3gAAz0E)
+
+第 18 题错选为 A。考虑这样一个场景，假设单道程序系统和多道程序系统同时处理若干个程序，某时该进程需要进行 I/O 操作，此时单道程序系统无法切换进程，只能让 CPU 等待该进程处理完 I/O 后再继续运行该进程，而多道程序系统可以趁着该进程处理 I/O 时，切换到其他需要 CPU 的进程。
+
+和上述情况类似的，在同一时间内有两个进程，他们都需要进行 I/O 操作，单处理机先处理第 1 个进程，假设先 CPU 再 I/O，此时 I/O 设备闲置，而第二个先 I/O 再 CPU 的进程无法利用 I/O 设备。所以多道程序系统可以让 I/O 设备利用率高。
+对于系统开销，由于单道相比于多道而言会有更多的闲置，所以单道开销低，多道开销高。
+
+第 19 题错选为 D。错误原因猜测类似于 1 刷第 16 题，对多任务操作系统理解不够。多任务操作系统意味着该系统可以执行多个任务（需要和多道程序区分开来），假设多任务操作系统运行在单 CPU 的环境，意味着这些任务是并发执行的；如果运行在多 CPU 上，这些任务可以是并发的，也可以是并行的。正因为需要临界资源，所以需要互斥地访问，所以需要保护。
+对于多 CPU 硬件，正如前面所说，多任务=并发，而非并行。
+
+对于多道程序系统，考虑多核 CPU，多个程序也可以并行的运行在一个 CPU 上。
+
+![1.3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRtqz5aOXZomNWha70v1vAxZGhK3fgAC2hRrG7fmeVYTvZ_r9jRxAgEAAwIAA3gAAz0E)
+
+本题错选为 B。陷入指令是在用户态执行的，系统调用指令的执行是在内核态，调用在用户态。转移指令不需要在内核态执行，可以理解为 jumpto。中断屏蔽字指令由于需要修改中断屏蔽字，所以必须在内核态执行。
+
+![1.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRxqz5bnYknNVGARM7fqct2Grbw_dQAC3RRrG7fmeVbj4MJEexxYzgEAAwIAA3gAAz0E)
+
+第 12 题错选为 C。内中断又称异常，分为三类：故障、陷入、终止。访管指令就是 trap 指令，对于 1 可以理解为 RR 调度。
+Trap 是内中断。
+
+捋一遍 scanf 流程。Scanf 调用 trap 指令让内核态干预，内核态为系统调用的被调用过程，发现没有按键，把系统改为阻塞态。直到键盘有人输入了数据，触发硬件中断。
+
+然后键盘中断服务程序，读入按键数据，把进程改为就绪态，等到下一轮上处理机后，scanf 才结束，继续跑。
+
+![1.3.12 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBR1qz5deB_qMK3rEbINroR2psldmQAAC4RRrG7fmeVbq7BMkLzXpjgEAAwIAA3gAAz0E)
+
+第 13 题错选为 A，为低级错误。库函数运行在用户态，系统调用运行在用户态，而系统调用的执行是在内核态。即使是 malloc 函数，操作的也是堆区，堆区是被分配给用户的。
+
+![1.3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBR5qz5d-8rWFEPFHFSfsxsz5Ss_0KwAC4xRrG7fmeVZEuHDOyhrXogEAAwIAA3gAAz0E)
+
+错选为 D，为低级错误，显然为 PSW。
+
+![1.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBR9qz5ev_lo9QsS0yctFi8LN7H8SFgAC5BRrG7fmeVZyg3m7wd5PXQEAAwIAA3gAAz0E)
+
+第 25 题错选为 A（划掉）C。
+
+第 26 题错选为 D。
+
+这两题 1 刷的时候都错了，再次选错。
+
+![1.3.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSBqz5fTlIE3SUp0h2Ocu7QbvC3_TgAC5RRrG7fmeVaUaDGAXRn_8gEAAwIAA3gAAz0E)
+
+本题错选为 D。设置断点可以理解为高级语言的打断点，也可以理解为汇编的打断点。I/O 指令需要在内核态执行。
+
+![1.3.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSFqz5ftbGT69y8BNvhQjbfiP4S9QwAC5hRrG7fmeVaK0SxYRoYJhQEAAwIAA3gAAz0E)
+
+本题错选为 D。修改 CPU 模式由硬件完成，可以理解为中断指令那部分。
+
+![1.6.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSJqz5gEnEVoqNB4c1yXmRueOuLcKwAC5xRrG7fmeVYRBSFWOMvZRwEAAwIAA3gAAz0E)
+
+本题错选为 C。内核中的某个功能块出错会导致依赖该功能的部分崩溃，从而导致连锁反应。
+
+![1.6.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSNqz5gW_oYZm2EAAfSqraV26dHlkFIAAugUaxu35nlWRUjDZbhxyOsBAAMCAAN4AAM9BA)
+
+第 5 题错选为 C。功能分层设计是分层设计系统。
+
+第 6 题错选为 A。详见 1 刷。
+
+![1.6.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSRqz5guAQZXrAafBMdowR9gluJoXAAC6RRrG7fmeVYOMxuN7uXKLgEAAwIAA3gAAz0E)
+
+本题错选为 D。微内核架构不会让系统更高效，因为做一件事就需要不停的变态。
+
+![1.6.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSVqz5hJmLRSYNHuo4iUmr2hFTd4aQAC6hRrG7fmeVaQnXwfI5PR1gEAAwIAA3gAAz0E)
+
+第 12 题错选为 D。典型的乱选。本题其实考察的是 BIOS 在哪，显然位于 ROM 中。
+
+第 13 题错选为 A，与 1 刷相同的错误。引导程序的“程序”位于硬盘内。
+
+![1.6.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSZqz5hhE3PLwYwJ9Z86iwsMQzKdSAAC6xRrG7fmeVYPYaevd9RK9QEAAwIAA3gAAz0E)
+
+本题错选为 A。没读完题目，显然被加载到内存中，也就是 RAM。
+
+### OS 王道选择题 2 刷第 2 章
+
+![2.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSdqz5h3c_zMNwU_Mye5CWIBrDWYhgACRhBrG7fmgVbFcWCGnQFkFwEAAwIAA3gAAz0E)
+
+本题错选为 C，1 刷也错了，详见 1 刷。
+
+![2.1.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBShqz5iOz88boprfOWso3GlLzNM6rgACRxBrG7fmgVYqIgIhGI3htgEAAwIAA3gAAz0E)
+
+这题是没做完。本质是背书不够。分配的逻辑空间从低地址到高地址可以理解为：
+
+代码本体 - 全局变量 - 堆区 - 共享区 - 栈区 - 局部变量 - 内核区
+
+通过这个就可以很容易理解。
+
+![2.1.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSlqz5mtA5VXNt3fBFfhuadukPa5AANIEGsbt-aBVju3iEkEUagkAQADAgADeAADPQQ)
+
+本题错选为 D。管道可以理解为是两个进程间先建立管道，然后进行半双工通信，没有共享内存来的快。1 刷也错了，详见 1 刷。
+
+![2.1.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSpqz5u5HGl2s982k5wtJDmeoBHhsgACSxBrG7fmgVYVWEDXGTc7egEAAwIAA20AAz0E)
+
+错选为 B。用户可以对一部分信号自定义，对于 kill 之类的显然不可以。
+
+一个进程可以给自己发送信号，例如 alarm，提醒自己过段时间要做什么。
+
+操作系统的内核可以给进程发送信号，例如可以紧急制止某些进程继续做事。
+
+![2.1.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBStqz5vgVQS6sak8_LVQWccVBB4yCQACTBBrG7fmgVanp8sqUt1oRgEAAwIAA3gAAz0E)
+
+错选为 B，1 刷也错了，详见 1 刷。
+
+![2.1.40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSxqz5vzMGlbqb5k4RLWPZHgJbzH0QACThBrG7fmgVbHRJ1yaN0h4AEAAwIAA3gAAz0E)
+
+错选为 C，为低级错误，把图画出来就 100% 不会错。
+
+![2.1.42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBS1qz5wLI3iywUw4wNgu4BXaWekgwgACTxBrG7fmgVYtd-3YHZjfJgEAAwIAA3gAAz0E)
+
+错选为 A，本题的 C 可以用进程实体那部分去理解存储在哪。
+
+![2.1.48](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBS5qz5wdvat3WbhUgffgdlgj8iernAACUBBrG7fmgVbrMomssRi-bwEAAwIAA3gAAz0E)
+
+错选为 A。本体为低级错误，可以理解为用户级线程的时间分配是在已经分配的这个时间片上切分，而内核的是真全局切。
+
+![2.1.52](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBS9qz5wu4tGxC64XacdK4rBXud2OsQACURBrG7fmgVak18fsQcDDPgEAAwIAA3gAAz0E)
+
+错选为 B。本题为用户级线程切换，也就是相当于用户态到用户态的切换，不涉及到内核态。
+
+![2.1.60](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTBqz5xCC8KxVX84vo6CHGt0j8vK_AACUhBrG7fmgVbr4F72d7VjWQEAAwIAA3gAAz0E)
+
+本题错选为 D。对线程和进程的理解不够准确。1 刷也错了，详见 1 刷。
+
+![2.1.62](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTFqz52TAelvIvN8XT0ky-WPtWn5XAACYBBrG7fmgVa9MsmP6PH3RwEAAwIAA3gAAz0E)
+
+本题错选为 D。这里可以理解为读者写者问题，同一时间可以有多个读者进行操作。管道的大小为内存的 1 页。
+
+![2.1.65](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTJqz520t-grEYf0UTVmv0ZoVPpewwACYRBrG7fmgVaF_hCy2gABXgUBAAMCAAN4AAM9BA)
+
+本题错选为 B。可能将进程唤醒，意味着从阻塞态到就绪态。
+
+![2.1.73](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTNqz53MPTS73j0W4_rW737t9wXZcQACYhBrG7fmgVbTlcSxlzXcKgEAAwIAA3gAAz0E)
+
+本题错选为 A，也是对线程和进程的区别不了解，具体见前面。
+
+![2.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTRqz53iWGwPzQYAAbq_3prlAxjBXLwAAmMQaxu35oFWRsHtRSfwPgIBAAMCAAN4AAM9BA)
+
+错选为 A。1 刷时只知道这个 D 是对的，但是不知道 D 为什么是对的。临界区的定义是进入那段代码，而那段代码里假设 P 了一些东西，还没有真正执行，那么还会被调度，结果发现还在 P 状态中，所以重新返回队列？
+
+上面的解释有问题，这还没进入临界区，重新来一下。
+
+临界区：访问临界资源的代码。
+
+所以 D 的意思是说，处于临界区的进程在访问临界资源的时候，无法被剥夺 CPI/无法被调用上 CPU 运行。所以，假设 A 进程正在使用打印机，操作系统因为其时间片到了，将其调度下处理机，此时临界资源仍然被 A 所占有，其他进程只要不访问临界资源就可以正常使用 CPU。
+
+![2.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTVqz54KC17CKmkwD7clJjrX3qWKbQACZRBrG7fmgVaENWnGF1WQ4wEAAwIAA3gAAz0E)
+
+本题错选为 C。本题实质上考虑的是什么行为可以导致有进程从就绪态转换为运行态。对于 A，考虑 RR，一个进程的时间片用完了，那么可能会有其他进程换上去。对于 B，如果有进程出错，那么肯定也要退出运行态，从而有其他进程进入运行态。对于 C，含义是有一个进程从就绪态变为阻塞态，CPU 空余，所以会导致有新进程被调度上处理机；对于 D，即便是有新进程创建进入就绪态，并不会影响还在处理机上运行的。
+
+![2.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTZqz6DxzrfGzElHmxeQ3lUMWZR4dgACchBrG7fmgVYml5nXzIGS2AEAAwIAA3gAAz0E)
+
+错选为 C。低级错误，我自己都看不懂我的草稿在算什么（2/2+4/2+6/2+8/2）。
+
+![2.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTdqz6HigV5sLvf5U0WNsRRwrIcmxAACdBBrG7fmgVYT_j7UUO3eLAEAAwIAA3gAAz0E)
+
+错选为 A。本题记错高相应比计算公式，应该为：（等待时间 + 预计运行时间）/预计运行时间。
+
+![2.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBThqz6H_F6CGgvt4mDqP7Hh6fjNFcAACdhBrG7fmgVYMrF5qDsMM2QEAAwIAA3gAAz0E)
+
+本题错选为 C。优先级算法有抢占式调度也有非抢占式调度的。优先级算法可以保证进程不会饥饿。
+
+![2.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTlqz6IeGwZfSuJKLXGhb9YXfONB8wACdxBrG7fmgVZf_wV3Ey114wEAAwIAA3gAAz0E)
+
+本题 2 刷时没写（
+
+![2.2.38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTpqz6JIZGJ2rXtB42IsHXihy8nAPwACeRBrG7fmgVYnUPnMiX6HBwEAAwIAA3gAAz0E)
+
+38 题错选为 D。考虑这样一种情况，进程从就绪态转换为运行态的时候，降低优先级为最低，假设该系统采用的是抢占式的优先级调度，那么该进程就会被换下来。对于 A，进程的时间片用完，假设仍然保持原来的优先级，可能会霸占处理机。对于 B，完成 I/O 操作意味着其可以被调度，所以并不合适；对于 C，饥饿。
+
+39 题错选为 D。即便是非抢占式的短作业优先，也会导致饥饿现象。本题应该是出的不准确，但是最对的选项也只能能是 B 了，相对满足短作业优先，并且对于长时间未能得到处理机的长作业，会提升其优先级。
+
+![2.2.51](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTtqz6KVf1EffbnPowTN6FDVfvyMLgACehBrG7fmgVar-MFxTa4H3gEAAwIAA3gAAz0E)
+
+51 题错选为 C。本题含义为：某行为结束后可能会引发就绪态到运行态的转变。对于 1，中断处理结束可以理解为 I/O 操作结束（例如 DMA 传输完了），此时 I/O 好了，从阻塞态变味了就绪态，自然可能会引发调度。对于 2，进程阻塞意味着有进程从运行成阻塞态，也就意味着 CPU 空出来了，可能可以有进程上处理机。对于 3，和 2 类似的道理，进程结束 CPU 空出来。对于 4，和 2、3 类似的道理，从运行态变为就绪态，导致 CPU 空出来。
+
+52 题错选为 B。第一次调度也是调度。
+
+![2.5.54](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTxqz6Kqf0DQ17_u68Az7ot3KqjbbwACfBBrG7fmgVYDe7UHwDQuRAEAAwIAA3gAAz0E)
+
+本题错选为 B。一上系统就算是处于就绪队列（已经到达了，并且在等待处理机），而不是等其他人运行，自己第一次上处理机的时候才开始算。如果是自己第一次上处理机的时候才开始算的话，那么如果不是 RR 的所有周转时间都是运行时间。
+
+![2.3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBT1qz6LBd1o_dEyjahTbWAI4eixy6gACfRBrG7fmgVZl_W9hV4R5jAEAAwIAA3gAAz0E)
+
+本题错选为 B。2 刷也错了。
+
+![2.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBT5qz6LS8E3b4Wd2VkgcQIfluv14WQACfhBrG7fmgVZ-a2JmD4NMWwEAAwIAA20AAz0E)
+
+本题错选为 D。因为进程是异步的（不同进程运行的时序是不固定的），有些进程有先后关系，所以选 C。进程有结构性的含义例如是这一块被分给用户作为堆区等，显然和题目无关。
+
+![2.3.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBT9qz6LjdIrcZk7bdgnP11nPP9e4nAACgBBrG7fmgVbxfsI0gm7f1gEAAwIAA3gAAz0E)
+
+错选为 D。程序是放在外存的静态代码和数据，概念比较泛。
+
+![2.3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUBqz6L9MaLnh6XFYdSPNCzf9bOFgQACgRBrG7fmgVZ3yHScsLCURQEAAwIAA3gAAz0E)
+
+错选为 B。一样的错误原因。
+
+![2.3.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUFqz6MORf3tSp-MG9XGeTn0m-xqBwACghBrG7fmgVaj0UuzhyUkOAEAAwIAA3gAAz0E)
+
+错选为 C。ABC 均为一个进程私有的。
+
+![2.3.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUJqz6MhHJtHF6QQUIvvG_AU0gVbfgAChBBrG7fmgVbSBYpbzRWXpQEAAwIAA3gAAz0E)
+
+26 题错选为 A。导致唤醒一个进程意味着等待队列里有人，也就意味着原本的 mutex 值至少为 -1，所以 +1 也就是 D。
+
+27 题错选为 A，一样的错误。
+
+![2.3.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUNqz6M-tu4Z-0xBSk2o6oO83yw_bAAChRBrG7fmgVY3ARUq40Ni2AEAAwIAA3gAAz0E)
+
+29 题错选为 D。管程中的 signal 和 V 不一样，管程中的 signal 假设执行的时候恰巧没有人在里面，那么这次是浪费的。换句话说，管程是没有记忆的，V 是有记忆的。
+
+管程不像“进程”那样是个活生生跑来跑去的东西，它其实是编程语言里的一个“静态代码块”。管程就像是这栋楼在建房子的时候，就用钢筋水泥砌好的一间“VIP 包厢”（语法范围）。它是静静待在那里的建筑物，等待着进程走进去使用（调用）它。
+
+30 题错选为 C，和 1 刷时类似的错误。
+
+![2.3.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBURqz6NaRJXvgdIBRZ_zYvx4VDAONgAChxBrG7fmgVaLZ3yVHu4_xgEAAwIAA3gAAz0E)
+
+错选为 C。没读完选项，属于低级错误。
+
+![2.3.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUVqz6NzILS5ojDtOv441nVM3CqAsgACiBBrG7fmgVZ2h1ui88n6IAEAAwIAA3gAAz0E)
+
+错选为 A，属于低级错误。
+
+![2.3.41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUZqz6OX4UhB8f-Mz2uVKVrVYE7ioQACixBrG7fmgVZBdQjE0Yb1OwEAAwIAA3gAAz0E)
+
+41 题错选为 C，属于低级错误，这题结合 PV 操作大题其实就可以理解地七七八八了。
+
+42 题和 1 刷时一样的错误。
+
+![2.3.48](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUdqz6Ov6ySlR0PFQ1dwpJccpNVpIwACjBBrG7fmgVZjbPjY8cT3jwEAAwIAA3gAAz0E)
+
+错选为 C。本题的代码其实是皮特松算法，违背让权等待（也就是忙等待），但是满足其他三个：空闲让进，忙则等待，有限等待。
+
+![2.4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUhqz6PKaTc485C99U83NJLoksZe2gACjhBrG7fmgVbN_VXc_PgKSwEAAwIAA3gAAz0E)
+
+错选为 B。结合 PV 操作的大题来理解，同时检测两只筷子是否可用适配于一次性拿去所有自己需要的资源，这么做可以增加并发程度，并且也不会导致饥饿问题。对于 D，破坏的也是循环等待条件，互斥条件指的是你访问这个东西是互斥的，不可能改变互斥条件。
+
+![2.4.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUlqz6PhAAFo2hwvYF3Nzs9jP70bWREAAo8Qaxu35oFW72w48dgkjdMBAAMCAAN4AAM9BA)
+
+错选为 A。如上一题所述，互斥条件基本不可能被破坏，一次性分配可以避免进程申请一些之后再申请资源，所以是破坏占有并请求（一样可以结合 PV 操作去理解）
+
+![2.4.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUpqz6P0zcR0vLTktZqDjwM1KwiYlAACkBBrG7fmgVZmtj0dSB66IAEAAwIAA3gAAz0E)
+
+错选为 C。为低级错误，死锁避免指的是银行家算法那一套，是为了防止系统进入不安全状态。
+
+![2.4.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUtqz6QF6SKAahKBw9CBa33JZ1uOTgACkRBrG7fmgVYmMPqm1NbdeAEAAwIAA3gAAz0E)
+
+错选为 B，为低级错误，没读完题目。
+
+![2.4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUxqz6QZyGAjXQ8iCSx3gMBgwmGezQACkhBrG7fmgVaiEt8BDvvrWwEAAwIAA3gAAz0E)
+
+第 23 题错选为 A。和 1 刷一样的错误。
+
+第 24 题错选为 B。这题脑子抽了，考虑到了有 3 钟可能的情况，但是还是选了 B。
+
+![2.4.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBU1qz6QsqwqNonB1XG8bUv1eSfcsHAACkxBrG7fmgVZqtPJl_YYaAAEBAAMCAAN4AAM9BA)
+
+第 25 题错选为 B。使用完资源自己释放，显然是不剥夺，请求和释放条件指的是占用并请求，这两个需要想清楚。
+
+第 26 题错选为 B。和 1 刷一样的错误。
+
+第 27 题错选为 A。属于低级错误死锁定理是为了检测死锁的，也就是定期检测死锁然后破坏。
+
+第 28 题错选为 A。通过特值法计算或者可以通过直接使用这个来计算。每个进程最多申请 k 个资源，所以可以保证不死锁的最小申请数是：n*(k-1)+1，也就是 m>=n*(k-1)+1=nk-n+1，所以 nk<=n+m-1，也就是 nk<n+m。
+
+![2.4.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBU5qz6RFWTt-WGq0bY9D9C2e_5BEqgAClBBrG7fmgVb5WcwPndbjGQEAAwIAA3gAAz0E)
+
+本题错选为 B，低级错误，没看完题目。
+
+![2.4.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBU9qz6RX0wyjKF5kMgbNI_K8H5v6twAClhBrG7fmgVYsFB9h5a0-JwEAAwIAA3gAAz0E)
+
+错选为 C，为低级错误。本题都不需要你去计算 NEED，它直接给了，所以直接看：021 可以满足 P1，拿回来也就是 221，221 可以满足 P4，拿回来也就是 222，222 无法满足 P2/P3，所以不存在安全序列。
+
+![2.4.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBVBqz6RrSNc3FWtvu7zFl5h80nPd0wACmRBrG7fmgVY8YKz7tTl-bgEAAwIAA3gAAz0E)
+
+第 39 题错选为 D。死锁避免也就是银行家算法，死锁检测也就是分配图。死锁避免只会限制用户申请的个数，而不会限制这个用户的申请顺序（也就是会影响用户申请顺序，而不会影响用户本身申请的顺序）
+
+第 40 题错选为 B。本题采用资源分配图来做，可以得出本题是哲学家问题的变种，很容易可以得出答案。
+
+![2.4.42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBVFqz6SHCMnUByhYG73gshNHUqq1uAACmhBrG7fmgVY8JfS1t-eN1QEAAwIAA3gAAz0E)
+
+本题错选为 D。1 显然正确，2 显然正确，3 不能判断系统此时是否处于死锁状态，它只能判断系统会不会进入不安全的状态，也就是知道可能会发成死锁。3 这件事是死锁定理干的。
+
 ## 计网王道选择题 2 刷
 
 ### 计网王道选择题 2 刷第 1 章
