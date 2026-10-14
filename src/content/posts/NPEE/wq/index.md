@@ -571,7 +571,255 @@ X^2>=0
 
 ### 张宇 1000 基础 1 刷第 15 章
 
-## 武忠祥高数强化 1 刷
+## 武忠祥高数强化 1 刷（补）
+
+### 武忠祥高数强化 1 刷第 1 章
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBN1qz3Hp2yH2vGJ24lsQjOtjLlUD4AACIBRrG7fmeVYp36pKLxGYMQEAAwIAA3gAAz0E)
+
+本题 1 刷时没求定义域，错题重刷时候定义域写漏了 0。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBN5qz3H_JLLfliqkVRIlKdWjQgt-2QACIRRrG7fmeVbnF5yrWadpYgEAAwIAA3gAAz0E)
+
+本题 1 刷时定义域求解错误，1-x>=1 求出来并非 x<=2。错题重刷时绘图错误。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBN9qz3IX8ITkciz4SNEmudNy924MwwACIhRrG7fmeVbZXMmWqzSv6QEAAwIAA3gAAz0E)
+
+1 刷，错题重刷时均错误，从下面可以得知，2 刷时也错了。1 刷时候，没想到 1 为什么是错的。错题重刷时则没有考虑到：该点极限不一定为该点的值，需要尤其注意。
+
+考虑这类定义题的时候，一定要先考虑不连续的情况。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOBqz3I6Rw2IVSlF-uo6gLdv33_dLAACIxRrG7fmeVY96NtGWAABcGUBAAMCAAN4AAM9BA)
+
+属于低级错误，这道题忘记自己在选必为偶函数了。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOFqz3JVHyjMU0uM76y1MUzEB5aEwAACJBRrG7fmeVYEL4Do4_Mk6QEAAwIAA3gAAz0E)
+
+这道题需要注意，尤其是绝对值=0 那个结论。以及这道题在选择题上的技巧，也就是直接法和排除法的应用。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOJqz3JnnSd18Jrybr9JoK0VUAHAYgACJRRrG7fmeVaJShqbOVr9dAEAAwIAA20AAz0E)
+
+对于这道题的第 1 问利用极限的保号性。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBONqz3J7jjmdHWm_pEL1XierpvDPiQACJhRrG7fmeVbqPcBaomgZgwEAAwIAA3gAAz0E)
+
+这道题是单调有界，但是这道题直接展开 lnn 的思想其实是不对的，应该是判断 an>0 和用 a_(n+1)-an 来算，然后发现可以化简。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBORqz3KRdlfb_Wb8z5sbGY53rGcRzgACJxRrG7fmeVaCxeNm7G9LXgEAAwIAA20AAz0E)
+
+对于泰勒公式的应用不要考虑弯弯绕绕，用最低次幂原则展开到不能约分即可。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOVqz3KiOMMWbkXO5CWI-uPRUun-3QACKBRrG7fmeVYaou1JYdNhvgEAAwIAA3gAAz0E)
+
+对于这道题利用定积分定义的时候变成了 1+x^2。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOZqz3K02ewIxphhTBOEzHuIkfsPVwACKRRrG7fmeVYpf0aT16lc5wEAAwIAA20AAz0E)
+
+这道题是对经典极限的定义把握不明确，x^2-ln(1+x)，泰勒展开后应该是 1/2，而不是 - 的。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOdqz3LFMSohja574kIT9QXjDaetYgACKhRrG7fmeVabxAHAAAFKXBoBAAMCAANtAAM9BA)
+
+利用泰勒公式的经典问题，即要全部展开，并且 x 可以和 x^3 匹配。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOhqz3Lm919RW-6__dOkj1bjDhJXYwACKxRrG7fmeVYXx0L8hLFNhgEAAwIAA20AAz0E)
+
+对 cosx 的泰勒展开不明确。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOlqz3L0KPvqy3zbPmA82d23tZZtXwACLBRrG7fmeVYkQSAFWI6H2gEAAwIAA20AAz0E)
+
+认为提出 e 是非法操作，本质是对概念理解不清晰。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOpqz3MCCGvbZs33ildOOdNzDSiCQwACLhRrG7fmeVYI_TGToV3u1AEAAwIAA20AAz0E)
+
+对泰勒展开的理解问题，一定是要展开到不能约掉为止。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOtqz3MSYtejXnbJ57ZKa-EHlnU-xwACLxRrG7fmeVbFxVssyaGEuAEAAwIAA20AAz0E)
+
+对 cosx 相关的泰勒展开不明确。1-cosx，对 x 进行变换和对 cosx 的次数进行变换是两码事。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOxqz3Mfq9yyHYC5loXveW9NzR2rMAACMBRrG7fmeVYSPl0F_CFW_AEAAwIAA20AAz0E)
+
+Arcsinx-x=1/6
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBO1qz3MrxqN66Bak7WOJ7NhGmOy09QACMRRrG7fmeVanhHN21TnGcgEAAwIAA20AAz0E)
+
+错题重刷也错了，u/v 一整个求导不要和 1/u 求导混用。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBO5qz3M4xyDqQE7Iy_bn98sSD5FDLAACMhRrG7fmeVa5H57jcRlDDQEAAwIAA20AAz0E)
+
+没想到怎么做。
+
+连续取 2 次 e 就好了，其实不会难。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBO9qz3NFoxstBu6Hs2OH8MX4OlutnwACMxRrG7fmeVbyF-5Lg67dTAEAAwIAA20AAz0E)
+
+本题想当然认为 n 的 n 次方和 n-1 的 n-1 次方相关可以直接去掉。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPBqz3NSL5q9gmlGkuhNqdEz0IS41wACNBRrG7fmeVYvKSdT9XViZAEAAwIAA20AAz0E)
+
+忘记等比数列求和公式。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPFqz3NhuFErvIokHCCmJkqxqCFqqAACNRRrG7fmeVZ2R3emrnYBlQEAAwIAA20AAz0E)
+
+对于这类题需要注意 n/n-1 之类的去凑。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPJqz3NtkW7LG6BKJmydq43MgfCVIgACNhRrG7fmeVYRiA0KrwaryAEAAwIAA20AAz0E)
+
+这类题需要注意 k 和 n 的区别。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPNqz3N41_e16bHGEGLESjn7upuGCAACNxRrG7fmeVbk3V5PDZ3efQEAAwIAA20AAz0E)
+
+没有思路。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPRqz3OD9Ob6R2AsIl3Ln3WzDHgaLQACOBRrG7fmeVb0djyGHmx5cQEAAwIAA20AAz0E)
+
+没有思路。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPVqz3OQ6HPE4d8iPgpK0tcMEG4kzQACORRrG7fmeVare0otkGfq5QEAAwIAA20AAz0E)
+
+没有思路。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPZqz3Oe6xuLLvv_cPhakRQlVJpangACOhRrG7fmeVazQvPt74AZegEAAwIAA3gAAz0E)
+
+这道题证明上界用的是数学归纳法。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBNxqz3G6WxiIP6gCyrZZEvJK0kmndgACHhRrG7fmeVbQBX0IP9J3kwEAAwIAA20AAz0E)
+
+对于这道题，e^x>=x+1，如果将 x 替换为-x，符号不变。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPhqz3O7AAF9Lg6ra1jFimuZuIMc9iIAAjsUaxu35nlW1RPpoAxdgnUBAAMCAAN4AAM9BA)
+
+没想到怎么做。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPlqz3PKPJ2DG_Bc2yZ4EGgGJg1HeAACPBRrG7fmeVZUNEVIe4uHiAEAAwIAA3gAAz0E)
+
+知道要去把后面的消掉，但是不知道怎么消。显然不是利用三角不等式去消（因为带了尾巴）
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPpqz3Pa2ko-GIdMKdKxKUGXGiGVaQACPRRrG7fmeVZh1RlzRgZ2MwEAAwIAA20AAz0E)
+
+提取-x 后直接利用泰勒展开。尤其注意这道题是提取-x。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPtqz3Ptpmws95-VaGvcN4gNzz-ZvQACPhRrG7fmeVaDDoVj3b1EqQEAAwIAA3gAAz0E)
+
+完全没有理解 mn=1。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBPxqz3P-jFQBSvjktWTShT0NU_pJEAACPxRrG7fmeVbyqJ_BysKVLgEAAwIAA3gAAz0E)
+
+生搬硬套结论，不如硬算。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBP1qz3QS9Izf46dYt5yssrU2SLetBwACQBRrG7fmeVYeb8mjtER3DwEAAwIAA3gAAz0E)
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBP5qz3QbOr_HhpAoQTrHBz9I932txgACQRRrG7fmeVYVuBzUQOgXkwEAAwIAA3gAAz0E)
+
+没有考虑 kpi
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBP9qz3QrkjHmDtyeC9E1qOV5yianSAACQxRrG7fmeVaVjCAoknnMgQEAAwIAA3gAAz0E)
+
+对于这类题，一定是一条路：没有条件要创造条件。显然设 g(x)，然后利用第一个条件，同时除以 x，然后就很轻松可以去证明了。
+
+### 武忠祥高数强化 1 刷第 2 章
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQABas90Rb7Lj0bJgZoeDLeaQ76pFAMAAkQUaxu35nlWFawqKFhv7HEBAAMCAAN4AAM9BA)
+
+洛与不洛的问题，需要深度辨析。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQFqz3TniPjWftzh8xVGB3JhqZMZ6QACRRRrG7fmeVZx4vvBzpg2PAEAAwIAA3gAAz0E)
+
+泰勒公式，使用配凑法的时候，跳步导致 x 和 x^2 系数配错（分母）。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQJqz3T43a5KRyAkgjOazRbv7Uc_RwACRxRrG7fmeVb1ODoXsGMYigEAAwIAA3gAAz0E)
+
+注意直接法和间接法的问题。对于 D，经典的反例，也就是绝对值 x。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQNqz3UKWFUAAe3JYUH_kDEHiV-5qyoAAkkUaxu35nlWo8kTOiWV08sBAAMCAAN4AAM9BA)
+
+这道题尤其需要注意，前面的 -3 本身也是不可导点。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQRqz3UZzWO75rjdrCAscMLz2M9ZqgACShRrG7fmeVbhl-V6YC0VzQEAAwIAA3gAAz0E)
+
+细致分析即可。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQVqz3U2zhIBrx-ax5LV63mfi4e62gACSxRrG7fmeVb6mhhm46z2UQEAAwIAA3gAAz0E)
+
+只需要把握 tanx 的几何意义即可。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQZqz3VMHzyM4uswxYjdgPb_4YVwdQACTBRrG7fmeVbhdbkwXyFvbwEAAwIAA3gAAz0E)
+
+二刷犯了类似的错误，忘记把平方算进去了。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQdqz3VZdgABxrPDrxZC2XpAbStU8ToAAk0Uaxu35nlWlpfDA7aL50EBAAMCAAN4AAM9BA)
+
+注意导数的链式法则可以直接用。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQhqz3VqwQlqafRAHh0rrceIAlOw4wACThRrG7fmeVYESULBvh61cwEAAwIAA3gAAz0E)
+
+本题主要就是变量太多了，容易混淆，事实上搞清楚即可。对于这道题，错题重刷的时候也是错的。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQlqz3ZlFmgCdqX0KC8x9FkULTUcKQACTxRrG7fmeVbf8yfy3JadGgEAAwIAA3gAAz0E)
+
+使用硬求算错了。注意公式法。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQpqz3ZzrhumfG_xxVaH85NHue4jLwACUBRrG7fmeVaRfI2k1_Xx9AEAAwIAA3gAAz0E)
+
+谁是 x，谁是 y，属于是经典的问题。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQtqz3ctxfMi1gk4S9a0qOGyEtuKtAACUxRrG7fmeVZjNQMzH4wrpQEAAwIAA3gAAz0E)
+
+注意使用泰勒展开的时候是把 0 带进去的。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQxqz3dGQvr1wYx_92BgYyz5ok8RRAACVBRrG7fmeVYWpYwi0cKnlgEAAwIAA3gAAz0E)
+
+本题的问题是脑子抽了想错了，所以最后选错了。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQ1qz3giNUJOac3gHaJZI3vS3FOeEQACWhRrG7fmeVaPZGxXtC-IzwEAAwIAA3gAAz0E)
+
+关于这道题的辨析详见 2 刷。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQ5qz3g1tUO3uormOK-eKZYssu8XtQACWxRrG7fmeVbiMJqbw2i9DAEAAwIAA3gAAz0E)
+
+洛不洛的问题，当然这道题也可以直接用领域法去做。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQ9qz3hMXNMzR5yKgjusVKXJc-HJcwACXBRrG7fmeVY-Uur9f_q_SQEAAwIAA3gAAz0E)
+
+罗尔定理。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRBqz3hfjZrf1C1nzv7zdksEQe0-4AACXRRrG7fmeVYAAVlsLmNj8WUBAAMCAANtAAM9BA)
+
+罗尔定理推论。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRFqz3hvnSSAh4nFiyosBWinFrvJGAACXhRrG7fmeVbW55pID1wHJwEAAwIAA3gAAz0E)
+
+分离参数。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRJqz3h-Zs9g4vOn6DPSZKnQwZkQAgACXxRrG7fmeVZjDHqkFeKQxAEAAwIAA3gAAz0E)
+
+这道题主要是分析方法，可以很容易得到 f‘1 小于 0，从而由于单调递减，可以得到之多一个零点。
+
+当然这道题也可以采用泰勒公式进行分析。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRNqz3iU6P4HHtAFZ9s1jRhF9QFyJgACYBRrG7fmeVYnWQmoJkRzYwEAAwIAA3gAAz0E)
+
+主要注意可以用泰勒公式和拉格朗日中值定理进行分析。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRRqz3ioG-N62U5X_YjhZsSyxaQWVwACYRRrG7fmeVaNFouRfLvJhQEAAwIAA3gAAz0E)
+
+不要盲目套公式，可以逐项分析。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRVqz3i3ByZ4K-ZxOUNXUJadEKeSMwACYhRrG7fmeVa2PT7qJicRHAEAAwIAA3gAAz0E)
+
+变限积分这里可以用分段函数来表达。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRZqz3jJ8jWOy1O3mbyWUjAYJJClqQACYxRrG7fmeVYuVc5mhyq9ygEAAwIAA3gAAz0E)
+
+自己构造出来的函数如果还是带有‘，再网上想一层。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRdqz3jasSvg8asDf3WlEGJf77E30QACZBRrG7fmeVYc2V8Muc1rWAEAAwIAA3gAAz0E)
+
+次数问题。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRhqz3jnz7D5-qjjVNnMD18aww1KKQACZRRrG7fmeVapPlIhxV5RtAEAAwIAA3gAAz0E)
+
+这种题被这道题的上一题影响了，想着一定是 fc=1-c。
 
 ## 杨威线性代数强化 1 刷
 
@@ -1406,15 +1654,246 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 ## 27 李 6
 
-- 完成时间：20261007-
+- 完成时间：20261008-20261015
 - 平均分：
 - 平均作答时间：
 
 ### 27 李 6 卷 1
 
 - 完成时间：20261008
-- 分数：
-- 作答时间：
+- 分数：142
+- 作答时间：135
+
+在复盘之前需要说明，我认为我这份卷子考出来这个分数完全是运气，而不是实力。
+
+包括这份卷子在内的 27 李 6 卷 1、2、3，我都执行了一个很错误的策略，那就是没做完，更准确的说，是怕自己做错，从而保有侥幸心理，然后直接不检查。
+
+事实证明，越抱有侥幸心理，错的就越多。
+
+现在要做的事情是端正态度，把每一份都当成考场上的卷子考。
+
+等复盘完之后（20261013），晚再来一份卷子！
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHVqzhodEQbPNxIfVflgpDx3AYFooAACwxVrG7fmcVbzpu6mz2fsvQEAAwIAA3gAAz0E)
+
+本题 -3。
+
+复盘下来，这道题的计算都是对的，但是在计算发现这道题的二阶极值 AC-B^2，当 x=y=1 的时候，前面那个值为 0，然后就不会做了。
+
+事实上，碰到这种情况要做的事情一定是找边界，这道题当时想的是既然给了 >=0 的条件，那么也就意味着边界就是 0，而没有去思考有没有其他边界。
+
+这道题的这个形式很明显是类圆的形式，当 x 和 y 其中有一个取 2 的时候，另一个只能取 0，从而得到另一块边界最值。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHZqzhulAt1hdHqfgaIStPwXj2nfrgACxRVrG7fmcVbErqdMie2onwEAAwIAA3kAAz0E)
+
+本题 -5。
+
+第 2 问有点不会做。第 2 问不会做的核心在于把第一问和第二问混淆了，第一问讨论的是 A 转置 A 的东西，而第二问讨论的是 A，搞混淆所以导致错误。
+
+同时，做这道题的时候也陷入了套 Q 转置 A 转置 AQ，事实上这道题并不是这么做的。
+
+这道题再做一遍如下：
+
+![22 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHdqzh_-DXvjWUqD0DripDbj4bUyNAACzRVrG7fmcVaaNDwAAconIf0BAAMCAAN5AAM9BA)
+
+自己再做一遍下来，感觉没多难。
+
+主要还是对自己不熟悉的怕了。
+
+### 27 李 6 卷 2
+
+- 完成时间：20261010
+- 分数：128-5-8
+- 作答时间：165
+
+这份卷子第一做的很怪，状态不好，我想是因为这几天熬夜，然后突然作息调整好，以后每天早上的卷子是不能拉下的，第二是这份卷子计算量很大，尤其是填空题那里。填空题那俩确实犯了一些不经常犯的问题，值得注意。对于大题第 2 题，这个是比较低级的错误，没有用定义做（不等于 0 的时候可以不用定义，脑子抽了属于是）大题第三题漏解，倒二题确实有点不怎么会做。最后就是这份卷子一整份卷子都没时间检查了。还有就是 e 的 x 次方一定要牛莱公式全代入，这个是后面检查出来的
+
+教训：调整状态，每天早睡早起。这份卷子竟然完全没有时间检查计算。导致填空题第 13 题错误，并且第 14 题其实也得算错，猜了一个答案 0 上去（但是这道题计算量确实大到逆天）
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHhqziCMTnH02xKZtwgVWNfM2J542wAC1hVrG7fmcVYTo0SU6BOL5QEAAwIAA3kAAz0E)
+
+微分方程的低级错误
+
+这道题属于低级错误，是因为很神秘的 y\*设错了，y\*应该设为 AX+B，而不是直接 Ax（直接是 Ax 解出来也有问题，所以单纯是想当然认为是 x）
+
+这类题也算是我的薄弱点，需要着重注意。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHlqziDKfU8V1AwAAfgMX5LyDKUHOMQAAtcVaxu35nFW68tixZqiEAgBAAMCAAN4AAM9BA)
+
+大计算量，最后猜了了一个 0 上去。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHpqziDddzC5JDefmcLB5Njpv6tA_wAC2BVrG7fmcVYT_LnWB6_F6wEAAwIAA3kAAz0E)
+
+惯性思维，这类变化可能是不满秩的，是因为：
+
+$f(x_1, x_2, x_3) = (x_1 + x_2)^2 + (x_2 + x_3)^2 - (x_1 + ax_3)^2$
+
+如果是减法的时候，那必须拆开来，因为天生不再非负。
+
+之前那个天然是大于等于零的数，所以可以这么做！
+
+所以直接求行列式即可，也就是 a 不等于 1。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBH1qziD_Spk5x2HJX9hWRMbDAa0lNAAC2hVrG7fmcVZ3ZneUohRsigEAAwIAA3gAAz0E)
+
+低级错误 -5。
+
+左侧极限=右侧极限不能说明连续，但是左侧导=右侧导可以说明可导，左侧导=右侧导=其他逼近的极限可以说明导数连续
+
+![18 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBINqzjD7yW0IPrBJF3kQnun8SRvAxAACXhZrG7fmcVYTJ_VO9h9qvAEAAwIAA3kAAz0E)
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBH5qziEOCATR7jkk-O__AZrwgmBIRAAC3RVrG7fmcVb2q-usJ2eNEAEAAwIAA3gAAz0E)
+
+漏解 -2
+
+x 和 y 定义域是 R，漏了一半。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBH9qziEcHxm8SW2P-YFxVL7YfIFLEAAC3hVrG7fmcVaxm1Oju3jrYAEAAwIAA3kAAz0E)
+
+本题没给自己扣分，但是要扣的话应该是 -8。
+
+这道题错误原因是牛莱公式代入代入一半，包括 27 李 6 卷 3 也是有这个问题。
+
+所以，做一步检查一步非常重要，以及自己的薄弱点，牛莱公式。
+
+此外还可以注意一点，利用奇偶性化简完之后，不一定要采用奇偶性化简完后的那个式子计算，可以按照原本的计算。
+
+但是这道题订正的话，我就采用我原来的方法去做。
+
+还有一点，这道题的奇偶性其实也是我瞄到答案之后才做的（？），应该不是，这道题轮换对称性是一下就想出来的。
+
+所以态度还是很不端正啊！越怕自己做错，那真的才是错。
+
+![20 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIJqzir_ejd8tFq9a-gU0wQdm8C-hgACHBZrG7fmcVYsM2FYCBfHOwEAAwIAA3kAAz0E)
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIBqziE2AYeglj8gfiv-JwzMhfS_7QAC3xVrG7fmcVa23FAIYhCLeAEAAwIAA3kAAz0E)
+
+本题 -5。
+
+对于第 1 问，我自己的思路是利用拉格朗日中值定理，但是一次拉格朗日中值定理并不充分，得利用两次。
+
+对于第 2 问，我想到了泰勒公式，但是一直在 1 处展开，然后证明没证出来怎么做。
+
+证明题没做出来就没做出来了，问题不大，可以积累一下这个思路。
+
+![21 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIFqzic700meuU-TA5h-d85VuGV6gQACCxZrG7fmcVbJx84T7YIzMwEAAwIAA3kAAz0E)
+
+### 27 李 6 卷 3
+
+- 完成时间：20261011
+- 分数：119
+- 作答时间：150
+
+态度非常的不端正，事实上和上一份卷子一样，我这份卷子是没有检查的，直接对的答案，结果就是考 119，设身处地想了一下自己是否会检查出来一道填空题，然后给自己 + 了 5 分（但是感觉不好，又扣回去了）。态度非常的不对，包括上一份卷子也是，给自己 + 了 5 分（上一份卷子第 14 题猜了一个 0 上去）。我很能理解为什么自己这种心态，因为怕自己考得很差，偷偷给自己加分。然而自己的模考何来的差和不差之说呢，都是来时路罢了。以及抱有侥幸心理认为自己能算对，但是我又没有做一步算一步了。
+
+同时，这份卷子再次暴露了我一个非常大的缺点，不敢算（保守）和牛莱公式代入错误（导致 -9）回顾了一下，你说我除了选择题 10 分和大题最后一题之外，其他的错误有什么好说的，但是我又不好说自己检查能不能检查的出来（因为完全没有检查，想象自己检查吗，太猎奇了。所以今天要做的事情就是摆正态度，复盘一下 27 李 6 卷 2 和 3，然后晚上写一下卷 4。我还是觉得是态度问题，态度问题非常大。
+
+最后还是，既然选择了冲，那么就做到极致，把每份卷子都当成真题考，以及最近的作息问题也很大。我相信自己能做到，但是前提是不允许抱有任何的侥幸心理，错了就是错了，不可以为自己的错误找借口。这是第 11 套模拟卷，做下来我认为自己的下限是 120。下 10 套卷子的目标是稳定在 130+，再下 10 套的卷子目标是稳定在 140+。循序渐进，不可能一口吃成胖子，敢于犯错，敢于直面自己的错误。
+
+总结一下自己的薄弱点：
+
+1. 牛莱公式
+2. 微分方程设 y*
+
+总结一下这份卷子，其实就选择题 2 题真的不会，其他 21 分都可以说是低级错误。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIpqzjiVmKGdquLJgRGmho93v3jL2wACkxZrG7fmcVZlSWyfQ5hs6wEAAwIAA3kAAz0E)
+
+这道题出错了。
+
+题干写：$f(x)$ 有二阶连续导数。
+
+这意味着在闭区间端点 $x = 0$ 处：
+
+- $f(0) = 0$ 是有限值；
+- $f'(0) = 0$ 是有限值；
+- $f''(0)$ 必然是一个有限的确定实数（$\lim_{x \to 0^+} f''(x) = f''(0) \in \mathbb{R}$）
+
+现在，让不等式两边同时取 $x \to 0^+$ 的右极限：
+
+- 左侧极限：
+  $$\lim_{x \to 0^+} \Big[ x f''(x) + e^{f(x)} \Big] = 0 \cdot f''(0) + e^{f(0)} = 0 + e^0 = \mathbf{1}$$
+
+- 右侧极限：
+  $$\lim_{x \to 0^+} 6\ln(1+x) = 6\ln(1) = \mathbf{0}$$
+
+由极限的保序性定理，若在 $(0, \delta)$ 上恒有左边 $\le$ 右边，则两边的极限必定满足：
+$$\mathbf{1 \le 0}$$
+
+这道题按照题目给的做法是：
+
+![4 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBI5qzuYfY7OkfFX3cSyoZeQdiWvT7wACfxFrG7fmeVYYBi-61NhZhgEAAwIAA3gAAz0E)
+
+可以积累一下。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIlqzjh3_T9hUFHXbbzrHMA5pTi7wQACkBZrG7fmcVbpz1PPD28iRQEAAwIAA3gAAz0E)
+
+确实不会做。
+
+回顾张宇基础 30 讲的例 14.1，那个是怎么解的，是令后者大于等于 0，然后解出来方程去和原式对比。
+
+而这道题却迁移不过来，因为算出来后者恒大于等于 0，然后也没法和原积分区间很好的通过图像法比大小。
+
+所以这道题就是利用换元法。
+
+![7 解 1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBItqzjzqTSkMVY_H5M83E9wfq3V5CQACphZrG7fmcVaJuwR38fHrhgEAAwIAA3gAAz0E)
+
+![7 解 2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIxqzj0YP2fgu_JVrUWiIQYmjfor5wACpxZrG7fmcVZTgBN90jjJKAEAAwIAA3gAAz0E)
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIhqzjgrBpGWN6wnHfkbXgGbRV0NdwAChBZrG7fmcVaOk6oIAsVwTAEAAwIAA3kAAz0E)
+
+二次函数没有零点，deta 小于 0，而不是大于 0。
+
+本题应该是让 deta 小于等于 0，而我写成大于等于 0。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIdqzjgLu_FTW3QoAAGwA3nQi0oEaygAAoMWaxu35nFW9s_uGd3wcBgBAAMCAAN4AAM9BA)
+
+本题是牛莱公式代入错误，下限是 1，结果我想当然认为是 0。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIZqzjfsUZ7M_hSR3yPbiM-hvrsYFgACghZrG7fmcVbZgaXNJN5lqwEAAwIAA3kAAz0E)
+
+本题 -2。
+
+这道题我记得某一年的真题我也是，算到最后一步没做完。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIVqzjeRUka53eKElgps6da7ST6xTwACfxZrG7fmcVZiAc_KSFHapAEAAwIAA3kAAz0E)
+
+本题 -4（其实应该扣更多）。
+
+本题属于牛莱公式计算错误，没有考虑 3/2 次方。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBIRqzjQVV1H8qAUxIM8VcVZzBg37bQACcBZrG7fmcVYhFMMmRzGnAgEAAwIAA3gAAz0E)
+
+本题 -5。
+
+保守和不敢算
+
+自己的思路是对的，然后不敢继续向下走，导致后续都不敢做了（-5）
+
+这道题我知道应该是用配方法做，但是做一半以为自己做错了。
+
+本质上是思路不清晰导致的。
+
+导致这个的原因是混淆相似与合同，这道题 A 和 B 就不可能相似，因为特征值完全完全不一样。
+
+本质是过拟合刷题，很多题目没想好为什么就公式化直接上 Q。
+
+第三问的结论是：
+
+$\text{tr}(MN) = \text{tr}(NM)$
+
+假设 $M$ 是 $m \times n$ 矩阵，$N$ 是 $n \times m$ 矩阵。
+
+那么 $MN$ 是 $m \times m$ 方阵，它的主对角线元素之和（即迹）为：
+
+$\text{tr}(MN) = \sum_{i=1}^m (MN)_{ii} = \sum_{i=1}^m \sum_{j=1}^n M_{ij} N_{ji}$
+而 $NM$ 是 $n \times n$ 方阵，它的迹为：
+
+$\text{tr}(NM) = \sum_{j=1}^n (NM)_{jj} = \sum_{j=1}^n \sum_{i=1}^m N_{ji} M_{ij}$
+
+因为实数乘法满足交换律 $M_{ij} N_{ji} = N_{ji} M_{ij}$，且双重有限求和可以任意交换求和顺序，所以这两个和式完全相等！
+
+所以，只需要交换一下，就可以得到 $X^T B X$，然后就迎刃而解了。
 
 ## 880 综合 2 刷
 
@@ -1610,7 +2089,7 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 第 10 题错选为 C。对于 1，显然正确，这就是 cache 思想；对于 2，虚拟存储器中主存和辅存之间的数据调动对于机器级语言程序员是透明的，但是再往上就不是了；对于 3，CPU 与主存交换信息可以不经过 cache，例如直写法。
 
-第 11 题直接看的答案。每次读出 16b=2B，由于存储周期是 250ns，1s 内由 1s/250ns=1/(250×10^-9)=10^9/250=4✖️10^6 个周期，所以 4✖️10^6✖️2B=8✖️10^6B/s，也就是 C。
+第 11 题直接看的答案。每次读出 16b=2B，由于存储周期是 250ns，1s 内由 1s/250ns=1/(250×10^-9)=10^9/250=4\*10^6 个周期，所以 4\*10^6\*2B=8\*10^6B/s，也就是 C。
 
 ![3.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhxqx7_LjzCf79HNzwEJ_KVFFQpD-QACKRNrGz_BQFZOAAEfiOGygWMBAAMCAAN4AAM9BA)
 
@@ -1690,7 +2169,7 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 第 6 题不知道为啥放在这里了。显然 D 是错的。
 
-第 7 题不知道为啥放在这里了。一个磁盘转速为 7200 转/分=120 转/s，假设磁盘运行 1s，也就是转 120 次。120✖️160✖️512B=960KB。
+第 7 题不知道为啥放在这里了。一个磁盘转速为 7200 转/分=120 转/s，假设磁盘运行 1s，也就是转 120 次。120\*160\*512B=960KB。
 
 第 8 题不知道为啥放在这里了。假设总共运行时间为 1s，则由于有 8 个扇区，所以磁盘在旋转一周的有效读取时间为 25ms-1.25s*8=15ms，一个磁道包含信息 60MB/200=0.3MB，所以 0.3MB/15ms=20MB/s
 
@@ -2614,7 +3093,7 @@ CRC 采用硬件计算，所以快，而 IP 那块如果再用的话，成本很
 
 ![3.4.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtNqyLIFRSUtPdbnzAAB-wABDwABKp4ERAACaRJrG6T-SFYolBe8_TbdygEAAwIAA3gAAz0E)
 
-本题错选为 C。2000B=16000bit，即发送时延为 16000/20000=0.8s=800ms。若采用停止等待协议，则传输一次数据的总时间为 RTT+800*2=1400+1600=3000ms，所以 800/3000<0.8；若采用 GBN 协议，采用 3bit 给数据帧编号，即发送窗口为 7，接收窗口为 1，～～假定采用发 7 个数据回 1 次帧，即总时间为 8✖️800+1400=7800ms，所以 8✖️800/7800=64/78>0/8～～；与后面的类似的做法，显然利用率=1；若采用 SR，则 NTd>=Td+RTT+Ta，所以利用率为 1。
+本题错选为 C。2000B=16000bit，即发送时延为 16000/20000=0.8s=800ms。若采用停止等待协议，则传输一次数据的总时间为 RTT+800*2=1400+1600=3000ms，所以 800/3000<0.8；若采用 GBN 协议，采用 3bit 给数据帧编号，即发送窗口为 7，接收窗口为 1，～～假定采用发 7 个数据回 1 次帧，即总时间为 8\*800+1400=7800ms，所以 8\*800/7800=64/78>0/8～～；与后面的类似的做法，显然利用率=1；若采用 SR，则 NTd>=Td+RTT+Ta，所以利用率为 1。
 
 ![3.4.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtRqyLI4PaKTia91B1T72lJXoml9wgACahJrG6T-SFb71SXXWitAtwEAAwIAA3gAAz0E)
 
@@ -2689,7 +3168,7 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![3.6.41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuBqyLNjqIPY3fkNSNgqlRjL5wsNPwACfBJrG6T-SFYkgoDPVc9DIQEAAwIAA3gAAz0E)
 
-本题错选为 C。100BaseT 而就意味着 100MB/s。假设总共距离为 x，那么单向最大传播时延为 x/200+1.535，争用期即 x/100+1.535✖️2，所以最短帧长即争用期✖️数据传输率=64B，其中数据传输率为 64Mbit/s。
+本题错选为 C。100BaseT 而就意味着 100MB/s。假设总共距离为 x，那么单向最大传播时延为 x/200+1.535，争用期即 x/100+1.535\*2，所以最短帧长即争用期\*数据传输率=64B，其中数据传输率为 64Mbit/s。
 
 2\*3\*4
 
@@ -4878,7 +5357,7 @@ OSI 模型数据链路层就要实现差错控制，流量控制；网络层需�
 
 本题应该选 B。
 
-2Wlog2V=2✖️3000✖️4=24kbps
+2Wlog2V=2\*3000\*4=24kbps
 
 这类题才是真的非常不好上手，但是经过了 3 刷王道选择题，现在已经基本搞明白了。
 
@@ -4904,7 +5383,7 @@ OSI 模型数据链路层就要实现差错控制，流量控制；网络层需�
 
 本题应该选 D。
 
-假设站点距离为 x，那么 RTT 应该是 2x/(2✖️10^8)，而数据帧应该是 10x。
+假设站点距离为 x，那么 RTT 应该是 2x/(2\*10^8)，而数据帧应该是 10x。
 
 数据帧 -800bit，那么那么也就是 10y=10x-800，解得 y=x-80，所以应该选 D。
 
@@ -5027,7 +5506,7 @@ void solve(LNode *L){
 
 假设传输 1s 的数据，即传送 0.5MB 的数据，总共要传输 0.5MB/4B=0.125M 次中断。
 
-所以中断需要的时间是：0.125M✖️20✖️5/500M=0.125✖️20✖️5/500=0.025=2.5%
+所以中断需要的时间是：0.125M\*20\*5/500M=0.125\*20\*5/500=0.025=2.5%
 
 (2)
 
@@ -5358,7 +5837,7 @@ func P3(){
 
 这类题转换成十进制计算然后判断是最快的，r1=FEH=1111,1110B=-2，r2=1111,0010B=-1-13=-14，r3=90H=1001,0000B=-128+16=-112，r4=F8H=1111,1000B=-8。
 
-所以，r2✖️r3 显然溢出
+所以，r2\*r3 显然溢出
 
 ![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA2RqyO3IDblSadfxSd8cmOekYJEGoAACehNrG6T-SFZkKZmxQ6OzaQEAAwIAA3kAAz0E)
 
@@ -5376,9 +5855,9 @@ func P3(){
 
 本题应该选 D。
 
-2K✖️4 位需要 8 块组成 8K✖️8 位，但是由于先进行位扩展，所以可以视为 2K✖️8 位组成 8K✖️8 位的存储器。
+2K\*4 位需要 8 块组成 8K\*8 位，但是由于先进行位扩展，所以可以视为 2K\*8 位组成 8K\*8 位的存储器。
 
-8KB=2^13B，也就是 000H-FFFH 地址 B1FH 的 B 是 1011，所以应该是第 2 块，2K✖️8 位，也就是 1000,0000,0000B=800H，所以选择 D。
+8KB=2^13B，也就是 000H-FFFH 地址 B1FH 的 B 是 1011，所以应该是第 2 块，2K\*8 位，也就是 1000,0000,0000B=800H，所以选择 D。
 
 这类题也不会难，重点在于捋清楚。
 
@@ -5428,7 +5907,7 @@ page 未命中说明不在内存，所以 tlb 和 cache 必不可能命中。
 
 本题应该选 D。
 
-其实吧所有数据乘起来就好了，也就是 1600✖️1200✖️24✖️85✖️2=D。
+其实吧所有数据乘起来就好了，也就是 1600\*1200\*24\*85\*2=D。
 
 ![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA21qyPLzJvwOFpNdOommcQgxU58KJwACjxNrG6T-SFYZrqzk4-5LFQEAAwIAA3gAAz0E)
 
@@ -5478,9 +5957,9 @@ page 未命中说明不在内存，所以 tlb 和 cache 必不可能命中。
 
 本题应该选 C。
 
-256B/4B=64，即一块磁盘可以存 64 个，所以，总共应该是（4+2✖️64+64✖️64）✖️256B。
+256B/4B=64，即一块磁盘可以存 64 个，所以，总共应该是（4+2\*64+64\*64）\*256B。
 
-也就是（1+2✖️16+64✖️16）KB=（1+32+2^10）KB=（1+32+1024）KB=1057KB。
+也就是（1+2\*16+64\*16）KB=（1+32+2^10）KB=（1+32+1024）KB=1057KB。
 
 ![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3ZqyPj2Ad13UB566fUB7a7c3tdD4QACphNrG6T-SFa28s3pSRTh0QEAAwIAA3gAAz0E)
 
@@ -5504,7 +5983,7 @@ page 未命中说明不在内存，所以 tlb 和 cache 必不可能命中。
 
 走过一段链路的时间是 1000B/100Mbps=80us。
 
-显然平着走是最短的，经过 2 个路由器，也就是 3 段链路，所以 1002✖️10us=C。
+显然平着走是最短的，经过 2 个路由器，也就是 3 段链路，所以 1002\*10us=C。
 
 这类题感觉最难的也就是考 2025 年真题那样子，好好分析即可。
 
@@ -5746,19 +6225,19 @@ tag 位=28-3-6=19 位
 
 cache 至少需要 tag 位和有效位，所以每一个 cache 行需要额外的 20 个位。
 
-所以一个 cache 行需要 64✖️8bit+20bit=532bit，总共有 8 行，所以是 8✖️532bit=4256bit。
+所以一个 cache 行需要 64\*8bit+20bit=532bit，总共有 8 行，所以是 8\*532bit=4256bit。
 
 (2)
 
 `a[0][0]` 放在 320=000,0140H。
 
-由于 31=1,1111B，31✖️4=111,1100=7CH，所以 `a[0][31]` 是 000,01BCH。～～将倒数第 2 位取出即 BH=1011B，取前三位也就是 101B=5。～～
+由于 31=1,1111B，31\*4=111,1100=7CH，所以 `a[0][31]` 是 000,01BCH。～～将倒数第 2 位取出即 BH=1011B，取前三位也就是 101B=5。～～
 
 ～～所以在第 5 组。～～
 
 将 1BCH 展开，即 0001,1011,1100B，取 110B，也就是 6。
 
-由于一行是 256 个数据，又要 256+1，所以 257=1,0000,0001B，✖️4 也就是 100,0000,0100B=404H。所以 `a[1][1]` 是 000,0544H。～～将倒数第 2 位取出即 4H=0100，取前三位也就是 010B=2。～～
+由于一行是 256 个数据，又要 256+1，所以 257=1,0000,0001B，\*4 也就是 100,0000,0100B=404H。所以 `a[1][1]` 是 000,0544H。～～将倒数第 2 位取出即 4H=0100，取前三位也就是 010B=2。～～
 
 ～～所以在第 2 组。～～
 
@@ -5782,7 +6261,7 @@ cache 至少需要 tag 位和有效位，所以每一个 cache 行需要额外�
 
 (1)
 
-2KB=2✖️8Kbit=16Kbit=16✖️1024bit=16386bit。
+2KB=2\*8Kbit=16Kbit=16\*1024bit=16386bit。
 
 所以本题采用位图法进行管理。
 
@@ -5872,7 +6351,7 @@ RTT=4km/200000(km/s)=20us。
 
 本题应该选 A。
 
-令 t 是次数，则 2 + 2✖️2+...+2✖️2^t=2^(t+2)-2=n/2
+令 t 是次数，则 2 + 2\*2+...+2\*2^t=2^(t+2)-2=n/2
 
 变形得 t=logn，所以应该选择 A。
 
@@ -5990,7 +6469,7 @@ RTT=4km/200000(km/s)=20us。
 
 符号位：1
 
-8.25=1000.01=1.00001✖️2^3，所以阶码为 3+127=130=1000,0010B。
+8.25=1000.01=1.00001\*2^3，所以阶码为 3+127=130=1000,0010B。
 
 尾数为 0001。
 
@@ -6708,7 +7187,7 @@ TTL，目的 IP 地址，头部校验和
 
 本题应该选 D。
 
-IO 时间为 10s，假设总任务量为 N，那么 N/CPU1 主频=90，CPU2 主频=CPU1 主频✖️1.5，所以 N/(CPU1 主频✖️1.5)=60s。
+IO 时间为 10s，假设总任务量为 N，那么 N/CPU1 主频=90，CPU2 主频=CPU1 主频\*1.5，所以 N/(CPU1 主频\*1.5)=60s。
 
 所以新的程序耗时 D。
 
@@ -6730,7 +7209,7 @@ unsigned int 直接进行 0 扩展，也就是 B。
 
 254-127=127
 
-所以是 1.111（23 个 1）✖️2^(127)，也就是 1111（24 个 1）✖️2^104。
+所以是 1.111（23 个 1）\*2^(127)，也就是 1111（24 个 1）\*2^104。
 
 所以也就是 2^104 加到 2^127=2^128-2^104，也就是 D。
 
@@ -7054,7 +7533,7 @@ MIPS=80/4=20
 
 1s 内执行 20M 条指令，访存 30M 次，由于命中率为 99%，所以缺失率为 1%，也就是 0.3M 次缺失
 
-0.3M 次缺失总共流数据 0.3M✖️16B=4.8MB（M 为 10^6），所以主存带宽需要 4.8MB/s。
+0.3M 次缺失总共流数据 0.3M\*16B=4.8MB（M 为 10^6），所以主存带宽需要 4.8MB/s。
 
 (2)
 
@@ -7062,9 +7541,9 @@ MIPS=80/4=20
 
 ～～页面大小为 4KB，缓冲器数据位 32 位，也就是 4KB/32bit=4KB/4B=1024 次。～～
 
-缺失是 0.3M，缺页基于 cache 缺失，也就是 0.3M✖️0.0005%=1.5 次。
+缺失是 0.3M，缺页基于 cache 缺失，也就是 0.3M\*0.0005%=1.5 次。
 
-页面大小为 4KB，缓冲器数据位 32 位，也就是 4KB/32bit=4KB/4B=1024 次，也就是一页需要启动 DMA 1024 次，平均 1.5 次缺页，也就是 1.5✖️1024=1536。
+页面大小为 4KB，缓冲器数据位 32 位，也就是 4KB/32bit=4KB/4B=1024 次，也就是一页需要启动 DMA 1024 次，平均 1.5 次缺页，也就是 1.5\*1024=1536。
 
 (3)
 
@@ -7074,9 +7553,9 @@ DMA 常用于传送高速设备数据块，如果 CPU 优先则可能会丢失�
 
 (4)
 
-～～一个存储体的周期为 50ns，达到稳定的情况下，50ns 可以流动 4✖️16B=64B 的数据，所以数据率为 64B/50ns=1.28GB/s，这里的 G 是 10^9。～～
+～～一个存储体的周期为 50ns，达到稳定的情况下，50ns 可以流动 4\*16B=64B 的数据，所以数据率为 64B/50ns=1.28GB/s，这里的 G 是 10^9。～～
 
-一个体是看存储器总线宽度，也就是 4B，而不是 16B，所以最后这个流动是 4✖️4B=16B，所以数据率为 16B/50ns=320MB/s
+一个体是看存储器总线宽度，也就是 4B，而不是 16B，所以最后这个流动是 4\*4B=16B，所以数据率为 16B/50ns=320MB/s
 
 ![44 1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBDtqzPw8L_L0Pc-zkmfbjLdBYGOdDQAC4RJrG8y1YVZCks5whA2g-gEAAwIAA3kAAz0E)
 
@@ -7291,7 +7770,7 @@ DMA 常用于传送高速设备数据块，如果 CPU 优先则可能会丢失�
 
 本题应该选 C。
 
-首先计算平均 CPI，也就是 2✖️0.5+3✖️0.2+4✖️0.1+5✖️0.2=1+0.6+0.4+1=3。
+首先计算平均 CPI，也就是 2\*0.5+3\*0.2+4\*0.1+5\*0.2=1+0.6+0.4+1=3。
 
 所以平均 CPI 为 3。
 
@@ -7311,7 +7790,7 @@ C640,0000H=1｜100,0110,0｜100,0000,0000,0000,0000,0000B
 
 尾数显然是 1。
 
-所以最终应该是 -1.1B✖️2 的 13 次方，也就是 -1.5✖️2 的 13 次方，所以选 A。
+所以最终应该是 -1.1B\*2 的 13 次方，也就是 -1.5\*2 的 13 次方，所以选 A。
 
 本题题目应该是打印错误了，不过问题不大。
 
@@ -7321,7 +7800,7 @@ C640,0000H=1｜100,0110,0｜100,0000,0000,0000,0000,0000B
 
 这类题就像前面说的，最好的办法就是转换为 10 进制，不过这道题是乘 2 除以 2，用二进制算更方便。
 
-对于 x✖️2，算数左移，也就是 1110,1000B，对于 y/2，算数右移，也就是 1101,1000B
+对于 x\*2，算数左移，也就是 1110,1000B，对于 y/2，算数右移，也就是 1101,1000B
 
 二者之和也就是 1110,1000B+1101,1000B=1100,0000B，所以选择 A。
 
@@ -7516,7 +7995,7 @@ CD 可以直接存取（不能说随机读），但是定位之后，读写只�
 
 对于报文 8Mb/10Mbps=800ms，两端链路也就是 1600ms。
 
-对于一组数据 10kb，在一条链路上传输时延为 10kb/10Mbps=0.001s。总共 8Mb/10kb=800 组，也就是 801 个传输时延，所以 801✖️0.001=801ms。
+对于一组数据 10kb，在一条链路上传输时延为 10kb/10Mbps=0.001s。总共 8Mb/10kb=800 组，也就是 801 个传输时延，所以 801\*0.001=801ms。
 
 ![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBCtqzK_bo_L3iuuI9gTcHchVvdTVIwACJBJrG8y1YVZR2X2O8nfRGAEAAwIAA3gAAz0E)
 
@@ -7679,7 +8158,7 @@ int solve3(int A[],int n){
 
 (1)
 
-采用顺序存储法，排列为：S1={do, while, for, repeat}。查找第一个是 1，第二个是 2，第三个是 3，第四个是 4，所以计算可得，ASL=1✖️0.35+2✖️0.35+3✖️0.15+4✖️0.15=2.1
+采用顺序存储法，排列为：S1={do, while, for, repeat}。查找第一个是 1，第二个是 2，第三个是 3，第四个是 4，所以计算可得，ASL=1\*0.35+2\*0.35+3\*0.15+4\*0.15=2.1
 
 (2)
 
@@ -7697,7 +8176,7 @@ CPU 时钟周期为 1/800M=1.25ns。
 
 总线时钟周期为 1/200M=5ns。
 
-假设传输 1s 的数据，总共有 1/5ns=200M，所以 200M✖️32bit=800MB/s。
+假设传输 1s 的数据，总共有 1/5ns=200M，所以 200M\*32bit=800MB/s。
 
 (2)
 
@@ -7707,23 +8186,23 @@ CPU 时钟周期为 1/800M=1.25ns。
 
 ～～32B/4B=4，所以总共需要 5 个总线时钟周期。～～
 
-～～所以 5✖️5ns=25ns。～～
+～～所以 5\*5ns=25ns。～～
 
 第 4 问考虑到了存储体的问题，但是第 3 问没考虑到，感觉属于比较低级的错误。
 
-传送地址 5s，启动第一个 40ns，然后启动 8 体，也就是 8✖️5ns，总共加起来也就是 85ns。
+传送地址 5s，启动第一个 40ns，然后启动 8 体，也就是 8\*5ns，总共加起来也就是 85ns。
 
 (4)
 
-首先计算 100 条指令的时间花费，也就是 100✖️4✖️1.25ns=500ns。
+首先计算 100 条指令的时间花费，也就是 100\*4\*1.25ns=500ns。
 
-～～一条指令平均需要 1.2 次访存，也就意味着总共需要 120 次访存，120 次访存也就意味着总共需要访存 120/8✖️40ns=600ns～～
+～～一条指令平均需要 1.2 次访存，也就意味着总共需要 120 次访存，120 次访存也就意味着总共需要访存 120/8\*40ns=600ns～～
 
-～～cache 缺失率为 5%，也就意味着 100 条指令里有 5 条指令 cache 缺失，也就意味着需要 5✖️25ns=125ns 去处理 cache 缺失问题传送数据。～～
+～～cache 缺失率为 5%，也就意味着 100 条指令里有 5 条指令 cache 缺失，也就意味着需要 5\*25ns=125ns 去处理 cache 缺失问题传送数据。～～
 
 ～～所以总共也就是 1225ns。～～
 
-cache 缺失率为 5%，也就意味着 100 条指令里有 100✖️1.2=120 次访存，也就是 120✖️0.05=6 条指令 cache 缺失，也就意味着需要 6✖️85ns=510ns 去处理 cache 缺失问题传送数据。
+cache 缺失率为 5%，也就意味着 100 条指令里有 100\*1.2=120 次访存，也就是 120\*0.05=6 条指令 cache 缺失，也就意味着需要 6\*85ns=510ns 去处理 cache 缺失问题传送数据。
 
 所以总共加在一起应该是 1010s。
 
@@ -7743,7 +8222,7 @@ OFFSET 为 8 位，按照有符号数的表示范围是 -128 到 127，所以向
 
 本条指令 C=0，Z=1，N=1。
 
-当 CF=0，ZF=0，NF=1 时，触发跳转，所以 200CH +2 +2✖️1110,0011B，也就是 200EH+1100,0110B=200E+FFC6H=1FD4H
+当 CF=0，ZF=0，NF=1 时，触发跳转，所以 200CH +2 +2\*1110,0011B，也就是 200EH+1100,0110B=200E+FFC6H=1FD4H
 
 当 CF=1，ZF=0，NF=0 时，未触发跳转，所以 200CH+2=200EH。
 
@@ -7824,7 +8303,7 @@ cobegin
 
 代码起始逻辑地址为 0000,8000H，所以页号是 8。
 
-由于一个页表项大小为 4B，所以物理地址 1 为 0020,0000H+8✖️4=0020,0000H+20H=0020,0020H。
+由于一个页表项大小为 4B，所以物理地址 1 为 0020,0000H+8\*4=0020,0000H+20H=0020,0020H。
 
 物理地址 2 为 0020,0024H。
 
@@ -7874,7 +8353,7 @@ TCP。
 
 本题应该选 C。
 
-记当前为 1，那么也就是 n✖️n+n/2✖️n+...，也就是 C。
+记当前为 1，那么也就是 n\*n+n/2\*n+...，也就是 C。
 
 ![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBD5qzRl05zX01IxUJCngoheBXiUy8gACpg9rG8y1aVaZ2DMtvs9zxQEAAwIAA3kAAz0E)
 
@@ -7977,7 +8456,7 @@ d,e,b,x,a,c，所以左右线索分别指向 b 和 a，也就是 D。
 
 本题应该选 D。
 
-假设 P 原本执行的指令数量是 N，CPI 是 X，主频为 M，那么也就是 NX/M=20。根据题目所说的公式，0.7N✖️1.2X/N，也就是 0.7✖️1.2✖️20=16.8。
+假设 P 原本执行的指令数量是 N，CPI 是 X，主频为 M，那么也就是 NX/M=20。根据题目所说的公式，0.7N\*1.2X/N，也就是 0.7\*1.2\*20=16.8。
 
 ![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEFqzbqxF5xsC0Nsgcjq-7x8baF8_AAC1xBrG8y1aVbk61W-b9QnhQEAAwIAA3kAAz0E)
 
@@ -8023,13 +8502,13 @@ B0C0,0000H=1｜011,0000,1｜100,0000,0000,0000,0000,0000B.
 
 16 个通用寄存器占 4 位，操作码字段占 8 位，由于 store 指令需要指令从谁存到谁，需要 2 个寄存器位，也就是 32-8-4-4=16。
 
-16 位的偏移应该是 A，因为 offset 的计算公式是当前指令 + “1”+offset✖️x 编址数
+16 位的偏移应该是 A，因为 offset 的计算公式是当前指令 + “1”+offset\*x 编址数
 
 ![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEZqzb_ks5Fk--Oz-Zw6tZWAXfA-ZgAC4BBrG8y1aVZauiVUqfywRwEAAwIAA3kAAz0E)
 
 本题应该选 C。
 
-采用微程序控制器，共有 32 条指令，由于每条微指令平均由 4 条微指令组成，所以总共有 4✖️32=128 条微指令。
+采用微程序控制器，共有 32 条指令，由于每条微指令平均由 4 条微指令组成，所以总共有 4\*32=128 条微指令。
 
 由于还有公共的 2 条微指令，所以总共有 130 条微指令，也就是需要 8 位才能存储。
 
@@ -8037,7 +8516,7 @@ B0C0,0000H=1｜011,0000,1｜100,0000,0000,0000,0000,0000B.
 
 本题应该选 C。
 
-由于地址/数据线有 32 根，所以一次最多传送 4B 的数据，由于每个时钟周期内传送 2 次数据，所以 1s 内可以传输 66M✖️2=132M 次数据，所以 132M✖️4B=528MB/s，也就是 C。
+由于地址/数据线有 32 根，所以一次最多传送 4B 的数据，由于每个时钟周期内传送 2 次数据，所以 1s 内可以传输 66M\*2=132M 次数据，所以 132M\*4B=528MB/s，也就是 C。
 
 ![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBElqzcMQkwsHgAwPqnPOelBkyjSHDwAC6BBrG8y1aVYDFNwc7VM4JwEAAwIAA3kAAz0E)
 
@@ -8104,7 +8583,7 @@ B0C0,0000H=1｜011,0000,1｜100,0000,0000,0000,0000,0000B.
 
 本题应该选 A。
 
-10GB 的磁盘分区，簇大小为 4KB，也就是总共有 10GB/4KB = 10✖️2^18 个簇，需要 10 ✖️2^15B 的存储空间，也就是 10✖️2^15B/4KB=80 个簇。
+10GB 的磁盘分区，簇大小为 4KB，也就是总共有 10GB/4KB = 10\*2^18 个簇，需要 10 \*2^15B 的存储空间，也就是 10\*2^15B/4KB=80 个簇。
 
 ![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFFqzc9hJjFrRcKB490LZwo7JY2bvAACBRFrG8y1aVaC-MevpEO_8gEAAwIAA3gAAz0E)
 
@@ -8184,7 +8663,7 @@ c1 向 a1 发送确认帧，查转发表发现有对应的项，所以直接单�
 
 本题应该选 C。
 
-首先计算发送一个数据帧的时间，也就是 1000B/100Mbps=8000bit/100Mbps=8✖️10^-5s=0.08ms，记为 Td，忽略 Ta。
+首先计算发送一个数据帧的时间，也就是 1000B/100Mbps=8000bit/100Mbps=8\*10^-5s=0.08ms，记为 Td，忽略 Ta。
 
 而 RTT=100ms
 
@@ -8192,9 +8671,9 @@ c1 向 a1 发送确认帧，查转发表发现有对应的项，所以直接单�
 
 NTd/(Td+RTT)>=1，就算可得 N>=1251。而 N 最大是 1000，所以意味着数据率不可能打满。
 
-所以发送 1000✖️1000B 之后，就需要等待第一个帧回到手后才可以发送下一个 1000✖️1000B。发送 1000✖️1000B 所需要的时间是 80ms，RTT 是 100ms，所以第一个帧的回应应该是 100ms，也就意味着每间隔 100ms 才可以发送 1000✖️1000B。
+所以发送 1000\*1000B 之后，就需要等待第一个帧回到手后才可以发送下一个 1000\*1000B。发送 1000\*1000B 所需要的时间是 80ms，RTT 是 100ms，所以第一个帧的回应应该是 100ms，也就意味着每间隔 100ms 才可以发送 1000\*1000B。
 
-1s 内总共有 10 个 100ms，所以总共可以发送 10✖️1000✖️1000B 的数据，也就是 80Mbps。
+1s 内总共有 10 个 100ms，所以总共可以发送 10\*1000\*1000B 的数据，也就是 80Mbps。
 
 ![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBFpqzdg4jMeiYLgr45PeiWVsxNm9kgACKRFrG8y1aVaGllFRcVIwmAEAAwIAA3kAAz0E)
 
@@ -8230,7 +8709,7 @@ PPP 协议是局域网接入广域网的协议，所以可能会用到，对于 
 
 1. 设置一个全局变量 WPL
 2. 对该树进行先序遍历，如果结点为空，那么返回
-3. 如果该结点为叶结点，那么结算，WPL+=深度✖️权值
+3. 如果该结点为叶结点，那么结算，WPL+=深度\*权值
 4. 如果该结点不是叶节点，那么递归的遍历其左子树和右子树
 
 (2)
@@ -8337,3 +8816,371 @@ func consumer_j(){
   }
 }
 ```
+
+### 408 2015 真题 2 刷
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHRqzhh0k1rKZjjO8X6IutKq0DapUAACwhVrG7fmcVYV9C4tsJG-SAEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+函数调用压栈是在底端，调用所以栈底应该是最先运行的，所以应该选 A。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBI9qzyctIL3nk794CO9bV352-EhI3gAC6RJrG7fmeVboh7WWuenBHgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+纯模拟题，没什么好说的。
+
+![2 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJBqzyqZSNBVhJ8UugaDbxVwpgfc7AAC-BJrG7fmeVbKKghLHL06KAEAAwIAA3kAAz0E)
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJFqzyqzAAFpCVQBLqHVXFmrPQABtTsvAAL7Emsbt-Z5VtCugG1IogYRAQADAgADeQADPQQ)
+
+本题应该选 D。
+
+纯模拟题，模拟如下：
+
+![3 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJJqzytgu8jwxkNyqtZ3r463QmiVnQACARNrG7fmeVbFOr65bezdiAEAAwIAA3kAAz0E)
+
+第 4 题棍母。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJRqzyveeXbu-GubZiPxJ1jl5L0unAACBRNrG7fmeVb8DqrwHN_j_AEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+绘制出对应的图，然后逐个模拟即可。
+
+![5 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJVqzyxgruKpOpYX5pFrg_CW8Am7gwACChNrG7fmeVbsrTN_mHMb3QEAAwIAA3cAAz0E)
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJZqzyx4js2E_sn7B1TY4jPq3PRZ4QACCxNrG7fmeVaBOzz_DM36uQEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+这道题也是纯模拟题。
+
+Kruskal 是选边，首先选择最短的边，也就是 V1-V4，然后可以选择 V1-V3 或者 V2-V3。
+
+Prim 算法是选结点，假设从 V1 开始选择，那么下一个加入集合的应该是 V4，再然后是 V3，V3 可以通过 V1-V3 或者 V3-V4，所以这道题应该选 V3-V4。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJdqzy1ofPyoVbLpqOP591ihu2-PBAACEBNrG7fmeVaMjLwfY0kJtAEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+这道题也是纯模拟题，注意别模拟错了。
+
+![7 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJhqzy5BP-Cj5oIqzSOoZR4n20Ip8QACFRNrG7fmeVa9OCSun0gcGwEAAwIAA3kAAz0E)
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJlqzy5Xx-r5lBy6CQchzvTNDpiZEwACFhNrG7fmeVY7BlNlkbq-QgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+KMP 算法的手算，算出来模式串是 011223。
+
+![8 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJpqzy_Jj5EecJmvCRfi5Fv_XMuIMgACJBNrG7fmeVamBH6YfOJAOQEAAwIAA3kAAz0E)
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJtqzzZhfROzxwOzCrhWhWFmKnADwAACNRNrG7fmeVaSEdJWhnoQmQEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+这类题需要注意是移动次数还是比较次数，对于移动次数。
+
+考虑 A，如果是直接插入排序，1,2,3,4,5,6,7，那么完全不需要移动。
+
+考虑 B，如果是冒泡排序，1,2,3,4,5,6,7 也完全不需要移动。
+
+考虑 C，基数排序每轮都要把对应的数放到对应的桶里，所以无关。
+
+考虑 D，如果快排初始序列已经接近排序完成，那么移动次数会远高于乱序。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJxqzzh6-vDyMPzwD7xQfB7_OAf2nQACQBNrG7fmeVZF0kkfCVwYlwEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+这道题也是模拟，模拟如下：
+
+![10 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJ1qzzknZ7yxb3c1scNfg3WRgJjldwACQxNrG7fmeVbinRG54Rna5wEAAwIAA3cAAz0E)
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJ5qzzlClu1x1RoXl7QxGBU8x5n9QQACRBNrG7fmeVbgiNBc_njEewEAAwIAA3gAAz0E)
+
+本题应该选 A，属于背书题。希尔排序默认采用的是直接插入排序。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJ9qzzllcSn-w2j62pK5jNRRtFLRogACSxNrG7fmeVbTVm-5wdPQiwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+属于背书题，计算机硬件可以直接运行的是机器语言程序，对于 x86 的 CPU 而言，微程序指令硬件也可以直接运行。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKBqzzoSxgKA7XsIDrN-_D20AgMsewACThNrG7fmeVarhjMtO_vTrQEAAwIAA3gAAz0E)
+
+本题应该选 B，
+
+对于补码要尽可能小，所以也就是负权位放一个 1，然后正权要尽可能的小，所以可以安排为 1000,0011B，也就是 -128+3=-125。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKJqzzuGrK79-8XupPvOP7UNKWI9ZQACVBNrG7fmeVbKCh_rYeOySAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 1，考虑极端情况，阶码分别取 1111,1110B 和 0000,0001B，小对大，也就是跨越范围是 253，完全没超过。
+
+对于 2，右归的时候数字向右移动导致阶码应该增大。阶码增大有可能导致上溢。
+
+对于 3，左规的时候数字向左移动导致阶码应该减少。可能引起下溢变成 0。
+
+对于 4，考虑溢出的是 0，结果不会溢出。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKNqz0AEdQw2PwrW_jCVcElLLdXmIAACYRNrG7fmeVYy7SZD8frabwEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+主存块大小为 4 个字，一个字 32bit，所以块内地址应该占 16B，也就是 4 位，采用直接映射，也就是 tag 号占 28 位。
+
+cache 本身的有效位占 1 位，采用回写法脏位占 1 位。
+
+数据总共是 4\*32bit=128bit。
+
+所以一个 cache 行占 28+2+128=158 位。
+
+存放 4K 个字的 cache 总计 4K/4=1K 的主存块，所以也就是 158K。
+
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKRqz0E7on5Yy8RaGva_cVnDo1i0LAACZBNrG7fmeVYWqZoW6o0JqAEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+假设 TLB 和 cache 都命中，那么只需要访存写回一次（因为是直写法）。所以应该选 B。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKVqz0F5ky6aWEHEt7jMJdnIgK4bhQACZRNrG7fmeVan0D9bWNY8VAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+本题属于背书题，显然 C 和 D 应该排除。SRAM 是静态的，DRAM 是动态的，SDRAM 为同步 DRAM，本质上也要刷新。
+
+所以应该选 B。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKZqz0HQbtpgTI-v-U4WoNMmlKa8kwACZhNrG7fmeVbZcnJZ7Xn7kwEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+按照四体交叉，本题可以绘图如下：
+
+![18 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKdqz0Ifhy97ln6llbL60IljtoT0HgACaRNrG7fmeVZz_oqAvGgm-AEAAwIAA3kAAz0E)
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKhqz0K09qqOF3L2ElOQTwznEwFlVQACbBNrG7fmeVZ51FY0r4SzmQEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+本题属于背书题，对于 A 和 B，有 3 类，不互锁，半互锁和全互锁；对于 C，同步信号必须得由设备总线提供。
+
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKlqz0MKCS0anYp9EvULqFO8KIbd0QACbRNrG7fmeVYaMJU9NFzKMwEAAwIAA3kAAz0E)
+
+本题应该选。
+
+寻寻道时间 8ms，转速 7200rpm=120rps，转半圈需要花的时间是 0.5/120=0.0042=4.2ms
+
+由于每个磁道包含 1000 个扇区，访问一圈所需要的时间是 1/120，而访问 1000 中的一个也就是 1/120 整个再/1000，所以可以忽略不计。
+
+所以这道题应该选 B。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKpqz0QcGTAEdkB40hv1c0xsgwreigACchNrG7fmeVbilAnKuU3VBQEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+由于是采用中断控制方式，所以可以不需要传主存地址。
+
+还有一类题可以分为两条链路思考。
+
+CPU - IO 端口 - 设备本身
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKtqz0SnNwzgszHq_i6SXeWDxyRVzwACcxNrG7fmeVYiVU37vTOPDwEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+对于故障会回到当前指令，例如缺页
+
+对于 trap 是到下一条指令
+
+对于终止程序直接都没了。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKxqz0Tfv8zpgfBnJmLEYXCqhfsQOQACeBNrG7fmeVYCsviBolh9hwEAAwIAA3gAAz0E)
+
+本题属于背书题，应该选 B。
+
+PC 是硬件保存的，不需要保存 C 和 D 中的内容。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBK1qz0UQeYZ9azTe_CeB_Ja7aY8ncgACexNrG7fmeVbiFjPE1uAz-wEAAwIAA3kAAz0E)
+
+本题应该选 C。取非属于库函数。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBK5qz0Uu-TzJH43fTwOb4WjySwYyVAACfhNrG7fmeVZQ3t4VzEO46gEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 A，执行 P 操作后可能会保持就绪态，可能会从就绪态变成阻塞态。
+
+对于 B，申请内存失败后进行页回收，内存紧收等，实在不行还可以 OOM killer。实在失败了，拿到失败信号之后纯看程序员是怎么写的，采用未处理则非法退出，采用处理则可以采用避退，降级等策略。
+
+对于 C，启动 IO 设备会导致就绪态变成阻塞态。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBK9qz0Zo86AV4Syu9agB9B6XEduI3QACkBNrG7fmeVara2L5O9biVQEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+死锁避免指的是银行家算法，死锁检测指的是资源分配图那一块。
+
+S1 也不会限制用户申请资源的顺序，可以考虑系统资源充足的情况，此时就根本不会限制。考虑极端一点也可以考虑有两个安全分配序列，先后分给谁无所谓。至于只有一条路的是过于极端的想法。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLBqz0divNafevn3-OWiKfDKTUnd8AAClRNrG7fmeVb0glMWNxeSSAEAAwIAA3kAAz0E)
+
+本题应该选 B。属于纯模拟的题。
+
+![27 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLFqz0fgDZFPeaIkhINeyfK0gM1FkQACmBNrG7fmeVY6_mKecTmSLwEAAwIAA3kAAz0E)
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLJqz0f5niTlH7DVc3BR-wUU_rsmyQACmRNrG7fmeVZ2ey3XLkgdUQEAAwIAA3gAAz0E)
+
+本题应该选 A，属于背书题。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLNqz0gVhVhBQj9UbTTpLQcvsfpMuAACmxNrG7fmeVYI6AlfM_dc2QEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+磁盘块大小为 1KB，索引指针占 4B，所以一个磁盘块内可以存储 1KB/4B=256 个索引。
+
+直接索引有 10 个，也就意味着初始可以存 10KB 的数据。由于第一个数据在 1234B，所以只需要根据索引结点直接读入磁盘即可，也就是需要访问 1 个磁盘块。
+
+对于 307400B 约等于第 307 个磁盘，所以应该在二级索引，也就是根据直接索引得到 1 级间接索引，根据 1 级间接索引读入 2 级间接索引，然后根据该索引读入磁盘，也就是 3 个。
+
+所以应该选 B。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLRqz0lX8cBDI4nMWeG3IC228JHspwACphNrG7fmeVZ87LpzVsytQQEAAwIAA3gAAz0E)
+
+本题应该选 C，属于背书题。
+
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLVqz0lzRt1A6_-GEuz34N6glVdWHwACpxNrG7fmeVarz_9_NApqHgEAAwIAA3kAAz0E)
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLZqz0mEJVcU1YbbOceli_AX7YQMtwACqBNrG7fmeVZePTUkbniqOAEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+采用 SCAN 调度，也就意味着应该是从 58 向 200 移动。移动到 200 后然后超小的移动。
+
+大致计算可得 200-58+200-15=142+185=327，所以应该选 325。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLdqz0n5h5fYhPTyOrGoa3k_22e5dAACqRNrG7fmeVZ4MJ5ubKN6wgEAAwIAA3gAAz0E)
+
+本题应该选 D，属于背书题。POP3 使用 TCP。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLhqz0oTzI3HiN9485IYOA4RY1bVLAACqxNrG7fmeVYbpqqoRTDl1wEAAwIAA3kAAz0E)
+
+本题应该选。
+
+首先观察编码 1，显然是非归零编码，所以 CD 排除。
+
+对于编码 2，假设是曼彻斯特编码，可以得到题目中的。假设是差分曼彻斯特编码，跳变代表 0，不跳变代表 1。
+
+看中间，1010100，无法匹配上。
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLlqz0rGs6fZXiqEqio3jZJBTfN2vQACrBNrG7fmeVY6scyLEoXTXAEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+滑动窗口协议，假设最大可以传播 N 帧，先计算 Td，Td=1000B/128000，也就是 Td=8000/128000=8/128=1/16。
+
+RTT=500ms，所以通过公式：NTd/(Td+RTT)>=0.8，计算可得 N>=7.2。也就是 N 至少取 8。
+
+这里应该考虑极限情况，也就是后退 N 帧协议，而不是考虑选择重传协议。
+
+所以根据公式，8<=2^n-1，也就是 n 应该取 4。
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLpqz0z4ju5RgMuEUf4mOsiRug3q-wACuRNrG7fmeVYf269FQ4crrwEAAwIAA3gAAz0E)
+
+本题应该选 A，属于背书题。
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLtqz00PjBECkJK4T8CwYSVov5IZWwACuhNrG7fmeVZIkucLIQZ4JgEAAwIAA3gAAz0E)
+
+本题应该选 A，属于背书题。
+
+B 应该是广播域，C 应该是冲突域，对于 D 由于只是在数据链路层，所以没法让不同网络层协议互联。
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLxqz008wg6PB2_2G00-X4uV7xgDygACuxNrG7fmeVZ7bOO8CQgZAAEBAAMCAAN5AAM9BA)
+
+本题应该选 C。
+
+根据最长前缀匹配原则。5 是 0101，32-27=5，也就是覆盖最后 5 位，显然包含在内，所以本题应该选 C。
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBL1qz02VZ4C1xsn7nqGGdd0eoP3duAACvRNrG7fmeVbqHxxbdY96QgEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+0 时刻，拥塞窗口为 1，接收窗口为 16
+
+1 时刻，拥塞窗口为 2，接收窗口为 15
+
+2 时刻，拥塞窗口为 4，接收窗口为 13
+
+3 时刻，拥塞窗口为 8，接收窗口为 9
+
+4 时刻，拥塞窗口为 16，接收窗口为 1。
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBL5qz04GUHwqf6pATdvPxgK59PpVHgACvxNrG7fmeVbzIocEAAEDh78BAAMCAAN4AAM9BA)
+
+本题应该选 C。
+
+题目里有 close。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBL9qz04ryFOsOZ_LfSWg_ZATOtOmJgACwBNrG7fmeVZLCQ9CWLBuYgEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+1. 设置两个指针，pre 和 curr，分别指向头节点和头节点的下一个结点
+2. 设置一个数组 hasmap[n+1]，充当哈希表使用
+3. 判断 curr 指向数据的绝对值是否出现在哈希表里，如果存在，那么删除当前结点，pre 不动，curr 重新定义为 pre->link
+4. 如果不存在在哈希表里，那么设置为存在，pre 和 curr 共同向前移动一个单位
+5. 重复上述步骤，直至 curr 为空
+
+(2)
+
+```c++
+struct LNode{
+    int data;
+    LNode* link;
+};
+```
+
+(3)
+
+```c++
+int abs(int x){
+    if (x<0){
+        return -x;
+    }
+    return x;
+}
+
+void solve(LNode* L,int n){
+    int hasmap[n+1];
+    LNode* pre=L;
+    LNode* curr=L->link;
+
+    while(curr!=nullptr){
+        if(hasmap[abs(curr->data)]==1){
+            LNode* tmp=curr;
+            pre->link=curr->link;
+            delete tmp;
+            curr=pre->link;
+        }else {
+            hasmap[abs(curr->data)]=1;
+            pre=pre->link;
+            curr=curr->link;
+        }
+    }
+}
+```
+
+(4)
+
+时间复杂度：O(n)
+
+空间复杂度：O(n)
