@@ -34,6 +34,34 @@ seriesOrder: 0
 
 数学真题：第 26 周 - 第 30 周，共 5 周。09 - 20 的 12 年真题，以及超越部分试卷（3 套），因为课内 + 状态很差，这 5 周只干了这些事
 
+数学模拟卷 1 + 二刷 880 一半：第 31 周 - 第 32 周，共 2 周。26 李 4 + 880 二刷一半，880 二刷一半
+
+数学模拟卷 2 + 近些年的真题 + 二刷所有错题 + 卷子复盘：第 33 周 - 第 34 周，共 2 周。27 李 6，21 真题 - 26 真题，880 二刷剩下的，24 超越剩下 7 份，所有错题。
+
+数学模拟卷 3 + 660 + 卷子复盘：第 35 周 - 第 38 周，共 4 周：25 超越 + 26 张四/张八 + 660。
+
+408 基础：第 2 周 - 第 11 周，共 10 周。完成 4 本书的基础部分。
+
+408 基础重复：第 12 周 - 第 17 周，共 6 周。完成 4 本书的选择题 2 刷。
+
+408 强化：第 18 周 - 第 26 周，共 9 周。完成 4 本书的强化，4 本书的选择题错题再解析，4 本书的大题研究，以及最后的过一下几本书。
+
+408 真题以及模拟：第 27 周 - 第 30 周，共 4 周。卷子从 09 - 19 年的所有题模考 + 操作系统汪道选择题三刷 + 计组选择题部分三刷。
+
+408 近些年真题以及三刷选择题复盘：第 31 周 - 第 32 周。王道计组选择题三刷，计网挑部分三刷，20-22 真题
+
+408 真题复盘：第 33 周  - 第 34 周。真题深度复盘。
+
+英语仔细阅读：第 19 周 - 第 28 周，共 10 周。掌握仔细阅读的基本方法，写完 07 - 18 的仔细阅读
+
+英语套卷：第 29 周 - 第 32 周，共 5 周，14 年 - 20 年真题所有客观题（也就是 07-13 年的完型和新题型没做，不过这里新题型只用写 11,12,13，完型看情况了）
+
+英语套卷：第 33 周 - 第 34 周：21 年真题以及研究翻译和作文。与此同时，必须每天同时进行早年阅读重刷（阅读即可，一天 1 篇）
+
+英语套卷：第 35 周：以 22 年真题为例，模考一份来点感觉。
+
+政治：第 29 周 - 第 42 周，共 14 周。先花 6 周的时间刷一遍选择题（徐涛马原强化课 + 苍盾），也就是第 34 周结束，再花 6 周的时间 2 刷一遍选择题（肖背诵手册，肖 8 的选择题），再花 2 周的时间背大题。
+
 ## 张宇 30 讲基础高数 1 刷（补）
 
 最开始没有写错题本，所以是后续补充的。
@@ -513,17 +541,399 @@ X^2>=0
 
 ### 张宇 30 讲基础高数 1 刷第 9 章
 
+关于这一章，计算问题非常的大，需要多复盘。
+
+![9.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYZq0IUOF9oYnre-DVNlTiwqTruYlQACwxJrG6jniFY2dRKgKCzKPAEAAwIAA20AAz0E)
+
+1 刷，错题重刷等多次错误。包括但不限于对 a 的处理以及+c
+
+![9.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYdq0IUjd9D8Of9vc9ZyE4enDeLE7wACxBJrG6jniFaOHSA-_yPXkQEAAwIAA20AAz0E)
+
+1 刷采用换元法进行处理，做错了，2 刷忘+c。
+
+![9.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYhq0IU7lX1bM0-7hMAKab7tbPYmYgACxRJrG6jniFbuenRwEBtWpAEAAwIAA20AAz0E)
+
++c
+
+![9.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYlq0IVNN6yp9F7Uw1zmGplDRDnmUgACxxJrG6jniFanuXMlmHAPgwEAAwIAA20AAz0E)
+
+采用换元法，但是这道题题抄错了，题抄成 f(lnx)=(lnx)/e^x 了。
+
++C
+
+![9.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYpq0IVh_ZhA5vLWOaa_fyFAcVp_sAACyBJrG6jniFalbkZqHVWoNQEAAwIAA20AAz0E)
+
+毫无思路。考虑到 e^x 的存在，猜测这道题应该是弄出来两项可以消掉或者可以合并。又考虑到三角恒等式。
+
+![9.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYtq0IV0_yYzu9zpeO8f-7tit8jYDAACyRJrG6jniFZHQzoqPi40ZAEAAwIAA20AAz0E)
+
+1 刷的时候极为轻视，将这题直接跳过了，强化阶段也选择性的跳过了这部分。事实上，结果就是 2 刷的时候第 8 题错的一塌糊涂。
+
+![9.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYxq0IWJYQqa1XTUu_LJAvD0_O6H_AACyhJrG6jniFbktU-Dow2skAEAAwIAA20AAz0E)
+
+本题处理时对于 x^2+1 项用的直接是 B，而不是 Bx+C
+
+![9.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBY1q0IWeI05c0m91mpFprqTCe5hhiwACyxJrG6jniFYin6_K4CMfGAEAAwIAA20AAz0E)
+
+对于 arctanx 的变形公式背错。我认为对于这种不应该去背公式，而应该求导完之后再算一次看看有没有问题。
+
+![9.1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBY5q0IWwzvJCkuXzwlOsKuDZOcL7hwACzBJrG6jniFbkkyx_dvXW6QEAAwIAA20AAz0E)
+
+算这道题的时候题抄错了，少抄了一个 ln。另外可以注意一下区间再现。
+
+![9.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBY9q0IX3FKvO4iPC8oq-FnlLMxeicwACzRJrG6jniFbP-TFUsUYLJQEAAwIAA20AAz0E)
+
+![9.1.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZBq0IYGXsKpNUmqLBGA-6FZlHD5FAACzhJrG6jniFa9OnSddx0AAVQBAAMCAANtAAM9BA)
+
+这两题可以放一起讲。后面那题没去算，因为计算太复杂了。前面那题则是没想到可以利用 arcsin(sinx) 去简便计算。
+
+![9.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZFq0IZplz4iUEDgAAE7_Vl_Hr91UB8AAs8Saxuo54hWdydzIwIz79kBAAMCAAN4AAM9BA)
+
+需要注意，这道题的结论的积分上限一直是 pi，其他变形另说，而不是一步到位。
+
+![9.1.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZJq0IZ-5c3aKdri_N9CCvCiQlhsRgAC0BJrG6jniFZJpX4VYQABdJYBAAMCAAN4AAM9BA)
+
+一步步计算，本题变限积分求导的时候，一定要注意是 x^4！
+
+![9.1.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZNq0IaOvswOM6SIezOCErT0RU-AygAC0RJrG6jniFbticoPYA1s2AEAAwIAA20AAz0E)
+
+法线。
+
+![9.1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZRq0Ia_Xl0HwrE53rM-VoKrDxUvgwAC0hJrG6jniFadHttweRiYJgEAAwIAA3gAAz0E)
+
+第一是没想到应该拆绝对值。碰到绝对值想办法拆绝对值，这基本是铁律。
+
+第二是理解错泰勒公式。这道题是 F(x) 展开式后面的式子，而不是里面的东西展开是这个式子。
+
+![9.1.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZVq0IbRcGxLrdvm9TUGIf_Z4s7rpwAC0xJrG6jniFYqMY-3MLOw1QEAAwIAA3gAAz0E)
+
+这题在做的时候应该是认为里面的太复杂了，然后没敢化简。事实上，这题化简一下就可以迎刃而解了。
+
+![9.1.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZZq0IbsiocPAAFTOFN4JqPWiVZ8NVMAAtUSaxuo54hWvco1nvrjXTUBAAMCAANtAAM9BA)
+
+这道题应该是一直在那里想着怎么拆，对于这种题，一定要想一下三角换元。
+
+![9.1.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZdq0IcKlAnBtLjuWwatNuKi79d_LQAC1hJrG6jniFau1o1v3PdD_QEAAwIAA20AAz0E)
+
+![9.1.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZhq0IcVCaf0vJsD6alVKWA8g7z2pwAC1xJrG6jniFbSljB47fg_YQEAAwIAA3gAAz0E)
+
+这两题都没做，问题不大，和数学 1,3 相关。
+
+![9.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZlq0Ic0km0v7toNS_9pxKUzgRJf6wAC2BJrG6jniFbLZUC_CoX5uAEAAwIAA20AAz0E)
+
+做的时候没处理好连续。
+
+![9.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZpq0IdH3WGd7vZeNiKkjlFIni0LhAAC2RJrG6jniFZMN-cOkFJeGgEAAwIAA20AAz0E)
+
+定义，tanx 在 pi/2 上无定义。
+
+![9.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZtq0IddSxpwJh0N7M5TvXmiitXc7QAC2hJrG6jniFbo3M4PN3a1JQEAAwIAA20AAz0E)
+
+不会做。
+
+![9.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZxq0IglwPo-21rQxPDlOGRdRAqvEQAC3RJrG6jniFbl6voVldSHhQEAAwIAA20AAz0E)
+
+没有想到可以先利用奇偶性化简，导致做出来很复杂，然后计算错误。
+
+![9.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZ1q0Ig3FDQ4KeR2Fd_CJ1MpJxDs5wAC3hJrG6jniFYMcC39yaq6FgEAAwIAA20AAz0E)
+
+思路正确，但当令 tx=u 进行变量代换时，对 x，t 和 u 之间谁是变量谁是常量混淆。
+
+![9.2.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZ5q0IhHRsFi1P9AXuWByU3BJgEefwAC3xJrG6jniFY4-Kxk0tkzLQEAAwIAA20AAz0E)
+
+没考虑定义域。
+
 ### 张宇 30 讲基础高数 1 刷第 10 章
+
+![10.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZ9q0IhcifX4W-nujniHwxVm7RJFzgAC4BJrG6jniFYDcP-1ApGRiQEAAwIAA3gAAz0E)
+
+没有想好定义域和值域，也没有画图直接想当然做，导致减反了。
+
+![10.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBaBq0IhzBcPq3Yz-JW3HAAFQinNZvHsAAuESaxuo54hWC60NIfCLhAoBAAMCAAN4AAM9BA)
+
+对于本类题无从下手，事实上这种题相当于换元。
+
+![10.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBaFq0IiKk7lQQxJf1aMCj8EkbR2HtAAC4hJrG6jniFbu1qzOudM8aQEAAwIAA20AAz0E)
+
+对于这种题没有头绪，但是事实上这种常见曲线需要背诵。另外需要注意其定义域。
+
+![10.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBaJq0IikzPNwFE4HZCubJATpKId-4AAC4xJrG6jniFZE8vUPvhXQ7AEAAwIAA20AAz0E)
+
+对于这题想到了这道题有很多个区间，但是没想到要分成 kpi-(k+1)pi 讨论，这点需要着重注意。另外可以注意一下等比数列的计算。
+
+![10.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBaNq0IjQH9Jc_KpcCie0cxkYn4LaOgAC5BJrG6jniFb80qVj2vwjgwEAAwIAA3gAAz0E)
+
+第一，注意定义域；第二，计算错误，最后这道题没有除以 2。
+
+![10.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBaRq0IjmvINWDJ45vLSiaXA63SDFdQAC5RJrG6jniFZrEqyC0y-naAEAAwIAA3gAAz0E)
+
+本题直接列公式硬算，但是最后在换元法的时候积分上下限理解错误。
+
+但是我觉得这道题不应该硬算，而应该利用强化课武忠祥老师的方法去做，这样这道题就不会碰到什么很神秘的问题了。
+
+![10.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBaVq0Ij49fdT3Zm-56Q1EASnP9Ol4QAC5hJrG6jniFaD8jyZjjqTDwEAAwIAA3gAAz0E)
+
+采用微元法第 2 问计算错误。和上一题类似的，对于这类题用二重积分的思想去解题。这里微元法的错误来自于对锥形的计算错误，因为这道题的锥形是绕着 x=1 去算的，所以不可以粗浅的理解为绕着 y 轴转那样去算。
+
+![10.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBaZq0IkVFqzqE1vOUDTN0aUKxRBkfgAC5xJrG6jniFaWsxI1mcheXQEAAwIAA3gAAz0E)
+
+对于变上限积分理解不足。
+
+![10.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBadq0IkpZI6SxtRpxiuX4FyPf_bWkwAC6BJrG6jniFbZelgsbb1DeQEAAwIAA3gAAz0E)
+
+没做。利用强化课的二重积分思想即可。
+
+![10.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBahq0Ik-AAGzYDesV5K8mWJGTMZG-IIAAukSaxuo54hWW8tZDkCM7fEBAAMCAAN4AAM9BA)
+
+属于低级错误。对 1/y 积分，求出来是 lny，而不是-lny。
+
+![10.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBalq0IlTmpIsrbfW-ZYAAde8sX96myEAAuoSaxuo54hWQ3NxsUje_EIBAAMCAAN4AAM9BA)
+
+漏看范围，以及提取因子提取错误。
+
+![10.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBapq0Il-jN9uI9rJin5S5NobmLsjMQAC6xJrG6jniFaBkrLi7svVWAEAAwIAA3gAAz0E)
+
+微元法的锅了，这道题采用二重积分思想很快。
 
 ### 张宇 30 讲基础高数 1 刷第 11 章
 
+![11.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBatq0ImQYM93Yo7iKduEwj5bv0xjWwAC7BJrG6jniFbdzy7kK-QNswEAAwIAA3gAAz0E)
+
+本题错在这几个方面。第 1，没想到变限积分；第 2，关于第 2 问，把 e 踢出去，而不是把 f(x) 提出去。这样犯了两个问题，其一，利用推广后的积分中值定理需要注意内部是不变号的，其二，就算 f(x) 是不变号的，那么提取出去的东西会有一个很抽象的问题，那就是随着 n 的变化，ε会变。
+
+![11.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBaxq0Imqu75OqGlHMnHT_nDNWe_pdAAC7RJrG6jniFaGUmsMSG7mIQEAAwIAA3gAAz0E)
+
+夹逼定理。
+
+![11.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBa1q0Im9XeQQ1jw7cw9VOyDyg6cFowAC7hJrG6jniFb-bPD3hx6TCQEAAwIAA3gAAz0E)
+
+![11.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBa5q0InOZujiyIxjSbqn2UfPhfrWJgAC7xJrG6jniFYcTE3VhANGWQEAAwIAA3gAAz0E)
+
+没做。
+
+![11.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBbdq0ItiN-eg7runYZWPW_1egE3fFQAC_hJrG6jniFYUVfeh7_9weAEAAwIAA3gAAz0E)
+
+这道题的问题本质上来源于对变限积分的不熟悉。
+
+![11.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBbhq0It5_89SP3xjoicDMxqyXoH0jQACARNrG6jniFZWjuvIKSaLHQEAAwIAA3gAAz0E)
+
+这道题想到利用两次拉格朗日中值定理并不难，但是难的是想到放缩这里要拆开放缩。
+
+![11.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBblq0IuNkQb8nuHUkW-hysfhPmJ52AACAhNrG6jniFY7Cib_qM3G3gEAAwIAA3gAAz0E)
+
+![11.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBbpq0IuZ07LleKIIO8Uxy-aMAlHRzQACAxNrG6jniFaw18GrxCn0-wEAAwIAA3gAAz0E)
+
+这两题放在一起讲。本质是因为路径依赖，始终想到利用拉格朗日中值定理。但是事实上除了中值定理之外，面对积分还有两个处理路径。第一是分部积分，第二是牛莱公式。在拉格朗日中值定理走不通的情况下，可以考虑用分部积分或者牛莱公式，而且对于分部积分的考虑应该提前。
+
+![11.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBbtq0Iy9PY5DWtIKk8qu3WoFx4pHwwACBBNrG6jniFZpna1pWXUQIQEAAwIAA3gAAz0E)
+
+没想到积分中值定理。
+
+![11.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBbxq0I08S79_JUWmUQ6jFQ1S3APunwACBRNrG6jniFbKe_vzLWbPZgEAAwIAA20AAz0E)
+
+没想清楚本质是在证明什么。
+
+这道题只需要证明里面的大于等于 0 即可。
+
+![11.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBb1q0I1z9LAySWm8cmP6RUdzILqfnwACBhNrG6jniFbC85MjZE31VQEAAwIAA3gAAz0E)
+
+和 11.10，11.11 一样。
+
+![11.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBb5q0I2ocVYQHOCHoFujNmouiNKmFgACCBNrG6jniFbQtNfObR_eiAEAAwIAA3gAAz0E)
+
+这道题 1 刷的时候完全没想明白在干啥，事实上利用一个很“土”的办法就是变量代换 b 为 x，迎刃而解。
+
+![11.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBb9q0I2_yxc66lYAAXUyb8yxr8wTSw4AAgkTaxuo54hW55pOWWpq5kEBAAMCAAN4AAM9BA)
+
+泰勒公式背错了。
+
 ### 张宇 30 讲基础高数 1 刷第 12 章
+
+![12.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcBq0I3WKDViArvCXeFmeusR6LBINAACChNrG6jniFb2vwX3Kls1AQEAAwIAA3gAAz0E)
+
+“又”
+
+![12.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcFq0I3w_d-swVwOAAFKglnqhuVP-AwAAgsTaxuo54hWTh7SXKrXXfsBAAMCAAN4AAM9BA)
+
+搞清楚坐标系的位置，对于这类题，一定要搞清楚 x 和 s 之间到底分别是什么。
+
+![12.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcJq0I4KHxYZTMGUq4QW77LkAk3oDAACDBNrG6jniFacDzL6W14wjAEAAwIAA3gAAz0E)
+
+这里的 P 其实就是 F（公式里的），按照自己的理解就好了。
+
+![12.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcNq0I4cInAMzLGyZ1CAW9Fy-_Ge8QACDRNrG6jniFaL5WRW3xirOAEAAwIAA3gAAz0E)
+
+不会做。对于物理应用题，事实上强化那块搞一下才真正大概搞明白怎么个回事，对谁积分，谁是变量等，以及抽水做功是对重力做功，而不是对压力做功。
 
 ### 张宇 30 讲基础高数 1 刷第 13 章
 
+![13.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcRq0I42ELn35W3Pogm_CPTUjgrO8wACDhNrG6jniFZA7YVuUHARhQEAAwIAA20AAz0E)
+
+本题没想到用夹逼定理，对于这类题，根据强化经验可知，先判断是否齐次，然后一般采用夹逼定理去证明。
+
+![13.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcVq0I5HVdaCQJqyVA86ne5sbLEmgwACDxNrG6jniFaIZDgI6R3FtgEAAwIAA20AAz0E)
+
+本题巧合做对，事实上这道题如果采用换元法问题会很大，即便换元了，还是里面的 t 还是 t，又不会发生变化。
+
+![13.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcZq0I5cxfP0PemqXzc0v53mXVKvoAACEBNrG6jniFYG6PZxjzZoYQEAAwIAA20AAz0E)
+
+对于这题需要注意这几个问题：第一，u^2 抄错了；第二，换元法之后的代回问题。
+
+![13.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcdq0I5t7kZUVNPqWQa_hJV0FAABKCAAAhETaxuo54hWEOfgqTu53moBAAMCAAN4AAM9BA)
+
+本题巧合做对。原因是没有对 f1 等进行求导。
+
+![13.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBchq0I6Be7N8oOlH4Jkbq7EAAe6N5i4AAhITaxuo54hWxgUvr3UfyO8BAAMCAAN4AAM9BA)
+
+关于这题主要是对记号理解不清晰，对于第一个式子求导，是对 f(x,e^x) 求导，而不是对 f(x,y) 求偏导，这种题可以联想到先代后求和先求后代。
+
+![13.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBclq0I6VZMV4MxaXndnjbNH5Rl52HwACExNrG6jniFb4QkcQyPyvHwEAAwIAA3gAAz0E)
+
+想当然没取倒数。
+
+![13.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcpq0I6q8p3k2533icAWzwGSJ-KrJgACFRNrG6jniFa7fGtZT7tFaAEAAwIAA3gAAz0E)
+
+没想到举反例：(y-x)^3。
+
+![13.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBctq0I66SC9Djaavv7VrS0Taomyz2QACFhNrG6jniFZIZXSdoKYazAEAAwIAA3gAAz0E)
+
+公式法求的时候要有负号。
+
+![13.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcxq0I7PJiZgGe2HPkPApPr1iaBWogACFxNrG6jniFbD4I53bigcuwEAAwIAA3gAAz0E)
+
+![13.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBc1q0I7btNR27yR9rdOhrkf6J3vMRwACGBNrG6jniFamvDHwMHd3WwEAAwIAA3gAAz0E)
+
+![13.1.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBc5q0I7oJaaYz9mHuoe69qlgmyGS0gACGRNrG6jniFbx10gheWWfEgEAAwIAA3gAAz0E)
+
+![13.1.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBc9q0I715soH0sk4HCXDW0HpYg5eeAACGhNrG6jniFbB5mHTuFVSJgEAAwIAA3gAAz0E)
+
+本题是不封闭曲线（也就是得考虑区间），所以使用拉格朗日乘数法算出来的只是边界条件。
+
+事实上这道题 2 刷的时候用了三角换元，迎刃而解。
+
+![13.1.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdBq0I8LsMkdkOd4oNLmtnUwt9P2ogACGxNrG6jniFZJaIwo_H8_pAEAAwIAA3gAAz0E)
+
+这题当时 1 刷的时候没看懂是什么意思，其实很简单，先利用偏积分求出原函数，然后因为是面积内，所以需要考虑边界和本身。
+
+![13.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdFq0I8ika4mbFzD2b5RnQ1NO1_-rAACHBNrG6jniFYhI4pq_vXIfQEAAwIAA20AAz0E)
+
+属于低级错误，本题做对了，选项选错了。
+
 ### 张宇 30 讲基础高数 1 刷第 14 章
 
+![14.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdJq0I83nmFn4My-NDxXqyCS3L-PRAACHRNrG6jniFZ5nW14pjFa4gEAAwIAA3gAAz0E)
+
+对于本题应该利用定义求解，没有理解定义。
+
+![14.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdNq0JAgbmWVyzwFQPHo8ZYc2QQBSgACHhNrG6jniFYbwJA7Ze87jQEAAwIAA20AAz0E)
+
+对于这道题，没有想到用二元积分的积分中值定理去做，对于二元积分的积分中值定理，可以类比一元的去理解。
+
+![14.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdRq0JB6PzDLgGqMqgjxZplHi_wkDwACHxNrG6jniFZZTOB93Q2L_gEAAwIAA3gAAz0E)
+
+对于这题，没有理解什么是 x-y 给的条件是什么，也是用定义去做。
+
+![14.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdVq0JCgCUjtfjt_P1rOUjtsj_kfugACIBNrG6jniFZJZlmjEc8cwQEAAwIAA20AAz0E)
+
+对于这题犯了一个经典的错误，也就是 1/2(1/2x+1/2x)=1/2
+
+![14.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdZq0JC3vIV6k36_lXq59RfyzWmf3gACIRNrG6jniFZCMLMH3Ua3dQEAAwIAA20AAz0E)
+
+对于这种题，曾经一直执着于直接带入去计算，事实上只需要画出积分区间就很简单了。
+
+![14.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBddq0JDLyqi6ygU5cIDXKQRBIkSItgACIhNrG6jniFYVCz00cE5lfAEAAwIAA3gAAz0E)
+
+对于这题是对 t 和 y 积分，尤其需要注意是对谁积分，二刷的时候也差点没捋过来。
+
+![14.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdhq0JH8Ky-fq8-0aXCeqc5ZcRg_YQACIxNrG6jniFanlyIU7tdyDAEAAwIAA3gAAz0E)
+
+没有想到轮换对称性在那里硬解。
+
+![14.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdlq0JIY-O3fuUTH_PSzILb7TT_YnAACJBNrG6jniFb74k2JQqo7KAEAAwIAA3gAAz0E)
+
+没有想到利用极坐标且这道题跳步导致计算错误。
+
+![14.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdpq0JNibt-1DtiFYo6faR1vKUXJ1QACJhNrG6jniFay-Fi_pMbM4gEAAwIAA3gAAz0E)
+
+积分区域搞成整个圆。
+
+![14.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdtq0JN17Me9eMZivX__cWKrzTvQ3wACJxNrG6jniFa3zWxZtfQvbgEAAwIAA3gAAz0E)
+
+这俩没啥好说的，直接跳。
+
+![14.1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBd1q0JPnRZ2oYwy7JBukfIrsBnC2xQACKBNrG6jniFbs42gVq-jOhgEAAwIAA20AAz0E)
+
+本质这道题 a 不会算是对极限的定义理解不清晰以及对知识点迁移的能力还是不够。
+
+![14.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBd5q0JQGYhHMFv5HoQr4J82S-1A_OQACKRNrG6jniFbmiprxzvH3UwEAAwIAA20AAz0E)
+
+考虑轮换对称性，然后被薄纱。对于这种题需要就事论事去分析。
+
+![14.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBd9q0JQg402S1xAFYsuF4-2ct9_ciQACKhNrG6jniFa8H0BFwyFEgQEAAwIAA3gAAz0E)
+
+最后一步。
+
+![14.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBeBq0JRpCW2X60YSqMJ5PpV1LerxvQACKxNrG6jniFYX0MgHFU5hQgEAAwIAA3gAAz0E)
+
+没想到怎么做。
+
+![14.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBeFq0JR7I7w9MOgfmoXInX-pzc4ThgACLBNrG6jniFYD-NrzQFsOkwEAAwIAA3gAAz0E)
+
+没想到先化简。
+
+![14.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBeJq0JSN_VFMxaUi3iaQHDlz2MRAowACLRNrG6jniFbUeRvpPK5zbwEAAwIAA20AAz0E)
+
+![14.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBeNq0JSYL7fAPV9LFByNKO6Yw-cJqgACLhNrG6jniFa1bG0ytKn7nAEAAwIAA3gAAz0E)
+
+对于这两题没有稳扎稳打去分析，非常浮躁（这两题最开始先跳了，回头再来写的）
+
 ### 张宇 30 讲基础高数 1 刷第 15 章
+
+![15.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBeRq0JTCC6jPXt2kk0C5ARn_Ll-B1QACLxNrG6jniFa45M4NFC_BLQEAAwIAA20AAz0E)
+
+本题没想到积分怎么积分，其实这个积分也是经典积分：1/(1+sinu)。
+
+![15.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBeVq0JTUpReL5rmLjLvxVXVfPspisQACMBNrG6jniFYeMFOxSYg9ygEAAwIAA3gAAz0E)
+
+本题没有辨析清楚 y 和 Y 的区别。
+
+![15.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBeZq0JTuUt1WPUOc_EIDuY73oI5X-gACMRNrG6jniFZ9urUYKZ-eTgEAAwIAA3gAAz0E)
+
+本题应该辨析清楚 y 和 x 的关系，这道题采用 dx/dy 便迎刃而解。
+
+![15.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBedq0JUSV7quW86A-Fn6Byl0RnwBmgACMhNrG6jniFZ9cgMvNOXZRgEAAwIAA3gAAz0E)
+
+这里 1 刷的时候是没有搞明白变限积分函数和不定积分的联系是什么，所以没有联想起来。
+
+![15.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBehq0JUkSYnCEayoDLRuJdZ-A1p6yQACMxNrG6jniFY76KLVnmc08gEAAwIAA3gAAz0E)
+
+本题错误原因和上一题类似。
+
+![15.1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBelq0JVDWwlAxkwiyWgwNjkVZqnsZgACNBNrG6jniFZ0KE1xby0tvgEAAwIAA3gAAz0E)
+
+对于这一题是利用换元法，但是在写这道题的时候却进入误区，惯性思维直接 dy/dx 转换为 dp/dy，而没有就题论题去分析。
+
+![15.1.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBepq0JVV2-120tgNg-sqKO7VItSQ3QACNRNrG6jniFbPKFK9GaKgYAEAAwIAA3gAAz0E)
+
+这道题在转换为特征方程的时候错误，所以还是一步步计算。
+
+后面的题 1 刷的时候都没做，需要注意的是做了一道物理题，但是要分辨清楚变化率的正负性。
+
+![15.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBetq0JVnYcnhosTJi4xrmoTo8o5CYAACNhNrG6jniFay-k32lBxxXgEAAwIAA3gAAz0E)
+
+本题错在想当然上面，和 2 刷的时候的一个错误点（也就是没有想清楚 2 重根）类似。
+
+![15.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBexq0JWHW_I4xQ2_8VEvJfIv9oJABgACNxNrG6jniFabVyFWo6oB_gEAAwIAA3gAAz0E)
+
+本题没有搞懂怎么做，但是其实慢慢分析能做出来。
+
+![15.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBe1q0JWXR5fVnOyS-vMxREO_Zoe_VQACOBNrG6jniFYGlMxHAAHtVt8BAAMCAANtAAM9BA)
+
+关于这道题，手生 + 计算量大，所以没算完。
+
+![15.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBe5q0JWnGVFjdZvAX1cuA6LENZEbwQACORNrG6jniFamoVrVPaJ-wQEAAwIAA20AAz0E)
+
+本题错在没有一点一点分析背后的本质，所以心虚没做对。
 
 ## 张宇 30 讲基础线代 1 刷
 
@@ -820,6 +1230,190 @@ Arcsinx-x=1/6
 ![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRhqz3jnz7D5-qjjVNnMD18aww1KKQACZRRrG7fmeVapPlIhxV5RtAEAAwIAA3gAAz0E)
 
 这种题被这道题的上一题影响了，想着一定是 fc=1-c。
+
+### 武忠祥高数强化 1 刷第 3 章
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBVtq0H4MXnPp-ZXcxML0oa4QsvwqmQACjBJrG6jniFbWWlRAYb6cjgEAAwIAA3gAAz0E)
+
+路是对的，主要的问题是做到最后一步的时候没想到直接利用原条件进行化简。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBVxq0H4lSuQlHX5XPtcFlF-VUakLJQACjRJrG6jniFbcCyZNOkNcXgEAAwIAA3gAAz0E)
+
+没想到用积分中值定理。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBV1q0H6Pkj_-YPzwcNFfLwINIGdNLQACjhJrG6jniFZZ6O0bV8ktCwEAAwIAA20AAz0E)
+
+这道题被当初基础 1000 的那道题给绊住了，老是想着分部积分。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBV5q0IDMO-4ow81NOaBRifq1J9qpBwACkBJrG6jniFZYWznUSyroUwEAAwIAA3gAAz0E)
+
+这道题尤其需要注意，尽管变限积分表示的是面积，但是，这道题当 x<0 的时候，应该上下限变一下，从容改变+-。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBV9q0IDk410Rc6JoBfVAw9WG0tYndAACkRJrG6jniFZqon0wj4gzGgEAAwIAA3gAAz0E)
+
+没想到利用变限积分。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWBq0IELOb2WwIVtofB8kPLhwreL1AACkhJrG6jniFZOrNgD7JoD1QEAAwIAA3gAAz0E)
+
+主要是计算问题。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWFq0IEijhVjqQ4YQPVBAvwyQyJfDQACkxJrG6jniFYPxEUHQtCAswEAAwIAA20AAz0E)
+
+这类题经典需要注意变元怎么变。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWJq0IEye0iMrmnghzR6PZqlv35S5QAClBJrG6jniFZtcVxOVSFRFAEAAwIAA3gAAz0E)
+
+1 刷的时候不会做，错题冲刷得时候没有注意 5/2×x，结果求导了之后 x 还保留。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWNq0IFkc3JXAAFkW-be_jzxNmDdqocAApUSaxuo54hWKxXyIRTAhYgBAAMCAAN4AAM9BA)
+
+本题是对的，但是需要再看。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWRq0IF7xSPM-GHz7djNJ5B7_Lq-jAAClhJrG6jniFansQfu79mVJAEAAwIAA3gAAz0E)
+
+柯西积分不等式，没招，这个回头和二重积分最后那里专门去看。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWVq0IGQlDp-VrrPECDaAr6ewhEEaQAClxJrG6jniFYSI4yEhLwrtgEAAwIAA3gAAz0E)
+
+事实上，这道题直到 2 刷完基础 1000 之后才彻底理解了怎么做。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWZq0IGilVUxSvaEGXqVFE5oJ_o_owACmBJrG6jniFZsYAM3W8LkqQEAAwIAA3gAAz0E)
+
+理解了就不难了，之前始终没有理解。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWdq0IGynE-TCa-gk3wS-yo3wQ3gPAACmRJrG6jniFYq0DLbibtYtQEAAwIAA3gAAz0E)
+
+第 3 问为低级错误，x 凑进去的时候系数配错。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWhq0IHH3b2t9qMBn8zKs8mbJf7s6QACmhJrG6jniFYFjMK0Unub_wEAAwIAA3gAAz0E)
+
+对于本题的 1，对 r 积分不要和对 e 积分搞混淆。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWlq0IHYW0-NnDMnacK_a5WzcT9HYQACmxJrG6jniFbcVVjPuZEyxwEAAwIAA20AAz0E)
+
+对于这道题，利用换元法的思想 + 二重积分来理解。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWpq0IIQFH8FAmpa818hPtkhDGzp_wACnRJrG6jniFa10_-rRionDwEAAwIAA3gAAz0E)
+
+没想到可以计算出抛物线。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWtq0IJm2rCJ9sgq8AkUFF53PCaLIwACnhJrG6jniFb3PPhmduaJPgEAAwIAA3gAAz0E)
+
+抽水做功是对重力做功。
+
+### 武忠祥高数强化 1 刷第 4 章
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBWxq0IKFmec-7TS9GyBk9fGlttlkUAACnxJrG6jniFZZBccEg585GAEAAwIAA3gAAz0E)
+
+对于第 1 题，属于基本功问题，C（fx）直接把 c 忽略了。注意多个常系数。
+
+对于第 2 题，尤其要注意特解。特解的情况下可以不求出完整的再解系数，可以先猜后解。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBW1q0IKyKRF0TwQBAvH-wR4qqE1XMAACqBJrG6jniFY6gp6zzrckmQEAAwIAA3gAAz0E)
+
+注意对变限积分的求导问题。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBW5q0ILDu1KRj_gfyekUjitbLE6u7QACqRJrG6jniFbfK6tFe7nzXAEAAwIAA3gAAz0E)
+
+注意两个问题：谁是 X 谁是 x；可以利用面积相减来化简，不一定要求出直线坐标方程。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBW9q0ILSR3ZSEVMl3zP5GnridfH90QACqhJrG6jniFZWyHjfGyklzgEAAwIAA3gAAz0E)
+
+1 刷的时候没做，错题重刷的时候三角形是什么错了。
+
+其实也是一个经典的错误，坐标值不等于长，而应该坐标值之差。
+
+### 武忠祥高数强化 1 刷第 5 章
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXBq0ILi9qaSpi-eQscBykpPcsY-kAACqxJrG6jniFZR7yMDq627BgEAAwIAA3gAAz0E)
+
+先求后代？先代后求？忽略了定义。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXFq0IL61hErR2RH11k-VPswtqKpZwACrBJrG6jniFaeq0a5sDUEcAEAAwIAA3gAAz0E)
+
+本质是对高阶无穷小的理解错误。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXJq0IMJZEuV_8L-wQEhjTkB_VMcTQACrRJrG6jniFauIReq7TYOvgEAAwIAA3gAAz0E)
+
+这道题其实是不会求最后的不等式？我在 2 刷时的想法是拆成 y>x 和 y < x 讨论，这道题则是直接判断有界。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXNq0IMlaMXq_tKktr-3qmhBzKUjbgACrhJrG6jniFYxmTDnWubGXgEAAwIAA3gAAz0E)
+
+不多评价，这个是懂得都懂。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXRq0IM1u8tfr6nGj9Q6jD9CkMZ6-wACrxJrG6jniFaqZPmAQmpSHAEAAwIAA3gAAz0E)
+
+在先代后求的时候，一定要注意谁是常量，谁是自变量。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXVq0INErWSqCtJ6DJ83pFticYjtEgACsBJrG6jniFbtN2VfYTvrtAEAAwIAA3gAAz0E)
+
+没做。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXZq0INW-gYjY_xU9qGEQWfq6rz20wACsRJrG6jniFbBPx09lfZP9wEAAwIAA3gAAz0E)
+
+本质是对记号的理解问题。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXdq0INn6pf0DzoHlMRO2bCDLJdsvgACshJrG6jniFZIjW5UMaD75QEAAwIAA3gAAz0E)
+
+本题无从下手，事实上上对于这种提，先不管必要性还是充分性，反正直接写先证谁推谁就可以了。
+
+然后再进行其他的分析。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXhq0IN4VqXAkNDef3InjBZ6bhXzFAACsxJrG6jniFYUXN4Qxf2T5QEAAwIAA3gAAz0E)
+
+然而对这道题利用上面的结论根本不会利用，2 刷的时候直接用的通法，反而会做。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXlq0IOJy6D7Lh2xMaCCOH3d1NBQaQACtBJrG6jniFaWcY6_6nye9AEAAwIAA20AAz0E)
+
+漏了 0，0 这个根。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXpq0IOasQMk9LbCFnXj1X982TD5SgACtRJrG6jniFYiWukINGn5zwEAAwIAA3gAAz0E)
+
+对于这类题，尤其是要注意区域内的极值和条件最值都要算。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXtq0IOp0As36FaXY-df34xSnDaS1AACthJrG6jniFbrm22yZ6CvTwEAAwIAA3gAAz0E)
+
+本质是没有捋清楚谁是目标函数，显然这道题 d 是目标函数。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXxq0IO6ElYMTJ-uyvuivzQmjmFkPAACtxJrG6jniFaIBecomCHTVQEAAwIAA3gAAz0E)
+
+求偏导计算错误。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBX1q0IPITOdt3naDM63F1sGA8j42_QACuBJrG6jniFY-dLdtlYr5UgEAAwIAA3gAAz0E)
+
+### 武忠祥高数强化 1 刷第 6 章
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBX5q0IPoyFaRA-vAf7GcOpRDNldtwwACuRJrG6jniFbxAW6005DdBAEAAwIAA3gAAz0E)
+
+对于这类题，尤其注意 x 平方+y 平方不是直接变成 R，也是需要代入计算的。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBX9q0IQPNZ6RiHwoRfCLXtuOq8o7VAACuhJrG6jniFbT2fw4iLJKSAEAAwIAA3gAAz0E)
+
+基本功问题，计算错误。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYBq0IQvS5XI_VCKO8j4lf4VmP3W7wACuxJrG6jniFZOnp_f7XMnjQEAAwIAA3gAAz0E)
+
+在 t/2 变成 u 的时候，不能想当然，必须要实打实的写出那些经典步骤。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYFq0IRG6mlMk8BMk9UfraFU7CCPNAACvBJrG6jniFZKBPYdit5UzQEAAwIAA20AAz0E)
+
+这个就是范围选择错了。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYJq0IRbTb_JniVbC-fci-rYfvM-EQACvRJrG6jniFYP2Aa5YPbFlAEAAwIAA3gAAz0E)
+
+这道题当时是最后一步的时候，对点火公式的对称性理解错误。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYNq0IRvWlsLqOLD-jN5YjQC7uuaRAACvhJrG6jniFb8zUE4JsEf9gEAAwIAA3gAAz0E)
+
+没做。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYRq0ISFIjQk1UzEK-TFOtAzExsPEAACvxJrG6jniFYUUfwoseOXrQEAAwIAA3gAAz0E)
+
+对于这类题的通法其实就是交换一下积分次序然后利用积分中值定理。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYVq0ISaz8vu-dsc17TeFS0lvtv-MwACwhJrG6jniFakUUX-30s2hgEAAwIAA3gAAz0E)
+
+分析问题了。
 
 ## 杨威线性代数强化 1 刷
 
