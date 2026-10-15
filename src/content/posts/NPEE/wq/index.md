@@ -3519,7 +3519,161 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 ## 数学真题 2 刷
 
-## DS 王道选择题 1 刷
+## DS 王道选择题 1 刷（补）
+
+由于时间过于久远，就不翻当初选错为什么了。
+
+### DS 王道选择题 1 刷第 1 章
+
+![1.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBr9q0Lx14eALMcGTh14n1NwHwOVf1gACWhRrG6jniFbvJwJ3LG7xAAEBAAMCAAN4AAM9BA)
+
+对于 A，顺序表指的是数组相关，包含了物理信息。
+
+对于 B，哈希表有逻辑有物理，哈希表的物理指的是用数组模拟，或者使用链表。
+
+对于 C，有序表没什么信息，可以选。
+
+对于 D，显然有物理信息。
+
+本题应该选 C。
+
+![1.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBsBq0L2f1HI3U-dk1woRvysf7AbplgACXBRrG6jniFYMpJMTTQQbrgEAAwIAA3gAAz0E)
+
+本题应该选 C，属于背书题。
+
+对于 ABD，不需要存储，而是实现。
+
+### DS 王道选择 1 刷第 2 章
+
+![2.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBsFq0L38BFxs3mOc-_UUArglZ2Bw-QACXRRrG6jniFYCez-CSUVduwEAAwIAA3gAAz0E)
+
+本题应该选 A，注意这道题是节点内的地址，节点内的地址肯定是连续的。
+
+![2.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBsJq0L4xhhxQqG9TbBNVz8naVEPowwACXhRrG6jniFbXNjKZzR2WKgEAAwIAA3gAAz0E)
+
+本题应该选 C，在遍历 m 之后，直接把 m 后的指针指向后面的东西。
+
+![2.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBsNq0L5dQ9i6sVDOhVKHQS-kxjZAKwACYRRrG6jniFYer9wY3m7DMwEAAwIAA3gAAz0E)
+
+本题应该选 D，线性表没有物理信息。
+
+![2.3.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBsRq0L6MKBRsp17PH57bbBrzO231FAACYhRrG6jniFY3XCQVjseddQEAAwIAA3gAAz0E)
+
+本题应该选 D。纯模拟。
+
+![2.3.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBsVq0L6k5pZnwcgdvZpg3FPpQVoaNwACYxRrG6jniFZSTqHBR8_IRQEAAwIAA3gAAz0E)
+
+本题应该选 C。头节点指针指向自己，也就是指向自己的值，而不是指向自己值的地址。
+
+### DS 王道选择题 1 刷第 3 章
+
+![3.1.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBshq0Npn-VOykxx4GjgQ8EoBVnyj6AACiRRrG6jniFZJKdGfw9hQBgEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+![3.1.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBslq0Np-sDu27IIEOsfT6Y_lucVLOwACihRrG6jniFZsM4ad2RqVzwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+![3.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBspq0NqgQ1wBSUX84NHpD8OZkWNVsgACixRrG6jniFZsgmYuESVL-wEAAwIAA3gAAz0E)
+
+第 11 题应该选 D。对于 A，长度不是无限的，最起码也是磁盘限制。对于 B，顺序队列和链式队列出入队时间是一样的，对于 C 显然是可以的。
+
+第 12 题应该选 B。对于 C 和 D，队列需要在双端操作，所以可以排除，对于 A 则是没有必要。
+
+第 13 题应该选 A，对于 A 没法在双端操作，所以不选。
+
+![3.2.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBstq0NtDsCk-mNOZNagQl8LYZxnyYAACjBRrG6jniFY4uEWmSxOxCQEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+![3.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBsxq0Nu7l98lNLWivMXmmNohVOqKLgACjRRrG6jniFYtT0j4q7TaXwEAAwIAA3gAAz0E)
+
+本题应该选 B，纯模拟题。
+
+![3.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBs1q0Nvi0EQIWJ5HRX-BIS7LiSbwpgACjhRrG6jniFaGOghiCYz5HQEAAwIAA3gAAz0E)
+
+第 6 题应该选 C。
+
+对于 F(8)=F(6)+F(4)+1, F(6)=F(4)+F(2),F(4)=F(2)+F(0)，所以也就是递归调用 9 次。
+
+第 7 题应该选 C。
+
+F(5)=F(3)+F(1)，F(3)=2，F(1)=2，得到 4，所以第四个应该是 F(4)。
+
+![3.4.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBs5q0NzIDBV6AAEqAmoAAXSLDdfqObxqAAKSFGsbqOeIVt_bjAABGG-4UgEAAwIAA3gAAz0E)
+
+![3.4.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBs9q0Nz5Bf9XdLOy2kabeB0etewMbgACkxRrG6jniFYln_eryT33vwEAAwIAA3gAAz0E)
+
+第 7 题应该选 C。
+
+第 8 题应该选 B。
+
+这两道题用特值法最快，
+
+我记得当时错 7-8 是因为把主对角线想成副对角线了。
+
+第 9 题应该选 B。一般采用三元组存储，采用三元组存储失去随机特性。
+
+第 10 题应该选 D。对于 1，显然第一行和最后一行不是；对于 2，0 也是元素。
+
+### DS 王道选择题 1 刷第 4 章
+
+![4.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtBq0N2zdSWUI6Pxc9c63CA7Q4KsmgAClRRrG6jniFbvbRFCmKe_OQEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+当时错这个是因为没看到滑动距离。
+
+### DS 王道选择题 1 刷第 5 章
+
+![5.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtFq0N34ZbougtauYa7J6kNwApoRqgAClhRrG6jniFaArrub7wdkcQEAAwIAA3gAAz0E)
+
+本题应该选 A，属于背书题。
+
+![5.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtJq0N4duUGOau4EosLu8coz-6ysxgAClxRrG6jniFa0Uj_4tvwXTQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+假设度为 1 的结点有 n1 个，则结点总数与边的关系为：3n3+2n2+n1+1=n3+n2+n1+n0，计算可得 9+n1=9+n1，无法确定 n1 具体是多少。
+
+![5.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtVq0N-aXu6ov152DdY1282nYXB23wACnRRrG6jniFZpagyefwq0HQEAAwIAA3gAAz0E)
+
+第 2 题应该选 C。
+
+第 3 题应该选 A。
+
+对于 B，n0+n1+n2=n1+2n2+1。
+
+对于 D，可能不存在。
+
+![5.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtZq0OAETWJ2Oa_L95dLvHCwLUKNbwACohRrG6jniFYGJWOTMuL35wEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+使用特值法，具有 1 个结点且高度为 1 的二叉树数目显然为 1，代入也就是 C 或者 D，对于 2 个结点且高度为 2 的二叉树，也可以得到 C 或 D，对于 3 个结点且高度为 3 的二叉树，可以构造出 4 个，所以应该选 D。
+
+![5.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtdq0OB7ftOHEyb3OdaR0wt12zkBMAACpRRrG6jniFZFZE1wof6dXwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+这道题的意思是说在所有可能的 n 的情况下找，而不是特定的 n 下下面是否存在。
+
+所以一个二叉树有 2n 个结点，假设结点是 n0+n1+n2=n1+2n2+1，则 n0=n2+1，也就是必然存在奇数个 n1 结点，所以 C 是错的。
+
+![5.2.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBthq0OKLpp9atL8Q3BzDrJt9SRxZlgACqhRrG6jniFY0Ce0xDain-wEAAwIAA3gAAz0E)
+
+本题应该选 C
+
+![5.2.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtlq0OK9jcUjnhAq27iE_sVY4ktfbAACqxRrG6jniFb4r1NChwGtrwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+得存放所有的。
+
+![5.3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtpq0OLyUw5sQYdjOz4bUV3PrYIHLQACrBRrG6jniFZ9q9CSlY8QWQEAAwIAA3gAAz0E)
+
+本题应该选 C。
 
 ## 计组王道选择题 1 刷（补）
 
@@ -10158,10 +10312,11 @@ d,e,b,x,a,c，所以左右线索分别指向 b 和 a，也就是 D。
 
 ![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBG5qzhApJAABV4NBEfQLcdK5BUWTlM0AAqQVaxu35nFWryr3ISiRDbABAAMCAAN4AAM9BA)
 
-本题应该选。
+本题应该选 C。
 
 这类题采用特值法排除是最快的，反例如图所示：
 
+![5 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBttq0OavhnHoTc-cQkUH4ZGaXGwXtQACuRRrG6jniFY0_HYWCzyf-AEAAwIAA3kAAz0E)
 
 ![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBG9qzhE_GbFT1-DUymM8qr94poXD8QACpxVrG7fmcVbJFope3gXeggEAAwIAA3gAAz0E)
 
@@ -10313,8 +10468,9 @@ B0C0,0000H=1｜011,0000,1｜100,0000,0000,0000,0000,0000B.
 
 ![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBEtqzcRck5pcK3-Y9OrLuLtaIJXW6QAC7RBrG8y1aVavaX7hCapq1QEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 B。
 
+延迟 50ns，但是这 100ns 都是在这 400ns 里的。
 
 ![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBExqzcRt4zT2F64SjYUjSmKHfQgywAAC7hBrG8y1aVbd2KL-_jssRwEAAwIAA3gAAz0E)
 
@@ -10521,16 +10677,77 @@ int solve(TNode* T){
 }
 ```
 
-
 ![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBF9qzdxY0FAYN8NIXAzdvb6vWqh4ggACMxFrG8y1aVagSf4LIiDfRgEAAwIAA3kAAz0E)
 
+解：
+
+(1)
+
+图。
+
+(2)
+
+
+
+(3)
+
+R1 到达 192.1.1.0/24，花费 1，路径：R1-192.1.1.0/24
+
+R1 到达 192.1.6.0/24，花费 4，路径：R1-R2-192.1.6.0/24
+
+R1 到达 192.1.5.0/24，花费 3，路径：R1-R3-192.1.5.0/24
+
+R1 到达 192.1.7.0/24，花费 8，路径：R1-R2-R4-192.1.7.0/24
+
 ![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGBqzdxzU0xo4VJkMNVpLCmmZMAiVwACNBFrG8y1aVb20rxemcjTdwEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+R1 到 192.1.1.0/24 通过 E0 口；到 192.1.5.0/24 通过 L1 口，到达其他两个通过 L0 口，所以需要路由聚合 192.1.6.0 和 192.1.7.0/24。
+
+6 展开是 0000,0110B，7 展开是 0000,0111B，所以所以聚合完应该是 192.1.6.0/23
+
+所以，最终的表项应该是：
+
+192.1.1.0/24 / E0
+
+192.1.5.0/24 10.1.1.10 L1
+
+192.1.6.0/23 10.1.1.2 L0
+
+(2)
+
+L0
+
+61
+
+(3)
+
+Prefix: 0.0.0.0/0
+
+Metric：10
 
 ![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGFqzdyJjH7dJzHo7O3oguX1vSR45wACNRFrG8y1aVZaXV8Pu59g_wEAAwIAA3kAAz0E)
 
 ![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGJqzdyjU1KaJ-FAdOK_Ze4-I7I42QACNhFrG8y1aVbJ9-DwdOVcSAEAAwIAA3kAAz0E)
 
 ![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGNqzdy1xitqurSeBvDd4IszLPvCrwACNxFrG8y1aVbq_wceCXBTnAEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+采用连续分配方式，最长是将后 70 个记录读入，然后向后写一个单位，需要访问 140 个磁盘，写入自己花费 1，所以总共花费 141 个读入磁盘。
+
+F 文件控制块的长度会发生改变。
+
+(2)
+
+采用链式分配，读入前 29 个，然后写入第 30 个之后，修改第 29 个的指针，所以总计 31 次。
+
+每个存储块大小为 1KB，4 字节存放链接指针，4B=32bit，也就是 2^32 个磁盘块，所以最大长度应该是 2^32KB，也就是 4TB。
 
 ![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGRqzdzEOrtevENwkzF-WBXNMBqJXAACOBFrG8y1aVZ3GdXZcZeWeQEAAwIAA3kAAz0E)
 
