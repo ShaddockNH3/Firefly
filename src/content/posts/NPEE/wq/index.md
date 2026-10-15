@@ -935,6 +935,8 @@ X^2>=0
 
 本题错在没有一点一点分析背后的本质，所以心虚没做对。
 
+## 三大计算积分篇
+
 ## 张宇 30 讲基础线代 1 刷（补）
 
 ### 张宇 30 讲基础线代 1 刷第 1 章
@@ -1259,37 +1261,367 @@ A*是竖着写。
 
 低级计算错误。
 
-## 张宇 1000 基础 1 刷
+## 张宇 1000 基础 1 刷（补）
 
 ### 张宇 1000 基础 1 刷第 1 章
 
+![1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBjtq0KF6FL9yphVHsEzveCsIffMSmQACnRNrG6jniFbyKLqUVJRKEAEAAwIAA3gAAz0E)
+
+本题没上手做直接选的答案，也就是想当然导致的错误。
+
+![1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBjxq0KKYUVrgjkvBOaEz-GmSm6cXKgACoRNrG6jniFYrwJow6HoRLAEAAwIAA3gAAz0E)
+
+对于这题是定义理解错误。
+
+![1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBj1q0KKrCeIcEbBylpsjs3IZk7p18wACohNrG6jniFZL8Mze2WOUYwEAAwIAA20AAz0E)
+
+这道题不会做，并且对泰勒公式的定义理解错误（上下均用泰勒公式用了不知道多少次而且分子泰勒公式用错。
+
+![1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBj5q0KLIIm01vd5-c7_C5SsOIxeV3wACpBNrG6jniFZdjxl86E2KAQEAAwIAA3gAAz0E)
+
+第 17 题泰勒公式理解错误，只展开了 tanx 而没有展开下面的。
+
+第 18 题题没看完，求的是函数而不是单个极限。
+
+![1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBj9q0KLYEtlCvxp-H0w9w1270JRk8QACpRNrG6jniFaIbFARtTY7vQEAAwIAA3gAAz0E)
+
+本题抄错正负号并且滥用等价无穷小。
+
 ### 张宇 1000 基础 1 刷第 2 章
+
+![2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkBq0KL_zaNhHOXNQ8rfVfv3T7l07wACphNrG6jniFaCfOaTxm0hQQEAAwIAA3gAAz0E)
+
+本题没想到使用拉格朗日中值定理，并且在错题重刷的算半错，因为这道题错题重刷的时候一开始就放缩为 1，导致实质上没法使用夹逼定理。
+
+![2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkFq0KMWZfE7SlY8W9VxzFcqjoCZugACpxNrG6jniFZaTf-vw9MoOQEAAwIAA3gAAz0E)
+
+本题 1 刷时在那里试，错题重刷的时候对题目理解不清晰。事实上这道题只需要稳扎稳打分析，并且利用好 a=2ln(1+a) 这个条件。
 
 ### 张宇 1000 基础 1 刷第 3 章
 
+![3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkJq0KMluFqO_N_fGlbOft8ggZ4AAekAAqgTaxuo54hWJCSUB6YQE9wBAAMCAAN4AAM9BA)
+
+本题错误是因为滥用等价无穷小，ln(x-1)/f(3-x) 确实可以代换为 2，但是在化简到需要通过定义计算的时候，想当然直接求了，也就是 (x-1)/2f(2-x) 的时候没有细致分析，而是直接认为是 1/2。
+
+![3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkNq0KM4VmfO_CZT6HXJZhnKtwmrIQACqRNrG6jniFZIePxXRQanzgEAAwIAA3gAAz0E)
+
+第 12 题做着做着题目抄错了，+-问题。错题重刷的时候仍然是同一个问题。
+
+第 13 题一下没想出来怎么做，使用特值法做做错。
+
 ### 张宇 1000 基础 1 刷第 4 章
+
+![4.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkRq0KNKzJi59exeTadIPNjs0ZfqXwACqhNrG6jniFab_Ndg1afcggEAAwIAA3gAAz0E)
+
+本题错误原因在于没有对 f(x) 本身求导。
+
+![4.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkVq0KNZujK41kv2WJY8lzs1IPshuwACqxNrG6jniFb1NdZbjyvkwgEAAwIAA3gAAz0E)
+
+第 8 题错误原因在于对参数方程的理解错误，原参数方程分别对 t 求导后得到的方程并不是导函数的参数方程。
+
+第 9 题到最后一步推出来是偶函数，但是还是想着原函数是奇函数，事实上这道题一开始的时候就直接把 f(1) 算出来就好了，还代入代入那么多。
 
 ### 张宇 1000 基础 1 刷第 5 章
 
+![5.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkZq0KNukv4WzIn5CQJmW5YNOcpZ6wACrBNrG6jniFaQKwbtQvbyMwEAAwIAA3gAAz0E)
+
+本题错选为 B。错题重刷时仍错。
+
+![5.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkdq0KObMoBQUh8mQ-4Yv3SyyyKdFwACrhNrG6jniFaz1uuROHtKbAEAAwIAA3gAAz0E)
+
+本题 -1/2 带入错误。
+
+![5.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkhq0KPJuO59P0yylYseeniM8Ht4rwACsBNrG6jniFYLtAxQAWHbjgEAAwIAA3gAAz0E)
+
+未考虑正负无穷。错题重刷时仍错。
+
+![5.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBklq0KPXF4WaKsi6AspTcO0tuBIfxAACsRNrG6jniFbDBqMqjJjsAwEAAwIAA20AAz0E)
+
+本题不会做。错题重刷时仍错。
+
 ### 张宇 1000 基础 1 刷第 6 章
+
+![6.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkpq0KQYBWYjL28HoZWaNBVJmdc21wACshNrG6jniFbLftuXZ641mwEAAwIAA3gAAz0E)
+
+本题被拉格朗日中值定理带偏，事实上只需要变形然后求解即可，错题重刷时也是错的。
+
+![6.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBktq0KYi87w2Wgfqe4Q23D6ZPgLongACthNrG6jniFaqqzpSE4Gr2AEAAwIAA3gAAz0E)
+
+没想到用拉格朗日中值定理求解。
+
+![6.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBk1q0Kbu20lZZ0QpgI-JVFBNk1EL8QACtxNrG6jniFYMwtdeU0llsQEAAwIAA20AAz0E)
+
+没想到怎么做，包括错题重刷的时候也没想到。对于这类题也就是需要踩一个点去解，公式化两次拉格朗日找点。
+
+详细解释一下这里的介质定理，ax+by，其中 a+b=1，那么一定存在一个 z=ax+by，其中 z 介于 x 和 y 之间。
 
 ### 张宇 1000 基础 1 刷第 7 章
 
+![7.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBk5q0KcJt0iXRJ4onkoUbK8QIluFjAACuBNrG6jniFbhZA1cmT0qKwEAAwIAA3gAAz0E)
+
+对于这题属于低级错误，2 和 1/2 约分的时候，结果是 1 而不是 2。另外也需要注意这道题具体是求什么，dV/dt=1，而不是其他东西。
+
 ### 张宇 1000 基础 1 刷第 8 章
+
+![8.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBk9q0KdXCJ-34pUgb0gzbDuEUgsLtQACuRNrG6jniFbB2HwKIRlzvAEAAwIAA3gAAz0E)
+
+第 1 题对积分的定义理解错误，没有仔细去看。
+
+第 2 题完全没理解自己当时在做什么，只能归咎于经验不足。
+
+![8.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlBq0Ke1tLxJu9Qmi4Uu2zSczMly1QACuhNrG6jniFYDi0keS6PPfgEAAwIAA3gAAz0E)
+
+本题错选为 B，滥用等价无穷小。对于这种题应该先用奇偶性化简才对。
+
+![8.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlFq0KfNwW9kSjCa-KMujEaTlLXZxQACuxNrG6jniFZobOX6LpD8IgEAAwIAA3gAAz0E)
+
+这类题不看当时是怎么解的了，当时对 p 积分的理解基本为 0。
+
+![8.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlJq0KhZMAr6uC2ve8iqAjeoEMX_EgACvBNrG6jniFa9SXSS3GMwsAEAAwIAA3gAAz0E)
+
+本题 1-x^2，2 次方抄没了。
+
+![8.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlNq0KhvuiOLEWa0uilTYdNT7A-wwwACvRNrG6jniFaNPrW5gnjAfQEAAwIAA3gAAz0E)
+
+这道题印象深刻，是多个+-号导致的错误。但是事实上这道题直接用绘图法就可以轻松解决。
 
 ### 张宇 1000 基础 1 刷第 9 章
 
+![9.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlRq0KiTvEopkq-85Y_smBhHV6Lf6wACvhNrG6jniFbzSI4tVNJ6SgEAAwIAA3gAAz0E)
+
+第 5 题属于低级错误，-2e^-1-2e^-1≠0。
+
+第 6 题代入的时候少抄了一个 2 倍。
+
+![9.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlVq0KixURXH42A328TQD0RJkWz3WwACvxNrG6jniFbvGO74eeZ7tAEAAwIAA3gAAz0E)
+
+第 8 题没做，属于当时不熟。
+
+第 9 题 xlnx 将 1 代入算成非 0。
+
+![9.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlZq0KjDd5BFcXKSwEsUOKhvfZluvQACwBNrG6jniFbKVMah3294fQEAAwIAA3gAAz0E)
+
+本题只算到一半，然后就没继续算下去了。
+
+![9.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBldq0KjV3fXNd-jk1hLhha7Ct8BCJgACwRNrG6jniFbrJx2EzN-r1QEAAwIAA3gAAz0E)
+
+本题不会做，我感觉答案的做法学不来，所以应该是利用 2 刷时的换元法做。
+
+![9.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlhq0Kj76TZoJGr6Lx8wbC6dNiEzLgACwhNrG6jniFb_4dPUrWdeFgEAAwIAA20AAz0E)
+
+第 24 题 1/3+1/3 算成 0
+
+第 25 题应该是拆根号的问题。
+
+第 26 题换元法的时候上下限求错。
+
+![9.32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBllq0KkR7rLZSkS76Ftsv249TXvfewACwxNrG6jniFa1XwrV9YUb_AEAAwIAA3gAAz0E)
+
+第 32 题少抄了一个 x。
+
+第 33 题把 acrsinx 抄成 arctanx。
+
+第 34 题直接将 1 代入然后计算出 y’是+-1，显然错误的想法
+
 ### 张宇 1000 基础 1 刷第 10 章
+
+![10.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlpq0KkpPP0laO_cWMOtQv3jkRM9nwACxBNrG6jniFbkr-0DFux_xAEAAwIAA3gAAz0E)
+
+本题采用估算，结果估算算半天不如正常算。估算还估错了。
+
+![10.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBltq0Klgl1Q_m0buSvmAxYFfGnP-kgACxhNrG6jniFYS84sbt3YGPAEAAwIAA3gAAz0E)
+
+经典错误，积分上下限错了，直接填的 0-pi，而没有根据题目意思是 0-1。
+
+![10.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBlxq0Klx2EtM8FwYD4Fuf7KIwp-agAACxxNrG6jniFZUXVQzNyKBJwEAAwIAA3gAAz0E)
+
+单纯是因为没有认真分析。
+
+![10.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBl1q0KmrRzqFA3_yI5HZfybKkDD4oAACyBNrG6jniFbaEqbhcokeJAEAAwIAA20AAz0E)
+
+牛莱公式最后一步代入错误。
+
+![10.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBl5q0Km91SI6LnVxTzstAAHIkdOuDxMAAsoTaxuo54hWYgABd9zija8HAQADAgADeAADPQQ)
+
+算半天结果就是合起来算不如分开来算。
+
+![10.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBl9q0KnPq75mwhAxE9lXsOMUB87HJAACyxNrG6jniFZcfxeazs7TNAEAAwIAA3gAAz0E)
+
+第 14 题积分求解错误，多约了一个 x。
+
+第 15 题单纯是因为积分没积出来。
+
+![10.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmBq0Kn9OI80E5r-zi_ELUREIvHS4wACzBNrG6jniFZG9kksBTGHfgEAAwIAA20AAz0E)
+
+本题属于一个印象很深的错误，积分是升次，我算成了降次。
 
 ### 张宇 1000 基础 1 刷第 11 章
 
+![11.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmFq0KoP1kLfVMipFT5GG0boWourdwACzRNrG6jniFaAJZ3plb2iwQEAAwIAA3gAAz0E)
+
+第 1 题完全没想到用基本的求导 + 零点定理就可以解决。
+
+第 2 题也是完全没想到可以利用分部积分。
+
+个人认为是熟练度问题。
+
+![11.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmJq0KpJuiRWiZGq2Gol8Angaf5PGgACzhNrG6jniFZ0NtBuf7bbNAEAAwIAA20AAz0E)
+
+不会做。
+
 ### 张宇 1000 基础 1 刷第 12 章
+
+![12.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmNq0KwRfDMo5jzHuA4GCLmA2BfOWgAC1BNrG6jniFa69Djg55XGLgEAAwIAA3gAAz0E)
+
+全部贴在这里，就不分析了。这里的每一题我其实都记忆深刻。
 
 ### 张宇 1000 基础 1 刷第 13 章
 
+![13.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmRq0KwyguN5JVPhuxIKuz7hXlvjzQAC1RNrG6jniFYJNeE96tWVVwEAAwIAA3gAAz0E)
+
+![13.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmVq0KxBvTIQwu3GsYYQVm6obHJkHQAC1hNrG6jniFbiOGoLq5frZgEAAwIAA20AAz0E)
+
+第 8 题，事实上这道题我都不知道在做什么，令 uv 即可。
+
+第 9 题，二刷时才真正理解这道题的具体意思，把 y 当成常数来讨论，而不是当成变量来讨论。
+
+![13.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmZq0KxVPdFMUsrd-9ZXHodP9olxnAAC1xNrG6jniFYNlNEqsOjxkwEAAwIAA3gAAz0E)
+
+一个计算量超级大的题，算错了。
+
+![13.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmdq0Kz1XY-Hqtm-Sbtxs7-uw8vshQAC2BNrG6jniFbXxAyZSpCJzwEAAwIAA3gAAz0E)
+
+没想到怎么做，令===0 即可
+
+![13.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmhq0K0EBRbocafW34XuC_zgaGOVbgAC2RNrG6jniFYcsKvhHQNWggEAAwIAA20AAz0E)
+
+计算错误。
+
 ### 张宇 1000 基础 1 刷第 14 章
 
+![14.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmlq0K1Ful8SZONoHz7v7GiMGkLAwgAC2hNrG6jniFb5ixl57PXC4gEAAwIAA3gAAz0E)
+
+对于这类题的处理手法当时不清晰。先绘制出积分区域，然后再判断对称性。
+
+![14.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmpq0K1Zj_n1IpreEpZ_oxjhdbFvXwAC2xNrG6jniFYJNgHLcQQoiQEAAwIAA3gAAz0E)
+
+第 13 题属于计算错误。
+
+![14.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmtq0K1wSox1icjDJqDLiKnCx3umswAC3BNrG6jniFbzFqaVswYq4AEAAwIAA3gAAz0E)
+
+第 15 题漏抄一个乘 2。
+
+第 16 题也是错在拆根号，当初没有意识到，结果就是二刷的时候也错了。
+
+![14.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBmxq0K2IEg6oSSptYsW0KEeEOCGPswAC3RNrG6jniFb6Ds9lr50LKQEAAwIAA20AAz0E)
+
+错的乱七八糟的。
+
+![14.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBm1q0K2fwAGMdW2uzok_nS7SqECLlAAC3hNrG6jniFYOGiev29uf-wEAAwIAA3gAAz0E)
+
+跳了，没想到用极坐标去做。
+
+![14.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBm5q0K2yTwkNFiIhJ4vUzZW8m6q1TwAC3xNrG6jniFbgdxgZfW0hhwEAAwIAA3gAAz0E)
+
+方法复杂。本体就是想多了，直接轮换对称 + 正常地 x=pcos 即可。
+
+![14.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBm9q0K3wNQof85oZ1bt9oQt-bJsJKAAC4BNrG6jniFYmw8ruXoSM3wEAAwIAA3gAAz0E)
+
+本题对于积分换元法的理解不够充分，已经把 p^2 凑进去了，然后不会做了。
+
 ### 张宇 1000 基础 1 刷第 15 章
+
+![15.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnBq0K4elMK4PNuLbfjnsZ9TGrXdMgAC4RNrG6jniFaILWCmH2UbNAEAAwIAA3gAAz0E)
+
+第 1 题代入的时候把特解想当然为 0。
+
+第 2 题没有注意到法线。
+
+第 3 题其实稳扎稳炸分析列出来就能做了。
+
+![15.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnFq0K40EEzTcQnYASJU8Y3comHI5QAC4hNrG6jniFbpDQbOBAGHCwEAAwIAA3gAAz0E)
+
+这两题都没想到换元。
+
+![15.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnJq0K5FbyUhek19nU8FkVJyJj-8SQAC4xNrG6jniFaZ6FMov6_GqQEAAwIAA3gAAz0E)
+
+本题少抄了一个 +1。
+
+![15.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnNq0K5hldnchpnhWWcTI5ENDQwXBQAC5BNrG6jniFZ9LsqEe6bpLQEAAwIAA3gAAz0E)
+
+注意到 y 轴的距离应该是 x。
+
+### 张宇 1000 基础 1 刷线代第 1 章
+
+![1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnRq0K6UTrfaYjvVxAeI6B8buGVlIQAC5RNrG6jniFapCaTrd4VZ9AEAAwIAA20AAz0E)
+
+利用余子式计算的时候+-号错误。注意并非+-轮替，而是必须得用 -1 的 i+j 次方去研究。
+
+![1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnVq0K7pS6U5yRL0K3TBrOoDP1xscgAC5hNrG6jniFaa5oZFx7y1LAEAAwIAA3gAAz0E)
+
+利用基础方法做，不如根据回头来看的经验去做（也就是相似性）
+
+### 张宇 1000 基础 1 刷线代第 2 章
+
+![2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnZq0K8PnFqnb1PO5NqHE3ckViKZMgAC6BNrG6jniFbVhlg2860rswEAAwIAA3gAAz0E)
+
+第 8 题。算半天的 A 的逆和 B 的逆，不如好好展开分析。
+
+第 9 题属于超级低级的错误，2 刷的时候错的也是一模一样的原因，懒得喷了。
+
+![2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnhq0K__fWiMh1ATmM9a_sdvBSQxFwAC6RNrG6jniFZ0TRmKTjBZnwEAAwIAA3gAAz0E)
+
+### 张宇 1000 基础 1 刷线代第 3 章
+
+![3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnlq0LANTU2NVPLahS4jHFRxHsxdVQAC6hNrG6jniFZz1b_PNPXOqwEAAwIAA3gAAz0E)
+
+### 张宇 1000 基础 1 刷线代第 4 章
+
+![4.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnpq0LGsrmm5cmk1OE4XmsyrR1jMswAC-xNrG6jniFYtSoYadgFmtwEAAwIAA3gAAz0E)
+
+2 刷犯了一模一样的错误，上界和下界不能漏。
+
+![4.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBntq0LG9YB7ft3zl-3CSgXwkmUnKJQAC_BNrG6jniFYFO0TyNqgdRAEAAwIAA3gAAz0E)
+
+第 8 题，对于 D 注意是行满秩才满足，而这道题是列满秩。当初的对行，列的定义理解地非常不清晰。
+
+第 9 题需要注意这里是非齐次的，所以得 +1。
+
+![4.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBnxq0LHXG45o2pziD3-DE1lP5ySoVwAC_RNrG6jniFbPUNwRYKuCsgEAAwIAA3gAAz0E)
+
+第 11 题当初是完全没有理解什么意思。显然三个无关的向量可以表示任意向量，然后根据这个去做。
+
+第 12，13 放一起讲，也是对行满秩，列满秩的理解，以及对于线性方程组有解秩的理解。
+
+第 14 题则是用了三秩相等，但是没有理解为什么这么用，所以导致的错误。
+
+### 张宇 1000 基础 1 刷线代第 5 章
+
+![5.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBn1q0LH1g3IIL40XSzmgq10qfMsETAAC_hNrG6jniFb66hnqZn86HgEAAwIAA3gAAz0E)
+
+当初对本章的理解极为匮乏。对于 E 的变形，特征值可以变，然后特征向量不变（可以证明过去）
+
+![5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBn5q0LIixcbMAVqkIkyxEvreg-_z9gADFGsbqOeIVjYhdFArXaGyAQADAgADeAADPQQ)
+
+单纯不会做。事实上利用初等矩阵去做。
+
+![5.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBn9q0LI9yhevEMJWBpGyeNPbDLAe-QACARRrG6jniFaqXFsxG3KawgEAAwIAA3gAAz0E)
+
+![5.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBoBq0LJQm8yO7PouxFBSCL8YhPyF4wACAhRrG6jniFY1-iGXFsMfTQEAAwIAA3gAAz0E)
+
+本章的 12-23 题全部都做的非常神秘，我认为也是对线代理解地不完善，就不一道题一道题地解释了。在做完杨威线性代数之后，对线代地理解加深了非常多，从而对这类题也理解了很多。
+
+### 张宇 1000 基础 1 刷线代第 6 章
+
+![6.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBoFq0LJ9ReEvUkXBZyXH6f3lQWBWQwACBRRrG6jniFZcRXuPnzRzkQEAAwIAA3gAAz0E)
+
+![6.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBoJq0LKoqNv4-12QvYZJmxkXO2mpxgACBxRrG6jniFbsT_D-xhJzmAEAAwIAA3gAAz0E)
+
+![6.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBoNq0LK2osMp7-h3100GExJ4U-upVAACCBRrG6jniFaDrmQ0_wwkkwEAAwIAA3gAAz0E)
+
+![6.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBoRq0LLHu7XhTwABNT1O6Ju3IsbSs_oAAgkUaxuo54hWXkwtjCAU9gsBAAMCAANtAAM9BA)
+
+这些都是第一次学不懂的产物。
 
 ## 武忠祥高数强化 1 刷（补）
 
@@ -1726,6 +2058,256 @@ Arcsinx-x=1/6
 分析问题了。
 
 ## 杨威线性代数强化 1 刷
+
+### 杨威线性代数强化 1 刷第 1 章
+
+![1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBoVq0LM7a3z87KmtsKmhC9zAxEyDZQACChRrG6jniFbb5FlOWl40NgEAAwIAA3gAAz0E)
+
+对于这种题，一定要想着往范德蒙行列式上面去凑。
+
+![1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBoZq0LNPZOMB3Q267OZZ_7gfqpBfDgACCxRrG6jniFYToAJTUUP-lQEAAwIAA3gAAz0E)
+
+对于这道题，我没有任何思路，用的是排除法。事实上，只需要凑出来 AB=E 这个式子，那么 A 和 B 必然是可逆的（为方阵的前提下）
+
+![1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBodq0LNpDJFFCNEpFMo4LGtRp48aOAACDBRrG6jniFapoRznmhO7swEAAwIAA3gAAz0E)
+
+这道题做的是对的，但是理解有误，没有理解为什么为什么可以这么做以及这么做的含义在哪里（本质是对知识点串联不起来）。
+
+![1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBohq0LN4QUUZGwq1RkYdutz2nNyIBQACDhRrG6jniFYSSaBnNAemIwEAAwIAA3gAAz0E)
+
+本题为计算问题，即把数字从行列式提出去，一定是 n 次方。这点要和 A\*的行列式区分开来，A\*的行列式是 n-1 次方。
+
+![1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBolq0LOJ595hC-O9BIZ6buTTztKIrAACEBRrG6jniFZovms-lnBsfQEAAwIAA3gAAz0E)
+
+本题采用特值法求解。对于这类题的核心要义是去凑，以及 A 的转置+B 的转置等于 A+B 一整个的转置。
+
+![1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBopq0LOgtzbo2GxhQT308iF7bDpcOwACERRrG6jniFZTQ0cGJW0pXwEAAwIAA3gAAz0E)
+
+计算错误。注意 -1 的 n×n 次方。
+
+![1.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBotq0LPZGnedNSUGyPPh4mjxUlS-VwACExRrG6jniFaL89PvenvBogEAAwIAA3gAAz0E)
+
+本题设出来所有的值，然后试图一个个代入计算，这是错误的。事实上应该考虑到他们的内在联系，即 A*和 A 的联系，从而凑出答案。
+
+![1.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBoxq0LPsqaH1gtsJMZJaWBpbYkwt3wACFBRrG6jniFZM1PC71Hyn3wEAAwIAA3gAAz0E)
+
+对于这道题没有思路。事实上这道题的思路来源应该是第 5 章，也就是 A 的每行元素之和均为 2，所以有一个特征值 2，而 A\*的特征值对应位 A 的行列式/特征值，特征向量不变，所以这道题应该是 1.5。这道题的本质是在求 A\*的特征值。
+
+![1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBo1q0LQLy0ELni-g-ocf8RfV4Ev36wACFRRrG6jniFa6D3TBu-gWtAEAAwIAA3gAAz0E)
+
+概念理解问题，A 不等于-E，只能说明 A+E 不等于 0，而不可以说明 A 满秩。
+
+![1.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBo5q0LQbKhB2sDG8JrfW9mRk7IH4LQACFhRrG6jniFY0JqK9tfnvuAEAAwIAA3gAAz0E)
+
+属于小学三年级级别的错误，3×7=21，而不是 24。
+
+![1.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBo9q0LQp6LQW8WK4iG69YvO7hXH6tgACFxRrG6jniFb2gyjBhYZc6gEAAwIAA3gAAz0E)
+
+这道题错在两个地方，思路错误以及抄错了。
+
+对于这类题，首先计算 A 的 n 次方，然后再 aE 去 - 即可。本质也是后续知识的串联。
+
+### 杨威线性代数强化 1 刷第 2 章
+
+![2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBpBq0LQ9oaMVOuaV9KLddcukGZUtnQACGBRrG6jniFZzpn_-5-OozgEAAwIAA3gAAz0E)
+
+这道题没思路，利用的是最传统的方法去做。对于这类题，可以考虑 A 和 A 的转置之间的关系，从而去凑答案。
+
+![2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBpFq0LRODHuf0jlI2NVEFBpUXHEGMwACGRRrG6jniFb5G6YZ_mrYlgEAAwIAA3gAAz0E)
+
+概念理解问题。等价，不等价，行等价，躐等贾，这个辨析在二刷那里有详细说明。
+
+此外，对于 AB=A+B 这个式子，一定要记住去凑+E-E。
+
+![2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBpNq0LTWn1ltsopjE3DJQUpE0bAI_gACHxRrG6jniFYWUgJowdfPCQEAAwIAA3gAAz0E)
+
+计算 + 思路的双重错误。对于这道题，尤其需要注意能不能取逆。这道题的 A 不可逆，所以必须得配凑去消元。
+
+而原题是注意到利用 A+E 的三次方/A-E 的三次方，我认为考场上我不可能这么注意到。将 A 右乘，然后得到一个式子，再右乘 A 然后带回原式，我认为这个思想才是可取的。
+
+所以也就是说，对于原始式子可能不只是只利用一次，得蜿蜒曲折地前进。
+
+![2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBpRq0LTxd4jwYFvuwMDzMDq6B8QhkAACIBRrG6jniFZzf8_cPODzYQEAAwIAA3gAAz0E)
+
+这道题在做的时候采用了特值法。一样也是去提公因子然后去凑就可以了。
+
+![2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBpVq0LaIdE00jHQDwQIjQAzc2dG6uwACJBRrG6jniFbU8YWblbGj0wEAAwIAA3gAAz0E)
+
+对这道题没有什么思路。事实上这道题就是前面说的，蜿蜒曲折地千金，以及去凑。例如对于这个式子，两边同时左乘一个 A，然后再利用原始的式子进行化简，蜿蜒曲折地前进。
+
+![2.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBpZq0LaeJMSrXw_4WXwxZ0HbWrBBEwACJhRrG6jniFZmmmE_qwgZrAEAAwIAA3gAAz0E)
+
+这道题凭感觉，没有使用严格推到。
+
+对于这类题的变换，一定是要采用乘上可逆矩阵的方法，不可以想当然。例如右乘只能做列变换，左乘只能做行变换，这类东西一定要捋地清清楚楚。
+
+![2.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBpdq0LcJHE-KCwIDqHKxv1GKPH_pGAACJxRrG6jniFYIvrBDncGVQgEAAwIAA3gAAz0E)
+
+凭直觉做对的。对于这类题一定要注意，AA*=|A|E，当 A 不满秩地时候，A 地行列式为 0，从而直接 AA*=0。
+
+![2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBphq0Lca_P0Xr8bhcbMLncS4VxURvwACKBRrG6jniFaVI3OTI_cttAEAAwIAA3gAAz0E)
+
+这道题利用特值法派出了 CD。事实上对于这类题一定是要利用矩阵的秩不等式，采用类似“夹逼”的思想。
+
+![2.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBplq0LeEj58ZhXgLUx1rkMJsvHPM3gACKxRrG6jniFY-AStLhb5o9wEAAwIAA3gAAz0E)
+
+没有思路，这道题是和后面知识点的关联。
+
+![2.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBpxq0LfXr40wZZ7WScbqx5yDsrjl_AACLRRrG6jniFZLVbnSMzVqfAEAAwIAA3gAAz0E)
+
+行等价一定是做行变换等价，所以是化简为行最简。
+
+![2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBp1q0Lfq8Q9vombAqCnPGqo6NSfPXgACLhRrG6jniFbIqwvY9SF7DAEAAwIAA3gAAz0E)
+
+有思路，但是分析错误，尤其是对于 C 的特例。
+
+对于 C，显然是举出一个例子，当 n=2 时，对于 C 不成立。对于 B 则是利用秩不等式去“夹”出来，对于 A 和 D，由于 A 列满秩，所以对于 m×n 的矩阵，m>=n，且 R(A)=n。利用秩不等式，R(AB)>=R(A)+R(B)-n，即 R(B)<=R(AB)<=R(B)，所以 R(AB)=R(B)。同理，R(AC)=R(C)，所以 R(B)=R(C)。
+
+从另一种角度考虑，移过去解方程，方程唯一，所以 B=C。
+
+### 杨威线性代数强化 1 刷第 3 章
+
+![3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBp5q0LgAAcecOjoOKNAq6pK3njG7Lu4AAjQUaxuo54hWwj5NApvrYN4BAAMCAAN4AAM9BA)
+
+注意方法的简便性与章节的联系。由于 A 不能由 B 表达，那么显然 A 的秩大于 B 的值。由于 A 满秩，所以 B 不满秩，所以|B|=0。
+
+![3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBp9q0LgSAm3ZV8ZhS1F531fm5sjwqAACNRRrG6jniFbPCO65V4lLEgEAAwIAA3gAAz0E)
+
+属于经典的错误标准的零分。秩不满则是无穷多解，我就写了一个，此外满秩也应该进行讨论。
+
+![3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqBq0Lghg1h5tIgGIaxKgyqciSSOBgACNxRrG6jniFYEIeoVMPdW-AEAAwIAA3gAAz0E)
+
+采用特值法。这道题最正规的做法就是令γ=两个式子，然后两个式子变形解出来答案。
+
+但是感觉不如特值法。
+
+![3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqFq0Lgx0Fkxyt8G1LZ1VphOLK3tVgACOBRrG6jniFazzauYLQ_ztAEAAwIAA3gAAz0E)
+
+对于这类题要采用反证法。
+
+![3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqJq0LhsVyrdHt-Zd-U5SKLQeDL88AACORRrG6jniFZZFGwRNrFzRwEAAwIAA3gAAz0E)
+
+没有任何思路，二刷的时候也错了。
+
+把握 P 的思想，这个思想特别常见。
+
+![3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqNq0LiPY0816LeRdosF9okeFPCBBwACOhRrG6jniFakEhwJZXQWSwEAAwIAA3gAAz0E)
+
+这道题错在对定义的理解上。对于这种经典的变形，也就是 Aa 这种，一定是构造。（第二问）
+
+对于第一问也没想到用定义的方法去做，对于证明线性无关，采用定义法证明。
+
+![3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqRq0LioPGQVYUbBm-pJMnKRYIKrEgACOxRrG6jniFbaoV6mZ1x5IAEAAwIAA3gAAz0E)
+
+这道题没有思路。事实上直接令矩阵然后表达出来就可以做出来了。
+
+大题不要老是想着用特值法。
+
+![3.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqVq0Li7iuOhnOUOgMxFnnS1E32NQAACPBRrG6jniFZ-xZy00ggDkAEAAwIAA3gAAz0E)
+
+对这类题没有头绪，也是二刷最开始写的辨析那里的问题。
+
+![3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqZq0LjObvwXkCwD0BtGAkVXq3ZIBwACPRRrG6jniFbiJgUS91wqgwEAAwIAA3gAAz0E)
+
+一样也是辨析的问题。
+
+![3.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqdq0LjeroeRKSfbbROtDAn_oJ2ETQACPhRrG6jniFZIHj-87fLC7QEAAwIAA3gAAz0E)
+
+思路错误，也是之前讨论的“回代”问题，题目条件不一定只使用一次。
+
+![3.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqhq0LjxY08WK00qRZ_JzrqxuiBgBgACQBRrG6jniFaOGqogmdjK8wEAAwIAA3gAAz0E)
+
+D. 设矩阵 A、B 满足 AB=E，E 为 n 阶单位矩阵，则 A 列向量组线性无关，B 的行向量组线性无关。
+
+讨论 B 和 D。对于 D 是辨析里面的错误，对于 B 则是脑子抽了错了。被之前那题 A 取 n=2 的反例影响了。
+
+![3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqpq0Llbob9jCv8turzqdjpmvf4CFQACQRRrG6jniFZGl-83bhu2JgEAAwIAA3gAAz0E)
+
+等价，行相关，列相关，行等价，列等价之类的问题。
+
+### 杨威线性代数强化 1 刷第 4 章
+
+![4.3 1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqtq0Ll4dZllepdLnbdLLmQyxIgF6QACQhRrG6jniFYesk9VJbWytAEAAwIAA3gAAz0E)
+
+![4.3 2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBqxq0LmJqs-Bi7Rvk_BnYW_nOTILrwACQxRrG6jniFatrW9E_ZsOoAEAAwIAA3gAAz0E)
+
+这道题主要是数列的首项计算错了，以及没想到克拉默法则。
+
+![4.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBq1q0LmaeL73yXAf2LTjcE0um-mHwAACRBRrG6jniFY_-16ZMjuDnQEAAwIAA3gAAz0E)
+
+这道题主要是最后一步理解错误，假设 A 的秩和 B 的秩均为 1 的情况下，那么 B 矩阵就没用了。
+
+![4.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBq5q0LmyqS4jkHejgVOGOX2EtTdqngACRRRrG6jniFYNXycnrSH-ggEAAwIAA3gAAz0E)
+
+从原本的式子下手去变形。
+
+![4.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBq9q0LnEq9VyE7Kfkf2vYMtkW76v-gACRhRrG6jniFa5UmtYMU4SiwEAAwIAA3gAAz0E)
+
+没有任何思路。其实逐项分析即可。
+
+![4.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrBq0LnXtzYMYEfHoY0gdh7vAr8m5wACRxRrG6jniFaWAzm5NZpf-AEAAwIAA3gAAz0E)
+
+![4.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrFq0Lnkov9NssfGBaK7rpZK_n5iuAACSBRrG6jniFYnYKGK0RW6EgEAAwIAA3gAAz0E)
+
+这两题属于同质错误，具体在 2 刷那里讲的很清楚了。
+
+![4.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrJq0Ln1xuBjCu6r22syrfLyXshRZQACSRRrG6jniFYvuSj9GJIh5gEAAwIAA3gAAz0E)
+
+计算错误。
+
+![4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrNq0LoFTuva2OhhX_Hnd2A6K-soUAACShRrG6jniFYwYnlmOLi-2AEAAwIAA3gAAz0E)
+
+计算。
+
+![4.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrRq0LoVpwImvYV0hxf4Obr-p595CgACSxRrG6jniFYIZRp9mf40ugEAAwIAA3gAAz0E)
+
+计算。
+
+![4.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrVq0LomLs61r4ez41eBWPlWUYqWtgACTBRrG6jniFYDV-N62Fn1sQEAAwIAA3gAAz0E)
+
+这类题就是我前面说的，可逆变换与不可逆的问题。
+
+### 杨威线性代数强化 1 刷第 5 章
+
+![5.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrZq0LpBgLQpkObo8pIBoTAcpKiENAACTRRrG6jniFatwSwUqg2JgwEAAwIAA3gAAz0E)
+
+对于这题我其实不知道能不能直接约去 x1，x2，x3，按照标准答案来写吧。
+
+![5.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrdq0LpRgN5AAAEVmTvwFVK_lQ3pf2EAAk8Uaxuo54hWynepiod2VtQBAAMCAAN4AAM9BA)
+
+一脸懵逼，不知道怎么做。对于通解可以挖掘出来很多东西，这道题显然 0.5 为特征值（一定要注意不是 2，这里是把 x 代入），以及 0 为二重特征值且器特征向量分别为。
+
+![5.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrhq0Lpj4Wi0A4k6yhLpMij8E-JxxAACURRrG6jniFatHPdB-JG0owEAAwIAA3gAAz0E)
+
+可以注意一下这一系列的变形。
+
+![5.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrlq0Lpz1zdyYNF9Y0GtPHSRRotiTgACUhRrG6jniFZOG9GsPbrg2AEAAwIAA3gAAz0E)
+
+这道题非常经典，可以注意一下。例如利用 tr 等，主要是证明相似对角化的方法。
+
+![5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrpq0LqxKrlB2V_ZFGTfJcjnUcptsAACUxRrG6jniFZSK0U_Rkkb3AEAAwIAA3gAAz0E)
+
+这道题需要注意分析方法。对于特征值还可以采用直接设特征值的做法去解。
+
+![5.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrtq0LreCxBGm4aXlBsGVw9h0k015gACVBRrG6jniFYFnTDnWYGgJQEAAwIAA3gAAz0E)
+
+计算问题。
+
+![5.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBrxq0Lrwq15-xDWK1dvoKCsd3suX-wACVRRrG6jniFaEmkXpMvAfswEAAwIAA3gAAz0E)
+
+抄错了。
+
+### 杨威线性代数强化 1 刷第 6 章
+
+![6.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBr1q0LsFteoIpr6-83pXXRFkEjGaYgACVhRrG6jniFbWWGkVZ8jH2wEAAwIAA3gAAz0E)
+
+对这道题，注意记号问题，本质上是不理解记号的含义。
+
+![6.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBr5q0LsZu7bIqIO4Mt_bgTQPFmahbgACVxRrG6jniFYYP5qFILZ6_AEAAwIAA3gAAz0E)
+
+计算过程乱七八糟的，一定要注意 aE+B 的优化。
+
+后面就基本没写了。
 
 ## 880 综合 1 刷
 
