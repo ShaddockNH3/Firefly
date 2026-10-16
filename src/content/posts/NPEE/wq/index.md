@@ -2311,6 +2311,429 @@ D. 设矩阵 A、B 满足 AB=E，E 为 n 阶单位矩阵，则 A 列向量组线
 
 ## 880 综合 1 刷
 
+### 880 综合 1 刷第 1 章
+
+![1.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBt9q0ZvUOWOQnt1r3S7H6_NqmRBKJAAC8g9rG6jnkFZJzoGEwHfweAEAAwIAA3gAAz0E)
+
+做这种题就不要想着用泰勒公式了，提取之后展开就行（其实和第 2 章那里是一样的，如果不是在 0 处展开，那就不要用泰勒公式了）
+
+重刷的时候错了。有关于泰勒公式阶数的问题，需要注意在展开的时候，次数得大于下面的。
+
+![1.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBuFq0Zwu9AldnUratvApxQo5ru9HdgAC9A9rG6jnkFaxoG6JVDmm8QEAAwIAA3gAAz0E)
+
+错选为 C。本题只需要举例即可。对于 1 和 2，显然错误，当 xn->正无穷时，前者趋于 pi/2，而后者肯定不是；对于 3 和 4，arcsinx 本身就是有界函数，只要证明其单调性即可。对于 3，由于 xn 收敛，所以后者肯定收敛于某个特定值，对于 4 即证明其单调性。
+
+![1.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBuJq0ZxRHS8VUgPpTMeEa0tHEKy_xAAC9Q9rG6jnkFa32LENLeci4AEAAwIAA3gAAz0E)
+
+第 18 题，错选为 A。本题是结论记错了，对于变上限积分函数，如果里面有可去间断点或者连续，那么变上限积分可导；如果是跳跃间断点，那么变上限积分不可导但连续。
+
+第 19 题，错选为 D。趋于 0 的时候判断错了，0 这一点虽然没有定义，但是其左右极限存在，不是无穷，所以肯定是在 0 的某个领域内是有界的。
+
+本题理解错一个很重要的东西，那就是该点的极限不存在不意味着该点肯定是无穷。
+
+![1.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBuNq0ZxkB6XQwNgHXg-8xZ6DdYNTfwAC9g9rG6jnkFZsKmg53IetVgEAAwIAA3gAAz0E)
+
+低级错误。本题犯了一个经典的错误，标准的零分，那就是 sinx 和 cosx 同时展开后（同时展开多项），然后应该每一项都要和每一项匹配，而不是只匹配几项就开始算了。
+
+本题类似基础三十讲第 1 章的练习最后 1 题，也可以把 sinxcosx 三角变换一下。
+
+![1.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBuRq0Zx4moPleyZTl5obrRxoAk3X4QAC9w9rG6jnkFas94WDifcrLwEAAwIAA20AAz0E)
+
+第 4 题为低级错误，考虑了等价代换和拉格朗日中值定理之后忘记把 A 带进去了。然后重刷错题也错了，ε是 b 没错，但是问题提示拉格朗日中值定理那个是 e^ε，好像第一次刷也是因为这个错了。
+
+第 5 题为低级错误，计算问题。考虑将 an 进行分部积分，然后推导出 an-2 和 an 之间的关系，这条路其实是走不通的（被以前的固定题型给影响了）。对于这种题，应该先考虑夹逼定理，再去考虑分部积分。
+
+然后重刷也错了，这题其实就是考虑分部积分，而不是用夹逼定理。我自己做出来用夹逼定理另一侧没得放缩，所以本来就是错误的。
+
+用答案的方法在做一遍其实还是错的，因为这题其实不是分部积分，只是普通的积分罢了。我在计算的时候把他当分部积分去算了，自然是错的。
+
+这道题给我最大的感想就是：不要被经验影响了。
+
+![1.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBuVq0ZyxLGJv57D4E0-_aj7XLKWV-gAC-A9rG6jnkFY-4OOJyrOp4QEAAwIAA3gAAz0E)
+
+低级错误，为计算问题。在考虑 x->0+ 和 0-的时候，想当然然后直接写答案，而没有具体计算。
+
+第 2 次算的时候惯性思维，认为[x]是 x-[x]。
+
+![1.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBuZq0ZzEMms2JJlEUkL1Tri-uaeFwwAC-Q9rG6jnkFa0kzwisCN1tgEAAwIAA3gAAz0E)
+
+特值法解出答案。本题其实没想到怎么做，错题重刷时根据答案提供的泰勒公式解出来。
+
+事实上我感觉这道题泰勒公式的来源应该是先通分，通分后可以发现使用泰勒公式
+
+![1.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBudq0ZzYpGKcttNz8VfqZAkG8qF53wAC-g9rG6jnkFb3c8po309iGAEAAwIAA3gAAz0E)
+
+第 2 小问等比数列求和计算错误。
+
+![1.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBuhq0ZzmVKWT8NArq9hyKCmUj8avPgAC-w9rG6jnkFYCcyk84kCfrwEAAwIAA20AAz0E)
+
+第 6 题 1-e^1/x 等价无穷小代换错误。
+
+第 7 题 sec(pi/x)，当 x->0 时是什么，计算错误。
+
+错题重刷时诱导公式符号又错了？其实是第一步错了，lin(sinpix) 求导没有上手去求，想当然认为是-cospix。
+
+![1.3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBulq0Zz6cblRqe72xI1I_10aSjyfxAAC_A9rG6jnkFb5pVS-qDnY-AEAAwIAA3gAAz0E)
+
+对泰勒公式和无穷小的计算不熟悉。本题计算量很大，需要慢慢去分析。
+
+错题重刷的时候没做出来。
+
+回归基础，这道题洛必达后，是无穷 - 无穷类型，
+
+![1.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBupq0Z0OAAHl1rrWaB5OvXnR-0pUi9kAAv0Paxuo55BWTtMOd_nGXRoBAAMCAANtAAM9BA)
+
+高中数学，对于 1，注意到可以乘上一个 1-x；对于 2，注意到可以乘上一个 sin(x/2)。
+
+![1.3.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACButq0Z0nfaC4NV3UoGGdspTrURirkQAC_w9rG6jnkFbD0ojZwDAEGgEAAwIAA20AAz0E)
+
+高中数学，列项相消没想到。
+
+### 880 综合 1 刷第 2 章
+
+![2.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBuxq0Z0_EsfFHuOVgk_ZcOMdfsE7UgADEGsbqOeQVglH02kDP2rGAQADAgADeAADPQQ)
+
+错选为 C。本题是用蓝笔改成正确选项的，应该是知道错了之后再看一眼然后才改的。
+
+果然，这题我再做一次之后还是 C，无论是利用特值法画出一个这样的函数还是利用定义简单求解，都做出来是 C。
+
+复盘之下发现：我特值法出来的函数与该函数的导数没有任何的联系，只是各自为营。
+
+这道题应该是利用构造函数：g(x)=f(x)-x 去做，这样就迎刃而解了。
+
+![2.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBu1q0Z1W1Zp2AaAwQZOmvRslF2wLzgACARBrG6jnkFZ0SeqMouanUAEAAwIAA3gAAz0E)
+
+错选为 C，属于低级错误。本题带来的启示是，如果想采用作图法来解这种题的话，一定要注意端点与两侧很可能情况是不一样的，需要单独考虑。
+
+![2.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBu5q0Z1t_TcZNnAgDHqsmk94s28YLgACAhBrG6jnkFbbVFnfTzxHeAEAAwIAA3gAAz0E)
+
+错选为 ACD，本质是对可导以及洛必达这个条件理解地不够深刻。错题重刷时仍然不知道怎么做，前几天刚看的说在一个区间内可导可以用洛必达，怎么现在又不行了？
+
+回顾基础 30 讲的第 3 章第 7 题，这题的出来的结论是：如果某个函数在一个区间内 k 阶可导，那么在这个区间内可以洛 k 次；如果一个函数在某点处 k 阶可导，那么只能洛 k-1 次。
+
+确实是这样的，但是回归洛必达本身，洛的前提是知道洛出来的极限存在，而这道题你不知道 f’(x)/x 极限存在，所以不能洛，得用定义去求 f’(x)，而这道题 f’(x) 你用定义求不出来是多少。
+
+而我的记忆里为什么会出现洛呢，因为大部分的题目都是 f(x) 在某区间内二阶可导，然后这个时候你可以进行 n-1 次洛（n-1 次洛必然是合法的），但是对于第 n 次洛，你得提前知道这个极限是多少，你才能洛，否则必须得用定义；而对于某点处，必然只能进行 n-1 次洛。
+
+基于上述可以总结，大部分情况下其实不管是某点处还是区间上都是只能进行 n-1 次洛，对于区间如果已经知道洛完后的答案，那可以洛第 n 次。
+
+![2.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBu9q0Z2Uz86LIn9lyByvTDEbE3jzFQACAxBrG6jnkFYMK3KC5brn-wEAAwIAA3gAAz0E)
+
+错选为 A。我其实没看懂我 1 刷这道题的方法是什么，应该是分别对 x 和 y 用定义求对 t 的导数（也得分对 t+ 和 t-），结果算出来都是 0，所以直接就选了 A。
+
+这个逻辑很怪，第一方面，即便是算出来都是 0，那么 0/0 也是未定式，所以不能判断；第二方面，如果当 x>0 时和当 x<0 时算出来的导数 dy/dx，可以发现他们恰好是相反数，算一下当他们分别趋向于 0 的时候，前者是 1，后者是 -1，也选不出来是 A。
+
+事实上，对于这种题应该这么思考：首先判断能不能把 x=t 带入 y，从而化简为 y=f(x) 的具体表达式；如果不行的话，考虑直接用 f’(x) 导数的定义去做，而不是分别去做，分别做只能算出来分别的值，没法得到整体的定义。
+
+我在错题重刷的时候其实也理解错了，我是直接先求的二者 x>0 和 x<0 的导数然后判断，这样只能判断出 A 是错的，但是判断不出来其他选项是不是对的。
+
+![2.1.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvBq0Z2q8kPwkWaGgzljEzGc3o4NtAACBBBrG6jnkFYwLnFznfDJewEAAwIAA3gAAz0E)
+
+错选为 B。低级错误，做出来是对的，选错了。
+
+本题错题重刷时也只能用画图法做出来正确答案（1 是直接割线的定义，2 是拆开然后移项可以化简为 f(1) < f(x)，然后就有点不会证了）。
+
+事实上，对于割线那里，直接采用拉格朗日中值定理即可证明；对于拆开之后，其实也很简单，因为 f(x) 在 (0,c) 单调递减，在 (c,1) 单调递增。
+
+![2.1.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvFq0Z4Re3x_C8i5aA2ovOeV4jrEygACBhBrG6jnkFaY6fqqSJDddwEAAwIAA3gAAz0E)
+
+D 改为 C 又改为 B，错选为 B。这错题重刷时仍然不怎么会，感觉是没有理解透。我记得 1 刷的时候考虑到了特值法，构造了一个分段函数，从而判断不是充分条件。但是这个例子后来复盘一下，发现其实这个例子即使是给他连续起来，也是一样的。
+
+对于这个割线严格单调递增可以得出一个结论：f’(x) 是单调递增的，所以这道题可以翻译一下，f’(x) 严格单调递增是 f’’(x)>0 的什么条件，前提仅仅是在区间内有定义。显然，即便是 f’(x) 严格单调递增，f’’(x) 仍有可能等于 0，例如 (x-1/3)^3。所以这题是必要不充分条件。
+
+但是这么理解启示是有问题的，凹函数只能推导出所有割线斜率递增，然后推导出固定端点割线递增；固定断电割线递增推导不出来导数递增，导数严格递增也推导不出来是凹函数（凹函数的定义是不可以有刚好为 0 的点）
+
+割线斜率单调递增意味着函数只要在定义端点两侧构成的直线的下面，而具体的构造可以随意，如果是凹函数，那么可以天然的保证都在下面。
+
+![2.1.26 解 1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvJq0Z4vU_rV9SKq6MX6tx0-WNc5mQACBxBrG6jnkFY824AhwKDnfwEAAwIAA20AAz0E)
+
+![2.1.26 解 2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvNq0Z4_SnPQRJhfOac608i6_RZgAwACCBBrG6jnkFZrIqodCOGxGAEAAwIAA20AAz0E)
+
+这道题还是画图最好理解，严谨证明感觉会很神秘。
+
+其实本质上感觉这道题的后推前应该利用凹函数的定义，直接说明这个成立就好了（因为所有的点都落在割线之下，所以可以推导出割线单调递增），而割线单调递增不可以推导出凹函数。
+
+![2.1.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvRq0Z5TLLANI2-95k9l49XKO6F2mgACCRBrG6jnkFaWxp-XpFIy1gEAAwIAA3gAAz0E)
+
+第 28 题错选为 A。为低级错误。重刷错题时依旧跳入这个坑。导函数连续不意味着该点导数存在，例如可去间断点？并不是这么理解的。
+
+这道题有点偷换概念的意思在这里，函数左极限等于右极限等于这个点的值，那么才是连续的，函数左极限等于右侧极限只能说明在该点处极限存在，这个概念很久以前就搓过，但是 1 刷的时候没反应过来。导函数的左右极限相等等于某个值也是一个道理，题目并没有说它等于该点的具体值，所以 A 是错的。
+
+第 29 题错选为 D。低级错误，本题是考察导函数连续，而我自己在做的时候只考虑了普通的连续，从而只推导出后面那个条件，并且在做这题的时候错误的使用了等价无穷小来解这道题，应该使用定义推导。
+
+![2.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvVq0Z5uXeNV_nNukPoaxUFPDk1ZJwACChBrG6jnkFb_OuJngUnnqgEAAwIAA3gAAz0E)
+
+第 2 空错答为 2，重刷又错了。对于第 1 空，考虑零点以及改变正负性的点，所以可以得到 x1，x3，O，x4，对于第 2 空，考虑改变单调性的点，所以可以得到 x2，x5，x6。尤其是注意 x6，x6 是驻点，但是不是极值点，但是它是拐点，因为它改变了单调性，被迷惑了。
+
+![2.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvZq0Z6BHyvPqeBe3Ebk3hf8Uu5h3AACCxBrG6jnkFaw0e6HD_mIZwEAAwIAA3gAAz0E)
+
+第 2 问思路混乱。利用罗尔原话来捋清楚思路，重刷的时候猛然理解。两边同时加上一个 f’(η)，构造一次函数 g(x)，这个 g(x) 是需要两个零点可以得到证明得到答案，从而知道 g(x) 再往上构造一次的函数 f(x) 需要三个零点，从而很轻松的推导出逻辑。
+
+![2.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvdq0Z6QxV86ZLRtt6Bz11uBzAlPJQACDBBrG6jnkFYoWI3Gk1ghdwEAAwIAA3gAAz0E)
+
+第 8 题缪用泰勒展开，例如想对 exp(ln(x+1)/x) 展开，那得先对 ln(x+1) 对 x=0 展开，然后再对 e^x 进行展开，也可以直接对 exp(ln(x+1)/x) 对 1 展开，但得二次展开，否则你的得到的只是 (ln(x+1)/x) 的表达式。
+然后在做这题的时候要注意计算，先展开再合并，不要跳步。
+
+第 9 题在基础 30 讲第 6 章的第 3 题是一样的题目，具体是利用费马定理，也就是可导取极值导函数必为 0。
+
+![2.3.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvhq0Z7lZcRRwAsa7dLG9CafrJF-RgACDRBrG6jnkFbatIKGd0Ns_AEAAwIAA3gAAz0E)
+
+第 17 题，误用洛必达法则，和之前的情况一样，在不能洛的地方洛了。并且在错题重刷的时候超时，且没有注意到这题应该 x 有多个选项。本题有两种思路，第一种是利用微分，第二种是利用 f(x)=\*\*\*+O(x) 去做，而对于后面那种方法，尤其需要注意***是什么。另外还有低级错误，面对因式分解提取公共项，一定也要算出来。
+
+并且这题其实可以不用导数的定义去做，直接求导就好了
+
+第 18 题不想算，所以没做。重做的时候在进行计算的时候需要注意从根号里提东西的时候的次数，此外还需要注意一件事，那就是利用链式法则的时候是相乘，而不是相加。另外还需要注意，这道题求的是弧长，而不是距离长度。变限积分不一定要立刻算出来，可以看看有没有求导。
+
+![2.3.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvlq0Z8L1xzLNYziB_WLrW2lsF8ZewACDhBrG6jnkFa4imVeJGiNdwEAAwIAA3gAAz0E)
+
+属于低级错误，求导错误，这道题直接令其中一个 x 为变量然后求导去算就好了，1 刷时是求导错误。
+
+### 880 综合 1 刷第 3 章
+
+![3.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvpq0aArnkr_lmQPUKNFNBoN0NFj1gACDxBrG6jnkFYvTNCaV44iiwEAAwIAA3gAAz0E)
+
+本题没有上手做，纯凭感觉，错题重刷时也没什么头绪。再次看了答案才反应过来，这道题的做法应该是：看到 e^n 和 x^n，所以想到去凑 (x/e)^n，或者反过来，去凑无穷小。尤其需要注意的是，这道题在化简前者的时候，应该将 x 视为一个常量，而不是变量看待。
+
+![3.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvtq0aBPqww75FzAcQtni_CfSX2GNAACEBBrG6jnkFZTikw_JDwlGgEAAwIAA3gAAz0E)
+
+第 9 题采用特值法。比较好的做法是数形结合，然后利用凹凸函数，割线去做。另外以后看到这种题，可以考虑一下两边同时积分，而不是直接变成变限积分，思路来源于莫名其妙出现的 2。
+
+第 10 题是函数求导问题，求导求错了，但是即便是当时订正，我也是直接根据选项去设函数去计算，本质也算特值法？但是感觉也只能用这种方法来计算。
+
+![3.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBvxq0aBkN34NlRlNp0XXsIgGsA7bbQACERBrG6jnkFZIllhLIZt5pAEAAwIAA3gAAz0E)
+
+本题错误原因来自于在进行最后几步构建函数的时候，理解错误。理解错误大致来源于直接对 y’/y 脑子构建，没有踏踏实实算。现在回想起来，应该是对微分方程理解不熟练。
+
+![3.2.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBv1q0aB1M_PIAmPzW5jCvuQ27ts67wACEhBrG6jnkFax7YaUfW1p4QEAAwIAA3gAAz0E)
+
+第 17 题没有想明白为什么可以先算出来再去积分，现在想来，应该是被中间需要断开给误解了。事实上只需要算出来积分，然后分别求极限即可。
+
+第 18 题属于低级错误，把积分下限 1 看成了 0。
+
+第 19 题想到了洛，但是洛的合理性在哪里？事实上，这道题是趋于 0+，所以将区间分为两部分，x-1 和 1-+∞，显然，后面那部分是收敛的，但是前面那部分不是，所以上面是无穷！
+
+第 20 题错误原因和 17 题类似。
+
+第 21 题错误原因为换元法经典错误，也就是想当然的积分上下限，而对于错题重刷的时候，抄错了符号。
+
+第 22 题对积分的定义理解不深刻，只理解了 1/n，没有理解其他的。事实上，应该这么理解定义：底边边长和采样点。对于区间 u-v，假设分为 n 份，那么底边边长自然是 (u-v)/n，而采样点则是 u+(u-v)i/n，这道题和前面第 15 章最后一题二刷那里错误类似，对于坐标的理解。一定要画图。
+
+![3.3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBv5q0aCQARV5--t6tZ4KWFZB8hgSUQACExBrG6jnkFYCmP4MAAEXObEBAAMCAANtAAM9BA)
+
+第 1 题的第 1 问使用牛莱公式代入的时候错误；第 2 问错误来源是变限积分的上限没有求导。
+
+第 2 题直接没做。感觉是没敢作，但是其实把 f(x) 解出来就做出来了。可能是思路走错了，被第 1 问影响了认为是分部积分。
+
+第 3 问没想到怎么做。错题重刷时其实也想错了，不应该先想分部积分，把希望放在赌老师刚好凑出来，应该先去思考怎么凑进去，尤其是 e 以及三角函数。
+
+第 4 问没去做，应该是嫌麻烦。重刷时想当然了，注意 e 的上面是-sinx，而不是 sinx，我在换元法的时候用的是 sinx，然后 e 却没变。
+
+第 5 问题目抄错了，上面的 x 本来是代对了，然后再抄一次抄成了 x。
+
+![3.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBv9q0aCqTUb7ceO17CRMs0gOLJG-dAACFBBrG6jnkFYmzQ9jRng1ZgEAAwIAA20AAz0E)
+
+第 7 题。本题属于低级错误，将 u 以为可以直接提到外面去做。
+
+第 8 题。本题没有注意到一个条件，那就是 f(x) 仅为连续，所以不可以换元后直接求导，而是注意到 f(x)/x 存在，从而去把 f(x) 给消去，错题重刷的时候犯了一个经典的错误标准的零分，把已经提取到外面的 2 给漏了，提的时候还提醒了自己要记得，结果回头就忘了。
+
+第 9 题。本题没敢做。重刷一下，其实只是计算量有点大，不难。
+
+![3.3.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwABatGgv4B8Xdfv3MIHrzjSNtf_dnAAAhUQaxuo55BWSK8PBLBYNsABAAMCAAN4AAM9BA)
+
+本题第 2 问计算错误，使用牛莱公式时的带入正负号计算错误，没有稳扎稳打写出来，只是脑测。
+
+![3.3.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwFq0aDe1P5bvbMjZGyvH_5Y23ISoQACFhBrG6jnkFbfpydiGOJLuAEAAwIAA3gAAz0E)
+
+第 22 题，答案采用三角换元，我自己是采用分部积分计算出 an 和 an-2 的关系，然后不会做了。对于这种题，联想一下单调性便可以迎刃而解（类似 cosx，也就是基础 30 讲第 2 讲的题）
+
+都 23 题，没想到怎么做。但是考虑将 x 凑进去，会发现此路不通，所以只能试着把 sinx 凑近去，就是别人凑好的。对于第 2 问其实也没想到，但是其实也是和 22 题类似，利用简单的单调性就可以放缩出来，对于这类题一定要注意单调性。
+
+第 24 题求出递推关系之后想当然认为 I_(n-1) 递推出来的东西还是 n。
+
+第 25 题采用了将下面凑进去的方法（直接消耗 2 次方），此路不通，所以换路，只能直接分部积分。我是觉得，这道题应该先考虑我自己方法的合理性，显然是不合理的，因为还得额外去讨论 n=1 的情况（毕竟是直接凑进去一个 2 次方）
+
+![3.3.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwJq0aD0AblPhUhRYFYrQufn8X5cCwACFxBrG6jnkFZAjjI5fWyZogEAAwIAA3gAAz0E)
+
+第 28 题想到了把 b 代换为 x，但是落实的时候没有处理好 x-a，导致计算困难。答案采用了一个很神秘的方法，我认为这不是我能掌握的。但是对于这题，只要把 x-a 乘过去，然后用拉格朗日中值定理就可以很轻松的证明。
+
+第 29 题第一反应是设 g(x) 把上面两个条件串起来然后求导。但是应该是有问题的，这样不可以充分利用条件。对于这道题，知道是一定要中间踩一个点，但是这个点是什么。由于原函数是 F(x)，那么也就是要找一个 F(x0)=0，所以考虑分部积分。
+
+![3.3.43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwNq0aEOvb4VqIhWlLXr4Sn34qEOzAACGBBrG6jnkFYlfHO6kQJ6cQEAAwIAA3gAAz0E)
+
+第 43 题极限求错了，原因是没想明白 0/-1=0，而不是 -1。
+
+第 44 题没写。
+
+第 45 题到这里才想明白抽球做功（或者水）都是对重力做功。
+
+第 46 题没写。
+
+第 47 题没想明白 x=r(theta)cosx。，把这个想明白之后就解出来了
+
+第 48 题没算完。与基础 30 讲第 10 讲课后题最后一题是一样的。
+
+![3.3.49](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwRq0aEkCv8Pa_PmsKtSmdxzEyT_8wACGRBrG6jnkFY1GXYBQGAyNwEAAwIAA3gAAz0E)
+
+第 49 题没算完。
+
+第 50 题求导错误：f(x)=((ln2)^(-x))/x，求导没有对下面的 x 求导。
+
+第 51 题没想出来第 1 步怎么推。
+
+第 52 题搞错积分上下限。
+
+![3.3.54](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwVq0aE4OWRcNuVuLZW45B08V7xXQwACGhBrG6jnkFYqCcZPw2iaKwEAAwIAA3gAAz0E)
+
+第 54 题没想明白 costheta 是什么。
+
+第 55 题没有证明出来=是对的。
+
+### 880 综合 1 刷第 4 章
+
+![4.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwZq0aFWPp8y21a0oY4f15q5qehpewACGxBrG6jnkFbz0a7FU5D4bQEAAwIAA3gAAz0E)
+
+本题错选为 A，为低级错误。
+
+![4.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwdq0aFo7QpAIE9h_6JoD5LrOxb1jQACHBBrG6jnkFZurkYjLO1BsAEAAwIAA3gAAz0E)
+
+本题没做。现在突然反应过来，这道题就是隐函数存在定理，也就是基础 30 讲第 13 章感觉到懵逼的点。
+
+![4.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwhq0aGT0Rnlqo_TFXQpkbmKFZu1awACHRBrG6jnkFbOvg6EBQABGzUBAAMCAANtAAM9BA)
+
+本题没考虑将 2 和 1 代入导致错误。
+
+![4.3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwlq0b9oHc0NgYy9AczPbS8pn92jwQACNxBrG6jnkFbudNalJcExbwEAAwIAA20AAz0E)
+
+计算错误。
+
+![4.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwpq0b-konEnipwZf2_twCbCUaC3ngACORBrG6jnkFZXGvnvm4wqxQEAAwIAA3gAAz0E)
+
+条件最值没有求出全的可能最值，只求了一部分。
+
+![4.3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwtq0b-3mQIx_D04V3o52D0hzMJTigACOhBrG6jnkFbLpKZF8ltaRwEAAwIAA20AAz0E)
+
+本题想利用圆的极值去做，但是忽略了极值也是被底下分母 y^2 所影响。
+
+![4.3.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBwxq0b_IkYH2v-gb-X2gg7CHmeLtlgACOxBrG6jnkFZrPt3P1-AQHQEAAwIAA3gAAz0E)
+
+第 16 题对记号的理解不够深刻，但是背后的本质是没有理解 d 这个符号（答案的做法太麻烦了）。D，也就是取全微分，利用全微分稳扎稳打去计算即可。
+
+第 17 题对偏导数在点的连续判断错误（没有稳扎稳打去算，而只是猜了一个值）。
+
+第 18 题则是完全没有想到转换为到圆点的最值（现在也没想明白），但是仔细想想，是不是椭圆的长半轴就是椭圆到原点的最大值？椭圆的短半轴是不是就是椭圆到原点的最小值？所以这道题就可以转换为条件最值去做。
+
+第 19 题没具体去算。
+
+第 20 题想用不等式去做，没做出来，其实用拉格朗日乘数法去做就可以了。
+
+### 880 综合 1 刷第 5 章
+
+![5.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBw1q0b_nuDKSH3r4ecXKVfQqXEhD7AACPBBrG6jnkFZgo-nLhjW0uQEAAwIAA3gAAz0E)
+
+第 3 题错选为 C。属于低级错误，arctan1=pi/4≠pi/2。
+
+第 4 题错选为 A。属于低级错误，rcosθ=x≠y。
+
+![5.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBw5q0cBbQMm6Fvmtr2MthbQflQABW6cAAj4Qaxuo55BWwIQLw6iX_KwBAAMCAAN4AAM9BA)
+
+本题一刷时没看完题目，且没理解题目意思，错题重刷时完全没思路去解。
+
+![5.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBw9q0cB-MTp30BhSjpG1uHijAAHcZT0AAj8Qaxuo55BW9Im1VlbS7bIBAAMCAAN4AAM9BA)
+
+本题理解错上下限的定义，将 t 当为第二变量的上限，而不是正确的值。
+
+![5.3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxBq0cCaq6xvuP-Yg3vNoQnGWSf8aQACQBBrG6jnkFaufN_lv7TLSAEAAwIAA3gAAz0E)
+
+1 刷时理解错对称性；错题重刷时候，在 -1 到 1 化简成 0 到 1 时，同时在外侧和内测乘了一个 2，最后算出来答案的两倍。
+
+![5.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxFq0cHHx2R8Sub9MEORYruAJO9WXgACQhBrG6jnkFZ6dtt5tbOtTAEAAwIAA3gAAz0E)
+
+第 4 题一直想着用对称性化简，但是事实上这道题基本上是硬算。需要注意的是，在硬算的时候可以采用一个技巧，也就是不要把式子放在一起。例如我要硬算 x^2-y 的积分，那么可以先算 x^2 的积分，再去处理 y 的积分，不要放在一起，放在一起非常容易乱。
+
+第 5 题为理解问题，将 x，y 代入为-x，-y 是关于原点对称。此外在错题重刷的时候，一定要想清楚自己这么化简是为了什么。显然这道题要求出 r=r()，从而进行换元法，而不是一开始就想着直接去拆开化简，最后画出来自己都不知道自己在做什么。做数学题一定不可以抱着试试的态度去做，一定要想清楚我这么做可能能得到什么。在计算积分的时候，对于三角函数，首先先直接考虑能不能用 sec，而不是先化简（被以前写的东西误解了）
+
+第 6 题需要注意对称性，前面一直在那里错误的使用对称性，这道题应该使用对称性的反而没有用对称性。
+
+第 7 题为低级错误。令 2θ=t，结果求 d 的时候忘记系数了。
+
+第 8 题为低级错误。Y=(1-x^4)^(1/4)，而不是开根号。
+
+![5.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxJq0cHgf1uFLZSVesdL2Pv30M2uEwACQxBrG6jnkFZj_rRiWyFyhQEAAwIAA3gAAz0E)
+
+第 10 题为低级错误，积分上下限错误。
+
+第 11 题我其实没有看懂我那个时候是怎么做的，感觉本质是因为没有理解清楚积分中值定理。现在是理解了，这里还包括变限积分求导，可以把二维的变限积分，里面的那个写成一个函数，因为本质上其实就是一个函数来看待，这样的话会非常舒服。这道题积分中值定理是走不下去的。
+
+第 12 题应该是直接用的 f(x,y)-f(0,0)。想当然解，没有根据具体的定义去具体代入。
+
+第 13 题为低级错误，在最后使用牛莱公式代入得时候错了。
+
+![5.3.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxNq0cH2Nm3tObjjs4UJBYWB3mx7ZAACRBBrG6jnkFYWXMBGBPXZcQEAAwIAA3gAAz0E)
+
+第 15 题没算完，处理技巧不好。
+
+第 16 题积分上下限错误。
+
+第 17 题我这边打印出来的题错了，且需要注意这道题是求得是一个点，而不是函数，所以和函数的处理手段不一样。
+
+![5.4.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxRq0cIM_RnatQ4x515krUSh2LDt7AACRRBrG6jnkFaAA8bqGl5tjgEAAwIAA3gAAz0E)
+
+第 19 题跳。错题重刷时应该知道，对于这种题先是变限积分，变形到只有一维的时候，再往下走只能用一维积分的中值定理，然后再用泰勒公式展开。这里对定义的理解感觉也有偏差。微分的定义。另外还需要注意，如果用积分中值定理得到的东西，需要夹逼定理之类的去搞，而不能想当然地去让它等价于 x。
+
+第 20 题求的是 f(x,y)。求出来 A 之后没有带回去。
+
+第 21 题没有考虑定义域，导致积分上下限错误。
+
+第 22 题积分错误，为 sinx，xsinx 之类的变形积分错误。
+
+![5.4.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxVq0cId9E7ZzAZEy9nhPeQDDJiDqgACRhBrG6jnkFYAAW2UxCLHzRQBAAMCAAN4AAM9BA)
+
+错用积分中值定理，对于变量的积分中值定理需要慎用。
+
+### 880 综合 1 刷第 6 章
+
+![6.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxZq0cI3WhtbudtSEwYl9ChLKxV2cQACRxBrG6jnkFZz0FWuvPUQgAEAAwIAA3gAAz0E)
+
+本题没有能做到稳扎稳打去分析。
+
+![6.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxdq0cJH1YB-p1snE-qFmXouq_2nsgACSBBrG6jnkFZ1O5WWkgOM_gEAAwIAA3gAAz0E)
+
+第 6 题，注意正整数。
+
+第 7 题，最后一小步错误，属于非常低级的错误。
+
+![6.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxhq0cJWEDcx3RZAW_qI88Rv_kUaLQACSRBrG6jnkFZ4eUfTWZjHWwEAAwIAA3gAAz0E)
+
+没想到怎么做。
+
+![6.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxlq0cJrb2af5YKiJL527P5-xQ9bgwACShBrG6jnkFZkLkrLji-3fgEAAwIAA3gAAz0E)
+
+第 6 题，错误在于算出 N=1/2 时，想当然写余项，而不是代入。
+
+第 7 题，用了一个神秘的方法，解出来之后，没有思考二阶导只有 2 个 C。
+
+![6.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxpq0cJ-7zlAgzATD2eml40Sw3-xBQACSxBrG6jnkFbEE0Esg3H87QEAAwIAA3gAAz0E)
+
+第 9 题没去做。
+
+第 10 题属于低级错误，有一个问题就是 ecosx，其后面是无界的。
+
+![6.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxtq0cKaBSJ7asDa5U93QgOaNOg7VQACTBBrG6jnkFb1hAlmTNQXTgEAAwIAA3gAAz0E)
+
+没见过这类题。错题重刷时其实也没想到怎么做。
+
+![6.3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBxxq0cLBfhR3U0UusAyJjpU4pDvBFgACTRBrG6jnkFYHDBGlJwiLVQEAAwIAA3gAAz0E)
+
+第 9 题最后一步错误，cos2pi=1≠其他。
+
+第 10 题最后一步错误，解出来了 y’之后，进行下一步的时候抄错了符号。
+
+![6.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBx1q0cLSjaQskJBNkM2U7O2-dSpGbQACThBrG6jnkFasWDuFabopwAEAAwIAA3gAAz0E)
+
+没见过这类题，看到这种题应该是要往上凑的，错题冲刷的时候没想到。
+
+然后后面都没做了。
+
 ## 张宇 30 讲基础高数 2 刷
 
 ### 张宇 30 讲基础高数 2 刷第 1 章
@@ -3380,6 +3803,58 @@ $\text{tr}(NM) = \sum_{j=1}^n (NM)_{jj} = \sum_{j=1}^n \sum_{i=1}^m N_{ji} M_{ij
 因为实数乘法满足交换律 $M_{ij} N_{ji} = N_{ji} M_{ij}$，且双重有限求和可以任意交换求和顺序，所以这两个和式完全相等！
 
 所以，只需要交换一下，就可以得到 $X^T B X$，然后就迎刃而解了。
+
+### 27 李 6 卷 4
+
+- 完成时间：20261014
+- 分数：135
+- 作答时间：180-15
+
+写了 150min，花了 30min 检查了一下选填，检查出来 2 填空，但是选填还是 -15。
+
+本来以为是确实不会做，但是看了答案之后发现都是以前经历过的经典变形，所以属于套路的遗忘。
+
+还可以，但是还需要再努力！
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtxq0XHsYA7bGauwbPJ0i7EWLFKHxwACwQ9rG6jnkFYG_z3aJz3KkAEAAwIAA3kAAz0E)
+
+本题我一直想着构造函数，确实是构造函数，但是一直想不到怎么用。
+
+本题确实是低级错误，利用经典变形上下同时乘上一个 e^x，然后放缩就可以证明出来了。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBt1q0XLBB5mGEhMdAlBty3y_pypj-QACwg9rG6jnkFZD5GIdXe5uvgEAAwIAA3kAAz0E)
+
+对于 1，脑子抽了理解错误。这句话的意思是有 n 个不同的实根，而不是有 n 个线性无关的特征向量。对于前者肯定是错误的。
+
+对于 2，这个属于是显然的结论，略。
+
+对于 3，从直观上理解，A 可相似对角化，也就意味着整个 $n$ 维空间可以被完全拆解为 $n$ 个互不干扰的独立特征方向。
+
+如果某个方向上 $w - \lambda_i = 0$：
+
+那这个方向上的分量在第一步的时候就已经瞬间被干成 0 了！
+
+如果某个方向上 $w - \lambda_i \neq 0$：
+
+这个分量在第一步没死（乘了一个非零数），那你再第二步，不过是再乘一个非零数 $(w - \lambda_i)$！
+
+一个不是 0 的数，连续乘以两次非零数，不可能是 0。
+
+当 A 不可相似对角化的时候，才会存在这种。
+
+本题可以利用特征值去证明。
+
+从特征值的角度理解，可以变化为特征值 1，特征值 2，等等的形式，并且这个特征值是原本的特征值进行线性变形。
+
+原本的特征值进行线性变形后，平方后 0 的个数也不会变
+
+对于 4，A 和 A 转置只有相同的特征值，但是对应的特征向量有很大差距，这个属于是背书错误。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBt5q0XTscRy6oOWcqhePUuIvsYryhAACww9rG6jnkFZqcTH4V0e9wwEAAwIAA3gAAz0E)
+
+本题就是理解错题目意思了，这道题的意思是求 a，而不是求 n，我理解成求 n 了。所以我猜了一个 n=1 进去，n=1 代入进去也就是 a 的值。这题不应该。
+
+退一步来说，也应该是参变分离然后求导，其实就非常简单了。
 
 ## 880 综合 2 刷
 
