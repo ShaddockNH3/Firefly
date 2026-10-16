@@ -3877,13 +3877,21 @@ x 和 y 定义域是 R，漏了一半。
 现在，让不等式两边同时取 $x \to 0^+$ 的右极限：
 
 - 左侧极限：
-  $$\lim_{x \to 0^+} \Big[ x f''(x) + e^{f(x)} \Big] = 0 \cdot f''(0) + e^{f(0)} = 0 + e^0 = \mathbf{1}$$
 
+  $$
+  \lim_{x \to 0^+} \Big[ x f''(x) + e^{f(x)} \Big] = 0 \cdot f''(0) + e^{f(0)} = 0 + e^0 = \mathbf{1}
+  $$
 - 右侧极限：
-  $$\lim_{x \to 0^+} 6\ln(1+x) = 6\ln(1) = \mathbf{0}$$
+
+  $$
+  \lim_{x \to 0^+} 6\ln(1+x) = 6\ln(1) = \mathbf{0}
+  $$
 
 由极限的保序性定理，若在 $(0, \delta)$ 上恒有左边 $\le$ 右边，则两边的极限必定满足：
-$$\mathbf{1 \le 0}$$
+
+$$
+\mathbf{1 \le 0}
+$$
 
 这道题按照题目给的做法是：
 
@@ -4310,6 +4318,147 @@ F(5)=F(3)+F(1)，F(3)=2，F(1)=2，得到 4，所以第四个应该是 F(4)。
 ![5.3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBtpq0OLyUw5sQYdjOz4bUV3PrYIHLQACrBRrG6jniFZ9q9CSlY8QWQEAAwIAA3gAAz0E)
 
 本题应该选 C。
+
+![5.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1hq0f4ysFZgvaI5PTeBL8lEKkYJVAACSxtrG-BrkFZAeawLiF0nNwEAAwIAA3gAAz0E)
+
+注意是所有条件，所以应该选 C。
+
+![5.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1lq0f53ofmXJkJTAUez_PtFL-O5KAACTBtrG-BrkFbEfJ7OsG9k0QEAAwIAA3gAAz0E)
+
+本题应该选 B。访问页结点的顺序是一样的，只是访问根的顺序不一样。
+
+![5.3.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1pq0f64MfB1hyTgOOhuHHaF5WJLGwACThtrG-BrkFYUWHRmNygyJwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于这类题应该套到模型上去理解，例如本题升序序列改为降序序列，原本中序遍历的顺序是左根右，也就是要改成右根左的顺序，所以 CD 可以排除。
+
+而要改成右根左，也就是递归的交换左子树，递归的交换右子树，所以应该选 B。
+
+![5.3.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1tq0f-WMXp0B801f5D49v1n0gqlRwACUBtrG-BrkFZiK6bePPVzhwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+2 个结点的线索二叉树线索为 3，采用特值法即可以迎刃而解。
+
+![5.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1xq0f_vn-r-N7SCx4Piej3OJHQ8owACURtrG-BrkFYEuVKOmgRwbQEAAwIAA3gAAz0E)
+
+第 25 题应该选 D。采用特值法，模拟一个 5 个结点只有🈶有孩子的树，可以观察到第一个结点的左孩子和最后一个结点的右孩子指向空。
+
+第 26 题应该选 D。典型的代表是先序的先序和后序的后序。
+
+![5.3.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB11q0gABpHVJhQdO_nnQiAaZ7cinW7AAAlIbaxvga5BW7ROjDTk397IBAAMCAAN4AAM9BA)
+
+本题应该选 A，绘制求解即可。
+
+![5.3.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB15q0gAB2Gez1J85AAF2lBuolayh33yJAAJTG2sb4GuQVsKM9l4Pm7ojAQADAgADeAADPQQ)
+
+本题应该选 D。
+
+先序遍历是根左右，中序遍历是左根右，中序遍历相反是右根左，所以根左右=右根左，也就是该树没有右孩子，所以 D。
+
+![5.4.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB19q0gEw5kwsmgABpw64EGWYEKG4iiMAAlQbaxvga5BWNemxhbSBLfcBAAMCAAN4AAM9BA)
+
+本题应该选 D。
+
+![5.5.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2Bq0gFOiLscEU6sueDvZ2I7cFZx1wACVRtrG-BrkFZUkGW2ptoAAZkBAAMCAAN4AAM9BA)
+
+本题应该选 C。
+
+哈夫曼树没有 n1 结点，由于有 5 个叶节点，所以由 n0+n1+n2=n1+2n2+1 可得 n0=n2+1，所以 n2=4。
+
+所以一直向左，也就是 5 个。
+
+![5.5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2Fq0gHPG4RdPpO2gA6pW2KF_xVW2AACVhtrG-BrkFaHjioQtA1VGAEAAwIAA3gAAz0E)
+
+本题应该选 C，属于结论算是。不过用特值法也可以做。
+
+### DS 王道选择题 1 刷第 6 章
+
+![6.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2Jq0gzP3gZ0nHJPYhBxMtIeisXWiwACaRtrG-BrkFYuXJKS_TOeDgEAAwIAA3kAAz0E)
+
+本题应该选 A。前者最少为树，后者最少为环。
+
+![6.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2Nq0g4xlgGYEjg-39qChEOyLabaUQACbBtrG-BrkFZitOg2pjTctgEAAwIAA3gAAz0E)
+
+第 10 题应该选 D。
+
+对于 1，连通分量的意思是要撑满，所以 1 是错的。
+
+对于 2 和 3 是对的。
+
+第 11 题应该选 C。
+
+利用几个结点构成最大的，也就是 7✖️6/2=21，也就是扣了 7 个结点，51-7=44，所以总共是 45。
+
+第 12 题应该选 B。
+
+![6.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2Rq0g9SNrXgldPirKJC4jq73xs3rwACbhtrG-BrkFZPam9oIZs7wAEAAwIAA3gAAz0E)
+
+第 16 题应该选 C。
+
+第 17 题应该选 B。
+
+![6.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2Vq0g-l5Vs2LKxN5o3TLj91VwK1MAACbxtrG-BrkFbI7GqzhhyrrwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+![6.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2Zq0g_JH5CVYgrJjk8i3ttpb_W3dAACcBtrG-BrkFYIwKa498-WVAEAAwIAA3gAAz0E)
+
+BD。
+
+![6.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2dq0g_szd2W4TgKV58L1I4G7wJ-4wACcRtrG-BrkFbwRF6DsR6BzwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 1 显然错误。
+
+对于 2，不存在回路，考虑一个结点下有多个结点，未标记则会重复访问。
+
+对于 4，可以考虑 1->2->3。
+
+![6.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2hq0hIHy0Ya505LmcHsuodQ0NATUAACdRtrG-BrkFZkR--KFlbP2gEAAwIAA3kAAz0E)
+
+本题 D。
+
+![6.3.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2lq0hJDOnGRzOMAAXYQBnrFmrND7bAAAnYbaxvga5BW64snOnVAS6QBAAMCAAN5AAM9BA)
+
+本题应该选 D。
+
+![6.4.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2pq0iFtJVNuCfYaFuqnZMLozRmTFwACtxtrG-BrkFbvMHAnhESeVwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+对于 1，显然成立。
+
+对于 2，假设该图所有权值最小的边刚好全选构成了无向图，那么这课树就是唯一的，所以不选。
+
+对于 3，假设这 n-1 条权值最小的边刚好构成了一个环，那么就不是最小生成树。
+
+对于 4，含有 n 个顶点，假设选取另外 n-1 个顶点刚好构成环，那么就不是最小生成树。
+
+![6.4.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2tq0iJV7dwLTVwCUCBCwCK4S1FSmAACuRtrG-BrkFaZJdwNNb6dJgEAAwIAA3gAAz0E)
+
+本题应该选。
+
+对于 1，迪杰斯特拉算法不能使用负权边。
+
+对于 2，迪杰斯特拉算法求每一对顶点间的时间复杂度，这里要注意是每一对，也就是每一条路，需要求 n 次，所以应该是 O(n^3)。
+
+对于 3，属于背诵，是对的。
+
+![6.4.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB2xq0iLMqavCD5ZdzsJ-1vaJM1YXJQAC3xtrG-BrkFaMJp8i5Qv22wEAAwIAA3gAAz0E)
+
+第 10 题应该选 D。
+
+第 11 题应该选 I 和二，答案错了，三跟四都是错的，广搜也没办法。
+
+![6.4.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB21q0iO7rZuHOHYoEzoDgGtnwXTrYwAC4RtrG-BrkFZfGa50CGCXggEAAwIAA3gAAz0E)
+
+
+### DS 王道选择题 1 刷第 7 章
+
+### DS 王道选择题 1 刷第 8 章
 
 ## 计组王道选择题 1 刷（补）
 
@@ -6274,7 +6423,7 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ### 计组王道选择题 2 刷第 5 章
 
---------------
+---
 
 ## OS 王道选择题 2 刷
 
@@ -7393,7 +7542,7 @@ CSMA/CA 协议是先等待 DIFS 的帧间间隔，然后再进行一系列操作
 
 然后对于后面一题，很显然是忘记了。
 
-SIFS 是短帧间间隔，DIFS 是分隔每个会话的相当于，所以最后的长度应该是 SIFS<PIFS<DIFS，再不济也应该读题。
+SIFS 是短帧间间隔，DIFS 是分隔每个会话的相当于，所以最后的长度应该是 SIFS < PIFS < DIFS，再不济也应该读题。
 
 ![3.6.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADHmrDWzLaVkX-mF_eJNOkrVkAATMaQgAC9RFrG4BfIFa-mJYNx2mALQEAAwIAA3gAAz0E)
 
@@ -8123,7 +8272,7 @@ C11 (MDR)->M(MAR) MemW, MDRoutE
 
 ![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAdtqx2yKVXsqCuKFe0UZcLcm28U55QACUhBrGz_BOFYo25Q2feuGMAEAAwIAA3gAAz0E)
 
-```c 草稿
+```c
 func P1(){
   while(1){
     produce();
@@ -8617,52 +8766,52 @@ page 未命中说明不在内存，所以 tlb 和 cache 必不可能命中。
 (1)
 
 | 关键字 | 关键字乘 3 | 最大 | 模 |
-| --- | --- | --- | --- |
-| 7 | 21 | 21 | 0 |
-| 8 | 24 | 21 | 3 |
-| 30 | 90 | 84 | 6 |
-| 11 | 33 | 28 | 5 |
-| 18 | 54 | 49 | 5 |
-| 9 | 27 | 21 | 6 |
-| 14 | 42 | 42 | 0 |
+| ------ | ---------- | ---- | -- |
+| 7      | 21         | 21   | 0  |
+| 8      | 24         | 21   | 3  |
+| 30     | 90         | 84   | 6  |
+| 11     | 33         | 28   | 5  |
+| 18     | 54         | 49   | 5  |
+| 9      | 27         | 21   | 6  |
+| 14     | 42         | 42   | 0  |
 
 由装填因子可知长度为 10。
 
 所以最终应该是：
 
-| 下标 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 下标   | 0 | 1  | 2  | 3 | 4  | 5  | 6  | 7  | 8 | 9  |
+| ------ | - | -- | -- | - | -- | -- | -- | -- | - | -- |
 | 关键字 | 7 | 14 | 空 | 8 | 空 | 11 | 30 | 18 | 9 | 空 |
 
 (2)
 
 查找成功的概率：
 
-| 关键字 | 查找次数 |
-| --- | --- |
-| 7 | 1 |
-| 8 | 1 |
-| 30 | 1 |
-| 11 | 1 |
-| 18 | 3 |
-| 9 | 3 |
-| 14 | 2 |
-| 总比较次数 | 12 |
-| 成功平均查找长度 | 12/7 |
+| 关键字           | 查找次数 |
+| ---------------- | -------- |
+| 7                | 1        |
+| 8                | 1        |
+| 30               | 1        |
+| 11               | 1        |
+| 18               | 3        |
+| 9                | 3        |
+| 14               | 2        |
+| 总比较次数       | 12       |
+| 成功平均查找长度 | 12/7     |
 
 查找失败的概率：
 
-| 散列地址 | 比较次数 |
-| --- | --- |
-| 0 | 3 |
-| 1 | 2 |
-| 2 | 1 |
-| 3 | 2 |
-| 4 | 1 |
-| 5 | 5 |
-| 6 | 4 |
-| 总比较次数 | 18 |
-| 失败平均查找长度 | 18/7 |
+| 散列地址         | 比较次数 |
+| ---------------- | -------- |
+| 0                | 3        |
+| 1                | 2        |
+| 2                | 1        |
+| 3                | 2        |
+| 4                | 1        |
+| 5                | 5        |
+| 6                | 4        |
+| 总比较次数       | 18       |
+| 失败平均查找长度 | 18/7     |
 
 由于是 mod7，所以算到这里就结束了，总共是 18，也就是 18/7
 
@@ -9360,15 +9509,15 @@ int solve4(int A[], int B[], int n) {
     int s1 = 0, d1 = n - 1; // 序列 A 的起止下标
     int s2 = 0, d2 = n - 1; // 序列 B 的起止下标
     int m1, m2;
-    
+  
     while (s1 != d1 || s2 != d2) {
         m1 = (s1 + d1) / 2;
         m2 = (s2 + d2) / 2;
-        
+      
         if (A[m1] == B[m2]) {
             return A[m1]; // 两个中位数相等，直接返回
         }
-        
+      
         if (A[m1] < B[m2]) { // A 的中位数较小，舍弃 A 前半部分和 B 后半部分
             if ((s1 + d1) % 2 == 0) { // 元素个数为奇数
                 s1 = m1;     // 包含中间点
@@ -9515,7 +9664,7 @@ int k2=m+n;
 
 ![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA8Nqyi9u9iFh6s6Dq9rtJS_sWefwWQAC3xJrG364UVZDG8subEEaYQEAAwIAA3kAAz0E)
 
-```c 草稿
+```c
 cobegin{
   process 顾客i
   {
@@ -10708,7 +10857,6 @@ int solve3(int A[],int n){
     }
     return -1;
 }
-
 ```
 
 (3)
@@ -10815,7 +10963,7 @@ N=0
 
 解：
 
-```c 草稿
+```c
 cobegin
   参观者进程 i：
   {
@@ -11400,16 +11548,16 @@ bne 目标地址公式应该是：0804,8114H+4H+OFFSET✖️4。
 
 绘图如下：
 
-| 指令 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1. sll | IF | ID | EX | MEM | WB | | | | | | | | | | | | | | | | | | | | | | |
-| 2. add | | IF | s | s | s | ID | EX | MEM | WB | | | | | | | | | | | | | | | | | | |
-| 3. load | | | | | | IF | s | s | s | ID | EX | MEM | WB | | | | | | | | | | | | | | |
-| 4. add | | | | | | | | | | IF | s | s | s | ID | EX | MEM | WB | | | | | | | | | | |
-| 5. add | | | | | | | | | | | | | | IF | ID | EX | MEM | WB | | | | | | | | | |
-| 6. bne | | | | | | | | | | | | | | | IF | s | s | s | ID | EX | MEM | WB | | | | | |
-| 分支气泡 | | | | | | | | | | | | | | | | | | | | nop | nop | nop | | | | | |
-| 下轮 1 | | | | | | | | | | | | | | | | | | | | | | | IF | ID | EX | MEM | WB |
+| 指令     | 1 | 2 | 3 |  4  | 5 | 6 | 7 |  8  | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 |
+| :------- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 1. sll   | IF | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| 2. add   |    | IF | s |  s  | s | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| 3. load  |    |    |    |    |    | IF | s |  s  | s | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| 4. add   |    |    |    |    |    |    |    |    |    | IF | s |  s  | s | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |    |
+| 5. add   |    |    |    |    |    |    |    |    |    |    |    |    |    | IF | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |
+| 6. bne   |    |    |    |    |    |    |    |    |    |    |    |    |    |    | IF |  s  |  s  | s | ID | EX | MEM | WB |    |    |    |    |    |
+| 分支气泡 |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    | nop | nop | nop |    |    |    |    |    |
+| 下轮 1   |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    | IF | ID | EX | MEM | WB |
 
 可以注意，指令 6 从 EX 开始阻塞 3 个单位，恰巧使得编号 1 解决了数据冲突。
 
@@ -11467,7 +11615,7 @@ F 文件控制块的长度会发生改变，起始位置也会发生改变。
 
 解：
 
-```c 草稿
+```c
 func 生产者_i(){
   while(1){
     生产；
@@ -11649,7 +11797,6 @@ cache 本身的有效位占 1 位，采用回写法脏位占 1 位。
 
 存放 4K 个字的 cache 总计 4K/4=1K 的主存块，所以也就是 158K。
 
-
 ![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKRqz0E7on5Yy8RaGva_cVnDo1i0LAACZBNrG7fmeVYWqZoW6o0JqAEAAwIAA3kAAz0E)
 
 本题应该选 B。
@@ -11677,7 +11824,6 @@ cache 本身的有效位占 1 位，采用回写法脏位占 1 位。
 本题应该选 C。
 
 本题属于背书题，对于 A 和 B，有 3 类，不互锁，半互锁和全互锁；对于 C，同步信号必须得由设备总线提供。
-
 
 ![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKlqz0MKCS0anYp9EvULqFO8KIbd0QACbRNrG7fmeVYaMJU9NFzKMwEAAwIAA3kAAz0E)
 
@@ -11762,7 +11908,6 @@ S1 也不会限制用户申请资源的顺序，可以考虑系统资源充足�
 ![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLRqz0lX8cBDI4nMWeG3IC228JHspwACphNrG7fmeVZ87LpzVsytQQEAAwIAA3gAAz0E)
 
 本题应该选 C，属于背书题。
-
 
 ![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLVqz0lzRt1A6_-GEuz34N6glVdWHwACpxNrG7fmeVarz_9_NApqHgEAAwIAA3kAAz0E)
 
@@ -11892,3 +12037,169 @@ void solve(LNode* L,int n){
 时间复杂度：O(n)
 
 空间复杂度：O(n)
+
+### 408 2016 真题 2 刷
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0Fq0eN0Ex7lN2h0Q4O708TJ2jcQuQACpxBrG6jnkFYkqxM_rRESZQEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+高级语言程序转换成机器语言或者转换成汇编语言的过程称之为编译。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0Jq0eSWUv2y3b9GS1aMd0hhH0gtsgACqRBrG6jnkFaJUUHi01gc8wEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+short si = -32767;，由于 65536/2=32768，所以 si=1000,0000,0000,0001B。
+
+unsigned short usi 是强制转义，所以也就是 32768+1，也就是 D。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0Nq0eUtW3gcWjAecoNLBfpu6rroVQACqhBrG6jnkFbA5CNXE2At8AEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+由于是小端法，所以 40H 存储的是 88H，41H 存储的是 77H，以此类推。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0Rq0eV5aTJ_F4c6tAOgrkSiYKTCpAACqxBrG6jnkFbxy__lXi-OBgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+数据区大小为 1KB。块为 16B，一个块可以存储 4 个数据，又 1000 个数据肯定装不下整个 cache，所以只需要考虑当前即可。
+
+由于每缺失一次就可以访问 4 个数据，又由于 a[k] 一次访问 2 次，所以 8 次里缺失 1 次，最终应该是 1/8，也就是 C。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0Vq0eY6oowmv4yrcPzsMHa1ERywlgACrBBrG6jnkFZ_MlGPtxM3hAEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+5FFFH-4000H=1FFFH，也就是 0001,1111,1111,1111B，所以可以看到是 2^13B，也就是 8KB。所以 64KB-8KB=56KB。
+
+所以，56KB/(8K✖️4bit)=14。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0Zq0ei_Rdzmdpe5Dd1JJ1caJNW9JAACrhBrG6jnkFZH0PtdVP2xaAEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+本题问的是操作数的地址，变址寻址得到的是间址寻址的初值，间址寻址寻址一次是操作数的地址，得寻址 2 次才可以得到操作数，所以应该是 C。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0dq0ekMVIwn5TweD8qq_d8eJ7NEhQACrxBrG6jnkFYeR-ggmXeKPAEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+主存空间 4GB，也就是 2^32B，由于采用 32bit=4B 的指令字长，所以 PC 最短可以是 2^32B/4B=2^30，所以 PC 应该至少是 30，IR 应该至少是 32。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0hq0elj7nPo40ptzKG9Lq5MlX4r0gACsBBrG6jnkFa6pjj_0_tbjgEAAwIAA3kAAz0E)
+
+本题应该选 B
+
+数据冒险有 2 类，数据冲突和写后读。
+
+本题 I2 和 I3 之间存在写后读，而对于 I3 和 I4 是读后写，只要保证先读了就可以了。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0lq0en_ghi8TKcvSTLKVNMeBvAWgAACsxBrG6jnkFbVthUlyCEpcgEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+单周期不可能采用单总线。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0pq0eofMGnHv6AnQrFYrYFT9GbGMAACtBBrG6jnkFajKBB-Dq5oTwEAAwIAA3gAAz0E)
+
+本题属于背书题，应该选 A。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0tq0eq4b9hFsl53ufxA7urH4yguIwAC1RBrG6jnkFaVqGVbM16JjgEAAwIAA3kAAz0E)
+
+本题属于背书题，缺页属于异常中的故障，其他三个都是对的，应该选 A。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0xq0ervhhHMl0EhHIHa13lemPUWfAAC1hBrG6jnkFbVI1g7ReO5rQEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+对于 1，批处理用户不允许和用户计算机交互。
+
+对于 2，属于背书问题。
+
+对于 3，属于背书问题。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB01q0eyhrHm8SmtQUuTF5wq9E0Z_gQAC2xBrG6jnkFYgYhyf7ohbvwEAAwIAA3kAAz0E)
+
+本题应该选。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB05q0e23609fKCb_aa7e-xWmoDP_nQAC3hBrG6jnkFZ5HEtVIPT7zgEAAwIAA3kAAz0E)
+
+本题应该选。
+
+这类题首先应该往经典模型上套，可以摸出来是经典的
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB09q0fMHlXl5ykpFFZ-UIvveS1_McQAC-RBrG6jnkFZcFf3OmzmouwEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+属于背书题，访问位优先，所以访问位应该是 0，然后是 1，所以也就是应该选 A。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Bq0fOFv5qD0HVgCbu0Y0jx2J2rQAAC-hBrG6jnkFaakUkJLIX5JgEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 A，操作系统负责唤醒阻塞进程，而不是退出临界区的进程
+
+对于 B，显然如此
+
+对于 C，满足让权等待原则的在考纲里其实只有信号量方法
+
+对于 D，如果 TSL 在关中断下执行，那么事实上永远都不会获得锁。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Fq0fdcK-OPLKNAjkDmc0fJZlJl0gACORtrG-BrkFZQxEVeK9P7IgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+观察到短号为 2 的段长最多为 300，所以越界。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Jq0fe62Si2cDYDP5Co_KtArA6qOAACOxtrG-BrkFZan9sQXEuklgEAAwIAA3gAAz0E)
+
+本题应该选 A
+
+本题超纲，不过能做，工作集的概念是当前 t 向前 k 个单位，k 为窗口大小。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Nq0ffvuKkpYgr0Rf3Pxoj_q0zW1wACPBtrG-BrkFY0rRwWdOPt7wEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 A，局部变量是无所谓的。
+
+对于同一个进程内的线程才会互斥，不同进程的不会，所以 BD 排除。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Rq0fh82X5peOV37CoC0ygWeNVjlwACPhtrG-BrkFZZVu7OG9oNugEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 A，SPOOLing 技术是需要将数据存储在磁盘里的，而不是内存。
+
+对于 BC 显然。
+
+对于 D，应该是操作系统控制的。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Vq0fjI153pzhYtiN5Lmh9FtMSZzwACPxtrG-BrkFZjdGyOCduh3AEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+管程还能实现进程的同步。
+
+![33-41 图](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Zq0fkC-bklWU9hfsMhN3XOhnqpuwACQBtrG-BrkFYd4Z1bb2-fnQEAAwIAA3gAAz0E)
+
+![33-34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1dq0fkaeO8M4AABfIoskU20x4KWPA8AAkEbaxvga5BWCnuRmUTubuQBAAMCAAN5AAM9BA)
+
+第 33 题应该选 C，R1 是路由器，最高在网络层；R2 是交换机，最高在数据链路层；R3 是集线器，最高在物理层。
+
+第 34 题应该选 C。考虑香农定理，30=10log10S/N，S/N=1000，8000log2(1+1000)≈8000✖️10=80000，也就是 C。
+
+第 35 题应该选 D。
+
+第 36 题应该选 B。
+
+第 37 题应该选 B。
+
+第 38 题应该选。
+
+第 39 题应该选。
+
+第 40 题应该选。

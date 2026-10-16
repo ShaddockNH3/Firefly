@@ -140,6 +140,154 @@ seriesOrder: 7
 1. 被动变主动
 2. 并列句按照两个简单句处理
 
+## 小作文
+
+### 2014 小作文
+
+Suppose you are going to study abroad and share an apartment with John, a local student. Write him an email to
+
+1. tell him about your living habits, and
+2. ask for advice about living there.
+
+You should write about 100 words on the ANSWER SHEET.
+
+Do not use your own name. Use "Li Ming" instead.
+
+Do not write your address. (10 points)
+
+### 2015 小作文
+
+Suppose your university is going to host a summer camp for high school students.Write a notice to
+
+1) briefly introduce the camp activities, and
+
+2) call for volunteers.
+
+You should write about 100 words on the ANSWER SHEET.
+
+Do not use your name or the name of your university.
+
+Do not write your address. (10 points)
+
+### 2016 小作文
+
+Suppose you won a translation contest and your friend, Jack, wrote an email to congratulate you and ask for advice on translation. Write him a reply to
+
+1) thank him, and
+
+2) give your advice.
+
+You should write about 100 words on the ANSWER SHEET.
+
+Do not use your own name. Use"Li Ming" instead.
+
+Do not write your address. (10 points)
+
+### 2017 小作文
+
+Suppose you are invited by Professor Williams to give a presentation about Chinese culture to a group of international students. Write a reply to
+
+1) accept the invitation, and
+
+2) introduce the key points of your presentation.
+
+You should write about 100 words on the ANSWER SHEET.
+
+Do not use your own name. Use"Li Ming" instead.
+
+Do not write your address.(10 points)
+
+### 2018 小作文
+
+Suppose you have to cancel your travel plan and will not be able to visit Professor Smith. Write him an email to
+
+1) apologize and explain the situation, and
+
+2) suggest a future meeting.
+
+You should write about 100 words on the ANSWER SHEET.
+
+Do not use your own name. Use"Li Ming" instead.
+
+Do not write your address. (10 points)
+
+### 2019 小作文
+
+Suppose Professor Smith asked you to plan a debate on the theme of city traffic.Write him an email to
+
+1) suggest a specific topic with your reasons, and
+
+2) tell him about your arrangements.
+
+You should write about 100 words on the ANSWER SHEET.
+
+Do not use your own name. Use"Li Ming" instead.(10 points)
+
+### 2020 小作文
+
+Suppose you are planning a tour of a historical site for a group of international students. Write them an email to
+
+1) tell them about the site, and
+
+2) give them some tips for the tour.
+
+You should write about 100 words on the ANSWER SHEET.
+
+Do not use your own name. Use"Li Ming" instead.(10 points)
+
+### 写信模板 - 回信
+
+Dear [称呼],
+
+It was such a pleasant surprise to hear from you, and I truly appreciate your [kind words / thoughtful invitation / prompt email]. In response to what you mentioned, I would be more than delighted to [承接任务：share some insights / outline the key details].
+
+（译：收到您的来信真是一个令人愉悦的惊喜，我由衷感谢您的美意/邀请。顺应您信中所提之事，我非常乐意分享一些见解/勾勒出核心细节。）
+
+To give you a clearer picture, here is how I view the matter:
+
+（译：为了给您一个更清晰的脉络，我是这样考量的：）
+
+【肉块 1】On the one hand, priority should be given to [要点 1：比如词汇积累 / 展出主题 / 机器的核心算法].
+
+【肉块 2】Equally important is [要点 2：比如定期动手实践 / 互动环节设计], which will surely [带来某
+种良性结果].
+
+【肉块 3 - 可选】As an added bonus, it would be wonderful to [要点 3：升华点].
+
+I genuinely hope this clarifies things a bit. Please let me know if you would like me to elaborate on any particular part. Looking forward to our next interaction!
+
+（译：由衷希望这些内容能有所启发。若您希望我在某个细节上进一步展开，请随时告知。期待我们接下来的互动！）
+
+Warm regards,
+
+Li Ming
+
+### 写信模板 - 发信
+
+Dear [称呼],
+
+I hope this note finds you well. With [关键事件：our shared apartment date / the upcoming trip / our scheduled meeting] just around the corner, I am reaching out to [动作核心：synchronize a few details with you / consult your advice / propose a slight adjustment to our plan].
+
+（译：见信安好。随着……日期临近，我特意给您发信，想与您同步一些细节 / 咨询您的建议 / 对我们的计划提出一点微调。）
+
+To ensure everything proceeds seamlessly, I have organized the essentials as follows:
+
+（译：为了确保一切衔接顺畅，我将核心要项梳理如下：）
+
+【要点 1】First, as far as [方面 1：如 my living habits / the itinerary] is concerned, [具体展开 1~2 句].
+
+【要点 2】Meanwhile, I would be immensely grateful if you could shed some light on [方面 2：如 local customs / the specific timeline].
+
+【肉块 3 - 可选】As an added bonus, it would be wonderful to [要点 3：升华点].
+
+Feel free to voice your thoughts if anything needs fine-tuning. Thank you so much for your understanding, and I cannot wait to [期待点：meet you in person / see this event flourish].
+
+（译：若有任何需要微调之处，请随时提出。十分感谢您的体谅，我迫不及待想与您当面相聚/见证活动圆满。）
+
+Yours sincerely,
+
+Li Ming
+
 ## 单词
 
 - come to terms with sth：接受（令人不快的事实）
