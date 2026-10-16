@@ -10916,6 +10916,11 @@ TCP。
 
 ### 408 2014 真题 2 刷
 
+- 147
+- 第 44 题 -1，应该把通式写出来
+- 第 45 题 -1，load 指令问题，这里的 load 指的是数组，而不是代码
+- 第 46 题 -1，最终的文件长度块大小没 -4B
+
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBD1qzRkBOEJpt1a_8FWeNBu-ena-JQACpA9rG8y1aVY4o8vqsKAdsAEAAwIAA3gAAz0E)
 
 本题应该选 C。
@@ -10990,7 +10995,7 @@ d,e,b,x,a,c，所以左右线索分别指向 b 和 a，也就是 D。
 
 ![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHNqzhLKMN2Fh_cXacGW98uEIMghHgACrxVrG7fmcVYq73vg8RiRUgEAAwIAA3kAAz0E)
 
-本题应该选 3。
+本题应该选 B。
 
 观察到 9 和 1，所以 d 不可能是 1。
 
@@ -11138,7 +11143,7 @@ B0C0,0000H=1｜011,0000,1｜100,0000,0000,0000,0000,0000B.
 
 ![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBE9qzc2awdXbKDhVO-fOwKbxQy_7mQACARFrG8y1aVZn0if8mdzGPgEAAwIAA3gAAz0E)
 
-本题应该选。
+本题应该选 A。
 
 对于 A，读磁盘操作完成的意思是 IO 完成，操作系统需要让其从阻塞态变成就绪态，所以 A 必然是需要执行的。
 
@@ -11323,7 +11328,7 @@ int solve(TNode* T){
 
 (2)
 
-
+略。
 
 (3)
 
@@ -11367,7 +11372,78 @@ Metric：10
 
 ![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGFqzdyJjH7dJzHo7O3oguX1vSR45wACNRFrG8y1aVZaXV8Pu59g_wEAAwIAA3kAAz0E)
 
+解：
+
+(1)
+
+字节。
+
+因为地址变号 1 和地址编号 2 之间差 4H，而编号 1 的机器代码占 4B，4/4=1，所以编址单位为字节。
+
+(2)
+
+4B。
+
+因为 R2 种存储的是 i 的信息，i 左移两位也就是✖️4，所以也就是 4B。
+
+(3)
+
+OFFSET 应该是 -6。
+
+bne 目标地址公式应该是：0804,8114H+4H+OFFSET✖️4。
+
+～～占位符～～
+
+这一步没写，最后应该指出 (PC)+4H+OFFSET✖️4。
+
+(4)
+
+绘图如下：
+
+| 指令 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1. sll | IF | ID | EX | MEM | WB | | | | | | | | | | | | | | | | | | | | | | |
+| 2. add | | IF | s | s | s | ID | EX | MEM | WB | | | | | | | | | | | | | | | | | | |
+| 3. load | | | | | | IF | s | s | s | ID | EX | MEM | WB | | | | | | | | | | | | | | |
+| 4. add | | | | | | | | | | IF | s | s | s | ID | EX | MEM | WB | | | | | | | | | | |
+| 5. add | | | | | | | | | | | | | | IF | ID | EX | MEM | WB | | | | | | | | | |
+| 6. bne | | | | | | | | | | | | | | | IF | s | s | s | ID | EX | MEM | WB | | | | | |
+| 分支气泡 | | | | | | | | | | | | | | | | | | | | nop | nop | nop | | | | | |
+| 下轮 1 | | | | | | | | | | | | | | | | | | | | | | | IF | ID | EX | MEM | WB |
+
+可以注意，指令 6 从 EX 开始阻塞 3 个单位，恰巧使得编号 1 解决了数据冲突。
+
+根据图分析，数据相关：编号 2,3,4,6；控制冒险：6。
+
+根据图所示，指令 1 对 R2 的访问在时钟 5 的时候就写回了，下一次访问 R2 是 15，在此期间并没有再写 R2，所以不会因为数据阻塞。
+
 ![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGJqzdyjU1KaJ-FAdOK_Ze4-I7I42QACNhFrG8y1aVbJ9-DwdOVcSAEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+1000
+
+(2)
+
+cache 16 行，和主存交换块大小 32B，也就是 16✖️32B=512B。
+
+本题问的是指令 cache 的命中率，由于机器代码已经调入主存但不在 cache 内，所以需要进行一次调入。而整个指令总共有 08048100H-080408114H，也就是 18H=24B，可以存储在 512B 内，所以只会发生 1 次 cache 缺失，也就是刚调入的时候的第 1 条指令。
+
+所以总共运行 6000 次只缺失 1 次，也就是 5999/6000=99.98%
+
+(3)
+
+add RI, RI, R5 可能会发生溢出。
+
+～～loop: s11 R4, R2, 2 可能会导致缺页。～～
+
+load 指令会导致缺页（这里的缺页指的是缺数据，而不是命令）
+
+对于数组 A 的访问，只需要读取 1 个磁盘调入页表；
+
+由于 TLB 第一次不命中，需要调入，又由于所有数组元素都在一页，所以第一次的时候访问 TLB 不命中，第二次重新访问，也就是 1001 次。
 
 ![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGNqzdy1xitqurSeBvDd4IszLPvCrwACNxFrG8y1aVbq_wceCXBTnAEAAwIAA3kAAz0E)
 
@@ -11375,15 +11451,17 @@ Metric：10
 
 (1)
 
-采用连续分配方式，最长是将后 70 个记录读入，然后向后写一个单位，需要访问 140 个磁盘，写入自己花费 1，所以总共花费 141 个读入磁盘。
+采用连续分配方式，最短是将 29 个记录读入，然后向前移动一个单位，然后写入本身。需要访问 59 个磁盘。
 
-F 文件控制块的长度会发生改变。
+F 文件控制块的长度会发生改变，起始位置也会发生改变。
 
 (2)
 
 采用链式分配，读入前 29 个，然后写入第 30 个之后，修改第 29 个的指针，所以总计 31 次。
 
-每个存储块大小为 1KB，4 字节存放链接指针，4B=32bit，也就是 2^32 个磁盘块，所以最大长度应该是 2^32KB，也就是 4TB。
+每个存储块大小为 1KB，4 字节存放链接指针，4B=32bit，也就是 2^32 个磁盘块，～～所以最大长度应该是 2^32KB，也就是 4TB。～～
+
+最大长度应该是 2^32✖️(1024-4)B=4080GB。
 
 ![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBGRqzdzEOrtevENwkzF-WBXNMBqJXAACOBFrG8y1aVZ3GdXZcZeWeQEAAwIAA3kAAz0E)
 
