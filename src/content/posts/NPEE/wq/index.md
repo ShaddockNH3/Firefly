@@ -3272,11 +3272,11 @@ y_h=(C_1+C_2 x) e^x
 
 ### 张宇 30 讲基础线代 2 刷第 3 章
 
-![3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4tqyQZo9yYb3V1sFTDgCAUYrOaFWwAC1xNrG6T-SFZDSRHhSbzXwwEAAwIAA20AAz0E)
+![3.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4tqyQZo9yYb3V1sFTDgCAUYrOaFWwAC1xNrG6T-SFZDSRHhSbzXwwEAAwIAA20AAz0E)
 
-![3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4xqyQaCo8C6HxPsDQ-V-y3z6JCH0QAC2BNrG6T-SFa8ZJ0lqCVD2gEAAwIAA3gAAz0E)
+![3.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4xqyQaCo8C6HxPsDQ-V-y3z6JCH0QAC2BNrG6T-SFa8ZJ0lqCVD2gEAAwIAA3gAAz0E)
 
-![3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA41qyQabWvmF8fJyf8xtwlzl5-Je4gAC2RNrG6T-SFYhuiizmKnLqgEAAwIAA3gAAz0E)
+![3.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA41qyQabWvmF8fJyf8xtwlzl5-Je4gAC2RNrG6T-SFYhuiizmKnLqgEAAwIAA3gAAz0E)
 
 这三题 1 刷的时候直接跳了，2 刷的时候想做，但是没想出方法。
 
@@ -3292,27 +3292,183 @@ y_h=(C_1+C_2 x) e^x
 
 ![3.9 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA4pqyQVc1sCZx1oY7mJuPoXcAAG2zggAAtUTaxuk_khWGl-A5NSl14EBAAMCAAN4AAM9BA)
 
+这三题做一个标记，回头必须回来再看。
+
+![3.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBx5q0cOuCLJBoPA6t2mjU-foinMtowACTxBrG6jnkFYVWoveuQKSqwEAAwIAA3gAAz0E)
+
+注意本题是不正确的一项。CD 可以用秩不等式判断出 D 是对的。AB 选错为非常低级的错误。
+
+![3.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBx9q0cPSg1l_wp-CJ63_KloxdKHPJQACUBBrG6jnkFajEQ2ymMaqJwEAAwIAA3gAAz0E)
+
+第 6 题没做出来，A 和 D 正确的大前提是 A 和 B 同型。对于向量等价，可以有三种判别法：第一，双向表示；第二，单向表示 + 秩相等；第三，三秩相等。
+
+同型指的是 m×n 一样
+
+二刷错题本题依旧错误，需要格外重视，没有意识到同形。
+
 ### 张宇 30 讲基础线代 2 刷第 4 章
+
+![4.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBhdq0JtYJXKrfRBd3a8kclCynrAE5gACZxNrG6jniFb2lfd0rHH0kAEAAwIAA3gAAz0E)
+
+![4.1.6 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACByFq0cP8tH3tl3Q3m3pP0MCi2M867QACURBrG6jnkFZlZl1LDx6QBQEAAwIAA3gAAz0E)
+
+![4.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBhhq0Jtk9OOGWegicpPAb8l6rySt3wACaBNrG6jniFYw97_qgOV9wgEAAwIAA3gAAz0E)
+
+![4.1.7 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACByNq0cYOassw5Ee58VxpZ2Hpg30HLQACUhBrG6jnkFZC1eo4wiay1QEAAwIAA3gAAz0E)
+
+![4.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACByRq0cYggQIsvXtmFCKk3LbRyBvMdgACUxBrG6jnkFZ0b54cd2L-fwEAAwIAA3gAAz0E)
+
+本题如果采用原始的方法去做的话，反而可以做对，我这道题用解反过来构造化简后的增广矩阵，结果就是构造反了。本题直接将解代入也可以做出来。
+
+然后，反过来构造的时候尤其需要注意，一定要搞清楚行和列的意思。列意味着几个变量，显然这道题是 4，那么行是多少？不知道，但是一定有效行是 3 行！而不是 4 行。
+
+![4.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACByVq0cY1sAPlzyInUdGbLCHXw2BImQACVBBrG6jnkFbe3HDNIIMQiwEAAwIAA3gAAz0E)
+
+本题需要辨析清楚基础解系，等价向量组之间的概念及其延申。尤其需要注意，等价向量组不一定要和原向量组个数相等，只需要保证每一个都可以由对方组合即可。
+
+![4.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACByZq0cdU3nzuys8W7Rla5XDTVf0hMgACVxBrG6jnkFY5D5TVNJ_nigEAAwIAA3gAAz0E)
+
+本题没想到好的方法。事实上，本题又陷入了三秩相等的逻辑，n 是方程组的解，那么显然满足最下面一条，也满足 Ax=0，所以 n 可以用ε1 和 2 表示，所以行列式为 0，即可以解出来。
+
+![4.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBydq0cdq1oJ0uidjBXkrM7tH1An55AACWBBrG6jnkFZ4o_CyeYG-vwEAAwIAA3gAAz0E)
+
+本题问题在于，第一，求第一问的时候急躁了，4 个 x 只写了 3 个，第二，应该研究一下同解除了三秩相等之外的两个方法。例如我把我的解代入你的方程 + 秩相等即可。
 
 ### 张宇 30 讲基础线代 2 刷第 5 章
 
+![5.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBiNq0J2glr4P0bVAyvywk2f0C1whSwACdhNrG6jniFZ9O5P-QGurGgEAAwIAA3gAAz0E)
+
+本题采用特值法，没有意识到 A\*与 A 的关系。A\*与 A 的特征向量相同，则 3/2。
+
+![5.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBypq0cfbY-1OBrVRzbvsmqcrhOwbXQACWhBrG6jnkFYYWZNGO98-swEAAwIAA3gAAz0E)
+
+求 a，Q。
+
+本题的想法一直是把 A 想办法先解出来特征值再去求，但是这条路是不通的，原因主要是这几个。第一，这道题直接求特征值十分复杂；第二，本题没有告诉你他的第 1 列特征值是单根且其他特征值是重根。
+
+所以这道题应该回到最朴素的想法，Aa=ka 去解。果不其然，解出来的λ没有重根。
+
+![5.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBi1q0J76eyndX2bkdgjpb-3AOJLhbQACgxNrG6jniFbEkdPbUm7a5AEAAwIAA3gAAz0E)
+
+本题对与 A 相关的特征值和特征向量不熟悉，在做这题的时候忘记了。P-1AP 所对应的特征值为λ，所对应的特征向量为 P-1λ，对于本题对应进去即可以得到 B。
+
+![5.2.6](image/index/1792133453995.png)
+
+与一刷时一样的错误，没有考虑到 A*的行列式不能套用 A 的行列式去解。
+
+![5.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBy5q0cll7x1dZgABf0Ezl7YXdt1-5NkAAmAQaxuo55BWDZjXQhWsSpwBAAMCAAN4AAM9BA)
+
+这里应该是特征值求错了，想当然是 -1？有这方面因素，但是更多的，|A|=-1 抄过来的时候抄错了。
+
 ### 张宇 30 讲基础线代 2 刷第 6 章
+
+![6.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBy9q0cmDEQeJl5enNTUcpudq-nqrFAACYRBrG6jnkFYIActgHsj7dQEAAwIAA3gAAz0E)
+
+想当然直接选了，而没有切实去算，属于理解错误 + 嫌麻烦没有去算。这里的特征向量即便怎么取，取 2 也好，还是取 -1。都不会影响到特征值，只有位置会影响。
+
+![6.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzBq0cmXV7qHSzzRcRqVutKP9jfEPgACYhBrG6jnkFbV3psn-FzCXAEAAwIAA3gAAz0E)
+
+本题完全没想到怎么做，还是想着拆。除了拆之外还有什么做法？这里的意思是说换元法。这种方法是可能会导致不可逆，所以只要让凑出来的这个式子不可逆就好了。
+
+![6.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBjpq0KBSZkYc145qYyn4PN0Wd9g0igAClxNrG6jniFaFO6_Ppw4TzAEAAwIAA3gAAz0E)
+
+低级计算错误，这道题就是仗着计算简单没去算，4-5t^2-4-4t>0，结果跳步化简化简完变成了 t(5t-4)<0。
+
+![6.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzJq0cpC6t-j-94oUNeGYhp4N2RxpQACZRBrG6jnkFbSqYuuPd4iBQEAAwIAA3gAAz0E)
+
+关于这道题，不知道为什么是这个意思。比如说，假设存在一项 x1，那么这个东西其实就不是二次型。
+
+![6.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzNq0cpY_kR3ypJ9uqec5M-IEIg8GgACZhBrG6jnkFbMg0ukZhom7wEAAwIAA3gAAz0E)
+
+低级计算错误，本题没做第 2 问，不过对于第 1 问，因式分解的时候没有考虑好正负号。
 
 ## 张宇 1000 基础 2 刷
 
 ### 张宇 1000 基础 2 刷第 1 章
 
+![1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzRq0crYvhZGBwT8MHiquIXQo5PwCwACZxBrG6jnkFYx2yw-RUgFvQEAAwIAA3gAAz0E)
+
+属于低级错误，x-pi 没代入 sinx 里算。
+
+![1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzVq0crquDrt8wL5jKrQ7awHbG6fcQACaBBrG6jnkFYKP8yhVkPRVQEAAwIAA3gAAz0E)
+
+做的是对的，但是还是放在这里。主要的问题就是，在进行 1+a 的时候，不是直接 1+o(x)，而是 1+a，然后下面的乘上去
+
+![1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzZq0cr6GsFpwh94hY-Z6c2wpkTp0gACaRBrG6jnkFbKc5IkxT3VDgEAAwIAA20AAz0E)
+
+属于低级错误，泰勒公式背错了，注意 n(n-1)/2，这个/2 忘了。
+
 ### 张宇 1000 基础 2 刷第 2 章
+
+![2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzdq0csNotsMiEzVxVhCF7woRaTL3QACahBrG6jnkFZTE1s0wL5VKwEAAwIAA20AAz0E)
+
+本题错选为 D。想错了当且仅当（算想当然的低级错误）。本题当且仅当应为 1，而不是 0。
 
 ### 张宇 1000 基础 2 刷第 3 章
 
+![3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzhq0ctUgDHhxDVOzsd2IH4a74rFsQACaxBrG6jnkFb5G6NocE7jLwEAAwIAA20AAz0E)
+
+低级错误，1-cosx 等价无穷小为 1/2 的 x^2，而不是 x^2。
+
 ### 张宇 1000 基础 2 刷第 4 章
+
+![4.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzlq0ctoyKqeZ2kJY0hvbIiFzfgRPwACbBBrG6jnkFYyEWjTZUFRLAEAAwIAA20AAz0E)
+
+低级错误。本题错误原因在于当 t=0 代入的时候，y 并不是 0，而应该计算出对应的值。
 
 ### 张宇 1000 基础 2 刷第 5 章
 
+![5.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkZq0KNukv4WzIn5CQJmW5YNOcpZ6wACrBNrG6jniFaQKwbtQvbyMwEAAwIAA3gAAz0E)
+
+本题错选为 B。其实到这里为止，最终是理解对了，但是呢，想当然了，这道题是 f’’，而不是 f’的函数。
+
+做这种题要耐心。
+
+错题重刷再次总结一下，
+
+如果题目给的是 f 和 x 的关系，那么很难判断出拐点，对于极值点，直接观察局部最值即可，对于零点直接观察和 x 轴的焦点即可。
+
+如果题目给的是 f'和 x 的关系，那么可以通过 f'和 x 的交点（需要变号）或者无穷变号，可以判断出是极值点，可以通过 f' 的极值（包括无穷）判断拐点。
+
+给的是 f''和 x 的关系，观察其两边变号的 0 点或者无穷点即可。
+
+本质是要看清楚是什么关系。
+
+![5.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBztq0czgF2eeT44PN_6QXvHMQO2XxwACbRBrG6jnkFbNqylf53xLKQEAAwIAA3gAAz0E)
+
+本题属于低级错误 + 不会做，排除法可以显然知道 A 必然是错的，但是我在排除了 BD 后选了 A。
+
+从曲率圆的定义出发，显然可以得到 y=1，y’=1，|y’’|=2。但是这一步之后就没法推下去了，因为不知道是取 2 还是 -2。根据曲率圆定义，该点的导数与导数的导数和曲率圆一致，所以可以得到 y’’=2。尤其需要注意，因为泰勒展开的时候，第 3 项是 1/2，所以最终 c=-1。
+
 ### 张宇 1000 基础 2 刷第 6 章
 
+![6.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBzxq0cz4niQAAc915GWsRtYtn0W7jZ8AAm4Qaxuo55BWiIhxJFQg-aYBAAMCAAN4AAM9BA)
+
+本题错选为 B。属于低级错误，和 16 题类似的，算着算着忘了自己在做什么。我的方法是求 x-xlnx，其中 x 是 b/a，也就是当它小于 0 的时候，也就是 b/a>e 的时候，而不是在算本来的和这个函数有 2 个交点。忘记求什么是一个很严重的问题。
+
+![6.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBz1q0c0MAAGwVx1qp7Z64zA6rBs4Nu8AAm8Qaxuo55BWd99n2nGyE3gBAAMCAAN4AAM9BA)
+
+第 12 题没有理解清楚泰勒展开。事实上对 sinx 在 x=0 处的展开，并非是根据已知公式得出最终结论，而是根据泰勒公式本身得到，也就是说，存在 x^2 项。
+
+第 13 题属于低级错误，求到三阶导的时候，忘记加-。
+
+![6.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBz5q0c0hOu__hO7u6nk-uAABYwLy5uUAAnAQaxuo55BWTKw3zatVX7QBAAMCAAN4AAM9BA)
+
+本题错选为 D。属于低级错误，忘记自己要做什么了。显然，k=x/e-lnx，求出来图像长啥样了之后，我们应该求的是 k 的与函数的交点，而不是求其本身全>0 而导致的没有零点。
+
+![6.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0Bq0c1JGSbpV-cDbZQ8aze6euYAATUAAnIQaxuo55BWNXPAkUwP0cABAAMCAAN4AAM9BA)
+
+本题错选为 C，理解错罗尔原话与罗尔定理的区别。对于罗尔原话，是从底向上，对于 f(n)(x) 不变号且不为 0，n 的系数即为 f(x) 至多有 n 个零点。从上到下为罗尔定理，为存在以及至少。
+
+不要想当然，认认真真分析，已知条件是让你用罗尔定理的，用完之后是存在，而不是唯一。
+
 ### 张宇 1000 基础 2 刷第 7 章
+
+![7.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBz9q0c0zm4OhX4P8NRP7f4TKo_hmtgACcRBrG6jnkFY86riQffW-cgEAAwIAA3gAAz0E)
+
+第 4 题没想到圆柱体的表面积不只是有侧面积，还有底面积。
+
+第 5 题则是做出来 5/10=a/10，然后脑子抽了选了 B。
 
 ### 张宇 1000 基础 2 刷第 8 章
 
@@ -3993,6 +4149,11 @@ $(b-a)/n * (a+(b-a)i/n)$
 ## 27 张八
 
 ## 数学真题 2 刷
+
+## 数学标记题
+
+1. 线代的秩不等式证明
+2. 牛莱公式的应用
 
 ## DS 王道选择题 1 刷（补）
 
