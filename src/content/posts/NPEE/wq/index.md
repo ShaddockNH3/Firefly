@@ -3719,7 +3719,7 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 ## 27 李 6
 
-- 完成时间：20261008-20261015
+- 完成时间：20261008-20261018
 - 平均分：
 - 平均作答时间：
 
@@ -3972,7 +3972,7 @@ $\text{tr}(NM) = \sum_{j=1}^n (NM)_{jj} = \sum_{j=1}^n \sum_{i=1}^m N_{ji} M_{ij
 
 - 完成时间：20261014
 - 分数：135
-- 作答时间：180-15
+- 作答时间：150+30
 
 写了 150min，花了 30min 检查了一下选填，检查出来 2 填空，但是选填还是 -15。
 
@@ -4019,6 +4019,106 @@ $\text{tr}(NM) = \sum_{j=1}^n (NM)_{jj} = \sum_{j=1}^n \sum_{i=1}^m N_{ji} M_{ij
 本题就是理解错题目意思了，这道题的意思是求 a，而不是求 n，我理解成求 n 了。所以我猜了一个 n=1 进去，n=1 代入进去也就是 a 的值。这题不应该。
 
 退一步来说，也应该是参变分离然后求导，其实就非常简单了。
+
+### 27 李 6 卷 5
+
+- 完成时间：20261016
+- 分数：118
+- 作答时间：150（没检查）
+
+怎么说呢，卷 4 和卷 5 其实都算是没怎么检查的。然后卷 5 这份的大题稀烂，我本以为大题是我的优势，没想到这份卷子大题烂到了一个程度。
+
+选填 -10，这个先不管。
+
+然后大题的第一题，+-号错了，-4，第 19 题整道题积分区间和要求什么看错了，-10，第 21 题整道题抄错了，并且微分方程的设法又错了，-8。
+
+怎么说呢，我认为一方面还是态度问题，态度太差了。这几份卷子都不是一气呵成结束的，第二就是低级错误仍然很明显，你看这份卷子，我觉得错的还是那几个一模一样的问题。这份卷子绝对不难，大题扣的 22 分我觉得全部都是低级错误。
+
+对于微分方程设三角函数的特解，错了无数次了。y*=Acoswx+Bcoswx，这个 A 和 B 是不一样的，这个真的错了无数次。
+
+然后第二就是经典的想当然积分区间，以及经典的想当然认为是算绕 x 的体积，这道题就是算表面积。
+
+以及复合求导问题。
+
+还是没有算一步检查一步，或者更准确的说，其实检查了，也检查出一些问题，但是更多的问题没有检查出来。
+
+你说这种问题有什么必要讲吗，我觉得没有，因为这种问题，你只要稍微检查一下，就知道了。
+
+而且确实现在实实在在 150min 写下来，只是刚刚好写完，然后也没检查，按照我这份卷子 -22 的大题量，最后 30min 即便是我全都知道我错哪了，也检查不完了。
+
+回顾了一下，那么现在的问题就是，选填现在扎扎实实的花了 60min 附近，但是大题有点压缩时间了。大题老老实实均匀分布给 75 min 这样子，然后留 15min 给自己检查。
+
+从明天开始，差不多就这样。选填压一下时间，压到 50min 这样，然后大题给 80min 差不多，反正加起来 2 个半小时必须得匀出来至少 15min 的时间检查一遍选填。
+
+现在非方法性失误错的还是太多了，我觉得一方面还是有点怪作息，今早状态其实也一般，而且故意没开空调，锻炼心理压力在闷热环境下答题。
+
+总结一下，进步空间很大，尤其是计算。这类计算问题我觉得我在写早年真题的时候基本就没碰到过啊？那为什么会变成这样呢？
+
+明天直接开 2021 年真题，先不写 27 李 6 卷 6 了，这份周日写。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB25q0jhf1KWiHm-gqRuDnHSRt7kfagAC_htrG-BrkFbjtKAmbRksiQEAAwIAA3gAAz0E)
+
+特征值一样 $\nRightarrow$ 相似，因为算出来的特征向量可能有些缺腿有些不缺腿）
+
+相似 $\nRightarrow$ 可对角化，缺腿相同也是相似。
+
+本题属于是对概念理解不清晰导致的。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB29q0jiEFqUDLusgEH6OqwUq1FYe-gAC_xtrG-BrkFa-cCw-qFVHQQEAAwIAA3gAAz0E)
+
+确实不会，这道题先跳，回头再来看。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3Bq0jkr4eHEttl_GudDhtE8qBnhLwADHGsb4GuQVrIwLyUWIKmRAQADAgADeAADPQQ)
+
+本题 -4.
+
+低级计算错误。本题错误原因在于对 1/sin(1/x) 求导求错，最后应该算出来是 + 的，但是少乘了一个 -，最后导致错了。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3Fq0jmI0tf_7zSHlEuqP62q7yAprwACARxrG-BrkFZcssfa031yNgEAAwIAA3kAAz0E)
+
+本题 -10.
+
+低级计算错误 + 积分区间思考错误。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3Jq0jn76Yy62CByMXKyNChnXKGqbgACAhxrG-BrkFZ9MR8qb8K4_AEAAwIAA3gAAz0E)
+
+本题 -8.
+
+低级计算错误（因为漏抄了一个 2），以及计算过程中 y* 设错了。
+
+### 27 李 6 卷总结
+
+感觉很猎奇来的，卷子很简单，但是我感觉我做得很差。
+
+主要还是计算问题，计算问题很大。
+
+但是我也不知道要做什么，我感觉第一方面就是在意我的常错点，牛莱公式、积分区间以及微分方程的特解，第二方面就是做一步算一步。
+
+以后在做卷子之前，每张卷子的开头都要把这三个名词写上去，最经常的易错点就是这三个了。
+
+此外，就像遗憾邂逅说的那样，最后还是得看吸收。一份卷子你第一次考 60，第二次考 140，就比那些第一次考 120，第二次考 130 的吸收的好。
+
+最重要的是把握心态，好好吸收，以及下次不允许再犯同类错误了。
+
+同类错误非常严重。
+
+## 数学近年真题（21-26）1 刷
+
+- 完成时间：20261017-20261023
+- 平均分：
+- 平均作答时间：
+
+### 2021 真题
+
+### 2022 真题
+
+### 2023 真题
+
+### 2024 真题
+
+### 2025 真题
+
+### 2026 真题
 
 ## 880 综合 2 刷
 
@@ -4147,8 +4247,6 @@ $(b-a)/n * (a+(b-a)i/n)$
 ## 24 超越 4-10
 
 ## 25 超越
-
-## 数学近年真题（21-26）1 刷
 
 ## 660 1 刷
 
@@ -4455,10 +4553,145 @@ BD。
 
 ![6.4.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB21q0iO7rZuHOHYoEzoDgGtnwXTrYwAC4RtrG-BrkFZfGa50CGCXggEAAwIAA3gAAz0E)
 
+本题应该选 D。
+
+对于 1，有向图存在环路，则必不可能存在拓扑排序。
+
+对于 2，拓扑排序暂存入度为 0 的点可以使用队列也可以使用栈，典型的例子是使用 BFS 入队实现拓扑排序，第二是利用 DFS 退栈的时候逆向输出。
+
+对于 3，如答案图所示。
+
+![6.4.13 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3Nq0xV7E2ZYwCx7fcz_c8YvkI7ZDgACChlrG-BrmFZEg_oWoenpzAEAAwIAA3gAAz0E)
+
+对于 4，出度为 0 的结点不唯一，那么这些结点就都可以作为拓扑排序的终点。
+
+![6.4.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3Vq0xW0saBX7A88m0c4GIClctxFAQACCxlrG-BrmFZhl-Zw7WgLpgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 A，有多个出度为 0 的点，恰恰说明了这些点是拓扑排序的终点。
+
+对于 B，很容易想到环，但是如果是先笔直的出去然后再接一个环，这样就不是强连通图了。
+
+对于 C，有多个入度为 0 的点，恰恰说明了这些点是拓扑排序的起点。
+
+对于 D，含有顶点数大于 1 的连通分量，意思是必然有一个环。
+
+![6.4.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3Zq0xZ8eorlWjd5Vru-EO-nxuL4XwACDBlrG-BrmFY4XnPa7LdqkwEAAwIAA3gAAz0E)
+
+本题应该选 C。如果这道题去掉了有序两个字，那么应该选 D。
+
+意思就是，本来完成任务 1 之后才能完成任务 2，然后故意把任务 1 标记为 2，任务 2 标记为 1。
+
+![6.4.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3dq0xfVj2L4qcNKueUeOlGqNzxU4AACDRlrG-BrmFYO8bfF99uk3wEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+关键路径长度是最长的，按照题设，答案应该是 18。
+
+![6.4.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3hq0xgkkdgudbC1Z23hAAE-pdG4F0EAAg4Zaxvga5hWc3exhGs4ywABAQADAgADeAADPQQ)
+
+本题应该选。
+
+对于 A，关键路径是以拓扑排序为基础的，显然正确。不过关键路径唯一推导不出来拓扑排序唯一，拓扑排序唯一也推导不出来关键路径唯一，因为关键路径并不需要所有结点都包含，重点在于路径。
+
+对于 B 和 D 说法正确，对于 C 胡言乱语。
+
+![6.4.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3lq0xkxf9KZ9E4Q-lCBh74D8WTecwACEBlrG-BrmFbjQHIncOAI-AEAAwIAA3gAAz0E)
+
+C
+
+![6.4.36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3pq0xlLe693yW4tV6SWOCKV14X8DQACEhlrG-BrmFYRJ2AAAcWoLKEBAAMCAAN4AAM9BA)
+
+B
 
 ### DS 王道选择题 1 刷第 7 章
 
+![7.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3tq0xmj0mLzaegLoAkHfeLwfl_ukAACExlrG-BrmFZ8XnhNgzgsiQEAAwIAA3gAAz0E)
+
+本题应该选 B，单纯想当然没有算导致的。
+
+![7.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB3xq0xnUsEvlHNY0OTcB-79cNsqw3AACFBlrG-BrmFYnGdmNjahFdgEAAwIAA3gAAz0E)
+
+本题应该选 B。折半查找判定树本质是一棵二叉平衡树。
+
+![7.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB31q0xnnZJh-fPidRdlJ3Tw4iU1vdgACFRlrG-BrmFbmlrdZWuHXAwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 A，还需要顺序存储；对于 B，折半查找本质是二叉平衡树，所以最坏情况下二叉查找树时间性能应该更差；对于 C，这班查找平均查找长度得看元素位置，假设元素位于最左边，那么显然不是；对于 D，显然正确。
+
+![7.5.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB35q0xqjcSf0kIac-b6DsMNNa3mw_QACFxlrG-BrmFaKSBqv9yUhoQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+![7.5.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB39q0xrmiPu9GSe2o4zNSuFWnCwSrgACGBlrG-BrmFYCqcwfAkrCfQEAAwIAA3gAAz0E)
+
+第 8 题应该选 C。不能按照平时学算法的角度来想这道题。
+
+第 9 题应该选 D。
+
 ### DS 王道选择题 1 刷第 8 章
+
+![8.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4Bq0xs7NtbvvAZucR70lfr1XQwSnAACGRlrG-BrmFbYTOoy0GaxgwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于 A，得看使用场景，而且快排的性能在大多数情况下优于其他很多排序，例如简单选择排序。
+
+对于 C 和 D 可以举直接插入排序和快排的例子排除。
+
+对于 B，这里的排序结果不同，可以指的是对结构体中的某一个元素排序，然后最后导致结构体顺序不一样。
+
+![8.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4Jq0xwSAXTY8UWnKsENoVtYqlEgWQACGxlrG-BrmFYmbD4Eo1J6ZQEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+![8.3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4Nq0xw8ohjeSaeSgSuLLVuXV-CViQACHRlrG-BrmFZdpdMDGCYh5gEAAwIAA3gAAz0E)
+
+本题应该选 D。排除 A 和 C，看 B 和 D，对于多个相同值值这类情况可以规避，或者说可以采用三数取中法进行优化，并且影响也不如基本有序。
+
+![8.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4Rq0xzFXkFf1xBFTW_-SH38fhYu6gACIxlrG-BrmFazxIRjDNFB1gEAAwIAA3gAAz0E)
+
+第 10 题应该选 AD。对于花费最快的情形，应该是每次选取轴的时候，尽可能均匀划分。
+
+第 11 题应该选 B。纯模拟。
+
+![8.3.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4Vq0x0ZnzM87lpF7D-LOx0FGwW1yAACJBlrG-BrmFYvzZyymkgRtAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+![8.3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4Zq0x0uwvXZTfovX-amGpnNSaFP1wACJRlrG-BrmFY1pm65KRe0lAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+![8.5.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4dq0x1czjySofHibwYF5_XhpGmy4AACJxlrG-BrmFb-XejqxJ7ksgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+$N <= m^S$
+
+本质上是构建 m 叉归并树，也就是。
+
+![8.5.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4hq0x88qYlOPBSgFWKTxrnnIL86rgACLBlrG-BrmFYbZ6gt70mTJAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+![8.6.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4lq0x-E2dr1yfPWLsZ_itABFJETBgACMRlrG-BrmFZYXQvLA6z1yQEAAwIAA3gAAz0E)
+
+本题应该选 C
+
+![8.6.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4pq0x-9RIeL-TnKkPmh64soQYTJPgACMxlrG-BrmFbdQmIJQpuM-wEAAwIAA3gAAz0E)
+
+本题应该选 C。教材里的冒泡排序默认是有 flag 的。
+
+![8.6.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4tq0x_1VQfUQdb1OBlljdlfIquabAACNBlrG-BrmFaS9Hf3JH1TVgEAAwIAA3gAAz0E)
+
+第 10 题应该选 A。对于 A，A 问的是折半插入排序本身、简单选择排序本身的比较次数，而不是对比这两者。包括我也想成了折半插入排序和直接插入排序比较比较次数了。
+
+第 11 题应该选 C，堆不是查找的数据结构。
+
+第 12 题应该选 A，其他两个都有子步骤，所以无所谓。
 
 ## 计组王道选择题 1 刷（补）
 
@@ -11548,16 +11781,16 @@ bne 目标地址公式应该是：0804,8114H+4H+OFFSET✖️4。
 
 绘图如下：
 
-| 指令     | 1 | 2 | 3 |  4  | 5 | 6 | 7 |  8  | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 |
+| 指令     |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  |
 | :------- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| 1. sll   | IF | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
-| 2. add   |    | IF | s |  s  | s | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
-| 3. load  |    |    |    |    |    | IF | s |  s  | s | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
-| 4. add   |    |    |    |    |    |    |    |    |    | IF | s |  s  | s | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |    |
-| 5. add   |    |    |    |    |    |    |    |    |    |    |    |    |    | IF | ID | EX | MEM | WB |    |    |    |    |    |    |    |    |    |
-| 6. bne   |    |    |    |    |    |    |    |    |    |    |    |    |    |    | IF |  s  |  s  | s | ID | EX | MEM | WB |    |    |    |    |    |
-| 分支气泡 |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    | nop | nop | nop |    |    |    |    |    |
-| 下轮 1   |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    | IF | ID | EX | MEM | WB |
+| 1. sll   | IF  | ID  | EX  | MEM | WB  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| 2. add   |     | IF  |  s  |  s  |  s  | ID  | EX  | MEM | WB  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| 3. load  |     |     |     |     |     | IF  |  s  |  s  |  s  | ID  | EX  | MEM | WB  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| 4. add   |     |     |     |     |     |     |     |     |     | IF  |  s  |  s  |  s  | ID  | EX  | MEM | WB  |     |     |     |     |     |     |     |     |     |     |
+| 5. add   |     |     |     |     |     |     |     |     |     |     |     |     |     | IF  | ID  | EX  | MEM | WB  |     |     |     |     |     |     |     |     |     |
+| 6. bne   |     |     |     |     |     |     |     |     |     |     |     |     |     |     | IF  |  s  |  s  |  s  | ID  | EX  | MEM | WB  |     |     |     |     |     |
+| 分支气泡 |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | nop | nop | nop |     |     |     |     |     |
+| 下轮 1   |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | IF  | ID  | EX  | MEM | WB  |
 
 可以注意，指令 6 从 EX 开始阻塞 3 个单位，恰巧使得编号 1 解决了数据冲突。
 

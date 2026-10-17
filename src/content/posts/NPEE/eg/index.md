@@ -8,7 +8,6 @@ draft: true
 series: "考研"
 seriesOrder: 7
 ---
-
 ## 前言
 
 突然意识到近些年的英语在慢慢变简单，所以不要因为早年的英语分低而丢失自信心，但也不要狂妄。
@@ -142,6 +141,61 @@ seriesOrder: 7
 
 ## 小作文
 
+### 2010 小作文
+
+You have just come back from the U. S. as a member of a Sino-American cultural exchange program. Write a letter to your American colleague to
+
+1) express your thanks for his/ her warm reception;
+2) welcome him/ her to visit China in due course.
+
+You should write about 100 words on ANSWER SHEET 2.
+
+Do not sign your own name at the end of the letter. Use"Zhang Wei" instead.
+
+Do not write your address. (10 points)
+
+### 2011 小作文
+
+Suppose your cousin Li Ming has just been admitted to a university. Write him/ her a letter to
+
+1) congratulate him/ her, and
+
+2) give him/ her suggestions on how to get prepared for university life.
+
+You should write about 100 words on ANSWER SHEET 2.
+
+Do not sign your own name at the end of the letter. Use"Zhang Wei" instead.
+
+Do not write the address. (10 points)
+
+### 2012 小作文
+
+Suppose you have found something wrong with the electronic dictionary that you bought from an online store the other day. Write an email to the customer service center to
+
+1) make a complaint, and
+
+2) demand a prompt solution.
+
+You should write about 100 words on ANSWER SHEET 2.
+
+Do not sign your own name at the end of the letter. Use"Zhang Wei" instead.
+
+Do not write the address. (10 points)
+
+### 2013 小作文
+
+Suppose your class is to hold a charity sale for kids in need of help. Write your classmates an email to
+
+1) inform them about the details, and
+
+2) encourage them to participate.
+
+You should write about 100 words on the ANSWER SHEET.
+
+Do not use your own name. Use"Li Ming" instead.
+
+Do not write your address.(10 points)
+
 ### 2014 小作文
 
 Suppose you are going to study abroad and share an apartment with John, a local student. Write him an email to
@@ -160,7 +214,6 @@ Do not write your address. (10 points)
 Suppose your university is going to host a summer camp for high school students.Write a notice to
 
 1) briefly introduce the camp activities, and
-
 2) call for volunteers.
 
 You should write about 100 words on the ANSWER SHEET.
@@ -174,7 +227,6 @@ Do not write your address. (10 points)
 Suppose you won a translation contest and your friend, Jack, wrote an email to congratulate you and ask for advice on translation. Write him a reply to
 
 1) thank him, and
-
 2) give your advice.
 
 You should write about 100 words on the ANSWER SHEET.
@@ -188,7 +240,6 @@ Do not write your address. (10 points)
 Suppose you are invited by Professor Williams to give a presentation about Chinese culture to a group of international students. Write a reply to
 
 1) accept the invitation, and
-
 2) introduce the key points of your presentation.
 
 You should write about 100 words on the ANSWER SHEET.
@@ -202,7 +253,6 @@ Do not write your address.(10 points)
 Suppose you have to cancel your travel plan and will not be able to visit Professor Smith. Write him an email to
 
 1) apologize and explain the situation, and
-
 2) suggest a future meeting.
 
 You should write about 100 words on the ANSWER SHEET.
@@ -216,7 +266,6 @@ Do not write your address. (10 points)
 Suppose Professor Smith asked you to plan a debate on the theme of city traffic.Write him an email to
 
 1) suggest a specific topic with your reasons, and
-
 2) tell him about your arrangements.
 
 You should write about 100 words on the ANSWER SHEET.
@@ -228,7 +277,6 @@ Do not use your own name. Use"Li Ming" instead.(10 points)
 Suppose you are planning a tour of a historical site for a group of international students. Write them an email to
 
 1) tell them about the site, and
-
 2) give them some tips for the tour.
 
 You should write about 100 words on the ANSWER SHEET.
@@ -264,6 +312,8 @@ Li Ming
 
 ### 写信模板 - 发信
 
+发信模板更重要一点，回信的更少数一些。比较小众的是通知，通知等把这俩背完了再说。
+
 Dear [称呼],
 
 I hope this note finds you well. With [关键事件：our shared apartment date / the upcoming trip / our scheduled meeting] just around the corner, I am reaching out to [动作核心：synchronize a few details with you / consult your advice / propose a slight adjustment to our plan].
@@ -287,6 +337,32 @@ Feel free to voice your thoughts if anything needs fine-tuning. Thank you so muc
 Yours sincerely,
 
 Li Ming
+
+### 通知
+
+## 图表作文
+
+首段（3~4 句话）
+
+概述图表 + 数据上升 + 数据稳定 + 值得注意中间段（4~5 句话）
+
+图表联系主旨 + 引出原因 + 原因 1+ 原因 2 尾段（1~3 句话）
+
+建议 1+ 建议 2+ 举例
+
+| 段落部位 | 句子功能 | 万能高阶英文句式 | 逐句中文翻译 |
+| :--- | :--- | :--- | :--- |
+| **第一段** (图表描写) | **1. 概述图表** | **The provided chart vividly illustrates the striking changes regarding [图表主题/核心现象] over the period from [年份 A] to [年份 B].** | 所给图表生动展示了从[年份 A]到[年份 B]期间，关于[图表主题]所发生的显著变化。 |
+| *(同上)* | **2. 数据特征 A** (上升/主导项) | **Specifically, the figure for [主导/上升项] [experienced a phenomenal surge / accounted for the lion’s share], moving from [数据 1] to [数据 2].** | 具体而言，[主导/上升项]的数据[经历了显著激增 / 占据了最大份额]，从[数据 1]变为[数据 2]。 |
+| *(同上)* | **3. 数据特征 B** (下降/次要项) | **[In sharp contrast / In parallel], the data for [对比/次要项] [remained relatively stable / registered a downward trajectory / hovered at [数据 3]].** | [形成鲜明对比的是 / 与此同时]，[对比/次要项]的数据[保持相对稳定 / 呈现下降轨迹 / 停留在数据 3]。 |
+| *(同上)* | **4. 值得注意** | **What is particularly noteworthy is that [最核心交叉点/同步趋势], which highlights a profound transition.** | 尤为值得注意的是[最核心的趋势/拐点]，这凸显出一次深远的转型/转变。 |
+| **第二段** (原因分析) | **1. 联系主旨** | **Such statistical patterns, beyond doubt, can be deeply associated with the trend of [核心主旨：如 economic expansion and lifestyle shift].** | 毫无疑问，上述统计模式与[核心主旨：如经济扩张与生活方式转变]这一宏观趋势深度挂钩。 |
+| *(同上)* | **2. 引出原因** | **Then, what driving forces have propelled this prevailing phenomenon? Generally speaking, several interrelated factors account for it.** | 那么，究竟是何种驱动力量促成了这一普遍现象？总体而言，数个互相关联的因素解释了这一点。 |
+| *(同上)* | **3. 原因 1** (宏观/技术/政策) | **To begin with, the robust economic growth along with [技术/政策红利] has laid a solid foundation for [现象/行业发展], unlocking unprecedented possibilities.** | 首先，强劲的经济增长伴随着[技术/政策红利]，为[现象/行业发展]奠定了坚实基础，释放了前所未有的可能性。 |
+| *(同上)* | **4. 原因 2** (微观/观念升级) | **Furthermore, the general public nowadays places greater emphasis on [个人追求：如 efficiency, spiritual enrichment, quality of life], which inevitably shifts their choices.** | 此外，当今大众更加重视[个人追求：如效率、精神充实、生活品质]，这不可避免地改变了他们的选择。 |
+| **第三段** (前瞻建议) | **1. 建议 1** (宏观引导) | **To foster a healthier and more sustainable environment, it is highly advisable for relevant authorities to formulate forward-looking guidelines.** | 为了促进更健康、更可持续的环境，极有必要由相关部门制定具有前瞻性的指导方针。 |
+| *(同上)* | **2. 建议 2** (微观理性) | **Meanwhile, individuals are expected to cultivate a rational mindset rather than following the trend blindly.** | 与此同时，个体也应当树立理性的心态，而非盲目跟风。 |
+| *(同上)* | **3. 举例落地** | **For instance, striking a balance between [积极面 A] and [潜在风险/规划 B] will undoubtedly steer this trend toward a promising future.** | 例如，在[积极面 A]与[潜在风险/规划 B]之间取得平衡，无疑将引领这一趋势迈向光明的未来。 |
 
 ## 单词
 
