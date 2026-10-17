@@ -5,6 +5,8 @@ description: 福州大学转专业总介绍，包含你能想到的所有问题�
 image: ./cover.png
 tags: [福州大学，转专业，经验贴]
 category: 转专业
+series: 转专业
+seriesOrder: 2
 draft: false
 ---
 

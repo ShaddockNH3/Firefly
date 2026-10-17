@@ -5,6 +5,8 @@ description: 一种基于树莓派 5 运行 Android 系统、并通过局域网 
 image: ./cover.png
 tags: [树莓派，ALAS, 碧蓝航线]
 category: ALAS
+series: ALAS
+seriesOrder: 2
 draft: false
 ---
 
@@ -12,7 +14,7 @@ draft: false
 
 此前已经写过一篇树莓派 5 刷 debian13，使用 waydroid + 修改底层模块兼容 ALAS 的方法。
 
-你可以访问 [此处](https://blog.attilio.cc/posts/post-4/) 来获得这篇过时的教程，密码为：2004122120070130。
+你可以访问 [此处](/posts/alas/debian-waydroid/) 来获得这篇过时的教程，密码为：2004122120070130。
 
 然而该方法过于低效，以侵蚀一过图速度为例，在 PC 模拟器上需要 5s 左右的时间，而在该方案下需要 10s 的时间。
 
@@ -49,7 +51,7 @@ draft: false
 
 需要注意，如果有多个 ADB 连接，那么可以使用以下命令获取被分配的机器序号：
 
-```powershel
+```powershell
 ./adb devices
 ```
 

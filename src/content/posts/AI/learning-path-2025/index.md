@@ -5,6 +5,8 @@ description: 探讨 AI 学习路线的设计思路，分析西二 AI 考核的�
 image: ./cover.png
 tags: [过时，西二在线，AI, 学习路线，思考]
 category: AI
+series: AI
+seriesOrder: 1
 draft: false
 password: "2004122120070130"
 passwordHint: "我的生日及白的生日"

@@ -5,6 +5,8 @@ description: 基于转专业社区维护的真实经历，探讨为何开源项�
 image: ./cover.png
 tags: [福州大学，转专业，经验贴，喷]
 category: 转专业
+series: 转专业
+seriesOrder: 3
 draft: false
 ---
 

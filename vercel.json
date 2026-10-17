@@ -3,6 +3,17 @@
   "outputDirectory": "dist",
   "installCommand": "pnpm install",
   "framework": "astro",
+  "redirects": [
+    { "source": "/posts/post-1/", "destination": "/posts/transfer-major/2023-vehicle-to-cs/", "permanent": true },
+    { "source": "/posts/post-2/", "destination": "/posts/transfer-major/overview/", "permanent": true },
+    { "source": "/posts/post-3/", "destination": "/posts/ai/learning-path-2025/", "permanent": true },
+    { "source": "/posts/post-4/", "destination": "/posts/alas/debian-waydroid/", "permanent": true },
+    { "source": "/posts/post-5/", "destination": "/posts/ai/mcm-2025/", "permanent": true },
+    { "source": "/posts/post-6/", "destination": "/posts/transfer-major/open-source-rant/", "permanent": true },
+    { "source": "/posts/post-7/", "destination": "/posts/ai/how-to-use/", "permanent": true },
+    { "source": "/posts/post-8/", "destination": "/posts/alas/android-host/", "permanent": true },
+    { "source": "/posts/post-9/", "destination": "/posts/ai/thoughts-2026/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

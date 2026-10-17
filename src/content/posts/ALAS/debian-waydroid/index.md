@@ -5,6 +5,8 @@ description: 记录在树莓派 5 上部署 ALAS 的完整过程，包括环境�
 image: ./cover.png
 tags: [过时，树莓派，ALAS, 碧蓝航线]
 category: ALAS
+series: ALAS
+seriesOrder: 1
 draft: false
 password: "2004122120070130"
 passwordHint: "我的生日及白的生日"

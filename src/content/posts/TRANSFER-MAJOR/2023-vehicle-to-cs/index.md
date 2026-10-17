@@ -5,6 +5,8 @@ description: 2023 福州大学车辆工程转计算机类的经验贴，包含�
 image: ./cover.png
 tags: [福州大学，转专业，经验贴，车辆，计算机]
 category: 转专业
+series: 转专业
+seriesOrder: 1
 draft: false
 ---
 

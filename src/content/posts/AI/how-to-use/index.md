@@ -5,6 +5,8 @@ description: "面向计算机专业学生的 AI 上手指南：从官方 APP / W
 image: ./cover.png
 tags: [AI, API, 科普]
 category: AI
+series: AI
+seriesOrder: 3
 draft: false
 ---
 
