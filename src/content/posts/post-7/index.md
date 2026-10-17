@@ -1,12 +1,19 @@
 ---
 title: 如何使用 AI
 published: 2026-09-03
-description: "如何使用 AI"
+description: "面向计算机专业学生的 AI 上手指南：从官方 APP / WEB、API 与中转站，到 AI IDE 与 CLI Agent 的完整使用路径。"
 image: ./cover.png
 tags: [AI, API, 科普]
 category: AI
 draft: false
 ---
+
+> **太长不看**
+>
+> - 只想日常问答：用官方 APP / WEB，下文附各厂商下载入口。
+> - 想自己控制模型参数、接入自动化工具：申请官方 API，或使用中转站 API。
+> - 想用 AI 编程：VS Code 装插件，或直接用 Claude Code、Codex 等 CLI Agent。
+> - 学习阶段：别让 AI 代替你思考，古法编程仍然必要。
 
 ## 前言
 
@@ -16,17 +23,17 @@ AI 时代，相信大家对 AI 都不陌生。
 
 在非理工科专业的人眼里，AI 或许是使用官方 APP / WEB 聊天的搜索引擎，但 AI 的强大远不止如此。
 
-在数学界，核弹爆炸从今年 5 月开始，[AI 独立攻克单位距离猜想，做出准菲奖级成果](https://www.bilibili.com/video/BV11gGt6pEBg/?share_source=copy_web&vd_source=6166398577cee473a9a08ef285e4dcee)。
+在数学界，核弹爆炸从 2026 年 5 月开始，[AI 独立攻克单位距离猜想，做出准菲奖级成果](https://www.bilibili.com/video/BV11gGt6pEBg/?share_source=copy_web&vd_source=6166398577cee473a9a08ef285e4dcee)。
 
-而到了 8 月，核弹爆炸就变成了光粒子打击，[人结合 AI 的菲奖级成果？6 维球面上的复结构！](https://www.bilibili.com/video/BV19b8v6NEtX/?share_source=copy_web&vd_source=6166398577cee473a9a08ef285e4dcee)
+而到了 2026 年 8 月，核弹爆炸就变成了光粒子打击，[人结合 AI 的菲奖级成果？6 维球面上的复结构！](https://www.bilibili.com/video/BV19b8v6NEtX/?share_source=copy_web&vd_source=6166398577cee473a9a08ef285e4dcee)
 
 那么对于计算机界呢？
 
 从历史来讲，AI 的思想可以追溯到上世纪 60 年代。但直到 2023 年，由于硬件的发展，才让原本从理论的 AI 走向现实。
 
-典型的代表是 2023 年 gpt3.5 的问世，但实质上的改变是 24 年年末的 gpt4o，再到 25 年年初 deepseek，再到 25 年 4 月的 Gemini2.5Pro。
+典型的代表是 2022 年 11 月 GPT-3.5 的问世，但实质上的改变是 24 年 5 月的 GPT-4o，再到 25 年年初的 DeepSeek，再到 25 年 4 月的 Gemini 2.5 Pro。
 
-自此之后，AI 的 coding 能力如脱缰的野马般飞驰，直到 26 年年初，claude code 的出现犹如一道惊雷，至此，AI 进入了 Agent 时代，Harness 思想野蛮地扩张，整个 AI 界迎来了前所未有的繁荣。
+自此之后，AI 的 coding 能力如脱缰的野马般飞驰，直到 26 年年初，Claude Code 的出现犹如一道惊雷，至此，AI 进入了 Agent 时代，Harness 思想野蛮地扩张，整个 AI 界迎来了前所未有的繁荣。
 
 那么对于计算机相关专业的学生来讲，应该如何使用 AI？
 
@@ -42,93 +49,20 @@ AI 时代，相信大家对 AI 都不陌生。
 
 下面列出常见的 AI 官方 APP / WEB 端。
 
-### deepseek
+| 厂商 | 官网 | iOS | Android |
+| --- | --- | --- | --- |
+| DeepSeek | [chat.deepseek.com](https://chat.deepseek.com/) | [App Store](https://apps.apple.com/app/deepseek-ai-assistant/id6737597349) | [官网](https://download.deepseek.com/app/) / [Google Play](https://play.google.com/store/apps/details?id=com.deepseek.chat) |
+| GLM | [chatglm.cn](https://chatglm.cn/) | [App Store](https://apps.apple.com/app/id6450893458) | [官网](https://chatglm.cn/download) |
+| Qwen | [chat.qwen.ai](https://chat.qwen.ai/) | [官网下载](https://qwen.ai/download) | [官网](https://qwen.ai/download) / [Google Play](https://play.google.com/store/apps/details?id=com.tongyi.intl) |
+| Kimi | [kimi.com](https://www.kimi.com/) | [App Store](https://apps.apple.com/app/kimi/id6474233312) | [官网](https://www.kimi.com/en/products/download) / [Google Play](https://play.google.com/store/apps/details?id=com.moonshot.kimichat) |
+| Gemini | [gemini.google.com](https://gemini.google.com/) | [App Store](https://apps.apple.com/app/google-gemini/id6477489729) | [Google Play](https://play.google.com/store/apps/details?id=com.google.android.apps.bard) |
+| Claude | [claude.ai](https://claude.ai/) | [App Store](https://apps.apple.com/app/claude-by-anthropic/id6473753684) | [Google Play](https://play.google.com/store/apps/details?id=com.anthropic.claude) |
+| GPT | [chatgpt.com](https://chatgpt.com/) | [App Store](https://apps.apple.com/app/chatgpt/id6448311069) | [Google Play](https://play.google.com/store/apps/details?id=com.openai.chatgpt) |
+| Grok | [grok.com](https://grok.com/)（或通过 [X](https://x.com/) 访问） | [X（App Store）](https://apps.apple.com/app/x/id333903271) | [X（Google Play）](https://play.google.com/store/apps/details?id=com.twitter.android) |
 
-- 官网地址：<https://chat.deepseek.com/>
-- iOS 端地址：<https://apps.apple.com/app/deepseek-ai-assistant/id6737597349>
-- 安卓端地址（官方）：<https://download.deepseek.com/app/>
-- 安卓端地址（Google Play）：<https://play.google.com/store/apps/details?id=com.deepseek.chat>
+### 不推荐
 
-### glm
-
-- 官网地址：<https://chatglm.cn/>
-- iOS 端地址：<https://apps.apple.com/app/id6450893458>
-- 安卓端地址（官方）：<https://chatglm.cn/download>
-
-### qwen
-
-- 官网地址：<https://chat.qwen.ai/>
-- iOS 端地址：<https://qwen.ai/download>
-- 安卓端地址（官方）：<https://qwen.ai/download>
-- 安卓端地址（Google Play）：<https://play.google.com/store/apps/details?id=com.tongyi.intl>
-
-### kimi
-
-- 官网地址：<https://www.kimi.com/>
-- iOS 端地址：<https://apps.apple.com/app/kimi/id6474233312>
-- 安卓端地址（官方）：<https://www.kimi.com/en/products/download>
-- 安卓端地址（Google Play）：<https://play.google.com/store/apps/details?id=com.moonshot.kimichat>
-
-### gemini
-
-- 官网地址：<https://gemini.google.com/>
-- iOS 端地址：<https://apps.apple.com/app/google-gemini/id6477489729>
-- 安卓端地址（官方）：<https://gemini.google.com/>
-- 安卓端地址（Google Play）：<https://play.google.com/store/apps/details?id=com.google.android.apps.bard>
-
-### claude
-
-- 官网地址：<https://claude.ai/>
-- iOS 端地址：<https://apps.apple.com/app/claude-by-anthropic/id6473753684>
-- 安卓端地址（官方）：<https://claude.ai/>
-- 安卓端地址（Google Play）：<https://play.google.com/store/apps/details?id=com.anthropic.claude>
-
-### gpt
-
-- 官网地址：<https://chatgpt.com/>
-- iOS 端地址：<https://apps.apple.com/app/chatgpt/id6448311069>
-- 安卓端地址（官方）：<https://chatgpt.com/>
-- 安卓端地址（Google Play）：<https://play.google.com/store/apps/details?id=com.openai.chatgpt>
-
-### grok
-
-- 官网地址：<https://grok.com/> （或通过 X 平台访问：<https://x.com/> ）
-- iOS 端地址：<https://apps.apple.com/app/x/id333903271>
-- 安卓端地址（官方）：<https://x.com/>
-- 安卓端地址（Google Play）：<https://play.google.com/store/apps/details?id=com.twitter.android>
-
-### 不要使用
-
-豆包、文心一言、mimo、minimax、腾讯元宝。
-
-#### 豆包
-
-- 官网地址：<https://www.doubao.com/>
-- iOS 端地址：<https://www.doubao.com/>
-- 安卓端地址（官方）：<https://www.doubao.com/download>
-
-#### 文心一言
-
-- 官网地址：<https://ernie.baidu.com/>
-- iOS 端地址：<https://ernie.baidu.com/>
-- 安卓端地址（官方）：<https://ernie.baidu.com/>
-
-#### mimo
-
-- 官方体验地址：<https://aistudio.xiaomimimo.com/>
-- 官方说明（目前未推出独立 App）：<https://mimo.mi.com/docs/en-US/quick-start/faq/others>
-
-#### minimax（海螺 AI）
-
-- 官网地址：<https://hailuoai.com/>
-- iOS 端地址：<https://hailuoai.com/>
-- 安卓端地址（官方）：<https://hailuoai.com/>
-
-#### 腾讯元宝
-
-- 官网地址：<https://yuanbao.tencent.com/>
-- iOS 端地址：<https://yuanbao.tencent.com/>
-- 安卓端地址（官方）：<https://yuanbao.tencent.com/>
+豆包、文心一言、mimo、minimax（海螺 AI）、腾讯元宝。
 
 ## 认识 API 与中转站
 
@@ -158,15 +92,15 @@ AI 时代，相信大家对 AI 都不陌生。
 
 它将不同厂商的 API 统一封装为兼容标准（如 OpenAI 格式）的接口，支持国内便捷支付充值，让用户无需绑定海外信用卡和搭建复杂网络环境，即可直接按量计费（按 Token 或按次）调用海内外顶级大模型。
 
-然而，中转站的质量层次不齐，且十家中转站里至少有八家半的模型“掺水”，因此需要谨慎选择。
+然而，中转站的质量参差不齐，十家里面至少有八家的模型或多或少掺了水，因此需要谨慎选择。
 
 至于中转站的价格为何会比官方便宜，有几个主要的原因：
 
-- 号池模式：对于轻度用户而言，买一个 gpt plus 的账号是 20$，折合 150￥，将之用至上限较难。而号池模式就是多个用户公用一个账号来分摊成本
+- 号池模式：对于轻度用户而言，买一个 GPT Plus 的账号是 20$，折合 150￥，将之用至上限较难。而号池模式就是多个用户公用一个账号来分摊成本
 - 企业优惠：中转站可以通过企业的方式购买大量额度，获得优惠，从而降低成本
 - 注册机：gpt、gemini 等模型有第一个月的免费 pro 模型体验，中转站可以利用注册机批量注册这些账号
 - 贩卖数据：中转站可以贩卖用户的数据给其他厂商训练模型，从而获得收益
-- 掺水：标注为 gpt5.5，实质上背后给你偶尔切成其他模型
+- 掺水：标注为 GPT-5.5，实质上背后给你偶尔切成其他模型
 
 需要注意，一般而言那些标注为“福利”、“超低价”的模型，或多或少都掺了水。
 
@@ -216,6 +150,8 @@ NewAPI 是一款开源的大模型 API 中转分发与管理系统（面板）�
   - 哈基米中转站：<https://api.gemai.cc/sign-up?aff=BsVFUJmB>（一分钱一次 gemini3.7f）
   - 玖时 API：<https://api.jiushi.xin/register?aff=JDw1>（五分钱一次 gemini3.7f，作为备用站使用）
 
+  > 声明：以上两条为邀请链接，通过它们注册我会获得少量返利，价格与你自行注册相同；如介意，可直接搜索站名注册。
+
   对于大部分的中转站，是按照其自己的货币计费，以哈基米中转站为例，1RMB = 200 积分，2 积分可以使用 1 次 gemini3.7 flash。
 
   需要注意，一定不要把按次算钱的 API 导入 Agent，否则额度会消耗的非常快。
@@ -243,6 +179,41 @@ NewAPI 是一款开源的大模型 API 中转分发与管理系统（面板）�
 - Claude API 格式：Anthropic 官方的原生接口规范，以 `/v1/messages` 为核心，将 `system` 提示词独立于消息列表之外，原生支持 Tools/Artifacts 深度调用，格式严谨、吞吐控制优秀。
 
 国内绝大多数 AI 厂商都采用的是 OpenAI 格式。
+
+三种格式的最小请求体分别如下，实际字段以服务商文档为准。
+
+OpenAI 兼容格式（`POST /v1/chat/completions`）：
+
+```json
+{
+  "model": "gpt-4o",
+  "messages": [
+    { "role": "user", "content": "你好" }
+  ]
+}
+```
+
+Gemini 格式（`POST /v1beta/models/gemini-2.5-pro:generateContent`）：
+
+```json
+{
+  "contents": [
+    { "parts": [{ "text": "你好" }] }
+  ]
+}
+```
+
+Claude 格式（`POST /v1/messages`）：
+
+```json
+{
+  "model": "claude-3-5-sonnet-latest",
+  "system": "你是一个助手",
+  "messages": [
+    { "role": "user", "content": "你好" }
+  ]
+}
+```
 
 #### Agent 格式
 
@@ -279,7 +250,7 @@ rikkahub 是专门针对手机端的 AI 工具，可以让你在手机上使用 
 
 ![rikkahub 设置](./assets/rikkahub-set.jpg)
 
-一般而言对话的模型不需要开 response，这里只是示例用了 response。
+图中只是示例使用了 response 模式。
 
 ![rikkahub 对话](./assets/rikkahub-use.jpg)
 
@@ -320,7 +291,7 @@ SillyTavern 的特点是可以导入角色卡，从而让 AI 扮演某个角色�
 
 随便找一个略懂开发的学长 / 学姐，他们的开发界面一定是类似这样的：
 
-![本人的开发环境](./assets/my-cursor.png)
+![本人的开发环境](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_pq01PSAAFtc9fWkcD7hBzUzY9P18EAAv0Zaxvga5hWicw5LsavJ90BAAMCAAN3AAM9BA)
 
 无论是使用什么 IDE，右侧的 CODEX / CLAUDE CODE 肯定是必不可少的。
 
@@ -332,7 +303,7 @@ SillyTavern 的特点是可以导入角色卡，从而让 AI 扮演某个角色�
 
 关于使用 AI 进行编程，又分为两种，一种是绑定 IDE，另一种是基于 CLI 的。
 
-### 使用官方 APP / WEB / 自接问答 API 对话编程
+### 对话式问答编程
 
 现阶段比较少，主要是学习的时候问答。
 
@@ -344,9 +315,9 @@ SillyTavern 的特点是可以导入角色卡，从而让 AI 扮演某个角色�
 
 不如直接用 VS Code 的插件来使用 Agent。
 
-AI IDE 唯一的好处就是可以使用内敛建议，即 AI 在你写代码的时候给你建议。
+AI IDE 唯一的好处就是可以使用内联建议，即 AI 在你写代码的时候给你建议。
 
-初学者可能会沉迷于内敛建议的使用，但是这对你在学习的时候帮助甚微，甚至在开发的时候会打断思路。
+初学者可能会沉迷于内联建议的使用，但是这对你在学习的时候帮助甚微，甚至在开发的时候会打断思路。
 
 目前唯一好用的内敛建议只有 Cursor。
 
@@ -383,11 +354,19 @@ antigravity 是 Google 开发的 AI 编程助手，但是效果非常差。
 
 #### cursor
 
-Cursor 是唯一推荐的 AI IDE，但其价格昂贵，依旧不如直接使用 VS Code 的插件。
+Cursor 被 Grok 收购，是比较推荐的 AI IDE，但其价格昂贵，依旧不如直接使用 VS Code 的插件。
 
 - 官方网站：<https://www.cursor.com/>
 - 客户端下载：<https://www.cursor.com/download>
 - 官方文档：<https://docs.cursor.com/>
+
+#### CodeBuddy & WorkBuddy
+
+如果说哪个 IDE 让我眼前一亮，那么一定是 CodeBuddy，推荐级别达到最高。
+
+腾讯为数不多干的人事，确实厉害。
+
+- [CodeBuddy](https://www.codebuddy.cn/home/)
 
 ### 基于 cli 的官方 agent
 
@@ -461,7 +440,7 @@ Cursor 是唯一推荐的 AI IDE，但其价格昂贵，依旧不如直接使用
 - 官网地址：<https://opencode.ai/>
 - GitHub 仓库：<https://github.com/anomalyco/opencode>
 
-## 主体与客体
+## AI 不是万能的
 
 诚然，AI 的编程能力已经非常强大了，但是 AI 对架构的理解远不如人类深刻。
 

@@ -4424,6 +4424,38 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 注意定义域，x 的定义域是 0 到 pi，而没有 pi 到 2pi，以此类推。
 
+### 880 综合 2 刷第 4 章
+
+![4.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_dq0zwvUP26gb2FGnR52h0ibe-BGAACzxlrG-BrmFbZ17Kmb3AEZQEAAwIAA3gAAz0E)
+
+本题错选为 D，是以为要考虑 x 和 y 单独的路径。
+
+对二重积分极限的定义理解错误。
+
+$\lim_{\substack{x \to 0 \\ y \to 0}} \frac{f(x,y)}{x^2 + y^2} = 1$
+
+这是二重极限，在多元微积分的定义里，二重极限写作：
+
+$\lim_{(x,y) \to (0,0)} g(x,y) = A$
+
+它的严格 $\varepsilon\text{-}\delta$ 定义是：对于任意的 $\varepsilon > 0$，都存在 $\delta > 0$，使得只要距离满足：
+
+$0 < (x^2 + y^2)^{1/2} < \delta$
+
+就有 $|g(x,y) - A| < \varepsilon$。
+
+而不是偏导数所想的只对 x 或 y 有要求。
+
+![4.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_hq003ideUXK8Xu7HB1jNzhK-QRPQAC8BlrG-BrmFZM7xafYrovhQEAAwIAA3gAAz0E)
+
+经典的错误，标准的零分，x^2+y^2 套到平房里，又想当然没有加一整个的平方，从而引起错误。
+
+![4.3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_lq004LHDyQyArXRXaveOQ307fq8gAC8RlrG-BrmFZ2KOzqSdcK8gEAAwIAA3gAAz0E)
+
+计算量奇大无比，最后的问题是 dz/dt 算错了，这个应该是 1/2，而我当成 1 算了，所以最后错了。
+
+最后应该是 (-6-1/2)/4，我自己是把 -1/2 代成 1 算了。
+
 ## 24 超越 4-10
 
 ## 25 超越
