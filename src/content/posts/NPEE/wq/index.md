@@ -5591,7 +5591,7 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 第 17 题没做出来。
 
-## 计网王道选择题 1 刷
+## 计网王道选择题 1 刷（补）
 
 ### 计网王道选择题 1 刷第 1 章
 
@@ -6950,6 +6950,370 @@ Trap 是内中断。
 ![2.4.42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBVFqz6SHCMnUByhYG73gshNHUqq1uAACmhBrG7fmgVY8JfS1t-eN1QEAAwIAA3gAAz0E)
 
 本题错选为 D。1 显然正确，2 显然正确，3 不能判断系统此时是否处于死锁状态，它只能判断系统会不会进入不安全的状态，也就是知道可能会发成死锁。3 这件事是死锁定理干的。
+
+### OS 王道选择题 2 刷第 3 章
+
+![3.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4xq0yHomZlbRvVJA5TXmob2gSdVlgACOBlrG-BrmFYRg3ykE8TqPwEAAwIAA3gAAz0E)
+
+本题错选为 A。单一连续分配指的是最古老的分配方式，是单一作业模式，没有动态分配，属于静态分配方式。
+
+此外需要注意，固定分区分配也需要地址变换方式，因为不变换的话逻辑地址没法转成物理地址然后放到正确的地方里。
+
+![3.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB41q0yKg9KzpAnsz4vnmEnHzwuk65AACORlrG-BrmFan9mzUa-4TcwEAAwIAA3gAAz0E)
+
+第 10 题错选为 D。重定位寄存器是寄存器，而寄存器很贵，整个 cpu 只有一个重定位寄存器；对于 D，程序的装入有三种方式，绝对装入，可重定位装入以及动态装入；对于绝对装入，是只能变不了位置的，对于可重定位装入，是分配连续的一整块空间，一次性转换为物理地址后然后装入，对于动态装入，进程执行的时候等待指令需要被执行的时候才被转换地址。
+
+第 11 题错选为 A。显然为 123，没有可重定位装入程序，那么就不知道怎么变，没有重定位寄存器，就不知道变多少（基于什么变），如果没有 3，那就变不了。而对于 4，目标程序采用的是逻辑地址，和重定位无关。
+
+![3.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB45q0yLeHoljgCQ_Aqv-8Y1wx8zHxAACOhlrG-BrmFaeJ7av3GdpugEAAwIAA20AAz0E)
+
+本题错选为 B。具体分析见第 10 题，重定位寄存器是寄存器，很贵的。
+
+![3.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB49q0yLyDQi750fWhSLNEiJkBT5dMQACOxlrG-BrmFYeOpLCcftDNgEAAwIAA3gAAz0E)
+
+错选为 A。2^12=4096≠4098。4097/4KB=1，页号 1 对应 1，1*4096+1=4097。
+
+![3.1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Bq0yMYS5wqUj1nINVM8xOfQTJyYQACPBlrG-BrmFY_QFK0XULJaQEAAwIAA3gAAz0E)
+
+错选为 C。最佳适应算法是要最小的地址块在前，所以应该是长度递增的。
+
+![3.1.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Fq0yXiGG0NN7Wv5DbXcWs4oMOa4gACQBlrG-BrmFaAJneEUHc9UAEAAwIAA3gAAz0E)
+
+错选为 C。对于 A，段表是本质是逻辑上需要有关系，也就是共享的时候需要共享有意义的数据；对于 B 是页表做的事情，对于 C 和 D，每个进程都有自己独立的逻辑地址空间，而对于共享的数据而言，进程内部给他分配的段号可能是不一样的。
+
+![3.1.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Jq0yX5f0NphLJaDFgCOnbCqFbo5gACQRlrG-BrmFY4RkNNueQFqQEAAwIAA3gAAz0E)
+
+错选为 D。分页是从操作系统角度出发，操作系统已经给你分配好了这一页的大小，并且你也不知道操作系统给你的程序拆分成多少，塞进哪几个页里，所以对于分页，答案是不知道；对于分段，尽管是汇编级语言程序员可以操作的，但是分页的物理地址空间无法获取（是透明的）从而无法比较。
+
+![3.1.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Nq0yY9gpro4AfaHZlYNKfTOV6OaAACQhlrG-BrmFYAASqkcDGCYh0BAAMCAAN4AAM9BA)
+
+错选为 A。可以联想到页表查询机构，显然这是硬件自动完成的事情，取指令。
+
+![3.1.33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Rq0yZRJYzw0lMhSlndHdxFo_VzggACQxlrG-BrmFZQcM3w_ppW4gEAAwIAA20AAz0E)
+
+错选为 B。程序的动态链接做的事情是把标准库之类的东西串起来，打包成 exe。如果使用的是分页存储管理，由于没有逻辑，所以必然是零散的。分段是按照逻辑划分的。
+
+![3.1.40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Vq0yZhsTR9VRIZ1CW1bbrmSgiU4QACRBlrG-BrmFZK5wLBQtqXzwEAAwIAA3gAAz0E)
+
+第 40 题错选为 D。由于段表是人工自行分配的，所以会有较多的外部碎片难以利用。
+
+第 41 题错选为 C。可以理解为，无论电脑采用的是什么系统，都可以利用这块内存。对于 A，以块/段为单位的是磁盘和内存之间的交互方式，但是读数据的时候还是一块一块去读的。
+
+![3.1.48](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Zq0yZ1bHjKIxEupeJh1ok4olbIygACRRlrG-BrmFZT2IAC-ZzZogEAAwIAA3gAAz0E)
+
+第 48 题错选为 C。每个进程都有自己的页表，并且页表需要驻留在内存中，否则这个程序就没法运行了。
+
+![3.1.55](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5dq0yaPUeSkFgtxwGa2B0Q4QcJFZgACRhlrG-BrmFYTyMB0R53ApgEAAwIAA3gAAz0E)
+
+第 55 题错选为 C。由题设可知，逻辑 2 号页对应主存 1 号页框，一个页框大小是 1MB/256=4096B，所以应该是 D。
+
+第 56 题错选为 D。经典选项，应该选 B。选 D 是因为把 D 想成段表了。
+
+![3.1.62](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5hq0yahRbqobHB1tPeNdK1sDvqKswACRxlrG-BrmFZ3YVb7ZPL9BAEAAwIAA3gAAz0E)
+
+第 62 题错选为 A。页大小位 2048B，所以一个页可以装 1024/2=512 个页表项。由于逻辑地址空间大小是 2^16 页，所以需要 2^16 页/512=2=128 个页。
+
+第 63 题错选为 D。属于低级错误，没细看题目。读完题目可以发现这道题要的是逻辑地址，所以逻辑地址形成的时间是链接。
+
+![3.1.66](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5lq0ya79v1KO5TIOlQ6_n7src2t3QACSRlrG-BrmFaxoXVpaFQgMQEAAwIAA3gAAz0E)
+
+本题错选为 A。进行最佳适应算法的时候需要重排！
+
+![3.1.70](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5pq0ybVQ6lODhwLAAEfU7I_ofqS9T0AAkoZaxvga5hWkDXFWzLl_64BAAMCAAN4AAM9BA)
+
+本题错选为 A。本题应该结合大题强化去理解，很显然本题应该选 B。
+
+![3.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5tq0ydJeh0a8hitc8oeSdmxys8roAACTBlrG-BrmFZdS6nvLbpUMwEAAwIAA20AAz0E)
+
+本题错选为 B。可见上一节的运行时动态链接，运行时才进行链接。
+
+![3.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5xq0ydlq5e2BbxhhxMSkQABtJzEnksAAk0Zaxvga5hWHOMDivkHag8BAAMCAAN4AAM9BA)
+
+本题不会做。事实上这道题也可以从大题的角度出发去理解，一个页框 128 个字，由于进程的代码段占有一个页，所以总共现在只有 3 个页。又因为一个整数占一个字，所以一个页框可以塞 128 个字，当第一次访问 `x[0][0]` 的时候，一次性调入 128 个字，也就是一次性塞 2 行到一个页框里。而由于是按列访问，所以读 `x[1][0]` 的时候不会缺页，而读下一个数的时候又缺页了。所以每 2 个数缺一次页，所以 64*64/2=2048。
+
+![3.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB51q0yeYTMJxLnpkUnIZGJo6u2h_RAACTxlrG-BrmFYOITx0B8xxogEAAwIAA3gAAz0E)
+
+本题错选为 D。n 个不同的页号，那么意味着至少要缺页 n 次。
+
+![3.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB55q0yevYEncXVJ-p_Yc1U3TNLFwRgACUBlrG-BrmFaCQnOPUPAAAdoBAAMCAAN4AAM9BA)
+
+错选为 A。棍母题目，过。
+
+![3.2.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB59q0yfFQTmbjOrVq5UVepbDJt3PsQACURlrG-BrmFZE9d_yihBgnwEAAwIAA20AAz0E)
+
+错选为 C。应该是 B。其他三个都是分段的优点。
+
+![3.2.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Bq0yfmWkkkV6RkkvNO6RwPdGmSWgACUhlrG-BrmFZ5bKDqMzr8zAEAAwIAA20AAz0E)
+
+没做出来。虚拟存储技术意味着离散和多次，所以要“请求”开头的。
+
+![3.2.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Fq0yf-3Lq48fplx-qlzODVuAlAcwACUxlrG-BrmFb9EUu_MiHWNAEAAwIAA3gAAz0E)
+
+第 39 题错选为 A。对于 1 和 2，FIFO 有可能出现增加页面还降低命中率。对于 3 和 4，显然工作集页面时在主存的，而虚拟存储器是存放它们的逻辑位的。且虚拟存储器对应的实际物理位置在磁盘。
+
+第 40 题错选为 B。考虑这样一个情况，一个内存大小是 16g 的电脑，同时起了 100 个任务。由于内存太小了，所以任务所需的资源一直在交换空间换出换进，反而正在 CPU 跑的东西不多。因此只要增大内存就可以解决这个问题。安装更快的硬盘只能让交换速度变快，不能根本性解决一直交换的问题。
+
+第 41 题错选为 C。和 40 题类似的错误，显然这是内存不够，因此减少多道程序的度数和增大内存可以解决这个问题。
+
+![3.2.46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Jq0ygaMxqNGNv7-k8SsU9UqvG2dAACVBlrG-BrmFZZOLDkJX5kgwEAAwIAA3gAAz0E)
+
+第 46 题错选为 D。考虑这样的情况，用户进程访问缺页，假设页表满了，此时需要置换页，把对应的页调入内存中，然后给它分配内存，然后重新回到这个程序的初始地址开始运行。由于上一轮触发了缺页异常，那肯定不是越界异常，因此不可能发成越界。
+
+第 47 题错选为 B。增大块表容量可以减少缺页异常的次数，所以可以增加虚实地址转换。页表常驻内存才可以快速访问，增大交换区只是增大交换页大小的容量，例如写脏位的容量，不会加快地址转换。
+
+![3.2.55](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Nq0yg9KvCZSjXWF9i8-a6R2gGB3gACVRlrG-BrmFZhA_yhzLdTlQEAAwIAA3gAAz0E)
+
+错选为 B。首先注意到存在位是页框号 60H 和 80H 的存储起始地址（物理地址），由于 60H 物理地址访问位和修改为为 10，所以先被换出。由于系统采用的是固定页框，所以虚拟地址 02A01H 会被塞到页框号为 60H 的部分。
+
+![3.2.59](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Rq0yhUUcf2g5JuK1DIYcdaGVeHXQACVhlrG-BrmFakY8sAAXpHlqoBAAMCAAN4AAM9BA)
+
+第 59 题错了。
+
+第 60 题错选为 A。页框指的是页的物理地址，也就是假设一个页的大小为 m，那么总共会有 M/m（M 为物理内存大小）个页框号。显然和 A，B 无关。而题设问的是对于一个进程而言需要的页框数，排除 C。可以得到 D。
+对于 D 选项本身，假设指令系统采用间接寻址，那么就可以获得一个很大的地址空间访问到其他页，假设只采用变址寻址，那么也就只需要访问自己这几块地方就好了。
+
+第 61 题错选为 D。内存映射文件的机制可以概括为将磁盘上的文件映射到物理内存，再将这一块物理内存分配给不同进程的逻辑共享内存区域 (这里反了，应该是操作系统将不同进程的逻辑共享内存区域映射到内存)。在此之后，只需要操作自己这块逻辑共享内存区域即可，对于底层是透明的。
+
+综合而言，1，3 是正确的，而 2 反了，4 则是过程的一部分，不够全面。
+
+### OS 王道选择题 2 刷第 4 章
+
+![4.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Vq0yjRHOSauCdaFSmwBZgiyFaTrQACWRlrG-BrmFYaIp7YpEd8qgEAAwIAA3gAAz0E)
+
+错选为 A。
+
+捋一遍 FAT 文件系统的查表过程。假设有一个文件目录为/A/D，B/M，C，A 为目录项，B 为目录项，M 为目录项，D 和 C 都是文件。
+
+现在我想要去读 C，那么首先，假设内存里什么都没有，那么我先要从磁盘的固定块（这一步不需要查表，因为是固定块）读取/目录下的文件第 1 次读入，可以得到 A 的 FCB，然后根据 A 的起始块号可以读到目录项 A 的具体信息第 2 次读入，可以知道 A 里面有两个 FCB，一个是目录项 B，一个是文件 D。则查 B 的起始块号可以得到目录项 B 的具体信息第 3 次读入。可以得到 B 下面有 M 和 C。而因为是要读 C，所以根据 C 的起始块号将 C 所对应的磁盘块读入内存第 4 至 k 次读入（前面的如果也有多个块也得多次读，相应 + 即可）。不过默认情况下目录项算一个就可以了。
+
+捋完之后再来看选项。FAT 文件目录存储在操作系统的固定位置，由操作系统负责访问，它自然不需要记录自己的位置。
+
+![4.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Zq0yj1mp4cPVt1E4_MnI9O__FZgAACWhlrG-BrmFbwnGx35LhAVwEAAwIAA3gAAz0E)
+
+错选为 C。对于 A，目录项分解正式 FAT 到 UFS 的转变；对于 B，文件系统高速缓存，例如 open 文件后系统存在一个 open 表。如果其他软件也需要打开这个文件，就不需要重复 open 了；对于 C，读文件需要从磁盘调块进内存；对于 D，异步 I/O 是进程调度那块的东西，可以让 CPU 利用率提升。
+
+![4.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6dq0ykIVkwdLSvySaECL0-J53OwwQACWxlrG-BrmFb-gis58dxQGAEAAwIAA3gAAz0E)
+
+错选为 A。本题考查 UFS 系统。盘块大小为 1KB 意味着 1 个盘块可以存 1KB/16B=64 个目录项，也就是说存 3200 个目录项需要 3200/64=50 个磁盘块。为了找到这个目录项，需要平均花 50/2=25 次磁盘才能找到该文件的目录项，因为采用的是单级索引分配，所以需要再花 1 次找到具体的文件。
+
+![4.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6hq0ykayio6-g_DorDVqQXG0bfE0wACXBlrG-BrmFZeXuI54Ca9SgEAAwIAA3gAAz0E)
+
+错选为 A。属于低级错误。这里一般指的应该是外部碎片，顺序存放会导致产生大量小块无法利用的块。
+
+![4.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6lq0ykruAzaOSBIapa43VDwloUcQQACXRlrG-BrmFZzvvbTZLhIHQEAAwIAA3gAAz0E)
+
+错选为 A。索引表，翻译一下就是 inode（索引节点）指向的表，存放文件的具体信息，这个信息是存放在磁盘的特定块的。对于 fat 系统而言，fat 系统是为全局创建一张 fat 表，本题其实考察的是 ufs 系统。对于 A，打开文件表是调用 open 后在内存记录的一张表，一旦所有文件都关了，那么这个记录就没了。而且存放的是一条记录，不是专门创建一张表。位图和空闲盘块链表是用来管理空闲块的。
+
+![4.2.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6pq0ylDCJe_xTzPzi_8xj86TYAwKgACXhlrG-BrmFaAZUvCRRi1wQEAAwIAA3gAAz0E)
+
+第 24 题错选为 B。这道题的意思是说在最后一个块增加，而不是在中间增加。一个个个分析，对于 A，显然连续分配可以直接访问具体块，所以次数为 1。但是，如果存储空间不够了（因为要连续），此时需要把原来的给扬了，然后再次重新写入。也就是读 500 次，写 501 次；对于 B，隐式链接分配会记录 start 指针和 end 指针，所以只要在 end 指针处操作即可；对于 C 和 D，可以很方便的修改指针进行访问。
+
+第 25 题错选为 C。512B 可以推算出每一块可以存放 5 个逻辑记录，所以 22/5+1=5，可以得出访问到该磁盘的次数，读入后需要写回，写回是一次记录，所以是 5+1。
+
+![4.2.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6tq0ylqq7V9dREtAAFPG_phr5QoaEoAAl8Zaxvga5hWaGshCT1JfmcBAAMCAAN4AAM9BA)
+
+错选为 A。系统支持的最大文件长度为 512MB，磁盘块大小为 4KB，一个簇包含两个磁盘块。FAT 表按照题目要求只存放簇号。由于操作系统按照簇为大小进行盘块分配，一个簇大小为 8KB。由于 FAT 表是本质是静态链表，一开始就分配了，长度大小是一个最大的文件长度（这句话不准确，应该是系统支持的最大文件长度=整个磁盘的最大可寻址容量），所以 512MB/4KB=2^17 个磁盘块，也就是 2^16 个簇/记录。记录这么多簇需要 16b，也就是 2B 的空间，所以 2^16*2B=2^17B，也就是 128KB。
+
+![4.2.32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6xq0ynP0qcbMyS3fZdm66EgoZa1oQACZhlrG-BrmFZtz9xWMHtP-AEAAwIAA3gAAz0E)
+
+这三题都没做，一题题来看。
+
+第 32 题。采用的是类 ufs 系统，磁盘地址是 32 位，意味着寻址范围是 2^32。由于 inode 需要存储地址信息，因此可以推测 inode 的地址数据部分是 32b=4B，所以 4KB/4B=1024，也就意味着一个磁盘块最多有 1024 个地址记录。所以 10+1024。
+
+第 33 题。采用的是类 ufs 系统。磁盘块大小是 1KB，盘块号占 4B，所以一个磁盘块最多可以有 1KB/4B=256 条记录。由于采用 2 级索引分配，所以一个文件最多可以包含 256*256 个磁盘块，一个磁盘块是 1KB，所以 256*256*1KB=64MB。
+
+第 34 题。采用的是类 ufs 系统。和上一题类似，一个磁盘块大小是 1024B，盘块号占 4B，所以一个磁盘块最多可以有 1024B/4B=256 条记录，由于是三级索引分配，所以 256*256*256*1KB=16GB。
+
+![4.2.37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB61q0ynpaJOANqWqt5A1oZ5Bz1KSpQACZxlrG-BrmFaC4Mh-KaTYUQEAAwIAA20AAz0E)
+
+错选为 C。文件打开的操作做的事情是找到文件的目录项然后将之复制到打开文件表。而将指定文件复制到内存指定区域是 read 做的事情。没打开那么如何在内存里找。C 选项不全。
+
+![4.2.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB65q0yoFBemRmchzLnxw6yP1QM-XvAACaBlrG-BrmFbZkFU8cgNfmAEAAwIAA3gAAz0E)
+
+错选为 A。本体应该选 B，这道题可以理解为 close 文件和 write 文件是两码事，和上一题 open 与 read 也是两码事一样。Close 文件之后操作系统可以自己慢慢再写。对于超级块，超级快的信息是比较宏观的信息，例如总共有多少个数据块，有多少个 inode，有多少个空闲块，第一个 inode 从几号盘块算起等信息。而对于关闭文件，只会影响自己的 FCB，所以不需要修改超级块信息，即便是导致块变少了也不会去写回磁盘。只有一些操作：卸载操作系统，弹出 U 盘等信息才会写回磁盘。
+
+![4.2.41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB69q0yoXYZ8MsKF1-5ZGurG1OfsyBgACaRlrG-BrmFYH_UIpfoxelQEAAwIAA3gAAz0E)
+
+本题错选为 C。对于 1，考虑这样一个场景，从固态硬盘复制数据到磁盘；对于 2，用户优先级是进程调度需要考虑的事情，对于文件的访问，由用户访问权限和文件属性组成（例如只读）；对于 3，显然错误；对于 4，存取控制矩阵方法是用来保护密码的，对于系统故障等应该采用 RAID 磁阵列矩阵。
+
+![4.2.43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Bq0yomZVSTxU6Ohphjo0lOj54mxwACahlrG-BrmFZQLP9mnIFa8gEAAwIAA3gAAz0E)
+
+错选为 B。F1 的硬链接 F2 建立出去，那么 F1 的引用计数是 2，F2 的也是 2，建立 F1 的符号连接，可以得到 F1 的引用计数是 2，F2 的是 2，F3 的是 1，删除 F2，那么 F1-1，F2 直接消失，F3 不变，所以就是 1。
+
+考虑这样一种情况，假设引用计数情况的时候（该本身就是软链），硬链出去 1 个，那么这个软链也需要 +1。
+
+需要注意的是，这个不是单独算的，而是连接到一个专门的东西上共同+-，如果是软链出去了才是单独算。
+
+![4.2.47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Fq0ypHmeKQVU1AtMM6Un2sCGbb5AACbRlrG-BrmFa_b0Yz3cB_ggEAAwIAA3gAAz0E)
+
+第 47 题错选为 B。
+
+第 48 题错选为 C。进入系统时需要进行注册，此时还没有进入系统，所以应该是系统级。
+
+![4.2.53](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Jq0ypg7rCb-oZHvY9CjHNbHpjZFAACbhlrG-BrmFa9nyheAAHaQdQBAAMCAAN4AAM9BA)
+
+错选为 D，属于低级错误。256B/4B=64，可知一块磁盘块可以存 64 个项，所以 4+2×64+64×64。
+
+![4.2.56](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Nq0yp1w8xaZaCtu9LjUlc7aCDovQACcBlrG-BrmFbL5ApXEWUa2gEAAwIAA3gAAz0E)
+
+错选为 C。对于 A，索引结点总数也就是 inode 的总数，每 1 个 inode 都对应着一个文件，所以其和单文件无关；对于 B，简介索引级数越高，那么可以索引的范围就越大；对于 C，地址项个数意味着对于一个文件，需要有多少个地址信息才可以找得到，地址项越多，磁盘块也就越多；对于 D，文件块越大，意味着可以存储更多的信息。
+
+![4.2.59](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Rq0yqL5nVOMKlU5dO388iUOEZ8IQACcRlrG-BrmFZljYjGpj1vfAEAAwIAA3gAAz0E)
+
+错选为内 C。由题设可知，某文件索引节点已经在内存，所以读这个结点不需要花次数。10+1024+1024×1024，然这是经典的错误标准的零分。因为磁盘块大小占 1KB，所以一个磁盘块最多有 1KB/4B=256 块，也就是 10+256+256×256。对于 1234，显然是 1 级索引，所以先根据 inode 找到 1 级索引信息，再将之读入内存，花费 2 次。显然这是经典的错误标准的零分，因为题目给的是文件偏移量。所以 1234/1024=1，所以在第 2 个磁盘（其实是 1234/256=4，也就是 5），所以已经找到索引信息，读入 1 次即可；对于 307400/256=1200，所以是 1201，显然是 2 级索引，所以现根据 inode 找到 1 级索引信息，然后再找到 2 级索引信息，最后再将这个 2 级索引信息读入内存，花费 3 次。
+
+![4.2.63](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Vq0yqlUNDTTcW-IV2WTHnAHFBPGwACchlrG-BrmFYAASAp_2Y1xrsBAAMCAAN4AAM9BA)
+
+不知道选什么。由于每个目录项长度是 64 字节，4 字节存放索引号，所以 4B=32bit，也就是最多表示 2^32 个文件数。由于 60 字节存放文件名，一个 ASCLL 码是 1B 存储，应该是 26^60。显然，前者先耗尽。
+
+![4.2.64](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Zq0yq27bMp7H9hWgG30mL8Il6iAgACcxlrG-BrmFZfeT2KphVHvgEAAwIAA3gAAz0E)
+
+错选为 D。对于 A，显然不是，考虑这样一个场景，同时用 edge 和 wps 打开 pdf 文件，也可以考虑读者写者问题；对于 B，在系统打开文件表中，仅有 1 个；对于 C，各进程内部关于 F 的打开表项肯定不一样；对于 D，假设采用的是硬链接，则一个进程 close，F-1，如果为 0 的时候才删除在系统打开文件表的表项。
+
+辨析一下系统打开表和各进程打开表。系统打开表永远只有一个关于 F 的表项，只写位置，大小和引用次数；而对于各进程打开表，模式（只读，可写）、当前页，指向系统表第 x 行可以完全不一样。
+
+![4.2.69](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7dq0yrLgPd0B8SgBFNjwOCWp5PYtAACdBlrG-BrmFbwQFiyTDw0oAEAAwIAA3gAAz0E)
+
+第 69 题（其实是对的）。对于 A，目录指的是一个比较泛的概念，可以理解为目录项，目录项指的是具体信息，指的是某一个文件的具体信息；对于 B，系统的打开文件表可以记录此时系统的全局文件的使用状况；对于 C，FAT 本身是一个静态的链表，其本身是预分配的，所以可以看得出来还剩多少外存；对于 D，FCB 指的是具体的文件含有的信息。
+
+第 70 题错选为 D。用户在目录中新建文件 F，根据选项可以知道本题采用的是 UFS 系统。首先需要分配并且初始化 F 的索引节点，也就是找一个空闲的 inode 号，然后初始化（对应 A），接下来在父目录 C 中增加一条目录项，也就是在 C 的数据区末尾新增一条目录项，这条目录项只有两个内容，也就是文件名 F 和 F 对应的 inode 号（对应 B 和 D）。而对于 C 是 FAT 系统做的事情。
+
+![4.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7hq0yrjsZ16Q9aSBIKoVPiVtuZxVwACdRlrG-BrmFbTjy-cQKeUHgEAAwIAA3gAAz0E)
+
+第 4 题错选为 A。UNIX 采用 UFS 系统，超级块位于最开始的部分，而文件的索引结构是放在索引节点里的，目录项对于 UFS 而言是具体的文件信息。
+
+第 5 题错选为 B。为低级错误。B 是文件管理，C 是存储空间管理。
+
+![4.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7lq0ysMVrRl1CKI5KmzO6mH3LJpFQACdhlrG-BrmFYHaQwskVyCGwEAAwIAA3gAAz0E)
+
+第 8 题错选为 D。什么是空闲盘块号栈，也就是需要额外的信息去记录空闲块。对于 A，显然需要，通常采用首次适应算法和最佳适应算法，可以和内存分配的那部分联系起来。
+
+第 9 题错选为 C。背书。
+
+![4.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7pq0yse3MHfCuGVkZcJmww0dzqmYwACdxlrG-BrmFaZtsCqI1IcjQEAAwIAA3gAAz0E)
+
+错选为 C。背书。
+
+![4.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7tq0ysuZx7zUnZ5kJ5EHaXVENqKcAACeBlrG-BrmFZ2kAo9fsftfQEAAwIAA3gAAz0E)
+
+错选为 D。本题为低级错误，事实上，这道题需要注意盘块和块内都是 0 来计算。
+
+### OS 王道选择题 2 刷第 5 章
+
+![5.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7xq0ytav5FhhKxyoWPdpkNwsnTREAACeRlrG-BrmFYegN2d6KxGcAEAAwIAA3gAAz0E)
+
+第 1 题错选为 C。对于 A，可寻址到字节，指定读/写操作的字节地址的应该是 DMA 方式，DMA 控制器与 CPU 协商好内存地址后，DMA 搬运。前面的解释有误区，事实上，这是块设备和字符设备的区别，也就是说，块设备需要一个自一个字地按照设备按照顺序流过来，不可能跟字符设备说读取第 50 个字节地数据；对于 B，共享设备必须是可寻址和随机访问的设备，这句话是正确。考虑这样一种情况，所有人都在使用一个硬盘，A 进程可以访问 m 地址，B 进程可以访问 n 地址，二者不冲突，但是对于磁带而言，A 进程访问了 m 地址，而 B 进程却只能继续顺序访问，无法共享；对于 C，共享设备指的是同一个时间范围内允许多个进程同时访问的设备，这里需要注意的是一个时间范围，而不是同一个时刻；在分配共享设备的时候不会引发死锁，因为其他设备也可以访问。
+
+第 2 题错选为 A。对于 A，即使是设备虚拟化，但是本质上的设备也只有一个。例如多个进程想使用打印机，而打印机只有一个，所以采用 SPOOLing 技术将打印机逻辑抽象出来，可以被多个进程先分配（这里是分配），所以这里的意思是线性等待，使用比物理设备更多的设备指的是你可以在同一个时刻对于 1 个物理打印机使用 2 个逻辑打印机，显然这是错误的；对于 B，这是设备独立性需要做的事情，也就是无论采用什么品牌的打印机，在写代码的时候都是只用同一个标准化方式；对于 C，即假脱机技术；对于 D，这是虚拟内存。
+
+![5.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB71q0yt1f5wGYIy_V3TLw24B8C-vGgACehlrG-BrmFbw_Ye36YHPdwEAAwIAA3gAAz0E)
+
+第 4 题错选为 C。设备控制器=I/O 接口，I/O 有 I/O 端口，I/O 端口本质就是寄存器，其有状态寄存器（也就是标志寄存器），数据寄存器，控制寄存器。对于中断是 CPU 要实现的功能，所以不需要。
+
+第 5 题错选为 D。设备控制功能=I/O 接口功能，所以实现 I/O 接口功能的是由 I/O 逻辑去实现的。接口只是将两个东西给连接起来的协议。
+
+第 6 题错选为 C。属于低级错误，DMA 方式是直接把设备的数据放入主存，由此可以半段出答案。
+
+![5.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB75q0ywFIHrWOBQ2yYCxTZbLCDyvQQACexlrG-BrmFZAA_pfF7kMzgEAAwIAA3gAAz0E)
+
+第 8 题错选为 D。直接存取方式是存储设备找数据块的方式之一，常用于磁盘，其他两种分别是顺序存取和随机存取。
+
+第 9 题错选为 A。处理机这个概念指的是可以独立执行复杂程序的东西，而 DMA 只会搬运，通道才是；对于 C，胡言乱语；对于 D，见第 11 题梳理 DMA 的过程。
+
+第 10 题错选为 B。DMA 控制器首先是 IO 设备，所以至少需要有状态寄存器，控制寄存器和数据寄存器，因此 AC 可以排除；由于 DMA 需要将数据搬入内存里，因此需要内存寄存器来知道现在运行到哪块内存了。对于 D，DMA 不需要运行函数。
+
+第 11 题错选为 C。本题对 DMA 方式理解不清晰。对于 A，预处理是和 CPU 协商内存，所以需要跑在内核态；对于 B，预处理是 CPU 通知，后处理是通知 CPU；对于 C，预处理和后处理都需要 CPU 参与；对于 D，预处理请求 I/O 的进程是 I/O 与 CPU 协商，所以是运行态，后处理是 CPU 中断然后取数据，所以是需要阻塞态。
+这里梳理一下 DMA 运行的逻辑，首先是预处理阶段，CPU 首先先发通知，让 DMA 确认工作方式，例如源地址（硬盘），目的地址（内存），搬多少以及怎么搬（从硬盘读到内存），然后在数据传输阶段，是按照一个字一个字搬运的，并且不影响 CPU 干活，在后处理阶段，向 CPU 发送中断信号，CPU 中断并且拿到数据。
+
+第 12 题错选为 A。“及时”是调度需要考虑的事情，而不是设备分配。对于设备的固有属性，可以理解为独占设备，虚拟设备，共享设备之类的，这就显然需要了。
+
+第 13 题错选为 B。相对号的意思是进程自己的，例如进程想申请 2 台打印机，就会标号 1，2，而操作系统会映射到真实的物理号上；类型号是用来区分设备类型的，例如 01 代表打印机，02 代表显示器等；符号是人类起的名字，例如 C 盘。
+
+![5.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB79q0ywrRlSha7b2GMemimwAAeyMiswAAnwZaxvga5hWlRs9xFvdJ0wBAAMCAAN4AAM9BA)
+
+第 16 题错选为 D。首先梳理一下 IO 设备的五层架构：用户 IO-设备独立性软件 - 设备驱动 - 中断 - 硬件。设备操作命令是什么，也就是用户向设备发送 IO，然后应该是由设备独立性软件找到正确的设备，然后翻译为设备操作命令，而设备操作命令是由设备驱动程序翻译为硬件看得懂的指令。
+
+第 17 题错选为 D，分析见第 16 题。
+
+第 18 题没做。50×80=4000 个字符。假设运行 1min，也就是总共打印 6×4000=24000 个字符，需要 24000×50μs=24000×50×0.000001s=120×0.01=1.2s，也就是 1.2/60=0.2/10=0.02=2%。
+
+![5.1.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Bq0yxI0iTr9gMRHjfKMNnJ6kKtHwACfRlrG-BrmFZNDio2JrXodwEAAwIAA3gAAz0E)
+
+第 23 题错选为 D。分析信息的流动，考虑程序中断方式来获取键盘信息。程序执行到 scanf 指令，此时进程调用 trap 指令，由操作系统将进程从运行态变为阻塞态，等待键盘输入信息。用户输入字符后，启动中断处理程序，将键盘控制器读入到系统缓冲区，然后将进程插入到就绪队列，最后等待处理机调度上 CPU 后，scanf 才算结束。
+
+根据本题的经验可知，对于每一道真题，需要捋清楚背后的逻辑，这题在 2023 年的大题考察。
+
+![5.1.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Fq0yxe5Y44JSC_s2QbRx_xOyhhGQACfhlrG-BrmFYK9Z_HHvCNlgEAAwIAA3gAAz0E)
+
+错选为 C。分析信息的流动 CPU 向 DMA 控制器发送需求，初始化 DMA 并且启动磁盘，DMA 控制器按照一个字一个字传输一块数据到内存缓冲器（这个过程是 DMA 请求），接着 DMA 控制器发送中断请求，CPU 后处理执行 DMA 结束。
+
+![5.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Jq0yx3Qpdd0ssGjneL72WCyI5YIgACfxlrG-BrmFa57BgMK-_JzQEAAwIAA3gAAz0E)
+
+错选为 D。这道题其实出的不算严谨？很多时候 CD 是不必要的，所以是 B。
+
+![5.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Nq0yzRhGtKG7U8qtGpDlEyF9msQgACgRlrG-BrmFbm9PhbAZ-93AEAAwIAA3gAAz0E)
+
+错选为 D。理解错误，绘制图片，本题的意思不是说两个设备同时向这个缓冲区写数据，而是针对一个缓冲区，A 设备可以向里写数据的通过是，B 设备可以从这里面拿数据。
+
+![5.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Rq0yzp3o-aLVIBk8y7IToetVY4FAACghlrG-BrmFZyrVf52qe4-AEAAwIAA3gAAz0E)
+
+第 15 题不知道选什么。分区分配是内存分配的概念。
+
+第 16 题错选为 B。本题考查设备的分配，实际上应该是先从系统设备表等级，然后从下往上。
+
+![5.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Vq0y0BKwvCHEIr0Ts7I-QgZSUTawACgxlrG-BrmFYyLayfxhe9EgEAAwIAA20AAz0E)
+
+本题错选为 B。事实上，至少需要 1 台设备，不然再怎么逻辑化没有设备怎么分配？对于 B，SPOOLing 技术使作业不需要去等待，可以执行其他任务。
+
+![5.2.30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Zq0y02_4b0ifJ6t8KEyu1LhIPdtQAChBlrG-BrmFbWHZWi7tGKIQEAAwIAA3gAAz0E)
+
+错选为 B。低级错误，没看完题目。
+
+![5.2.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8dq0y1KYE5gx9KXN6DBnFMtiyMsyAAChRlrG-BrmFbYqIfW0dazNwEAAwIAA3gAAz0E)
+
+错选为 A。注意这道题是驱动程序，驱动程序的任务是将对该设备的命令翻译为底层硬件调用，所以首先是要转换；而校验的意思是不是对这个请求校验，而是对操作对象进行校验，例如对想要向磁盘的第 4 道第 1 盘第 3 扇区写入数据，得去校验这个数据是否超了（可以理解为页表）
+
+![5.2.46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8hq0y1g_g_MBWaIN1X0PEOw5yLo1wAChhlrG-BrmFaeypEj141YOgEAAwIAA3gAAz0E)
+
+错选为 A。将上一节复制粘贴过来：分析信息的流动，考虑程序中断方式来获取键盘信息。程序执行到 scanf 指令，此时进程调用 trap 指令，由操作系统将进程从运行态变为阻塞态，等待键盘输入信息。用户输入字符后，启动中断处理程序，将键盘控制器读入到系统缓冲区，终端结束，然后将进程插入到就绪队列，最后等待处理机调度上 CPU 后，系统调用从内核拷贝数据，scanf 拿到数据，然后 scanf 才算结束。
+
+这题给的启示还是要研究真题并且将背后的过程捋清楚。
+
+![5.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8lq0y17BWxVGirPzROjUtTFrGxDEAAChxlrG-BrmFa3GOqpfJTgewEAAwIAA3gAAz0E)
+
+错选为 C。光盘可以任意读，例如找第 x 集。
+
+![5.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8pq0y2iH8tzVJf8iUPZ11k96djj9QACiBlrG-BrmFZj-3VsWI5c5gEAAwIAA3gAAz0E)
+
+错选为 B。本题时背书，梳理一下硬盘的格式化：
+
+第一步是硬盘的低级格式化，也就是物理格式化，此时划分扇区和磁道，下一步是分区，也就是对每个分区记录起始位置大小（记录在主引导记录 MDR 和分区表）中，然后对分区进行逻辑格式化，初始化根目录，建立操作系统引导扇区，建立文件系统
+
+![5.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8tq0y3M_3GR8ppuf45gv6w7f1s6JQACiRlrG-BrmFb3nWFG6toZ1gEAAwIAA20AAz0E)
+
+本题错选为 B。对于 A，肯定是无关的，无论采用哪种调度算法，调度算法都不会影响到旋转，只会影响到寻道；对于 BC，如果采用的是连续分配，那么延迟会很小，那么如果采用的是隐式链接分配，那么影响就非常大了；对于 D，扇区的处理时间并不会影响旋转延迟，旋转本身只和硬件相关。事实上，如果和扇区的处理时间相关，那么就不会采用错开的方式去放逻辑数据了。
+
+![5.3.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8xq0y3kE5RrkWw2Dp6rTWkViYGm6QACihlrG-BrmFayMFLNUVnhBgEAAwIAA3gAAz0E)
+
+对于第 17 题。首先注意才去随机寻道的方式，总共需要访问 b/N 个磁道。而由于所有的扇区组成一个簇，所以需要完整的转完一整圈才能度完这个数据。综上所述，对于 1 道，寻道需要 T，访问需要 r，总共是 b/N，所以选 A。
+
+![5.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB81q0y398Oc2B3WLCT7M9vuctC2scgACixlrG-BrmFZ7mxiskYuI4AEAAwIAA3gAAz0E)
+
+错选为 D。属于低级错误，静态更优的原因是静态会在背后把几乎不写的数据调道那些擦除多的块，对于 D 是动态做的事情。
+
+![5.3.30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB85q0y4weCDa9FxV-J8xu_iNVdlwkAACjBlrG-BrmFbiICSmpXB8XgEAAwIAA3gAAz0E)
+
+看书作对的。对于 1，分区是分区做的事情，对于 3，CRC 校验是低级格式化做的事情。
+
+![5.3.32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB89q0y5EqR4bkO-myzv9B3gU7fc2nwACjRlrG-BrmFZAJoQIHuGVrgEAAwIAA3gAAz0E)
+
+第 32 题错选为 D。属于低级错误。
+
+第 33 题错选为 A。属于低级错误，184 和 182 的大小比较。
+
+![5.3.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9Bq0y6aRfm7wZrsVVlzjSz42qeogAACjhlrG-BrmFYOmvmM32I-aQEAAwIAA3gAAz0E)
+
+错选为 D。属于低级错误，事实上，即便不知道温彻斯特硬盘就是磁盘，也应该想到这道题说的是文件系统，而均衡磨损是 SSD 自己本身实现的东西。
 
 ## 计网王道选择题 2 刷
 

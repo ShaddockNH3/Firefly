@@ -786,14 +786,14 @@ cache 块大小和 cache 本身大小无关。
 
 #### 场景 1 深入辨析（容量截断效应）
 
-##### 1. 数据规模与排布 - 1
+#### 1. 数据规模与排布 - 1
 
 - 数组规模：$1024 \text{ 行} \times 64 \text{ 列}$。
 - 数组总大小：$1024 \times 64 \times 4\text{ B} = 256\text{ KB}$。
 - 每行大小：$64 \times 4\text{ B} = 256\text{ B}$（跨越 $256 / 64 = 4$ 个 Cache 块）。
 - 核心关系：数组总容量（$256\text{ KB}$）$\gg$ Cache 容量（$8\text{ KB}$）。
 
-##### 2. 行优先访问分析 - 1
+#### 2. 行优先访问分析 - 1
 
 - 访问模式：按内存连续物理地址线性扫描。
 - 命中过程：
@@ -803,7 +803,7 @@ cache 块大小和 cache 本身大小无关。
   $$\text{Hit Rate}_{\text{行}} = \frac{16 - 1}{16} = \frac{15}{16} = 93.75\%$$
   满足命中率 $\ge 90\%$ 的要求！
 
-##### 3. 列优先访问分析 - 1
+#### 3. 列优先访问分析 - 1
 
 - 访问模式：外层循环遍历列，内层循环遍历行。
 - 访存步长（Stride）：每次访问跨越一行，步长为 $256\text{ B}$（$4$ 个块）。
@@ -819,7 +819,7 @@ cache 块大小和 cache 本身大小无关。
 
 #### 场景 2 深入辨析（工作集常驻效应）
 
-##### 1. 数据规模与排布 - 2
+#### 1. 数据规模与排布 - 2
 
 - 数组规模：$64 \text{ 行} \times 24 \text{ 列}$。
 - 数组总大小：$64 \times 24 \times 4\text{ B} = 6144\text{ B} = 6\text{ KB}$。
@@ -827,7 +827,7 @@ cache 块大小和 cache 本身大小无关。
 - 核心关系：数组总容量（$6\text{ KB}$）$<$ Cache 容量（$8\text{ KB}$，可容纳 128 个块）。
 - 决定性结论：整个数组可以被 Cache 100% 完全装下，遍历全程不会触发任何容量替换（Capacity Eviction）！
 
-##### 2. 行优先访问分析 - 2
+#### 2. 行优先访问分析 - 2
 
 - 访问总次数：$64 \times 24 = 1536$ 次。
 - 缺失情况：按行线性读入，共经历 $96$ 个数据块，因此发生 $96$ 次冷缺失（Cold Miss）。
@@ -835,7 +835,7 @@ cache 块大小和 cache 本身大小无关。
 - 命中率计算：
   $$\text{Hit Rate}_{\text{行}} = \frac{1440}{1536} = \frac{15}{16} = 93.75\%$$
 
-##### 3. 列优先访问分析 - 2
+#### 3. 列优先访问分析 - 2
 
 - 访问总次数：同样是 $1536$ 次。
 - 缺失情况：
@@ -862,7 +862,7 @@ cache 块大小和 cache 本身大小无关。
 
 #### 场景 3 访问全流程深入推演
 
-##### 1. 行优先访问 - 3
+#### 1. 行优先访问 - 3
 
 - 访问模式：内存连续线性地址访问。
 - 过程推演：
@@ -872,7 +872,7 @@ cache 块大小和 cache 本身大小无关。
   $$\text{Hit Rate}_{\text{行}} = \frac{16 - 1}{16} = \frac{15}{16} = 93.75\%$$
   （连续空间局部性完美发挥，依然高达 $93.75\%$！）
 
-##### 2. 列优先访问 - 3
+#### 2. 列优先访问 - 3
 
 - 访问模式：外层按列循环，内层按行循环（依次访问第 0 列的 `A[0][0] ~ A[1023][0]`，接着第 1 列……）。
 - 跨度与块内渗透：
@@ -1457,18 +1457,18 @@ CPU 大致可以分为负责做决策的 CU 以及下面负责干活的数据通
 | C7 | $\text{MDR} \leftarrow M(\text{MAR})$ | `MemR, MDRinE` | 【执行】启动读主存，操作数从外总线读入 MDR |
 | C8 | $\text{AC} \leftarrow (\text{A}) + (\text{MDR})$ | `MDRout, ADD, ACin` | 【执行】MDR 送内总线，ALU 加法，结果进 AC |
 | C9 | $\text{MDR} \leftarrow (\text{AC})$ | `ACout, MDRin` | 【写回】运算结果从 AC 经内总线送入 MDR |
-| C10| $M(\text{MAR}) \leftarrow (\text{MDR})$ | `MemW, MDRoutE` | 【写回】启动写主存，MDR 数据经外总线写入内存 |
+| C10 | $M(\text{MAR}) \leftarrow (\text{MDR})$ | `MemW, MDRoutE` | 【写回】启动写主存，MDR 数据经外总线写入内存 |
 
 注意到 C7 时，CPU 内部总线是空闲的，所以可以重排如下：
 
 | 时钟节拍 | 功能（微操作） | 有效控制信号 | 总线并行与硬件动作机制说明 |
 | :---: | :--- | :--- | :--- |
 | C1 | $\text{MAR} \leftarrow (\text{PC})$ | `PCout, MARin` | 【取指】PC 地址送入内部总线，打入 MAR |
-| C2 | $\text{MDR} \leftarrow M(\text{MAR})$<br>$\text{PC} \leftarrow (\text{PC}) + 1$ | `MemR, MDRinE, PC+1` | 【取指】启动读主存（走外总线），PC 硬件自增 |
+| C2 | $\text{MDR} \leftarrow M(\text{MAR})$，$\text{PC} \leftarrow (\text{PC}) + 1$ | `MemR, MDRinE, PC+1` | 【取指】启动读主存（走外总线），PC 硬件自增 |
 | C3 | $\text{IR} \leftarrow (\text{MDR})$ | `MDRout, IRin` | 【取指】指令机器码经内部总线打入指令寄存器 IR |
 | C4 | 指令译码 | 无 | 【译码】控制器逻辑对操作码进行译码，内部无总线流动 |
 | C5 | $\text{MAR} \leftarrow (\text{R1})$ | `R1out, MARin` | 【重排前置】优先将目标内存地址（R1）经内总线打入 MAR |
-| C6 | $\text{MDR} \leftarrow M(\text{MAR})$<br>$\text{A} \leftarrow (\text{R0})$ | `MemR, MDRinE, R0out, Ain` | 【双总线并行·核心优化】<br>① 外总线：启动主存读，数据由外总线打入 MDR (`MemR, MDRinE`)；<br>② 内总线：利用内总线空闲，将 R0 数据打入暂存器 A (`R0out, Ain`)。<br>👉 两组操作互不抢占总线，单周期同时完成，净省 1 拍！ |
+| C6 | $\text{MDR} \leftarrow M(\text{MAR})$，$\text{A} \leftarrow (\text{R0})$ | `MemR, MDRinE, R0out, Ain` | 【双总线并行·核心优化】① 外总线：启动主存读，数据由外总线打入 MDR (`MemR, MDRinE`)；② 内总线：利用内总线空闲，将 R0 数据打入暂存器 A (`R0out, Ain`)。👉 两组操作互不抢占总线，单周期同时完成，净省 1 拍！ |
 | C7 | $\text{AC} \leftarrow (\text{A}) + (\text{MDR})$ | `MDRout, ADD, ACin` | 【执行加法】MDR 读出的操作数送内总线，与暂存器 A 相加，结果存入累加器 AC |
 | C8 | $\text{MDR} \leftarrow (\text{AC})$ | `ACout, MDRin` | 【写回准备】运算结果从 AC 经内部总线打入 MDR 缓冲锁存 |
 | C9 | $M(\text{MAR}) \leftarrow (\text{MDR})$ | `MemW, MDRoutE` | 【写回主存】启动主存写，MDR 数据经外部数据总线写入 R1 所指主存单元 |
@@ -1539,7 +1539,7 @@ CPU 大致可以分为负责做决策的 CU 以及下面负责干活的数据通
 | IF（取指） | 取指令，$\text{PC} \leftarrow \text{PC} + 4$ | 取指令，$\text{PC} \leftarrow \text{PC} + 4$ |
 | ID（译码） | 译码，读源寄存器 $R2, R3$ | 译码，读基址 $R2$ 与写入数据 $R1$，扩展偏移量 |
 | EX（执行） | ALU 算算术结果（$R2 + R3$） | ALU 算内存有效地址（$R2 + \text{offset}$） |
-| MEM（访存）| 空操作（NOP），数据直接穿透传递 | 内存写入：把 $R1$ 数据写入目标地址 |
+| MEM（访存） | 空操作（NOP），数据直接穿透传递 | 内存写入：把 $R1$ 数据写入目标地址 |
 | WB（写回） | 寄存器写回：结果写入目标寄存器 $R1$ | 空操作（NOP），无需更新任何寄存器 |
 
 ### 指令流水线的真题辨析
