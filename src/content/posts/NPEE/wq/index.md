@@ -3472,19 +3472,137 @@ y_h=(C_1+C_2 x) e^x
 
 ### 张宇 1000 基础 2 刷第 8 章
 
+![8.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9Fq0y833nJ0obbetpAErx0OZLjcUQACkBlrG-BrmFaclzQQTHZ6igEAAwIAA3gAAz0E)
+
+本题错选为 D。理解错误，函数不等式两边同时求导，这个符号可能会变。移过去然后积分中值定理就好了。
+
+其实这道题移过去设函数就好了。
+
+![8.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9Jq0y9NEiVTw5ZkS3cHtTqL2MV6qQACkRlrG-BrmFZAGAc9StUvCAEAAwIAA3gAAz0E)
+
+本题错选为 D。对于这道题，已经捋清楚 p 积分了，所以从中间拆。但是，需要注意的是，拆完之后，后面那一项仍然是对 a，也就是对有限值，所以得 p<1。
+
 ### 张宇 1000 基础 2 刷第 9 章
+
+一元积分学的计算，心不在焉。
+
+![9.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9Nq0zC_AdT4iDj5med1AWDvxl4ltgACkxlrG-BrmFbn4ipAWZc7ZwEAAwIAA20AAz0E)
+
+本题采用换元法的时候，忘记 dx=…dt 了，属于低级错误。
+
+![9.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9Rq0zD3U9wuLtvbP2ObqiIdgCwskgAClBlrG-BrmFbCH5hZT5iJXAEAAwIAA20AAz0E)
+
+本题考虑过将 x 和 y 的关系互换，但是还是使用的是 dy=…dx 的方法。需要注意，得换上下限（本题这里没换上下限，导致算出来非常奇怪）
+
+![9.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9Vq0zEVBNBZL-PlXHi747NusomlLwAClRlrG-BrmFZybOfuOBNcegEAAwIAA3gAAz0E)
+
+本题错选为 A，显然，x/x=1≠1/x。
+
+错题重刷仍然错误。我记得答案是 D。然而选了 C。可导性可以讨论，但是导函数连续呢？通过可导的定义求出那一点的导数，然后求出全局的导数再逼近那一个点。
+
+![9.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9Zq0zEzmEkUrqCC8RKfCIbGVgeNjwAClhlrG-BrmFbAJSe-Fsh3igEAAwIAA3gAAz0E)
+
+第 20 题采用华理士公式，但是一开始的时候把 an 的华理士公式写错了，从而引发连锁错误。
+
+第 21 题属于低级错误，拆开后 x^2-9 写成+。
+
+![9.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9dq0zFMbxmpPQObPA7attmX_j-T1gAClxlrG-BrmFZtsH2kT-VbOQEAAwIAA20AAz0E)
+
+本题属于低级错误，误认为可以直接取 2，实则有一个问题，那就是 arccosx 不是偶函数也不是奇函数！
 
 ### 张宇 1000 基础 2 刷第 10 章
 
+![10.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9hq0zFkQ43FZWf3399zE9Banj65ogACmBlrG-BrmFY2j1kboMw9pwEAAwIAA3gAAz0E)
+
+本题没做，感觉计算太麻烦了。本题计算感觉麻烦的原因是：分别算 SA 和 SB，但是这道题可以用 SA+SB-SA 的方法来计算 SB，如此计算就会很方便。积累一个技巧。
+
+![10.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9lq0zGDPzpHbP6hPa-jSBjUAXxSPgACmRlrG-BrmFb6nnKRKdw0JQEAAwIAA3gAAz0E)
+
+![10.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9pq0zGNsJgFfB-1jGk34xNJiqls8AACmhlrG-BrmFZvuqf2wBRmKQEAAwIAA20AAz0E)
+
+这三题放一起讲。这三题都是没乘 2pi，有一个很严肃的问题，对于这类题现在统一用二重积分去做，不要再用一维的公式了，这几题都是一维和二维的公式搞混了。
+
+![10.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9tq0zGmhSvlNHWgYz6tXJQn1MFSVAACmxlrG-BrmFZTjuju7Rok0wEAAwIAA3gAAz0E)
+
+想当然直接写 1，而不是代入计算。
+
 ### 张宇 1000 基础 2 刷第 11 章
+
+![11.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9xq0zJUuPE6tuVeLIKBnPLO9DuTGgACnRlrG-BrmFY05-I8LPQ5swEAAwIAA20AAz0E)
+
+感觉这个不会做不是我的问题。换元然后分部积分，对于这类题算是一个可以总结的通法。
 
 ### 张宇 1000 基础 2 刷第 12 章
 
+![12.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB91q0zLxQtvKTlS5qFw1kJiHo8bklwACnhlrG-BrmFZGjBheZRVAnQEAAwIAA3gAAz0E)
+
+对于这类题，需要注意，我建系之后，是 x2-x1，而不是 f2-f1。做的时候就感觉不对劲了，因为要保持一个东西是一样的。对于这道题也就是保持 y 是一样的额，那么是 x2-x1。
+
+![12.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB95q0zMmIZLK0Np4JDm-Sow3wGgQBAACnxlrG-BrmFYdyLP18Bpn5gEAAwIAA3gAAz0E)
+
+对于这道题，知道要去表达 V 的体积，但是没想到用变限积分的形式去表达，所以做起来非常的困难。
+
+![12.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB99q0zM4HQblFnBM9WlU2t99XuCrMQACoBlrG-BrmFaACkSKGhG0DAEAAwIAA3gAAz0E)
+
+没做。稳扎稳打分析即可，先算引力再算做功
+
 ### 张宇 1000 基础 2 刷第 13 章
+
+![13.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-Bq0zNbfhJdvJawkk-kaDY5RWJJxQACoRlrG-BrmFaRYdgRipDHvwEAAwIAA20AAz0E)
+
+第 8 题一下没想出来怎么做，所以跳了。事实上直接令 uv 即可。
+
+第 9 题其实终于理解怎么做了，但是没有考虑完全（也就是对于 y 的讨论）
+
+![13.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-Fq0zOgdlYfHh-wJ4_XRsHM-OkP9AACohlrG-BrmFZvnSDmnaS0iAEAAwIAA3gAAz0E)
+
+直接跳了。
+
+![13.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-Jq0zPOH-1zK7clR7pLbx4kvMtppgACoxlrG-BrmFa_yEu7og74cgEAAwIAA3gAAz0E)
+
+第 18 题不会做。全设为 0 即可。感觉这道题主要是语文阅读理解，这道题一定要注意是 D。
+
+第 19 题属于低级错误，做出来了但是选项选错了。
 
 ### 张宇 1000 基础 2 刷第 14 章
 
+![14.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-Nq0zPvXOPl-MBDq1R0TWl3w4JFLQACpRlrG-BrmFaAWh7_JfgIyQEAAwIAA3gAAz0E)
+
+本题错误原因在理解错 x=rcosθ，应该直接算，而不是将 r(θ) 代入。对于这类题应该是二重积分的时候不用代，对于一重的时候要。
+
+![14.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-Rq0zQIEzjavx7gpmh4nVA3tY3VBAACphlrG-BrmFYJOnYxIwAB_C4BAAMCAAN4AAM9BA)
+
+犯了一个经典的错误，标准的零分，拆根号的时候要注意正负号。
+
+![14.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-Vq0zQ4m6ynw8U07xChcvsfP87oyQACpxlrG-BrmFaECxWmo-zKsAEAAwIAA3gAAz0E)
+
+这两题都还没写，直接跳了先。
+
+![14.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-Zq0zRqSnp57_jpYuchu0PYGZFTSAACqBlrG-BrmFb_N2Erq_ueKQEAAwIAA3gAAz0E)
+
+第 23 题最后一小步错了，I1-I2 减错误。
+
+第 24 题则是整体代换后，反而漏了原本的 u。
+
+这两题都属于非常低级的错误。
+
 ### 张宇 1000 基础 2 刷第 15 章
+
+![15.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-dq0zSCTBrSrC1CYAbAVfjktx_lpgACqRlrG-BrmFZSKz_HirfLTQEAAwIAA3gAAz0E)
+
+本题没有理解具体的含义，实则稳扎稳打一个个分析就可以分析出来（也就是经典怕了，而不是不会做）。
+
+![15.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-hq0zSUCyniqN0J_kczrLglprpYMAACqhlrG-BrmFYHOb-ARqbi9QEAAwIAA3gAAz0E)
+
+这道题其实是对的，但是对的比较模糊，我不知道为什么可以证明出 C=-1。细想之下，发现可以把通解公式变为变限积分的形式，从而轻松求解出来。
+
+![15.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-lq0zSjXc506QABwfH8r2Fv6wrklTQAAqsZaxvga5hWMZo7wZekct8BAAMCAAN4AAM9BA)
+
+属于低级错误，想当然以为 a+-2i，没有 a。
+
+![15.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-pq0zS3hcZQMFK6vWBFbs8TRJndvwACrBlrG-BrmFafyq8nELMr4AEAAwIAA20AAz0E)
+
+属于低级错误。本题错误原因在算出来所有东西后往回带（即带 y’’之类的时候），-2y’的中间一部没有×2。
 
 ## 武忠祥高数强化 2 刷
 
