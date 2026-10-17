@@ -3604,6 +3604,68 @@ y_h=(C_1+C_2 x) e^x
 
 属于低级错误。本题错误原因在算出来所有东西后往回带（即带 y’’之类的时候），-2y’的中间一部没有×2。
 
+### 张宇 1000 基础 2 刷线代第 1 章
+
+![1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-tq0zUhgIsxhlIEVGEnpJTPzYt7JAACrRlrG-BrmFZ6CLaB-F4DWQEAAwIAA3gAAz0E)
+
+本题错选为 A，为经验主义（按照经验感觉是 A，然后没去算）
+
+### 张宇 1000 基础 2 刷线代第 2 章
+
+![2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-xq0zUxJYooCsCVk3diu6vmFQMWYAACrhlrG-BrmFZqOgN3-MefvgEAAwIAA20AAz0E)
+
+本题错选为 B，属于低级错误，和 1 刷时情况类似，也是只考虑了一边，然后没看清楚题目。
+
+### 张宇 1000 基础 2 刷线代第 4 章
+
+![4.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-1q0zVEiLXL4n6SETAZ9eOgwJI8ugACrxlrG-BrmFY404qEWP8jaAEAAwIAA3gAAz0E)
+
+本题错选为 B。辨析一下 B 和 D。齐次通解 + 特解。想错了，想着如果是 D 的话展开可能会抵消。但是事实上如果把 B 代入原方程，那么就会解出来-b。
+
+![4.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-5q0zVUlHfFykVRFHgO-N1v00CokQACsBlrG-BrmFbWhbpsP5KJDgEAAwIAA3gAAz0E)
+
+属于低级错误，2+(-5)=-3≠-7。
+
+### 张宇 1000 基础 2 刷线代第 5 章
+
+![5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-9q0zVjMbMU_jIGg63dD1tzZcYyCwACsRlrG-BrmFagyqdguAn0LgEAAwIAA3gAAz0E)
+
+P^-1A^-1P＝λ^-1≠λ。
+
+![5.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_Bq0zV0Np8KjcRyN-Pj0ARF834T6QACshlrG-BrmFbekkFt905hYAEAAwIAA3gAAz0E)
+
+没有想到从特征值的角度走。
+
+![5.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_Fq0zWFqNTbJg-eIAIjGA25jfDiVAACsxlrG-BrmFaw6DbUv6kdSgEAAwIAA3gAAz0E)
+
+本题错选为 C。显然，r(A)=1，意味着重数至少为 2，这里是脑子抽了没有去验算。主要是要记住一下特例。
+
+### 张宇 1000 基础 2 刷线代第 6 章
+
+![6.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_Jq0zWZ18-zJ7HeaUpnqskCaE2jmwACtBlrG-BrmFYb2pzm_P7l9gEAAwIAA3gAAz0E)
+
+本题不想做，跳了。这里等略清醒的时候再看看。
+
+![6.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_Nq0zW1aWnKq6WDI-aNKRjZtKO3gQACtRlrG-BrmFZfUm-nQfbGcQEAAwIAA3gAAz0E)
+
+第 11 题错选为 C。需要注意实对称
+
+第 12 题感觉非常神秘，我没想到怎么做啊！欸，好像是对的，只是这个 a 不会被解出来罢了。这个做出来算出来 A+aE 的特征值，而不是 A 的特征值，前者的特征值算出来正好是 0，根号 2，根号 2。本质上是不自信带来的。
+这道题的精彩之处是利用变形矩阵与原矩阵特征值和特征向量的关系。
+还有就是，这类题似乎用 Q 去算可以简便计算（毕竟 Q 转置就是 Q 的逆）
+
+![6.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_Rq0zXJ_sZQrIwOpGVJKrBWn3Au-AACthlrG-BrmFbGVl3NwYVO6AEAAwIAA3gAAz0E)
+
+没见过这类题，但是细想一下，其实就是配方法。但是需要两次配方法，这道题回头得再看看。
+
+![6.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_Vq0zXa_hZ-HSHBDknxPgalWGWIpQACtxlrG-BrmFYGWQAB-sUWvLcBAAMCAAN4AAM9BA)
+
+关于这类题得研究一下这种题的最大值点怎么解。实际上有个等价变化，然后取最大即可。这个什么 uvw，-w<=w 也只是单纯因为可以凑出来。
+
+![6.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_Zq0zXsZrBowBYyvd4Jg9mgSlC8owACuBlrG-BrmFYEEVxxZdNczwEAAwIAA3gAAz0E)
+
+本题属于是脑子不清醒的产物，被意淫的答案影响了。事实上很简单。
+
 ## 武忠祥高数强化 2 刷
 
 ## 杨威线性代数强化 2 刷
