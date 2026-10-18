@@ -4456,6 +4456,10 @@ $0 < (x^2 + y^2)^{1/2} < \delta$
 
 最后应该是 (-6-1/2)/4，我自己是把 -1/2 代成 1 算了。
 
+![4.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_tq01dmsvSLm6h1eUcnSSDMGEJhOAACCxprG-BrmFbCS2iJ2a-YZAEAAwIAA3gAAz0E)
+
+漏解。
+
 ## 24 超越 4-10
 
 ## 25 超越
@@ -5241,7 +5245,7 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![5.5.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkpqx85t3_6eSxcowbSDf8vFf5HBbAACjRNrGz_BQFbVx8RP6yopzgEAAwIAA3gAAz0E)
 
-本体错选为 C。对于 C，内部异常的“响应”是在指令的执行过程中。当指令一条指令结束后的末尾进行响应？对于 D，～～内部异常处理完之后返回异常执指令的下一条执行，而不是本条～～。
+本体错选为 C。对于 C，内部异常的“响应”是在指令的执行过程中。当指令一条指令结束后的末尾进行响应？对于 D，~~内部异常处理完之后返回异常执指令的下一条执行，而不是本条~~。
 
 对于内部中断有三种情况，故障，陷阱和终止，分别对应返回本条，下一条，不反悔。对于外部中断一定是返回下一条指令执行，因为检查是在每条指令执行结束之后。
 
@@ -5963,7 +5967,7 @@ CRC 采用硬件计算，所以快，而 IP 那块如果再用的话，成本很
 
 ![3.4.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtNqyLIFRSUtPdbnzAAB-wABDwABKp4ERAACaRJrG6T-SFYolBe8_TbdygEAAwIAA3gAAz0E)
 
-本题错选为 C。2000B=16000bit，即发送时延为 16000/20000=0.8s=800ms。若采用停止等待协议，则传输一次数据的总时间为 RTT+800*2=1400+1600=3000ms，所以 800/3000<0.8；若采用 GBN 协议，采用 3bit 给数据帧编号，即发送窗口为 7，接收窗口为 1，～～假定采用发 7 个数据回 1 次帧，即总时间为 8\*800+1400=7800ms，所以 8\*800/7800=64/78>0/8～～；与后面的类似的做法，显然利用率=1；若采用 SR，则 NTd>=Td+RTT+Ta，所以利用率为 1。
+本题错选为 C。2000B=16000bit，即发送时延为 16000/20000=0.8s=800ms。若采用停止等待协议，则传输一次数据的总时间为 RTT+800*2=1400+1600=3000ms，所以 800/3000<0.8；若采用 GBN 协议，采用 3bit 给数据帧编号，即发送窗口为 7，接收窗口为 1，~~假定采用发 7 个数据回 1 次帧，即总时间为 8\*800+1400=7800ms，所以 8\*800/7800=64/78>0/8~~；与后面的类似的做法，显然利用率=1；若采用 SR，则 NTd>=Td+RTT+Ta，所以利用率为 1。
 
 ![3.4.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtRqyLI4PaKTia91B1T72lJXoml9wgACahJrG6T-SFb71SXXWitAtwEAAwIAA3gAAz0E)
 
@@ -9494,7 +9498,7 @@ page 未命中说明不在内存，所以 tlb 和 cache 必不可能命中。
 
 本题应该选 B。
 
-中断处理的全流程，见 [以 scanf 分析设备管理](https://blog.attilio.cc/posts/npee/os/#%E4%BB%A5-scanf-%E5%88%86%E6%9E%90%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86)
+中断处理的全流程，见 [以 scanf 分析设备管理](/posts/npee/os/#%E4%BB%A5-scanf-%E5%88%86%E6%9E%90%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86)
 
 ![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA3hqyPmmKCiM_YBgK9IqdtOjlIJu7QACqBNrG6T-SFYhCfXGjcQQdwEAAwIAA3gAAz0E)
 
@@ -9724,9 +9728,9 @@ OP 有 12 到 15 4 位，所以是 16 条指令。
 
 组合起来，0010,0011,0001,0101B=2315H
 
-该指令的意思是：从 R4 中取出 1234H 解析数据得到 5678H；从 R5 中取出数据 5678H 解析数据得到 1234H，5678H+1234H=68ACH，～～覆盖 R4 中的地址数据 1234H 指向的数据 5678H～～，然后 R5 中的数据 5678H+1
+该指令的意思是：从 R4 中取出 1234H 解析数据得到 5678H；从 R5 中取出数据 5678H 解析数据得到 1234H，5678H+1234H=68ACH，~~覆盖 R4 中的地址数据 1234H 指向的数据 5678H~~，然后 R5 中的数据 5678H+1
 
-综上所述，～～存储单元 1234H 的数据从 5678H 变为 68ACH～～；R5 中的数据从 5678H 变为 5679H。
+综上所述，~~存储单元 1234H 的数据从 5678H 变为 68ACH~~；R5 中的数据从 5678H 变为 5679H。
 
 这类题最重要的就是看清楚题目格式，不要想当然自己觉得怎么解释就是怎么解释。
 
@@ -9756,15 +9760,15 @@ cache 至少需要 tag 位和有效位，所以每一个 cache 行需要额外�
 
 `a[0][0]` 放在 320=000,0140H。
 
-由于 31=1,1111B，31\*4=111,1100=7CH，所以 `a[0][31]` 是 000,01BCH。～～将倒数第 2 位取出即 BH=1011B，取前三位也就是 101B=5。～～
+由于 31=1,1111B，31\*4=111,1100=7CH，所以 `a[0][31]` 是 000,01BCH。~~将倒数第 2 位取出即 BH=1011B，取前三位也就是 101B=5。~~
 
-～～所以在第 5 组。～～
+~~所以在第 5 组。~~
 
 将 1BCH 展开，即 0001,1011,1100B，取 110B，也就是 6。
 
-由于一行是 256 个数据，又要 256+1，所以 257=1,0000,0001B，\*4 也就是 100,0000,0100B=404H。所以 `a[1][1]` 是 000,0544H。～～将倒数第 2 位取出即 4H=0100，取前三位也就是 010B=2。～～
+由于一行是 256 个数据，又要 256+1，所以 257=1,0000,0001B，\*4 也就是 100,0000,0100B=404H。所以 `a[1][1]` 是 000,0544H。~~将倒数第 2 位取出即 4H=0100，取前三位也就是 010B=2。~~
 
-～～所以在第 2 组。～～
+~~所以在第 2 组。~~
 
 将 544H 展开，即 0101,0100,0100B，取 101B，也就是 5。
 
@@ -9796,9 +9800,9 @@ cache 至少需要 tag 位和有效位，所以每一个 cache 行需要额外�
 
 磁盘时延=寻道 + 旋转 + 寻址 + 读数据
 
-沿增大的方向移动，所以访问序列为：100,120,30,50,90，总共需要访问 20+90+60=～～180～～ 个磁道。
+沿增大的方向移动，所以访问序列为：100,120,30,50,90，总共需要访问 20+90+60=~~180~~ 个磁道。
 
-～～所以寻道消耗 180ms。～～
+~~所以寻道消耗 180ms。~~
 
 所以寻道消耗 170ms。
 
@@ -9806,15 +9810,15 @@ cache 至少需要 tag 位和有效位，所以每一个 cache 行需要额外�
 
 所以旋转消耗 20ms。
 
-～～对每个磁道随机读取 1 个分布的扇区，由于有 100 个扇区，所以可以视为 5ms/100，也就是 0.05ms～～
+~~对每个磁道随机读取 1 个分布的扇区，由于有 100 个扇区，所以可以视为 5ms/100，也就是 0.05ms~~
 
-～～所以寻磁道需要消耗 0.2ms。～～
+~~所以寻磁道需要消耗 0.2ms。~~
 
 数据传输的意思是，10ms 转 1 次，所以 10ms/100=0.1ms，一圈的时间除以 100 得到数据传输时间。
 
 4 次总共是 0.4ms
 
-～～所以总计 200.2ms。～～
+~~所以总计 200.2ms。~~
 
 所以总计为 190.4ms。
 
@@ -9948,11 +9952,11 @@ RTT=4km/200000(km/s)=20us。
 
 ![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA5tqygYHtcKWOY7frf-UZ9eXB0uklQACwRFrG364UVagSdGQGc6GiwEAAwIAA3gAAz0E)
 
-～～本题应该选 D。～～
+~~本题应该选 D。~~
 
 本题应该选 C。
 
-简单路径的意思是没有重复结点的路径，～～1 显然正确～～；对于 2 显然错误，对于 3 显然正确，所以应该选 D。
+简单路径的意思是没有重复结点的路径，~~1 显然正确~~；对于 2 显然错误，对于 3 显然正确，所以应该选 D。
 
 因为上面的解释，回路是包含自己本身的，所以 1 是错的。
 
@@ -10411,9 +10415,9 @@ k1 值为 -112
 
 (4)
 
-～～无符号整数加减法通过 CF 位，如果 CF=1 那么发生溢出，如果 CF=0 那么不发生溢出。～～
+~~无符号整数加减法通过 CF 位，如果 CF=1 那么发生溢出，如果 CF=0 那么不发生溢出。~~
 
-～～有符号整数加减法通过 OF 位，如果 OF=1 那么发生溢出，如果 OF=0 那么不发生溢出。～～
+~~有符号整数加减法通过 OF 位，如果 OF=1 那么发生溢出，如果 OF=0 那么不发生溢出。~~
 
 （计算机内部如何判断，而不是人类如何判断）
 
@@ -10421,7 +10425,7 @@ k1 值为 -112
 
 上述程序中：
 
-～～unsigned int z2=x+y～～
+~~unsigned int z2=x+y~~
 
 （题目要求的是带符号数，无符号数上面那俩都溢出了）
 
@@ -11062,9 +11066,9 @@ MIPS=80/4=20
 
 (2)
 
-～～访存 30M 次，缺页率为 0.0005%，也就是 150 次缺页。～～
+~~访存 30M 次，缺页率为 0.0005%，也就是 150 次缺页。~~
 
-～～页面大小为 4KB，缓冲器数据位 32 位，也就是 4KB/32bit=4KB/4B=1024 次。～～
+~~页面大小为 4KB，缓冲器数据位 32 位，也就是 4KB/32bit=4KB/4B=1024 次。~~
 
 缺失是 0.3M，缺页基于 cache 缺失，也就是 0.3M\*0.0005%=1.5 次。
 
@@ -11078,7 +11082,7 @@ DMA 常用于传送高速设备数据块，如果 CPU 优先则可能会丢失�
 
 (4)
 
-～～一个存储体的周期为 50ns，达到稳定的情况下，50ns 可以流动 4\*16B=64B 的数据，所以数据率为 64B/50ns=1.28GB/s，这里的 G 是 10^9。～～
+~~一个存储体的周期为 50ns，达到稳定的情况下，50ns 可以流动 4\*16B=64B 的数据，所以数据率为 64B/50ns=1.28GB/s，这里的 G 是 10^9。~~
 
 一个体是看存储器总线宽度，也就是 4B，而不是 16B，所以最后这个流动是 4\*4B=16B，所以数据率为 16B/50ns=320MB/s
 
@@ -11174,7 +11178,7 @@ DMA 常用于传送高速设备数据块，如果 CPU 优先则可能会丢失�
 
 (2)
 
-根据报文 5 的确认号，846b,41d6H，以及报文 3 的序号 846b,41c6H，可知总共发送了 846b,41d6H-846b,41c6H=10H=0001,0000B，～～也就是 32B 的数据。～～
+根据报文 5 的确认号，846b,41d6H，以及报文 3 的序号 846b,41c6H，可知总共发送了 846b,41d6H-846b,41c6H=10H=0001,0000B，~~也就是 32B 的数据。~~
 
 最后一步错了，应该是 16B。
 
@@ -11213,7 +11217,7 @@ DMA 常用于传送高速设备数据块，如果 CPU 优先则可能会丢失�
 
 ![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBA5qy4nSsqgTcLVvDT2VfDuvgzfloAACZxZrG364YVYTvfqVISXUYgEAAwIAA3kAAz0E)
 
-～～本题应该选 A。～～
+~~本题应该选 A。~~
 
 本题应该选 D。
 
@@ -11395,7 +11399,7 @@ C640,0000H=1｜100,0110,0｜100,0000,0000,0000,0000,0000B
 
 对于 C，说法正确，DMA 传送数据是通过硬件执行，最后说自己好了是要 CPU 参与。
 
-对于 D，说法错误，错误于所有。对于中断 IO 方式，运用在快速设备上会导致数据丢失；～～对于不支持 DMA 方式的快速设备而言，也不可以用 DMA 方式。～～
+对于 D，说法错误，错误于所有。对于中断 IO 方式，运用在快速设备上会导致数据丢失；~~对于不支持 DMA 方式的快速设备而言，也不可以用 DMA 方式。~~
 
 DMA 方式确实适用于快速设备，注意方向。
 
@@ -11708,9 +11712,9 @@ CPU 时钟周期为 1/800M=1.25ns。
 
 (3)
 
-～～32B/4B=4，所以总共需要 5 个总线时钟周期。～～
+~~32B/4B=4，所以总共需要 5 个总线时钟周期。~~
 
-～～所以 5\*5ns=25ns。～～
+~~所以 5\*5ns=25ns。~~
 
 第 4 问考虑到了存储体的问题，但是第 3 问没考虑到，感觉属于比较低级的错误。
 
@@ -11720,11 +11724,11 @@ CPU 时钟周期为 1/800M=1.25ns。
 
 首先计算 100 条指令的时间花费，也就是 100\*4\*1.25ns=500ns。
 
-～～一条指令平均需要 1.2 次访存，也就意味着总共需要 120 次访存，120 次访存也就意味着总共需要访存 120/8\*40ns=600ns～～
+~~一条指令平均需要 1.2 次访存，也就意味着总共需要 120 次访存，120 次访存也就意味着总共需要访存 120/8\*40ns=600ns~~
 
-～～cache 缺失率为 5%，也就意味着 100 条指令里有 5 条指令 cache 缺失，也就意味着需要 5\*25ns=125ns 去处理 cache 缺失问题传送数据。～～
+~~cache 缺失率为 5%，也就意味着 100 条指令里有 5 条指令 cache 缺失，也就意味着需要 5\*25ns=125ns 去处理 cache 缺失问题传送数据。~~
 
-～～所以总共也就是 1225ns。～～
+~~所以总共也就是 1225ns。~~
 
 cache 缺失率为 5%，也就意味着 100 条指令里有 100\*1.2=120 次访存，也就是 120\*0.05=6 条指令 cache 缺失，也就意味着需要 6\*85ns=510ns 去处理 cache 缺失问题传送数据。
 
@@ -11760,7 +11764,7 @@ N=0
 
 (4)
 
-1. ～～译码器～～
+1. ~~译码器~~
 2. 移位寄存器
 3. 加法器
 
@@ -12349,7 +12353,7 @@ OFFSET 应该是 -6。
 
 bne 目标地址公式应该是：0804,8114H+4H+OFFSET✖️4。
 
-～～占位符～～
+~~占位符~~
 
 这一步没写，最后应该指出 (PC)+4H+OFFSET✖️4。
 
@@ -12394,7 +12398,7 @@ cache 16 行，和主存交换块大小 32B，也就是 16✖️32B=512B。
 
 add RI, RI, R5 可能会发生溢出。
 
-～～loop: s11 R4, R2, 2 可能会导致缺页。～～
+~~loop: s11 R4, R2, 2 可能会导致缺页。~~
 
 load 指令会导致缺页（这里的缺页指的是缺数据，而不是命令）
 
@@ -12416,7 +12420,7 @@ F 文件控制块的长度会发生改变，起始位置也会发生改变。
 
 采用链式分配，读入前 29 个，然后写入第 30 个之后，修改第 29 个的指针，所以总计 31 次。
 
-每个存储块大小为 1KB，4 字节存放链接指针，4B=32bit，也就是 2^32 个磁盘块，～～所以最大长度应该是 2^32KB，也就是 4TB。～～
+每个存储块大小为 1KB，4 字节存放链接指针，4B=32bit，也就是 2^32 个磁盘块，~~所以最大长度应该是 2^32KB，也就是 4TB。~~
 
 最大长度应该是 2^32✖️(1024-4)B=4080GB。
 
@@ -13012,3 +13016,548 @@ unsigned short usi 是强制转义，所以也就是 32768+1，也就是 D。
 第 39 题应该选。
 
 第 40 题应该选。
+
+### 408 2017 真题 2 刷
+
+- 分数为 144，1 刷为 143
+- 第 13 题再次没有考虑边界对齐
+- 第 43 题 -1 第 2 问 0111B 应该是 7，而不是 8
+- 第 47 题 -3，一方面是又忘记考虑乙的发送情况了，这个在答题过程中没列出来，第二方面是没有考虑乙已经发了的帧需要接收。这道题需要重点注意
+- 1 刷的时候错的也基本是这几题，第 13 题，计组第 43 题 1 刷的时候错的是正数的 float 第一位应该是 0，而不是 1；计网第 47 题第 2 问也是因为没考虑乙的发送情况，不过第 3 问做对了
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_xq01gRwyB1sVSxV9yumYz4m8b23QACDBprG-BrmFYyBv1kISKrHwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+1+2+3+...+t=t(t+1)/2=n，所以 t=sqrt(n)
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_1q01iT6q1p2ag_Oymb6fWcMfOQrAACDRprG-BrmFa_03O74N62WgEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 1，可以考虑计算斐波那契数列，此时递归转为迭代可以使用动态规划，所以错误。
+
+对于 2，函数调用栈需要保存信息，以便回到当前。
+
+对于 3，考虑入栈次序 1,2,3,4,5，那么出栈次序可以是 1,2,3,4,5，也可以是 5,4,3,2,1，非常多。
+
+对于 4，栈是一种受限的线性表，只允许在顶端操作。
+
+综上所述，1,3,4 错误，也就是 C。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_5q01m5DbBdRQABbu5EWMMgtJtKZ5oAAhIaaxvga5hWqvrOu_FJx7EBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+属于背书题。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_9q01pF-T3Koq4BxdWH3rY00CsJNwACExprG-BrmFZxWVs4u1hEEQEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+考虑遍历情况，先序遍历的遍历为根左右，中序遍历为左根右，显然想要他们相同必须没有左子树，这个时候就是根右。
+
+所以应该只有右子树。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAABatNan1vMZKZa3BscUyOwj34xMMgAAhUaaxvga5hWE8mMrwjlE0oBAAMCAAN5AAM9BA)
+
+本题应该选 B。
+
+其实没什么好说的？根据后序遍历左右根可以很轻松得出答案。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAFq01v1MEB5EAxbcSuXgP7tNNiebAACGhprG-BrmFabgrUcvCUBFQEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+哈夫曼树的译码，其实不难，一个个个看下去就可以了。原串和切分为：
+
+0100|011|001|001|011|11|0101
+
+所以可以译码为：afeefgd，也就是 D。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAJq01zKAT_eK3jjbw8a0Sw_I2YBkQACHRprG-BrmFaoIctiDn8LZwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+属于模拟题，绘制如图：
+
+![7 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCClq1H33EFAyMbgaRSRLfawrvVT7BgACMBJrG1-fqVa6uwb5cLIXMAEAAwIAA3kAAz0E)
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCANq010kkmgp3iJC0fI-8UZu8a0ErwACHhprG-BrmFZyQTBEvwfPMgEAAwIAA3gAAz0E)
+
+本题属于背书题。首先排除 B 和 C。对 A 和 D 进行模拟，可知 A 是对的。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCARq019_4QWRmkponcBJCPyIMVB-KwACIBprG-BrmFa8vereNjG4zwEAAwIAA3gAAz0E)
+
+本题应该选 B，属于背书题。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAVq01-erDEXWvoyAUxVvjuz7qOx1QACIRprG-BrmFbLAAGvcAuR3i8BAAMCAAN4AAM9BA)
+
+本题应该选 B。
+
+对于 1，归并程序反而代码更长。
+
+对于 2，归并排序需要一个 O(n) 的辅助数组，而插入排序不需要。
+
+对于 3，归并排序执行效率是 O(nlogn)，而插入排序是 O(n^2)。
+
+综上所述，3 是对的。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAZq02AGkR5mraEL1DVMoZcFTsoqEwACIhprG-BrmFZzeIMWVy7_dAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+关键是开有没有利用随机访问。
+
+对于 1，插入排序可以使用双链表，所以不需要使用随机访问。
+
+对于 2，简单选择排序只需要记录当前排序指针即可。
+
+对于 3，冒泡排序是前后交换，可以通过 pre 指针实现。
+
+对于 4，希尔排序强要求随机访问。
+
+对于 5，堆排序使用的是父亲表示法，所以肯定是要用随机访问的。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAdq02Dgbm1GS_yOrcpuVq8srrQBxQACIxprG-BrmFZTAo-x5DhawAEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+假设基准程序 P 总共有 N 条指令，所以，在 M1 上需要执行 N✖️2/1.5G，在 M2 上需要执行 N✖️1/1.2G。
+
+所以也就是 8/5=1.6，所以应该选 C。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAhq02Gg6cuG16SeWVk1CxCnwbGojAACJRprG-BrmFZJeHMciwP4RwEAAwIAA3gAAz0E)
+
+~~本题应该选 B。~~
+
+~~一个 double 型的数据是 8B，由于是 4 体交叉，一个体是 1B，所以需要 2 个存储周期。~~
+
+没考虑边界对齐。A=1010H，所以应该选 C。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAlq02IregoqbVyAU1GDVQcgDaNXSQACJhprG-BrmFbdbk5WC2t64gEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+时间局部性的意思是最近我还可以访问自己，空间局部性的意思是最近我还可以访问自己的邻居。
+
+本题显然具备空间局部性，对于时间局部性，由于 j=0，它是一直遍历自己的，所以有时间局部性。所以应该选 A。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCApq02LMjjmU-a0-JVEEHGSxcmZPmgACJxprG-BrmFZni4qSv-ek0wEAAwIAA3gAAz0E)
+
+本题应该选 D，属于背书问题。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAtq02Mf-vEtAZ3KM9m1_lEMrLoS9QACKhprG-BrmFaOoklY4AgFZAEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+本题是类似哈夫曼树的解法，一个地址字段 6B，由于最大的是 3 地址指令，所以地址字段应该是 3✖️6B=18B。又由于 29 条指令需要 2^5=32，所以至少前面填 5bit，也就是 18+5=23，又由于是按字节编址的，所以应该选 A。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAxq02QNP8xTHF4SBEFLcB-MofauHAACKxprG-BrmFYslsIn99ppRAEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 1，显然不可以缩短流水线功能段（因为流水线功能段本身想缩短得通过细分，而不是超标量技术）
+
+对于 2 和 3 是正确的。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCA5q02UqCNiDX-W682yCZ9UGFZ9T7wACLhprG-BrmFYsKh8iuKhoggEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+A 的说法正确，主存在 CPU 外，控制存储器在 CPU 内。
+
+B 的说法错误，控制存储器也按照地址访问（可以理解为存储微指令，访问微指令也是要地址访问的）
+
+C 的说法正确。
+
+D 的说法正确，注意 BIOS。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCA9q02Wy1G_FTTeQU8GNUx4w3mEjrQACMRprG-BrmFZFsBQz0qtIUwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+本题应该这么考虑，数据通路和控制通路，后者可以理解为 CU。所以生成控制信号的部件显然是 CU 内部做的事情。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBBq02Y2wo-WsIxlsVGn7OO-qzzR8QACMxprG-BrmFbtdbN_7cmXMQEAAwIAA3gAAz0E)
+
+本题超纲，但是问题不大，选 D。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBFq02ZMgCchOkdftbTiHlkz0IDWpwACNBprG-BrmFbVDeDmmOJ9yAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+IO 端口也就是 IO 设备内部的寄存器，一般来讲交换数据是 IO 端口 - 主存或者 IO 端口 - 寄存器。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBJq02aCfAI0FHQ4IXf7lIZIzSCm9wACNRprG-BrmFYFEsQVxf5jFgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于 A，CPU 在一条指令结束的时候响应中断，这是背书的部分。
+
+对于 B，CPU 在执行中断本身的时候，是开中断状态，可以理解为多级中断。
+
+对于 C，可以考虑 IO。
+
+对于 D 是正确陈述句，没什么好说的。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBNq02uAabl_PsGjgNta9Fb55I9FrgACORprG-BrmFYTL_2lryKACgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+先来先服务也就是看谁最先到达，显然 J1 是最先到达的，排除 A 和 C。由于是短作业优先，且 t=2 的时候 J4 还没到，所以最开始运行 J3。
+
+综上所述，应该选 D。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBRq02vBuyUaNXmgCttqaitsrcKmVAACOhprG-BrmFb75Xmil8Z0-gEAAwIAA3gAAz0E)
+
+本题属于经典背书题，应该选 C。先传参再 trap，不然 trap 之后操作系统都不知道自己要干嘛。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBVq022olnIfxUMDQpbFjGqgTpgaewACOxprG-BrmFbisBVCEnxgDwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+回收起始 60K，大小为 140KB 之后，可以观察起始为 20K，大小为 40KB 以及起始为 200K，分区大小为 200KB 的都能合并，所以总共只剩下了 3 个分区，所以 C 和 D 排除。
+
+由于是按照最佳适应算法，要重排为最小的，所以应该选 B。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBZq023Dall_DpqwSh6TUtkx5Sj8bAACPBprG-BrmFY0laIMh7gCGQEAAwIAA3gAAz0E)
+
+本题应该选 D，磁盘按簇分配。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBdq025RvnPjOUoGuZdKJub_jd9mfAACPhprG-BrmFYN7O2acmprugEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于 B，时间片用完之后，进程状态应该从执行态变成就绪态，所以应该选 B。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBhq026Er6oiOhP-QUJFd2vghRiD-AACPxprG-BrmFayGuO1-kBSdwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+由于多道程序系统的 CPU 和 IO 设备可以并行工作，所以 1、3、4 都是正确的。多道程序系统会让系统开销变大。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBlq1HFACb5zJL-IK0_y7QisODYYWwACBxJrG1-fqVaM4WLOQj7cGQEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+磁盘的物理格式化做的事情是确定磁盘扇区校验码以及基本的块。
+
+然后磁盘需要进行分区。
+
+由逻辑格式化做的事情是初始化以及建立文件系统等。
+
+综上所述，1 错误，3 错误，所以应该选 B。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBpq1HGkrV-LO2L4v3Neb6xJ4M-ZnwACCBJrG1-fqVbquIzOa-7TigEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+由于不只是存储一个状态，需要存储所有用户的所有信息（意思是每个人可能拥有多个权限）。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCBxq1HHb89tpCsBdONPDpVikMGORmAACCRJrG1-fqVZLk3WhmZ2qaQEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+f1 硬链接出去是 f2，他们占用同一个内存索引结点，指向系统打开文件表的同一个区域，但是拥有独自的读写指针以及独自的用户打开表。
+
+所以 2 和 3 是正确的。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCB1q1HI4KKB8dHMNMQABEtpzMcgECrAAAgoSaxtfn6lW6_VIK7aYDVkBAAMCAAN4AAM9BA)
+
+本题应该选 B。
+
+本题属于背书题，考查 DMA 的全流程。也就是说：从题目入手，先排除 A 和 D。
+
+第一步是初始化 DMA 控制器并启动磁盘，第二步是从磁盘传输数据到内存缓冲区，第三步是中断，第四步是执行中断服务程序，所以应该选 B。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCB9q1HLvUB2l8YY36jc1B9j6-MeCmwACCxJrG1-fqVarEImGMP1UbwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+OSI 参考模型总共有 7 层，从上至下分别是：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。按照题设，物理层向上封装不需要引入额外的开销，数据链路层向上引入 20B 开销，网络层向上引入 20B 开销，传输层向上引入 20B 开销，会话层向上引入 20B 开销，表示层向上引入 20B 开销，应用层不需要引入开销，所以总共是引入了 100B 的开销。
+
+所以，总计发送了 500B 的数据，传输效率为 400B/500B=80%。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCFq1HjZuyuAi1G1i6Apc1a_PTjvBAACHRJrG1-fqVYO8HvGF_ClAwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+30=10log10S/N，所以 S/N=1000。假设信号状态数为 x，则 2Wlog2x>=Wlog2(1+S/N)，也就是 2log2x>=log2(1+S/N)，所以 log2x>=log2(1+S/N) / 2。后者是小于 5 的，所以 x 需要大于等于 32。
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCJq1HmQOBjVFQPRBja8equkRG8E3gACIRJrG1-fqVbw4RHFwqIJYgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+主机 H 发送给 AP，也就是谁收，谁发，最终发给谁，所以也就是 AP 收，主机 H 发，最终发给路由器。
+
+也就是 9b，9a，9c，对比选 B。
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCRq1HreBbFCYLSnvafN9nCNNdnMGQACJBJrG1-fqVacMdUKi416nAEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+属于背书题，0.0.0.0 只能作为源 IP 地址，不可以作为目的 IP 地址；255.255.255.255 只能作为目的 IP 地址，不可以作为源 IP 地址；127.0.0.1 既可以作为源 IP 地址，也可以作为目的 IP 地址；200.10.10.3 是一个正常的 IP 地址，既可以作为源 IP 地址，也可以作为目的 IP 地址。
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCVq1HsrDKI2KPTSasdRC_II569gqwACJhJrG1-fqVYwLs_tJN9AbQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+属于背书题，RIP 由 UDP 封装，OSPF 跑在 IP 上，BGP 报文跑在 TCP 上。
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCZq1HtdDlYwu1a3HIC0_8PrW7oZmwACJxJrG1-fqVZ208Q9zbhH_AEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+可分配的 IP 地址，首先排除 B 和 D。题设给的是一个 B 类地址，由于划分为 128 个规模相同的子网，占 7 位，所以网络号可以占 16-7=9 位，也就是 2^9-2=510。
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCdq1Hugrjxk3t7wbH04lBv3dZGb-wACKBJrG1-fqVbrPg_uNs7zvwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+0 时刻拥塞窗口为 1，发送 1 数据。
+
+1 时刻拥塞窗口为 2，发送 2 数据。
+
+2 时刻拥塞窗口为 4，发送 4 数据。
+
+3 时刻拥塞窗口为 8，发送 8 数据。
+
+4 时刻拥塞窗口为 16，发送 16 数据。
+
+5 时刻拥塞窗口为 32，由于乙开辟的为 64，取小也就是 32，到达题设的要求。
+
+所以 0-1,1-2,2-3，3-4,4-5 总共消耗 5RTT，也就是 25ms。
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCChq1HwjWO8hkbV1moA-emjA_gxelAACKRJrG1-fqVYFy18iznMfdAEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+A 和 B 属于背书范畴，对于 C，数据连接不一定是端口 20。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCpq1H4cvSL1zeDl3IkD1yxbVZ3MogACMRJrG1-fqVaPokZ7rcOoigEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+1. 采用中序遍历的方式
+2. 在递归非根和非叶结点的左子树之前输出一个左括号
+3. 递归到自己的时候输出自己本身
+4. 在递归非根和非叶节点的右子树之后输出一个右括号。
+
+(2)
+
+```c
+void inorder(struct node *BTree, int depth){
+    if(BTree==NULL){
+        return;
+    }
+    if(!(BTree->left==NULL&&BTree->right==NULL || depth==1)){
+        printf("(");
+    }
+    inorder(BTree->left, depth+1);
+    // printf("%c",BTree->data[0]);
+    printf("%s",BTree->data);
+    inorder(BTree->right, depth+1);
+    if(!(BTree->left==NULL&&BTree->right==NULL || depth==1)){
+        printf(")");
+    }
+}
+
+void solve(struct node *BTree){
+    inorder(BTree, 1);
+}
+```
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCtq1ICP27kCrQlJS1TCL_7UovP9YAACNxJrG1-fqVbmozbMT_JScwEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+使用 Prim 算法，从顶点 A 开始。
+
+观察顶点 A，发现 A-D 边最短，所以顶点集合为「A，D」，边集合为「A-D」。
+
+观察顶点 A 和 D，发现 D-E 最短，所以顶点集合为「A，D，E」，边集合为「A-D，D-E」。
+
+观察顶点 A，D，E，发现 C-E 最短，所以顶点集合为「A，D，E，C」，边集合为「A-D，D-E，C-E」。
+
+观察顶点 A，C，D，E，发现 B-C 最短，所以顶点集合为「A，B，C，D，E」，边集合为「A-D，D-E，C-E，B-C」。
+
+(2)
+
+唯一。
+
+(3)
+
+权值唯一。
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCxq1IFArpySZ_5CzY2TRWC8PmhwGwACOBJrG1-fqVbGdN07QXzIkQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+当 n=0 时，根据无符号数的计算规则，0-1=0+2^32-1=2^32-1，也就是 FFFF,FFFFH。所有的 32 位无符号整数均小于等于这个数，所以会出现死循环。
+
+不会。
+
+因为 int 型变量 0-1=-1，0<=-1 显然不成立，跳出循环。
+
+(2)
+
+相等。
+
+f1(23)=0000,0000,1111,1111,1111,1111,1111,1111B=00FF,FFFFH
+
+对于 f2，其符号位为 0，1111,1111,1111,1111,1111,1111B=1.111,1111,1111,1111,1111✖️2^23。所以阶码为 23+127=150=128+22=128+16+6=1001,0110B。所以也就是 0100,1011,0111,1111,1111,1111,1111,1111B=~~4B8F,FFFFH。~~
+
+4B7F,FFFFH.
+
+(3)
+
+float 型的尾数发生溢出，导致精度丢失。
+
+(4)
+
+int 型整数的表示范围为 -2^31~2^31-1，f(31)=2^32-1 超出表示范围，值为 FFFF,FFFFH，解释为 -1。
+
+23。
+
+(5)
+
+7F80,0000H=0111,1111,1000,0000,0000,0000,0000,0000B，由于阶码全 1 且其他位均为 0，所以为正无穷。
+
+126
+
+23
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCC1q1IOkwY-vZ3cKPeSKg7nLawNArgACPBJrG1-fqVbu9KTUIbwepAEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+CISC，因为指令字长不等。
+
+(2)
+
+0040,107FH+1H-0040,1020H=0040,1080H-0040,1020H=0000,0060H=0110,0000B，也就是 32+64=96B。
+
+(3)
+
+0-1=FFFF,FFFFH，执行 0000,0000H-FFFF,FFFFH=0000,0000H+0000,0001H=0000,0001H。
+
+~~这里应该解释一下 CF 怎么算的~~，CF=进位异或减法标志（1）=1
+
+CF 标志位为 1。
+
+(4)
+
+不可以。对 float 型使用 shl 指令会破坏其格式。
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCC5q1IY3O--mO631tb3v3oveTWtvaQACPxJrG1-fqVYqBe6UPjuKXwEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+页内偏移量为 12 位，所以页的大小为 2^12B=4KB。由于 f1 机器指令为 96B，显然可以被 1 页装下，所以占 1 页。
+
+(2)
+
+第一条指令的逻辑地址为 0040,1020H=0000,0000,01｜00,0000,0001｜,0000,0010,0000B。也就是访问页目录表的第 1 项和页表的第 1 项。
+
+(3)
+
+执行 scanf 的过程中，首先系统检查输入缓冲区，发现为空，执行系统调用，从用户态进入内核态，操作系统将进程由运行态变为阻塞态，等待用户输入。
+
+待用户输入后，操作系统先将键盘缓冲区上的内容冲到内核缓冲区，然后再冲入用户缓冲区，然后操作系统将进程从阻塞态变为就绪态。
+
+待再一次分配到处理机，进程从就绪态变为运行态之后，继续 scanf 函数，发现用户缓冲区有内容，系统调用结束，操作系统从内核态变成用户态，scanf 结束。
+
+所以，P 的状态由运行态变为阻塞态，从阻塞态变为就绪态，从就绪态变为运行态。
+
+CPU 会进入内核态。
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCC9q1IfBhIpqhjxJG8D_8WUsgt8CAwACRBJrG1-fqVaOqK4bBP_1AAEBAAMCAAN5AAM9BA)
+
+```c
+semaphore mutexX=1;
+semaphore mutexY1=1;
+semaphore mutexY2=1;
+semaphore mutexZ=1;
+
+thread1{
+  P(mutexX)
+  P(mutexY1);
+  cnum w;
+  w=add(x,y);
+  V(mutexY1);
+  V(mutexX);
+}
+
+thread2{
+  P(mutexY2);
+  P(mutexZ);
+  cnum w;
+  w=add(y,z);
+  V(mutexZ);
+  V(mutexY2);
+}
+
+thread3{
+  P(mutexY1);
+  P(mutexY2);
+  P(mutexZ);
+  cnum w;
+  w.a=1;
+  w.b=1;
+  z=add(z,w);
+  y=add(y,w);
+  V(mutexZ);
+  V(mutexY2);
+  V(mutexY1);
+}
+
+```
+
+本题为类读者写者问题。
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDBq1Ii-GPik2qdVq31a-n4VsrhDuAACRhJrG1-fqVZoBXpqlI6r5wEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+GBN 协议有累计确认，R3,3 的意思是乙方发送的序号是 3，希望甲方发送 3，那也就意味着乙已经收到了 0，1，2 这三帧。
+
+所以，甲可以断定乙正确收到了 3 个帧，分别为 S0,0，S1,0，S2,0。
+
+(2)
+
+由于数据帧的发送和确认序号字段均为 3bit，所以总窗口是 8，也就是发送窗口为 7，接收窗口为 1。
+
+假设甲从 t0 时刻的待发送序号为 0,1,2,3,...，那么在 t0 到 t1 时刻，甲已经成功发送并确保了 0,1,2 这三个帧，已经发送但没确保 3,4 这个帧乙是否成功接收。
+
+所以甲理论还可以发送 3,4,5,6,7,0,1 这 7 个帧，不过 3,4 已经发送了，所以只能发送 5,6,7,0,1 这 5 个帧。
+
+~~由于乙发了 R3,3 这个帧，意味着甲收到了 3 这个帧，期待乙发送 4 这个帧，所以第一个帧应该是 S5,4，最后一个帧应该是 S1,4。~~
+
+由于乙发送的是 0,1,3，没有发送 2 这个帧，所以对于 3 这个帧应该直接丢弃，因此甲还是期待乙发送 2 这个帧，也就是 S5,2，S1,2。
+
+(3)
+
+分析该图，甲已经发送了 0,1,2,3,4 这 5 个帧，确认了乙的 0,1 帧，乙已经发送了 0,1,2 这 3 个帧，确认了甲的 0,1 帧。
+
+由于 S2,0 超时，所以得重发 2,3,4 这 3 个帧，~~重发的第 1 帧应该是 S2,2~~。
+
+应该是 S2,3，因为 R2,2 已经发了。
+
+(4)
+
+帧长为 1000B，所以一段 1000B/100Mbps=8000bit/100Mbps=80us。RTT=0.96ms=960ms。
+
+所以，7✖️80/(80+80+960)=50%。
