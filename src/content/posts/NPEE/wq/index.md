@@ -3899,7 +3899,7 @@ $(b-a)/n * (a+(b-a)i/n)$
 
 ## 27 李 6
 
-- 完成时间：20261008-20261018
+- 完成时间：20261008-20261017
 - 平均分：
 - 平均作答时间：
 
@@ -4284,11 +4284,71 @@ $\text{tr}(NM) = \sum_{j=1}^n (NM)_{jj} = \sum_{j=1}^n \sum_{i=1}^m N_{ji} M_{ij
 
 ## 数学近年真题（21-26）1 刷
 
-- 完成时间：20261017-20261023
+- 完成时间：20261018-20261023
 - 平均分：
 - 平均作答时间：
 
 ### 2021 真题
+
+- 完成时间：20261018
+- 分数：142
+- 时间：90+60
+
+模拟卷还是太神秘了，果然还得是真题。
+
+来点聊天记录：
+
+21 年真题 136
+
+感觉有点低
+
+21 年真题是改革以来最简单的一年真题了
+
++1 分吧
+
+大题俩低级错误，分别 -1，-2
+
+填空一个不会做
+
+一个低级错误 -5
+
+这份卷子 90min 写完，然后检查了 60min，检查出来一道大题错了
+
+挽救了 6 分大概
+
+你大爷的
+
+我要给我自己 +5 分
+
+题印错了
+
+我就说我怎么算都算不出来
+
+那就是 150min 142，还可以
+
+我说
+
+非真题太怪了
+
+而且这份卷子题我大多数应该都没做过
+
+那些写教辅的老师应该在有意控制
+
+总的来讲，其实最后大多数时间都在算第 14 题，题印错了那没招。这提示了我一定要找好的材料去印。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDZq1OdvE1qg8V3nY1qFmfeAGAIlTQACSRNrG1-fqVYKUEHel-QtjAEAAwIAA3gAAz0E)
+
+本题属于低级错误，直接想当然认为是 r^3-r=0，但是实际上应该是 r^3-1=0，这个错误我错过非常多次了，包括之前总结的时候也总结了。
+
+这道题在二次做的时候依旧没有反应过来。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDdq1OgMOolAeHIGUR63UDfEFMJbwwACShNrG1-fqVanznH2gYtT0QEAAwIAA3gAAz0E)
+
+本题凹凸区间的凹凸二阶导都算出来了，但是最后忽略了 x+1 一整个的三次方也可以讨论正负性，所以 -2。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDhq1OhXbByOvtxF_1IubFUds4xw6QACSxNrG1-fqVbDZpv0--cN-QEAAwIAA3gAAz0E)
+
+题目里明确说了 x>0，而我写了 2 个解，所以 -1。
 
 ### 2022 真题
 
@@ -4459,6 +4519,26 @@ $0 < (x^2 + y^2)^{1/2} < \delta$
 ![4.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_tq01dmsvSLm6h1eUcnSSDMGEJhOAACCxprG-BrmFbCS2iJ2a-YZAEAAwIAA3gAAz0E)
 
 漏解。
+
+![4.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDFq1Khfotb6LjYd66URk28hWUPErgACgRJrG1-fqVauNliWVW86qQEAAwIAA3gAAz0E)
+
+这道题确实有说法，计算出来了 3 个式子之后，会发现前两个只有 0 解。由于 0 解不满足第 3 个式子，所以前两个式子线性相关！
+
+这个思想的迁移确实非常精彩！
+
+![4.3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDJq1Lq9BlwAATUtQLvldTHlwdnu3loAAr0Saxtfn6lW7rGsIlCIX1sBAAMCAAN4AAM9BA)
+
+这道题我就觉得没必要继续算下去了，思路掌握了就可以。到原点的距离公式会设即可。
+
+![4.3.18 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDNq1Lrqy8MN0KMYMVXknKG9pH9qcQACvhJrG1-fqVYor879lGJ94gEAAwIAA3kAAz0E)
+
+![4.3.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDVq1LvNarw0I1sHZ1K25ruolpLMnAACwRJrG1-fqVYYkExaaKh1QwEAAwIAA3gAAz0E)
+
+这道题我认为也是没必要去算了，会很神秘。我感觉到了现在这个阶段，我不想二刷 880 的原因可能是我没把握清楚题目难度，或者说我没办法判断这是不是怪偏难。
+
+所以我说我认为策略有点问题，应该先写近些年的真题，然后再来二刷看看。
+
+![4.3.19 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDRq1Lurt7yP6pWpOqvMsQvH_h6UrQACvxJrG1-fqVbm4AtZXKR0ZAEAAwIAA3gAAz0E)
 
 ## 24 超越 4-10
 
@@ -12640,7 +12720,7 @@ cache 本身的有效位占 1 位，采用回写法脏位占 1 位。
 
 ![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKlqz0MKCS0anYp9EvULqFO8KIbd0QACbRNrG7fmeVYaMJU9NFzKMwEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 B。
 
 寻寻道时间 8ms，转速 7200rpm=120rps，转半圈需要花的时间是 0.5/120=0.0042=4.2ms
 
@@ -12724,6 +12804,12 @@ S1 也不会限制用户申请资源的顺序，可以考虑系统资源充足�
 
 ![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLVqz0lzRt1A6_-GEuz34N6glVdWHwACpxNrG7fmeVarz_9_NApqHgEAAwIAA3kAAz0E)
 
+本题应该选 C。
+
+使用位图法，假设释放的盘块号是 409612，由于 1024✖️8=8192，409612/8192=50.00146，也就是说按从 0 开始算，记录在第 50 个盘块，所以从 32 开始算，是第 82 号块。
+
+409612-8192✖️50=12，也就是第 12 个 bit 应该在从 0 开始计算的第 1 字节里。
+
 ![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLZqz0mEJVcU1YbbOceli_AX7YQMtwACqBNrG7fmeVZePTUkbniqOAEAAwIAA3kAAz0E)
 
 本题应该选 C。
@@ -12738,7 +12824,7 @@ S1 也不会限制用户申请资源的顺序，可以考虑系统资源充足�
 
 ![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLhqz0oTzI3HiN9485IYOA4RY1bVLAACqxNrG7fmeVYbpqqoRTDl1wEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 A。
 
 首先观察编码 1，显然是非归零编码，所以 CD 排除。
 
@@ -13561,3 +13647,9 @@ GBN 协议有累计确认，R3,3 的意思是乙方发送的序号是 3，希望
 帧长为 1000B，所以一段 1000B/100Mbps=8000bit/100Mbps=80us。RTT=0.96ms=960ms。
 
 所以，7✖️80/(80+80+960)=50%。
+
+## 408 深度注意
+
+1. 管程、通道的概念区分
+2. GBN 协议的多帧辨析
+3. 磁盘相关的计算
