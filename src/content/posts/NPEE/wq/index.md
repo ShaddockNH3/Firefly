@@ -13648,6 +13648,527 @@ GBN 协议有累计确认，R3,3 的意思是乙方发送的序号是 3，希望
 
 所以，7✖️80/(80+80+960)=50%。
 
+### 408 2018 真题 2 刷
+
+- 分数为：148
+- 第 43 题 -1，第 1 问理解错误。
+- 第 44 题 -1 TLB 采用全相联，而我写成直接映射
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDlq1POs3r07OhCf-DqQGHfrkwIviQACjBNrG1-fqVaHNvjbYnAzhgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+这类题方法是模拟，S1 操作数依次是 5,8,3,2，其中 2 在栈顶。所以第一次是弹出来 2 和 3，并且计算 3+2=5，然后放回栈里，此时栈里应该是 5,8,5。第二次弹出来是 5 和 8，计算 8-5，得到 3，然后放回栈里，此时栈应该是 5,3。第三次弹出来是 3 和 5，计算 5✖️3=15。
+
+所以最后答案应该是 B。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDpq1PS1MNwi_pulRb2Le3TfMJcmSQACjRNrG1-fqVYIeHYqhg4ScgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+这类题也是模拟，
+
+对于 A，1 和 2 出队并输出元素，3,4 出队并入栈，5,6 出队并输出，4,3 出栈。
+
+对于 B，1 出队入栈，2,3,4,5,6 出队输出，1 出栈输出。
+
+对于 C，1,2 出队入栈，3,4,5,6 出队输出，矛盾。
+
+对于 D，1,2,3,4,5,6 入栈，6,5,4,3,2,1，出栈输出。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDtq1PTdAfM8PobAhAssA6c0hA37iwACjhNrG1-fqVbqgqa383fXhQEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+这类题也算模拟，套公式不如手动计算。m1,1 放在 0，m1,2 放在 1，以此类推，m1,12 放在 11，所以 m2,2 放在 12，m2,3 放在 13，以此类推 m2,12 放在 22，所以 m3,3 放在 23。
+
+所以，m1,1 放在 0，m2,2 放在 12，m3,3 放在 23，中间差值是 12,11，以此类推，后续是 10,9 等。
+
+所以 m4,4 应该是 33，m5,5 应该是 42，m6,6 应该是 42+8=50。
+
+所以应该选 A。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDxq1PV_7aWA2bAvTZ5T6T95b4VDSQACjxNrG1-fqValPCABGHE_GQEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+每个分页节点都有 2 个子节点，意味着没有度为 1 的结点。所以由 n0+n1+n2=n1+2n2+1，可得 n0=n2+1，由于 n0=k，所以 n2=k-1，所以总结点数为 2k-1。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCD1q1PaQpqgBQXR6lX8y5nfCLKODBAACkBNrG1-fqVY48UwsQsIimAEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+这道题有两种做法，一种是构造哈夫曼树，另一种是瞪眼法，出现次数少的编码较长，出现次数多的编码较短。
+
+所以，由于 e 出现了 10 次，所以直接可以排除掉 B。由于 C 中 00 是 0011 的前缀，所以排除。
+
+只剩下 A 和 D 可以选择，观察 D 选项 b 出现 3 次但是却拥有短哈夫曼编码，所以排除。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCD5q1PcyEXNevPR2Dwha91-rS7gzVQACkhNrG1-fqVbl9Olo2pxQ7gEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+根据中序遍历，本题顺序从小到大应该是：x1,x3,x5,x4,x2，所以 A，B，D 可以排除。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCD9q1Pd6-0mnk30gUp1P9VG6LWB8FAAClBNrG1-fqVZXVyPUsLeSpgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+这种题一个个代入就好了，对于 D，拿走了 5 之后想要拿 2，但是拿 2 之前得拿 1，所以不是拓扑排序。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCEBq1PfDXmDodLNNwnH8GyPc2fYI1wAClRNrG1-fqVaA9ynWzqn4SgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+三阶 B 树一个结点至少拥有 3/2 向上取整 -1=1 个关键字，所以高度为 5 的 3 阶 B 树至少有 1+2+4+8+16=31 个关键字。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCEJq1PhjRgVn9_wbdGaGOJPHZQAB4ZoAApkTaxtfn6lWvp3ksQXjj-gBAAMCAAN4AAM9BA)
+
+本题应该选 C。
+
+纯模拟方案，22%7=1，43%7=1，15%7=1，所以查找成功的总长度应该是：
+
+1+2+3=6，所以 6/3=2。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCEFq1Pg6y9c8AstzHwfrmjljCqDgpgACmBNrG1-fqVb9hLdkvKRjIwEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+这类题采用观察法，第一趟排序结果第一个关键字为 1，所以 1 和 8 必然要互换，所以第一次应该间隔是 5。第二趟 排序结果第二个关键字是 2，也就是说 2 和 3 要换，所以增量应该是 3。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCENq1PmzAjJZ9M_k42e1Yk3OH27d2gACnBNrG1-fqVYdIxZyo2Y86QEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+采用纯模拟法，构造大根堆，如下图所示：
+
+![11 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGtq1djfIqEoTCUGtM7SKsfVxeM2iAACBhJrG1-fsVYnB5cp3NnT7wEAAwIAA3cAAz0E)
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCERq1Pn-AuFJlrSY4lsEtxjPy9JyjwACnRNrG1-fqVZoREkcccQligEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 1，二进制规则确实运算简单，不需要考虑过多的进位；
+
+对于 2，两个稳态的物理器件容易，是因为不需要考虑范围，高是 1，低是 0；
+
+对于 3，使用逻辑门电路实现算术运算也是正确的。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCEVq1PpGkSvIMn2ydmrIPrUwvTylWgACnhNrG1-fqVYLIRi1-NwuTwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+首先排除 A 和 D，因为题设中的 y 是 16 进制。
+
+-y 的补码是 FFFF,FFBEH+0000,0001H=FFFF,FFBFH。
+
+所以 x-y=FFFF,FFDFH+FFFF,FFBFH=FFFF,FF9EH。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCEZq1Ptuy2jtx9SiODQm50P1X_G_yAACoBNrG1-fqVbUydzJ_gh3AAEBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+按照单精度浮点数的表示，符号位为 0，阶码为 0000,0001，尾数全为 0 的数是最小的。阶码为 1，也就意味着 1-127=-126，所以最小的规格化正数是：1.0✖️2^-126。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCEdq1P2IafDrt4SNHXTZ56FFCVxvlQACoRNrG1-fqVY05hM7FDFzRQEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+32bit 的数需要 32/8=4 个字节，也就是 8 个 4 位二进制数表示，两个一组。
+
+-64 的机器数是：FFFF,FFC0H，2 个一组的小段法，也就是先读入 C0H，也就是应该选 A。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCEhq1P4Sad_8WJGTdCLiVeduC-0OyAACoxNrG1-fqVYveoxXzzYPRgEAAwIAA3kAAz0E)
+
+本题因该选 B。
+
+逻辑右移指的是补 0，算术右移指的是按照符号位。
+
+所以，原始的数 1101,1000B 逻辑右移一位，也就是 0110,1100B，算术右移一位也就是 1110,1100B。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCElq1P6buEAURpTKoqujAAFFbOwvA8MAAqQTaxtfn6lWpAZciCGLv3YBAAMCAAN4AAM9BA)
+
+本题应该选 C。
+
+对于 2K✖️1 位的引脚，显然是 2^11，一般来讲要让 r 接近 c，如果不能接近，那么行应该短一些，所以一那个该选 C。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCEpq1P739PkHNN8Osznvd_5PaucqIQACpRNrG1-fqVahqC_-luiPowEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+2100H-2000H=0100H。0100H=2^8=256，256/8=32，所以应该选 B。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCEtq1P9er1MiP7fNCSW6hkGk3YjV9QACphNrG1-fqVYcDiY0ktCZdwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+考虑无符号数的情况，显然 CF 应该是 0，因为是够减的。对于有符号数的情况，负数减一个负数必然是够减的，所以 OF 也应该是 0。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCExq1QABQm2-801E4_oj8kWoWRI1HC4AAqcTaxtfn6lWuZLTS7xjnOIBAAMCAAN4AAM9BA)
+
+本题应该选 D。
+
+选最长的。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCE1q1QABc2_iwGu0bgoeEWNU9MHmSMkAAqkTaxtfn6lWXcVNjHkJebgBAAMCAAN4AAM9BA)
+
+本题应该选 B。采用总线复用显然是降低数据传输率的方法。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCE5q1QS93_Xm1bpFMRvKDsaZtYSU2wACsBNrG1-fqVb1Rf9XBRGR2QEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 A，按照本身的优先级排序。
+
+对于 B，通用寄存器是操作系统保护的。
+
+对于 C 是一个正确的描述。
+
+对于 D，只有处于开中断的时候，才会执行中断服务程序。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCE9q1QU5slC8mrv3m3L3OVQRaOCF1AACshNrG1-fqVanXKCnnk4wjAEAAwIAA3gAAz0E)
+
+对于 1，多任务操作系统至少需要并行，并发是其更高级的方式。
+
+对于 2，多任务操作系统需要实现对共享资源的保护。
+
+对于 3，但 CPU 环境就可以跑并发了，可以考虑 RR。
+
+本题应该选 C。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFBq1QYWoWmyUQ3M94x4NWTX7OJUXAACsxNrG1-fqVY-yCKHtYGHggEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+由于 P2 的优先级最高，所以其周转时间应该是 24us。由于求的是系统周转时间，所以 P1 和 P3 等待的时间应该完整计入。
+
+由于 P2 运行完之后是 P3，P3 首先等待 18us（此时 P1 等待时间剩下 12us），上处理机 1us，总计运行 36us，总和也就是 24+18+1+36=79us。
+
+P1 在 P3 运行完之后等待 30us，上处理机 1us，总计运行 12us，总和也就是 79+30+1+12=122us。
+
+所以，24+79+122=225，225/3=75us。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFFq1QYwkXlXX3apPPPheEyQ2BSpfwACtBNrG1-fqVZ4urM0hziaJwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+thread1 按照 1,2,3 记录，thread2 按照 4,5,6 记录。
+
+显然，值为 2 的序列为：1,2,3,4,5,6；4,5,6,1,2,3。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFJq1QZBpiWbZK3jZOW6ExsuZTtkjQACtRNrG1-fqVaKv_40j0eY7QEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+先计算仍需分配的资源，仍需分配 2,2,1，系统中还剩下 4-2-1=1 个资源，所以不存在安全序列。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGFq1RDRfO62LwABnfzj7d4lnITKwPAAAsYTaxtfn6lWp5DKPRMc6B0BAAMCAAN4AAM9BA)
+
+本题应该选 C。
+
+对于 1，可以理解为进程 P 想申请打印机，那么可能从运行态转为阻塞态。
+
+对于 2，可以理解为 read 指令，那么显然需要。
+
+对于 3，可以理解为抢占式优先级，显然是运行态转换为就绪态。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGBq1RCk3gaVt0CwQshNYOMdnTQ7uwACxRNrG1-fqVbVcDRUxcfRWwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+管程本身就带有互斥机制，所以 A 是错的。对于 B，作用反了，x.signal 才是唤醒，对于 C，x 本身是条件变量，而不是信号量。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCF9q1RCJ3QKdV6NMnLsJ7d0yU6kWUgACxBNrG1-fqVYeegGMI2KL7AEAAwIAA3gAAz0E)
+
+本题应该选 D，起始没什么好分析的。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCF5q1Q-I3caN_BHvKMKKLrLQB0ISMwACwxNrG1-fqVan7VCVQXHkEwEAAwIAA3gAAz0E)
+
+本题应该选 A，先来先服务是完全根据进程进入系统的时间来排序的。
+
+对于 B，最短寻道往往会出现饥饿现象，并且往往会出现往左了之后一直向左。
+
+对于 C 和 D，循环扫描粘着现象更严重。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCF1q1Q4blWQJLerIi2Y0Y_LH04mvEgACwhNrG1-fqVbQetg221OVKwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 1，提前读的意思是提前把数据从磁盘读入内存，以供进程读取，显然是可以省时间的。
+
+对于 2，为文件分配连续的簇，意思是假设文件存储在磁盘里，并且该文件占据多个磁盘块，那么在寻道的时候可以减少寻道时延。
+
+对于 3，延迟写的意思是说在把数据写入磁盘之前，先把数据写入到缓冲区，以便在需要的时候再写入磁盘。
+
+对于 4，显然是对的，磁盘高速缓冲类比 cache 机制。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFxq1Q4C7Rw_y-RVeUuPiFVAUbeB_QACwRNrG1-fqVYg2Pf-OhxxQgEAAwIAA3gAAz0E)
+
+本题属于背书问题，应该选 C。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFtq1Q3oKF8RDum3iIbilsDVmUN_ZQACwBNrG1-fqVZKrVu2gI7XqQEAAwIAA3gAAz0E)
+
+本题属于背书问题，应该选 B。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFpq1Q3URK5CzwK_2CZUSFuVH2x4zAACvxNrG1-fqVabhH7es-ZalAEAAwIAA3gAAz0E)
+
+本题应该选 C，属于背书问题。
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFlq1Q0kZ_8XdHclEVsyEBVStN3s-QACvhNrG1-fqVaaTk1fdNFyXgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+属于背书题。
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFhq1Qwdg_aZMqo4QlaZef14-I4Q8gACvBNrG1-fqVZsXY6nzyeVvgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+假设一个数据帧长度为 xbit，那么传播耗时 x/3000，所以可以列出式子：（x/3000）/（x/3000+0.4）=0.4，解得 x=800。
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFZq1Qulh4W-POnO7acGENGrq0WdGAACuRNrG1-fqVY3HjhviKDH_gEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+H1 的目的 mac 地址应该是路由器的，所以是 51，H2 收到的源 mac 地址也应该是路由器的，所以是 61。
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFVq1QrOm6TtidJrN5RBKNtcA1abJAACuBNrG1-fqVZmvksiM3obIgEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+观察，展开 32,40,48,56 为二进制，分别为：0010,0000B，0010,1000B，0011,0000B，0011,1000B。
+
+显然，这些数字的前三位是一样的，所以应该是 16+3=19 位的子网掩码，所以应该选 C。
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFRq1QpLLeLlzWM-qslv80KeOpFoBAACtxNrG1-fqVbUh45qn2S4YAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+分用指的是到了目的地址后，根据目的端口号把原有的数据分开来给对应的东西。
+
+复用指的是根据源端口号。
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFNq1QoWCx6x27y8K023XwkP4xEwjQACthNrG1-fqVbJ4tcuZeMf8AEAAwIAA3gAAz0E)
+
+本题应该选 D，属于背书题，SMTP 协议直接传输的只能是阿斯科编码，需要使用 MINE 协议扩展才能传输其他东西。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGJq1RG5v5IQ8Z1mF8g6Pkl6ISWY9wACxxNrG1-fqVZe_Guhi-wTeAEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+1. 设置一个数组模拟哈希表 hasmap[n+1]
+2. 遍历数组，如果 A[i]<=n&&A[i]>0，那么 hasmap[A[i]]=1
+3. 遍历 hasmap，如果 hasmap[i]==0，那么返回 i
+4. 如果遍历完了，那么返回 n+1
+
+(2)
+
+```c
+int solve(int A[],int n){
+    int hasmap[n+1];
+    for(int i=0;i<n+1;i++){
+        hasmap[i]=0;
+    }
+    for(int i=0;i<n;i++){
+        if(A[i]<=n&&A[i]>0){
+            hasmap[A[i]]=1;
+        }
+    }
+    for(int i=1;i<n+1;i++){
+        if(hasmap[i]==0){
+            return i;
+        }
+    }
+    return n+1;
+}
+```
+
+(3)
+
+时间复杂度：O(n)
+
+空间复杂度：O(n)
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGNq1RJhhrKLeZ5iqBf8Z3WlFgt27wACyBNrG1-fqVbxUug6zX4t5gEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+如图所示：
+
+![42 解 1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGpq1czmXvMXMxMBksETvoBWXHZ5gQAC4RFrG1-fsVZyj_yeOmtx6QEAAwIAA3cAAz0E)
+
+16
+
+(2)
+
+邻接矩阵。
+
+Prim 算法。
+
+(3)
+
+采用第一种方式可以收到分组。
+
+采用第二种方式不可以收到分组。
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGRq1RKOqi0Vt9J7WhHTgBWkc_XNYQACyRNrG1-fqVYXerUmm_wkXAEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+假设执行 1s，则总共传输 2MB 的数据。
+
+一条指令耗时：4/500M，一次输入输出 10 条指令，则消耗 40/500M，~~也就是至少 80ns 查一次。~~
+
+订：$\text{满载时间} = \frac{4\text{ B}}{2 \times 10^6\text{ B/s}} = 2 \times 10^{-6}\text{ s} = 2\ \mu\text{s}$
+
+而 IO 接口为 32bit=4B，传输 2MB 至少最要 2MB/4B=0.5M 次中断。
+
+也就是 1s 内总共执行 40/500M✖️0.5M=4%，也就是需要消耗 4% 的时间。
+
+(2)
+
+假设执行 1s，则总共传输 40MB 的数据。
+
+设备 B 一次中断时间为 400/500M。
+
+IO 接口为 4B，传输 40MB 至少需要 40MB/4B=10M 次中断。
+
+也就是 1s 内总共执行 400/500M✖️10M=8s，矛盾。
+
+所以不可以使用中断 IO 方式。
+
+(3)
+
+假设执行 1s，则总共传输 40MB 的数据。
+
+设备 B 一次 DMA 的时间为 500/500M。
+
+一次传输 1000B，传输 40MB 至少需要 40MB/1000B=40K 次中断。
+
+也就是 1s 内总共执行 500/500M✖️40K=4%。
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGVq1RKgufKUelaFNbIemCFvf2JTHgACyhNrG1-fqVbMR-LjngX3FwEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+28 位。
+
+(2)
+
+~~直接映射。~~
+
+订：全相联映射
+
+SRAM。
+
+(3)
+
+2 路组相联。
+
+脏位 1 位。
+
+LRU 替换位 1 位。
+
+一行 cache 是数据+tag+ 有效位 + 脏位+LRU 替换位，也就是 2^5✖️8+20+1+1+1=279。由于总共有 8 组 cache，一组 2 个，所以是 16 个 cache 行，也就是 16✖️279=4464bit。
+
+Cache 有效位的作用是：当进程切换的时候，原来的 cache 失效，所以需要有效位来确保当前进程是用的 cache 是自己的数据。
+
+(4)
+
+0008,C040H 按照虚页号切也就是 tag 位为 0008CH，对比 TLB，发现 0008CH 的有效位为 1，且对应实页号为 0040H，所以得到物理地址 004,0040H。
+
+物理地址 004,0040H=0000,0000,0100,0000,0000,｜010｜0,0000B，也就是在第 2 组 cache，tag 号为 00400H。由于有效位为 0，所以未命中 cache。
+
+由于虚拟地址给的后 8 位不会变，所以解析后 8 位即可，也就是 60H=011｜0,0000B，对应的是第 3 组 cache。
+
+![44 图](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGZq1RKyQNj42lwwVjs3Epk_eUtikwACyxNrG1-fqVZPMD1bJc8MVAEAAwIAA3gAAz0E)
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGdq1RLQ2GDKIq-Kzpgs7JaDSfMFegACzBNrG1-fqVav1JMus0Q8yQEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+页目录号为：00,0000,0110B。
+
+页号为：00,0000,0110B。
+
+页内偏移量为：0000,0000,1000B。
+
+拼接起来也就是 0000,0001,1000,0000,0110,0000,0000,1000B=0180,6008H
+
+(2)
+
+物理地址。
+
+进程切换时，PDBR 内容发生变化。一个进程对应一张独立的页目录表。
+
+线程切换时，PDBR 内容不发生变化。线程依托于进程，没有自己独自的物理地址空间。
+
+(3)
+
+近期访问位，近期修改位。
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGhq1RLkvapvD5KXKUB-PJVslC0AAYsAAs0Taxtfn6lWhIYEqOV9risBAAMCAAN4AAM9BA)
+
+解：
+
+(1)
+
+一个簇大小为 4KB，所以一个簇内可以存储 4KB/64B=64 个文件索引节点。
+
+所以，最大文件长度应该是 (8+64+64^2+64^3)✖️4KB。
+
+(2)
+
+用 1M 个簇存放文件节点，也就意味着 1M✖️4KB/64B=2^26 个。
+
+用 512 个簇存放文件数据，也就意味着 512M✖️4KB/5600B=2^41/5600>2^41/2^13=2^28 个。
+
+所以，最多可以存放 2^26 个。
+
+(3)
+
+6KB/4KB=1，也就意味着其最大数据放在第 2 个簇里（按 1 开始）。
+
+40KB/4KB=10，也就意味着其最大数据存放在第 10 个簇里。
+
+由于第 2 个簇是在直接地址项，第 10 个簇在第一级地址项，读取磁盘的次数不一样。
+
+所以获取 F1 和 F2 最后一个簇号所需要的时间不同。
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGlq1RL0DB0wecITpXkxX-oSET508QACzhNrG1-fqVY8c0Lwj05kkwEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+由于是均分，所以销售部被分配到的应该是 192.168.1.1-192.168.1.125，技术部被分到的应该是 192.168.1.129-192.168.1.253。
+
+销售部希望的广播地址是：192.168.1.127。
+
+技术部希望的希望地址是：192.168.1.128。
+
+若为每个主机分配一个 IP 地址，那么技术部子网还可以连接从 209-253，也就是 253-209+1=45 台。
+
+(2)
+
+由题设可知，数据长度是 1480B，由于技术部子网的 MTU 为 800B，尝试发 780B 的数据。然而 780/8 不可被整除，所以第一段数据应该是 776B，776/8=97。剩下的数据 1480-776=704B。
+
+所以，最大一个 IP 封片封装的是 776B。
+
+至少需要 2 个分片。
+
+第一个分片的偏移量是 0，第二个分片的偏移量是 97。
+
 ## 408 深度注意
 
 1. 管程、通道的概念区分
