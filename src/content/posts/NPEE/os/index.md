@@ -2,7 +2,10 @@
 title: 考研冲刺前的总结 —— 操作系统
 published: 2026-09-08
 description: 考研冲刺前的总结 —— 操作系统
-tags: [考研，操作系统，总结]
+tags:
+  - 考研
+  - 操作系统
+  - 总结
 category: 考研
 draft: false
 image: ./cover.png

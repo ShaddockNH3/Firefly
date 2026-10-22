@@ -88,6 +88,18 @@ export const zh_TW: Translation = {
 	[Key.booknavDescription]: "收藏一些好用的網站，按分類整理",
 	[Key.searchBooknav]: "搜尋書籤...",
 	[Key.booknavEmpty]: "暫無書籤",
+
+	// 專案展示頁
+	[Key.projects]: "專案",
+	[Key.projectsDescription]: "這裡展示我開發過的專案",
+	[Key.projectDetails]: "查看詳情",
+	[Key.projectBack]: "返回專案列表",
+	[Key.projectEmpty]: "暫無專案",
+	[Key.projectSearch]: "搜尋專案",
+	[Key.projectStatusPlanning]: "規劃中",
+	[Key.projectStatusDeveloping]: "開發中",
+	[Key.projectStatusPublished]: "已發佈",
+	[Key.projectStatusArchived]: "已封存",
 	[Key.guestbook]: "留言",
 	[Key.guestbookDescription]: "歡迎在這裡留下你的足跡，分享你的想法和建議",
 	[Key.untitled]: "無標題",
@@ -157,13 +169,13 @@ export const zh_TW: Translation = {
 	[Key.bangumiNoData]: "暫無數據",
 	[Key.bangumiNoDataDescription]: "該分類下還沒有任何條目",
 	[Key.bangumiEmpty]: "暫無數據",
-	[Key.bangumiEmptyReason]: "可能的原因：用戶名不存在、網絡連接問題或 API 限制",
+	[Key.bangumiEmptyReason]: "可能的原因：用戶名不存在、網絡連接問題或API限制",
 	[Key.bangumiFetchError]: "Bangumi 資料拉取失敗",
 	[Key.bangumiFetchErrorDesc]:
 		"構建時從 Bangumi API 獲取資料失敗，該頁面內容暫不可用。",
 	[Key.bangumiUsername]: "用戶名",
 	[Key.bangumiApi]: "API",
-	[Key.bangumiConfigTip]: "提示：請在頁面配置中設置正確的 Bangumi 用戶名",
+	[Key.bangumiConfigTip]: "提示：請在頁面配置中設置正確的Bangumi用戶名",
 	[Key.bangumiPrevPage]: "上一頁",
 	[Key.bangumiNextPage]: "下一頁",
 	[Key.bangumiCurrentPage]: "第",
@@ -178,7 +190,7 @@ export const zh_TW: Translation = {
 	[Key.bangumiCategoryReal]: "三次元",
 
 	// 番組數據更新
-	[Key.bangumiLastUpdated]: "數據更新於",
+	[Key.bangumiLastUpdated]: "資料更新日期",
 	[Key.bangumiUpdatedAt]: "構建時間",
 	[Key.bangumiDataStatic]: "靜態數據",
 
@@ -203,10 +215,10 @@ export const zh_TW: Translation = {
 	[Key.vndbFetchError]: "VNDB 資料拉取失敗",
 	[Key.vndbFetchErrorDesc]:
 		"構建時從 VNDB API 獲取資料失敗，該頁面內容暫不可用。",
-	[Key.vndbNotConfigured]: "未配置 VNDB 用戶 ID",
+	[Key.vndbNotConfigured]: "未配置 VNDB 用戶ID",
 	[Key.vndbNotConfiguredDesc]:
-		"請在 src/config/siteConfig.ts 中配置你的 VNDB 用戶 ID",
-	[Key.vndbLastUpdated]: "數據更新於",
+		"請在 src/config/siteConfig.ts 中配置你的 VNDB 用戶ID",
+	[Key.vndbLastUpdated]: "資料更新日期",
 	[Key.vndbVotes]: "票",
 	[Key.vndbLengthVeryShort]: "極短",
 	[Key.vndbLengthShort]: "短",
@@ -233,7 +245,7 @@ export const zh_TW: Translation = {
 	[Key.animeDateDesc]: "最新發布",
 	[Key.animeDateAsc]: "最早發布",
 	[Key.animeNoResults]: "沒有找到匹配的番劇",
-	[Key.animeLastUpdated]: "數據更新於",
+	[Key.animeLastUpdated]: "資料更新日期",
 	[Key.animeEpStatus]: "進度",
 	[Key.animeViewDetails]: "查看詳情",
 	[Key.animeBilibiliAvg]: "Bilibili 均分",
@@ -275,7 +287,7 @@ export const zh_TW: Translation = {
 	[Key.malNotConfigured]: "未配置 MyAnimeList 用戶資訊",
 	[Key.malNotConfiguredDesc]:
 		"請在 src/config/siteConfig.ts 中配置你的 MyAnimeList 用戶名和 Client ID（列表需為公開狀態）",
-	[Key.malLastUpdated]: "數據更新於",
+	[Key.malLastUpdated]: "資料更新日期",
 	[Key.malSeasonWinter]: "冬季",
 	[Key.malSeasonSpring]: "春季",
 	[Key.malSeasonSummer]: "夏季",
@@ -292,13 +304,13 @@ export const zh_TW: Translation = {
 	[Key.paginationRecords]: "條記錄",
 	[Key.paginationJump]: "跳轉到指定頁",
 
-	// 404 頁面
+	// 404頁面
 	[Key.notFound]: "404",
 	[Key.notFoundTitle]: "頁面未找到",
 	[Key.notFoundDescription]: "抱歉，您訪問的頁面不存在或已被移動。",
 	[Key.backToHome]: "返回首頁",
 
-	// RSS 頁面
+	// RSS頁面
 	[Key.rss]: "RSS 訂閱",
 	[Key.rssDescription]: "訂閱獲取最新更新",
 	[Key.rssSubtitle]: "通過 RSS 訂閱，第一時間獲取最新文章和動態",
@@ -316,6 +328,14 @@ export const zh_TW: Translation = {
 	[Key.rssHowToUse]: "推薦使用 Feedly、Inoreader 或其他 RSS 閱讀器來訂閱本站。",
 	[Key.rssCopied]: "RSS 鏈接已複製到剪貼板！",
 	[Key.rssCopyFailed]: "複製失敗，請手動複製鏈接",
+
+	// Atom 頁面
+	[Key.atom]: "Atom 訂閱",
+	[Key.atomDescription]: "訂閱獲取最新更新",
+	[Key.atomSubtitle]: "透過 Atom 訂閱，第一時間獲取最新文章和動態",
+	[Key.atomLink]: "Atom 連結",
+	[Key.atomCopyToReader]: "複製連結到你的 Atom 閱讀器",
+	[Key.atomCopied]: "Atom 連結已複製到剪貼簿！",
 
 	//最後編輯時間卡片
 	[Key.lastModifiedPrefix]: "最後更新於 ",
@@ -358,6 +378,9 @@ export const zh_TW: Translation = {
 	[Key.wallpaperMode]: "壁紙模式",
 	[Key.wallpaperBannerMode]: "橫幅壁紙",
 	[Key.wallpaperFullscreenMode]: "全屏壁紙",
+	[Key.fullscreenLayout]: "全屏佈局",
+	[Key.fullscreenClassicLayout]: "經典模式",
+	[Key.fullscreenHeroLayout]: "Hero 模式",
 	[Key.wallpaperOverlayMode]: "覆蓋透明",
 	[Key.wallpaperNoneMode]: "純色背景",
 
@@ -445,18 +468,18 @@ export const zh_TW: Translation = {
 	[Key.calendarThursday]: "四",
 	[Key.calendarFriday]: "五",
 	[Key.calendarSaturday]: "六",
-	[Key.calendarJanuary]: "1 月",
-	[Key.calendarFebruary]: "2 月",
-	[Key.calendarMarch]: "3 月",
-	[Key.calendarApril]: "4 月",
-	[Key.calendarMay]: "5 月",
-	[Key.calendarJune]: "6 月",
-	[Key.calendarJuly]: "7 月",
-	[Key.calendarAugust]: "8 月",
-	[Key.calendarSeptember]: "9 月",
-	[Key.calendarOctober]: "10 月",
-	[Key.calendarNovember]: "11 月",
-	[Key.calendarDecember]: "12 月",
+	[Key.calendarJanuary]: "1月",
+	[Key.calendarFebruary]: "2月",
+	[Key.calendarMarch]: "3月",
+	[Key.calendarApril]: "4月",
+	[Key.calendarMay]: "5月",
+	[Key.calendarJune]: "6月",
+	[Key.calendarJuly]: "7月",
+	[Key.calendarAugust]: "8月",
+	[Key.calendarSeptember]: "9月",
+	[Key.calendarOctober]: "10月",
+	[Key.calendarNovember]: "11月",
+	[Key.calendarDecember]: "12月",
 	[Key.calendar]: "站點日曆",
 	[Key.calendarHeatmapWeek]: "{month}月第{week}週，{count}篇文章",
 	[Key.advertisement]: "廣告",
@@ -481,6 +504,7 @@ export const zh_TW: Translation = {
 	[Key.galleryAlbums]: "本相簿",
 	[Key.galleryNoAlbums]: "暫無相簿",
 	[Key.galleryBackToAlbums]: "返回相簿列表",
+	[Key.galleryEnterAlbum]: "進入相簿",
 	[Key.searchAlbums]: "搜尋相簿...",
 
 	// 密碼保護
@@ -498,4 +522,11 @@ export const zh_TW: Translation = {
 	[Key.videoPrev]: "上一個影片",
 	[Key.videoNext]: "下一個影片",
 	[Key.videoLoadError]: "影片載入失敗",
+
+	// 沉浸閱讀
+	[Key.immersiveReading]: "沉浸閱讀",
+	[Key.enterImmersiveReading]: "進入沉浸閱讀",
+	[Key.exitImmersiveReading]: "退出沉浸閱讀",
+	[Key.tocExpand]: "展開目錄",
+	[Key.tocCollapse]: "摺疊目錄",
 };

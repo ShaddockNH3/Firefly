@@ -3,7 +3,10 @@ title: 美赛 2025 A 题 F 奖经验贴
 published: 2025-12-31
 description: 记录参加美赛 2025 A 题并获得 F 奖的完整经历，包括选题过程、建模思路、论文撰写，供未来参赛者参考。
 image: ./cover.png
-tags: [数学建模，经验贴，学习路线]
+tags:
+  - 数学建模
+  - 经验贴
+  - 学习路线
 category: 数学建模
 series: AI
 seriesOrder: 2

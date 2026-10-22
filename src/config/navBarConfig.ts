@@ -59,6 +59,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 动态
 			LinkPresets.Dynamic,
 
+			// 项目
+			LinkPresets.Projects,
+
 			// 相册
 			LinkPresets.Gallery,
 
@@ -106,7 +109,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				external: true,
 				icon: "fa7-brands:github",
 			},
-			/*
+			/* 暂不展示
 			{
 				name: "Gitee",
 				url: "https://gitee.com/CuteLeaf/Firefly",
@@ -120,7 +123,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				external: true,
 				icon: "fa7-brands:qq",
 			},
-			/*
+			/* 暂不展示
 			{
 				name: "Firefly 文档",
 				url: "https://docs-firefly.cuteleaf.cn",
@@ -148,7 +151,7 @@ export const navBarSearchConfig: NavBarSearchConfig = {
 };
 
 // ============================================================================
-// 链接预设 - 可自由自定义导航栏链接的名称、图标和 URL
+// 链接预设 - 可自由自定义导航栏链接的名称、图标和URL
 // Link Presets - Allows free customization of the name, icon, and URL of navigation bar links
 // ============================================================================
 export const LinkPresets: Record<string, NavBarLink> = {
@@ -194,6 +197,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/dynamic/",
 		icon: "material-symbols:forum-rounded",
 		pageKey: "dynamic",
+	},
+	Projects: {
+		name: "项目",
+		url: "/projects/",
+		icon: "material-symbols:rocket-launch",
+		pageKey: "projects",
 	},
 	Gallery: {
 		name: "相册",

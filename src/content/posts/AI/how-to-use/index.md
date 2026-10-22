@@ -3,7 +3,10 @@ title: 如何使用 AI
 published: 2026-09-03
 description: "面向计算机专业学生的 AI 上手指南：从官方 APP / WEB、API 与中转站，到 AI IDE 与 CLI Agent 的完整使用路径。"
 image: ./cover.png
-tags: [AI, API, 科普]
+tags:
+  - AI
+  - API
+  - 科普
 category: AI
 series: AI
 seriesOrder: 3

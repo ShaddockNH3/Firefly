@@ -2,7 +2,10 @@
 title: 考研冲刺前的总结 —— 综合错题
 published: 2026-10-01
 description: 考研冲刺前的总结 —— 综合错题
-tags: [考研，错题，总结]
+tags:
+  - 考研
+  - 错题
+  - 总结
 category: 考研
 draft: false
 image: ./cover.png

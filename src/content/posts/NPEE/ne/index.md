@@ -2,7 +2,10 @@
 title: 考研冲刺前的总结 —— 计算机网络
 published: 2026-09-09
 description: 考研冲刺前的总结 —— 计算机网络
-tags: [考研，计算机网络，总结]
+tags:
+  - 考研
+  - 计算机网络
+  - 总结
 category: 考研
 draft: false
 image: ./cover.png

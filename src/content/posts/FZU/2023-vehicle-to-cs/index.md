@@ -3,7 +3,12 @@ title: 2023 福州大学车辆工程转计算机类的经验贴
 published: 2023-12-03
 description: 2023 福州大学车辆工程转计算机类的经验贴，包含时间线、备考资料、面试记录等详细信息，供有意转专业的同学参考。
 image: ./cover.png
-tags: [福州大学，转专业，经验贴，车辆，计算机]
+tags:
+  - 福州大学
+  - 转专业
+  - 经验贴
+  - 车辆
+  - 计算机
 category: 转专业
 series: FZU
 seriesOrder: 1

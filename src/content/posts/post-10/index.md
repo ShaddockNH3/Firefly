@@ -2,7 +2,12 @@
 title: 基于 Telegraph 的图床配置
 published: 2026-10-11
 description: 基于 telegraph-Image 的图床配置与排杂
-tags: [图床，Telegraph, Cloudflare, 教程，踩坑记录]
+tags:
+  - 图床
+  - Telegraph
+  - Cloudflare
+  - 教程
+  - 踩坑记录
 image: ./cover.png
 category: Guide
 draft: true

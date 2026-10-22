@@ -2,7 +2,10 @@
 title: 考研冲刺前的总结 —— 英语 2
 published: 2026-09-30
 description: 考研冲刺前的总结 —— 英语 2
-tags: [考研，英语，总结]
+tags:
+  - 考研
+  - 英语
+  - 总结
 category: 考研
 draft: true
 series: "考研"

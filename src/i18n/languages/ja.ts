@@ -89,6 +89,18 @@ export const ja: Translation = {
 	[Key.booknavDescription]: "便利なサイトをカテゴリ別に集めました",
 	[Key.searchBooknav]: "ブックマークを検索...",
 	[Key.booknavEmpty]: "ブックマークがありません",
+
+	// プロジェクト展示ページ
+	[Key.projects]: "プロジェクト",
+	[Key.projectsDescription]: "私が開発したプロジェクトです",
+	[Key.projectDetails]: "詳細を見る",
+	[Key.projectBack]: "プロジェクト一覧へ戻る",
+	[Key.projectEmpty]: "プロジェクトはまだありません",
+	[Key.projectSearch]: "プロジェクトを検索",
+	[Key.projectStatusPlanning]: "計画中",
+	[Key.projectStatusDeveloping]: "開発中",
+	[Key.projectStatusPublished]: "公開済み",
+	[Key.projectStatusArchived]: "アーカイブ",
 	[Key.guestbook]: "ゲストブック",
 	[Key.guestbookDescription]:
 		"ここに足跡を残して、あなたの考えや提案を共有してください",
@@ -122,7 +134,7 @@ export const ja: Translation = {
 	[Key.bangumi]: "Bangumi",
 
 	// バングミフィルターと状態文本
-	[Key.bangumiTitle]: "私の Bangumi",
+	[Key.bangumiTitle]: "私のBangumi",
 	[Key.bangumiSubtitle]: "私の二次元の旅を記録する",
 	[Key.bangumiFilterAll]: "すべて",
 	[Key.bangumiFilterWatched]: "見た",
@@ -158,14 +170,14 @@ export const ja: Translation = {
 	[Key.bangumiNoDataDescription]: "このカテゴリに項目がありません",
 	[Key.bangumiEmpty]: "データなし",
 	[Key.bangumiEmptyReason]:
-		"考えられる理由：ユーザー名が存在しない、ネットワーク接続の問題、または API 制限",
+		"考えられる理由：ユーザー名が存在しない、ネットワーク接続の問題、またはAPI制限",
 	[Key.bangumiFetchError]: "Bangumi データ取得失敗",
 	[Key.bangumiFetchErrorDesc]:
 		"ビルド時に Bangumi API からのデータ取得に失敗しました。このページは一時的に利用できません。",
 	[Key.bangumiUsername]: "ユーザー名",
 	[Key.bangumiApi]: "API",
 	[Key.bangumiConfigTip]:
-		"ヒント：ページ設定で正しい Bangumi ユーザー名を設定してください",
+		"ヒント：ページ設定で正しいBangumiユーザー名を設定してください",
 	[Key.bangumiPrevPage]: "前へ",
 	[Key.bangumiNextPage]: "次へ",
 	[Key.bangumiCurrentPage]: "ページ",
@@ -180,7 +192,7 @@ export const ja: Translation = {
 	[Key.bangumiCategoryReal]: "実写",
 
 	// バングミデータ更新
-	[Key.bangumiLastUpdated]: "データ更新",
+	[Key.bangumiLastUpdated]: "データ更新日",
 	[Key.bangumiUpdatedAt]: "ビルド時間",
 	[Key.bangumiDataStatic]: "静的データ",
 
@@ -201,14 +213,14 @@ export const ja: Translation = {
 	[Key.vndbNoDataDescription]: "このカテゴリに項目がありません",
 	[Key.vndbEmpty]: "データなし",
 	[Key.vndbEmptyReason]:
-		"考えられる理由：ユーザーID が存在しない、リストが非公開、ネットワーク接続の問題、または API 制限",
+		"考えられる理由：ユーザーIDが存在しない、リストが非公開、ネットワーク接続の問題、またはAPI制限",
 	[Key.vndbFetchError]: "VNDB データ取得失敗",
 	[Key.vndbFetchErrorDesc]:
 		"ビルド時に VNDB API からのデータ取得に失敗しました。このページは一時的に利用できません。",
-	[Key.vndbNotConfigured]: "VNDB ユーザーID が未設定です",
+	[Key.vndbNotConfigured]: "VNDB ユーザーIDが未設定です",
 	[Key.vndbNotConfiguredDesc]:
-		"src/config/siteConfig.ts で VNDB ユーザーID を設定してください",
-	[Key.vndbLastUpdated]: "データ更新",
+		"src/config/siteConfig.ts で VNDB ユーザーIDを設定してください",
+	[Key.vndbLastUpdated]: "データ更新日",
 	[Key.vndbVotes]: "票",
 	[Key.vndbLengthVeryShort]: "非常に短い",
 	[Key.vndbLengthShort]: "短い",
@@ -218,8 +230,8 @@ export const ja: Translation = {
 
 	// 追番 - Bilibili
 	[Key.bilibili]: "Bilibili",
-	[Key.bilibiliSubtitle]: "私の Bilibili 追番・追劇リスト",
-	[Key.bilibiliNotConfigured]: "Bilibili データソースが未設定",
+	[Key.bilibiliSubtitle]: "私のBilibili追番・追劇リスト",
+	[Key.bilibiliNotConfigured]: "Bilibiliデータソースが未設定",
 	[Key.bilibiliNotConfiguredDesc]:
 		"src/config/siteConfig.ts で bilibili.uid を設定してください",
 
@@ -235,7 +247,7 @@ export const ja: Translation = {
 	[Key.animeDateDesc]: "新しい順",
 	[Key.animeDateAsc]: "古い順",
 	[Key.animeNoResults]: "一致するアニメが見つかりません",
-	[Key.animeLastUpdated]: "データ更新",
+	[Key.animeLastUpdated]: "データ更新日",
 	[Key.animeEpStatus]: "進捗",
 	[Key.animeViewDetails]: "詳細を見る",
 	[Key.animeBilibiliAvg]: "Bilibili 平均",
@@ -277,7 +289,7 @@ export const ja: Translation = {
 	[Key.malNotConfigured]: "MyAnimeList が未設定です",
 	[Key.malNotConfiguredDesc]:
 		"src/config/siteConfig.ts で MyAnimeList のユーザー名と Client ID を設定してください（リストは公開にする必要があります）",
-	[Key.malLastUpdated]: "データ更新",
+	[Key.malLastUpdated]: "データ更新日",
 	[Key.malSeasonWinter]: "冬",
 	[Key.malSeasonSpring]: "春",
 	[Key.malSeasonSummer]: "夏",
@@ -294,33 +306,41 @@ export const ja: Translation = {
 	[Key.paginationRecords]: "件",
 	[Key.paginationJump]: "指定ページへ移動",
 
-	// 404 ページ
+	// 404ページ
 	[Key.notFound]: "404",
 	[Key.notFoundTitle]: "ページが見つかりません",
 	[Key.notFoundDescription]:
 		"申し訳ありませんが、アクセスしたページは存在しないか、移動されています。",
 	[Key.backToHome]: "ホームに戻る",
 
-	// RSS ページ
-	[Key.rss]: "RSS フィード",
+	// RSSページ
+	[Key.rss]: "RSSフィード",
 	[Key.rssDescription]: "最新の更新を購読する",
-	[Key.rssSubtitle]: "RSS で購読して、最新の記事と更新を第一时间で取得する",
-	[Key.rssLink]: "RSS リンク",
-	[Key.rssCopyToReader]: "RSS リンクをリーダーにコピー",
+	[Key.rssSubtitle]: "RSSで購読して、最新の記事と更新を第一时间で取得する",
+	[Key.rssLink]: "RSSリンク",
+	[Key.rssCopyToReader]: "RSSリンクをリーダーにコピー",
 	[Key.rssCopyLink]: "リンクをコピー",
 	[Key.rssLatestPosts]: "最新の投稿",
-	[Key.rssWhatIsRSS]: "RSS とは？",
+	[Key.rssWhatIsRSS]: "RSSとは？",
 	[Key.rssWhatIsRSSDescription]:
-		"RSS（Really Simple Syndication）は、頻繁に更新されるコンテンツを公開するための標準形式です。RSS を使用すると：",
+		"RSS（Really Simple Syndication）は、頻繁に更新されるコンテンツを公開するための標準形式です。RSSを使用すると：",
 	[Key.rssBenefit1]:
 		"手動で訪問することなく、最新のウェブサイトコンテンツを及时に取得",
-	[Key.rssBenefit2]: "1 か所で複数のウェブサイトの購読を管理",
+	[Key.rssBenefit2]: "1か所で複数のウェブサイトの購読を管理",
 	[Key.rssBenefit3]: "重要な更新や記事を見逃すことを回避",
 	[Key.rssBenefit4]: "広告なしのクリーンな読書体験を楽しむ",
 	[Key.rssHowToUse]:
-		"Feedly、Inoreader または他の RSS リーダーを使用してこのサイトを購読することを推奨します。",
-	[Key.rssCopied]: "RSS リンクがクリップボードにコピーされました！",
+		"Feedly、Inoreaderまたは他のRSSリーダーを使用してこのサイトを購読することを推奨します。",
+	[Key.rssCopied]: "RSSリンクがクリップボードにコピーされました！",
 	[Key.rssCopyFailed]: "コピーに失敗しました。手動でリンクをコピーしてください",
+
+	// Atom ページ
+	[Key.atom]: "Atom フィード",
+	[Key.atomDescription]: "最新の更新を購読",
+	[Key.atomSubtitle]: "Atom で購読すると、最新の記事と更新をすぐに受け取れます",
+	[Key.atomLink]: "Atom リンク",
+	[Key.atomCopyToReader]: "Atom リーダーにリンクをコピー",
+	[Key.atomCopied]: "Atom リンクをクリップボードにコピーしました！",
 
 	// 最終更新時間カード
 	[Key.lastModifiedPrefix]: "最終更新日：",
@@ -363,6 +383,9 @@ export const ja: Translation = {
 	[Key.wallpaperMode]: "壁紙モード",
 	[Key.wallpaperBannerMode]: "バナー壁紙",
 	[Key.wallpaperFullscreenMode]: "フルスクリーン壁紙",
+	[Key.fullscreenLayout]: "フルスクリーンレイアウト",
+	[Key.fullscreenClassicLayout]: "クラシック",
+	[Key.fullscreenHeroLayout]: "ヒーロー",
 	[Key.wallpaperOverlayMode]: "透明",
 	[Key.wallpaperNoneMode]: "単色背景",
 
@@ -451,18 +474,18 @@ export const ja: Translation = {
 	[Key.calendarThursday]: "木",
 	[Key.calendarFriday]: "金",
 	[Key.calendarSaturday]: "土",
-	[Key.calendarJanuary]: "1 月",
-	[Key.calendarFebruary]: "2 月",
-	[Key.calendarMarch]: "3 月",
-	[Key.calendarApril]: "4 月",
-	[Key.calendarMay]: "5 月",
-	[Key.calendarJune]: "6 月",
-	[Key.calendarJuly]: "7 月",
-	[Key.calendarAugust]: "8 月",
-	[Key.calendarSeptember]: "9 月",
-	[Key.calendarOctober]: "10 月",
-	[Key.calendarNovember]: "11 月",
-	[Key.calendarDecember]: "12 月",
+	[Key.calendarJanuary]: "1月",
+	[Key.calendarFebruary]: "2月",
+	[Key.calendarMarch]: "3月",
+	[Key.calendarApril]: "4月",
+	[Key.calendarMay]: "5月",
+	[Key.calendarJune]: "6月",
+	[Key.calendarJuly]: "7月",
+	[Key.calendarAugust]: "8月",
+	[Key.calendarSeptember]: "9月",
+	[Key.calendarOctober]: "10月",
+	[Key.calendarNovember]: "11月",
+	[Key.calendarDecember]: "12月",
 	[Key.calendar]: "サイトカレンダー",
 	[Key.calendarHeatmapWeek]: "{month}月第{week}週、{count}記事",
 	[Key.advertisement]: "広告",
@@ -472,7 +495,7 @@ export const ja: Translation = {
 	[Key.copied]: "コピーしました",
 	[Key.copyLink]: "リンクをコピー",
 	[Key.savePoster]: "ポスターを保存",
-	[Key.scanToRead]: "QR コードで読む",
+	[Key.scanToRead]: "QRコードで読む",
 
 	// コードブロック折りたたみ設定
 	[Key.codeCollapsibleShowMore]: "展開する",
@@ -487,6 +510,7 @@ export const ja: Translation = {
 	[Key.galleryAlbums]: "冊のアルバム",
 	[Key.galleryNoAlbums]: "アルバムがありません",
 	[Key.galleryBackToAlbums]: "アルバム一覧に戻る",
+	[Key.galleryEnterAlbum]: "アルバムを見る",
 	[Key.searchAlbums]: "アルバムを検索...",
 
 	// パスワード保護
@@ -506,4 +530,11 @@ export const ja: Translation = {
 	[Key.videoPrev]: "前の動画",
 	[Key.videoNext]: "次の動画",
 	[Key.videoLoadError]: "動画の読み込みに失敗しました",
+
+	// 没入型リーディング
+	[Key.immersiveReading]: "没入型リーディング",
+	[Key.enterImmersiveReading]: "没入型リーディングに入る",
+	[Key.exitImmersiveReading]: "没入型リーディングを終了する",
+	[Key.tocExpand]: "目錄を開く",
+	[Key.tocCollapse]: "目錄をたたむ",
 };

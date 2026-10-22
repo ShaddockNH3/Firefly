@@ -3,7 +3,11 @@ title: 为什么傻逼总在糟蹋开源
 published: 2026-01-31
 description: 基于转专业社区维护的真实经历，探讨为何开源项目（泛指）中会出现大量又犟又坏又懒的巨婴用户，以及为何高墙是维护者保护心理防线的唯一手段。
 image: ./cover.png
-tags: [福州大学，转专业，经验贴，吐槽]
+tags:
+  - 福州大学
+  - 转专业
+  - 经验贴
+  - 吐槽
 category: 转专业
 series: FZU
 seriesOrder: 4

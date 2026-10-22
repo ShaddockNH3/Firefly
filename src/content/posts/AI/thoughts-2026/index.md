@@ -3,7 +3,12 @@ title: 有关 AI 的思考
 published: 2026-09-14
 description: 从 2023 到 2026，AI 学习路线为何三次推倒重来？本文梳理西二在线 AI 组的考核迭代史、Agent 时代的技术栈全链条与岗位谱系，并给出本科就业、进实验室、深造三条分流的现实建议。
 image: ./cover.png
-tags: [AI, 学习路线，西二在线，福州大学，思考]
+tags:
+  - AI
+  - 学习路线
+  - 西二在线
+  - 福州大学
+  - 思考
 category: AI
 series: AI
 seriesOrder: 4

@@ -2,7 +2,10 @@
 title: 考研冲刺前的总结 —— 数学 2 高数
 published: 2026-08-31
 description: 考研冲刺前的总结 —— 数学 2 高数
-tags: [考研，高等数学，总结]
+tags:
+  - 考研
+  - 高等数学
+  - 总结
 category: 考研
 draft: false
 image: ./cover.png

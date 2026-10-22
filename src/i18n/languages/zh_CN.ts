@@ -88,6 +88,18 @@ export const zh_CN: Translation = {
 	[Key.booknavDescription]: "收藏一些好用的网站，按分类整理",
 	[Key.searchBooknav]: "搜索书签...",
 	[Key.booknavEmpty]: "暂无书签",
+
+	// 项目展示页
+	[Key.projects]: "项目",
+	[Key.projectsDescription]: "这里展示我开发过的项目",
+	[Key.projectDetails]: "查看详情",
+	[Key.projectBack]: "返回项目列表",
+	[Key.projectEmpty]: "暂无项目",
+	[Key.projectSearch]: "搜索项目",
+	[Key.projectStatusPlanning]: "计划中",
+	[Key.projectStatusDeveloping]: "开发中",
+	[Key.projectStatusPublished]: "已发布",
+	[Key.projectStatusArchived]: "已归档",
 	[Key.guestbook]: "留言",
 	[Key.guestbookDescription]: "欢迎在这里留下你的足迹，分享你的想法和建议",
 	[Key.untitled]: "无标题",
@@ -155,13 +167,13 @@ export const zh_CN: Translation = {
 	[Key.bangumiNoData]: "暂无数据",
 	[Key.bangumiNoDataDescription]: "该分类下还没有任何条目",
 	[Key.bangumiEmpty]: "暂无数据",
-	[Key.bangumiEmptyReason]: "可能的原因：用户名不存在、网络连接问题或 API 限制",
+	[Key.bangumiEmptyReason]: "可能的原因：用户名不存在、网络连接问题或API限制",
 	[Key.bangumiFetchError]: "Bangumi 数据拉取失败",
 	[Key.bangumiFetchErrorDesc]:
 		"构建时从 Bangumi API 获取数据失败，该页面内容暂不可用。",
 	[Key.bangumiUsername]: "用户名",
 	[Key.bangumiApi]: "API",
-	[Key.bangumiConfigTip]: "提示：请在页面配置中设置正确的 Bangumi 用户名",
+	[Key.bangumiConfigTip]: "提示：请在页面配置中设置正确的Bangumi用户名",
 	[Key.bangumiPrevPage]: "上一页",
 	[Key.bangumiNextPage]: "下一页",
 	[Key.bangumiCurrentPage]: "第",
@@ -176,7 +188,7 @@ export const zh_CN: Translation = {
 	[Key.bangumiCategoryReal]: "三次元",
 
 	// 番组数据更新
-	[Key.bangumiLastUpdated]: "数据更新于",
+	[Key.bangumiLastUpdated]: "数据更新日期",
 	[Key.bangumiUpdatedAt]: "构建时间",
 	[Key.bangumiDataStatic]: "静态数据",
 
@@ -201,10 +213,10 @@ export const zh_CN: Translation = {
 	[Key.vndbFetchError]: "VNDB 数据拉取失败",
 	[Key.vndbFetchErrorDesc]:
 		"构建时从 VNDB API 获取数据失败，该页面内容暂不可用。",
-	[Key.vndbNotConfigured]: "未配置 VNDB 用户 ID",
+	[Key.vndbNotConfigured]: "未配置 VNDB 用户ID",
 	[Key.vndbNotConfiguredDesc]:
-		"请在 src/config/siteConfig.ts 中配置你的 VNDB 用户 ID",
-	[Key.vndbLastUpdated]: "数据更新于",
+		"请在 src/config/siteConfig.ts 中配置你的 VNDB 用户ID",
+	[Key.vndbLastUpdated]: "数据更新日期",
 	[Key.vndbVotes]: "票",
 	[Key.vndbLengthVeryShort]: "极短",
 	[Key.vndbLengthShort]: "短",
@@ -231,7 +243,7 @@ export const zh_CN: Translation = {
 	[Key.animeDateDesc]: "最新发布",
 	[Key.animeDateAsc]: "最早发布",
 	[Key.animeNoResults]: "没有找到匹配的番剧",
-	[Key.animeLastUpdated]: "数据更新于",
+	[Key.animeLastUpdated]: "数据更新日期",
 	[Key.animeEpStatus]: "进度",
 	[Key.animeViewDetails]: "查看详情",
 	[Key.animeBilibiliAvg]: "Bilibili 均分",
@@ -273,7 +285,7 @@ export const zh_CN: Translation = {
 	[Key.malNotConfigured]: "未配置 MyAnimeList 用户信息",
 	[Key.malNotConfiguredDesc]:
 		"请在 src/config/siteConfig.ts 中配置你的 MyAnimeList 用户名和 Client ID（列表需为公开状态）",
-	[Key.malLastUpdated]: "数据更新于",
+	[Key.malLastUpdated]: "数据更新日期",
 	[Key.malSeasonWinter]: "冬季",
 	[Key.malSeasonSpring]: "春季",
 	[Key.malSeasonSummer]: "夏季",
@@ -290,13 +302,13 @@ export const zh_CN: Translation = {
 	[Key.paginationRecords]: "条记录",
 	[Key.paginationJump]: "跳转到指定页",
 
-	// 404 页面
+	// 404页面
 	[Key.notFound]: "404",
 	[Key.notFoundTitle]: "页面未找到",
 	[Key.notFoundDescription]: "抱歉，您访问的页面不存在或已被移动。",
 	[Key.backToHome]: "返回首页",
 
-	// RSS 页面
+	// RSS页面
 	[Key.rss]: "RSS 订阅",
 	[Key.rssDescription]: "订阅获取最新更新",
 	[Key.rssSubtitle]: "通过 RSS 订阅，第一时间获取最新文章和动态",
@@ -314,6 +326,14 @@ export const zh_CN: Translation = {
 	[Key.rssHowToUse]: "推荐使用 Feedly、Inoreader 或其他 RSS 阅读器来订阅本站。",
 	[Key.rssCopied]: "RSS 链接已复制到剪贴板！",
 	[Key.rssCopyFailed]: "复制失败，请手动复制链接",
+
+	// Atom 页面
+	[Key.atom]: "Atom 订阅",
+	[Key.atomDescription]: "订阅获取最新更新",
+	[Key.atomSubtitle]: "通过 Atom 订阅，第一时间获取最新文章和动态",
+	[Key.atomLink]: "Atom 链接",
+	[Key.atomCopyToReader]: "复制链接到你的 Atom 阅读器",
+	[Key.atomCopied]: "Atom 链接已复制到剪贴板！",
 
 	//最后编辑时间卡片
 	[Key.lastModifiedPrefix]: "最后更新于 ",
@@ -356,6 +376,9 @@ export const zh_CN: Translation = {
 	[Key.wallpaperMode]: "壁纸模式",
 	[Key.wallpaperBannerMode]: "横幅壁纸",
 	[Key.wallpaperFullscreenMode]: "全屏壁纸",
+	[Key.fullscreenLayout]: "全屏布局",
+	[Key.fullscreenClassicLayout]: "经典模式",
+	[Key.fullscreenHeroLayout]: "Hero 模式",
 	[Key.wallpaperOverlayMode]: "覆盖透明",
 	[Key.wallpaperNoneMode]: "纯色背景",
 
@@ -443,18 +466,18 @@ export const zh_CN: Translation = {
 	[Key.calendarThursday]: "四",
 	[Key.calendarFriday]: "五",
 	[Key.calendarSaturday]: "六",
-	[Key.calendarJanuary]: "1 月",
-	[Key.calendarFebruary]: "2 月",
-	[Key.calendarMarch]: "3 月",
-	[Key.calendarApril]: "4 月",
-	[Key.calendarMay]: "5 月",
-	[Key.calendarJune]: "6 月",
-	[Key.calendarJuly]: "7 月",
-	[Key.calendarAugust]: "8 月",
-	[Key.calendarSeptember]: "9 月",
-	[Key.calendarOctober]: "10 月",
-	[Key.calendarNovember]: "11 月",
-	[Key.calendarDecember]: "12 月",
+	[Key.calendarJanuary]: "1月",
+	[Key.calendarFebruary]: "2月",
+	[Key.calendarMarch]: "3月",
+	[Key.calendarApril]: "4月",
+	[Key.calendarMay]: "5月",
+	[Key.calendarJune]: "6月",
+	[Key.calendarJuly]: "7月",
+	[Key.calendarAugust]: "8月",
+	[Key.calendarSeptember]: "9月",
+	[Key.calendarOctober]: "10月",
+	[Key.calendarNovember]: "11月",
+	[Key.calendarDecember]: "12月",
 	[Key.calendar]: "站点日历",
 	[Key.calendarHeatmapWeek]: "{month}月第{week}周，{count}篇文章",
 	[Key.advertisement]: "广告",
@@ -479,6 +502,7 @@ export const zh_CN: Translation = {
 	[Key.galleryAlbums]: "本相册",
 	[Key.galleryNoAlbums]: "暂无相册",
 	[Key.galleryBackToAlbums]: "返回相册列表",
+	[Key.galleryEnterAlbum]: "进入相册",
 	[Key.searchAlbums]: "搜索相簿...",
 
 	// 密码保护
@@ -496,4 +520,11 @@ export const zh_CN: Translation = {
 	[Key.videoPrev]: "上一个视频",
 	[Key.videoNext]: "下一个视频",
 	[Key.videoLoadError]: "视频加载失败",
+
+	// 沉浸阅读
+	[Key.immersiveReading]: "沉浸阅读",
+	[Key.enterImmersiveReading]: "进入沉浸阅读",
+	[Key.exitImmersiveReading]: "退出沉浸阅读",
+	[Key.tocExpand]: "展开目录",
+	[Key.tocCollapse]: "折叠目录",
 };
