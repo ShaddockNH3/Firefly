@@ -2,7 +2,7 @@
 title: 考研冲刺前的总结 —— 综合错题
 published: 2026-10-01
 description: 考研冲刺前的总结 —— 综合错题
-tags: [错题，考研，总结]
+tags: [考研，错题，总结]
 category: 考研
 draft: false
 image: ./cover.png
@@ -3668,9 +3668,771 @@ P^-1A^-1P＝λ^-1≠λ。
 
 ## 武忠祥高数强化 2 刷
 
+### 武忠祥高数强化 2 刷第 1 章
+
+对于本章的重刷，低级错误非常多，评价为边看视频边写题导致的，而且对于非常多的步骤没有做一步算一步。
+
+![1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIFq1hbl_XFmxnX2LDPDjZsMESHUGQACYBZrG8YqsVYUZn-A42KyOAEAAwIAA3gAAz0E)
+
+本题选对了，但是判断具体项判断错了。1 显然错 2 显然对。对于 3，没说这点是连续的。
+
+对于举反例一定要从不连续的角度思考。
+
+![1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIJq1hcwVmEFyuea7iK-wfoxiJQ3rwACYRZrG8YqsVYVkG14_6kq_gEAAwIAA20AAz0E)
+
+本题属于极为低级的错误，-1/3+1/6=-1/6≠-1/2。
+
+![1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCINq1hdGig1d51Qbrc7l3qMkuZpn7AACYhZrG8YqsVZusuQ03jy2gQEAAwIAA20AAz0E)
+
+属于低级错误，如下图：
+
+![1.3 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIRq1hdbU_E2EM74cFsjus1jL0cVtwACYxZrG8YqsVahKPtqqphX5AEAAwIAA3gAAz0E)
+
+![1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIVq1hd1SFeowQPaYGTyIRmg_OO2tQACZBZrG8YqsVZa91jCEC943gEAAwIAA3gAAz0E)
+
+本题错选为 A。
+对于这道题，首先 1 显然是错误的，取 x+sinx；
+
+对于 2，我的想法错在让前者取 0，即便前者取 0，那么后者 C/x，当 x 趋于无穷的时候，后面那个也是 0。
+
+对于 3，想当然没去做。
+
+综上所述，本题 2 和 4 其实是对洛必达法则的理解问题。如果一个函数 n 阶可到，那么可以洛 n-1 次。如果知道这个函数第 n 阶可到的时候同时它还存在，那么就可以洛 n 次。
+
+对于第 3 空，其实是犯了一个神秘的错误，那就是没想到同时乘上 e 的 x 次方。事实上这道题在 880 里出现过的！
+
+![1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIZq1hf3n0qotqVClIQJFBI_vDMXWAACZRZrG8YqsVbCCUDKQD3LKwEAAwIAA20AAz0E)
+
+对于这道题属于很低级的错误，是因为通分完了之后在那里滥用等价无穷小（直接把 sinx 的平方看成了 x 去算）
+
+![1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIdq1hgy0MWQ_6G5BFpn3ZCiRxm8CQACZhZrG8YqsVbZJ1vrP82uuwEAAwIAA20AAz0E)
+
+本题属于低级错误，对于这道题，等价无穷小，1-e^x 等价无穷小代换为-x，脑子抽了想着 1-e^(-x) 代换为 x。评价为过拟合。
+
+![1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIhq1hhF96XkjKZdTsudgYooB6ooxgACZxZrG8YqsVY-lPcyLRWIfwEAAwIAA20AAz0E)
+
+本题错误原因在 x 凑上去的时候应该是+lnx，而不是*lnx。
+
+![1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIlq1hhVPu5SaYSpKYrw-hIFtFiUaAACaBZrG8YqsVaU2eujbMpdVwEAAwIAA20AAz0E)
+
+泰勒公式问题，arcsinx 的三界泰勒展开为 1/6，而不是 sinx 的。
+
+![1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIpq1hhmtSR_MOw1vByg5bFlfh3kJAACaRZrG8YqsVYtKOAFaoCaRAEAAwIAA20AAz0E)
+
+第 3 题属于低级错误，ln(x+sqrt(1+x^2))，将 1 代入，结果代入成 ln2。
+
+第 4 题不能用夹逼定理。
+
+![1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCItq1hh6TL-79ODcNuIXzpWoCF8Z0gACahZrG8YqsVbaMPR2tdR-nwEAAwIAA3gAAz0E)
+
+对于这道题，也是积分代入的时候漏代入了。
+
+![1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCIxq1hiK42vkH1AjMPg2FZ0Q6zfOYgACaxZrG8YqsVY07JkuT4Q2UQEAAwIAA20AAz0E)
+
+对于这种题，首先先思考方法，无非采用取对数凑积分定义或者采用夹逼定理。对于这题，显然是没法采用凑积分定义去做的，所以考虑夹逼定理。显然本题的上界为 1，考虑如何凑下界。利用移位技巧可以凑出来。
+
+![1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCI1q1hidYLb-cY6SxHi-8Ygs7m_yyQACbRZrG8YqsVamtAozw863lQEAAwIAA20AAz0E)
+
+对于第 1 题，xlnx-x 把 1 代入的时候漏代。
+
+对于第 2 题其实是对的，只是单纯没写完。
+
+![1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCI5q1hixtIR4ybVrTSIv4rq3fX5mAANuFmsbxiqxVl3_RwbaAyYmAQADAgADbQADPQQ)
+
+低级错误，b-1=3，b=4 而不是 2。
+
+![1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCI9q1hjAdRqoJOmr66jDWYNNFVb63AACbxZrG8YqsVaChGPeXFlSWAEAAwIAA3gAAz0E)
+
+属于低级错误。看漏了一个条件。
+
+### 武忠祥高数强化 2 刷第 2 章
+
+![2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJBq1hkPlutN1V7BMfjnHvYWRK0mFAACchZrG8YqsVZ2wDmO7AzgUgEAAwIAA3gAAz0E)
+
+属于低级错误，第一步的时候 -3 抄成了 3，从而全盘错误。思路其实是对的。
+
+![2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJFq1hmQYoKkt8_Ms6obZO-44Bqi9QACcxZrG8YqsVbpZMZWxw9lRgEAAwIAA3gAAz0E)
+
+后来做对了，但是还是放在这里注意一下。前面那一块。
+
+注意本来就不可导的点。
+
+![2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJJq1hmp0LITPL4KLXL6T1q_RJKylAACdBZrG8YqsVaU61shW9XKAQEAAwIAA3gAAz0E)
+
+漏抄了一个平方，导致计算错误。
+
+![2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJNq1hm7lSvuSP1nv_Ay0op_DNKC9QACdRZrG8YqsVYKkOnM4KaZZAEAAwIAA3gAAz0E)
+
+这道题我知道用不能用等价无穷小那个方法，但是还是没想到怎么做。这道题也错了非常多次了，没想到用求导法则直接得出结论。这个需要非常非常注意。可以直接用求导法则的那个结论。
+
+![2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJRq1hnOsMqCtWXrgLoL_V5zN6PZ6wACdhZrG8YqsVbsOWsYjhoR9QEAAwIAA3gAAz0E)
+
+是对的，不过有更好的解法（利用原方程化简）
+
+![2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJVq1hnf-AAB6mMVMfQM8Ko7nXobdUMAAncWaxvGKrFWmgoAAavy3jAvAQADAgADeAADPQQ)
+
+属于低级错误，利用公式法求解 y’的时候代入求措。
+
+![2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJZq1hnw3pAERzTui586ep_zfy12rQACeBZrG8YqsVbDHoIFDKoLWgEAAwIAA3gAAz0E)
+
+对于这类题，还是要注意谁是自变量谁是因变量，这个得搞清楚。
+
+![2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJdq1hoF5NT51s3hTFmfmCr1926i4QACeRZrG8YqsVZ5UZLs2CERSwEAAwIAA20AAz0E)
+
+属于低级错误，1/2(sin2x)^2 求导结果算的时候少了一个 2。
+
+![2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJhq1hoXwLOsBrAERVBDU0lNg92wBgACehZrG8YqsVa-DXmt_ydthgEAAwIAA3gAAz0E)
+
+这道题标圈了，知道自己的分析可能是有问题的。
+
+其实这类题从大一开始就很有问题，现在彻底分析一下。拐点的定义是连续曲线，所以不存在一个点同为拐点/极值点。
+f^'' (x_0 )=0，判别法失效，必须得去看左右区间，而不是 f’’=0 的时候，fx 这个点不是极值。
+
+![2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJlq1hsL0Km4xpP5rZpbkox8NG-n4gACfRZrG8YqsVZOr_yx10RVwgEAAwIAA3gAAz0E)
+
+第 1 问这里错了。依旧是利用经典不等式的时候错了。
+
+### 武忠祥高数强化 2 刷第 3 章
+
+![3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJpq1hsp_v8yTqAIQfx22XdeRtiy6QACfhZrG8YqsVZ3MFGrq-6gTAEAAwIAA20AAz0E)
+
+本题在化简到最后地时候，没有考虑到 npi 对应的是 2 倍的 pi/2，从而漏了一个 2。Sinx 从 0 到 pi 的积分应该算出来是 2，而不是 1。
+
+![3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJtq1htAgJt-yx7PgdGQR6jb8teHbQACfxZrG8YqsVY5Pi9OZM4pEQEAAwIAA3gAAz0E)
+
+我没有采用变限积分的做法，但是这道题还是错的了。原因和上面一个一样，sinx 从 0 到 pi 的积分算出来应该是 2，而不是 0。
+
+![3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJxq1h5vJtPFw6R7uws_FcVm-hzc-gACgxZrG8YqsVaqc8omHqxJ8gEAAwIAA20AAz0E)
+
+跳步了。这道题利用区间再现后，相加没有除以 2。
+
+![3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJ1q1h6FdAlkwsh3dceLB1d9z9oEXQAChBZrG8YqsVaD-2X6J9UXxgEAAwIAA3gAAz0E)
+
+这题没招，我没去研究。
+
+![3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJ5q1h64B0dqq05hOcWwzU9mkeLWYQAChRZrG8YqsVYQQeFwPCKCdwEAAwIAA3gAAz0E)
+
+注意题目所说，m，n 均为正整数！
+
+![3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJ9q1h7KSbwFQDsjiZ4bnTDo1bXiUQAChhZrG8YqsVYHsoIadQ1imgEAAwIAA20AAz0E)
+
+这道题必须放进来，犯了一个经典的错误，标准的零分。计算 u/v 求导的时候，如果 u 是 1，和 u 是函数的求导法则不可以混用。
+
+![3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKBq1h-BdR-Fu7nMSEz2UVeer56fOwACiBZrG8YqsVbRqmFD_L-_FQEAAwIAA3gAAz0E)
+
+本题也可以用变现函数直接算的方法（当然也得分区间），只是稍微麻烦了一点。
+
+![3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKFq1h-TMA4CSMNH_-q1IxxPGDf-bwACihZrG8YqsVYXDVHdLSntBAEAAwIAA3gAAz0E)
+
+这道题可以注意一下，2(3a+b)，这个 3 其实就是当 x=3 的时候。
+
+注意切线以及几何意义。
+
+![3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKJq1h-qiW0gxPpSu_AKAtDCqG2kdgACixZrG8YqsVYPaS3IbWi4FAEAAwIAA3gAAz0E)
+
+11/12算出来之后，结果放到原式算的时候，变成了12/11。
+
+### 武忠祥高数强化 2 刷第 4 章
+
+![4.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKNq1h_xIP1Ex1yJ9lxdAS4sSD9RUwACjBZrG8YqsVb-W8iVWviQjwEAAwIAA20AAz0E)
+
+没想到把 dy 除下去然后利用一阶常系数。被上一题影响了，认为要凑令 u=tany。
+
+![4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKRq1iAHXt-dzzLS-jvYSvuz6SG-3gACjRZrG8YqsVauOQVW9-tebgEAAwIAA3gAAz0E)
+
+属于低级错误，r^2-r-2=0 抄的时候把后面那个 - 抄成 + 了。
+
+![4.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKVq1iAWzxblZD2-ek7NV3Yysw2gpQACjxZrG8YqsVZxbRWCfdXGPwEAAwIAA3gAAz0E)
+
+第 2 问变形过去的时候，漏抄了题目里的 2。
+
+### 武忠祥高数强化 2 刷第 5 章
+
+![5.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKZq1iAuCBIaQu99u2wRD9DWY2O90QACkBZrG8YqsVZR7-e86CanuAEAAwIAA3gAAz0E)
+
+属于想当然的错误。对于这类题，首先先判断次数，上面 2 次下面 1 次，所以很有可能可以利用夹逼定理去做。
+
+![5.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKdq1iBJSsrsvCkQgBqcV1sdLZGcqQACkRZrG8YqsVaHZ9Zl0rvONAEAAwIAA3gAAz0E)
+
+做的是对的，不过需要注意书写。
+
+![5.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKhq1iE5oLQDgeR2kpOvFSpwQJB6aQACkxZrG8YqsVYAASO35H4TMFkBAAMCAAN4AAM9BA)
+
+这道题想着用全微分做，属于是典型的被一种方法限制住了。也能用全微分去做，但是很麻烦。
+
+对于这类题，首先先看是 du 还是 d 其他的，是其他的，那么可以采用全微分，如果不是，直接求偏导就可以了。
+
+![5.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKpq1iFaj5AFDJJhEhxYkc0nJxQ2JwAClRZrG8YqsVbfJswU4LXqugEAAwIAA3gAAz0E)
+
+![5.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKlq1iFQ5Pi2FaSgFLWJNtjs9JZYhgAClBZrG8YqsVbnzTvTGmxDfgEAAwIAA3gAAz0E)
+
+对于这道题的充分性，其实想到了一半，把 x 全用 tx 代换，然后呢，然后就不会了。
+
+![5.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKtq1iFvlN_eJWGJ5fgTNPWE-0ULwwAClhZrG8YqsVZgxkerEkCAtAEAAwIAA3gAAz0E)
+
+最后抄答案的时候，漏抄了一个 cosx。
+
+![5.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKxq1iGBCpH38NfsJhphRBAN78YgzQAClxZrG8YqsVZw_5BMGmhyYAEAAwIAA3gAAz0E)
+
+主要是注意一下，这里的 f(x,y)=C，求导对 f1，f2，得出来的结果其实和 dy/dx 有差别。这道题是直接用全微分的不变性去做就很轻松能做出来。
+
+![5.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCK1q1iGSKSFHKQEONbMbLhSK7_zlRwACmBZrG8YqsVYgN-CU4gcpqAEAAwIAA20AAz0E)
+
+属于低级错误，此前算出来了极值点，但是在后续的时候算出来 A 相关有 6，就直接把 6 当极值点了。
+
+![5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCK5q1iGjHfPWFgT-lGggiv2PP6ioFgACmRZrG8YqsVYQuHUmKJDe7wEAAwIAA3gAAz0E)
+
+利用特殊的圆法做的时候，忽略了 z-2，只算了后半部分。
+
+### 武忠祥高数强化 2 刷第 6 章
+
+![6.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCK9q1iHsVeN4Jms9Qu-RwHuK55XWwgACmxZrG8YqsVZC9CB1zTcT7gEAAwIAA3gAAz0E)
+
+奇偶性利用错误，对于 x|y|的区间判断错误。
+
+![6.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLBq1iH830fLj9jdm9iG3z6KfJ1-SQACnBZrG8YqsVYC5rPML245hwEAAwIAA3gAAz0E)
+
+方法复杂。本题利用 y=1 对称解会非常快，对于这题，直接生搬硬套参数方程反而会更慢，不如直接硬算。
+
+![6.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLFq1iO8QGl7WUzwuKvYiO6KII0rOwACoBZrG8YqsVbg4tVuAAF_XRkBAAMCAAN4AAM9BA)
+
+这道题错在一个地方，那就是把后者当 r=1 的圆去想了。
+
+![6.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLJq1iSNVpCp6jsqVMQP-rJn_RIX9gACoxZrG8YqsVbs-njNrR9AxwEAAwIAA3gAAz0E)
+
+分开分析。
+
+![6.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLNq1iUjDdsouve9QpUYIsC32EF17gACpRZrG8YqsVaw-ZIxyIGSvwEAAwIAA3gAAz0E)
+
+![6.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLRq1iUxP-JkfMfUuUi2u1k3-9Ff4gACpxZrG8YqsVYnh-gZVu5i2AEAAwIAA3gAAz0E)
+
+犯了一个经典的错误，标准的零分，牛莱公式误以为 1-p，0 代入后为 0，事实上应该为 1。
+
+![6.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLVq1iVU4G2oTusCCNa8J2ks4-04WwACqBZrG8YqsVbVZNDQMMWuagEAAwIAA3gAAz0E)
+
+注意第 2 种解法。
+
+![6.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLZq1iVmhvU32qw-xl6Dab7cJTRnQgACqRZrG8YqsVZpYW87A7tXQAEAAwIAA3gAAz0E)
+
+柯西积分不等式没招，回头再来看。
+
 ## 杨威线性代数强化 2 刷
 
+辨析一下最几把抽象的秩概念
+
+行等价可以推导出等价，列等价可以推导出等价，只有等价推导不出来任何东西，只能说明秩相等。
+
+假设 A 和 B 列等价，那么 AQ=B，C 和 D 行等价，那么 PC=D。
+
+对于矩阵 A 和 B，假设 A 和 B 行等价，那么 AX=0 和 BX=0 同解。
+
+判断向量组 a1，a2，an 是否线性相关，本质上是看等式 x1a1+x2a2+…=0 时候有零解，所以拼成矩阵 A，本质就是齐次线性方程 Ax=0。如果只有零解，那么线性无关，有非零解，所以线性相关。而 A 做行变换的时候，可以保证解不变。
+
+对矩阵 A 做初等列变换，那么矩阵列的秩保持不变（也就是说列等价），变了的东西是列向量的线性系数表达。
+
+对矩阵 A 做初等行变换，那么矩阵行的秩保持不变（也就是行等价），系数关系是保留的，但是里面的东西变了。
+
+总共就是这些重要概念比较重要的抽象概念。
+
+### 杨威线性代数强化 2 刷第 1 章
+
+![1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLdq1iZcPTMWfP8exSN6VzlT6XkpcQACrBZrG8YqsVb-PplNhHmMYQEAAwIAA3gAAz0E)
+
+算错了 2 次。先化简到 3 维的形式，然后利用对角线法去做，做的时候尤其要注意两点，一个是最后那一项最高是 x 的四次方，第二是在利用副对角线的时候，一开始就有个-。
+
+![1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLhq1iZzsEeLFTMMCLuLcjgeBWXPbwACrRZrG8YqsVZI1MBoXuqH8wEAAwIAA3gAAz0E)
+
+这道题没有很好的思路。利用范德蒙行列式构造一个四维行列式，然后进行系数对照。
+
+此外，范德蒙行列式的值算出来是是什么，这个也忘记了。
+
+![1.4 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLlq1iaDCbomQcDCvFU_jqaG1kue-AACrhZrG8YqsVafLlc-OVt_OwEAAwIAA20AAz0E)
+
+![1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLpq1iaOhhF0jq5bfvgMS0pyaGa-GQACrxZrG8YqsVaVnLGDwONUqgEAAwIAA3gAAz0E)
+
+算成 -1/2 了。其实答案应该是 2。
+
+取绝对值得时候，里面的 2 要提出去变成 2 的 3 次方，这个错了无数次了。
+
+![1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLtq1iasMLCLGXcErUDGs69nGjrgXQACsBZrG8YqsVYWNVYXeUKIeAEAAwIAA3gAAz0E)
+
+混淆 A*的行列式和数字提取出去的次数了。
+
+![1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCLxq1ia82_Vx526qsoEJuePMfFF1WwACsRZrG8YqsVbqBqH8FR_fVQEAAwIAA3gAAz0E)
+
+从直接的性质去考虑，A 和 A 的转置的行列式为 E，同时取行列式，也就是 A 行列式必然为 1 或者 -1。对于这道题，我仅仅只在想 A 的转置和 A 的逆之间的关系，而没有去想基于行列式出发的角度去考虑。
+
+还有一点，A 的转置+B 的转置=A+B 一起的转置，这个是很多其他东西无法给予的性质，也属于较为冷门的考点。
+
+![1.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCL1q1ibRHbqMusr9Wam8yMD1a2VoggACshZrG8YqsVb26teYFRG-VwEAAwIAA3gAAz0E)
+
+3 的 3 次方是 27，不是 9。
+
+![1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCL5q1ibi2cwGV5QJZKp9hFyD_9vNngACsxZrG8YqsVa_kvfVHmK7WAEAAwIAA3gAAz0E)
+
+分块矩阵，注意是 -1 的 n×m 次方，而不是 n+m。
+
+![1.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCL9q1ib4EAZKr96huz647XWzbd6IkgACtBZrG8YqsVaj7zNzGwHSGwEAAwIAA3gAAz0E)
+
+方法复杂 + 算错。A-有的符号搞错，写成了 a+。此外，这道题应该利用特征值来解，首先显然特征值为 0，0，2，所以用 n 次方，a-这些，最后乘起来。
+
+小总结一下，这些属于比较零碎但是高频的考点，需要反复练习，不然很容易遗忘。
+
+对于小考点选填考点，切记不可轻视。
+
+### 杨威线性代数强化 2 刷第 2 章
+
+![2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMBq1ieqMOUQM1Vm9hDXbvs99pEM3QACvxZrG8YqsVYvWIJpR1QW2wEAAwIAA20AAz0E)
+
+这道题放在这里，拆成 E+B 然后用二项式定理去做。
+
+思考，对于这类题，我的想法依然还是一下子去算特征值，特征方程之类的，对于这届求 AAA，左下角那个值没想到怎么解。
+
+![2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMFq1igJCXYBGoaf-V09kYumzBs26gACwBZrG8YqsVZHeirwluZcCgEAAwIAA3gAAz0E)
+
+这道题感觉没招，考场上肯定一下想不出来 AA 的转置可以直接等于 aE。
+
+![2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMJq1igztcQsOUrPr8ai-ldtpN0zfAACwRZrG8YqsVYWm9mz-3sMSgEAAwIAA3gAAz0E)
+
+注意，XA=xxxA，那么 X-xxx A=0，前者不一定为 0。
+
+![2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMNq1ihGz_PTMWD8tUPuQgvngAECyQACwhZrG8YqsVY8msG50imfuwEAAwIAA3gAAz0E)
+
+主要是想不到分析方法。对原式子进行变形后也继续利用原来的式子，本题和上一题我认为都可以从整个角度出发，也就是：
+
+![2.12 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMRq1ihonCe7w1CXcn1qCn0LcYmUAAPHFmsbxiqxVug4bhEtglt0AQADAgADeAADPQQ)
+
+![2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMVq1ih2uqQQPnsmwYyVmHol-eJdTAACyBZrG8YqsVZGqYLUBe03SAEAAwIAA3gAAz0E)
+
+结果其他方法分析入脑了，特征值分析又不会了。
+
+![2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMZq1imOymtGX_nuCiHXHMHS-uBd_gAC1RZrG8YqsVbXxRQtUB2jLwEAAwIAA3gAAz0E)
+
+对于这类题进行变换的时候，需要利用乘上某个矩阵进行变换，而不可以是某一行乘上什么加到哪里去，因为这个变化可能是不可逆的。
+
+例如这道题，B 和 D，对于 B 是右乘列变换，对于 D 是左乘行变换，而对于 C 则是不伦不类！
+
+![2.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMdq1imh0TB6d5imEV9wShBXB5F2xAAC1hZrG8YqsVYCHUUsGLWDeQEAAwIAA3gAAz0E)
+
+没上手做，想当然。
+
+### 杨威线性代数强化 2 刷第 3 章
+
+![3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMhq1ipb_g33Aef9VWvGU8VvycL5QgAC2BZrG8YqsVbh7cwcEDVB0AEAAwIAA3gAAz0E)
+
+我的想法是说构造一个γ=k1a1+k2a2=l1b1+l2b2，然后变形。最后分类讨论一下，说明必然存在。
+
+答案这里用了一个更高级的结论，4 个 3 维向量一定是线性相关的，所以必然存在一个 x1a1+x2a2+x3b1+x4b4=0，其中 x1，x2，x3，x4 不全为 0，然后利用上面的结论，使用反证法证明即可。
+
+一定要记住一个结论，m 个 n 维向量一定是线性相关向量组（m>n）
+
+![3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMlq1ip1pVXY1QAB_YnUpDkfvlfolxoAAtkWaxvGKrFWxTuFa-qcVnQBAAMCAAN4AAM9BA)
+
+本题错选为 C。对于我自己的推导法而言，第 3 个系数被焊丝在了（km+ln=0）上，而对于线性无关而言，x1，x2，x3 必须是三个独立的数。
+
+![3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMpq1iqKtpOF8mBCdatRcIrjopk_LwAC2hZrG8YqsVbXyFJ5OuNzPgEAAwIAA3gAAz0E)
+
+本题选出来 4 个选项都是对的。尤其是对于 A，对于 A 想当然认为这是正确了，尤其要注意不可以说明。
+
+这里再次辨析一下等价的概念。行等价可以推导出矩阵等价，列等价可以推导出矩阵等价。这道题向量组等价的意思是说列等价，而这道题的初等变换是行等价。
+
+### 杨威线性代数强化 2 刷第 4 章
+
+![4.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMtq1iqsf4zejmxPZaann943Eq0uyAAC2xZrG8YqsVZBuqo4k8xP-gEAAwIAA3gAAz0E)
+
+非常低级的错误，逐步分析，不要因为题简单而轻视。狮子搏兔，亦用全力。
+
+![4.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCMxq1irCj6hGVfqo6LHSq91KLDfHOwAC3BZrG8YqsVbLd7334a5d0gEAAwIAA3gAAz0E)
+
+注意一下 RA=1 时的分析流程，不要被 B 误导了。
+
+![4.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCM1q1irVGbvFh3ubGXCwM4mi2T1DTgAC3RZrG8YqsVYDcpNUpLkWiQEAAwIAA3gAAz0E)
+
+我觉得我还是不要跳步了，在计算解的时候，实实在在地把 x1，x2，x3 的关系全列出来。
+
+![4.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCM5q1irtoCiQE_BF4PouTMU8Qmd9rQAC4hZrG8YqsVbjePsmExElKQEAAwIAA3gAAz0E)
+
+不要忘记初等方法，对于这道题，是代入分析，也就是展开为 a1+a2+a3=xxx 的形式。
+
+![4.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCM9q1isG6TWjIdHZKbgOIfV3I_HNJwAC6xZrG8YqsVZ17x3EEAmk-AEAAwIAA3gAAz0E)
+
+对于这道题的 5 分析错误，对于 4，可以利用单位向量去证明。对于 5，需要注意是任意，而不是存在。我构造出来的那个是存在。
+
+![4.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNBq1iseqF7wczuE2yX-rrcIy-EjuQAC7BZrG8YqsVagToxdI3iVfgEAAwIAA3gAAz0E)
+
+对于 2，为什么是分别的 k1，k2，k3？
+
+本质上是没有理解 AB=E 进行变换，为什么可以直接写成 A，E 矩阵然后进行变化。
+
+本质这个操作是在解并联方程组，对于 AB=E 假设 A 是方阵，B 也是方阵，所以[A,E]进行初等变换把左侧变为 E 后，对于右侧，则是 B，为什么是 B，是因为对 AX=0 的解只有 0 解。所以直接就是 B。
+
+那么对于 AB=C，A 为 3×4 的情况（也就是 m<=n 的情况），此时对并联方程组 A,C 求解，变化为 E,x,M，此时对于 x 而言，它是方程额外的根，例如假设有 x 有两列，那么就有 2 个自由变量。所以最后就是 Ax=0 有 x 的列数的通解，最终需要为每个变量单独+k 个这个自由变量，因为每列是相互独立的！
+
+![4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNFq1is30Hp49iF63Z4pByjTDIHAoAAC7RZrG8YqsVba4VhXH9Ga0AEAAwIAA3gAAz0E)
+
+这道题没去做，但是值得分析一下思路。首先是判断 1 比不可能是满秩，从而推导出 a 的值，然后将 1 的基础解系直接代入 2，从而得到 b 和 c 的关系方程组。
+
+### 杨威线性代数强化 2 刷第 5 章
+
+![5.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNJq1itLpepOkGXcATRxTQJgnqNQcgAC7hZrG8YqsVbOcuIUs6540AEAAwIAA3gAAz0E)
+
+需要注意的是，对于这类题还是要实打实的代入进去算，例如 A(2b)=b，那么可以直到 Ab=0.5b，所以特征值应该是 0.5 才对。
+
+![5.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNNq1itbO3wivMiRn47pEQ_P4KwRDAAC7xZrG8YqsVYsN_4k4gABsicBAAMCAAN4AAM9BA)
+
+对于第 1 问，感觉还是得灵活应用知识点，对于这道题就没想到 A-2E 和 A，用秩不等式去讨论。
+
+![5.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNRq1iwFZ_TC4PCsGTPziim2x9fUKAAC8BZrG8YqsVZujhn5xvhBEwEAAwIAA3gAAz0E)
+
+对于这道题没啥大问题，但是需要注意一下分析形式，也就是对于这类矩阵应该如何处理。
+
+![5.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNVq1iwfdKdtSvPqy5ZHBaAlOTFXKQAC8hZrG8YqsVaNL1_oLyOA8QEAAwIAA3gAAz0E)
+
+有点属于低级错误了，证明相似对角化一般有两种方式，第一种是直接找出特征值进行讨论，第二种是找出这个矩阵的相似矩阵进行讨论。
+
+![5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNZq1iwwUIT1yy52dZ5_2I3_VfConQAC8xZrG8YqsVYepmfabldmbgEAAwIAA3gAAz0E)
+
+感觉属于分析范式问题，不知道如何下手，特值法也用的很奇怪。对于这种 i 我一直想着在 AB=BA 上面利用相似去变形，但是没走出来。事实上应该分开讨论，假设特征向量进行讨论。
+
+这件事提醒了我，所有东西并不一定是都是对原本的方程进行变形，还应该想到如何利用本身的含义。
+
+![5.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNdq1ixIP0WL042zamXsdlse0ZXFpAAC9BZrG8YqsVZjn3GnSowWHQEAAwIAA3gAAz0E)
+
+对于这道题，虽然说问题不大，但是感觉还是得注意一下思路。求出特征值和特征向量之后然后求矩阵 B，这里的思路需要行云流水。
+
+![5.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNhq1ixwLLbpZGseqdSLdg2-fAEQXwAC9RZrG8YqsVbbrSJHPZdJggEAAwIAA3gAAz0E)
+
+这道题其实也是问题不大，但是还是需要注意一下，对于实对称矩阵而言，非同一个特征值的向量才必然正交，如果非实对称矩阵，只能推导出来线性无关。
+
+![5.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNlq1iyA8IeGRxExZYKN3W-TsKIVpwAC9hZrG8YqsVbc8EVHnukcGQEAAwIAA3gAAz0E)
+
+这道题也是对的，但是也有一件事值得注意。如果只有一个式子，那么不能确定两个不同特征值的特征向量。
+
+另外对于这道题也可以注意一下已知向量的时候的处理方式，可以直接相乘，也可以按照上面说的方式去确认。
+
+### 杨威线性代数强化 2 刷第 6 章
+
+![6.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNpq1iy1wKOtdKMupY51yi2m0aiOnQAC-BZrG8YqsVY74vgYSVO5YQEAAwIAA3gAAz0E)
+
+对于这道题的第 2 问，完全没想到什么很好的处理方式。如何证明？其实回归本初，这道题本质上是计算特征值。那么特征值有哪些，所以就可以凑。
+
+记当前矩阵为 A，所以试着 Aa，Ab，结果就可以得出来 2 和 1 是特征值，然后再利用秩不等式判断出第三个特征值为 0。
+如果是我去做的话我肯定是不妨设 a 是一个单位向量，b 是另一个。
+
+感觉还是思路问题。
+
+![6.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNtq1izRO3u8Tf6fJdZUHP4VbZRwLQAC-RZrG8YqsVbXbOULXat0fAEAAwIAA3gAAz0E)
+
+对于这道题，要注意正交这两个字。正交变换，必须得通过矩阵的特征值去走。所以这道题就变成求矩阵的特征值，分别为 0，1，4 的情况下，a 是多少。
+
+![6.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCNxq1izqmSeOhS4b81i-lbxiFjaYZAAC-xZrG8YqsVaeVBwzvxAipgEAAwIAA3gAAz0E)
+
+这道题没去做，问题不大，但是需要注意一下更简单的思路，对于这类题，aE+B 是更好的路线。
+
+![6.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCN1q1iz__9Z9eh4OYTMJvR_XR7D2rAAC_BZrG8YqsVb9FIVpPKH2aQEAAwIAA3gAAz0E)
+
+![6.11 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCN5q1i0LEFkHW_x2c0R31UuUQCWo5AAC_RZrG8YqsVZyTF_ofsjt8gEAAwIAA3gAAz0E)
+
+感觉对于这道题的第 3 问应该再加深一下理解。
+
+原方程的意思是说，x_1+2x_2+3x_3=0，本质上是求在这个东西的条件下，x1，x2，x3 的解是什么。那我随便分别取 x2 和 x3 的值，算出来也是对的。只是说利用正交变换也可以的出来解。
+
 ## 数学早年真题（09-20）1 刷
+
+- 完成时间：20260824-20260915
+- 平均分：
+- 平均作答时间：
+
+### 2009 真题
+
+- 完成时间：20260824
+- 分数：135
+  - 选择题：-4
+  - 填空题：-4
+  - 大题：-7
+- 作答时间：180
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCN9q1i40o9Ab9pG6Ghlnk2HWRwqb4AAC_xZrG8YqsVbHLdOC7WPwagEAAwIAA3gAAz0E)
+
+错选为 D。
+
+关于曲率的相关问题，以及分析范式不够严谨
+
+确实这部分没准备到位。关于证明不存在极值点，这个一开始不知道怎么证明，但是后来想出来了，也就是回忆起了曲率相关的东西。同时求导 2 次即可，然后可以得到 y''小于 0，从而 y'恒小于 0。关于零点，我认为其实没有想到分析范式，事实上应该考虑这个区间，区间所以想到拉格朗日中值定理去凑零点，然后用零点定理，而不是仅考虑所谓意义上的“1 附近”，1 附近只是一个非常小的范围，可能不包括 2。
+
+![5 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOJq1jDz2WmVi7qzst1K5_mKS471MQACCBdrG8YqsVaaTEz20lVrnQEAAwIAA3kAAz0E)
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOBq1i5KYrdThRDeUgR0HRenkWWi9wADF2sbxiqxVg7u1Aj75XwMAQADAgADeAADPQQ)
+
+低级错误，答案填成了一个矩阵。
+
+对于单位向量的相乘相关问题，这道题暴露了我在单位向量相乘的薄弱之处，以及想当然认为这是一个矩阵。事实上简单想想就知道了，这类矩阵有多种。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOFq1i5m-UNGriHwf5JKgcylAjU1zAACARdrG8YqsVZ1kM-Sa-RVTgEAAwIAA3gAAz0E)
+
+低级错误。
+
+想当然认为第二象限圆的方程为-y=sqrt，导致整道题做错。这道题暴露了要检查，其实大题就这道题没验算过（没时间验算了算是，而且认为这道题低风险错误）在考场上不要轻视任何一道题目。（-7）
+
+![20 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCONq1jGJfaKrfWasVS3XhFNxB-hyNAACDBdrG8YqsVZPzH7c6CD9_AEAAwIAA3kAAz0E)
+
+### 2010 真题
+
+- 完成时间：20260825
+- 分数：146
+  - 填空题：-4
+- 作答时间：165
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCORq1jHJAscwrfdNCcDQhIUBo9pq9gACDhdrG8YqsVZuZOOkkfKphAEAAwIAA3gAAz0E)
+
+低级错误
+
+弧长公式记错了。弧长公式是根号下的平方 + 平方，我把这个平方漏掉了
+
+![12 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOVq1jJiqTiEd_siMJNSAfAn2n_QLAACDxdrG8YqsVYvNmnQgO7MlQEAAwIAA3kAAz0E)
+
+### 2011 真题
+
+- 完成时间：20260826
+- 分数：140
+  - 选择题：-4
+  - 填空题：-4
+  - 大题：-2
+- 作答时间：150
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOZq1jLYvxDhDlXQQzjiU0W2TGjAngACERdrG8YqsVa4asMDDHNl3AEAAwIAA3gAAz0E)
+
+二阶线性常系数非齐次微分方程。
+
+这个以前错过，辨析清楚什么是重根。例如这道题，并不是重根。这道题甚至我还想了一下（回过头来也想了），然后错了。本质是想举例子结果最后还是懒了，没去举例子
+
+结果在写 2021 年真题以及后续的题目的时候频繁又错了这相关的东西，微分方程虽然考的比较死，但是一定要深刻注意。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOdq1jNFWz1pr4jgW1B8yQEmZyAPDwACEhdrG8YqsVbEVm-98BXBhAEAAwIAA20AAz0E)
+
+低级错误
+
+e 的 x*\y次方，和 e 的*次方乘上 e 的 y 次方是两码事，这类错误以前也错过
+
+这个在后续某一年的真题又错了，在模拟卷忘记错没错，总之是一个很神秘的低级错误，需要深刻注意。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOhq1jPijku0ICf31tnAMhs1MzsFsAACFBdrG8YqsVYQw4PoclOk-QEAAwIAA3kAAz0E)
+
+低级错误
+
+题目没写完，拐点没求，只求了前两问。（-2）
+
+这道题也印象深刻，后续在写某份真题以及模拟卷的时候也是犯了一模一样的错误，题没算完就走了。
+
+### 2012 真题
+
+- 完成时间：20260828
+- 分数：140
+  - 大题：-10
+- 作答时间：150
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOlq1jRYxW6OVHq-DhLOYV0Iu30wlgACFRdrG8YqsVbVvc4UxiC1KwEAAwIAA3gAAz0E)
+
+低级错误
+
+L 是什么，切线是什么，而且这道题题设按照我想的做法，没办法变成一个封闭区间，所以显然是错误的。（-10，只求对那个点）本质是积分区域讨论错误
+
+![17 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOpq1jbw9hIhO_E7Y5cpShdoZC-_-gACGRdrG8YqsVZ8n80Em0mQtwEAAwIAA3cAAz0E)
+
+我当时是想当然 B 点是切线与 x 轴的交点，导致整道题错误。这道题只算出来了求 A 和求切线的分数属于是。
+
+这道题给我的警示是：如果觉得积分区间很怪，那么一定是我想错了。
+
+这也是我的几大错误点之一，积分区域！
+
+### 2013 真题
+
+- 完成时间：20260830
+- 分数：142
+  - 大题：-8
+- 作答时间：150
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOtq1jdx3bhqYGFKgQ1jhkrc27kc8wACGhdrG8YqsVauUctv7oSoMAEAAwIAA3gAAz0E)
+
+低级错误
+
+lnx 抄成 x 了（-2）
+
+这道题证明过程是没问题的，但是把 lnx 抄成 x 了，导致整道题错误。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCOxq1jfUuIyXN1R9KeURdEv8VCaNrAACHBdrG8YqsVYcNoKjkaDTaQEAAwIAA3gAAz0E)
+
+低级错误
+
+x 的积分前面没有 1/2（-2）
+
+意思是 x 积分成 1/2 x^2，这个 1/2 一定不可以漏。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCO1q1jfnLqmsSwtaJAkTRYtod_glRAACHRdrG8YqsVaoSZorsue21AEAAwIAA3kAAz0E)
+
+低级错误。
+
+线代矩阵某一行往上加，没有所有元素都往上加（-4）,一定不要跳步
+
+总结一下，本质上是没检查后面的题，前面的题全部检查了。而且确实这两天态度有点摆，没有非常认真的去做
+
+### 2014 真题
+
+- 完成时间：20260903
+- 分数：143
+  - 大题：-7
+- 作答时间：125
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCO5q1jieBnYydVwGMcKqRGV7ERjGxwACHhdrG8YqsVY5QGshTUZSFwEAAwIAA3gAAz0E)
+
+低级错误
+
+化简化简对了，但是在代入的时候，忘记把 z 代入化简，从而全部错误（-7）这道题没检查。
+
+起始就是化简出来是对的，然后 f''=4z+e^xcosy。u=e^xcosy，z=f(u)
+
+然后在带入的时候，直接把 4z 给代入没了，变成了 f''=u。
+
+![18 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCO9q1jnLKHsVjEp78I-AroTITjwqxwACHxdrG8YqsVZ9-xEcJ9Lt4AEAAwIAA3cAAz0E)
+
+### 2015 真题
+
+- 完成时间：20260904
+- 分数：145
+  - 大题：-6
+- 作答时间：120
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPFq1jsBBZmWaWvzLU95dicyPhBQPgACIRdrG8YqsVZKrYgKsfnA-QEAAwIAA3gAAz0E)
+
+积分的上下限与常规时不一致，想当然导致的错误
+
+一般做题的时候，积分上下限都是 pi/2，但是这道题是 pi/4，导致有一半的积分算错（-5）
+
+![18 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPJq1j2LIRNFNeb5rg-FZdXX-BYcYwACJxdrG8YqsVawVylt_linJwEAAwIAA3cAAz0E)
+
+### 2016 真题
+
+- 完成时间：20260905
+- 分数：133
+  - 大题：-17
+- 作答时间：150
+
+总结一下，这张卷子主要是计算问题比较大，以及数学不能停，停下来手感就没了（其实检查检查了 2 个选填出来）
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPNq1j3Vw-xnVPTBg5NgRIG1qBXi_wACKxdrG8YqsVbGUJJEzVw6wgEAAwIAA3gAAz0E)
+
+低级错误
+
+时间不够了，没检查。这道题错在把 x=pcosθ代入的时候，忘记把 cosθ平方，从而整体错误（-8）
+
+低级错误
+
+cosθ积分出来，然后忘了乘上原本在这之前的系数了。（-3）
+
+求 P 的逆错误
+
+错误原因是草稿纸上的 P 和答题卡上的 P 不一致（草稿纸上的 P 抄错了，这进一步说明了要做一步检查一步！（-6）
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCX5q2LPOXirDHko6HnYdu1xjPnOtawACHhVrG89ByVZjb1Hs1u7WewEAAwIAA3gAAz0E)
+
+低级错误
+
+cosθ积分出来，然后忘了乘上原本在这之前的系数了。（-3）
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCX9q2LQcwPTM-EqbsNqzoEKGhhFxXAACHxVrG89ByVaopf3s0Whw5AEAAwIAA3kAAz0E)
+
+求 P 的逆错误
+
+错误原因是草稿纸上的 P 和答题卡上的 P 不一致（草稿纸上的 P 抄错了，这进一步说明了要做一步检查一步！（-6）
+
+总而言之，给我的警示就是做一步算一步。
+
+### 2017 真题
+
+- 完成时间：20260906
+- 分数：146
+  - 选择题：-4
+- 作答时间：105
+
+检查出来大题线代抄错（两道题都有），检查花了 30min
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPRq1kYLpl7xTwlGKSX1Mj7ciKHZ9wACNRdrG8YqsVZRNYdnvDWJ7gEAAwIAA3gAAz0E)
+
+低级错误。
+
+求写渐近线的时候，想当然直接脑算 b，并且检查的时候也认为没必要算。
+
+也就是想当然认为 xarcsin(2/x)，当 x 趋于无穷的时候，这个应该是 2，而不是 0。
+
+![9 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPVq1kcswv9Rgw7WfZ4OPDCLXXlNLgACNhdrG8YqsVbHyhbQkuf-UQEAAwIAA3kAAz0E)
+
+### 2018 真题
+
+- 完成时间：20260913
+- 分数：136
+  - 填空题：-4
+  - 大题：-10
+- 作答时间：150
+
+本张卷子处于恢复期，150min 耗时结束几乎没检查时间就结束了。检查了前 5 题检查出来了一个错的，然后就没检查了。最后填空题第一题错了。所以这样，即使再没时间检查，选择题前 5 题，填空题前几题以及大题前几题也一定要检查。并且这给了我一个警示，一定要连续的做卷子。虽然是被这个课影响了就是了，但是要赶紧恢复状态！
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPZq1kdlkXKk8bv_xU-3hm9viyER6QACNxdrG8YqsVY_U22v6t_SpAEAAwIAA3gAAz0E)
+
+低级错误。
+
+没检查，并且分母的系数提取出去的时候，结果变成了分子系数（也就是应该是 -2/-2，结果算成 -2✖️-2
+
+![9 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPhq1kmTmYs7dR42KO0vMJJSL2H_bwACORdrG8YqsVbEwy2gugPU0QEAAwIAA3cAAz0E)
+
+然后我在订正完之后，突然发现可以用拉格朗日中值定理做。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPdq1kfWQmS_lBlMh0ff_6cFhs6FVwACOBdrG8YqsVYG414FQ05laAEAAwIAA3gAAz0E)
+
+低级错误。
+
+没检查，这道题是为了凑 140 给的 -6，实际上看的话肯定会错的更多…然后我突然发现，这道题积分区域确定错了，直接 -10。把 A(0,1) 看成了 A(1,1)
+
+### 2019 真题
+
+- 完成时间：20260914
+- 分数：142
+  - 大题：-8
+- 作答时间：150
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPlq1kpvK1oNJ5Qmubrqp4_a6MCWyQACOhdrG8YqsVafqZDwX-gVLgEAAwIAA3gAAz0E)
+
+导数不存在的点也可能是极值点，-2。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPpq1kqGKJeZyQ2PFYSWFMQa3WjTXwACOxdrG8YqsVZj2HY7UIA6QwEAAwIAA3gAAz0E)
+
+证明题第 2 问不会做，-6
+
+自己的证明方法是错的（没搞清楚多个 epslion 之间的关系然后错了）这道题的正确思路是：两次积分构造函数，或者使用 2 次泰勒公式。
+
+订正依旧不会做，采中间点，用 3 次拉格朗日推导下去。
+
+![21 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYBq2LYnw6jyoOZyo9U-mZXbioH-QgACJBVrG89ByVb3pC1LmrkFFAEAAwIAA3kAAz0E)
+
+### 2020 真题
+
+- 完成时间：20260915
+- 分数：142
+  - 大题：-8
+- 作答时间：150
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPtq1krTHbeuLJ184jBntc8h_B2vhwACPBdrG8YqsVZuWM1wqqxfmAEAAwIAA3gAAz0E)
+
+第 17 题是低级错误，二阶导数的 C 算错，并且代入算极值点的时候算错（-3），+ 看成 - 了
+
+![17 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCP1q1ktw2DQc4QvfxcITxbsvXBB7HwACPhdrG8YqsVaV2XutgpqbfQEAAwIAA3kAAz0E)
+
+第 18 题是计算错误最后一步在计算圆柱的时候，想当然认为高是 1。其他是对的（-2）
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPxq1ksBlJeZvHM5cOXUAAFPYjASHjkAAj0XaxvGKrFWW8o1qwty-T0BAAMCAAN4AAM9BA)
+
+微分方程相关
+
+u'(0)=0，C 不能推导出来是 1(-3)
 
 ## 24 超越 1-3
 
@@ -4352,6 +5114,23 @@ $\text{tr}(NM) = \sum_{j=1}^n (NM)_{jj} = \sum_{j=1}^n \sum_{i=1}^m N_{ji} M_{ij
 
 ### 2022 真题
 
+- 完成时间：20261020
+- 分数：140
+  - 大题：-10
+- 时间：120+30
+
+还可以，以为自己寄了，其实做的真还行。30min 检查选择题检查出来 1 个。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXxq2K4XrslwMVfmwn2BznYZfPA15wACGRVrG89ByVbkmM2NwL2TpwEAAwIAA3kAAz0E)
+
+本题有半边犯了一个非常低级的错误：
+
+(x-y)^2/(y-x)^2=1≠-1，从而 -4。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCX1q2K5xWuSwliiy1P8fXg-17VjlBAACGhVrG89ByVZKY99L78s1xQEAAwIAA3kAAz0E)
+
+充分性不会证明，先过。
+
 ### 2023 真题
 
 ### 2024 真题
@@ -4359,6 +5138,23 @@ $\text{tr}(NM) = \sum_{j=1}^n (NM)_{jj} = \sum_{j=1}^n \sum_{i=1}^m N_{ji} M_{ij
 ### 2025 真题
 
 ### 2026 真题
+
+## 24 超越 4-10
+
+### 24 超越 10
+
+- 完成时间：20261021
+- 分数：122（-10）
+  - 选择题：-5（-5）
+  - 填空题：-15（-5）
+  - 大题：-8
+- 时间：120
+
+总结一下，因为一个学长这份卷子写了 100min，然后考了 150，我也想试试，结果就是这样。
+
+看来学长的风格不适合我，我还是继续简单卷子 90min 写完检查 60min，正常卷子 120min 写完检查 30min。
+
+## 25 超越
 
 ## 880 综合 2 刷
 
@@ -4540,10 +5336,6 @@ $0 < (x^2 + y^2)^{1/2} < \delta$
 
 ![4.3.19 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDRq1Lurt7yP6pWpOqvMsQvH_h6UrQACvxJrG1-fqVbm4AtZXKR0ZAEAAwIAA3gAAz0E)
 
-## 24 超越 4-10
-
-## 25 超越
-
 ## 660 1 刷
 
 ## 27 张四
@@ -4556,6 +5348,12 @@ $0 < (x^2 + y^2)^{1/2} < \delta$
 
 1. 线代的秩不等式证明
 2. 牛莱公式的应用
+
+分界线
+
+1. 柯西积分不等式
+2. 2022 压轴证明
+3. 2019 证明
 
 ## DS 王道选择题 1 刷（补）
 
@@ -10696,7 +11494,7 @@ TTL，目的 IP 地址，头部校验和
 
 ### 408 2012 真题 2 刷
 
-- 分数为 146，但第 44 题还没写
+- 分数为 146
 - 第 43 题 -3，第 2 问没看清楚题目，题目说的是在 cache 缺失的基础上；第 4 问则是一个体是按 4B 算，而不是 16B
 - 第 47 题 -1，第 2 问分析正确，答案写错了（1,0000B 应该是 16，而不是 32）
 
@@ -11169,6 +11967,28 @@ DMA 常用于传送高速设备数据块，如果 CPU 优先则可能会丢失�
 ![44 1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBDtqzPw8L_L0Pc-zkmfbjLdBYGOdDQAC4RJrG8y1YVZCks5whA2g-gEAAwIAA3kAAz0E)
 
 ![44 2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBDxqzPxWZ-1qz1A6WLmk6QH1oYH9cAAC4hJrG8y1YVbEh6-ge9TmzgEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+由于是 16 位计算机，-513=1111,1101,1111,1111B，算术右移一位，也就是 1111,1110,1111,1111B=FEFFH。
+
+(2)
+
+由于是连续的 4 条指令，所以应该是 8 条。
+
+(3)
+
+I3 的 ID 被阻塞的原因是因为 LOAD-USE 冲突，需要等待将数据写回后才可以 ID。
+
+I4 的 IF 被阻塞的原因是需要等待上一条指令 ID 完之后才可以 IF。
+
+(4)
+
+如下图所示，最短是 17。
+
+![44 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWpq2Io8gHr3a9HhfJXIIDK_ouwglwAC8hNrG89ByVaLRFK5x6rXGwEAAwIAA3kAAz0E)
 
 ![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBAhqy3Gc3YWWfiHIeY6sISNI54UbwwACwhVrG364YVaftxvEiFCcKAEAAwIAA3kAAz0E)
 
@@ -12568,6 +13388,14 @@ func consumer_j(){
 
 ### 408 2015 真题 2 刷
 
+- xx 分，这份卷子 1 刷的时候 147，错了第 8 题和计组的有一题没分析直接写的答案
+- 这份的 2 刷选择题是很久之前做的，然后一直没对答案，又犯老毛病了，然后本来标记的要检查的题因为迁移到 codebuddy 没了，但是我觉得是次要原因，本来第一次做 147 的题第二次怎么就只有这个分。
+- 第 6 题：分析对了选错了。
+- 第 10 题：堆的比较问题
+- 第 15 题：忽略了 cache 位。
+- 第 27 题：低级错误，漏看了最后一个数字。
+- 第 36 题：低级错误，要么错误看成正确，要么 CSMA/CD 协议看成 CA。
+
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHRqzhh0k1rKZjjO8X6IutKq0DapUAACwhVrG7fmcVYV9C4tsJG-SAEAAwIAA3kAAz0E)
 
 本题应该选 A。
@@ -12602,13 +13430,21 @@ func consumer_j(){
 
 ![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJZqzyx4js2E_sn7B1TY4jPq3PRZ4QACCxNrG7fmeVaBOzz_DM36uQEAAwIAA3kAAz0E)
 
-本题应该选 D。
+~~本题应该选 D。~~
 
-这道题也是纯模拟题。
+~~这道题也是纯模拟题。~~
 
-Kruskal 是选边，首先选择最短的边，也就是 V1-V4，然后可以选择 V1-V3 或者 V2-V3。
+~~Kruskal 是选边，首先选择最短的边，也就是 V1-V4，然后可以选择 V1-V3 或者 V2-V3。~~
 
-Prim 算法是选结点，假设从 V1 开始选择，那么下一个加入集合的应该是 V4，再然后是 V3，V3 可以通过 V1-V3 或者 V3-V4，所以这道题应该选 V3-V4。
+~~Prim 算法是选结点，假设从 V1 开始选择，那么下一个加入集合的应该是 V4，再然后是 V3，V3 可以通过 V1-V3 或者 V3-V4，所以这道题应该选 V3-V4。~~
+
+订：
+
+克鲁斯卡尔第一次选 V1-V4，然后可以选择 V1-V3，V3-V4，V2-V3
+
+Prim 算法从 V4 开始，第一次是 V1-V4，然后可以是 V1-V3 或者 V3-V4
+
+分析对了选错了。
 
 ![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJdqzy1ofPyoVbLpqOP591ihu2-PBAACEBNrG7fmeVaMjLwfY0kJtAEAAwIAA3gAAz0E)
 
@@ -12642,11 +13478,13 @@ KMP 算法的手算，算出来模式串是 011223。
 
 ![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJxqzzh6-vDyMPzwD7xQfB7_OAf2nQACQBNrG7fmeVZF0kkfCVwYlwEAAwIAA3kAAz0E)
 
-本题应该选 B。
+~~本题应该选 B。~~
 
-这道题也是模拟，模拟如下：
+~~这道题也是模拟，模拟如下：~~
 
-![10 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJ1qzzknZ7yxb3c1scNfg3WRgJjldwACQxNrG7fmeVbinRG54Rna5wEAAwIAA3cAAz0E)
+~~![10 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJ1qzzknZ7yxb3c1scNfg3WRgJjldwACQxNrG7fmeVbinRG54Rna5wEAAwIAA3cAAz0E)~~
+
+订：中间那个得比较两次
 
 ![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJ5qzzlClu1x1RoXl7QxGBU8x5n9QQACRBNrG7fmeVbgiNBc_njEewEAAwIAA3gAAz0E)
 
@@ -12678,17 +13516,23 @@ KMP 算法的手算，算出来模式串是 011223。
 
 ![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKNqz0AEdQw2PwrW_jCVcElLLdXmIAACYRNrG7fmeVYy7SZD8frabwEAAwIAA3kAAz0E)
 
-本题应该选 D。
+~~本题应该选 D。~~
 
-主存块大小为 4 个字，一个字 32bit，所以块内地址应该占 16B，也就是 4 位，采用直接映射，也就是 tag 号占 28 位。
+~~主存块大小为 4 个字，一个字 32bit，所以块内地址应该占 16B，也就是 4 位，采用直接映射，也就是 tag 号占 28 位。~~
 
-cache 本身的有效位占 1 位，采用回写法脏位占 1 位。
+~~cache 本身的有效位占 1 位，采用回写法脏位占 1 位。~~
 
-数据总共是 4\*32bit=128bit。
+~~数据总共是 4\*32bit=128bit。~~
 
-所以一个 cache 行占 28+2+128=158 位。
+~~所以一个 cache 行占 28+2+128=158 位。~~
 
-存放 4K 个字的 cache 总计 4K/4=1K 的主存块，所以也就是 158K。
+~~存放 4K 个字的 cache 总计 4K/4=1K 的主存块，所以也就是 158K。~~
+
+订：
+
+存放 4K 字的数据 cache，也就是 4K/4=1K 个 cache 行，也就是需要 10 位。由于块内地址是 4B✖️4=16B，所以占 4 位。也就是 tag 号占 32-10-4=18 位。
+
+后续的分析都是一样的。
 
 ![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBKRqz0E7on5Yy8RaGva_cVnDo1i0LAACZBNrG7fmeVYWqZoW6o0JqAEAAwIAA3kAAz0E)
 
@@ -12778,9 +13622,15 @@ S1 也不会限制用户申请资源的顺序，可以考虑系统资源充足�
 
 ![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLBqz0divNafevn3-OWiKfDKTUnd8AAClRNrG7fmeVb0glMWNxeSSAEAAwIAA3kAAz0E)
 
-本题应该选 B。属于纯模拟的题。
+~~本题应该选 B。属于纯模拟的题。~~
 
-![27 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLFqz0fgDZFPeaIkhINeyfK0gM1FkQACmBNrG7fmeVY6_mKecTmSLwEAAwIAA3kAAz0E)
+~~![27 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLFqz0fgDZFPeaIkhINeyfK0gM1FkQACmBNrG7fmeVY6_mKecTmSLwEAAwIAA3kAAz0E)~~
+
+订：如下图所示
+
+![27 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXFq2I6ngmL_nS0Ktzhawm9pDljxtAAC_xNrG89ByVbAaK2T_CzRegEAAwIAA3cAAz0E)
+
+我估计是写的时候漏看了最后一个数字。
 
 ![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLJqz0f5niTlH7DVc3BR-wUU_rsmyQACmRNrG7fmeVZ2ey3XLkgdUQEAAwIAA3gAAz0E)
 
@@ -12846,7 +13696,9 @@ RTT=500ms，所以通过公式：NTd/(Td+RTT)>=0.8，计算可得 N>=7.2。也�
 
 ![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLpqz0z4ju5RgMuEUf4mOsiRug3q-wACuRNrG7fmeVYf269FQ4crrwEAAwIAA3gAAz0E)
 
-本题应该选 A，属于背书题。
+~~本题应该选 A，属于背书题。~~
+
+订：对于 A，CSMA/CD 显然是边发送数据帧边检测是否发生冲突，显然我是把题目想成了 CSMA/CA，或者只看了前两项，正确想成错误。肯定是 B，CSMA/CA 才是无线链路。
 
 ![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBLtqz00PjBECkJK4T8CwYSVov5IZWwACuhNrG7fmeVZIkucLIQZ4JgEAAwIAA3gAAz0E)
 
@@ -12936,6 +13788,18 @@ void solve(LNode* L,int n){
 时间复杂度：O(n)
 
 空间复杂度：O(n)
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWtq2IqtIGrBgHIzfW0k4JE38IcSEAAC9BNrG89ByVY561AamSsVuAEAAwIAA3gAAz0E)
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWxq2IrGPGUxgz7tGzl7WpBjmiESygAC9RNrG89ByVZkp7GfOjOjDwEAAwIAA3gAAz0E)
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXBq2IspOxS_5hCaiCIZWKLQCQYhAAP5E2sbz0HJVoliFbsJMTNHAQADAgADeQADPQQ)
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCW1q2IrcCHub05qECizw9ieUS_ia3gAC9hNrG89ByVbntk4kU8n0IwEAAwIAA3gAAz0E)
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCW5q2IrtH7QD5hRBugqwbCHeqoxdJAAC9xNrG89ByVaU4B_MMTW0LgEAAwIAA3gAAz0E)
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCW9q2IsDHGO3oFhBmPvlHyz7tvRmigAC-BNrG89ByVab6krQo0dwCwEAAwIAA3kAAz0E)
 
 ### 408 2016 真题 2 刷
 
@@ -14169,8 +15033,1617 @@ Cache 有效位的作用是：当进程切换的时候，原来的 cache 失效�
 
 第一个分片的偏移量是 0，第二个分片的偏移量是 97。
 
+### 408 2019 真题 2 刷
+
+- 第 5 题：对关键路径的理解错误
+- 第 26 题：对于 4，FAT 表兼具了已使用管理和未使用管理，可以理解为静态链表，也就是显示链接分配。
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCG1q1fj_ySZgH3yq29BWnQ7GmgcKKAACBBZrG8YqsVaMftrtk-xLmQEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+自增然后按照平方比较，所以应该运行根号 n 次。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCG5q1fqMSPK6nuCB7jQhI2MoiKSKHQACChZrG8YqsVaoeuSXGHJpswEAAwIAA3gAAz0E)
+
+本题应该选 B，属于背书题。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCG9q1fqt076COcbfYSsITrKtN3AtxgACCxZrG8YqsVbWrflm3FVwZgEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+哈夫曼树不存在度为 1 的结点，根据公式 n0+n1+n2=n1+2n2+1，也就是 n0=n2+1，由于 n1=0，n0+n1+n2=115，所以 2n2+1=115，也就是 2n2=114，n2=114/2=57，所以 n0=57+1=58。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHBq1f7ZhLJgviwAATy2fD-DpUTQBA0AAhgWaxvGKrFW5VyM-3oZZIwBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+对于 1，v 是 T1 叶节点，那么可以构造两个树如下图，所以 A 是对的，都有可能。
+
+对于 3 可以构造出来肯定是错的。
+
+![4 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXJq2JiF0YH9nsbfnJswGs_3MmnhmwACCxRrG89ByVbc5eV8Xx0_EwEAAwIAA3kAAz0E)
+
+所以，1 是对的，3 是错的，可以排除掉 BD。
+
+对于 2，如果不是叶节点，那么删去后再插入必然是叶节点，所以 2 是错的。
+
+综上，只有 1 是对的，也就是 A。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHFq1f-2gH7R5EyL_i56hQyXwHYIlwACGRZrG8YqsVZLcJWnTSwUfAEAAwIAA3gAAz0E)
+
+~~本题应该选 B。~~
+
+~~这类题采用模拟的做法，如下图所示：~~
+
+~~![5 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZFq2fFJ0wVnhBsyAjWfiwjAMrU8_wACmhJrG89B0VZHPEk8379qGQEAAwIAA3kAAz0E)~~
+
+订：好像这类题学的有点问题，必须得再学一遍。
+
+总结一下，在 AOE 网中，必须得区分定点和有向边。
+
+定点的左上角指的是最早发生时间，右上角指的是最迟发生时间，指的是对所有边来讲，这个点必须从什么时候开始起步**第一个**事件（因为可能这个点有多个出度）
+
+对于有向边活动时间，最早开始时间直接严格等于起点 i 的最早发生时间，最迟开始时间等于指向结点的最晚开始时间 - 持续时间。
+
+切记不可以读特定的结点。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXNq2Jizeh38DvloYtIAAZl-jSNgrbcAAgwUaxvPQclW4gL77gWq4cQBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+构造如下图所示：
+
+![6 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXRq2JlxvL7s3Tf9lwQK7g07akit5gACDhRrG89ByVbzgYBMa5mxWwEAAwIAA3cAAz0E)
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXVq2JmEJSHlD3Sk9c76KxcAAaUCTmAAAg8UaxvPQclWXqWuDRJ10OUBAAMCAAN4AAM9BA)
+
+本题应该选 D。
+
+对于 1，数据的规模如果非常大，那么可以采用快排等排序算法，但如果数据量很小，有的时候不如采用其他算法。
+
+对于 2，如果数据采用链式存储，那么用不了快排。
+
+对于 3，对于一些结构体排序而言，这是必须考虑的。
+
+对于 4，如果数据的初始状态就是接近有序的，那么使用快排效率会很差。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXZq2Jni5ArfPS9ju0Pq1t1D4yzmnwACEBRrG89ByVY_7lXQH0eBmQEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+首先计算所有数的模 7。
+
+87,40,30,6,11,22,98,20
+
+3,5,2,6,4,1,0,6
+
+由于采用线性探测法解决冲突，可以构造出哈希表，填满 0-7。
+
+而散列函数是 0-6，所以应该是 9+8+7+6+5+4+3=42，42/7=6。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXdq2Ju1qhrhnFOIJi47vR7gAAE6pI4AAjYUaxvPQclWZn4CruWpo74BAAMCAAN5AAM9BA)
+
+本题应该选 B。
+
+如下图所示，应该是 B。
+
+![9 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXhq2JxQjKYF4KNMPudffkvaBxNS1AACNxRrG89ByVb4PgabmEN7SgEAAwIAA3kAAz0E)
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXlq2JxpQj8G8NldUJrXvaqp38y0BAACOBRrG89ByVbvQd_-JlwkpAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 A，最大可以选 72，中间可以选 28
+
+对于 B，最小可以选 2，最大可以选 72
+
+对于 C，最小可以选 2，大的那一侧可以选 28
+
+对于 D，小的一侧可以选 12，大的一侧可以选 32，但是由于不包含边界，所以至少得 3 个数是最终位置，错误。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXpq2J3m52ow3qo8Ag5dS6-leNWwNgACOhRrG89ByVZM-UTt7UJF-wEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+120 个初始段，也就是 119%11=9,11-9=2。
+
+所以也就是补充 2 个。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHJq1f_O_iZnU8rSDxkbwZjeQ2MZPQACGhZrG8YqsVayYxeBaNJnXQEAAwIAA3gAAz0E)
+
+本题应该选 C。对于 C，数据在指令中可以以很多种方式给出，典型的寻址方式就有 10 种。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHNq1gABDnTD7AOw2zX5LWNyIrwB6kYAAhsWaxvGKrFWIi-HwmSOVywBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+unsigned short usi=65535，也就是 FFFF,FFFFH。
+
+转译为 short，也就是 -1。0
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXtq2J5xEyZLNeJWpx5Y6oxAkhB5cwACOxRrG89ByVZU4zofw5hNcwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 A，显然是对的。地址转换是硬件做的事情，所以是 CPU 检测到的。
+
+对于 B，缺页处理需要由操作系统提供的缺页程序来完成，这里辨析一下，缺 cache 的时候是纯硬件。因为前者是要把外存里的数据搬到内存里。缺页本身是异常，但是需要通过 IO 来搬数据。
+
+对于 C，如 B 所说。
+
+对于 D 是错误的，缺页一定是回到当前指令重新执行。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYFq2eCKIR7-fLWI7pQrCO_QjxGuywACYBJrG89B0VZvdcgmq6MhIAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+首先先基址寻址找到操作数的起始地址，也就是 F000,0000H+FFFF,FF12H=EFFF,FF12H。
+
+由于采用打断法，所以最低有效字节应该是 00H，也就是 EFFF,FF15H。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYJq2eEhnUebqQAB2JZLA3qd0AeQCFYAAmESaxvPQdFWj3hEsPMRQ9ABAAMCAAN4AAM9BA)
+
+本题应该选 D。
+
+对于 D，考虑使用同步方式，可能是多个时钟脉冲才执行一条指令。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYNq2eFj26e76GZzZItPIBzndiOAhgACYhJrG89B0VZAVsiflihNfQEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+对于 1，显然使用了 R，那么也就意味着使用了通用寄存器组。
+
+对于 2，由于实现了加法，那么肯定使用了 ALU。
+
+对于 3，由于 M 访存了，所以肯定使用到了存储器。
+
+对于 4，译码在执行之前，所以错误。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYRq2eG0b1ylER1V4PiK4ZIq9qkBwwACZBJrG89B0VYMWSSy6_SjcQEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+默认不采用数据转发和 load-use 处理，所以也就是需要 nop 3 次。
+
+大部分情况下需要处理的都是写后读。
+
+分析全流程，对于 I1 和 I2 之间没有冲突，I2 和 I3 之间存在冲突，I3 和 I4 之间存在冲突，所以排除 B 和 D。
+
+现在观察 A 和 C 两个间隔的，也就是 I1，I3；I2，I4 有没有冲突。
+
+对于 I1 和 I3，由于 I1 和 I3 只间隔 1 个段，所以本来要 nop 3 次，现在只需要 nop 2 次，然而还是要 nop 的，所以存在冲突。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYVq2ePKtNXhouny0Vzv-00GPc1wIQACbBJrG89B0VbClEqwupcbpAEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+采用 3 通道存储器总线，也就意味着有 3 条通道，所以总带宽应该是 1333M✖️3✖️64bit/8=32GB/s。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYZq2eSShjVK2AI15s-QVov-vidafwACexJrG89B0VYk4ggrnU2u_AEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 A，格式化容量比非格式化容量小，因为磁盘格式化的时候要划道，会导致损耗。
+
+对于 B，属于背书。
+
+对于 C，磁盘存储器的最小读写单位为一个簇。
+
+对于 D，属于背书。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYdq2eWUugKKc1jYO-9Vcf_g47llUAACgBJrG89B0VbuiU2kxIFhdgEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+CPU 主频为 1GHz，数据缓冲寄存器为 32bit=4B。
+
+由于数据传输率为 50000B/s，假设传输 1s，也就是总共传输 50000B，50000B/4B=12500 次中断，也就是总共需要 12500✖️1000/1G=0.0125s，也就是 0.0125✖️100%=1.25%。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYhq2ebac4opBXJOFWTW9p4ZxQ4qSgACgRJrG89B0VZ_JHJVTbln0gEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+再次辨析一下 DMA 全流程，首先是 CPU 发起 DMA 请求，DMA 控制器接收到请求后从内存里搬，等到搬完一块数据后请求中断。
+
+其中有几个区别，如果采用周期挪用，那么是争夺总线使用，DMA 每次准备好一个数据缓冲区的数据就要发一次请求，适用于中高速的设备；如果采用停止 CPU 访问，那么是传一整个块期间，CPU 都不能访问内存，适用于适用于极高速外设（如高速磁盘、千网/万兆网卡）；对于交替访问，将一个 CPU 时间周期严格分成两部分，前半部分给 CPU 后半部分给 DMA，适用于 CPU 工作周期比主存存取周期长 的系统，硬件实现较复杂。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYlq2eimlJ_dQKEzUz15C9g5Zs7GVQACghJrG89B0VbJDYsn8ovBfwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于 A，动内核，自然需要操作系统，所以正确。
+
+对于 B，操作系统分配一个内核进程，然后其他线程都依托于这上面（用户线程）。
+
+对于 C，显然是对的，不需要操作系统介入
+
+对于 D，显然正确，用户线程可以在不支持内核级线程的操作系统实现
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYpq2ejw0vSyMrJvD6O3xUpVRZy9vAACgxJrG89B0Vaw3EE0MjwFRgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+进程唤醒的意思是：进程从阻塞态到就绪态。
+
+对于 1，IO 结束后，操作系统会将进程从阻塞态挂到就绪态，显然如此。
+
+对于 2，某个进程退出临界区后，意味着其用完了临界资源，所以会导致从阻塞态变成就绪态。
+
+对于 3，当前进程时间片用完，会导致进程从运行态转变为就绪态，所以排除 3。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYtq2ev3myKdBt25P9sWpRBq-iimuAACjhJrG89B0Vbt4gbbSvGbCwEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+对于 1，执行系统调用的过程属于内核态。
+
+对于 2，IO 采用必须要进入内核态。
+
+对于 3，可以理解为 mac 和 windows 有没有为应用程序提供了统一的接口，显然是没有的，所以 3 是错的。
+
+对于 4，属于背书。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYxq2exNg67giUm94jvUAAGz1dyp3DgAAo8SaxvPQdFW8KwJemE20VkBAAMCAAN5AAM9BA)
+
+~~本题应该选 C。~~
+
+注意功能，本题功能是管理空闲磁盘块。
+
+对于 1，位图显然是管理空闲磁盘块的。
+
+对于 2，索引节点指的是还可以创造多少个文件。
+
+对于 3，空闲磁盘块链指的是链式分配下有哪些空闲磁盘块。
+
+~~对于 4，文件分配表指的是文件分配，也就是已经使用了哪些，而不是未使用。~~
+
+对于 4，FAT 表兼具了已使用管理和未使用管理，可以理解为静态链表，也就是显示链接分配。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCY1q2ezhmuzQkXYaJN01IZyxo7XfAgACkhJrG89B0VbI4lPUQ12NoAEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+注意这道题问的是平均等待时间，采用模拟法，考虑 P1，P1 时间是 30ms，执行完一个时间片后开始等待。此时 P2 上处理机运行一个时间片，然后 P1 和 P2 分别剩下 20ms，10ms，由于第二个队列是短进程优先，所以第二个进程继续运行 10ms，然后 P1 运行剩下的 20ms。
+
+所以，P1 总共等待 10+10ms，P2 总共等待 10ms。总计等待 30ms，也就是平均等待时间是 15ms。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCY5q2e1S49DFL4-5-13DfZ_fpfdUmgAClBJrG89B0VacKL9khoLYlwEAAwIAA3kAAz0E)
+
+本题应该选 B。
+
+本题考察的是共享段表。
+
+对于 A，物理只存一份这是对的。
+
+对于 B，段 S 在 P1 和 P2 中就是逻辑段，逻辑段自由分配，所以错误。
+
+对于 C，显然是共享的。
+
+对于 D，是分配那块的只是，是对的。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCY9q2e2vuaTq4H_ggZWNM7d_IDx79gAClRJrG89B0VbdmdGP78BlSgEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+如图所示：
+
+![29 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZBq2e4xB4U3_HR67A1cqlG94WoRvAAClhJrG89B0VZbcFXW1G7GNgEAAwIAA3kAAz0E)
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCH9q1hJ2dasunDoLH8363eWUc7uWhgACVRZrG8YqsVaau6c6nIp5LAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于 3，银行家算法并不可以判断系统是否处于死锁，只能判断系统是否处于不安全的状态。即便是不安全的状态，也不一定发生死锁。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCH5q1hEIdQ1HkInq8hhM8EDuxa0i2gACUxZrG8YqsVYBPjZ9wUBAKAEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+2050,1225H=0010,0000,01｜01,0000,0001｜,0010,0010,0101B.
+
+所以页目录号分别是 00,1000,0001B=081H，页号应该是 01,0000,0001B=101H。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCH1q1hCgdsEUoDZCPr4qTh2a1MlrbwACUhZrG8YqsVaCHFt7QWnbSQEAAwIAA3gAAz0E)
+
+本题应该选 C，属于背书题。
+
+对于 A，首次适应算法反而是利用的时候最佳的。
+
+对于 B，最坏适应算法最后会导致大的进程无法装入。
+
+对于 C，最佳适应算法会留下难以利用的内存碎片。
+
+对于 D，每次都从上次结束的地方开始向后，是一种优化，但是实践下来没有首次适应算法好。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHxq1hBcqLPZMeYWojwjUf9uIsIPJwACUBZrG8YqsVZjGT1HnwtfRgEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+OSI 参考模型自下而上应该是物理层，数据链路层，网络层，传输层，会话层，表示层，应用层。绘画层的功能是会话管理。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHtq1g8NaA7Hq7YEkbCn5DcIwJogHgACTBZrG8YqsVaa_1JTaIDcPgEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+属于背书题，应该选双绞线。
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHpq1g66ErcakYGNBn3u9ai9aTUewQACPBZrG8YqsVZNSD1MOfCVdgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于滑动窗口协议，3bit 的编号发送窗口 + 接收窗口是 8，所以 8-5=3，也就是 3。
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHlq1gyRFEP1CQq59wURnhmSK12dLAACNBZrG8YqsVbSkd7AJ_KptQEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+首先题印错了，应该是 100Mb/s。
+
+本题问的是最短单向传播时延，先算 RTT，RTT=128✖️8/10^8=2^10/10^8=10.24us。
+
+问的是单向传播时延，所以应该是 B。
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHhq1guvJCyHmYWkobF7sXhSBcAUngACMxZrG8YqsVbhTke6N9gneAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+将 101.200.16.0/20 分成 5 个子网，采用类似哈夫曼树的分法，也就是 0,10,110,1110,1111，所以也就是最后 8 bit，也就是 B。
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHdq1gs777K5SCAG6JyawLPQBDQHdwACMhZrG8YqsVZUC-9LbWmydQEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+快重传，在收到三个冗余 ack 的时候立刻发送，三个冗余 ack 的意思是总共收到 4 个 ack，所以是 t3 时刻立刻发送。
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHZq1grXalFzRCTmlhbwHovUkGjRuwACMBZrG8YqsVYLR88mhQ0yCwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+第一次握手的时候，甲发送的是 2018；
+
+第二次握手的时候，乙发送的是 2046,2019；
+
+第三次握手的时候，甲发送的是 2019,2047。
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHVq1gqtq2eDhec69YCmFMU485YgowACLxZrG8YqsVbxflt3-WIbPwEAAwIAA3gAAz0E)
+
+本题应该选 B，在 CS 模式中，客户应该通过服务器通信。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCHRq1gZPQ2xfdiA4MHxODTLSzjU0sAACIhZrG8YqsVbcTefd7T72RgEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+1. 计算出链表的长度 n
+2. 找到第 n/2 个节点，将第 n/2-1 个结点的尾指针指向空，设置一个新的头节点 L2，L2 指向第 n/2 个节点
+3. 逆置 L2
+4. 将 L2 的结点摘下按照题设要求接入 L
+5. 如果 L1 遍历完，L2 仍不空，则将 L2 剩余结点拼接在 L 后。
+
+(2)
+
+```c++
+typedef struct node{
+    int data;
+    struct node *next;
+} NODE;
+
+int get_length(NODE *L){
+    int len = 0;
+    NODE *tmp = L->next;
+    while(tmp != nullptr){
+        len++;
+        tmp = tmp->next;
+    }
+    return len;
+}
+
+void reverse(NODE *L){
+    NODE *curr = L->next;
+    L->next = nullptr; // 断开旧连接，防止自己指自己成环
+    while(curr != nullptr){
+        NODE *tmp = curr->next;
+        curr->next = L->next;
+        L->next = curr;
+        curr = tmp;
+    }
+}
+
+void solve(NODE *L){
+    int len = get_length(L);
+    if(len <= 2){
+        return;
+    }
+    NODE *pre = L, *curr = L->next;
+    for(int i = 0; i < len / 2; i++){
+        pre = pre->next;
+        curr = curr->next;
+    }
+    pre->next = nullptr;
+
+    NODE *L2 = new NODE;
+    L2->next = curr;
+    reverse(L2);
+
+    pre = L->next;
+    curr = pre->next;
+    while(curr != nullptr){
+        NODE *tmp = L2->next;
+        L2->next = tmp->next;
+
+        pre->next = tmp;
+        tmp->next = curr;
+        curr = curr->next;
+        pre = pre->next->next;
+    }
+
+    if(L2->next != nullptr){
+        pre->next = L2->next;
+    }
+
+    delete L2;
+}
+```
+
+(3)
+
+时间复杂度：O(n)
+
+### 408 2020 真题 2 刷
+
+- 分数为 141
+- 第 4 题背书错误。
+- 第 25 题，中断相关的背书，这个一定要着重注意。
+- 第 41 题 -3，非最优解，问题不大，但是还是得再看
+- 第 44 题 -1，背书问题，乘法器
+- 第 46 题 -1，二级页表的页目录表相关计算
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCP5q1wr36vAFr1FIhejmMVYLlrV8oQACLRNrG8YquVbxb7BcreTxZQEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+这类题有计算公式，但是比起背公式，不如模拟或者数学归纳法找规律来的速度快。
+
+采用列优先的方式，m1,1 存储在 0，m2,1 存储在 1，m2,2 存储在 2，m3，1 存储在 3，m3,3 存储在 5，m4,1 存储在 6，m4,4 存储在 9，m5,1 存储在 10，m5,5 存储在 14，m6,1 存储在 15，m6,6 存储在 20，所以 m7,2 存储在 22。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCP9q1wxGQLSlzOIs1aGkB7nHVpUJcQACLxNrG8YquVZiGdm3UbXbHwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+这类题也是纯模拟，入栈序列为 a,b,c,d,e，按照题设模拟：
+
+push：a
+
+push：a，b
+
+pop：a，输出 b
+
+push：a，c
+
+pop：a 输出 c
+
+push：a，d
+
+push：a，d，e
+
+pop：a，d 输出 e
+
+所以应该是 bce。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQABatcMz6OjjhKb_kKjOT_Xuhu6sR0AAjETaxvGKrlWStcZ9jMzhUsBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+高为 5，有 10 个结点，高为 5 也就意味着有 5 行。
+
+假设 5 行均存满，也就是一个高为 5 的满二叉树，需要 2^5-1=31 个存储空间。
+
+由于不能确定到这 10 个结点具体的位置，所以要考虑上述最坏情况，也就是 31。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQFq1w0v-0bo0hN9nOKkvSSGmYe9HQACMhNrG8YquVbzU7c4gG4yigEAAwIAA3gAAz0E)
+
+~~本题应该选 A。~~
+
+~~属于背书题，T 的后根遍历=F 的中序遍历，也就是 A。~~
+
+![4 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTNq12RAbBCEjrmdDjeJeGoXOBMCtgAClBRrG8YquVafqweIxUYZlQEAAwIAA3gAAz0E)
+
+树的后序遍历=二叉树的中序遍历。
+
+本题问的是森林，森林的先序遍历=二叉树的先序遍历，森林的中序遍历=对应二叉树的中序遍历，所以可以直接求出二叉树的结构，然后求出其后序遍历如下图：
+
+![4 订 2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTRq12WTjgAB-C4yiK9EQP0oslQH13UAApoUaxvGKrlWDtnSkK4DbOEBAAMCAAN5AAM9BA)
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQJq1w1Y3FWkSeNNRdXpPUyTUk62OgACNBNrG8YquVb3kJVPmDr3RAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+注意本题是二叉排序树，而不是其他树。
+
+采用纯模拟法，对于 B 构造出来的树如下图所示：
+
+![5 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQNq1w3gtAn-kNCjPoUb3XcQNzqgQwACNRNrG8YquVaP8ANX1H0n3wEAAwIAA3kAAz0E)
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQRq1w4CTZvySTVlxb05xfGLeahqxQACNhNrG8YquVYCHGAN5iP3yQEAAwIAA3gAAz0E)
+
+本题属于背书题，应该选 B。
+
+但是我觉得这道题得回头再来思考这是为什么。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQVq1w4ln1hFG0aQlyX1DhwSxQYyjQACNxNrG8YquVaXEetZI88ycQEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+使用克鲁斯卡尔算法，也就是选择权值最小的边：
+
+b-f，b-d，a-e。
+
+选出前三个，就可以选出来是 A 了。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQZq1w52wVOJzt6k-jXGwU0JPAFa4gACOBNrG8YquVZP6IVghgABMIABAAMCAAN4AAM9BA)
+
+本题应该选 B。
+
+对于 C，增加关键路径长度必然会延长工期。
+
+对于 D，缩短关键活动不一定会缩短工程周期，假设有两个相同长度的关键路径且没有任何相同的边，缩短其中一条另一条依旧是关键路径。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQdq1w7k95Wq0pZb6IYe0ZqvPFBPYQACORNrG8YquVZuF3cXj9cgEgEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 1，堆可以视为一棵完全二叉树，因为其性质是符合完全二叉树的。
+
+对于 2，由于上一条性质以及堆的计算方式，可以采用顺序存储的方式保存堆。
+
+对于 3，堆并非二叉排序树，以小根堆为例，小根堆是最小的值在堆顶，而次层比其大，不符合二叉排序树中序遍历为升序序列的特点。
+
+对于 4，大根堆的次大值一定在根的下一层，如果不在下一层，那么调整堆的时候会慢慢浮上来。
+
+所以，1,2,4 正确，也就是 C。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQhq1w_XGIuaWMoxBXjImzr5cu4ggAACPRNrG8YquVZ84o8tKkcHTAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+一棵 4 阶 B 树每一层除了根节点之外至少含有 4/2 向上取整 -1 =1 个关键字，至多有 4-1=3 个关键字，所以模拟如下图：
+
+![10 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQlq1xFW56gMEwfNONtXo_IEXNEyuAACShNrG8YquVZNZXX8TVYprgEAAwIAA3kAAz0E)
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQpq1xFo5NoOgeABSPoyBTiEqnffFwACSxNrG8YquVZywgKz4K3-LwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+对于 1，是正确的，取极端情况考虑，已经有序，直接插入排序只需要比较 n-1 次，而简单选择排序需要比较 n^2 量级次。
+
+对于 2，直接插入排序和简单选择排序都不需要额外的空间。
+
+对于 3，直接插入排序的移动次数通常来讲是大于简单选择排序的，因为对数组进行移动和交换的开销不同。
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQtq1xHvqfnhdKxe6NMNza_GkJPR7QACThNrG8YquVY5DAt8xZY7RgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于 1 和 3 显然和机器字长相同。
+
+对于 2，指令寄存器的大小=总容量/PC。或者从其他角度考虑，例如超长指令字。
+
+对于 4，浮点寄存器则需要考虑任务。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQxq1xI_QdWWQxWTz0JEihu1EzP2fwACTxNrG8YquVZVSLV32QyxOgEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+x 的机器数是 C800,0000H=1100,1000,0000,0000,0000,0000,0000,0000B。
+
+按照 int 解释，也就是 -2^31+2^30+2^27=-16✖️2^27+8✖️2^27+2^27=-7✖️2^27，也就是 A。
+
+按照 float 解释，也就是符号位为 1，阶码为 1001,0000B=128+16=127+17，所以次数应该是 17，也就是 -2^17，显然题目里没有这个选项。
+
+这类题要注意是 int 还是 unsigned int，不要解释错了。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQ1q1xM5yIBMrgWqRUcJys1JVfbILgACVxNrG8YquVZhTzlwlkZHmgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+注意边界对齐，a 的首地址是 2020,FE00H，也就是 x1 的首地址是 2020,FE00H，x2 的首地址是 2020,FE04H。
+
+采用小端法，x2 的 00 存储在 04，第二个 00 存储在 05，34 存储在 06，也就是 D。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQ5q1xOy8CPUemEc5VYojKUBLxhhjwACWBNrG8YquVa6Maw_3QjvdwEAAwIAA3gAAz0E)
+
+本体应该选 D。
+
+显然 D 是错的，TLB 和 Cache 都是由 SRAM 存储器组成。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQ9q1xPzxZICDCEqyaK3V6ar8NLrggACWRNrG8YquVY1WXaIoZTpmgEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+有 48 条指令，也就是需要 6 位存储，采用 4 种寻址方式，也就是需要 2 位存储。也就是指令总共消耗 8 位，还剩下 16-8=8。由于是直接寻址，所以寻址范围没有负数，应该选 A。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRBq1xRadJg8mMfqB5v1AmNm87DABQACWhNrG8YquVa94ga3OUCu7QEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+本题问的是理想情况下，在理想情况在，显然单周期 CPU 恒定 CPI=1，基本流水线 CPU 稳定后理论值为 1，超标量流水线 CPU 的 CPI<1。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRFq1xYeDuy3lOmOTdL5b_O657EmzwACYxNrG8YquVasqHG3xd6RiAEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+对于 A，trap 属于内部中断，也就是异常。异常分为故障，陷阱和终止。
+
+对于 B 和 C 显然正确。
+
+对于 D，接着 A 说，故障一般是返回当前指令，陷阱一般是到下一条指令。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRJq1xgJHRvcC1WubKQHVqZCd8p_nAACbRNrG8YquVbFDgQi1BHcIAEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+这类题如果给了公式或者括号内的提示，那么这些是最大的，以往的经验都需要忽略。
+
+根据公式，首先计算每秒传送次数。由于 80bit 的信息，也就是 64bit 的数据分 2 个时钟周期传送，每个时钟周期传送 2 次，可以得知在一个时钟周期内传递 2 次 16bit 的数据，也就是说每个时钟周期传送 1 次 4B 的数据。
+
+所以 2.4G✖️4B=2.4G✖️8B=19.2GBps。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRNq1xmpufSL9mcvGnD_PkhgiKA4WQACchNrG8YquVacIx-Nh9hMGQEAAwIAA3gAAz0E)
+
+本题属于背书题 C。
+
+对于 1，缺页属于内部中断，异常中的故障。
+
+对于 2，定时器到时属于外部中断，可以理解为 RR 相关。
+
+对于 3，网络数据包到达可以理解为 IO 相关。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRRq1xoE8k2LDUOV2ryZfNSS7l8dcAACdRNrG8YquVY0QSdbybaouAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+本题属于背书题。
+
+对于 A，CPU 处于关中断状态下也可以响应不可屏蔽中断。
+
+对于 B，得看是否处于开中断状态下，所以错误。
+
+对于 C，一般来讲是对的。
+
+对于 D，可以改变处理优先级，而不是响应优先级。响应优先级的决定因素是硬件，处理优先级的决定因素是软件。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRVq1xp40Ip88Z1hiN5W7JyGPC_L7QACdhNrG8YquVbWk97x8Po3JwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 A，由于采用的是周期挪用，所以每准备好一次数据发一次总线请求（并非中断请求）
+
+对于 B 属于背书题，如果不这么做会导致数据丢失。
+
+对于 C，是周期挪用，所以 CPU 可以访问主存。
+
+对于 D，属于 DMA 流程。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRZq1xrFYywdq2Gor069KOyXR7VChQACfRNrG8YquVZD3okC7YdxVgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于 A，显然是错误的，各个进程可以写可以读，只不过得采用类似读者写者问题或者特定的规律访问。
+
+对于 B，系统文件打开表中只有一个 F，正确。
+
+对于 C，用户打开表不同，例如访问权限等。
+
+对于 D，关闭 F，得看是不是最后一个，所以错误。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRdq1xsohbgmuhwtFMot3RlsaCM_rAACfxNrG8YquVbAqXNWmLLz9AEAAwIAA3gAAz0E)
+
+本题应该选 A，属于背书题。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRhq1xtEL-7NYJF3EsyQte0Td4pxagACgBNrG8YquVbSQqZI7yoTvAEAAwIAA3gAAz0E)
+
+本题应该选 D，属于背书题。
+
+复盘一下硬件做的事情：关中断，保存断点（PC），中断服务程序寻址，其他都是软件做的事情。
+
+这道题给自己算错，因为背书背错了，以为中断屏蔽字是硬件做的，中断屏蔽字本身就是一个软件的东西。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRlq1xuX4I5uiAOLDwp8yweSvD_wHQACghNrG8YquVY3XNhPxZyhvQEAAwIAA3gAAz0E)
+
+本题应该选 D，属于背书题。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRpq1xu9V_-m1Har34lB5NkEX14AAVUAAoMTaxvGKrlWLqn1NqySZXMBAAMCAAN4AAM9BA)
+
+本题应该选 B。
+
+首先计算 A 和 B 仍需数量，对于 P1 是 2,1，对于 P2 是 1,0，对于 P3 是 2,2。
+
+然后计算剩余资源，得到序列是 1,0。
+
+1,0 可以匹配到 P2，所以可分配资源变为 3,1，对比可以得到 P1。
+
+分配给 P1 后，还剩下 5,4，显然可以支持 P3。
+
+所以顺序应该是 P2，P1，P3。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRtq1xxYEj9C_rk-DSLOF1WW6aOCJwACjBNrG8YquVaP3uADMgcI7AEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 1，缺页率越低，显然效率越高。
+
+对于 2，当缺页时，系统需要从磁盘调数据到内存，所以磁盘读写时间越少，效率越高。
+
+对于 3，访问页表需要访问内存，访问内存时间越短，效率越高。
+
+对于 4，显然。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRxq1xzWC4Xsm62pcgY2W3zCFMqUkQACjRNrG8YquVbBRTZEWCWd-gEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+虚拟地址空间是独有的。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCR1q1xzvB1rNBE-6gs2eufBmcrPehAACkBNrG8YquVaJaTkW50P5_AEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+属于设备无关性软件方面的知识。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCR5q1x0Uu1LtzykAAVp6iji-v51vs48AApMTaxvGKrlWPcu43IiXJFsBAAMCAAN4AAM9BA)
+
+本题应该选 B。
+
+由于 4 字节存放索引节点，所以文件数量上限是 2^32，60B 存放文件名，所以文件名上限是 480 位里放 26 个字母的个数。
+
+显然前者更小。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCR9q1x1tAAFBeswSviaIMsCEVeu1adMAApgTaxvGKrlWeT55NMtztLMBAAMCAAN4AAM9BA)
+
+本题应该选 C。
+
+属于背书题，互斥机制主要是 4 点，忙则等待，有限等待，空闲让进，让权等待，可以不实现让权等待，也就是 CPU 空转。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCSBq1x29Vtt3fXD6Qk8tvYn0fFVF1wACmhNrG8YquVY6_ldQoRLwOwEAAwIAA3gAAz0E)
+
+本题应该选 C，看图说话。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCSFq1x3rnfqgvSFhwnaRUDzGtCnLHAACnBNrG8YquVYLvKCgSA8TjwEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于 B，虚电路只是固定的路径，但是不需要预分配太宽。
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCSJq1x4SxKClCD-efxe2H8mSKKa_LAACnRNrG8YquVad16rSTIh6pgEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+路由器可以隔离广播域，交换机可以隔离冲突域。
+
+也就是说，冲突域应该是 4 个，广播域应该是 2 个。
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCSNq1x47R8odBkOA_3dtxez2u8elNgACnhNrG8YquVYRVVtqKlo2OAEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+采用停止等待协议传输数据，Td=1000B/10kbps=8000bit/10kbps=800ms。
+
+所以，信道的利用率应该是 800/(800+800+400)=800/2000=40%。
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCSdq1yCL-LGPfDvZkJAtR5yLAQsEWgACqhNrG8YquVZ1bSe-DVtnsQEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+本题考察的是 RTS，CTS 帧，第一个是 DIFS 间隔，后续三个都是 SIFS 间隔。
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCShq1yHJ3DIzKtOFl4Wy5XRKVdIwAgACqxNrG8YquVYexK9OPjuxzQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+本题问的是最长时间，最长时间也就是拥塞避免窗口小于等于 8KB 的时候。所以 8-32KB 总共消耗 32-8=24 个 RTT，也就是 48ms。
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCSlq1yJjUUTg_kJiazDFWihfeq57EQACrBNrG8YquVb66KjN6XGMmgEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+甲在最开始建立连接的时候，TCP 连接序号是 1000，也就是说建立连接消耗一个序号，开始有数据的第一个序号是 1001。
+
+在断开连接时，考虑的是第一个 FIN，也就是 5001，所以最后一个有数据的序号是 5000。
+
+所以，5000-1001+1=4000。
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCSpq1yMGvLzXeWYvvFHfc3u54FyvjAACrRNrG8YquVabNGgGSL31fwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于最短时间，局域网委托本地域名服务器查询 DNS，命中缓存，查询 DNS 消耗 1RTT，获取 index 消耗 1RTT，总计 2RTT。
+
+对于最长时间，局域网委托本地域名服务器查询 DNS，本地域名服务器委托根域名服务器查询 DNS，根域名服务器委托顶级域名服务器查询 DNS，顶级域名服务器委托权限域名服务器 1 查询 DNS，权限域名服务器查到之后直逐级返回，此时消耗 4RTT，获取 index 消耗 1RTT，总计 5RTT。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCStq1yQxexh9wbigqc8laafS4bKL2AACsBNrG8YquVbTjHbaJ7VEnwEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+1. 分别遍历 S1，S2，S3，每个元素为 a，b，c
+2. 计算具体的 D
+3. 如果当前的 D 小于此前最小的 D，更新
+4. 遍历完 3 个数组后，返回 D
+
+(2)
+
+```c
+int abs(int x){
+    if(x<0){
+        return -x;
+    }
+    return x;
+}
+
+int get_D(int a,int b,int c){
+    return abs(a-b)+abs(b-c)+abs(c-a);
+}
+
+int solve1(int S1[],int S2[],int S3[],int n1,int n2,int n3){
+    int min_D=get_D(S1[0],S2[0],S3[0]);
+    int ans_a=0,ans_b=0,ans_c=0;
+    for(int i=0;i<n1;i++){
+        for(int j=0;j<n2;j++){
+            for(int k=0;k<n3;k++){
+                int curr=get_D(S1[i],S2[j],S3[k]);
+                if(curr<min_D){
+                    ans_a=i;
+                    ans_b=j;
+                    ans_c=k;
+                    curr=min_D;
+                }
+            }
+        }
+    }
+    printf("%d %d %d",S1[ans_a],S2[ans_b],S3[ans_c]);
+    return min_D;
+}
+```
+
+(3)
+
+时间复杂度：O(n^3)
+
+空间复杂度：O(1)
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCSxq1yxI2aKtF1IhGENfS7D7ArilagAC8hNrG8YquVb82vKI9TKDTQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+哈夫曼树。
+
+(2)
+
+1. 对于一个二进制串，遍历其每一个值，记指向当前值的指针 l1，指向树的指针一开始指向根节点，为 l2。
+2. 如果 a=0，那么指针指向左孩子
+3. 如果 a=1，那么指针指向右孩子
+4. 如果当前结点为叶节点，那么解析，l2 指针返回根节点
+5. l1 指针向后移动一位
+6. 重复 1-5，直到 l1 为空
+
+(3)
+
+- 建立一棵仅包含根节点的空二叉树（左分支代表 0，右分支代表 1）
+- 逐个插入判定：依次将每个字符的二进制编码串插入到二叉树中。对于每一个编码串，从根节点出发，根据编码位（0 走左分支，1 走右分支）向下检索或创建新节点：
+  - 冲突情况 ①（当前编码是已有编码的前缀）：在向下检索的过程中，若途经了某个已经被标记为有效字符的节点，说明该已有字符是当前编码的前缀，不具有前缀特性，判定失败退出。
+  - 冲突情况 ②（已有编码是当前编码的前缀）：当当前编码的所有位处理完毕到达终点节点时，若该终点节点已经被标记过字符，或者该节点已经存在子分支（即该节点是非叶子节点），说明当前编码是已有其他编码的前缀，不具有前缀特性，判定失败退出。
+  - 无冲突：若未发生上述冲突，则将当前终点节点标记为该字符（作为叶子节点保存）。
+- 判定成功：若所有字符的编码均能成功插入且未触发上述任何冲突，则该字符集的编码具有前缀特性。
+
+用构造的方法来判断更好，而不是采用比对前缀的方法。
+
+- 存储与字典序排序：将字符集中所有字符的二进制编码存入一个字符串数组中，并将该数组按字典序从小到大进行排序。按字典序排序后，若存在某个编码是另一个编码的前缀，则较短的前缀编码在数组中必然紧邻排在较长编码的前面。
+- 逐对相邻比对判定：遍历排序后的字符串数组，依次比较每一对相邻的编码字符串 str[i] 与 str[i+1]：
+  - 冲突情况：若 str[i] 的长度小于等于 str[i+1] 的长度，且 str[i+1] 的前 len(str[i]) 位字符与 str[i] 完全相同，说明 str[i] 是 str[i+1] 的前缀，破坏了前缀特性，判定失败退出。
+  - 无冲突：若当前相邻的一对编码不满足前缀关系，则指针后移，继续检查下一对相邻编码。
+- 判定成功：若遍历至数组末尾，所有的相邻元素均未发生前缀冲突，则该字符集的编码具有前缀特性。
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCS1q1y_4MAxZQP2KpfyKJ2NtFcg8MQACAxRrG8YquVa93qgwsm0SUQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+乘法可以通过加减法和移位模拟实现。
+
+(2)
+
+判断循环是否结束；
+
+~~判断是否 +1；~~
+
+订：判断是否加法。
+
+判断是否应该移位。
+
+(3)
+
+没有乘法指令的时候执行时间最长，有乘法阵列器的时候执行时间最短。
+
+对于没有乘法指令的情况，需要通过多个指令模拟，一般来讲需要多个指令周期。
+
+对于使用 ALU 和移位器的情况，一般只需要一条指令即可执行完毕，时间上大约是 1 条指令。
+
+对于乘法阵列器只需要一个流水段就可以执行完毕，可以理解为一个时钟周期内。
+
+(4)
+
+x=0111,1111,1111,1111,1111,1111,1111,1111B=7FFF,FFFFH.
+
+均为：0000,0000,FFFF,FFFEH。
+
+umul 未溢出，imul 溢出。
+
+高 n 位均为 0 则不发生。
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCS5q1zANXtg8js7epUZbZdA8Vg6YtwACBBRrG8YquVZeUkXdzO5NpgEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+数据区容量为 32KB，也就意味着总共 32KB/64B=2^9 个 cache 行。由于采用 8 路组相联，也就是总共 2^9/8=64 组，对应 6 位。
+
+所以，tag 号应该是 32-6-6=20 位。
+
+LRU 应该占 3 位。
+
+没有修改位。
+
+(2)
+
+主存地址位 0080,00C0H，显然是边界对齐的，所以只需要考虑一个主存块能装多少个 int 型数据。
+
+一个主存块可以存 64/4=16 个 int 型数据，所以应该缺失 1024➗16=64 次。
+
+(3)
+
+1. 硬件将 0001,0003H 解释为 0000,0000,0000,0001,0000｜,0000,00｜00,0011B，并由于 2 进制属性，自动被切分为 tag 号：00010H，组号为 00H，块内偏移量为 03H。
+2. CPU 根据地址中间 6 位组号 000000B 定位到指令 Cache 的第 0 组，并行比较第 0 组的 tag 号有没有 00010H
+3. 如果有且有效位为 1 且 tag 匹配，那么命中 cache，根据偏移量选取正确的数，更新 LRU 位
+4. 如果没有，那么 cache 缺失，CPU 暂停当前指令执行，向主存发出读请求，主存块起始地址为 0001 0000H
+5. 从主存中读取包含该指令的整个主存块，将该 64B 主存块写入指令 Cache 第 0 组中的任意一个空闲行（如果有的话），将该行的有效位置为 1，Tag 设为 00010H；如果没有空闲行，那么根据 LRU 规则将第 0 组的最不常用行替换掉，并将该行的有效位置为 1，Tag 设为 00010H
+6. 回到当前指令重新读取，CPU 重新执行访问 cache 的过程，此次命中，并根据偏移量选取数据，更新 LRU 位
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCS9q1zA524-XEMi7QUKgPs6lc6qexQACBxRrG8YquVacxlFiSCKFcwEAAwIAA3gAAz0E)
+
+解：
+
+```c
+semaphore S1=0;
+semaphore S2=0;
+semaphore S3=0;
+semaphore S4=0;
+
+cobegin
+  process A(){
+    执行 A;
+    V(S1);
+  }
+  process B(){
+    执行 B;
+    V(S2);
+  }
+  process C(){
+    P(S1);
+    P(S2);
+    执行 C;
+    V(S3);
+  }
+  process D(){
+    执行 D;
+    V(S4);
+  }
+  process E(){
+    P(S3);
+    P(S4);
+    执行 E;
+  }
+coend
+```
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTBq1zBNFGf979IWmDY21rwqkRXAIAACCRRrG8YquVbW_K9UU-r8IgEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+`a[0][0]` 的虚拟地址是 1080,0000H。由于 1024✖️4B=2^12B=1,0000,0000,0000B=0000,1000H。
+
+所以，`a[1][0]` 的虚拟地址是 1080,1000H，`a[1][2]` 的虚拟地址是 1080,1008H。
+
+由于 1080,1008H=0001,0000,10｜00,0000,0001｜,0000,0000,1000B，所以页目录号为 00,0100,0010=042H，页号为 001H。
+
+由于页表项大小为 4B，页目录起始地址为 0020,1000H，第 42H 个页表项也就是 0020,1000H+0000,0042H✖️4B=0020,1000H+0001,0000,1000H=0020,1000H+0000,0108H=0020,1108H
+
+页目录项中放的页框号为 00301H，~~所以页表对应的页表项物理地址应该是 0030,1008H。~~
+
+订：这个上次也错了，不用看页内偏移量。页框号为 00301H，也就是页物理地址应该是 0030,1000H。又由于原始的页号是 1，所以应该对应的是 0030,1000H+0000,0004H=0030,1004H。
+
+(2)
+
+数组 a 在虚拟地址空间所占区域必须连续；
+
+数组 a 在物理地址空间所占区域不一定连续。
+
+(3)
+
+按行遍历局部性更好。
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTJq1zD0ijfHSUH-8HFc-m6Y8pW6swACCxRrG8YquVax8yFfQtyuQAEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+在 R2 路由器配置如下。
+
+需要配置 NAT 表。
+
+外网 IP 地址：203.10.2.2
+
+外网端口号：80
+
+内网 IP 地址：192.168.1.2
+
+内网端口号：80
+
+R1 路由器可以通过动态学习。
+
+(2)
+
+H2 发送 P 的源 IP 地址是 192.168.1.2，目的地职是 203.10.2.2
+
+经过 R3 转发后，源 IP 地址是 203.10.2.6，目的地址是 203.10.2.2
+
+经 R2 转发后，源 IP 地址是 203.10.2.6，目的地址是 192.168.1.2
+
+### 408 2021 真题 2 刷
+
+- 分数为：
+- 第 43 题还没写
+- 第 46 题 -1 背书错误，扇区划分是在物理格式化的问题。
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTVq2E-yA5BQfn19T4MGCIJW3bg4ZQACARNrG89ByVZpPwVTrb7ccwEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+p 是尾指针，如果删除的不是唯一的一个元素，那么根本没有 p 的事情。
+
+只有在删除唯一一个元素的时候，需要把 p 指向头节点。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTZq2FBoWeJMeULoONztoOodIFtqEgACBBNrG89ByVb-D0fkFF8FfQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+受限队列，本题考察的两端入队 1 端出队。
+
+采用模拟。
+
+对于 A，右侧入队 1,2，左侧入队 3,4,5。
+
+对于 B，右侧入队 1,2，左侧入队 3，右侧入队 4，左侧入队 5
+
+对于 C，左侧入队 1,2，右侧入队 3，错车入队 4，右侧入队 5。
+
+对于 D，左侧入队 1，发现无法入队 2。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTdq2FEQKjc7GQ4jXrOoYYRqmOeGUwACBRNrG89ByVbNwS6CJaxQ0AEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+按行优先的方式存储，由于 0,0 存储地址是 100，33 存储地址是 220，可得 3,0 存储地址是 217。所以，一行是 217-100=117，117/3=39，一行有 39 个元素。
+
+所以，5,0 的地址应该是 217+39✖️2=295，5,5 的地址应该是 295+5=300。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCThq2FGmP3Zxe42L5mM1nEPNrVgf9gACBhNrG89ByVa0zacieqkjuQEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+按照题目可以构造出 T 的结构如下图：
+
+![4 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTlq2FJL6bXdsyHtSpupT079X3PpngACCBNrG89ByVYvQjIy7uZK9QEAAwIAA3cAAz0E)
+
+根据图可知 F 树的个数是 3 个。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTxq2FZjR4bRkpaKBXIWLWCsg74LKwACHhNrG89ByVbnjWhr7ueaRgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+根据题设构造哈夫曼树即可，如下：
+
+![5 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCT1q2Fq8KKR7gWoxT6BNkLMDnuGHhQACQxNrG89ByVaDCiBQV8taAAEBAAMCAAN5AAM9BA)
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTpq2FMQHePp6PYZND27DK-05bIqEQACDRNrG89ByVY7r6PhczLglgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+如下图所示，插入 23 后，会导致 20 不平衡。很显然是右孩子的左子树导致的不平衡，所以采用 RL 操作。
+
+![6 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTtq2FY64Q07kHQ8QsrS4leOq5uuGwACHRNrG89ByVZfPzTwn218LwEAAwIAA3kAAz0E)
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCT5q2FrQoXVJWOp1AVnWsgABu_kgfuUAAkQTaxvPQclWLmLazbGfo2MBAAMCAAN4AAM9BA)
+
+本题应该选 A。
+
+采用模拟法，显然入度为 0 的结点只有 A，所以开始是 A，然后只能选 B，然后只能选 C，然后只能选 D，然后只能选 E，然后只能选 F。
+
+所以拓扑排序只有 1 条。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCT9q2Fsy65G6HBzEJCsC3DMdXFHXdwACRRNrG89ByVZAsudonV4q2AEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于迪杰斯特拉算法，本题的要求是起点为 1。
+
+所以对于 1，一开始是已经好了，is 数组打✅，然后先看最短的路径，1 出去的路径有 1-5,1-3,1-2，也就是 1 到 2,1 到 3，1 到 5 的最短距离分别为 26,3,6，显然可以确定 1-3 为确定的路径。
+
+经由 3 出发，可以到 2，所以可以更新到 2 的最短路径是 25，然后应该选择 1-5 当最短的边，所以现在确定了结点 1、3 和 5。
+
+从结点 5 走，可以到 2,3,4，显然可以更新到 2 的路径为 21，到 3 的路径依旧为 3，到 4 的路径变更为 14，到 5 的路径依旧为 6。此时选取第二天边结束，准备选取第 3 条边。
+
+所以也就是 C。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUBq2FtD8eWE8FcXRue26SwGepteogACRhNrG89ByVYqCg8yRmf-2gEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+高度为 3 的 3 阶 B 树，对于 3 阶 B 树，一个结点最多有 2 个关键字，至少有 1 个关键字
+
+由于第二程有 4 个关键字，又由于每一层都必须是满的，所以只能如下图所示：
+
+![9 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUFq2Fwl8_uGw1jJen7QqJE6ubeSbwACSxNrG89ByVZDKjte0k9eoQEAAwIAA3kAAz0E)
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUJq2FxS9zckre_tynjCBZ_xPAia5wACTBNrG89ByVaDelfrnY_i2wEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+采用低位优先，也就是第一趟排序后应该是：151,301,372,892,93,43,485,946,146,236,327,9。所以 372 之前应该是 301，之后应该是 892。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUNq2Fzl-id_W6VobTC1qrmOlRvwlQACUBNrG89ByVaCC5Y26MGj4AEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+采用纯模拟法如下，注意堆应该是一棵完全二叉树。
+
+![11 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCURq2F2HC1b0ynD-L4w43tU_JUnJqQACVBNrG89ByVZoG5Hz6tEN4AEAAwIAA3kAAz0E)
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUVq2F2aKgqblTYj6sP5Y5GYqQPJGAACVRNrG89ByVZ4PbqiYWzttQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+P=10^15，而千万亿=10^15，所以 B 和 C 本质是一个意思。亿亿是 10^16。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUZq2F4Px91rQbuOxNWa_nD48XPa9QACWhNrG89ByVZjUoY3PFhbMgEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+采用纯模拟法，如果是无符号数，显然 `z<y<x`，题设没有这个选项。
+
+如果是有符号数，那么显然 z 是最大的，因为 z 是正数。对于 x 和 y，由于 x 更接近 -1，所以 x 更大。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUdq2GACKoBGCVvmqkRiX4ou3zoxUQACYhNrG89ByVZcbO6ZfVcV5QEAAwIAA3gAAz0E)
+
+本题应该选 A，显然如此。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUhq2GCAjt2CQzqgT_vPyhj9A5VtiAACZRNrG89ByVYwOZ7IGjS-QAEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+这类题也是经典题，先考虑位扩展，显然位扩展应该从 8 位扩展到 32 位，所以也就是位扩展需要 4。
+
+然后考虑字扩展，RAM 区域为 00,0000H-3F,FFFFH，也就是 0011,1111,1111,1111,1111,1111B，对应 2^22 个字。
+
+所以 2^22/512K=2^22/2^19=8。
+
+所以也就是需要 4✖️8=32 个芯片。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUlq2GHVsLzyd9AjrRohSt16F8fdlgACdRNrG89ByVasyKwUomWCwgEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+Cache 数据区大小为 32KB，主存块大小为 32B，采用直接映射的方式，也就是需要 32KB/32B=1K=1024，也就是需要 10 位的 cache 位，也就意味着 tag 位是 32-10-5=17 位。
+
+由于采用回写的策略，所以需要 1 位的脏位。
+
+cache 自带 1 位的有效位，所以总共需要 17+1+1+32✖️8=275。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUpq2GJl7a2AeUwAAdPH2LsVi3axkTIAAnYTaxvPQclWRFxPEXJ7BxMBAAMCAAN4AAM9BA)
+
+本题应该选 D，属于背书题。
+
+对于 1，指令寄存器也就是 IR，程序员不可见。
+
+对于 2，这个是在 CPU 微程序里的，程序员也不可见。
+
+对于 3，可以理解为某些程序必须得基于寄存器偏移。
+
+对于 4，状态/标志寄存器对程序员半透明。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUtq2GLCHtAR0DMHQir588GQGZxiMwACdxNrG89ByVa2oKKLprkUswEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 CPU 内部的组织，可以理解为控制通路和数据通路。控制通路主要是 CU，数据通路主要是 ALU 相关。
+
+根据这个，显然可以得知数据通路包含 abcd 涉及到的所有原件。
+
+对于 C，如果没有异常检测的电路，那么就不可能检测出来异常，例如计算越界等。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCUxq2GQ0wEefyZXel-Nbk94EiqEz1wACehNrG89ByVZSj52p7Aor0wEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对于 C，如果采用突发传送，那么一次握手的过程中不可能只传输一位的数据。
+
+对于 A，总线指的是两个或多个部件之间交换数据的介质，总的来讲，是交换数据的。
+
+对于 B，时钟频率不等于工作频率的意思是工作频率可以很慢，可以多个时钟频率过去了才执行一次设备。
+
+对于 D 是突发的概念。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCU1q2GTn0KWND04p2F_v-W8lwfK31QACfBNrG89ByVaOjwFgjn178QEAAwIAA3gAAz0E)
+
+本题应该选 A。磁盘驱动器的意思就等同于磁盘。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCU5q2GUFBdASIneCWtf0GRREUHaQVQACfRNrG89ByVZcfOZlbl1e6wEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+本题实质性考察的是外部中断和内部中断的分类。
+
+对于 A，系统调用属于外部中断，需要到下一条指令执行。
+
+对于 B，缺页属于内部中断异常的故障，需要回到当前指令重新执行。
+
+对于 C，DMA 传送结束属于外部中断。
+
+对于 D，打印机缺纸属于外部中断。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCU9q2GWaX7nE9NC7dG4DY8s0IGQKNgACfhNrG89ByVaQuiE5Z_O1pwEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+对于 A，CPU 响应和检测中断看的是是否处于开中断状态在，和用户态内核态无关。
+
+对于 B，CPU 只有在检测到响应中断后才能进入响应周期，这句话是对的。
+
+对于 C，进入中断响应周期后，操作系统需要改为开中断的状态，以便别人来打断。
+
+对于 D，CPU 检测到中断请求信号，意味着中断屏蔽字对当前的屏蔽处于 0 位，也就是不屏蔽其打断。
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVBq2GZa5zwFZaUl4U0ZLwfRT8I0MwACgRNrG89ByVb5wRsYkfYaMAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+对于 A，trap 指令是在传送完必要的参数后，用户程序主动发起系统调用。
+
+对于 B，IO 指令只能在内核态执行。
+
+对于 C，数据传送指令可以解释为两类，一种是通过 IO 操作把磁盘的数据调入内存，还有一种是在通用寄存器内相互操作（当然还有非常多），有些在内核态，有些在用户态。
+
+对于 D，设置断点指令也是有一部分在内核态，有一部分在用户态。对于在用户态的，可以理解为编程时打断点。对于内核态，可以理解为内核开发者调试操作系统内核。
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVFq2GdmT-mQ5hU34Dm7OQABFB2gIAcAAoQTaxvPQclWDZK8YC1Zr24BAAMCAAN4AAM9BA)
+
+本题应该选 B。
+
+对于 1 和 2 显然是正确的，对于 3 的意思是说把进程从就绪态变成执行态，这显然是错误的。
+
+![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVJq2Geh-MRV5VE38ij14xizcOpFYgAChRNrG89ByVb0G4mIW4iq4QEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+采用排除法，RR 肯定是不需要进程阻塞队列的，所以只剩下 A 和 C，而时钟信息应该存储在进程控制快内。
+
+综上应该选 C。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVNq2GgPzrAhS9EIaHOrx_rWw1TK8gAChhNrG89ByVZBJt2mz5Q5CwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+对用户进程的磁道号先进行排序，也就是 176,182,184,187,199，一开始在 184，采用最短寻道的方式，也就是：
+
+184 到 182，总共是 2 个，182 距离 176 是 182-176=6，182 距离 187 是 187-182=5，所以下一步应该是 182 到 187，总共是 5 个。187 到 199 应该是 199-187=12 个，187 到 176 是 187-176=11 个，所以下一步应该是 187 到 176，总共是 11 个。最后只剩下一个了，也就是 176 到 199，总共是 199-176=23。
+
+加在一起，也就是：2+5+11+23=41。
+
+![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVRq2Gkk8JdEUzOdhHj5pduOz37LRAAChxNrG89ByVYPN7QTJrQQ3AEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+对于 1，中断处理结束可以理解为 IO 结束，IO 结束意味着从阻塞态变成就绪态。
+
+对于 2，进程阻塞意味着有进程从运行态变成阻塞态。
+
+对于 3，进程执行结束意味着有进程从执行态变成终止态。
+
+对于 4，进程的时间片用完意味着有进程从运行态变成了就绪态。
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVVq2GmtfRYfzgAB38gYpKc-RemlvLAAAooTaxvPQclWjnUUl7xFBWABAAMCAAN4AAM9BA)
+
+本题应该选 C。
+
+由于分配了两个固定页框，采用 clock 算法，也就是说应该淘汰页号为 3，然后把页框 60H 分配给页号 02。
+
+所以地址转换之后应该是 C。
+
+![29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVZq2GtwdDKpz4cH3d6OuGE0MAIl3wACkxNrG89ByVYvBn-Vw_QdhAEAAwIAA3gAAz0E)
+
+本题应该选 B，属于背书问题。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVdq2G1p1c2hweTSbL0av5es_zD28wACnRNrG89ByVZRw1TAxmCn5AEAAwIAA3gAAz0E)
+
+本题应该选 A。
+
+属于常识题？以及硬链接软连接。file1 的快捷方式可以理解为软连接。
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVlq2G4er3soCDmxNYwcXQwXQVHyzgACoBNrG89ByVZBvQnmgmlDhAEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+每个进程平均需要某类临界资源 2 个，也就是说 n 个进程每个人握有一个资源的时候，也就是总计 n 个资源的时候，会导致死锁，所以只需要 n+1 即可。
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVpq2G8Jqvc2U1wZpR0M8iicf9ojuAACpBNrG89ByVaoWJW_g9nSTQEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+需要做概念辨析，系统调用指的是用户进程请求操作系统做事情，而不是操作系统自己做事情。
+
+意思也就是说，页置换和进程调度都是操作系统自己做的事情。
+
+而创建新进程是用户要求操作系统做的事情。
+
+生成随机数属于库函数。
+
+![33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVtq2G-BFU4Yt7w0TOmIYqJHklaDjgACphNrG89ByVYH4ELN-QQAAYkBAAMCAAN4AAM9BA)
+
+本题应该选 B。
+
+对于 TCP/IP 参考模型中，从下到上应该是网络接口层，网络层，传输层，应用层。传输层的下一层是网络层，网络层的作用是路由选择。
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVxq2HEGKAy8Yfij08tLhjYuUebGugACqxNrG89ByVazf4yderBTewEAAwIAA3gAAz0E)
+
+本题应该选 A
+
+本题是差分曼彻斯特编码，也就是在边缘跳变的时候才换数。
+
+边缘跳变代表 0，边缘不跳变代表 1，也就是 0.1.1.1.0.0.1 第一个数未知。对比可得应该选 A。
+
+![35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCV1q2HHuCESWsE3n9szxR6tQEbPoJAACrRNrG89ByVYq5nhKeMq_YAEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+这类题应该采用类似哈夫曼树的思想。
+
+只考虑最后 8 bit，给定题目也就是 10｜00,0000B，号为 1,0，所以可以提前绘制出其树的结构，可以得出：0,10,11 一定存在，且子网掩码分别为 25,26,26，根据这个例子，A 和 C 必然是对的。
+
+考虑另一种情况，10｜00,0000B，但是前 25 位是给定的，所以可以得到 0 是单独的，也就是说，可以得到：10,110,111，所以可以得到 D 是对的。
+
+综上所述，B 是错误的。
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCV5q2HJNDQv4KVKu_RyiGP1v4L2_QAACrhNrG89ByVYwQNA1owe7HgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+第二个分片的长度为 1560-776=784。784-776=8。
+
+所以，第二个分片长度应该是 796，并且后续还有分片。
+
+![37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCV9q2HJpUAgRXvhbinshBfNc9we4twACrxNrG89ByVbbRf8GT5BRtQEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+逐个比对即可，A 加第一列得出来应该是：9,20,32,44，B 加第二列应该是...以此类推，然后选最短的，也就是 D。
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWBq2HJ3imaNjRe2VxlbqNYgifq6SwACsBNrG89ByVYLUIiVoZl0FgEAAwIAA3gAAz0E)
+
+本题应该选 B。
+
+客户端发送第一个 fin 之后，进入 finwait1，服务端收到后发送 ack，收到 ack 后，客户端进入 finwait2 状态，等待服务端发剩下的数据。服务端发完剩下的数据之后，给客户端发 fin，然后进入 closewait 状态，客户端收到 fin 然后发 ack，进入 timewait 状态。
+
+![39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWFq2HKGN43j3uQpLLFvzv89Xq6m9gACsRNrG89ByVa-SzJYQVoO9wEAAwIAA3gAAz0E)
+
+本题应该选 D。
+
+一个 UDP 首部是 8B，TCP 首部是 20B。12/20=0.6，12/(12+20)=0.375。
+
+![40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWJq2HKaCEsiBlie4JncQ-h8XBp0jwACshNrG89ByVZfJujhXtEHPwEAAwIAA3gAAz0E)
+
+本题应该选 C。
+
+甲在 t0 发送一个 seq 是 501，200B 的数据，并在 t1 收到一个 ack。
+
+也就是说，这个并不是序号 501-700 的 ack，而接收窗口是 500，也就是甲可以发送 501-1000 的数据，但已经发了 501-700，所以真正还可以发送的是 701-1000。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWNq2HKsGOKD1YX_SFSljFA9tfy6FgACsxNrG89ByVasQF1SsDOWBgEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+1. 设置一个变量 cnt 记录度为奇数的点的个数
+2. 按照行遍历数组，计算出每一行的度
+3. 如果度为奇数，那么 cnt+1
+4. 重复上述过程，直到遍历完图
+5. 判断 cnt，如果 cnt 为 2 或者为 1，那么返回 1，否则返回 0。
+
+(2)
+
+```c++
+int IsExistEL(MGragh G){
+    int cnt=0;
+    for(int i=0;i<MAXV;i++){
+        int curr_sum=0;
+        for(int j=0;j<MAXV;j++){
+            curr_sum+=G.Edge[i][j];
+        }
+        if(curr_sum%2!=0){
+            cnt+=1;
+        }
+    }
+    if(cnt==0||cnt==2){
+        return 1;
+    }
+    return 0;
+}
+```
+
+(3)
+
+时间复杂度：O(n^2)
+
+空间复杂度：O(1)
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWRq2HS9vIleFcl3Cqcn-muQL5XUuAACvBNrG89ByVbmVN8DbEzfiQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+-10,10,11,19,25,25
+
+由于这是一个排序算法，所以不需要考虑这个算法的具体执行过程。
+
+(2)
+
+n(n-1)/2
+
+(3)
+
+不是稳定的，因为
+
+只需要将比较语句 `if(a[i]<a[j])` 改为 `if(a[i]<=a[j])`
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWVq2HZiz4PDV9ijo_j0FzAKSq_asgACwRNrG89ByVb_ESg_vqDRCQEAAwIAA3gAAz0E)
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWZq2HZzdVk1U2cuXuCCJTwhRAlg_wACwhNrG89ByVajrsH4q9P_3QEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+虚拟地址为 30 位，页大小为 4KB=2^12B，也就是页内地址是 12 位，所以虚页号应该是前 30-12=18 位，页内地址是低 12 位。
+
+(2)
+
+由于采用 2 路组相联，共 8 组，所以需要 3bit 来存储 TLB 组号信息，也就是高 18-3=15 位为 TLB 标记，接下来 3 位是 TLB 组号。
+
+(3)
+
+TLB 初始为空，首先计算其模 8 后的值。
+
+10,12,16,7,26,4,12,20，模 8 后对应：
+
+2,4,0,7,2,4,4,4.
+
+显然，只有 12,4,12,20 放进去的时候有可能导致 TLB 表项被替换。
+
+进行模拟，12 放进去占第 4 组的 0 号位，LRU 位为 0，4 放进去占第 4 组的 1 号位，LRU 位更新为 1,0。访问 12，LRU 位更新为 0,1，所以访问 20 时，4 号会被淘汰。
+
+(4)
+
+2 位。
+
+这类题属于非常常规的题目，我觉得一分都不能丢。
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWdq2HaEOIiAaAdehwqm7tJbrktaYgACwxNrG89ByVYBXaR2kUz9GwEAAwIAA3gAAz0E)
+
+注：本题印刷错误，while 是一个大循环，而不是直接就结束了。也就是说，方法 2 的分号得去掉。
+
+解：
+
+(1)
+
+多个进程需要对同一个信号量进行访问，所以序号互斥进行。
+
+(2)
+
+方法 1 错误，方法 2 正确。
+
+方法 1 在 `while(S<=0)` 处死等，如果此时 s<=0，那么别的用户进程无法申请中断使 S+1。
+
+(3)
+
+不能。
+
+开关中断指令需要在内核区运行，用户态不能运行该指令。
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWhq2HaWtnUfcX7Z6-_yCnKmXS8rXgACxBNrG89ByVasMigCiay19QEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+ROM 中的引导程序、磁盘引导程序、分区引导程序、操作系统初始化程序。
+
+(2)
+
+物理格式化、分区、逻辑格式化、操作系统的安装
+
+(3)
+
+~~磁盘扇区划分是在分区完成的~~，文件根目录系统建立是在逻辑格式化完成的。
+
+订：磁盘扇区划分是在物理格式化中完成的。
+
+这一整道题属于纯背书的题目。
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWlq2Ham023k0m6Gaawv5mhW0HKA6AACxRNrG89ByVYlf2rJCvcO2gEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+DNS。
+
+从应用层到传输层，通过 UDP 协议。
+
+从传输层到网络层，通过 IP 协议。
+
+从网络层到数据链路层：通过 CSMD/CD 协议封装。
+
+(2)
+
+<00-11-22-33-44-cc, 4>
+
+<00-11-22-33-44-bb, 1>
+
+<00-11-22-33-44-aa, 2>
+
+(3)
+
+分析全流程，最开始的时候 H1 要向本地域名服务器申请 IP，所以 H1 想要向本地域名服务器发送帧，然而 H1 不知道本地域名服务器的 mac 地址，H1 使用 ARP 协议进行探测，源 mac 地址是自己，目的 mac 地址是 ff-ff-ff-ff-ff-ff，交换机 S 收到后，先登记此条记录，然后向除了 4 这条的所有转发，此时 H2 也收到了。
+
+本地 DNS 服务器向 H1 单播发送 IP 地址。
+
+此后 H1 发送 http 请求，然而 H1 不知道 R 的 mac 地址，所以使用 ARP 协议请求，H2 收到了该帧，R 单播回应。
+
+综上所述，至少需要接收 2 个帧，都是 ARP 请求帧，目的 mac 地址是 ff-ff-ff-ff-ff-ff。
+
+## 代码随想录简单题注意题速刷
+
+我觉得还是有必要看一下的，尤其是树和图那块。
+
+树只用看看简单题怎么做就好了，图只用看看岛屿和 bfs 单元路径查找。
+
 ## 408 深度注意
 
 1. 管程、通道的概念区分
 2. GBN 协议的多帧辨析
 3. 磁盘相关的计算
+4. 中断屏蔽字，0 代表未被屏蔽，所以别人可以打断我，1 代表屏蔽，所以别人不可以打断我
+5. 算法定点突破，2020 真题最优解
+6. 中断的全过程
+7. LRU 算法的计算
+8. 堆的比较（比较两个，都要比较，以及比较交换，比较不交换）

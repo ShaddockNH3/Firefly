@@ -2,7 +2,7 @@
 title: 考研冲刺前的总结 —— 数据结构
 published: 2026-09-01
 description: 考研冲刺前的总结 —— 数据结构
-tags: [数据结构，考研，总结]
+tags: [考研，数据结构，总结]
 category: 考研
 draft: false
 image: ./cover.png

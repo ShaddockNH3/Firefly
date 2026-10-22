@@ -3,7 +3,7 @@ title: 树莓派 5 安卓端 + PC 端 ALAS 挂机方案
 published: 2026-09-04
 description: 一种基于树莓派 5 运行 AOSP16、由局域网 PC 部署 ALAS 实施自动化控制的挂机方案。树莓派只负责跑游戏，ALAS 跑在 x86 真机上，彻底绕开 arm64 依赖兼容问题；过图速度从 Waydroid 方案的约 10s 压缩到约 3s，配合采集卡与 scrcpy 无画面控制，实现低负载、长时间的《碧蓝航线》稳定托管。
 image: ./cover.png
-tags: [树莓派，ALAS, 碧蓝航线]
+tags: [ALAS, 树莓派，碧蓝航线]
 category: ALAS
 series: ALAS
 seriesOrder: 2
