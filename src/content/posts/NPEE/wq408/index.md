@@ -8720,6 +8720,9 @@ void solve(LNode* L,int n){
 
 ### 408 2016 真题 2 刷
 
+- 分数为
+- 还差大题没写
+
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcpq3FmBj3bxXnLO92c_kLkdkgS4RgACeRBrG2MQ4FaHUJJ_eMjm7wEAAwIAA3cAAz0E)
 
 本题应该选 D。
@@ -8730,13 +8733,95 @@ a->e->b->d->NULL。
 
 很显然缺了 c，所以再次观察，c->a->e->b->d->NULL，总共五个元素齐全。
 
-f 位于 1014H，插入单链表。f 逻辑上位于a 和e 之间，那么意味着a 之后的地址应该改为 1014H，f 之后的地址应该改为 1010H，e 的地址保持不变是 1004H。
+f 位于 1014H，插入单链表。f 逻辑上位于 a 和 e 之间，那么意味着 a 之后的地址应该改为 1014H，f 之后的地址应该改为 1010H，e 的地址保持不变是 1004H。
 
 所以，aef 的链接地址分别为 1014H，1004H，1010H。
 
 ![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCctq3FqYZxZ6-9Af5EH0grQfkX7JdQACfBBrG2MQ4FY9OY_GsMtoyAEAAwIAA3cAAz0E)
 
+本题应该选 D，示意图如下：
 
+![2 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcxq3GJYVvjybMB3GulZA9Nc1qOqugACjBBrG2MQ4FY96ltY3sAltQEAAwIAA3cAAz0E)
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCc1q3GJvpytmka2nQhc1M8u-4DYslAACjhBrG2MQ4Fbd1_fT_zizawEAAwIAA3cAAz0E)
+
+本题应该选 C。
+
+采用模拟法如下：
+
+![3 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCc5q3GMdmGJ9EpsOCLukGkRbrfuz1gACjxBrG2MQ4FazriEL2HTyhgEAAwIAA3kAAz0E)
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCc9q3GM7YrkPsWy1yy_YHSrdc9z29wACkBBrG2MQ4FaBSiwt7LxJRQEAAwIAA3cAAz0E)
+
+本题应该选 B。
+
+注意本题是三对角矩阵，按照行压缩存储如下图所示：
+
+![4 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdBq3GP-P6DgcjFB2n3fcD9KSuWgQAACkRBrG2MQ4Fao79-D14iSRwEAAwIAA3kAAz0E)
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdFq3GQQdozTYPFy5i2kHJHAoHmILAACkhBrG2MQ4FZ4NeMN0NlcQAEAAwIAA3kAAz0E)
+
+本题应该选 C。
+
+一棵树有 15 条边，也就是可以 16 个结点一棵树。剩下 25-16=9 个结点，所以 9+1=10，应该选 C。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdJq3GULMMK7i59Bj9yOXOOYs0jWMwAClRBrG2MQ4Fa9aElXEIIyfgEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+对于 A，如果 V1 到 V5，那么下一个一定是 V4，然后 V3，V2，所以是对的。
+
+对于 B，如果 V1 到 V3，那么下一个一定是 V2，然后后面一定是 V5，然后是 V4，所以是对的。
+
+对于 C，如果 V1 到 V2，那么下一个一定是 V5，然后是 V4，最后是 V3，所以是对的。
+
+对于 D，如果 V1 之后是 V2，那么之后一定是 V5，而不是 V3，所以错误。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdNq3GW1MwdEXoqATxHNNaol4Kl7gAAClhBrG2MQ4Fbky8F0sJ6ujAEAAwIAA3cAAz0E)
+
+本题应该选 B。
+
+拓扑排序本质上是选择一个入度为 0 的结点，然后选取这个点出去的所有结点即可（顺着抓取）。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdRq3GcNsJW_6cd-Tp8iFfxNWnEEdAACnBBrG2MQ4FYAAd2pm581y3MBAAMCAAN3AAM9BA)
+
+本题应该选 B。
+
+这类题直接试，而不是用计算法，太麻烦了。
+
+一开始是 1，然后看 1 出去是什么，显然 5 是最短的，所以第二个是 5。然后看 5 出去可以是 2 和 6，然而此时最短的应该是 1 出去的 2，所以第二个应该选 2（这都是和题目一样的）。
+
+2 出去可以是 4,3。到 3 最短是 7，到 6 最短是 9，到 4 最短是 11，所以最短应该选 3，所以 CD 排除。
+
+最后看 AB，到 4 最短是 11，到 6 最短是 9，所以应该先是 6。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdVq3GkUMUHqWgAB-mfxx8ndNP8f13sAAg4RaxtjEOBWX8wY1cWuuJkBAAMCAAN3AAM9BA)
+
+本题应该选 B。
+
+这类题属于看代码说话，分析具体代码即可。
+
+这道题的意思是，当 k=0 的时候，跳到数组的第 3 个元素，然后比对第 3 个，第 2 个和第 1 个元素，然后 k+3。
+
+对于 A，x 不在数组的时候，前者需要比对 n 次，后者则是 log2n
+
+对于 B，x 接近开头的时候，是常数次，非常少，后者则是 log2n。
+
+对于 C，x 接近数组尾的时候，前者需要比对 n 次，后者则是 log2n
+
+对于 D，x 位于数组中间的时候，前者需要比对 n/2 次，后者则是常数次。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdZq3GnpqhsId4e1R7M5xqRjor5y1QACWRFrG2MQ4Fa7fNejnVCjUAEAAwIAA3kAAz0E)
+
+本题应该选 A。
+
+B+ 树最后一条有一个专门的链表，支持顺序查找。
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCddq3GoaLppEP05rqAeNaeBIsTMmbAACXxFrG2MQ4FYqpgUkIL9UcgEAAwIAA3kAAz0E)
+
+本题应该选 D。
+
+考察的是外部排序，外部排序利用归并排序。
 
 ![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0Fq0eN0Ex7lN2h0Q4O708TJ2jcQuQACpxBrG6jnkFYkqxM_rRESZQEAAwIAA3gAAz0E)
 
@@ -8820,13 +8905,19 @@ unsigned short usi 是强制转义，所以也就是 32768+1，也就是 D。
 
 ![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB01q0eyhrHm8SmtQUuTF5wq9E0Z_gQAC2xBrG6jnkFYgYhyf7ohbvwEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 B。
+
+这类题并不是输入输出设备里缓冲区，所以并不互斥，只有当前的东西是互斥的，这个需要搞清楚。
+
+所以，A 连续执行 2,3,4，B 得在 A 的 2 结束后执行 2，在 3 结束后执行 3，在 4 结束后执行 4，所以 B 总计开销 3+4+4=11，不过只引入了最后的 4ms，对于 3 也是同理，只引入了最后的 4ms。
+
+所以最后应该是 2+3+4+4+4=17。
 
 ![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB05q0e23609fKCb_aa7e-xWmoDP_nQAC3hBrG6jnkFZ5HEtVIPT7zgEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 C。
 
-这类题首先应该往经典模型上套，可以摸出来是经典的
+这类题首先应该往经典模型上套，使用资源分配图，可以绘制出是一个经典哲学家问题的变种。
 
 ![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB09q0fMHlXl5ykpFFZ-UIvveS1_McQAC-RBrG6jnkFZcFf3OmzmouwEAAwIAA3kAAz0E)
 
@@ -8836,7 +8927,7 @@ unsigned short usi 是强制转义，所以也就是 32768+1，也就是 D。
 
 ![27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Bq0fOFv5qD0HVgCbu0Y0jx2J2rQAAC-hBrG6jnkFaakUkJLIX5JgEAAwIAA3gAAz0E)
 
-本题应该选 C。
+本题应该选 B。
 
 对于 A，操作系统负责唤醒阻塞进程，而不是退出临界区的进程
 
@@ -8894,13 +8985,35 @@ unsigned short usi 是强制转义，所以也就是 32768+1，也就是 D。
 
 第 36 题应该选 B。
 
+由于是 100base-T 交换机，所以采用的是 100Mbps 和 64B 的最短帧。
+
+所以 RTT 应该是 64B/100Mbps=5.12us。
+
+也就是说，假设 H3 和 H4 距离为 x，那么最短应该是 2x/200+1.535✖️2=5.12，所以 x=205。
+
+需要注意双向，所以应该再生 2 次。
+
 第 37 题应该选 B。
 
-第 38 题应该选。
+由于坏消息传得慢。
 
-第 39 题应该选。
+第 38 题应该选 D。
 
-第 40 题应该选。
+R2 装了 NAT 服务，所以源 IP 地址应该是公网地址。而对于 C 的公网地址是网络地址。
+
+第 39 题应该选 C。
+
+对于 C，H1 和 H3 不属于同一个网络，所以 H1 想和 H3 通信，应该交付给默认网关。然而本题 H1 没有具体的默认网关路由器，所以无法通信。
+
+第 40 题应该选 C。
+
+本题问的是最多和最少，先考虑最少的情况：
+
+最少的情况，域名服务器本身有缓存，所以是 0 次。
+
+最多的情况，域名服务器向根，也就是 . 查询，得到 .com 顶级域名服务器的 IP 地址；然后根据这个 IP 地址查询 .xyz.com，得到 .xyz.com 权限域名服务器的 IP 地址；根据这个 IP 地址查询，得到 .abc.xyz.com 二级权限域名服务器的 IP 地址；根据这个 IP 地址查询，得到所需的 IP 地址。
+
+注意，如果是最大，那么有多台权限域名服务器。
 
 ### 408 2017 真题 2 刷
 
