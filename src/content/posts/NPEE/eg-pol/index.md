@@ -1,17 +1,23 @@
 ---
-title: 考研冲刺前的总结 —— 英语 2
-published: 2026-09-30
-description: 考研冲刺前的总结 —— 英语 2
+title: 考研冲刺前的总结 —— 英语（二）与政治
+published: 2026-11-01
+description: 考研冲刺前的总结 —— 英语（二）与政治
 tags:
   - 考研
   - 英语
+  - 政治
   - 总结
 category: 考研
 draft: true
 series: "考研"
-seriesOrder: 7
+seriesOrder: 1
 ---
-## 前言
+
+## 政治前言
+
+政治比我想象中的更猎奇。
+
+## 英语前言
 
 突然意识到近些年的英语在慢慢变简单，所以不要因为早年的英语分低而丢失自信心，但也不要狂妄。
 
@@ -144,6 +150,8 @@ seriesOrder: 7
 
 ### 2010 翻译
 
+7-8 分
+
 - “稳定性”在这些日子逐渐变成一个热词，但是对于泰德·宁来说，这个概念永远有个人意义。
 
 - “可持续性”（或承受力）如今成为了一个流行词，但对泰德·宁来说，这个概念永远有其特殊的个人意义。
@@ -167,6 +175,46 @@ seriesOrder: 7
 - “我很痛苦。我十分焦虑以至于我会在午夜的时候醒来并且盯着天花板。我没有钱并且我需要工作。每个人都说：‘只需要等待，你会绕过转角的，给点时间就可以了。’”
 
 - “我很痛苦。我焦虑万分，以至于常常在半夜惊醒，盯着天花板发呆。我身无分文，需要这份工作。大家都说：‘等等吧，给点时间，你会渡过难关的。’”
+
+### 2011 翻译
+
+8 - 9 分
+
+Who would have thought that, globally, the IT industry produces about the same volume of greenhouse gases as the world's airlines do—roughly 2 percent of all CO₂ emissions?
+
+谁能想到呢？全球 IT 产业排放的温室气体——和全世界的航班排放的量等同，都是大约 2% 的二氧化碳。
+
+订：谁能想到，全球 IT 产业排放的温室气体总量（volume）与全球航空业相当（或：一样多）——约占全球二氧化碳总排放量的 2%？
+
+Many everyday tasks take a surprising toll on the environment. A Google search can leak between 0.2 and 7.0 grams of CO₂, depending on how many attempts are needed to get the"right" answer. To deliver results to its users quickly, then, Google has to maintain vast data centres around the world, packed with powerful computers.While producing large quantities of CO₂, these computers emit a great deal of heat, so the centres need to be well air-conditioned, which uses even more energy.
+
+每天的每一个任务都对环境造成令人惊讶的恶果。
+
+订：许多日常工作都会对环境造成惊人的危害。
+
+一次谷歌搜索释放 0.2 克到 7.0 克的二氧化碳，释放的具体量取决于需要多少次尝试才能得到正确答案。
+
+订：每用谷歌搜索一次就会释放出 0.2 克至 7.0 克的二氧化碳，释放量的多少取决于使用者需要尝试多少次才能得到“正确”的答案。
+
+为了给用户更快的搜索结果，随后，谷歌必须去在全世界维护大量的数据中心，这些数据中心里面有着性能强大的计算机。
+
+订：为了把搜索结果迅速传输给用户，因此（then），谷歌不得不在全球范围内建立（或维护）大型数据中心，并配备大功率计算机。
+
+当产生大量的二氧化碳时，这些电脑还释放相当多的热量，所以数据中心还需要控制空气条件，这还需要使用更多的能量。
+
+订：除了排放大量二氧化碳，这些计算机还释放大量热量，因此数据中心还需要良好的空调环境，而这又会消耗更多的能量。
+
+However, Google and other big tech providers monitor their efficiency closely and make improvements. Monitoring is the first step on the road to reduction, but there is much more to be done, and not just by big companies.
+
+然而，谷歌和其他科技巨头们对他们的效率密切关注，并且做出很多改进。
+
+订：不过，谷歌和其他大型技术供应商已密切监控其（数据中心的）工作效率并做出改进。
+
+监控只是减少排放的第一步，但是这还有很多需要做，不只是大公司。
+
+订：监控只是减排的第一步，需要做的还有很多，而且这不仅仅是大公司的事情。
+
+吸取的教训：每个东西的意思都要翻译出来。
 
 ## 小作文
 
@@ -406,3 +454,21 @@ Li Ming
 - ethically：道德上的
 - conversation：交谈，谈话
 - pondar：沉思
+
+## 政治
+
+英语和政治都属于靠积累与重复的科目，合在一篇里管。全科时间线见[错题本 · 数学](/posts/npee/wqmath/)。
+
+### 时间安排
+
+- 第 29–34 周：徐涛马原强化 + 苍盾，选择题 1 刷
+- 第 35–40 周：肖秀荣背诵手册 + 肖 8 选择题 2 刷
+- 第 41–42 周：大题背诵
+
+### 选择题错题
+
+（待补）
+
+### 大题模板
+
+（待补）
