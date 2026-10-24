@@ -8720,8 +8720,9 @@ void solve(LNode* L,int n){
 
 ### 408 2016 真题 2 刷
 
-- 分数为
-- 还差大题没写
+- 分数为：143
+- 第 44 题 -6，第一问应该是每秒钟，脑子抽了算成每分钟了，第二问应该按照时钟周期算，我按照时间算了
+- 第 47 题 -1，显示链接分配 VS 隐式链接分配
 
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcpq3FmBj3bxXnLO92c_kLkdkgS4RgACeRBrG2MQ4FaHUJJ_eMjm7wEAAwIAA3cAAz0E)
 
@@ -8981,6 +8982,8 @@ unsigned short usi 是强制转义，所以也就是 32768+1，也就是 D。
 
 第 34 题应该选 C。考虑香农定理，30=10log10S/N，S/N=1000，8000log2(1+1000)≈8000✖️10=80000，也就是 C。
 
+![35-40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdpq3IwgVd0PwNCl_AXLiBMwh5-akQAC6hFrG2MQ4FZ9E1lpAuA_qwEAAwIAA3cAAz0E)
+
 第 35 题应该选 D。
 
 第 36 题应该选 B。
@@ -9014,6 +9017,349 @@ R2 装了 NAT 服务，所以源 IP 地址应该是公网地址。而对于 C �
 最多的情况，域名服务器向根，也就是 . 查询，得到 .com 顶级域名服务器的 IP 地址；然后根据这个 IP 地址查询 .xyz.com，得到 .xyz.com 权限域名服务器的 IP 地址；根据这个 IP 地址查询，得到 .abc.xyz.com 二级权限域名服务器的 IP 地址；根据这个 IP 地址查询，得到所需的 IP 地址。
 
 注意，如果是最大，那么有多台权限域名服务器。
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdtq3Iw_G27aNbjxd-wYovOM3I0K-gAC6xFrG2MQ4FZfDf0ey4EXvgEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+由于一开始的时候，初始序号是 100，那么 H3 发送的第二次握手期待其发 101。
+
+SYN=1，ACK=1
+
+确认序号 ack=101
+
+(2)
+
+逐次模拟，注意这里收到的确认段指的是已经建立连接后的。
+
+设已经建立好连接的时刻为 t1，那么：
+
+t1 时刻，H3 的拥塞窗口为 1
+
+t2 时刻（接收到 1 个确认段），H3 的拥塞窗口为 2，S 的接收窗口为 19
+
+t3 时刻（接收到 2 个确认段），H3 的拥塞窗口为 4，S 的接收窗口为 19-2=17
+
+t4 时刻（接收到 4 个确认段），H3 拥塞窗口为 8，S 的接收窗口为 17-4=13。
+
+t4.1 时刻（接收到 1 个确认段），H3 拥塞窗口为 9，S 的接收窗口为 13-1=12。
+
+综上所述。
+
+H3 收到第 8 个确认段所通告的接收窗口是 12kB。
+
+此时 H3 拥塞窗口是 9KB。
+
+H3 的发送窗口是 min{9KB,12KB}=9KB
+
+(3)
+
+以及 t4 时刻继续向下模拟。
+
+t5 时刻（接收到 8 个确认段），H3 拥塞窗口为 16，S 的接收窗口为 13-8=5。
+
+t6 时刻（接收到 5 个确认帧），H3 拥塞窗口为 21，S 的接收窗口为 0
+
+当 H3 的发送窗口为 0 时，也就是此前总共发送了 20KB 的数据，由于 MSS=1KB，也就是说发了序号 1024✖️20=20480 序号，也就是从 101 开始作为第一个数据，所以下一个数据应该是 20581。
+
+由上述可知，总共经过了 5RTT，所以数据率也就是 20KB/5RTT=20KB/(5✖️0.2s)=20KB/s
+
+(4)
+
+从 t 时刻 H3 请求断开连接，H3 发给 S 第一个 fin，H3 进入 fintime1，S 回复 H3ack，H3 收到后进入 fintime2，S 发剩下的数据（本题为 0），然后发送 fin，进入 closewait 阶段），H3 收到后回复 ack，进入 closewait 阶段。
+
+根据分析，S 释放连接最短的时间是 1.5RTT=300ms。
+
+简单总结一下，这类题不难，重要的是逐个分析清楚具体步骤。
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdlq3In8Cgv-Fl0n3awgYgRmQBp3rgAC4xFrG2MQ4FYUfROjh-EaowEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+对于 k 叉正则树，显然结点的度只有 0 和 k 两种可能性。假设叶节点个数为 n，题设给了非叶节点为 m。
+
+所以，m+n=mk+1，也就是 n=mk+1-m。
+
+(2)
+
+结点数最多，也就是每一层都是满的。对于高为 h 的树，每一层都是满的也就是 1+k+...+k^(h-1)=(k^h-1)/(k-1)
+
+结点数最少，也就是每次一层只多 3 个，所以也就是 1+k+k+...+k=1+(h-1)k。
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdhq3HFAGxllTAnn6wHr4Zw4k91qPQACqRFrG2MQ4FaxjFHHSexJLAEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+采用方法 1：
+
+0. n1-n2 绝对值最小，也就意味着 n1 接近 n2，在此基础上 n1 可以小于 n2 1，以保证 S1-S2 绝对值最大
+1. 显然 n1=n/2，n2=n-n1
+2. 对数组 S 进行快排
+3. 设置一个变量 sum=0，遍历 S 的前 n1 个数，遍历的值记为 a，sum-a
+4. 遍历 S 后 n2 个数，遍历值记为 b，sum+b
+5. n1，n2，sum 即为题目所要求的
+
+采用方法 2：
+
+0. n1-n2 绝对值最小，也就意味着 n1 接近 n2，在此基础上 n1 可以小于 n2 1，以保证 S1-S2 绝对值最大
+1. 求第 n1 大的数。设置一个划分初值 p，l=0，r=n-1，对 l 到 r 划分，轴采用 l，划分后更新下标 p
+2. 如果 p==n1，那么 p 即为第 n1 大的数
+3. 如果 p < n1，那么应该 l=p+1，再次划分
+4. 如果 p > n2，那么应该 r=p-1，再次划分
+5. 设置一个变量 sum=0，遍历 S 的前 n1 个数，遍历的值记为 a，sum-a
+6. 遍历 S 后 n2 个数，遍历值记为 b，sum+b
+7. n1，n2，sum 即为题目所要求的
+
+(2)
+
+```c++
+# include <cstdio>
+
+int pation(int A[],int l,int r){
+    int p=A[l];
+    while(l<r){
+        while(p<=A[r]&&l<r){
+            r--;
+        }
+        A[l]=A[r];
+        while(p>A[l]&&l<r){
+            l++;
+        }
+        A[r]=A[l];
+    }
+    A[l]=p;
+    return l;
+}
+
+void QSort(int A[],int l,int r){
+    if(l>=r){
+        return;
+    }
+    int p=pation(A,l,r);
+    QSort(A,l,p-1);
+    QSort(A,p+1,r);
+}
+
+void caculate(int A[],int n,int n1,int n2){
+    int S=0;
+    for(int i=0;i<n1;i++){
+        S-=A[i];
+    }
+    for(int i=n1;i<n;i++){
+        S+=A[i];
+    }
+    printf("n1=%d,n2=%d,S=%d\n",n1,n2,S);
+}
+
+void solve1(int A[],int n){
+    QSort(A,0,n-1);
+    int n1=n/2;
+    int n2=n-n1;
+    caculate(A,n,n1,n2);
+}
+
+void solve2(int A[],int n){
+    int n1=n/2;
+    int n2=n-n1;
+    int p=-1,l=0,r=n-1;
+    while(p!=n1){
+        p=pation(A,l,r);
+        if(p<n1){
+            l=p+1;
+        }else{
+            r=p-1;
+        }
+    }
+    caculate(A,n,n1,n2);
+}
+
+// 题目明确说了划分算法，所以这个方法不能用
+// 而且题目没给数据范围，哈希表的这个 n 是有毛病的
+// 假设数据范围正整数是 1-N
+// 所以时间复杂度应该是 O(N)，空间复杂度为 O(N)
+void solve3(int A[],int n){
+    int hasmap[N];
+    for(int i=0;i<n;i++){
+        hasmap[i]=0;
+    }
+    int n1=n/2;
+    int n2=n-n1;
+    for(int i=0;i<n;i++){
+        hasmap[A[i]]+=1;
+    }
+    int S=0;
+    int cnt=0;
+
+    for(int i=0;i<N;i++){
+        while(hasmap[i]!=0){
+            if(cnt<n1){
+                S-=i;
+            }else{
+                S+=i;
+            }
+            cnt++;
+            hasmap[i]--;
+        }
+    }
+    printf("n1=%d,n2=%d,S=%d\n",n1,n2,S);
+}
+```
+
+(3)
+
+采用法 1：
+
+时间复杂度：O(nlogn)，空间复杂度：O(logn)
+
+采用法 2：
+
+时间复杂度：O(n)，空间复杂度：O(1)
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdxq3JMGoQ8lSkj8fOXC0OtUObPCWAACBxJrG2MQ4Faoc4NlJUVUxQEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+10 位（因为需要额外的 1 位停止位）
+
+~~从 D 接收启动命令到字符送入 IO 端口需要 0.5ms，也就是 60/0.0005=120000 个字符。~~
+
+订：每秒，而不是每分钟，从 D 接收启动命令到字符送入 IO 端口需要 0.5ms，也就是 1/0.0005=2000 个字符。
+
+(2)
+
+对于一次工作，也就是 0.5ms=500us。
+
+对于一次中断响应，也就是 10 个时钟周期~~，也就是 10/50M=0.2us。~~
+
+对于一次中断服务程序，共 20 条指令~~，也就是 20✖️4/50M=1.6us，而执行前 15 条指令也就是 15✖️4/50M=1.2us。~~
+
+综上所述，一次的时间也就是工作 + 请求响应 + 执行前 15 条指令~~，也就是 500+0.2+1.6=501.8，501.8✖️1000=501800us=0.5018s。~~
+
+CPU 需要介入的时间是~~：1000✖️1.6-0.4=1599.6us=1.5996ms。~~
+
+中断响应阶段，CPU 做的事情是：保存 PSW，保存 PC，~~形成中断屏蔽字地址。~~
+
+订：
+
+主频为 50MHz，也就是 1/50Mhz=20ns。
+
+所以 0.5ms/20ns=25000 时钟周期。
+
+响应和请求是 10 个时钟周期。
+
+响应全过程应该是 20 条指令，也就是 80 个时钟周期，其中响应到启动是 60 个时钟周期。
+
+所以，(25000+10+60)✖️1000+20=25070020 个时钟周期。
+
+CPU 运行 (80+10)✖️1000=90000 个时钟周期。
+
+关中断，保存 PSW 和 PC，形成中断源
+
+做这类题的时候，一定是要辨析清楚指令周期和时钟周期，当然也要看清楚具体时间。
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCd5q3JmYugELorx6bLbr_2y0UQjeRQACdBBrG2MQ6FbopkgDafg2-AEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+由于虚拟地址是 32 位，页大小是 8KB=2^13，所以页号是 32-13=19 位。
+
+由于 TLB 采用全相连映射，所以标记号等于页号=19 位。
+
+由于物理地址是 24 位，页大小是 2^13，所以物理页号应该是 24-13=11 位，物理页内地址应该是 13 位
+
+cache 数据区容量是 64KB，64KB/64B=1K=2^10，由于采用 2 路组相联，所以也就是 2^10/2=512，也就是 cache 位占 9 位。
+
+所以 tag 号应该占 24-9-6=9。
+
+综上所述：
+
+- A：19
+- B：19
+- C：11
+- D：13
+- E：9
+- F：9
+- G：6
+
+(2)
+
+4099 是主存快号，也就是说，4099=4096+3=00,0001,000｜0,0000,0011B，也就是第 3 组 cache，对应 H 的字段是 0,0000,1000B=008H
+
+(3)
+
+cache 缺失的时间开销小，缺页处理时间开销大。前者缺失访问主存，后者缺失访问磁盘，显然访问磁盘的时间开销远大于访问内存。
+
+(4)
+
+cache 缺失的时候访问内存，时间开销较小，相对可以接受。
+
+修改页面时访问磁盘，时间开销很大，远高于访问内存。
+
+这类题不解释，必须满分。
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCd1q3Jhd2pywSVFg-xfdpS7L00j62gACcxBrG2MQ6FZ3ubbs6V3ztwEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+假设有若干个进程，分别为 a,b,c,d,e，每个进程的优先级分别为 1,2,3,4,5。
+
+此时来了很多进程 abcd，就会导致 e 积压，始终得不到处理机，从而出现饥饿现象。
+
+(2)
+
+p=nice+k1✖️cpuTime-k2✖️waitTime
+
+注意本题是优先数越小，越先执行。
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCd9q3JuJXTst5ykQfvsP8kKoU836IAACdRBrG2MQ6FYGrhHZ6GBi1wEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+dir 目录文件
+
+文件名 簇号
+
+dir1 48
+
+dir1 目录文件
+
+文件名 簇号
+
+file1 100
+
+file2 200
+
+(2)
+
+FAT 占 2B=2^16bit，也就是最多 2^16 个簇，所以 FAT 最多占 2^16 ✖️2B=2^17B=128KB。
+
+该文件系统支持的最大文件长度为：2^16✖️4KB=256MB
+
+(3)
+
+106 位于 100
+
+108 位于 106
+
+(4)
+
+dir 目录文件已经读入内存，那么也就是读取 dir1 所在的 48 号以及 file1 所在的~~ 100 ~~和 106。
+
+订：我知道 100 不需要被读入（因为背答案），但是我现在终于明白为什么不用读入了。因为这个系统采用的是 FAT，也就是显示链接分配，可以算出来并且直接访问，而不是隐式链接分配。
 
 ### 408 2017 真题 2 刷
 
@@ -12747,7 +13093,7 @@ n 是奇数时前半段会多一个结点，合并完记得把尾结点的 next 
 
 1. 管程、通道的概念区分
 2. GBN 协议的多帧辨析
-3. 磁盘相关的计算 (2012 第 43 题，2013 第 43 题)
+3. 磁盘和设备相关的计算 (2012 第 43 题，2013 第 43 题，2016 第 44 题)
 4. 中断屏蔽字，0 代表未被屏蔽，所以别人可以打断我，1 代表屏蔽，所以别人不可以打断我
 5. 算法定点突破，2020 真题最优解（以及更多的东西）
 6. 中断的全过程
