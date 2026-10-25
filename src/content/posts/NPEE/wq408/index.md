@@ -14,11 +14,21 @@ series: "考研"
 seriesOrder: 8
 ---
 
-## 前言
+## 时间线
 
-本篇是 408 部分的错题与真题复盘：王道选择题 1/2/3 刷、09–22 真题 1/2 刷逐题分析、17 套算法真题、数据结构应用强化。
+408 基础：第 2 周 - 第 11 周，共 10 周。完成 4 本书的基础部分。
 
-数学部分见[错题本 · 数学](/posts/npee/wqmath/)，全科时间线与刷题规划也在那边。
+408 基础重复：第 12 周 - 第 17 周，共 6 周。完成 4 本书的选择题 2 刷。
+
+408 强化：第 18 周 - 第 26 周，共 9 周。完成 4 本书的强化，4 本书的选择题错题再解析，4 本书的大题研究，以及最后的过一下几本书。
+
+408 真题以及模拟：第 27 周 - 第 30 周，共 4 周。卷子从 09 - 19 年的所有题模考 + 操作系统汪道选择题三刷 + 计组选择题部分三刷。
+
+408 近些年真题以及三刷选择题复盘：第 31 周 - 第 32 周。王道计组选择题三刷，计网挑部分三刷，20-22 真题
+
+408 真题复盘：第 33 周  - 第 34 周。真题深度复盘。
+
+408 近些年真题：第 35 周 - 38 周：真题深度复盘扫尾以及 23-26 年真题的深度研究，模考 11 份卷子，与此同时继续复盘真题以及王道错的多的选择题
 
 ## DS 王道选择题 1 刷（补）
 
@@ -10429,8 +10439,10 @@ Cache 有效位的作用是：当进程切换的时候，原来的 cache 失效�
 
 ### 408 2019 真题 2 刷
 
+- 分数为：145，1 刷为 144，错的选择题为 24
 - 第 5 题：对关键路径的理解错误
 - 第 26 题：对于 4，FAT 表兼具了已使用管理和未使用管理，可以理解为静态链表，也就是显示链接分配。
+- 第 42 题：-1，队满的时候应该采用牺牲一个节点的方式。
 
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCG1q1fj_ySZgH3yq29BWnQ7GmgcKKAACBBZrG8YqsVaMftrtk-xLmQEAAwIAA3gAAz0E)
 
@@ -10884,6 +10896,232 @@ void solve(NODE *L){
 (3)
 
 时间复杂度：O(n)
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeZq3aOZMshcpuliGDjWOFJDUKi8ygACsRJrG2MQ8FZGMFG6hRFBrgEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+链式存储结构，因为需要动态增长空间。
+
+(2)
+
+```c
+// 判断队空
+bool isempty(S,f,r){
+  if(f==r){
+    return true;
+  }
+  return false;
+}
+// 判断队满
+bool isfull(S,f,r){
+  return !isempty(S,f,r)&&r->next==f;
+}
+```
+
+订：判断队满错了，本题应该采用牺牲一个结点，所以不需要有非队空。
+
+(4)
+
+```c
+void rudui(S,f,r，data){
+  if(isfull(S,f,r)){
+    创建一个新的结点 a;
+    a->data=data;
+    a->next=f;
+    r->next=a;
+    r=a;
+  }else{
+    r=r->next;
+    r->data=data;
+  }
+}
+
+void chudui(S,f,r){
+  if(isempty(S,f,r)){
+    return;
+  }else{
+    f=f->next;
+  }
+}
+```
+
+2,3,4 需要绘图的部分如下图所示
+
+![42 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCedq3abyJGdr6R4sftfzpcOg67wRnQACtBJrG2MQ8FZjTZmh1O3cAgEAAwIAA3kAAz0E)
+
+这类题按照我的习惯依旧是先画出已经入队一个的状态，然后删一个，rear 指针回退一格，所以应该先做第 3 题，而不是第 2 题。
+
+因为要充分利用空间，所以应该采用循环单链表。
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeFq3ZsU6eSeSjoOXoF9w2fEy30sywACoRJrG2MQ8FZ0sk_Xr5Dq0AEAAwIAA3cAAz0E)
+
+```c
+semaphore mutex=1;
+int A[n]; // 初值均为 0
+int m;
+func philosopher_i(){
+  while(1){
+    P(mutex);
+    if(m>=1 && A[i-1]==0 && A[i%n]==0){
+      m-=1;
+      A[i-1]=1;
+      A[i%n]=1;
+      break;
+    }
+    V(mutex);
+  }
+  V(mutex);
+  进餐();
+  P(mutex);
+  m+=1;
+  A[i-1]=0;
+  A[i%n]=0;
+  V(mutex);
+}
+```
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeBq3ZfKiSt7jNxNs8tNufWLw7467AACnxJrG2MQ8FZg2FqSd4z8VwEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+由题设可知，柱面（磁道）有 300 个，盘片有 10 个，扇区有 200 个。
+
+这里的每个柱面有 10 个磁道主要是需要注意表述，虽然磁道和柱面可以相互代替这使用，但是还是得注意题设的表述。
+
+所以，磁盘的容量为 300✖️10✖️200✖️512B=300000 KB
+
+(2)
+
+簇号分别为 100260、60005、101660、110560，分别✖️2，可以得到：
+
+200520、120025、203320、221120，分别除以 2000，可以得到：
+
+100、60、101、110（假设按照 0 号为第 1 道）
+
+所以，按照 SSTF 算法，顺序应该是：85、100、101、110、60，按簇，也就是：
+
+100260、101660、110560、60005
+
+(3)
+
+100530✖️2/2000=100，所以柱面号应该是 100。
+
+100530✖️2-100✖️2000=1060。由于 1060/200=5，所以盘片号应该为 5。
+
+1060-5✖️200=60，所以簇号应该为 60。
+
+将簇号转换为物理地址是由 IO 系统的驱动程序完成的。
+
+![45-46 图](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeNq3Z4qwAX6tp9lDIKBseP5ihvduwACphJrG2MQ8FZxpBGemm6iqwEAAwIAA3cAAz0E)
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeRq3Z5Fj5EQhGGncNGAZ9v3ZXhKHQACpxJrG2MQ8FbOMN9evXDYHgEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+f(10)=10\*f(9)=10\*9\*f(8)=...=10\*9\*8\*7\*6\*5\*4\*3\*2\*f(1)=10\*9\*8\*7\*6\*5\*4\*3\*2\*1=3628800
+
+所以，总共调用了 10 次 f1。
+
+return n*f1(n-1) 会递归调用 f1。
+
+(2)
+
+条件转移指令：
+
+`jle f1+35h (00401035)`
+
+一定跳转的指令：
+
+`call f1 (00401000)`
+
+`jmp f1+3Ah (0040103a)`
+
+`ret`
+
+(3)
+
+根据第 16 行的 call 指令，第 17 行的虚拟地址应该是 160040102AH。
+
+采用相对寻址，也就是要从 160040102AH 开始计算回退，也就是 0040,102AH-0040,1000H=0000,002AH。将  0000,002AH 按位取反并+1，也就是 FFFF,FFD6H。
+
+小端方式。
+
+(4)
+
+int 的表示范围为 -2^31-2^31-1，f(13)的数值溢出。
+
+将 int 改为 long long。
+
+(5)
+
+高 32 位不全等于第 31 位的时候，OF=1。
+
+trap
+
+![45-46 图](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeNq3Z4qwAX6tp9lDIKBseP5ihvduwACphJrG2MQ8FZxpBGemm6iqwEAAwIAA3cAAz0E)
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeVq3aIvaj3USemMBwUiKwytrbD3OwACsBJrG2MQ8FbI7VsqZtDQ7gEAAwIAA3cAAz0E)
+
+解：
+
+页大小为 4KB，也就是 4KB=2^12B，也就是 12bit，所以页号是前 20bit。
+
+第一条 push 指令的页号是 00401H，ret 指令页号也是 00401H，所以处于同一页。
+
+指令 cache 有 64 行，采用 4 路组相联，也就是有 64/4=16=2^4，占 4bit 的 cache 组号。主存块号是 64B=2^6B，也就是占 6 位。
+
+所以
+
+后 6 位是块地址
+
+中间 4 位为 cache 组号。
+
+前 32-4-6=22 位是 tag。
+
+读到第 16 行 call 指令的时候，对应的逻辑地址是 00401025H=0000,0000,0100,0000,0001,00|00,00|10,0101B。
+
+所以处于第 0 组cache。
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeJq3ZzgRuedsb3UvTj-vdm6xjMtFQACoxJrG2MQ8FZJZ4NCwOjC1wEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+设备 1：路由器
+
+设备 2：以太网交换机
+
+设备 3：以太网交换机
+
+(2)
+
+设备 1 的 IF1，IF2，IF3 都需要配置 IP 地址，分别为：
+
+设备 1 IF1:192.168.1.254/30
+
+设备 1 IF2:192.168.1.1/26
+
+设备 1 IF3:192.168.1.65/26
+
+(3)
+
+NAT
+
+(4)
+
+H3 发送一个目的地址是 192.168.1.127 的 IP 数据报，首先辨析该数据报，127=0111,1111B。
+
+对比子网掩码，也就是其和 H3 和 H4 属于同一个网络，所以不需要额外交付给默认网关。
+
+由于该数据报为广播地址，所以 H3 发送 H4 肯定会收到。
 
 ### 408 2020 真题 2 刷
 
