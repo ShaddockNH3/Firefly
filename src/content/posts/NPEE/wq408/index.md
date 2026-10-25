@@ -12480,6 +12480,8 @@ DNS。
 
 ### 408 2022 真题 2 刷
 
+- 第 13 题低级错误，1 刷也错，非常低级，32 位补码的范围，一定要看清楚数字
+
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZlq2xLVhxJ1bP_GrbW46qWiIxVEZQACcxFrG8ST2VbV8Tj7vCtswAEAAwIAA3kAAz0E)
 
 本题应该选 B。
@@ -12548,14 +12550,21 @@ DNS。
 
 ![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZ9q2x_cmyCZtlK6uJYPZ5reoE3wIgACnBFrG8ST2Vamfs79u1QyPAEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 B。
 
 如下图所示：
 
+![7 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCehq3bvN-L6ARcZKjUYQORA_LQnqPAAC0xJrG2MQ8FalVZnGI5I5BwEAAwIAA3kAAz0E)
+
+注意这道题问的是时间余量，时间余量=一个活动的最晚开始时间-最早开始时间，最晚开始时间=事件的最晚开始时间-活动。
 
 ![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCaBq2yEooLkGSbXyUZPUS7s92itamAACnxFrG8ST2VaGb44reMpEIgEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 D。
+
+如下图所示：
+
+![8 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCelq3bzzyqNjB0n6MqfY4zw9PyBfeAAC1RJrG2MQ8FZ5lwxQXh7jPgEAAwIAA3kAAz0E)
 
 ![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCb5q219RbMcS2x5GZyuLkvrG1keW0QACGRJrG8ST4VbqgkqNEgbdJwEAAwIAA3cAAz0E)
 
@@ -12601,9 +12610,11 @@ DNS。
 
 ![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCaFq2yFFcyg_zrFXsA4T9CGAzIeokAACoBFrG8ST2VZ-k7-9_-3gjQEAAwIAA3kAAz0E)
 
-本题应该选 D。
+~~本题应该选 D。~~
 
-32 位补码标识的范围显然是 D。
+~~32 位补码标识的范围显然是 D。~~
+
+一刷的时候这道题也错了，当时还想着哦我一刷错了，太低级了这个错误，结果 2 刷又错了，难绷啊。
 
 ![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCaJq2yHfAAE5hpUT3dbfkKjBpRlAhD0AAqQRaxvEk9lWGHIFn6gbhjIBAAMCAAN5AAM9BA)
 
@@ -12647,7 +12658,7 @@ cache 区数据区容量为 32KB，也就是总共有 32KB/64B=2^9 个 cache 行
 
 ![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCaZq2ySPJBEGLFAFre-w04rzrlsC-AACqhFrG8ST2VZEyBrV3OV_oQEAAwIAA3kAAz0E)
 
-本题应该选 C。
+本题应该选 B。
 
 对于 1 属于背书问题。
 
@@ -12699,8 +12710,11 @@ cache 区数据区容量为 32KB，也就是总共有 32KB/64B=2^9 个 cache 行
 
 ![25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCa1q2yeISRgWn-Lz0hv-CyTizLssVAACvBFrG8ST2VYMgzmldHcisQEAAwIAA3kAAz0E)
 
-本题应该选。
+本题应该选 C。
 
+注意一开始也算一次调度，如下图所示：
+
+![25 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCepq3b2lmK41y8P_Q0z4RI_e4_5CDgAC1xJrG2MQ8FbiBOTz7iMhKwEAAwIAA3kAAz0E)
 
 ![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCb1q212-aRPu4KFldyhwONx1itGRSwACFhJrG8ST4VYFAAEcD6MinSMBAAMCAAN3AAM9BA)
 
