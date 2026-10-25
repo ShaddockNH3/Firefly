@@ -8315,13 +8315,14 @@ func consumer_j(){
 
 ### 408 2015 真题 2 刷
 
-- xx 分，这份卷子 1 刷的时候 147，错了第 8 题和计组的有一题没分析直接写的答案
+- 136 分，这份卷子 1 刷的时候 147，错了第 8 题和计组的有一题没分析直接写的答案
 - 这份的 2 刷选择题是很久之前做的，然后一直没对答案，又犯老毛病了，然后本来标记的要检查的题因为迁移到 codebuddy 没了，但是我觉得是次要原因，本来第一次做 147 的题第二次怎么就只有这个分。
 - 第 6 题：分析对了选错了。
 - 第 10 题：堆的比较问题
 - 第 15 题：忽略了 cache 位。
 - 第 27 题：低级错误，漏看了最后一个数字。
 - 第 36 题：低级错误，要么错误看成正确，要么 CSMA/CD 协议看成 CA。
+- 第 44 题 -4：第 2 问属于低级错误，想当然认为是 write，以及看图说话又想当然了
 
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBHRqzhh0k1rKZjjO8X6IutKq0DapUAACwhVrG7fmcVYV9C4tsJG-SAEAAwIAA3kAAz0E)
 
@@ -8718,20 +8719,234 @@ void solve(LNode* L,int n){
 
 ![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWtq2IqtIGrBgHIzfW0k4JE38IcSEAAC9BNrG89ByVY561AamSsVuAEAAwIAA3gAAz0E)
 
+解：
+
+(1)
+
+行、列下标都从 0 开始，图是无向图，所以矩阵对称：
+
+```c
+A[5][5] = {
+    {0, 1, 1, 1, 0},
+    {1, 0, 0, 1, 1},
+    {1, 0, 0, 1, 0},
+    {1, 1, 1, 0, 1},
+    {0, 1, 0, 1, 0},
+};
+```
+
+7 条边分别是 01、02、03、13、14、23、34。每行非零个数就是度数，deg(0)=3、deg(1)=3、deg(2)=2、deg(3)=4、deg(4)=2，加起来 14=2×7，对得上。
+
+(2)
+
+```c
+A^2[5][5] = {
+    {3, 1, 1, 2, 2},
+    {1, 3, 2, 2, 1},
+    {1, 2, 2, 1, 1},
+    {2, 2, 1, 4, 1},
+    {2, 1, 1, 1, 2},
+};
+```
+
+0 行 3 列的元素是 2，含义是从顶点 0 到顶点 3 长度为 2 的路径有 2 条，也就是 0-1-3 和 0-2-3。
+
+乘的时候想清楚，`(A²)[i][j] = Σk A[i][k]·A[k][j]`，k 枚举的是中转点，所以算出来就是 i 经过一个中转点走到 j 的走法数。
+
+A² 依然是对称的，而且对角线 `A²[i][i]` 恰好等于 deg(i)，算完拿这两条验一遍，不对称就是乘错了。
+
+(3)
+
+`B^m` 中第 i 行第 j 列的非零元素表示：顶点 i 到顶点 j 存在长度为 m 的路径，也就是走 m 条边能够到达，元素的值就是这种路径的条数。
+
+m 只到 n 是因为 n 个顶点的图里，两点之间只要有通路，就一定存在长度不超过 n-1 的简单通路，再长必然重复经过顶点，拆掉回路以后还是同一条通路，问不出新东西。
+
+这题问的是「非零元素」的含义，先答存在长度为 m 的路径，再答条数。只写条数会把可达性那层意思漏掉。
+
+还有一点，这里数的是通路，允许重复经过顶点和边，不是简单路径。上面 0 到 3 那两条刚好都是简单路径，容易让人误以为在数简单路径。
+
+顺手记一下连通性的判法，拿 A+A²+…+A^(n-1) 去看，每一对顶点之间那一项都非零就是连通。
+
+（这道题是 AI 做的，我觉得没必要再做一遍了）
+
 ![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWxq2IrGPGUxgz7tGzl7WpBjmiESygAC9RNrG89ByVZkp7GfOjOjDwEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+R0，R1，R2，R3，PC 是程序员可见的。
+
+因为是单总线结构，假设 ALU 需要执行一个双指令数指令，那么数据会在总线上冲突，所以应该先送一个数到 T，然后再送一个数到另一侧。
+
+(2)
+
+ALUop 位数至少为 3
+
+SRop 位数至少为 2
+
+(3)
+
+SRout 控制的部件为三态门，由于是单总线结构，所以要在某些时刻不需要 SRout 的数据。
+
+(4)
+
+1,2,3,5,8
+
+(5)
+
+7->4
+
+6->9
+
+(6)
+
+为了 PC 自动 +"1"，因为是 16 位的计算机，所以是 2B，也就是 +2。
 
 ![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCXBq2IspOxS_5hCaiCIZWKLQCQYhAAP5E2sbz0HJVoliFbsJMTNHAQADAgADeQADPQQ)
 
+解：
+
+(1)
+
+寻址方式有 0 和 1 两种，也就是 1 位，目的操作数为通用寄存器，有 0,1,2,3 4 种，也就是 2 位，由于最多支持 3 地址指令，所以除了指令操作码剩下的部分应该是 16-3✖️3=7，也就是 OP 为 7 位。
+
+所以也就是 2^7=128 条指令。
+
+(2)
+
+0000001 001 000 000B=0000,0010,0100,0000B=0240H
+
+~~0000010 001 010 000B=0000,0100,0101,0000B=0450H~~
+
+~~0000011 111 010 011B=0000,0111,1101,0011B=07D3H~~
+
+订：
+
+0000010 010 001 000B=0488H
+
+0000011 011 101 010B=06EAH
+
+(3)
+
+- 0
+- mov
+- mova
+- left
+- read
+- sub
+- mov
+~~- write~~
+
+订：SRout
+
+(4)
+
+4
+
+2
+
 ![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCW1q2IrcCHub05qECizw9ieUS_ia3gAC9hNrG89ByVbntk4kU8n0IwEAAwIAA3gAAz0E)
+
+```c
+semaphore emptyA=M-x;
+semaphore emptyB=N-y;
+semaphore fullA=x;
+semaphore fullB=y;
+semaphore mutexA=1;
+semaphore mutexB=1;
+
+func A(){
+  while(true){
+    P(fullA);
+    P(mutexA);
+    从 A 信箱里取邮件;
+    V(mutexA);
+    V(emptyA);
+    回答问题并提出一个新的问题;
+    P(emptyB);
+    P(mutexB);
+    将新邮件放入 B 的信箱;
+    V(mutexB);
+    V(fullB);
+  }
+}
+
+func B(){
+  while(true){
+    P(fullB);
+    P(mutexB);
+    从 B 信箱里取邮件;
+    V(mutexB);
+    V(emptyB);
+    回答问题并提出一个新的问题;
+    P(emptyA);
+    P(mutexA);
+    将新邮件放入 A 的信箱;
+    V(mutexA);
+    V(fullA);
+  }
+}
+```
 
 ![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCW5q2IrtH7QD5hRBugqwbCHeqoxdJAAC9xNrG89ByVaU4B_MMTW0LgEAAwIAA3gAAz0E)
 
+解：
+
+(1)
+
+页的大小为 2^12B=4KB
+
+页框的大小为 2^12B=4KB
+
+进程的虚拟地址空间大小为 2^20 页
+
+(2)
+
+页目录项和页表项均占 4B。
+
+先计算页目录表，页目录表需要 2^10 个，也就是 2^10✖️4B/4KB=1，即 1 页。
+
+再计算页表，页表需要 2^20 个，也就是 2^20✖️4B/4KB=1024，即 1024 页。
+
+所以总共是 1025 页。
+
+(3)
+
+访问虚拟地址 1:0100,0000H=0000,0001,00｜00,0000,0000,｜0000,0000,0000B，页目录号为 4，页号为 0
+
+访问虚拟地址 2:0111,2048H=0000,0001,00｜01,0001,0010,｜0000,0100,1000B，页目录号为 4，页号为 2+32+512=546
+
+显然一开始的时候访问的都是同一个页目录表（该地址位于内存），根据页目录号 4 得到其页表的物理地址并访问。
+
+所以访问的是同一个二级页表。
+
 ![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCW9q2IsDHGO3oFhBmPvlHyz7tvRmigAC-BNrG89ByVab6krQo0dwCwEAAwIAA3kAAz0E)
+
+解：
+
+(1)
+
+考虑 111.123.15.3/24，网络号占 24 位，也就是可供分配的总共是 32-24=8 位。当前已经分配了 1,2,3,4，则还可以分配 2^8-4-2=250 个 IP 地址，也就是 111.123.15.5-111.123.15.254
+
+DHCP 协议获取 IP 地址的过程中，发送封装 DHCP Discover 报文的 IP 分组源目的地址为：0.0.0.0，目的 IP 地址为 255.255.255.255
+
+(2)
+
+ff-ff-ff-ff-ff-ff
+
+00-a1-a1-a1-a1-a1
+
+(3)
+
+可以访问 WWW 服务器，由于默认网关为 255.255.255.0，所以 WWW 服务器和主机 1 在同一个网络下。
+
+不可以访问 Internet，因为默认网关是 DHCP 服务器，无法转发 IP 数据报到互联网。
 
 ### 408 2016 真题 2 刷
 
-- 分数为：143
-- 第 44 题 -6，第一问应该是每秒钟，脑子抽了算成每分钟了，第二问应该按照时钟周期算，我按照时间算了
+- 分数为：143，1 刷为 122
+- 第 44 题 -6，第一问应该是每秒钟，脑子抽了算成每分钟了，第二问应该按照时钟周期算，我按照时间算了。分析大体是没问题的
 - 第 47 题 -1，显示链接分配 VS 隐式链接分配
 
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcpq3FmBj3bxXnLO92c_kLkdkgS4RgACeRBrG2MQ4FaHUJJ_eMjm7wEAAwIAA3cAAz0E)
@@ -11049,13 +11264,13 @@ return n*f1(n-1) 会递归调用 f1。
 
 根据第 16 行的 call 指令，第 17 行的虚拟地址应该是 160040102AH。
 
-采用相对寻址，也就是要从 160040102AH 开始计算回退，也就是 0040,102AH-0040,1000H=0000,002AH。将  0000,002AH 按位取反并+1，也就是 FFFF,FFD6H。
+采用相对寻址，也就是要从 160040102AH 开始计算回退，也就是 0040,102AH-0040,1000H=0000,002AH。将  0000,002AH 按位取反并 +1，也就是 FFFF,FFD6H。
 
 小端方式。
 
 (4)
 
-int 的表示范围为 -2^31-2^31-1，f(13)的数值溢出。
+int 的表示范围为 -2^31-2^31-1，f(13) 的数值溢出。
 
 将 int 改为 long long。
 
@@ -11087,7 +11302,7 @@ trap
 
 读到第 16 行 call 指令的时候，对应的逻辑地址是 00401025H=0000,0000,0100,0000,0001,00|00,00|10,0101B。
 
-所以处于第 0 组cache。
+所以处于第 0 组 cache。
 
 ![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeJq3ZzgRuedsb3UvTj-vdm6xjMtFQACoxJrG2MQ8FZJZ4NCwOjC1wEAAwIAA3cAAz0E)
 
