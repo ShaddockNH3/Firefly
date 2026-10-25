@@ -28,8 +28,6 @@ seriesOrder: 7
 
 这份文档将持续更新，直至考研结束。
 
-> 408 部分（王道选择题 1/2/3 刷、真题 1/2 刷、算法真题与数据结构应用强化）已拆到[错题本 · 408](/posts/npee/wq408/)。
-
 ## 时间线
 
 数学基础：第 1 周 - 第 8 周，共 8 周。将基础 30 讲，三大计算（积分）和基础练习册 1000 写完，刷了一遍基础 30 讲，三大计算（积分）和基础练习册 1000 的错题。
@@ -42,31 +40,9 @@ seriesOrder: 7
 
 数学模拟卷 1 + 二刷 880 一半：第 31 周 - 第 32 周，共 2 周。26 李 4 + 880 二刷一半，880 二刷一半
 
-数学模拟卷 2 + 近些年的真题 + 二刷所有错题 + 卷子复盘：第 33 周 - 第 34 周，共 2 周。27 李 6，21 真题 - 26 真题，880 二刷剩下的，24 超越剩下 7 份，所有错题。
+数学模拟卷 2 + 真题 + 二刷所有错题 + 卷子复盘：第 33 周 - 第 34 周，共 2 周。27 李 6，21 真题 - 22 真题，24 超越 9-10
 
-数学模拟卷 3 + 660 + 卷子复盘：第 35 周 - 第 38 周，共 4 周：25 超越 + 26 张四/张八 + 660。
-
-408 基础：第 2 周 - 第 11 周，共 10 周。完成 4 本书的基础部分。
-
-408 基础重复：第 12 周 - 第 17 周，共 6 周。完成 4 本书的选择题 2 刷。
-
-408 强化：第 18 周 - 第 26 周，共 9 周。完成 4 本书的强化，4 本书的选择题错题再解析，4 本书的大题研究，以及最后的过一下几本书。
-
-408 真题以及模拟：第 27 周 - 第 30 周，共 4 周。卷子从 09 - 19 年的所有题模考 + 操作系统汪道选择题三刷 + 计组选择题部分三刷。
-
-408 近些年真题以及三刷选择题复盘：第 31 周 - 第 32 周。王道计组选择题三刷，计网挑部分三刷，20-22 真题
-
-408 真题复盘：第 33 周  - 第 34 周。真题深度复盘。
-
-英语仔细阅读：第 19 周 - 第 28 周，共 10 周。掌握仔细阅读的基本方法，写完 07 - 18 的仔细阅读
-
-英语套卷：第 29 周 - 第 32 周，共 5 周，14 年 - 20 年真题所有客观题（也就是 07-13 年的完型和新题型没做，不过这里新题型只用写 11,12,13，完型看情况了）
-
-英语套卷：第 33 周 - 第 34 周：21 年真题以及研究翻译和作文。与此同时，必须每天同时进行早年阅读重刷（阅读即可，一天 1 篇）
-
-英语套卷：第 35 周：以 22 年真题为例，模考一份来点感觉。
-
-政治：第 29 周 - 第 42 周，共 14 周。先花 6 周的时间刷一遍选择题（徐涛马原强化课 + 苍盾），也就是第 34 周结束，再花 6 周的时间 2 刷一遍选择题（肖背诵手册，肖 8 的选择题），再花 2 周的时间背大题。
+数学模拟卷 3 + 真题 + 选刷专题：第 35 周 - 第 38 周，共 4 周：23-26 数学真题，24 超越 4-8，27 张八，25 超越，660 选刷，880 线代
 
 ## 张宇 30 讲基础高数 1 刷（补）
 
@@ -405,7 +381,9 @@ $x|x|$ 以及画图，画一张图就能理解函数的导数绝对值之间的�
 
 ![6.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAW1qxoBA4s9ryAcBg8ZBcoOnTSqeLQACKBVrGz_BMFbp397cH8cwRQEAAwIAA3gAAz0E)
 
-$x^2\ge0$
+$$
+x^2 \ge 0
+$$
 
 ![6.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAW5qxoBysa_uHzBgde-eui-hxl-lcAACKRVrGz_BMFaaIAqcsmB3EAEAAwIAA3gAAz0E)
 
@@ -1697,7 +1675,9 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBOxqz3Mfq9yyHYC5loXveW9NzR2rMAACMBRrG7fmeVYSPl0F_CFW_AEAAwIAA20AAz0E)
 
-$\arcsin x-x\sim\frac{1}{6}x^3$
+$$
+\arcsin x-x \sim \frac{1}{6}x^3
+$$
 
 ![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBO1qz3MrxqN66Bak7WOJ7NhGmOy09QACMRRrG7fmeVanhHN21TnGcgEAAwIAA20AAz0E)
 
@@ -2947,9 +2927,9 @@ D 改为 C 又改为 B，错选为 B。这错题重刷时仍然不怎么会，�
 
 ![9.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAa5qx1k-a_Y0HfIOGuVEbQRbi--dCgAC_A9rGz_BOFYAAW0b9OuAJXsBAAMCAANtAAM9BA)
 
-$\arctan\frac{\tan x}{\sqrt{2}}$，当 $x=\frac{\pi}{4}$ 的时候，里面算出来不是 $1$，从而推不出来 $\frac{\pi}{4}$，属于低级错误。
+$\arctan\left(\frac{\tan x}{\sqrt{2}}\right)$，当 $x=\frac{\pi}{4}$ 的时候，里面算出来不是 $1$，从而推不出来 $\frac{\pi}{4}$，属于低级错误。
 
-错题重刷没去做，主要就是注意一下几个低级错误：$\arctan 1=\frac{\pi}{4}$，$\arctan\frac{\pi}{2}$ 不存在，$\arctan\frac{\sqrt{2}}{2}$ 是推不出来是 $1$ 的。
+错题重刷没去做，主要就是注意一下几个低级错误：$\arctan 1=\frac{\pi}{4}$，$\arctan\left(\frac{\pi}{2}\right)$ 不存在，$\arctan\left(\frac{\sqrt{2}}{2}\right)$ 是推不出来是 $1$ 的。
 
 ![9.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAa9qx1mSKwu71QQGUm3Jx7VSCIaZlwAC_g9rGz_BOFYqwwpFm0_sjAEAAwIAA20AAz0E)
 
@@ -3204,7 +3184,9 @@ $\theta$ 的定义域或者说积分定义域也一直是我的一个高频错�
 
 对于这种题完全没有任何头绪。但是呢，其实这道题并不是我想象中的强化阶段的那类题，所以还是那句话，没敢下手是现在最严重的问题？其实不是，这道题好像就是那类不一定是常系数的题？并非啊。
 
-$y_h=(C_1+C_2x)e^x$
+$$
+y_h=(C_1+C_2x)e^x
+$$
 
 好好写一遍这个解，本质上是忘了。
 
@@ -4368,7 +4350,7 @@ $\cos\theta$ 积分出来，然后忘了乘上原本在这之前的系数了。�
 
 求写渐近线的时候，想当然直接脑算 $b$，并且检查的时候也认为没必要算。
 
-也就是想当然认为 $x\arcsin\frac{2}{x}$，当 $x$ 趋于无穷的时候，这个应该是 $2$，而不是 $0$。
+也就是想当然认为 $x\arcsin\left(\frac{2}{x}\right)$，当 $x$ 趋于无穷的时候，这个应该是 $2$，而不是 $0$。
 
 ![9 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCPVq1kcswv9Rgw7WfZ4OPDCLXXlNLgACNhdrG8YqsVbHyhbQkuf-UQEAAwIAA3kAAz0E)
 
@@ -4439,8 +4421,6 @@ $\cos\theta$ 积分出来，然后忘了乘上原本在这之前的系数了。�
 微分方程相关
 
 $u'(0)=0$，$C$ 不能推导出来是 $1$(-3)
-
-## 24 超越 1-3
 
 ## 26 李 4
 
@@ -4530,7 +4510,12 @@ $u'(0)=0$，$C$ 不能推导出来是 $1$(-3)
 
 第一，数列极限不可以推导出函数极限，如下所示。
 
-$f(x) = \begin{cases} \sin\left(\frac{2\pi}{x}\right), & x \neq 0 \\ 0, & x = 0 \end{cases}$
+$$
+f(x) = \begin{cases}
+\sin\left(\frac{2\pi}{x}\right), & x \neq 0 \\[4pt]
+0, & x = 0
+\end{cases}
+$$
 
 第二，$n$ 只是正整数，那么趋近于负数呢？
 
@@ -4597,7 +4582,9 @@ $f(x) = \begin{cases} \sin\left(\frac{2\pi}{x}\right), & x \neq 0 \\ 0, & x = 0 
 
 这类题不知道怎么做的时候，把这个式子抄上去：
 
-$\frac{b-a}{n}\left(a+\frac{(b-a)i}{n}\right)$
+$$
+\frac{b-a}{n}\left(a+\frac{(b-a)i}{n}\right)
+$$
 
 但是需要注意这个 $n$ 是分多少份，这道题这个 $n$ 应该是取 $2n$，因为原题是分成 $2n$。将 $n$ 取 $2n$，$b$ 取 $2$，$a$ 取 $0$，一样解出来答案。
 
@@ -4739,7 +4726,9 @@ $\frac{b-a}{n}\left(a+\frac{(b-a)i}{n}\right)$
 
 惯性思维，这类变化可能是不满秩的，是因为：
 
-$f(x_1, x_2, x_3) = (x_1 + x_2)^2 + (x_2 + x_3)^2 - (x_1 + ax_3)^2$
+$$
+f(x_1, x_2, x_3) = (x_1 + x_2)^2 + (x_2 + x_3)^2 - (x_1 + ax_3)^2
+$$
 
 如果是减法的时候，那必须拆开来，因为天生不再非负。
 
@@ -4751,7 +4740,7 @@ $f(x_1, x_2, x_3) = (x_1 + x_2)^2 + (x_2 + x_3)^2 - (x_1 + ax_3)^2$
 
 低级错误 -5。
 
-左侧极限 $=$ 右侧极限不能说明连续，但是左侧导 $=$ 右侧导可以说明可导，左侧导 $=$ 右侧导 $=$ 其他逼近的极限可以说明导数连续
+左侧极限等于右侧极限不能说明连续，但是左侧导数等于右侧导数可以说明可导，左侧导数、右侧导数以及其他逼近方式的极限都相等，才可以说明导数连续
 
 ![18 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBINqzjD7yW0IPrBJF3kQnun8SRvAxAACXhZrG7fmcVYTJ_VO9h9qvAEAAwIAA3kAAz0E)
 
@@ -4827,7 +4816,7 @@ $x$ 和 $y$ 定义域是 $\mathbb{R}$，漏了一半。
 - 左侧极限：
 
   $$
-  \lim_{x \to 0^+} \Big[ x f''(x) + e^{f(x)} \Big] = 0 \cdot f''(0) + e^{f(0)} = 0 + e^0 = \mathbf{1}
+  \lim_{x \to 0^+} \left[ x f''(x) + e^{f(x)} \right] = 0 \cdot f''(0) + e^{f(0)} = 0 + e^0 = \mathbf{1}
   $$
 - 右侧极限：
 
@@ -4838,7 +4827,7 @@ $x$ 和 $y$ 定义域是 $\mathbb{R}$，漏了一半。
 由极限的保序性定理，若在 $(0, \delta)$ 上恒有左边 $\le$ 右边，则两边的极限必定满足：
 
 $$
-\mathbf{1 \le 0}
+\boldsymbol{1 \le 0}
 $$
 
 这道题按照题目给的做法是：
@@ -4901,16 +4890,23 @@ $$
 
 第三问的结论是：
 
-$\text{tr}(MN) = \text{tr}(NM)$
+$$
+\operatorname{tr}(MN) = \operatorname{tr}(NM)
+$$
 
 假设 $M$ 是 $m \times n$ 矩阵，$N$ 是 $n \times m$ 矩阵。
 
 那么 $MN$ 是 $m \times m$ 方阵，它的主对角线元素之和（即迹）为：
 
-$\text{tr}(MN) = \sum_{i=1}^m (MN)_{ii} = \sum_{i=1}^m \sum_{j=1}^n M_{ij} N_{ji}$
+$$
+\operatorname{tr}(MN) = \sum_{i=1}^m (MN)_{ii} = \sum_{i=1}^m \sum_{j=1}^n M_{ij} N_{ji}
+$$
+
 而 $NM$ 是 $n \times n$ 方阵，它的迹为：
 
-$\text{tr}(NM) = \sum_{j=1}^n (NM)_{jj} = \sum_{j=1}^n \sum_{i=1}^m N_{ji} M_{ij}$
+$$
+\operatorname{tr}(NM) = \sum_{j=1}^n (NM)_{jj} = \sum_{j=1}^n \sum_{i=1}^m N_{ji} M_{ij}
+$$
 
 因为实数乘法满足交换律 $M_{ij} N_{ji} = N_{ji} M_{ij}$，且双重有限求和可以任意交换求和顺序，所以这两个和式完全相等！
 
@@ -5139,178 +5135,171 @@ $\frac{(x-y)^2}{(y-x)^2}=1\ne-1$，从而 -4。
 
 ### 2023 真题
 
+- 完成时间：20261026
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
+
 ### 2024 真题
+
+- 完成时间：20261027
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
 ### 2025 真题
 
+- 完成时间：20261028
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
+
 ### 2026 真题
 
-## 24 超越 4-10
-
-### 24 超越 8
-
-- 完成时间：20261024
+- 完成时间：20261029
 - 分数：
-  - 选择题：
-  - 填空题：
+  - 选择：
+  - 填空：
   - 大题：
-- 时间：105+
+- 时间：
 
-### 24 超越 9
+## 27 张八
 
-- 完成时间：20261022
-- 分数：127(-5)
-  - 选择题：（-5）
-  - 填空题：-15
-  - 大题：-8
+- 完成时间：20261018-20261023
+- 平均分：
+- 平均作答时间：
+
+### 27 张八 1
+
+- 完成时间：20261025
+- 分数：123
+  - 选择：-5
+  - 填空：-5
+  - 大题：-17
 - 时间：120+15
 
-检查了 15min，然后不想检查了，直接对答案。
+怎么说呢，出师不利。我以为这份卷子可以 130 多的，结果最后只有 123。因为我想出来这道比较偏的线代怎么做了，然后还检查了选填，想着怎么说 130+，或者至少 130 附近是有的，结果就这个分数。
 
-第 4 题确实思路问题，第 11 题是行为习惯问题，第 13 是滥用区间再现，第 15 是懒得算，第 18 题也是思路没顺下来。那这样的话这张卷子应该至少考 139。
+先复盘一下，首先是态度问题，这次态度好了不少，选填确实花了 15min 检查一遍，但是大题没验算。以后规定，对于所有的大题，都至少需要验算积分部分，尤其是积分上下限。
 
-![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCchq3BIaNmF92WmeKQJpqnt5hf8eJAAC1Q9rG2MQ4FbulXMqTAHvHgEAAwIAA3cAAz0E)
+第 2 题这个属于经验问题了，A 可能是错的，所以不选，B 一定是对的，更强，所以选。再加上检查的时候想当然了。
 
-（A 选项勘误为 $\le-1$）
+第 14 题这个是非常经典的低级错误，求导的时候，$(1-t)^{-2}$ 求导出来是 $-1$，而不是 $-2$，导致错误。
 
-第 4 题猜了一个 B，因为勘误改了 A 选项。
+第 19 题这个算 x0 暂时不做评价，确实一下没想出来。
 
-利用弦的特性积分，如下图所示。
+倒数第二题积分上下限有又写错了！我都不知道要说自己什么好了。
 
-![4 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCclq3BQn9s_n6gTCMwZkjsQoEHDm1AAC1w9rG2MQ4FZEDvhrlDV0KwEAAwIAA3kAAz0E)
+最后是证明题，证明题那 12 分第一方面题设条件看错了，题设完全没写二阶可导之类的东西。然后即便给了其实也是不会做。
 
-关于利用弦积分，我觉得其实也算是比较常见的套路，需要注意！
+写到这里，突然想起来了：
 
-![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcdq3BHx78ULa8Z1FIHBZiVYpzKdCQAC1A9rG2MQ4FYuOFY0-VDGFwEAAwIAA3cAAz0E)
+我貌似这次没有干一件特别重要的事情：
 
-第 11 题，属于低级错误的不规范范畴。$f'(y)$ 我简写为 $f'$，但是 $y$ 也要被求导，所以就忽略了，而且最后的答案应该是带 $f'(0)$ 的，而不是只带 $f'$。
+在开卷子的开头写上三行：
 
-第 13 题应该就是单纯算错了，我没去检查这道题哪里算错了。
+1. 牛莱公式
+2. y*
+3. 积分区域
 
-订正如下图所示：
+果不其然，这次又是牛莱公式错了。
 
-![13 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcZq3BHdcEsf4sKF-Dfld3PET1PtewAC0w9rG2MQ4Fa0ym9SHGRoYQEAAwIAA3kAAz0E)
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCetq3iOEqKIGcYA6eZ0CzCdCHvIlhQACNxJrG3KB8VYTz_mDCDzmOwEAAwIAA3cAAz0E)
 
-滥用区间再现！！！
+本题错选为 A，确确实实算出来 F'(0) 在 x 趋于 0+ 和 0—的时候分别是什么了，但是理解错题目意思了。对于 A，当情况是 B 的时候，确确实实是可导的。
 
-并且需要注意 $\ln\frac{\sqrt{2}}{2}=-\frac{1}{2}\ln 2$。
+这个就属于积累了，积累一下下次肯定就不会错了。
 
-![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcRq3AsdUbnTB7HhU54JMVMT9oEq6QAC0A9rG2MQ4Fb37zN_7KCrPgEAAwIAA3cAAz0E)
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCexq3iQDj1uHikyq1-awdhz8D7o2gwACOhJrG3KB8Vb6ZuZl0BMNjAEAAwIAA3kAAz0E)
 
-第 15 题本质上是懒得算了，准备丢给检查的时候算，然后没检查（草稿很乱并且当时就是这么想的，丢到检查的时候检查）
+本题最后的答案少乘了一个 2，具体原因上面已经说了，这里就不重复了。对于求导，一定是要仔细认真的求，而不是想当然求解。尤其是对于 $(1-t)^{-2}$ 类式子，我认为我的问题是——
 
-思路还是很明确的，利用二阶连续导数先对 $x$ 再对 $y$ 求导和先对 $y$ 求导再对 $x$ 求导一样。
+u/v 求导与 1/u 求导混用导致的想当然错误。
 
-订正如下：
+也错过特别多次了，需要谨慎。
 
-![15 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcVq3AyuDkZ3UP-cGntnW7LnMQ9XAQAC0Q9rG2MQ4FappPZlX6SIewEAAwIAA3kAAz0E)
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe1q3iUI-z34CpmCR5je9RWOipZghgACOxJrG3KB8VaL3FfuAV_D1QEAAwIAA3cAAz0E)
 
-其实很简单，只是懒得算而已。
+本题 -4 这个是确实一下不知道怎么求 A 的横坐标，然而可以类比 ax^2+bx+c 即可。
 
-![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcNq3ArsT7IM8fe11ZS7a1rgnPb6RQACzw9rG2MQ4FaVKholwHL6zQEAAwIAA3cAAz0E)
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe5q3iU9BbpqjOJ5JC-gF0vIKYTVkgACPBJrG3KB8VY-3M5xe3ZmPQEAAwIAA3cAAz0E)
 
-第 17 题 -2，因为想当然认为是 $t^2$，事实上应该再 $+1$。
+本题 -10，扫了一眼答案貌似是利用割线去做，回头再来看。
 
-![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcJq3AjsAz-2vgYMBQzVAn0q5ufxewACzA9rG2MQ4FbJkLlPsaySLQEAAwIAA3cAAz0E)
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe9q3iVt3xd2N5mZ7RRu8RVGMYfFZgACPRJrG3KB8VbXBYTF1VIhAgEAAwIAA3kAAz0E)
 
-本题 -6。
+本题 -3，对 y 的积分积分上限应该是 pi/2，而不是 1。
 
-其实本题不算特别难，属于思路上的问题，主要是没有捋清楚 $f(x)=x^n+\ln x$ 和 $\{(x_n)^n+\ln x_n\}$ 的区别。
+再次总结一下，当你觉得一切顺风的时候，你就要死了！
 
-前者是一个函数，所以这里的 $n$ 不会发生变化，后者是一个数列，所以 $n$ 会发生变化。
+### 27 张八 2
 
-通过第一问可以很轻松的证明出来 $\ln x+x^n$ 有一个实根 $x_n$（这里的 $x_n$ 可以用更熟悉的方式，也就是 $\varepsilon$ 表述）
+- 完成时间：20261030
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-然后，根据题设，$n$ 在变的时候这个根也在变，也就是 $\ln x_n+x_n^n=\ln x_{n+1}+x_{n+1}^{n+1}=0$。
+### 27 张八 3
 
-但是，根在变的时候，函数没变，也就是 $f(x_n)=\ln x_n+x_n^n=0<f(x_{n+1})=\ln x_{n+1}+x_{n+1}^n$，因为 $f(x)$ 单调递增，所以 $x_n<x_{n+1}$。
+- 完成时间：20261031
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-由单调有界得证。
+### 27 张八 4
 
-这道题最重要的就是辨析 $f(x)=x^n+\ln x$ 和 $\{(x_n)^n+\ln x_n\}$ 的区别。如果 $n$ 变了，那么前者就不是同一个函数了！
+- 完成时间：20261101
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-小总结一下，我现在感觉有点过于依赖检查这个行为了，这份卷子选择题也是 15min 检查出来两个。
+### 27 张八 5
 
-### 24 超越 10
+- 完成时间：20261102
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-- 完成时间：20261021
-- 分数：122（-10）
-  - 选择题：-5（-5）
-  - 填空题：-15（-5）
-  - 大题：-8
-- 时间：120
+### 27 张八 6
 
-总结一下，因为一个学长这份卷子写了 100min，然后考了 150，我也想试试，结果就是这样。
+- 完成时间：20261103
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-看来学长的风格不适合我，我还是继续简单卷子 90min 写完检查 60min，正常卷子 120min 写完检查 30min。
+### 27 张八 7
 
-仔细看了一下，这个学长是 130min 写了 150 分，我看了一下这个学长的策略，他的策略是做一步检查一步，应该是力求一遍算对，我虽然也执行做一步检查一步，但是我做的很抽象，经常做这做着会忘记这件事。
-
-所以我觉得我的检查是有必要的，而不是像这个学长一样，做完就直接对答案。
-
-![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZJq2jCG2tlKzoPsAAG1uxd862QIrQIAAkMUaxvEk9FW2NEODVMtlsEBAAMCAAN4AAM9BA)
-
-本题应该选 C。这道题我猜对的，所以算了 5 分（猜对了涂卡涂错了）
-
-放在这里深度解析一下。
-
-首先应该引入数列极限的定义，对任意的 $\epsilon > 0$，总存在正整数 $N$，使得当 $n > N$ 时，恒有 $|x_n - a| < \epsilon$。
-
-先证明前推后，因为前者是有限的，所以一定存在一个最大值 $A$，保证其他所有项都 $\le A$。也就是说，当 $n>N$ 时，所有的项就都是 $|x_n-a|\le\varepsilon$ 了。
-
-然后证明后推前，对于定义，前 N 项最多有 N 个，这是一个有理数，不落在该区间内的只有有限个。
-
-极限的本质是数列最终会无限逼近于 $a$。直观理解，意思就是除了最开始有限个项以外，后面所有的项都掉进了 $a$ 的 $\varepsilon$ 邻域里
-
-这道题不该无从下手的，在张宇基础的时候有着重做过和注意过这类题。
-
-![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZNq2jOXJFmFNxvfei2FO4-aw_-XYAACSRRrG8ST0Va7gaCgqv55kAEAAwIAA3gAAz0E)
-
-本题 -5。这道题没检查，只粗略的看了一眼。$I_1<I_2$ 很显然，对于 $I_3$，我的做法是计算出来，结果 $\sec$ 的积分形式错了，中间应该是 $+$，我写成了 $-$，所以直接判断出是错的（如果是 $-$ 的话，那么 $I_3<0$），所以选了 D。
-
-这道题的正确做法是利用经典放缩，$\tan x<\frac{4}{\pi}x$，所以可以得出 $I_2<1$，而 $I_3$ 可以很轻松的出来是 $>1$ 的...吗？
-
-并非如此，后者真实计算出来是 $<1$ 的，我正在用局部的思维 $\frac{1}{\cos x}<1$ 来套进积分里。
-
-这道题实质上应该只比较积分内部的大小，把 $\tan x$ 展开变成 $\frac{\sin x}{\cos x}$，由于 $\frac{\sin x}{x}$ 肯定小于 $1$，所以 $I_2<I_3$
-
-![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZRq2jWw8RURNDqa-JWNAeLmEFiiAgACShRrG8ST0Va29x6le3DtNwEAAwIAA20AAz0E)
-
-本题 -5，答案写的是 $1$。
-
-我一开始的想法是分子 $+1$ 凑 $x-\frac{1}{x}$，错误的原因在于原函数两端区间都收。
-
-正确的思路是放缩，把 $1+x^4$ 分别放成 $x^4$，$x^2+x^4$ 即可。感觉这个属于是思路积累的问题。
-
-![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZVq2jXXXCpPUlDgAd9o--1usRBtKAACSxRrG8ST0Vaj0Yt49gABDioBAAMCAAN4AAM9BA)
-
-本题 -5。本质上这道题不会做，采用的特值法。
-
-一开始的思路是区间再现，然后没做出来。就搁置了。
-
-答案用的是一个非常巧妙的方法，$x\cos x$ 求导出来是 $\cos x-x\sin x$，所以可以求出前者 $-$ 后者 $=f(u)$ 从 $-\frac{\pi}{2}$ 到 $\frac{\pi}{2}$ 的积分，也就是 $F(0)-F(0)=0$，所以后者也是 $m$。
-
-![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZZq2jXu3WC30rv2Ri_y_wiijwLX6wACTBRrG8ST0VbkoFeM1KZxogEAAwIAA3gAAz0E)
-
-本题忘记了积化和差的公式，在 AI 给了公式的前提下才做对，实质上应该 -5。
-
-这道题很快就把握了思路，使用轴对称和轮换对称化简，但是对于如何处理 $\sin x\cos y+\cos x\sin y$ 上犯了难。
-
-事实上，$\sin(x+y)=\sin x\cos y+\cos x\sin y$，太久没做高中数学了属于是。
-
-![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZdq2jwNDaK25aEgRjY94B6BnMJlAwACXBBrG8ST2VYulL-6xJC14gEAAwIAA3gAAz0E)
-
-本题 -4，我猜到了 $\frac{F(x)}{x}$ 极限是 $0$，但是我不知道怎么证明。
-
-因为 $F(x)$ 在 $[0,T]$ 上连续，所以有界，所有在 $\mathbb{R}$ 上有界，有界 $\times$ 无穷小 $=0$
-
-![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZhq2jw0tGg7wyOThxdnkIHoUPQqNwACXRBrG8ST2VaWOEiud15h6wEAAwIAA3gAAz0E)
-
-本题 -4。这道题是真的低级错误，$P=MQ^{\mathrm{T}}$，带入的时候把 $Q^{\mathrm{T}}$ 代成 $Q$ 了。
-
-小总结一下，这份卷子的低级错误就是第 4 和 22，也就是至少得 +9 分，剩下的确实认了，思路问题需要积累。
-
-## 25 超越
+- 完成时间：20261104
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
+
+### 27 张八 8
+
+- 完成时间：20261105
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
 ## 880 综合 2 刷
 
@@ -5340,7 +5329,9 @@ $\frac{(x-y)^2}{(y-x)^2}=1\ne-1$，从而 -4。
 
 然而在知道这个去化简之后，还是有点不会做。一定要记住，无论对什么区间划分，都是划分为 n 份。所以最后应该是：
 
-$\frac{b-a}{n}\left(a+\frac{(b-a)i}{n}\right)$
+$$
+\frac{b-a}{n}\left(a+\frac{(b-a)i}{n}\right)
+$$
 
 遇到不会的时候，一定要把这个式子套上去看。
 
@@ -5444,15 +5435,21 @@ $\frac{b-a}{n}\left(a+\frac{(b-a)i}{n}\right)$
 
 对二重积分极限的定义理解错误。
 
-$\lim_{\substack{x \to 0 \\ y \to 0}} \frac{f(x,y)}{x^2 + y^2} = 1$
+$$
+\lim_{\substack{x \to 0 \\ y \to 0}} \frac{f(x,y)}{x^2 + y^2} = 1
+$$
 
 这是二重极限，在多元微积分的定义里，二重极限写作：
 
-$\lim_{(x,y) \to (0,0)} g(x,y) = A$
+$$
+\lim_{(x,y) \to (0,0)} g(x,y) = A
+$$
 
-它的严格 $\varepsilon\text{-}\delta$ 定义是：对于任意的 $\varepsilon > 0$，都存在 $\delta > 0$，使得只要距离满足：
+它的严格 $\varepsilon$-$\delta$ 定义是：对于任意的 $\varepsilon > 0$，都存在 $\delta > 0$，使得只要距离满足：
 
-$0 < (x^2 + y^2)^{1/2} < \delta$
+$$
+0 < \sqrt{x^2 + y^2} < \delta
+$$
 
 就有 $|g(x,y) - A| < \varepsilon$。
 
@@ -5498,9 +5495,222 @@ $0 < (x^2 + y^2)^{1/2} < \delta$
 
 尽量化简成 $y=f(x)$ 的形式或者 $x=f(y)$ 的形式。
 
-## 27 张四
+## 24 超越
 
-## 27 张八
+### 24 超越 1
+
+### 24 超越 1 2 刷
+
+### 24 超越 2
+
+### 24 超越 3
+
+### 24 超越 4
+
+### 24 超越 5
+
+### 24 超越 6
+
+### 24 超越 7
+
+### 24 超越 8
+
+- 完成时间：20261024
+- 分数：95（-5）
+  - 选择题：-30（-5）
+  - 填空题：-5
+  - 大题：-4-8-6
+- 时间：105
+
+决定先写张八了。超越系列的卷子先丢一边，而且也应该先写 25 超越。
+
+今天允许自己摆烂一天思考进程。
+
+而且今天也是懒得检查加一堆很陌生的题所以直接开始摆烂。
+
+感觉本质上是超越的题有一些些偏和难，但是上岸的学长就考的很好。
+
+我还是觉得得先把真题写完，然后写张八，而不是继续死磕超越。
+
+27 李 6 只有一点点怪偏难的题（第 6 份除外），所以也应该秉持信念，好好学，而不是像现在这样子感觉纯把考研当儿戏。
+
+### 24 超越 9
+
+- 完成时间：20261022
+- 分数：127(-5)
+  - 选择题：（-5）
+  - 填空题：-15
+  - 大题：-8
+- 时间：120+15
+
+检查了 15min，然后不想检查了，直接对答案。
+
+第 4 题确实思路问题，第 11 题是行为习惯问题，第 13 是滥用区间再现，第 15 是懒得算，第 18 题也是思路没顺下来。那这样的话这张卷子应该至少考 139。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCchq3BIaNmF92WmeKQJpqnt5hf8eJAAC1Q9rG2MQ4FbulXMqTAHvHgEAAwIAA3cAAz0E)
+
+（A 选项勘误为 $\le-1$）
+
+第 4 题猜了一个 B，因为勘误改了 A 选项。
+
+利用弦的特性积分，如下图所示。
+
+![4 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCclq3BQn9s_n6gTCMwZkjsQoEHDm1AAC1w9rG2MQ4FZEDvhrlDV0KwEAAwIAA3kAAz0E)
+
+关于利用弦积分，我觉得其实也算是比较常见的套路，需要注意！
+
+![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcdq3BHx78ULa8Z1FIHBZiVYpzKdCQAC1A9rG2MQ4FYuOFY0-VDGFwEAAwIAA3cAAz0E)
+
+第 11 题，属于低级错误的不规范范畴。$f'(y)$ 我简写为 $f'$，但是 $y$ 也要被求导，所以就忽略了，而且最后的答案应该是带 $f'(0)$ 的，而不是只带 $f'$。
+
+第 13 题应该就是单纯算错了，我没去检查这道题哪里算错了。
+
+订正如下图所示：
+
+![13 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcZq3BHdcEsf4sKF-Dfld3PET1PtewAC0w9rG2MQ4Fa0ym9SHGRoYQEAAwIAA3kAAz0E)
+
+滥用区间再现！！！
+
+并且需要注意 $\ln\left(\frac{\sqrt{2}}{2}\right)=-\frac{1}{2}\ln 2$。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcRq3AsdUbnTB7HhU54JMVMT9oEq6QAC0A9rG2MQ4Fb37zN_7KCrPgEAAwIAA3cAAz0E)
+
+第 15 题本质上是懒得算了，准备丢给检查的时候算，然后没检查（草稿很乱并且当时就是这么想的，丢到检查的时候检查）
+
+思路还是很明确的，利用二阶连续导数先对 $x$ 再对 $y$ 求导和先对 $y$ 求导再对 $x$ 求导一样。
+
+订正如下：
+
+![15 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcVq3AyuDkZ3UP-cGntnW7LnMQ9XAQAC0Q9rG2MQ4FappPZlX6SIewEAAwIAA3kAAz0E)
+
+其实很简单，只是懒得算而已。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcNq3ArsT7IM8fe11ZS7a1rgnPb6RQACzw9rG2MQ4FaVKholwHL6zQEAAwIAA3cAAz0E)
+
+第 17 题 -2，因为想当然认为是 $t^2$，事实上应该再 $+1$。
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCcJq3AjsAz-2vgYMBQzVAn0q5ufxewACzA9rG2MQ4FbJkLlPsaySLQEAAwIAA3cAAz0E)
+
+本题 -6。
+
+其实本题不算特别难，属于思路上的问题，主要是没有捋清楚 $f(x)=x^n+\ln x$ 和 $\{(x_n)^n+\ln x_n\}$ 的区别。
+
+前者是一个函数，所以这里的 $n$ 不会发生变化，后者是一个数列，所以 $n$ 会发生变化。
+
+通过第一问可以很轻松的证明出来 $\ln x+x^n$ 有一个实根 $x_n$（这里的 $x_n$ 可以用更熟悉的方式，也就是 $\varepsilon$ 表述）
+
+然后，根据题设，$n$ 在变的时候这个根也在变，也就是 $\ln x_n+x_n^n=\ln x_{n+1}+x_{n+1}^{n+1}=0$。
+
+但是，根在变的时候，函数没变，也就是 $f(x_n)=\ln x_n+x_n^n=0<f(x_{n+1})=\ln x_{n+1}+x_{n+1}^n$，因为 $f(x)$ 单调递增，所以 $x_n<x_{n+1}$。
+
+由单调有界得证。
+
+这道题最重要的就是辨析 $f(x)=x^n+\ln x$ 和 $\{(x_n)^n+\ln x_n\}$ 的区别。如果 $n$ 变了，那么前者就不是同一个函数了！
+
+小总结一下，我现在感觉有点过于依赖检查这个行为了，这份卷子选择题也是 15min 检查出来两个。
+
+### 24 超越 10
+
+- 完成时间：20261021
+- 分数：122（-10）
+  - 选择题：-5（-5）
+  - 填空题：-15（-5）
+  - 大题：-8
+- 时间：120
+
+总结一下，因为一个学长这份卷子写了 100min，然后考了 150，我也想试试，结果就是这样。
+
+看来学长的风格不适合我，我还是继续简单卷子 90min 写完检查 60min，正常卷子 120min 写完检查 30min。
+
+仔细看了一下，这个学长是 130min 写了 150 分，我看了一下这个学长的策略，他的策略是做一步检查一步，应该是力求一遍算对，我虽然也执行做一步检查一步，但是我做的很抽象，经常做这做着会忘记这件事。
+
+所以我觉得我的检查是有必要的，而不是像这个学长一样，做完就直接对答案。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZJq2jCG2tlKzoPsAAG1uxd862QIrQIAAkMUaxvEk9FW2NEODVMtlsEBAAMCAAN4AAM9BA)
+
+本题应该选 C。这道题我猜对的，所以算了 5 分（猜对了涂卡涂错了）
+
+放在这里深度解析一下。
+
+首先应该引入数列极限的定义，对任意的 $\varepsilon > 0$，总存在正整数 $N$，使得当 $n > N$ 时，恒有 $|x_n - a| < \varepsilon$。
+
+先证明前推后，因为前者是有限的，所以一定存在一个最大值 $A$，保证其他所有项都 $\le A$。也就是说，当 $n>N$ 时，所有的项就都是 $|x_n-a|\le\varepsilon$ 了。
+
+然后证明后推前，对于定义，前 N 项最多有 N 个，这是一个有理数，不落在该区间内的只有有限个。
+
+极限的本质是数列最终会无限逼近于 $a$。直观理解，意思就是除了最开始有限个项以外，后面所有的项都掉进了 $a$ 的 $\varepsilon$ 邻域里
+
+这道题不该无从下手的，在张宇基础的时候有着重做过和注意过这类题。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZNq2jOXJFmFNxvfei2FO4-aw_-XYAACSRRrG8ST0Va7gaCgqv55kAEAAwIAA3gAAz0E)
+
+本题 -5。这道题没检查，只粗略的看了一眼。$I_1<I_2$ 很显然，对于 $I_3$，我的做法是计算出来，结果 $\sec$ 的积分形式错了，中间应该是 $+$，我写成了 $-$，所以直接判断出是错的（如果是 $-$ 的话，那么 $I_3<0$），所以选了 D。
+
+这道题的正确做法是利用经典放缩，$\tan x<\frac{4}{\pi}x$，所以可以得出 $I_2<1$，而 $I_3$ 可以很轻松的出来是 $>1$ 的...吗？
+
+并非如此，后者真实计算出来是 $<1$ 的，我正在用局部的思维 $\frac{1}{\cos x}<1$ 来套进积分里。
+
+这道题实质上应该只比较积分内部的大小，把 $\tan x$ 展开变成 $\frac{\sin x}{\cos x}$，由于 $\frac{\sin x}{x}$ 肯定小于 $1$，所以 $I_2<I_3$
+
+![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZRq2jWw8RURNDqa-JWNAeLmEFiiAgACShRrG8ST0Va29x6le3DtNwEAAwIAA20AAz0E)
+
+本题 -5，答案写的是 $1$。
+
+我一开始的想法是分子 $+1$ 凑 $x-\frac{1}{x}$，错误的原因在于原函数两端区间都收。
+
+正确的思路是放缩，把 $1+x^4$ 分别放成 $x^4$，$x^2+x^4$ 即可。感觉这个属于是思路积累的问题。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZVq2jXXXCpPUlDgAd9o--1usRBtKAACSxRrG8ST0Vaj0Yt49gABDioBAAMCAAN4AAM9BA)
+
+本题 -5。本质上这道题不会做，采用的特值法。
+
+一开始的思路是区间再现，然后没做出来。就搁置了。
+
+答案用的是一个非常巧妙的方法，$x\cos x$ 求导出来是 $\cos x-x\sin x$，所以可以求出前者 $-$ 后者 $=f(u)$ 从 $-\frac{\pi}{2}$ 到 $\frac{\pi}{2}$ 的积分，也就是 $F(0)-F(0)=0$，所以后者也是 $m$。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZZq2jXu3WC30rv2Ri_y_wiijwLX6wACTBRrG8ST0VbkoFeM1KZxogEAAwIAA3gAAz0E)
+
+本题忘记了积化和差的公式，在 AI 给了公式的前提下才做对，实质上应该 -5。
+
+这道题很快就把握了思路，使用轴对称和轮换对称化简，但是对于如何处理 $\sin x\cos y+\cos x\sin y$ 上犯了难。
+
+事实上，$\sin(x+y)=\sin x\cos y+\cos x\sin y$，太久没做高中数学了属于是。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZdq2jwNDaK25aEgRjY94B6BnMJlAwACXBBrG8ST2VYulL-6xJC14gEAAwIAA3gAAz0E)
+
+本题 -4，我猜到了 $\frac{F(x)}{x}$ 极限是 $0$，但是我不知道怎么证明。
+
+因为 $F(x)$ 在 $[0,T]$ 上连续，所以有界，所有在 $\mathbb{R}$ 上有界，有界 $\times$ 无穷小 $=0$
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZhq2jw0tGg7wyOThxdnkIHoUPQqNwACXRBrG8ST2VaWOEiud15h6wEAAwIAA3gAAz0E)
+
+本题 -4。这道题是真的低级错误，$P=MQ^{\mathrm{T}}$，带入的时候把 $Q^{\mathrm{T}}$ 代成 $Q$ 了。
+
+小总结一下，这份卷子的低级错误就是第 4 和 22，也就是至少得 +9 分，剩下的确实认了，思路问题需要积累。
+
+## 25 超越
+
+### 25 超越 1
+
+### 25 超越 2
+
+### 25 超越 3
+
+### 25 超越 4
+
+### 25 超越 5
+
+### 25 超越 6
+
+### 25 超越 7
+
+### 25 超越 8
+
+### 25 超越 9
+
+### 25 超越 10
+
+## 27 张四
 
 ## 数学真题 2 刷
 
