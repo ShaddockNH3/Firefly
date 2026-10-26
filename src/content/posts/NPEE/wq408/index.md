@@ -3658,6 +3658,366 @@ cache 想当然以及对指令的理解
 
 对这块的分析还是不对（链式分配答案对了但是分析是错的）对于直接插入，先读写移动 29 次，最后插入自己。对于链式，先读 29 次，插入自己后修改第 29 的指针，所以是 29+1+1。（-1）对于最后一问，没搞懂怎么看。其实很简单啊，由于总共是 4B，所以有 32 位，最多是 2^32 个，然后再乘上大小就好了（-2）
 
+### 408 真题 2015
+
+- 完成时间：20260905
+- 分数：147
+  - 选择题：-2
+  - 计组：-1
+- 时间：150
+
+果然还是定时 + 集中注意力好用
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBJlqzy5Xx-r5lBy6CQchzvTNDpiZEwACFhNrG7fmeVY7BlNlkbq-QgEAAwIAA3kAAz0E)
+
+kmp 算法
+
+遗忘以及轻视
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWxq2IrGPGUxgz7tGzl7WpBjmiESygAC9RNrG89ByVZkp7GfOjOjDwEAAwIAA3gAAz0E)
+
+背答案
+
+没有实质性分析（-1），写快了
+
+### 408 真题 2016
+
+- 完成时间：20260906
+- 分数：122
+  - 选择题：-14
+  - DS：-2
+  - 计组：-4
+  - OS：-3
+  - 计组：-5
+- 时间：150
+
+今天卷子也不对啊，为什么呢。感觉对于一些模型还是不够熟悉，理解还是不够深刻
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdNq3GW1MwdEXoqATxHNNaol4Kl7gAAClhBrG2MQ4Fbky8F0sJ6ujAEAAwIAA3cAAz0E)
+
+拓扑排序
+
+考研范围内的拓扑排序，如果对于邻接表的话，是先遍历一次（花费 e 的时间）然后开一个辅助数组存储
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB0dq0ekMVIwn5TweD8qq_d8eJ7NEhQACrxBrG6jnkFYeR-ggmXeKPAEAAwIAA3kAAz0E)
+
+PC 与指令的关系
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Nq0ffvuKkpYgr0Rf3Pxoj_q0zW1wACPBtrG-BrkFY0rRwWdOPt7wEAAwIAA3gAAz0E)
+
+对线程与进程的理解
+
+不同进程之间是单独的，但是同一个进程的线程是需要需要互斥访问的
+
+![31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Rq0fh82X5peOV37CoC0ygWeNVjlwACPhtrG-BrkFZZVu7OG9oNugEAAwIAA3gAAz0E)
+
+spooling 技术相关的背书
+
+思考极端情况对于内存的影响
+
+![32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB1Vq0fjI153pzhYtiN5Lmh9FtMSZzwACPxtrG-BrkFZjdGyOCduh3AEAAwIAA3gAAz0E)
+
+管程相关的背书
+
+其实也有和读者写者问题的理解
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdpq3IwgVd0PwNCl_AXLiBMwh5-akQAC6hFrG2MQ4FZ9E1lpAuA_qwEAAwIAA3cAAz0E)
+
+第 36 题
+
+一来一回
+
+第 40 题
+
+dns 解析
+
+迭代查询本地域名服务器需要如何解析，www.abc.def.com，首先访问。得到顶级域名服务器.com，然后访问.com 得到 def.com，然后访问 def.com 得到 abc.def.com，然后访问 abc.def.com 得到 ip 地址
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdtq3Iw_G27aNbjxd-wYovOM3I0K-gAC6xFrG2MQ4FZfDf0ey4EXvgEAAwIAA3cAAz0E)
+
+（-5，问题很大）
+
+首先是辨析，这道题是基于 tcp 连接之后的，我认为有点歧义，不过暂且就这么做，这三分算是语文理解问题。第 8 个确认段到了之后，应该接收窗口是 12，拥塞窗口变为 9，窗口是 9（-3）而对于第 3 题就不应该了，辨析 mss 和具体序号（-1）。最后过一遍第 4 问（-1），第四问是记错了，服务端一定是要等到接收到 ack 之后才关
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdhq3HFAGxllTAnn6wHr4Zw4k91qPQACqRFrG2MQ4FaxjFHHSexJLAEAAwIAA3cAAz0E)
+
+不会最优解
+
+（-2），问题不大
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCdxq3JMGoQ8lSkj8fOXC0OtUObPCWAACBxJrG2MQ4Faoc4NlJUVUxQEAAwIAA3cAAz0E)
+
+中断和设备相关
+
+最后 20 个时钟周期不需要+，因为那个是用来发送的（-1），CPU 在中断做了什么，背书不会（-2）
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCd5q3JmYugELorx6bLbr_2y0UQjeRQACdBBrG2MQ6FbopkgDafg2-AEAAwIAA3cAAz0E)
+
+辨析块号与真实的号
+
+（-2），属于细节性问题
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCd9q3JuJXTst5ykQfvsP8kKoU836IAACdRBrG2MQ6FYGrhHZ6GBi1wEAAwIAA3cAAz0E)
+
+最大的文件以及访问簇
+
+最大文件想错，访问的簇由于是链接存储，所以可以随机访问，所以不需要访问 100
+
+### 408 真题 2017
+
+- 完成时间：20260907
+- 分数：143
+  - 选择题：-4
+  - 计组：-1
+  - 计网：-2
+- 时间：120
+
+之前的卷子我认为其实并没有完全按照时间来，是随便挑的时间。加油。
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCAhq02Gg6cuG16SeWVk1CxCnwbGojAACJRprG-BrmFZJeHMciwP4RwEAAwIAA3gAAz0E)
+
+边界对齐
+
+完全没有找到分析思路，没有从边界对齐去思考
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCZq1HtdDlYwu1a3HIC0_8PrW7oZmwACJxJrG1-fqVZ208Q9zbhH_AEAAwIAA3gAAz0E)
+
+子网相关
+
+想到了，但是选的 512。这里有俩字，可分配，所以应该 -2。如果问的是 IP 地址总数，地址空间大小，那么不需要 -2
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCCxq1IFArpySZ_5CzY2TRWC8PmhwGwACOBJrG1-fqVbGdN07QXzIkQEAAwIAA3gAAz0E)
+
+低级错误
+
+正数的 float 第一位是 0，而不是 1（-1）
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCC1q1IOkwY-vZ3cKPeSKg7nLawNArgACPBJrG1-fqVbu9KTUIbwepAEAAwIAA3kAAz0E)
+
+没有捋清楚块内地址是多少位以及 LRU 意味着什么
+
+本题 LRU 是 1 位，而不是 3 位，搞清楚 LRU 意味着什么
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDBq1Ii-GPik2qdVq31a-n4VsrhDuAACRhJrG1-fqVZoBXpqlI6r5wEAAwIAA3gAAz0E)
+
+回退 n 帧协议
+
+回退 n 帧协议，我发给你 R1,1 和 R1,3，那么我会把 R1,3 丢了（-2）
+
+### 408 真题 2018
+
+- 完成时间：20260917
+- 分数：142
+  - 选择题：-6
+  - 计组：-2
+- 时间：120
+
+![23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCE9q1QU5slC8mrv3m3L3OVQRaOCF1AACshNrG1-fqVanXKCnnk4wjAEAAwIAA3gAAz0E)
+
+操作系统多任务
+
+并发够用了，但是更深入也可以并行
+
+![28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGBq1RCk3gaVt0CwQshNYOMdnTQ7uwACxRNrG1-fqVbVcDRUxcfRWwEAAwIAA3gAAz0E)
+
+管程
+
+对于 A 这个表述，实际上是入口锁。对于 C，条件变量没有值这个概念
+
+![38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCFVq1QrOm6TtidJrN5RBKNtcA1abJAACuBNrG1-fqVZmvksiM3obIgEAAwIAA3gAAz0E)
+
+路由聚合低级错误
+
+想当然直接选了，没有再看到底要缩多少位
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGVq1RKgufKUelaFNbIemCFvf2JTHgACyhNrG1-fqVbMR-LjngX3FwEAAwIAA3gAAz0E)
+
+![44 图](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCGZq1RKyQNj42lwwVjs3Epk_eUtikwACyxNrG1-fqVZPMD1bJc8MVAEAAwIAA3gAAz0E)
+
+没有捋清楚块内地址是多少位以及 LRU 意味着什么
+
+本题 LRU 是 1 位，而不是 3 位，搞清楚 LRU 意味着什么
+
+### 408 真题 2019
+
+- 完成时间：20260917
+- 分数：144
+  - 选择题：-2
+  - 计组：-3
+  - 计网：-1
+- 时间：150
+
+这份卷子证明了检查还是很有用的。选择题检查出来了 4 个错的。但是我有点怀疑我能不能在考场上写完卷子，毕竟现在都是写做过的题，很神秘啊
+
+![24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCYpq2ejw0vSyMrJvD6O3xUpVRZy9vAACgxJrG89B0Vaw3EE0MjwFRgEAAwIAA3kAAz0E)
+
+对“唤醒”理解有误
+
+唤醒的意思是阻塞到就绪态
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeBq3ZfKiSt7jNxNs8tNufWLw7467AACnxJrG2MQ8FZg2FqSd4z8VwEAAwIAA3cAAz0E)
+
+IO 相关
+
+磁盘第 x 号，是从 0 开始计算的（默认）（-2）
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeNq3Z4qwAX6tp9lDIKBseP5ihvduwACphJrG2MQ8FZxpBGemm6iqwEAAwIAA3cAAz0E)
+
+条件转移
+
+注意条件这两个字（-1）
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCeJq3ZzgRuedsb3UvTj-vdm6xjMtFQACoxJrG2MQ8FZJZ4NCwOjC1wEAAwIAA3cAAz0E)
+
+低级错误
+
+分析正确，然后 H3 发送，写的 H3 收（-1）
+
+### 408 真题 2020
+
+- 完成时间：20261001
+- 分数：136
+  - 选择题：-8
+  - DS：-3
+  - 计组：-2
+  - OS：-1
+- 时间：120
+
+感觉有点不好，这份卷子选择题错了 4 个，而且我记得我这几天刷选择题的时候，有相当多的选择题掉进了 20 年的坑里。而且，这张卷子我还检查出了其他 4 道选择题，所以难以想象我当时直接做的时候会错多少个。总的来讲，一方面是确实十来天没写卷子了，另一方面是确实依旧有点分心。
+
+可能还有一点，就是这两天晚上都在看小说，所以头有点痛。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQABatcMz6OjjhKb_kKjOT_Xuhu6sR0AAjETaxvGKrlWStcZ9jMzhUsBAAMCAAN4AAM9BA)
+
+二叉树的顺序存储
+
+必须得把那一行结点都存了，即便是后面没有数据
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQRq1w4CTZvySTVlxb05xfGLeahqxQACNhNrG8YquVYCHGAN5iP3yQEAAwIAA3gAAz0E)
+
+拓扑排序
+
+其实单纯是懒得分析导致的错误，没得说
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCQhq1w_XGIuaWMoxBXjImzr5cu4ggAACPRNrG8YquVZ84o8tKkcHTAEAAwIAA3gAAz0E)
+
+B 树的插入
+
+属于低级错误，忘记 B 树可以有多个分叉了
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCRRq1xoE8k2LDUOV2ryZfNSS7l8dcAACdRNrG8YquVY0QSdbybaouAEAAwIAA3gAAz0E)
+
+中断相关
+
+属于低级错误，辨析相应优先级和处理优先级，响应优先级是硬件决定的，处理优先级是中断屏蔽字决定的
+
+![41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCStq1yQxexh9wbigqc8laafS4bKL2AACsBNrG8YquVbTjHbaJ7VEnwEAAwIAA3gAAz0E)
+
+算法不会最优解
+
+问题不大（-3）
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCS5q1zANXtg8js7epUZbZdA8Vg6YtwACBBRrG8YquVZeUkXdzO5NpgEAAwIAA3gAAz0E)
+
+低级错误
+
+题目要求是分析地址 2，分析的地址 1
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTBq1zBNFGf979IWmDY21rwqkRXAIAACCRRrG8YquVbW_K9UU-r8IgEAAwIAA3gAAz0E)
+
+忽略页号
+
+### 408 真题 2021
+
+- 完成时间：20261002
+- 分数：142
+  - 选择题：-2
+  - 计组：-2
+  - OS：-3
+  - 计网：-1
+- 时间：150
+
+![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCVxq2HEGKAy8Yfij08tLhjYuUebGugACqxNrG89ByVazf4yderBTewEAAwIAA3gAAz0E)
+
+差分曼彻斯特编码
+
+低级错误，直接想成曼彻斯特编码
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWVq2HZiz4PDV9ijo_j0FzAKSq_asgACwRNrG89ByVb_ESg_vqDRCQEAAwIAA3gAAz0E)
+
+主存空间大小与计算错误
+
+可寻址的主存空间大小，意思是整个空间大小，理解错了。另一个则是减法计算错误（-1-1）
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWZq2HZzdVk1U2cuXuCCJTwhRAlg_wACwhNrG89ByVajrsH4q9P_3QEAAwIAA3gAAz0E)
+
+页表项位数
+
+想多了（-1）
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWdq2HaEOIiAaAdehwqm7tJbrktaYgACwxNrG89ByVYBXaR2kUz9GwEAAwIAA3gAAz0E)
+
+信号量互斥访问的原因
+
+其实就是因为多个进程（-2）
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWlq2Ham023k0m6Gaawv5mhW0HKA6AACxRNrG89ByVYlf2rJCvcO2gEAAwIAA3gAAz0E)
+
+链路不完整
+
+从 DNS 到 UDP 到 IP 到 CSMA/CD，最后一个没说。（-1）
+
+### 408 真题 2022
+
+- 完成时间：20261003
+- 分数：132
+  - 选择题：-8
+  - 计组：-9
+  - 计网：-1
+- 时间：120
+
+检查还检查出来 2 选择题。总的来讲不应该，这张卷子暴露了我很多对模型的理解不充分，以及记忆的问题。所以复盘早年的卷子应该跟上了，这张卷子的第 43 题其实就跟 2009 年的卷子是差不多的。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZ1q2xz0i2MqTXZdVp0XZ3sNYX1qRQAClBFrG8ST2VafEyg8ZPvwygEAAwIAA3kAAz0E)
+
+语文阅读理解
+
+以及最后没有耐心了，这道题是不难的。这道题题面是判断定长和哈夫曼译码集的
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCb5q219RbMcS2x5GZyuLkvrG1keW0QACGRJrG8ST4VbqgkqNEgbdJwEAAwIAA3cAAz0E)
+
+哈希表的影响方式
+
+装填因子也影响，装填因子越大越容易
+
+![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCaFq2yFFcyg_zrFXsA4T9CGAzIeokAACoBFrG8ST2VZ-k7-9_-3gjQEAAwIAA3kAAz0E)
+
+低级错误，低级到我都不想写在这里。没看完选项直接想当然选的
+
+![36](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCbRq21SSsRJ5yPvCIXKBxpllRvy8OAAC_xFrG8ST4VYaNCdV1Ogn3AEAAwIAA3cAAz0E)
+
+默认网关
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWVq2HZiz4PDV9ijo_j0FzAKSq_asgACwRNrG89ByVb_ESg_vqDRCQEAAwIAA3gAAz0E)
+
+默认网关不是给 nat 路由器，而是给最近的路由器
+
+整道题目没理解什么意思
+
+1，第二问没回答到点子上，单总线是为什么要使用暂存器的原因。2，理解错指令解析的全流程，指令通过 IR 解析给其他所有部件。3，多路选择器和地址译码器功能混淆，前者是总出 1，后者是 1 出多。4，理解错题目意思以及指令流动流程，整个流动流程应该是 PC 出来然后到 MAR，读，然后 MAR 到 IR，继而理解错后面多少个时钟周期的含义。5，没理解 CU 应该接谁，CU 解析的应该是标志，FR 不用多说，接 IR 的目的是为了看 jmp 等跳转。对于 MDR 等信号，CU 是发出者，通过总线发送即可，而 CU 需要接收 FR 等的信息来判断
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfZq3xK80UVQXQwKBPpiyDG3uSJIwAACUxhrG3KB-VaO7uI9f84BGgEAAwIAA3cAAz0E)
+
+磁盘相关
+
+没算扇区旋转时延，DMA 控制器对总线优先的原因没有解释清楚，应该从数据丢失的角度解释
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfRq3w8EzctYaDErh0OMGcApDoN1mQACTxhrG3KB-VaOlsBeQO6KbgEAAwIAA3cAAz0E)
+
+CMCD/CA 协议
+
+当前谁收，当前谁发，最开始来源于（或者最终要给谁）
+
 ## DS 王道选择题 3 刷（选做）
 
 ## 计组王道选择题 3 刷
@@ -12526,7 +12886,10 @@ DNS。
 
 ### 408 2022 真题 2 刷
 
+- 分数为：146
 - 第 13 题低级错误，1 刷也错，非常低级，32 位补码的范围，一定要看清楚数字
+- 第 43 题 -1，没写 read
+- 第 44 题 -1，双面盘片没乘 2
 
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCZlq2xLVhxJ1bP_GrbW46qWiIxVEZQACcxFrG8ST2VbV8Tj7vCtswAEAAwIAA3kAAz0E)
 
@@ -12934,6 +13297,203 @@ bool solve(SqBiTree *T){
 }
 
 ```
+
+![42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfJq3wF89FGTMM3rd5yXe2XpG5jHGAACJRhrG3KB-VZGaOII0KX38AEAAwIAA3cAAz0E)
+
+解：
+
+法 1
+
+(1)
+
+1. 采用简单选择排序的思想，设置两个指针 i 和 j，i 指向未排序的第一个元素，j 初值指向 i
+2. 取 curr_min=M[j] 为当前最小值的预备数，取 curr_min_index=j，向后遍历，遇到比其更小的则更新该数，并更新最小指针
+3. 待一趟遍历完后，交换 M[i] 和 M[curr_min_index]，i+=1
+4. 总计重复 1-3 10 次
+5. 输出前十个数即为 M 最小的 10 个数
+
+(2)
+
+时间复杂度：O(n)
+
+空间复杂度：O(1)
+
+法 2
+
+(1)
+
+1. 采用堆的思想，构建大根堆，初值取 k=n/2，
+2. 比较 M[k], M[k*2], M[k*2+1]，比较出最大值，如果最大值为 M[k]，则不做处理，如果最大值为 M[k*2]，则交换 M[k] 和 M[k*2]，如果最大值为 M[k*2+1]，则交换 M[k] 和 M[k*2+1]
+3. k-=1
+4. 重复 1-3，直到 k<0
+5. 设置一个指针 i，初值为 0，输出第一个数，随后交换 M[0] 和 M[n-1-i]，i+=1
+6. 设置一个指针 k 初值为 0，比较 M[k], M[k*2], M[k*2+1]，比较出最大值，如果最大值为 M[k]，则不做处理，如果最大值为 M[k*2]，则交换 M[k] 和 M[k*2]，如果最大值为 M[k*2+1]，则交换 M[k] 和 M[k*2+1]
+7. k+=1
+8. 重复 5-7，直到 i>=10
+9. 输出的前十个数即为 M 最小的 10 个数
+
+(2)
+
+时间复杂度：O(n)
+
+空间复杂度：O(1)
+
+![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfdq3xQ7l75adjAO4PvaG0YFKYigeAACVhhrG3KB-VbPr-HkR-WXYAEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+SF=F
+
+A+B 时，OF=F $overline{B}$ $overline{A}$ + $overline{F}$ A B
+
+A-B 时，OF=$overline{F}$ A $overline{B}$ + F $overline{A}$ B
+
+(2)
+
+1. 单内部总线，无法同时传输 2 个数据
+2. 有时不需要立刻使用到该数据
+
+(3)
+
+16
+
+IR
+
+地址译码器
+
+(4)
+
+MARin
+
+订：缺了一个 read
+
+MDRin，MDRout，IRin
+
+7 个
+
+(5)
+
+CU
+
+FR，IR
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfZq3xK80UVQXQwKBPpiyDG3uSJIwAACUxhrG3KB-VaO7uI9f84BGgEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+磁道（柱面）、盘片、扇区
+
+20000 个磁道，由于 2^14<20000<2^15，所以需要 15 位。
+
+~~盘片有 4 个，所以占 2 位~~
+
+订：双面盘，8 个，所以占 3 位
+
+磁道有 500 个，由于 2^8<500<2^9，所以需要 9 位
+
+(2)
+
+寻道时延 5ms
+
+旋转时延：7200rpm=120rps，转半圈需要 0.5/120=0.00417s=4.17ms
+
+处理时延：转 1 个磁道需要 1/(120✖️500)=0.0166667ms=0.0167ms
+
+所以，平均时间=5+4.17+0.0167=9.1867ms
+
+(3)
+
+一个扇区的读写也就是 512/8=64 次
+
+可以。
+
+DMA 对总线优先权比 CPU 高，因为数据不传输就会丢失。
+
+![45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfVq3xEQGMjJKdZ7AQPK0UE-68xpsAACURhrG3KB-VbT7y_C7w7g-wEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+文件名 索引结点号
+
+course 2
+
+doc 10
+
+(2)
+
+x=30
+
+(3)
+
+course 文件目录已在内存，意味着 course1 的 inode 已经在内存了。所以根据 course1 的 inode 访问磁盘，并读入，总共需要读 2 个磁盘块。
+
+(4)
+
+由于磁盘块是 4KB，地址项占 4B，所以一个磁盘块内可以存放 4KB/4B=1024 个地址项。
+
+直接地址项 10 个，也就意味着直接地址最大到 40KB，1 级地址最大到 1024✖️4KB=4MB，也不够，2 级地址最大到 1024✖️1024✖️4KB=4GB，够了。
+
+所以也就是要取 1 和 2 级间接索引。
+
+![46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfNq3wt9PYZgvZbw9lcw4eWGgqLBZgACQBhrG3KB-VZlY_wAAecF7dIBAAMCAAN3AAM9BA)
+
+解：
+
+```c
+// 注意线程内天然的有序性
+semaphore S1=0;
+semaphore S2=0;
+func T1(){
+  A;
+  signal(S1);
+  wait(S2);
+  E;
+  F;
+}
+func T2(){
+  B;
+  wait(S1);
+  C;
+  signal(S2);
+  D;
+}
+```
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfRq3w8EzctYaDErh0OMGcApDoN1mQACTxhrG3KB-VaOlsBeQO6KbgEAAwIAA3cAAz0E)
+
+解：
+
+(1)
+
+设备 1:100BaseT 以太网交换机
+
+设备 2:100BaseT 集线器
+
+(2)
+
+假设最远距离是 x，则由于 RTT=64B✖️8/100Mbps=5.12us。所以，2x/(2✖️10^8)=(5.12-2✖️1.51)✖️10^-6，解得 x=210m
+
+(3)
+
+DHCP Discovery 报文
+
+可以
+
+ff-ff-ff-ff-ff-ff
+
+(4)
+
+地址 1:00-11-11-11-11-E1
+
+地址 2:00-11-11-11-11-C1
+
+地址 3:00-11-11-11-11-D1
 
 ## DS-4.1f-1017 408 算法真题分析
 
