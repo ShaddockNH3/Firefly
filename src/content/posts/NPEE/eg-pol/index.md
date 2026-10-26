@@ -254,6 +254,87 @@ However, Google and other big tech providers monitor their efficiency closely an
 
 吸取的教训：每个东西的意思都要翻译出来。
 
+### 2021 翻译
+
+6-7
+
+We tend to think that friends and family members are our biggest sources of connection, laughter, and warmth. While that may well be true, researchers have also recently found that interacting with strangers actually brings a boost in mood and feelings of belonging that we didn't expect.
+
+- 我倾向于认为朋友和家庭成员是我们联系，笑声和温暖最大的来源。
+
+- 订：我们倾向于认为，朋友和家人是我们情感联结、欢笑和温暖的最大来源。
+
+- 这些确实很有可能是事实，不过最近研究院已经发现和陌生人交流事实上也带来情绪上的提升和一种我们从未期待的归属感。
+
+- 订：虽然这很可能是事实，不过研究人员最近也发现，与陌生人交流其实也会带来情绪的提升和归属感，这是我们之前未曾预料到的。
+
+In one series of studies, researchers instructed Chicago-area commuters using public transportation to strike up a conversation with someone near them. On average,participants who followed this instruction felt better than those who had been told to stand or sit in silence. The researchers also argued that when we shy away from casual interactions with strangers, it is often due to a misplaced anxiety that they might not want to talk to us. Much of the time, however, this belief is false. As it turns out, many people are actually perfectly willing to talk—and may even be flattered to receive your attention.
+
+- 在一系列的实验中，研究人员建议芝加哥地区的通勤者在乘坐公共交通中，去突发的和他们相邻的人来一场对话。
+
+- 订：在一系列研究中，研究人员要求芝加哥地区乘坐公共交通的通勤者，与旁边的人攀谈（开始交谈）。
+
+- 平均下来，那些遵循这些建议的比那些被告知单独站着或安静的坐着的人感觉更好。
+
+- 订：平均而言，遵循这一要求的参与者，比那些被要求默默站着或坐着的人感觉更好。
+
+- 研究人员还发现对陌生人随意的讲话感到害羞这一现象一般来源于错位的尴尬——他们很有可能不想和我们说话。
+
+- 订：研究人员还提出，当我们回避与陌生人的随意交流时，通常是因为一种不必要的焦虑，即担心他们可能不想跟我们说话。
+
+- 然而，在大多数时候，这种相信是错误的。
+
+- 订：然而，在大多数情况下，这种想法是错误的。
+
+- 恰恰相反，事实上，很多人非常有意愿去聊天——并且甚至可能变得分散，为了收到你的关注。
+
+- 订：事实证明，很多人其实非常乐意交谈——甚至可能会因为得到你的关注而感到受宠若惊（荣幸）。
+
+### 2021 翻译立即二刷
+
+- We tend to think that friends and family members are our biggest sources of connection, laughter, and warmth.
+- 词块：We，tend think，定语从句（xxx 是最大的来源）
+- 我们倾向于认为朋友和家庭成员是我们连接，欢笑和温暖的最大来源。
+- 我们倾向于认为朋友和家庭成员是我们互联，欢笑和温暖的最大来源。
+- 情感联结
+
+- While that may well be true, researchers have also recently found that interacting with strangers actually brings a boost in mood and feelings of belonging that we didn't expect.
+- 词块：研究员们，近期发现，和陌生人交流。
+- 这或许是对的，但近期研究员们已经发现，和陌生人交流事实上会带来意想不到的情绪上涨和归属感。
+- 这或许是对的，但近期研究员们已经发现，出乎意料的，和陌生人交流事实上会带来情绪上涨和归属感。
+- 情绪提升，这是我们此前未预料到的（放最后）
+
+- In one series of studies, researchers instructed Chicago-area commuters using public transportation to strike up a conversation with someone near them.
+- 词块：在一些列的研究调查中；研究员们；指示；芝加哥地区；通勤者；公共交通；发起交流；他们附近的人；
+- 在一系列的研究调查中，研究员们指示芝加哥地区的通勤者们在公共交通通勤时，和他们附近的人发起交流。
+- 在一系列的研究调查中，研究员们指示芝加哥地区的通勤者们在使用公共交通通勤时，和他们附近的人发起交流。
+- 要求，与旁边的乘客攀谈
+
+- On average,participants who followed this instruction felt better than those who had been told to stand or sit in silence.
+- 词块：平均下来；参与者们；遵循建议；那些被指示站着或者静静坐着（不交流）；干到更好
+- 平均下来，比起哪些被指示站着或静静坐着不交流的人而言，这些遵守指示的参与者感到更好。
+- 平均下来，比起那些被指示站着或静静坐着不交流的人而言，这些遵守指示的参与者感到更好。
+
+- The researchers also argued that when we shy away from casual interactions with strangers, it is often due to a misplaced anxiety that they might not want to talk to us.
+- 词块：研究员们也发现；回避；由于不必要的担心；
+- 研究员们也发现，我们回避和陌生人交流，常常是由于不必要的担心，害怕他们不愿意和我们讲话。
+- 研究员们也发现，当我们回避和陌生人交流时，常常是由于不必要的担心，害怕他们可能不愿意和我们讲话。
+- 提出
+
+- Much of the time, however, this belief is false. As it turns out, many people are actually perfectly willing to talk—and may even be flattered to receive your attention.
+- 词块：然而在大多数时候，这种想法是错误的；事实上；事实非常想聊天；荣幸；受到关注
+- 然而在大多数时候，这种想法是错误的。事实上，很多人有非常强烈的意愿去聊天，并且他们甚至可能因为受到你的关注而感到荣幸。
+- 然而在大多数时候，这种想法是错误的。事实上，很多人有非常强烈的意愿去聊天，甚至，他们可能因为受到你的关注而感到荣幸。
+
+### 翻译自己总结的做题方法
+
+1. 找主谓宾，句子结构
+2. 找出词块
+3. 拼接组词
+4. 通读润色
+
+碰到不认识的词，根据语境推测模糊过去。
+
 ## 小作文
 
 ### 2010 小作文
