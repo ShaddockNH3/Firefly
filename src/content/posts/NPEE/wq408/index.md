@@ -11963,9 +11963,9 @@ H2 发送 P 的源 IP 地址是 192.168.1.2，目的地职是 203.10.2.2
 
 ### 408 2021 真题 2 刷
 
-- 分数为：
-- 第 43 题还没写
-- 第 46 题 -1 背书错误，扇区划分是在物理格式化的问题。
+- 分数为：148
+- 第 43 题 -1，主存寻址空间大小相关。
+- 第 46 题 -1，背书错误，扇区划分是在物理格式化的问题。
 
 ![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCTVq2E-yA5BQfn19T4MGCIJW3bg4ZQACARNrG89ByVZpPwVTrb7ccwEAAwIAA3gAAz0E)
 
@@ -12379,6 +12379,46 @@ n(n-1)/2
 只需要将比较语句 `if(a[i]<a[j])` 改为 `if(a[i]<=a[j])`
 
 ![43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWVq2HZiz4PDV9ijo_j0FzAKSq_asgACwRNrG89ByVb_ESg_vqDRCQEAAwIAA3gAAz0E)
+
+解：
+
+(1)
+
+ALU 宽度为 16 位，因为字长为 16 位。
+
+~~可寻址主存大小为 2^20✖️2B=2^21B=2MB。~~
+
+订：按字节编址，所以就是按照 B 来算。CPU 一次可以拿 2B，也可以拿 1B。按字编址这道题是 2MB，PC 至少 19 位，不过由于对齐一般而言也是取 20 位。
+
+指令寄存器为 16 位。
+
+MAR 为 20 位。
+
+MDR 为 8 位。
+
+(2)
+
+R 型最多定义 16 个操作。
+
+I 和 J 总共可以定义 2^6-1=63 个操作。
+
+通用寄存器最多有 4 个。
+
+(3)
+
+01B2H=0000,0001,1011,0010B=000000 01 10 11 0010，由于 `R[rd]<-R[rs] op R[rt]`，本题 rd 是 11，rs 是 01，rt 是 10，所以本题应该是 `R[3]<-R[1]-R[2]`。
+
+分析 01B2H，也就是 `R[3]<-R[1]-R[2]`，所以由 B052H-0008H=B052H+FFF8H=B04AH，可得：R1 内为 B052H，R2 内为 0008H，R3 内为 B04AH，没发生溢出。
+
+分析 01B3H，也就是 `R[3]<-R[1]*R[2]`。所以由 B052H\*0008H，也就是前者算术左移。B052H=1011,0000,0101,0010B<<3。由于移出的三位为 101，不全为 1，所以发生溢出，且结果为 1000,0010,1001,0000=8290H，可得：R1 内为 B052H，R2 内为 0008H，R3 内为 8290H。
+
+(4)
+
+符号扩展。
+
+(5)
+
+J 型。
 
 ![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCWZq2HZzdVk1U2cuXuCCJTwhRAlg_wACwhNrG89ByVajrsH4q9P_3QEAAwIAA3gAAz0E)
 
