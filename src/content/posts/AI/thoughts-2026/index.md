@@ -12,8 +12,11 @@ tags:
 category: AI
 series: AI
 seriesOrder: 4
-draft: false
+draft: true
 ---
+
+> [!Warning]
+> 本文采用大量 AI 辅助，待今年 12 月完全重构。
 
 ## 序：硅基破晓
 
