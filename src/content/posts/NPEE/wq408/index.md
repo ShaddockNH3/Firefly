@@ -13495,6 +13495,50 @@ ff-ff-ff-ff-ff-ff
 
 地址 3:00-11-11-11-11-D1
 
+### 408 近年真题 1 刷（23-26）
+
+- 完成时间：20261028
+- 分数：
+  - 选择题：-6
+  - 计组：-2
+  - 计网：-2
+- 时间：115+25=140
+
+选择题检查出来一个，大题检查出来置换选择排序第一步错了。
+
+值得注意的是，这次错的俩选择题好像三刷的时候也错了。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfhq4bNw8n75DYMMuWDvt4jsgI7tfAACXhVrGyANEFdRuV7Juwpu6AEAAwIAA3cAAz0E)
+
+错选为 C，本题构建完哈夫曼树之后不会算了。结果用成了长度除以个数去算。
+
+事实上应该算出来哈夫曼距离后，除以 3+4+5+6+8+10
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCflq4bPnDNkXqPXJNWZjJ_ctQQ7FGgACXxVrGyANEFfQh4ZSfZpSrgEAAwIAA3cAAz0E)
+
+属于低级错误了。又是 CF 的问题。-20 先转义再计算，显然 -20 转义成无符号数是一个很大的数，一个很小的无符号数 - 一个很大的无符号数，显然 CF=1。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfpq4bP--bemgALtVJll79S2Nfv4IAACYBVrGyANEFc9jMYJ_533ZAEAAwIAA3kAAz0E)
+
+语文阅读理解。完成 “后”。
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCftq4bRFdUecnlKQ5EIeHxN05ZdtaAACYhVrGyANEFcliO4dn8tVqAEAAwIAA3cAAz0E)
+
+低级错误 -2，第 2 问分析错误。本题第 2 问要求分析的是第 2 条，我写成了第 7 条。
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfxq4bSuFR7klC4Iyrkw-djTaJ920QACZBVrGyANEFficWODfcfL9gEAAwIAA3cAAz0E)
+
+第 4 问，没考虑建立 TCP 连接。
+
+## 408 做题总结
+
+检查篇
+
+1. 语文阅读理解
+2. 题目要求分析 A，我分析 B
+3. A 推 B 可以，B 推 A 可不可以？
+4. 计网需不需要考虑建立 TCP 连接
+
 ## DS-4.1f-1017 408 算法真题分析
 
 > 我觉得还是有必要看一下的，尤其是树和图那块。树只用看看简单题怎么做就好了，图只用看看岛屿和 bfs 单元路径查找。
