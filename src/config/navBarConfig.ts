@@ -68,6 +68,13 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 书签导航
 			LinkPresets.Booknav,
 
+			// 战舰世界舰长档案
+			{
+				name: "舰长档案",
+				url: "/wows/",
+				icon: "material-symbols:anchor",
+			},
+
 			// 哔哩哔哩追番
 			LinkPresets.Bilibili,
 

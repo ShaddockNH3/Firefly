@@ -5,6 +5,9 @@ description: 自用书源分享，包含番茄小说，起点小说以及轻小�
 tags:
   - 书源
   - md3
+  - 番茄小说
+  - 起点小说
+  - 轻小说
 category: Novel
 draft: false
 series: "小说"
@@ -68,7 +71,7 @@ image: ./cover.png
     "searchUrl": "https://novel.cooks.tw/api/novel/search?q={{key}}&page={{page}}&limit=20&lang=zh-CN,{\"headers\":{\"User-Agent\":\"Mozilla/5.0 (Android 11; Mobile; rv:147.0) Gecko/147.0 Firefox/147.0\",\"Accept-Language\":\"zh-CN,zh-TW;q=0.9,zh;q=0.8,en;q=0.6\",\"Referer\":\"https://novel.cooks.tw/\"}}",
     "weight": 0,
     "bookSourceGroup": "cb-ds",
-    "bookSourceComment": "番茄镜像 novel.cooks.tw｜无需登录、无付费、无广告，番茄全本首选。\n实测：《霍格沃茨：不对，你们咋都性转了》第78章 2256 字，《十日终焉》1496 章全本。\n只支持搜索。若提示 Just a moment，是 Cloudflare 临时限速，过几分钟恢复。",
+    "bookSourceComment": "番茄镜像 novel.cooks.tw｜无需登录、无付费、无广告，番茄全本首选。\n实测：《霍格沃茨：不对，你们咋都性转了》第 78 章 2256 字，《十日终焉》1496 章全本。\n只支持搜索。若提示 Just a moment，是 Cloudflare 临时限速，过几分钟恢复。",
     "loginUrl": "",
     "loginUi": "",
     "loginCheckJs": null,
@@ -86,9 +89,9 @@ image: ./cover.png
     "enabledExplore": true,
     "exploreUrl": "@js:\nvar C = {\"m\":[[\"西方奇幻\",1141],[\"东方仙侠\",1140],[\"科幻末世\",8],[\"男频衍生\",1016],[\"都市高武\",1014],[\"悬疑灵异\",751],[\"悬疑脑洞\",539],[\"抗战谍战\",504],[\"历史古代\",273],[\"历史脑洞\",272],[\"都市种田\",263],[\"都市脑洞\",262],[\"都市日常\",261],[\"玄幻脑洞\",257],[\"战神赘婿\",27],[\"动漫衍生\",718],[\"游戏体育\",746],[\"传统玄幻\",258],[\"都市修真\",124]],\"f\":[[\"女频悬疑\",747],[\"古风世情\",1139],[\"科幻末世\",8],[\"女频衍生\",1015],[\"民国言情\",1017],[\"悬疑脑洞\",539],[\"青春甜宠\",749],[\"双男主\",275],[\"古言脑洞\",253],[\"现言脑洞\",267],[\"玄幻言情\",248],[\"宫斗宅斗\",246],[\"豪门总裁\",748],[\"动漫衍生\",718],[\"星光璀璨\",745],[\"游戏体育\",746],[\"职场婚恋\",750],[\"双女主\",704],[\"年代\",79],[\"种田\",23],[\"快穿\",24]],\"a\":[[\"女频悬疑\",747],[\"西方奇幻\",1141],[\"东方仙侠\",1140],[\"古风世情\",1139],[\"科幻末世\",8],[\"男频衍生\",1016],[\"女频衍生\",1015],[\"民国言情\",1017],[\"都市高武\",1014],[\"悬疑灵异\",751],[\"悬疑脑洞\",539],[\"抗战谍战\",504],[\"青春甜宠\",749],[\"双男主\",275],[\"古言脑洞\",253],[\"历史古代\",273],[\"历史脑洞\",272],[\"现言脑洞\",267],[\"都市种田\",263],[\"都市脑洞\",262],[\"都市日常\",261],[\"玄幻脑洞\",257],[\"玄幻言情\",248],[\"宫斗宅斗\",246],[\"豪门总裁\",748],[\"战神赘婿\",27],[\"动漫衍生\",718],[\"星光璀璨\",745],[\"游戏体育\",746],[\"职场婚恋\",750],[\"双女主\",704],[\"传统玄幻\",258],[\"都市修真\",124],[\"年代\",79],[\"种田\",23],[\"快穿\",24]]};\nvar groups = [[\"男生\", 1, C.m], [\"女生\", 0, C.f], [\"全部\", -1, C.a]];\nvar api = \"https://fanqienovel.com/api/author/library/book_list/v0/?page_count=18&page_index={{page-1}}\";\nvar opt = JSON.stringify({bodyJs: \"fqDecL(result)\"});\nvar out = [];\nfor (var i = 0; i < groups.length; i++) {\n  var g = groups[i];\n  out.push({title: g[0], url: \"\", style: {layout_flexBasisPercent: 1, layout_flexGrow: 1}});\n  var list = [[\"全部\", -1]].concat(g[2]);\n  for (var j = 0; j < list.length; j++) {\n    out.push({\n      title: list[j][0],\n      url: api + \"&gender=\" + g[1] + \"&category_id=\" + list[j][1] + \"&book_type=-1{{fqFilter(source.getLoginInfo())}},\" + opt,\n      style: {layout_flexGrow: 1, layout_flexBasisPercent: 0.25}\n    });\n  }\n}\nJSON.stringify(out);",
     "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36\", \"Referer\": \"https://fanqienovel.com/\"}",
-    "jsLib": "var FQ_BASE = 0xE3E8;\nvar FQ_TC = \"D在主特家军然表场4要只v和#6别还g现儿岁##此象月3出战工相o男直失世F都平文什VO将真T那当#会立些u是十张学气大爱两命全后东性通被1它乐接而感车山公了常以何可话先pi叫轻M士w着变尔快l个说少色里安花远7难师放t报认面道S#克地度I好机U民写把万同水新没书电吃像斯5为y白几日教看但第加候作上拉住有法r事应位利你声身国问马女他Y比父xAHNsX边美对所金活回意到z从j知又内因点Q三定8Rb正或夫向德听更#得告并本q过记L让打f人就者去原满体做经K走如孩cG给使物#最笑部#员等受k行一条果动光门头见往自解成处天能于名其发总母的死手入路进心来h时力多开已许d至由很界n小与Z想代么分生口再妈望次西风种带J#实情才这#E我神格长觉间年眼无不亲关结0友信下却重己老2音字m呢明之前高PB目太e9起棱她也W用方子英每理便四数期中C外样a海们任\";\nvar FQ_TL = \"体y十现快便话却月物水的放知爱万#表风理O老也p常克平几最主她s将法情o光a我呢J员太每望受教w利军已U人如变得要少斯门电m男没AK国时中走么何口小向问轻Td神下间车fG度D又大面远就写j给通起实E#它去S到道数吃们加P是无把事西多界#发新外活解孩只作前Y尔经#u心告父等Q民全这9果安#i母8r说任先和地C张战场g像cq你使#样总目x性处音头#应乐关能花l当名手4重字声力友然生代内里本回真入师象#0点R亲V种动英命ZhX做特边高有B为期自年马认出接至H正方感所明者棱F住学还分意更其n但比觉以由死家让失士L2I金叫身报听W再原山海白很见5直位第工个开岁好用都于可同3次四#日信与女笑满并部什不从或机此#了记三e些bN夫会才儿眼两美被一公来立z长对己看k许因相色后往打结格过世气7子条在书之定v拉成进带着东上想天他妈1文而路那别德6Mt行候难\";\nfunction fqDec(s, t) {\n  if (s == null) return \"\";\n  s = String(s);\n  var out = [], i, c, ch;\n  for (i = 0; i < s.length; i++) {\n    c = s.charCodeAt(i);\n    if (c >= FQ_BASE && c < FQ_BASE + t.length) {\n      ch = t.charAt(c - FQ_BASE);\n      out.push(ch == \"#\" ? s.charAt(i) : ch);\n    } else out.push(s.charAt(i));\n  }\n  return out.join(\"\");\n}\nfunction fqDecC(s) { return fqDec(s, FQ_TC); }\nfunction fqDecL(s) { return fqDec(s, FQ_TL); }\nfunction fqHasPua(s) { return /[\\uE000-\\uF8FF]/.test(String(s)); }\nfunction fqFilter(info) {\n  var m = {};\n  try { if (info != null && String(info) != \"\") m = JSON.parse(String(info)) || {}; } catch (e) { m = {}; }\n  var a = String(m[\"状态\"] || \"\"), b = String(m[\"字数\"] || \"\").replace(/\\s/g, \"\"), c = String(m[\"排序\"] || \"\");\n  var st = /完/.test(a) ? 0 : (/连/.test(a) ? 1 : -1);\n  var wc = -1;\n  if (/^30(万)?(字)?以下/.test(b)) wc = 0;\n  else if (/^30[-~～至]50/.test(b)) wc = 1;\n  else if (/^50[-~～至]100/.test(b)) wc = 2;\n  else if (/^100[-~～至]200/.test(b)) wc = 3;\n  else if (/^200(万)?(字)?以上/.test(b)) wc = 4;\n  var so = /新/.test(c) ? 1 : (/字/.test(c) ? 2 : 0);\n  return \"&creation_status=\" + st + \"&word_count=\" + wc + \"&sort=\" + so;\n}\nfunction fqWan(n) { n = Number(n) || 0; return n >= 10000 ? (n / 10000).toFixed(1) + \"万字\" : n + \"字\"; }\nfunction fqContent(html) {\n  html = String(html);\n  var m = html.match(/__INITIAL_STATE__\\s*=\\s*(\\{[\\s\\S]*?\\});\\s*\\}\\s*\\)\\s*\\(\\s*\\)/);\n  if (!m) return \"【番茄】未找到章节数据（页面结构可能已变化）\";\n  var st = JSON.parse(m[1].replace(/:\\s*undefined/g, \":null\"));\n  var cd = (st.reader && st.reader.chapterData) || {};\n  var raw = String(cd.content || \"\");\n  var paras = [];\n  raw.replace(/<p[^>]*>([\\s\\S]*?)<\\/p>/g, function (a, b) { paras.push(b); return a; });\n  if (!paras.length) paras = raw.split(/<br\\s*\\/?>|\\n/);\n  var lines = [], i, t;\n  for (i = 0; i < paras.length; i++) {\n    t = fqDecC(paras[i]).replace(/<[^>]+>/g, \"\").replace(/&nbsp;/g, \" \").replace(/&lt;/g, \"<\").replace(/&gt;/g, \">\").replace(/&quot;/g, \"\\\"\").replace(/&#39;/g, \"'\").replace(/&amp;/g, \"&\").replace(/^\\s+|\\s+$/g, \"\");\n    if (t) lines.push(t);\n  }\n  var text = lines.join(\"\\n\");\n  var words = Number(cd.chapterWordNumber) || 0;\n  if ((cd.isChapterLock === true || String(cd.isChapterLock) == \"true\") && words > 0 && text.length < words * 0.6) {\n    text += \"\\n\\n【未登录：番茄网页端第10章以后只返回片段。请在书源「登录」界面点「网页登录」登录自己的番茄账号，然后刷新本章。】\";\n  }\n  if (fqHasPua(text)) text += \"\\n\\n【番茄字体映射可能已更新，部分文字无法解码，请反馈更新书源】\";\n  return text;\n}",
+    "jsLib": "var FQ_BASE = 0xE3E8;\nvar FQ_TC = \"D在主特家军然表场4要只v和#6别还g现儿岁##此象月3出战工相o男直失世F都平文什VO将真T那当#会立些u是十张学气大爱两命全后东性通被1它乐接而感车山公了常以何可话先pi叫轻M士w着变尔快l个说少色里安花远7难师放t报认面道S#克地度I好机U民写把万同水新没书电吃像斯5为y白几日教看但第加候作上拉住有法r事应位利你声身国问马女他Y比父xAHNsX边美对所金活回意到z从j知又内因点Q三定8Rb正或夫向德听更#得告并本q过记L让打f人就者去原满体做经K走如孩cG给使物#最笑部#员等受k行一条果动光门头见往自解成处天能于名其发总母的死手入路进心来h时力多开已许d至由很界n小与Z想代么分生口再妈望次西风种带J#实情才这#E我神格长觉间年眼无不亲关结0友信下却重己老2音字m呢明之前高PB目太e9起棱她也W用方子英每理便四数期中C外样a海们任\";\nvar FQ_TL = \"体y十现快便话却月物水的放知爱万#表风理O老也p常克平几最主她s将法情o光a我呢J员太每望受教w利军已U人如变得要少斯门电m男没AK国时中走么何口小向问轻Td神下间车fG度D又大面远就写j给通起实E#它去S到道数吃们加P是无把事西多界#发新外活解孩只作前Y尔经#u心告父等Q民全这9果安#i母8r说任先和地C张战场g像cq你使#样总目x性处音头#应乐关能花l当名手4重字声力友然生代内里本回真入师象#0点R亲V种动英命ZhX做特边高有B为期自年马认出接至H正方感所明者棱F住学还分意更其n但比觉以由死家让失士L2I金叫身报听W再原山海白很见5直位第工个开岁好用都于可同3次四#日信与女笑满并部什不从或机此#了记三e些bN夫会才儿眼两美被一公来立z长对己看k许因相色后往打结格过世气7子条在书之定v拉成进带着东上想天他妈1文而路那别德6Mt行候难\";\nfunction fqDec(s, t) {\n  if (s == null) return \"\";\n  s = String(s);\n  var out = [], i, c, ch;\n  for (i = 0; i < s.length; i++) {\n    c = s.charCodeAt(i);\n    if (c >= FQ_BASE && c < FQ_BASE + t.length) {\n      ch = t.charAt(c - FQ_BASE);\n      out.push(ch == \"#\" ? s.charAt(i) : ch);\n    } else out.push(s.charAt(i));\n  }\n  return out.join(\"\");\n}\nfunction fqDecC(s) { return fqDec(s, FQ_TC); }\nfunction fqDecL(s) { return fqDec(s, FQ_TL); }\nfunction fqHasPua(s) { return /[\\uE000-\\uF8FF]/.test(String(s)); }\nfunction fqFilter(info) {\n  var m = {};\n  try { if (info != null && String(info) != \"\") m = JSON.parse(String(info)) || {}; } catch (e) { m = {}; }\n  var a = String(m[\"状态\"] || \"\"), b = String(m[\"字数\"] || \"\").replace(/\\s/g, \"\"), c = String(m[\"排序\"] || \"\");\n  var st = /完/.test(a) ? 0 : (/连/.test(a) ? 1 : -1);\n  var wc = -1;\n  if (/^30(万)?(字)?以下/.test(b)) wc = 0;\n  else if (/^30[-~～至]50/.test(b)) wc = 1;\n  else if (/^50[-~～至]100/.test(b)) wc = 2;\n  else if (/^100[-~～至]200/.test(b)) wc = 3;\n  else if (/^200(万)?(字)?以上/.test(b)) wc = 4;\n  var so = /新/.test(c) ? 1 : (/字/.test(c) ? 2 : 0);\n  return \"&creation_status=\" + st + \"&word_count=\" + wc + \"&sort=\" + so;\n}\nfunction fqWan(n) { n = Number(n) || 0; return n >= 10000 ? (n / 10000).toFixed(1) + \"万字\" : n + \"字\"; }\nfunction fqContent(html) {\n  html = String(html);\n  var m = html.match(/__INITIAL_STATE__\\s*=\\s*(\\{[\\s\\S]*?\\});\\s*\\}\\s*\\)\\s*\\(\\s*\\)/);\n  if (!m) return \"【番茄】未找到章节数据（页面结构可能已变化）\";\n  var st = JSON.parse(m[1].replace(/:\\s*undefined/g, \":null\"));\n  var cd = (st.reader && st.reader.chapterData) || {};\n  var raw = String(cd.content || \"\");\n  var paras = [];\n  raw.replace(/<p[^>]*>([\\s\\S]*?)<\\/p>/g, function (a, b) { paras.push(b); return a; });\n  if (!paras.length) paras = raw.split(/<br\\s*\\/?>|\\n/);\n  var lines = [], i, t;\n  for (i = 0; i < paras.length; i++) {\n    t = fqDecC(paras[i]).replace(/<[^>]+>/g, \"\").replace(/&nbsp;/g, \" \").replace(/&lt;/g, \"<\").replace(/&gt;/g, \">\").replace(/&quot;/g, \"\\\"\").replace(/&#39;/g, \"'\").replace(/&amp;/g, \"&\").replace(/^\\s+|\\s+$/g, \"\");\n    if (t) lines.push(t);\n  }\n  var text = lines.join(\"\\n\");\n  var words = Number(cd.chapterWordNumber) || 0;\n  if ((cd.isChapterLock === true || String(cd.isChapterLock) == \"true\") && words > 0 && text.length < words * 0.6) {\n    text += \"\\n\\n【未登录：番茄网页端第 10 章以后只返回片段。请在书源「登录」界面点「网页登录」登录自己的番茄账号，然后刷新本章。】\";\n  }\n  if (fqHasPua(text)) text += \"\\n\\n【番茄字体映射可能已更新，部分文字无法解码，请反馈更新书源】\";\n  return text;\n}",
     "lastUpdateTime": 1793093336741,
-    "loginUi": "[{\"name\":\"状态\",\"type\":\"select\",\"chars\":[\"全部\",\"连载中\",\"已完结\"],\"default\":\"全部\"},{\"name\":\"字数\",\"type\":\"select\",\"chars\":[\"全部\",\"30万以下\",\"30-50万\",\"50-100万\",\"100-200万\",\"200万以上\"],\"default\":\"全部\"},{\"name\":\"排序\",\"type\":\"select\",\"chars\":[\"最热\",\"最新\",\"字数\"],\"default\":\"最热\"},{\"name\":\"① 网页登录（打开番茄首页手动登录）\",\"type\":\"button\",\"action\":\"webLogin()\"},{\"name\":\"Cookie（粘贴整串，含分号）\",\"type\":\"text\",\"default\":\"\"},{\"name\":\"保存上面的 Cookie\",\"type\":\"button\",\"action\":\"saveCookie()\"}]",
+    "loginUi": "[{\"name\":\"状态\",\"type\":\"select\",\"chars\":[\"全部\",\"连载中\",\"已完结\"],\"default\":\"全部\"},{\"name\":\"字数\",\"type\":\"select\",\"chars\":[\"全部\",\"30 万以下\",\"30-50 万\",\"50-100 万\",\"100-200 万\",\"200 万以上\"],\"default\":\"全部\"},{\"name\":\"排序\",\"type\":\"select\",\"chars\":[\"最热\",\"最新\",\"字数\"],\"default\":\"最热\"},{\"name\":\"① 网页登录（打开番茄首页手动登录）\",\"type\":\"button\",\"action\":\"webLogin()\"},{\"name\":\"Cookie（粘贴整串，含分号）\",\"type\":\"text\",\"default\":\"\"},{\"name\":\"保存上面的 Cookie\",\"type\":\"button\",\"action\":\"saveCookie()\"}]",
     "loginUrl": "function login() {\n  java.toast(\"筛选已保存\");\n}\nfunction webLogin() {\n  java.startBrowserAwait(\"https://fanqienovel.com/\", \"在打开的页面里点右上角「登录」，用手机号/扫码登录，完成后点「确认」\");\n}\nfunction saveCookie() {\n  var ck = String(source.getLoginInfoMap().get(\"Cookie（粘贴整串，含分号）\") || \"\").trim();\n  if (ck.length < 20) {\n    java.toast(\"Cookie 太短，请重新复制整串\");\n    return;\n  }\n  source.putLoginHeader(JSON.stringify({\"Cookie\": ck}));\n  java.toast(\"Cookie 已保存，退出书源管理后刷新章节\");\n}",
     "ruleBookInfo": {
       "author": "$.data.author",
@@ -135,7 +138,7 @@ image: ./cover.png
     "concurrentRate": "1/1000"
   },
   {
-    "bookSourceComment": "book.washai.net｜无需登录、无付费、正文无广告，番茄+起点通吃。\n实测：《十日终焉》1496 章全本（第78章 2256 字）、《诡秘之主》1415 章（第50章 3160 字）。\n【实测】《废土恋爱游戏》搜不到（书库偏旧），但《十日终焉》1496 章、《诡秘之主》1415 章完整。",
+    "bookSourceComment": "book.washai.net｜无需登录、无付费、正文无广告，番茄 + 起点通吃。\n实测：《十日终焉》1496 章全本（第 78 章 2256 字）、《诡秘之主》1415 章（第 50 章 3160 字）。\n【实测】《废土恋爱游戏》搜不到（书库偏旧），但《十日终焉》1496 章、《诡秘之主》1415 章完整。",
     "bookSourceGroup": "cb-ds",
     "bookSourceType": 0,
     "enabled": true,
@@ -157,7 +160,7 @@ image: ./cover.png
     "ruleExplore": {
       "bookList": "#bookList .classBookCard",
       "name": ".classBookTitle a@text",
-      "author": ".classBookAuthor a@text##作者：",
+      "author": ".classBookAuthor a@text## 作者：",
       "coverUrl": ".classBookCover img@src",
       "intro": ".classBookDesc@text",
       "kind": ".classCoverCat@text",
@@ -175,7 +178,7 @@ image: ./cover.png
     "ruleSearch": {
       "bookList": "#bookList .classBookCard",
       "name": ".classBookTitle a@text",
-      "author": ".classBookAuthor a@text##作者：",
+      "author": ".classBookAuthor a@text## 作者：",
       "coverUrl": ".classBookCover img@src",
       "intro": ".classBookDesc@text",
       "kind": ".classCoverCat@text",
@@ -203,14 +206,14 @@ image: ./cover.png
     },
     "ruleContent": {
       "content": "#showReading .readChapterAppendBody@text",
-      "replaceRegex": "^\\s*第[0-9零〇一二三四五六七八九十百千]+章[^\\n]*\\n?@@^\\s*正文卷\\s*\\n?",
+      "replaceRegex": "^\\s*第 [0-9 零〇一二三四五六七八九十百千]+章 [^\\n]*\\n?@@^\\s*正文卷\\s*\\n?",
       "sourceRegex": "",
       "nextContentUrl": "",
       "imageDecode": ""
     }
   },
   {
-    "bookSourceComment": "suduguu.com｜无需登录、无付费、无广告。\n实测：《十日终焉》第78章、《诡秘之主》999 章、《斗罗大陆III》第50章。目录上限 999 章。\n章末「(本章完)」「求收藏求推荐票」已用 replaceRegex 删除。\n【实测】《废土恋爱游戏》搜不到（书库偏旧），《诡秘之主》999 章可用。",
+    "bookSourceComment": "suduguu.com｜无需登录、无付费、无广告。\n实测：《十日终焉》第 78 章、《诡秘之主》999 章、《斗罗大陆 III》第 50 章。目录上限 999 章。\n章末「(本章完)」「求收藏求推荐票」已用 replaceRegex 删除。\n【实测】《废土恋爱游戏》搜不到（书库偏旧），《诡秘之主》999 章可用。",
     "bookSourceGroup": "cb-ds",
     "bookSourceType": 0,
     "enabled": true,
@@ -250,7 +253,7 @@ image: ./cover.png
     "ruleSearch": {
       "bookList": ".item",
       "name": ".itemtxt h3 a, .itemtxt h1 a@text",
-      "author": ".itemtxt p a@text##作者：",
+      "author": ".itemtxt p a@text## 作者：",
       "coverUrl": ".item img@src",
       "intro": ".des bb@text",
       "kind": ".itemtxt p span@text",
@@ -260,7 +263,7 @@ image: ./cover.png
     },
     "ruleBookInfo": {
       "name": ".itemtxt h1 a@text",
-      "author": ".itemtxt p a@text##作者：",
+      "author": ".itemtxt p a@text## 作者：",
       "coverUrl": ".item img@src",
       "intro": "",
       "kind": ".itemtxt p span@text",
@@ -278,14 +281,14 @@ image: ./cover.png
     },
     "ruleContent": {
       "content": ".con@textNodes",
-      "replaceRegex": "##\\((本章完|未完待续)\\)|－{5,}[\\s\\S]{0,120}?(求收藏|求推荐票)[^\\n]*##",
+      "replaceRegex": "##\\((本章完 | 未完待续)\\)|－{5,}[\\s\\S]{0,120}?(求收藏 | 求推荐票)[^\\n]*##",
       "sourceRegex": "",
       "nextContentUrl": "text.下一页@href",
       "imageDecode": ""
     }
   },
   {
-    "bookSourceComment": "rulianshi.org（365小说网镜像）｜无需登录、无付费，书库更新快，起点新书能第一时间搜到。\n实测：《废土恋爱游戏》472 章，第233章 5120 字；《诡秘之主》1466 章，第734章 3891 字。\n正文首尾的「请记住本书首发域名…入殓师灵异录…牢记网址…」已用替换规则删除。",
+    "bookSourceComment": "rulianshi.org（365 小说网镜像）｜无需登录、无付费，书库更新快，起点新书能第一时间搜到。\n实测：《废土恋爱游戏》472 章，第 233 章 5120 字；《诡秘之主》1466 章，第 734 章 3891 字。\n正文首尾的「请记住本书首发域名…入殓师灵异录…牢记网址…」已用替换规则删除。",
     "bookSourceGroup": "cb-ds",
     "bookSourceName": "入殓师灵异录",
     "bookSourceType": 0,
@@ -303,14 +306,14 @@ image: ./cover.png
       "author": "class.info@class.small@tag.span.0@text",
       "coverUrl": "class.cover@img@src",
       "intro": "class.info@ownText",
-      "kind": "class.info@class.small@tag.span.4@text&&\nclass.info@class.small@tag.span.1@text&&\nclass.info@class.small@tag.span.2@text##分类：|状态：|更新时间：",
+      "kind": "class.info@class.small@tag.span.4@text&&\nclass.info@class.small@tag.span.1@text&&\nclass.info@class.small@tag.span.2@text## 分类：|状态：|更新时间：",
       "lastChapter": "class.info@class.small@tag.span.5@a@text",
       "name": "class.info@h2@text",
       "tocUrl": "",
-      "wordCount": "class.info@class.small@tag.span.3@text##字数："
+      "wordCount": "class.info@class.small@tag.span.3@text## 字数："
     },
     "ruleContent": {
-      "content": "id.content@html##(?:http[^<\\s]*html|请记住本书首发域名[^<]*|入殓师灵异录[^<]*|牢记网址[^<]*|全文字更新[^<]*)##",
+      "content": "id.content@html##(?:http[^<\\s]*html|请记住本书首发域名 [^<]*|入殓师灵异录 [^<]*|牢记网址 [^<]*|全文字更新 [^<]*)##",
       "nextContentUrl": "text.下一页@href"
     },
     "ruleExplore": {},
@@ -334,7 +337,7 @@ image: ./cover.png
     "loginCheckJs": null
   },
   {
-    "bookSourceComment": "起点书收录最全（《苍青之剑》894 章、《诡秘之主》1451 章），无需登录、无付费、无广告。\n※ 站点限流严重，连搜过快提示「频率过快请10秒后再试」，建议只在其它起点源换源失败时使用。\n【实测】《废土恋爱游戏》450 章，第233章 2132 字，可用；但限流严重。",
+    "bookSourceComment": "起点书收录最全（《苍青之剑》894 章、《诡秘之主》1451 章），无需登录、无付费、无广告。\n※ 站点限流严重，连搜过快提示「频率过快请 10 秒后再试」，建议只在其它起点源换源失败时使用。\n【实测】《废土恋爱游戏》450 章，第 233 章 2132 字，可用；但限流严重。",
     "bookSourceGroup": "cb-ds",
     "bookSourceName": "天空书屋",
     "bookSourceType": 0,
@@ -398,7 +401,7 @@ image: ./cover.png
     "loginCheckJs": null
   },
   {
-    "bookSourceComment": "deqixs.org｜无需登录、无付费、正文无广告。\n实测：《诡秘之主》1925 章（目录 3 页自动拼接，第50章 1007 字）。\n【实测】《废土恋爱游戏》搜不到（书库偏旧），《诡秘之主》1925 章可用。",
+    "bookSourceComment": "deqixs.org｜无需登录、无付费、正文无广告。\n实测：《诡秘之主》1925 章（目录 3 页自动拼接，第 50 章 1007 字）。\n【实测】《废土恋爱游戏》搜不到（书库偏旧），《诡秘之主》1925 章可用。",
     "bookSourceGroup": "cb-ds",
     "bookSourceType": 0,
     "enabled": true,
@@ -420,7 +423,7 @@ image: ./cover.png
     "ruleExplore": {
       "bookList": ".item",
       "name": ".itemtxt h3 a@text",
-      "author": ".itemtxt p a@text##作者：",
+      "author": ".itemtxt p a@text## 作者：",
       "coverUrl": ".item img@src",
       "intro": "",
       "kind": ".itemtxt p:first-of-type span:first-child@text",
@@ -438,7 +441,7 @@ image: ./cover.png
     "ruleSearch": {
       "bookList": ".item",
       "name": ".itemtxt h3 a, .itemtxt h1 a@text",
-      "author": ".itemtxt p a@text##作者：",
+      "author": ".itemtxt p a@text## 作者：",
       "coverUrl": ".item img@src",
       "intro": ".des bb@text",
       "kind": ".itemtxt p span@text",
@@ -448,7 +451,7 @@ image: ./cover.png
     },
     "ruleBookInfo": {
       "name": ".itemtxt h1 a@text",
-      "author": ".itemtxt p a@text##作者：",
+      "author": ".itemtxt p a@text## 作者：",
       "coverUrl": ".item img@src",
       "intro": "",
       "kind": ".itemtxt p span@text",
@@ -472,8 +475,8 @@ image: ./cover.png
     }
   },
   {
-    "bookSourceComment": "bqg39.cc｜搜索走公开 API，详情/正文用 WebView 加载。\n实测：可搜到《苍青之剑》(幽祝)。依赖 WebView，打开章节约慢 2 秒，作起点最后备选。\n【实测】可搜到《废土恋爱游戏》，但正文走 WebView，抽检第233章解析失败，仅作最后备选。",
-    "bookSourceName": "笔趣阁39",
+    "bookSourceComment": "bqg39.cc｜搜索走公开 API，详情/正文用 WebView 加载。\n实测：可搜到《苍青之剑》(幽祝)。依赖 WebView，打开章节约慢 2 秒，作起点最后备选。\n【实测】可搜到《废土恋爱游戏》，但正文走 WebView，抽检第 233 章解析失败，仅作最后备选。",
+    "bookSourceName": "笔趣阁 39",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.bqg39.cc",
     "bookUrlPattern": "https://www.bqg301.cc/#/book/\\d+/?|https://www.bqg301.cc/#/book/\\d+/\\d+\\.html|https://www.bqg39.cc/chapter/\\d+/?",
@@ -487,13 +490,13 @@ image: ./cover.png
     "ruleBookInfo": {
       "author": "#author@text##^作者：##||$.author",
       "coverUrl": ".cover img@src##^//##https://||$.id@js:'https://www.bqg39.cc/bookimg/'+Math.floor(result/1000)+'/'+result+'.jpg'",
-      "intro": "#intro@text##展开全部>>##||$.intro",
+      "intro": "#intro@text## 展开全部>>##||$.intro",
       "kind": "#full@text##^状态：##||#update@text##^更新时间：##||$.sortname||$.full||$.lastupdate",
       "lastChapter": "#lastchapter a@text||$.lastchapter",
       "name": "#title@text||$.title"
     },
     "ruleContent": {
-      "content": "#chaptercontent@html@js:String(result).replace(/<br\\s*\\/?\\>/gi,'\\n').replace(/<\\/p>/gi,'\\n').replace(/<[^>]+>/g,'').replace(/&nbsp;/g,' ').replace(/请收藏本站[\\s\\S]*/,'').trim()"
+      "content": "#chaptercontent@html@js:String(result).replace(/<br\\s*\\/?\\>/gi,'\\n').replace(/<\\/p>/gi,'\\n').replace(/<[^>]+>/g,'').replace(/&nbsp;/g,' ').replace(/请收藏本站 [\\s\\S]*/,'').trim()"
     },
     "ruleExplore": {
       "author": "$.author@js:String(result).trim()",
@@ -525,7 +528,7 @@ image: ./cover.png
     "concurrentRate": "1/1500"
   },
   {
-    "bookSourceComment": "huanmengacg.com 公开 API｜无需登录、无付费，日轻首选。\n实测：《OVERLORD》154 章（第140章 4.4 万字）、《无职转生》585 章、《刀剑神域》《魔法禁书目录》。\n章首章尾站点推广行已用 replaceRegex 删除。",
+    "bookSourceComment": "huanmengacg.com 公开 API｜无需登录、无付费，日轻首选。\n实测：《OVERLORD》154 章（第 140 章 4.4 万字）、《无职转生》585 章、《刀剑神域》《魔法禁书目录》。\n章首章尾站点推广行已用 replaceRegex 删除。",
     "bookSourceGroup": "cb-ds",
     "bookSourceName": "幻梦轻小说",
     "bookSourceType": 0,
@@ -553,7 +556,7 @@ image: ./cover.png
     "ruleContent": {
       "content": "$.data.content",
       "imageStyle": "SINGLE",
-      "replaceRegex": "##<p>[^<]*(?:幻梦|huanmengacg|最新最全|尽在幻梦)[^<]*</p>|<p>[—－\\-_＝=]{6,}</p>##"
+      "replaceRegex": "##<p>[^<]*(?:幻梦|huanmengacg|最新最全 | 尽在幻梦)[^<]*</p>|<p>[—－\\-_＝=]{6,}</p>##"
     },
     "ruleExplore": {
       "author": "$.author",

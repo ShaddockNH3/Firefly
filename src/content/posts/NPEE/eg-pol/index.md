@@ -22,9 +22,11 @@ seriesOrder: 1
 
 英语套卷：第 33 周 - 第 34 周：翻译和作文的简单研究，以及每天同时进行早年阅读重刷（10-11）
 
-英语套卷：第 35 周：以 21 年真题为例，深度研究一份，然后模考一份 22 来点感觉，作文与翻译研究明白怎么学
+英语套卷 2：第 35 周 - 第 36 周：以 21 年真题为例，深度研究一份，22-23 真题来点感觉，小作文与翻译研究明白怎么学，二刷 12-16 年卷子。
 
-政治：第 29 周 - 第 42 周，共 14 周。先花 6 周的时间刷一遍选择题（徐涛马原强化课 + 苍盾），也就是第 34 周结束，再花 6 周的时间 2 刷一遍选择题（肖背诵手册，肖 8 的选择题），再花 2 周的时间背大题。
+英语套卷 3：第 37 周 - 第 38 周：研究大作文，模考 24、25 和 26 真题，复盘小作文和翻译，二刷 17-23 年试卷。
+
+政治：第 29 周 - 第 42 周，共 14 周。先花 6 周的时间刷一遍选择题（徐涛马原强化课 + 苍盾），也就是第 34 周结束，再花 6 周的时间 2 刷一遍选择题（肖背诵手册，肖 8 的选择题），再花 2 周的时间背大题。注意这里的刷选择题是包含刷错题的。
 
 ## 政治前言
 
@@ -43,6 +45,10 @@ seriesOrder: 1
 ## 政治经济学
 
 [30 分钟学完｜政治经济学、科学社会主义，速成课【空卡】](https://www.bilibili.com/video/BV1YnYL6SESt/?share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+## 政治二刷后模考
+
+- 以 1600 为底，第一份随机 33 题：20 分
 
 ## 英语前言
 
@@ -123,6 +129,7 @@ seriesOrder: 1
   - 抓情感色彩词
   - 梳理句间逻辑关系，如果没有转折那么前后句肯定是态度一致的
   - 逐词比对，逐项排除，但对于可能正确的选项，也要在文章里找到明确的依据
+  - 如果只是感觉对的，那么一定要 100% 保证这句话是对的才敢赌，不到万不得已不能用这个方法
 
 ### 阅读词汇积累
 
@@ -255,6 +262,97 @@ However, Google and other big tech providers monitor their efficiency closely an
 
 吸取的教训：每个东西的意思都要翻译出来。
 
+### 2012 翻译（1031）
+
+- When people in developing countries worry about migration, they are usually concerned at the prospect of their best and brightest departure to Silicon Valley or to hospitals and universities in the developed world.
+- 词块：当发展中国家的人们担心移民，他们经常也关心他们最好最光明，前景离开，硅谷，去医院，大学，发达国家。
+- 初译：当发展中国家的人们担心移民时，他们经常也关心他们的前景，去美国硅谷，或者去发达世界的医院和校园，最好，最明亮的离开。
+- 精修：当发展中国家的人们担心移民时，他们也经常关注一个最好，最光明的，离开本国去美国硅谷，或者去发达世界的医院和校园的前景。
+
+- These are the kind of workers that countries like Britain, Canada and Australia try to attract by using immigration rules that privilege college graduates.
+- 词块：这些人，类工人，来自于英国，加拿大，澳大利亚，尝试吸引这些人，移民政策，吸引大学毕业生。（特权）
+- 初译：英国，加拿大和澳大利亚尝试用特权高于大学毕业生的移民政策吸引这类工人。
+- 精修：这些人正是英国，加拿大和澳大利亚尝试通过对大学毕业生提供优惠的移民条例来吸引他们。
+
+- Lots of studies have found that well-educated people from developing countries are particularly likely to emigrate.
+- 词块：很多研究发现，发展中国家受到良好教育的人，尤其有意愿去移民。
+- 初译：很多研究已经发现，那些来自于发展中国家，受到良好教育的人尤其会去移民。
+
+- A big survey of Indian households in 2004 found that nearly 40% of emigrants had more than a high-school education, compared with around 3.3% of all Indians over the age of 25.
+- 词块：大调查，印度，在 2004 年，接近 40% 的移民，高校教育，和全印度 25 岁的人，只有 3.3% 的人有高于高中的学历。
+- 初译：印度（）在一场 2004 年的大调查中，发现接近 40% 的移民者至少受到过高中以上教育，和全印度超过 25 岁只有 3.3% 受过...比起来。
+
+- This"brain drain" has long bothered policymakers in poor countries.
+- 初译：这种“智力干涸”在很长时间内影响政策制定者，在贫穷国家。
+- 初译：在贫穷国家，这种“智力干涸”在很长的时间里影响政策制定者。
+
+- They fear that it hurts their economies, depriving them of much-needed skilled workers who could have taught at their universities, worked in their hospitals and come up with clever new products for their factories to make.
+- 词块：他们害怕伤到国家的经济，剥夺仍需求很大，有技术的员工，那些可以在大学教，在他们医院工作，新产品，工厂制作
+- 初译：他们害怕这种现象伤到国家的精细，剥夺有必要技能的工人，他们可以在大学任教，在他们自己国家的医院工作，在自己国家的工厂里制作新兴产品。
+
+### 2020 翻译（1029）
+
+精修：9-10/15
+
+- It's almost impossible to go through life without experiencing some kind of failure.
+- 词块：这几乎不可能；经历人生（不通顺）；不经历带来失败的经历；
+- 初译：不经历某种失败度过人生，这是几乎不可能的。
+- 精修：在经历人生中，不经历某种失败，这是几乎不可能的。
+- 人的一生几乎不可能不经历某种失败。
+
+- But, the wonderful thing about failure is that it's entirely up to us to decide how to look at it.
+- 词块：但是；最棒的事情；关于失败；完全取决于我们如何看待它。
+- 初译：但是，关于失败，（生硬）最棒的事是完全取决于我们决定如何去看待它。
+- 精修：但是，关于失败最棒的事情，是（失败带来的影响）完全取决于我们决定如何去看待它。
+- 把括号内换成它。
+
+- We can choose to see failure as"the end of the world."
+- 词块：我们可以选择；看待失败；如同世界终结；
+- 初译：我们可以选择将失败视为如”世界终结“般。
+- 精修：我们可以选择将失败视为“世界终结”般（悲伤）。
+- 世界末日
+
+- Or, we can look at failure as the incredible learning experience that it often is.
+- 词块：或者；我们将失败视为；巨大学习经验；经常
+- 初译：或者，我们更经常将失败视为巨大的学习经验。
+- 精修：或者，我们更经常将失败视为广袤的学习经验。
+- incredible：极好的；它往往就是如此；更经常这个翻译是错的。
+
+- Every time we fail at something, we can choose to look for the lesson we' re meant to learn.
+- 词块：每当我们在某方面失败了；我们可以选择；mean to 将要学；课程；
+- 初译：每当我们在某件事失败了，我们可以选择去寻找那些课，我们将要学。（生硬）
+- 精修：每当我们在某件事失败了，我们可以选择去寻找那些我们在失败中学到的教训。
+- 应该汲取，meant to learn 是“注定/应该学到”的
+
+- These lessons are very important;they' re how we grow, and how we keep from making that same mistake again.
+- 词块：这些可很重要；怎样成长；原理重复这些错误；
+- 初译：这些课程非常重要；他们是我们如何成长，如何远离再次犯相同错误的课（需微调）。
+- 精修：这些教训非常重要，他们帮助我们如何成长，如何保持远离犯相同错误。
+- 它们使我们成长，也使我们不再犯同样的错误。
+
+- Failures stop us only if we let them.
+- 词块：失败停止；只有我们携带他们；
+- 初译：失败只有在我们准许它们存在的时候才会停止。（貌似过于意译了）
+- 精修：失败只有在我们与之同行时才会停止。
+- 订正：只有我们任由失败阻碍我们，我们才会被它阻碍。
+
+- Failure can also teach us things about ourselves that we would never have learned otherwise.
+- 词块：失败也可以教我们从来未从其他方面学到的东西；
+- 初译：失败也可以教会我们哪些我们从未从其他事情中学到的东西。（需拆分结构）
+- 精修：失败也可以教会我们一些，在其他地方从未学到的东西。
+- 订正：失败也能教给我们一些有关我们自己的事情，没有失败，这些事我们永远不会了解。（补全漏译的 about ourselves）
+
+- For instance, failure can help you discover how strong a person you are.
+- 词块：例如；失败可以帮助你发现；一个人有多强壮（你自己），可能翻译成坚韧更好点。
+- 初译：例如，失败可以帮助你发现自己是一个多坚韧的人。
+- 精修：例如，失败可以帮助你发现自己是一个多坚韧的人。
+
+- Failing at something can help you discover your truest friends, or help you find unexpected motivation to succeed.
+- 词块：在某件事的失败可以帮助你发现值得信赖的朋友，或者帮助你找到预料之外的动力帮助你成功。
+- 初译：在某件事的失败可以帮助你发现值得信赖的朋友，或者帮助你找到预期之外的动力，来帮助你取得成功。
+- 精修：在某件事的失败可以帮助你发现值得信赖的朋友，或者帮助你找到预期之外的动力，来帮助你取得成功。
+- 在某件事上失败，能帮你发现最真诚的朋友，或者帮你找到意想不到的成功动力。
+
 ### 2021 翻译
 
 6-7
@@ -331,9 +429,9 @@ In one series of studies, researchers instructed Chicago-area commuters using pu
 
 初版：5-6
 
-订 1：9
+订 1:9
 
-订 2：12
+订 2:12
 
 - Although we try our best, sometimes our paintings rarely turn out as originally planned.
 - 词块：尽管，我们竭尽全力做到最好；有时；我们离开了我们原有的计划；painting，猜测并意译为事件的结果（因为是完成的作品）；几乎离我们原有计划很远
@@ -407,7 +505,7 @@ In one series of studies, researchers instructed Chicago-area commuters using pu
 
 ### 第一部分 小作文真题（2010-2026）
 
-#### 年份-任务速查
+#### 年份 - 任务速查
 
 | 年份 | 任务 1 | 任务 2 | 外壳 |
 | :--- | :--- | :--- | :--- |
@@ -761,13 +859,13 @@ Li Ming
 
 ##### 块 5｜致歉 / 取消（认错 + 补救）
 
-> The plan has to be called off on my side, and the fault is entirely mine: [原因一句话,别找借口]. To make up for it, I have [补救方案], and I will [进一步承诺].
+> The plan has to be called off on my side, and the fault is entirely mine: [原因一句话，别找借口]. To make up for it, I have [补救方案], and I will [进一步承诺].
 
 译：计划在我这边得取消，责任全在我：……。作为补偿，我已经……，并且我会……。
 
 ##### 块 6｜投诉（事实 + 要求）
 
-> The problem showed up almost immediately: [具体表现,带时间和次数]. I am not after an explanation so much as a fix — [具体要求], preferably before [时间].
+> The problem showed up almost immediately: [具体表现，带时间和次数]. I am not after an explanation so much as a fix — [具体要求], preferably before [时间].
 
 译：问题几乎是立刻就出现了：……。我要的不是解释，而是解决——……，最好在……之前。
 

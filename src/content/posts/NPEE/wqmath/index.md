@@ -5279,25 +5279,87 @@ $$
 
 ### 2024 真题
 
-- 完成时间：20261027
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+- 完成时间：20261101
+- 分数：142
+  - 选择：-5
+  - 大题：-3
+- 时间：120+25+15（做完 + 检查选填 + 检查大题前 4 题）
+
+几天没写卷子了（其实是算休息），不过竟然写的不错，证明题也做出来了（没用答案的方法），但是，其实也暴露了一定的问题——这份卷子的选择题我猜了 2 个，并且在最后检查的时候，竟然检查出来 2 选择（1 和 3）以及 1 填空（16）。
+
+大题的 3 分错在第 3 问，最后算答案的时候，没有把最前面的 pi 写上，属于比较低级的错误。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChdq5v56GjlMDx7ouynX60OoesQ3sgACmBVrGzJyOVf8FuMzaRf_RwEAAwIAA3cAAz0E)
+
+本题 -5，一开始没做出来，然后通分一下，乘上去，想着题目条件是发散，所以 an^2+1=0 必然大于 0，而不是像其他那样可以凑出来是 0。典型的忘了题目，题目里 an 是发散的。
+
+不过反例，我想到了奇偶不一样的常数列（在模拟的时候）。
+
+对于 A，构造 A 的奇数项是 2，偶数项是 1/2。
+
+对于 B，构造 B 的奇数项是 1，偶数项是 -1。
+
+对于 C，构造 C 的奇数项是 1，偶数项是 -1。
+
+对于 D，由于 D 严格单调递增，所以构造不出来。
+
+总结一下，从奇偶数列和严格单调分析
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChNq5vvFzm0zJWMbkHh6x12ZI5ht-wACeBVrGzJyOVe332VUxyUnvgEAAwIAA3kAAz0E)
+
+本题做对了，不过是猜的，1 很容易判断出来是错的，2 和 3 猜了必然有一个是对的，一个是错的，所以就选了 B。
+
+利用敛散性判别，x^pf 存在。这里需要注意，本题考察的是趋于无穷时的行为，所以不需要考虑 0 处。
+
+对于 2，由于 p>1，令趋于极限时，fx^p=C，也就是 f=C/x^p。由于 p>1，所以得证。
+
+对于 3，前者收敛，意味着 f(x) 的次数 -n，-n>1，也就是 n<-1。所以考虑 p+n<0。但是事实上，不能这么考虑，因为其并非严格的幂等函数。这个函数的“次数”根本无法用常规的 −n 来衡量，它介于 1/x 和 (1/x)^(1+ϵ) 之间
+
+所以只需要考虑 1/(x(lnx)^2) 即可。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChRq5vvnbs9jletUvhMNUxx3ekre6gAChBVrGzJyOVe5RZEWTB9zewEAAwIAA3kAAz0E)
+
+本题做对了，不过是猜的。必要性判假很容易，取 A 和 B 都是 E 就好了。
+
+充分性，我的想法是设 λ1 和 λ2，然后做，但是最后没做出来。
+
+考虑 Aa=λ1a，同时左乘 B，也就是 BAa=λ1Ba=ABa=λ1Ba。如果 Ba≠0，Ba 和 a 线性相关；如果 Ba=0，那么是 0 的特征向量。
+
+我其实想过这个证明就是了。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChZq5vztpvdfwPxY3sPh9wg1KZrqIQAClRVrGzJyOVc7UMWJYQ2BDAEAAwIAA3cAAz0E)
+
+-3，漏了一个 pi。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChVq5vyVh_29Dln4dUKSH2lbe76lOQACkhVrGzJyOVeYyJJF9ExyAgEAAwIAA3kAAz0E)
+
+我用的是一个很有技巧性的证明，也就是对 0 和 1 处泰勒展开，然后前者除以 x，后者除以 1-x，然后两式相减，就可以得到答案的式子。
+
+答案的证明方法是拆绝对值设函数，我觉得那种方法才应该是第一反应应该出来的。
 
 ### 2025 真题
 
-- 完成时间：20261028
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+- 完成时间：20261102
+- 分数：135
+  - 选择：5
+  - 大题：10
+- 时间：110+50
+
+这份卷子绝对虚高，首先是第 7 题，这个我以前做过，然后忘了怎么做了。然后其他倒还好，就是第 15 题用了复杂的方法硬算，但是这道题更好的做法是利用偏积分。
+
+然后第 3 题卡住我了，我最后用特值法排除了一些选项，我做出来 -1 是可以的，然后呢，然后我就觉得 C 是错的了，给叉掉了，这是一个很大的失误。
+
+选择题感觉巨奇怪，一开始直接跳了 6 题，回头才慢慢看出来的。比如说第 2 题一开始就跳了，觉得计算太麻烦；第 4 题有点生也跳了（不过后来举例子想起来了）；第 8 题则是一下没想到用配凑法做，第 10 题则是猜的答案（半猜半蒙）。
+
+大题的话，其实也做的不算很顺。首先是第 17 题计算出来很怪（但是答案就是这个样子的），第 18 题思路很卡，第 19 题和第 22 题很顺，第 20 题一开始没敢算下去，是在最后的最后算的检查的时候算的，最后还真是硬算。不过三部分我只算对的两部分，所以 -4。第 21 题证明题的充分性直接过了，先不管（但是这类式子好像挺常见的，比如说在张八的卷子 1 和 2 貌似都有类似的）
+
+总的来说，第一，有好几天没按时考试然后突然来考的感觉了（而且昨晚故意小熬来模拟，今早确实状态非常非常一般）。
+
+这份我觉得值得注意。
 
 ### 2026 真题
 
-- 完成时间：20261029
+- 完成时间：20261103
 - 分数：
   - 选择：
   - 填空：
@@ -5306,7 +5368,7 @@ $$
 
 ## 27 张八
 
-- 完成时间：20261018-20261023
+- 完成时间：2026
 - 平均分：
 - 平均作答时间：
 
@@ -5375,7 +5437,7 @@ u/v 求导与 1/u 求导混用导致的想当然错误。
 
 ### 27 张八 2
 
-- 完成时间：20261030
+- 完成时间：20261028
 - 分数：
   - 选择：
   - 填空：
@@ -5436,7 +5498,7 @@ u/v 求导与 1/u 求导混用导致的想当然错误。
   - 大题：
 - 时间：
 
-## 880 综合 2 刷
+## 880 2 刷（基础选填+综合+拔高）
 
 ### 880 综合 2 刷第 3 章
 
@@ -5624,11 +5686,169 @@ $$
 
 ![4.3.19 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDRq1Lurt7yP6pWpOqvMsQvH_h6UrQACvxJrG1-fqVbm4AtZXKR0ZAEAAwIAA3gAAz0E)
 
-## 660 1 刷（仅挑着做）
+### 880 基础第 6 章选填
+
+![6.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChhq6H3EINp8uutwDvi9EpaczbmlRQAC-xRrG3LySVfPycUVlKTEIwEAAwIAA3cAAz0E)
+
+感觉被阴了这道题，需要注意 C 是任意常数，所以，这道题应该是 A，而不是 C，因为 C 选项的 C 可以小于 0。
+
+## 660 1 刷（仅挑着做，不过也写了大部分）
+
+写于真题 2 刷和 27 张八时候。
+
+### 660 1 刷填空题第 1 章 - 函数、极限、连续
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgxq5XUIK-kcqaYrNUo0nRxKf2YOEwACehlrGwFAKVcKehnZyBhFBgEAAwIAA3cAAz0E)
+
+有点神秘了，这题不会做。还是一句话，碰到这种题就反解。
 
 ### 660 1 刷填空题第 7 章 - 微分方程
 
 尽量化简成 $y=f(x)$ 的形式或者 $x=f(y)$ 的形式。
+
+![147](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf5q4z1VndFEmr2bnpZSwdHzupTecAACghhrG2iXGVcpOFTVuMrbjQEAAwIAA3cAAz0E)
+
+这类题其实一直都不是很会做，再深度问一下 ai。
+
+突然反应过来了，其实这道题就是利用一下变上限积分的形式表达，捋清楚了就不难了。
+
+![161](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf1q4z04EyCWi5SyOHm6kBMEgZTOGgACfxhrG2iXGVf9xfMsnoZBGQEAAwIAA3cAAz0E)
+
+注意分类讨论，当 λ=0 和 ≠0 的情况。
+
+### 660 1 刷选择题第 1 章 - 函数、极限、连续
+
+![213](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf9q40IpkqW8KK9OefQUfQxR8x4ltwACihhrG2iXGVdrc1uktp7k5AEAAwIAA3cAAz0E)
+
+本题做错选为 A（看了 A 直接选了）对于这类题，一定要注意 xsin(1/x) 的情况，我觉得这类题我也比较容易错。
+
+![216](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgFq40TCNhBTZcZXTMBP0hx_REgXuAACkhhrG2iXGVctcI-Kj-ZjbgEAAwIAA3cAAz0E)
+
+![216 1029 感悟](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf9q40IpkqW8KK9OefQUfQxR8x4ltwACihhrG2iXGVdrc1uktp7k5AEAAwIAA3cAAz0E)
+
+![230](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgJq40kAAZ3jh9R69bhharHSH1u2XvcAApkYaxtolxlXdNUhVSVEJ2wBAAMCAAN3AAM9BA)
+
+本题应该选 C，其中 1,2,3 正确，4 错误。
+
+这类问题还是要好好研究（选对但是判断错了）。
+
+3 肯定是对的，这是定理。
+
+2 页是对的，直观上理解，后者去掉前 l 项就是前者（前有限项）
+
+1 很显然页是对的，注意这里是数组，所以 1/x 并不是反例
+
+4 的话，xn = n，显然举出来反例。
+
+![231](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgNq40wHgzF13NG7GH_kfDhT6SUhaAACrhhrG2iXGVfPS73UGpJOJAEAAwIAA3cAAz0E)
+
+这道题做对了，选的 D，但是也应该好好研究一下。
+
+对于 A，等于的时候无法判断。
+
+对于 B，应该是 >=
+
+对于 C，没有假定极限存在
+
+对于 D 是正确的。
+
+![233](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgRq40_l4emzA7ndo03LASbfzOXSXgACuhhrG2iXGVeJi8W6kIqNqgEAAwIAA3cAAz0E)
+
+本题错选为 C。对于 B，xsin1/x，这个例子其实在看到答案的一瞬间就想出来了。
+
+只能说概念题还是得多积累。
+
+![235](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgVq41IVoYbeHVY0WN82rvVC6JqyjwACvhhrG2iXGVdVMrGbehHopQEAAwIAA3cAAz0E)
+
+这道题对了，但是 B 不知道为什么错了。考虑狄利克雷函数 D(x)，反例为 xD(x)
+
+![237](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgZq41KewNixvGQk1lEPqlkCBi5IyQACvxhrG2iXGVeJkSPfhKafuwEAAwIAA3cAAz0E)
+
+这道题采用朴素的想法，函数可以推数列，但是数列不能推函数，按照这个想法，没具体分析，然后直接看了答案，结果答案是 C。
+
+实际上是没有具体题目具体分析导致的。
+
+![237 例外](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgdq41Ur3QOfwHrCeu7FM6Jl6VzMogAC4BNrG2iXIVcNtHXUMLMSmQEAAwIAA3cAAz0E)
+
+![244](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCghq5V30FNZm9CiyaB6mJ5LI9MU7UQACUhlrGwFAKVff-bjes2K62wEAAwIAA3cAAz0E)
+
+本题属于低级错误。对于 sin(x+pi/2)，可以使用诱导公式将之化为 cos，也可以直接硬做，需要注意的是，这道题的 +x 是在 sin 里，而不是在 sin 外。
+
+属于是几天没做题导致的。
+
+![253](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCglq5WJ7h-EIdzzYaGfmdjPWglRpQgACWBlrGwFAKVd4hrWFq6D9CAEAAwIAA3cAAz0E)
+
+选对做错。
+
+认为 1,2 是对的，3,4 是错的。本题应该是 1,4 是对的，2,3 是错的。
+
+本题及结论即可，只有连续的连续是可确定的，其他都是不确定的。一定要记住狄利克雷函数。
+
+### 660 1 刷选择题第 2 章 - 导数与微分
+
+![255](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgpq5WRlMIwYjcROOkHHR3SRbh2UIwACWhlrGwFAKVc7kKf8zyxomQEAAwIAA3kAAz0E)
+
+选对，但不知道 A 为什么是错的。考虑振荡函数 x+x^2sin1/x。
+
+对于反例，一定要想起来振荡函数。
+
+这里简单总结一下常见反例：
+
+振荡函数，常数函数，0-1 函数，狄利克雷函数。
+
+![268](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgtq5WllvMoPiRmiWRlHynqKkvBFIQACbxlrGwFAKVeFNgx8o4Ft7gEAAwIAA3cAAz0E)
+
+选对，但是要辨析。
+
+注意 |x-x0|^k，这个 k=1，和 k>=2 之类的区别。
+
+![296](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg1q5Yv92bAMea8RrsaQFbxLM0wTkAACohlrGwFAKVe6FadcRP9ozAEAAwIAA3cAAz0E)
+
+用的导数定义做的，没做出来。
+
+简单让 AI 跟着我的思路向下走，发现这个方法非常复杂，且还要技巧性构造。
+
+这道题使用泰勒公式，我觉得是有技巧性的一道题目，打个标记。
+
+核心是对左右两侧同时展开。
+
+### 660 1 刷选择题第 5 章 - 定积分与反常积分
+
+![348](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg5q5ZpXJTtF-nvoUW2KfGdTaJs0wAACyxlrGwFAKVf_-pglJUkb-gEAAwIAA3cAAz0E)
+
+本题是对的，但是我觉得可以规范一下。
+
+这道题更好的做法是利用夹逼定理，也就是 x 必然在 (n+1)pi 和 npi 之间，从而推导出来。
+
+我是直接 2x/pi
+
+### 660 1 刷选择题第 8 章 - 多元函数微分学
+
+![433](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg9q5bgMRGUH9XU-NAEUGHS3AnO_vgACOxprGwFAKVe3Ia2xyLTZTwEAAwIAA3cAAz0E)
+
+本题只能判断出 A 和 C 是对的，而且主要靠的是背诵。
+
+感觉 D 能出来也只是因为积累反例，而且考场上我肯定选 D。
+
+这道题的反例我大概有想到，但是没举出具体例子，比如说 y/x。我想的是构造一个正一个负，也就是 xy 相关，但是确实没想到可以构造 y/x。
+
+积累一下。
+
+### 660 1 刷选择题第 9 章 - 二重积分
+
+![444](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChBq5s47sLqPakWWf_9Yp_fVenFVGQACShVrGzJyOVdT3jUD48ghqAEAAwIAA3cAAz0E)
+
+本题没做出来。
+
+总结一下这类题怎么做：按照要对其积分的函数，令里面为 0，然后绘制出函数，然后上下移动（因为得令其为其他值），最后判断这一整串值的大小，根据图来比较。
+
+本题 (x+y)/4<1，所以应该 I3 最大。
+
+![460](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChFq5s9lbpXRF6ykgsSVlT2qAaYkHQACTBVrGzJyOVdUqIYHhXrvKwEAAwIAA3cAAz0E)
+
+这道题没什么问题，但是值得注意一下图像：
+
+![460 图](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChJq5s-cdZ2wOEdJHWUPGRNo79w0LwACTRVrGzJyOVeXEFFtOsUDhwEAAwIAA3kAAz0E)
 
 ## 24 超越
 

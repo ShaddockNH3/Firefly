@@ -1,0 +1,15 @@
+---
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import ShipsView from "@/wows/views/ShipsView.astro";
+import profile from "@/wows/data/profile.json";
+import "@/wows/styles/global.css";
+
+const title = "舰船战绩";
+const description = `${profile.nickname} 的逐船战绩。`;
+---
+
+<MainGridLayout title={title} description={description} heading={title}>
+	<div class="wows-scope wows-scope--plain">
+		<ShipsView basePath="/wows" />
+	</div>
+</MainGridLayout>

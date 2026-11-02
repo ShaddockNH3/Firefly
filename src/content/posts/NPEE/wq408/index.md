@@ -2141,6 +2141,8 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 本题错选为 D。扣个字眼，最。对于 D，可以 shuffle 一下，但是对于 B 却无法解决。
 
+> 安：这道题就该选 D，这个属于是课内 408 的问题。
+
 ![8.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQZqxWFXzg5w38HX-ZPt9YQoj1v4PgACARBrG8TaMFaqwpBcYoxhZAEAAwIAA3gAAz0E)
 
 本题错选为 A。注意，即便是最好的情况，也就是 12345678，以 4 开始划分，那么第 1 轮比较 7 次（这仅是第 1 轮的），第 2 轮 123 比较 2 次，5678 比较 3 次；第 3 轮 78 比较 1 次，总计 7+2+3+1=13。
@@ -13495,7 +13497,9 @@ ff-ff-ff-ff-ff-ff
 
 地址 3:00-11-11-11-11-D1
 
-### 408 近年真题 1 刷（23-26）
+## 408 近年真题 1 刷（23-26）
+
+### 408 2023 真题
 
 - 完成时间：20261028
 - 分数：
@@ -13520,7 +13524,7 @@ ff-ff-ff-ff-ff-ff
 
 ![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfpq4bP--bemgALtVJll79S2Nfv4IAACYBVrGyANEFc9jMYJ_533ZAEAAwIAA3kAAz0E)
 
-语文阅读理解。完成 “后”。
+语文阅读理解。完成“后”。
 
 ![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCftq4bRFdUecnlKQ5EIeHxN05ZdtaAACYhVrGyANEFcliO4dn8tVqAEAAwIAA3cAAz0E)
 
