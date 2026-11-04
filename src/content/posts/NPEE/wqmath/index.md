@@ -5498,7 +5498,7 @@ u/v 求导与 1/u 求导混用导致的想当然错误。
   - 大题：
 - 时间：
 
-## 880 2 刷（基础选填+综合+拔高）
+## 880 2 刷（基础选填 + 综合 + 拔高）
 
 ### 880 综合 2 刷第 3 章
 
@@ -5686,11 +5686,55 @@ $$
 
 ![4.3.19 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCDRq1Lurt7yP6pWpOqvMsQvH_h6UrQACvxJrG1-fqVbm4AtZXKR0ZAEAAwIAA3gAAz0E)
 
+### 880 基础第 5 章选填
+
+![5.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChtq6e2-awQIo9RCR8ezKtm2UQw7ugAC6RhrG3LyUVeQfeWCLfmwTQEAAwIAA3cAAz0E)
+
+本题失去判断力了。
+
+即使这类题并不擅长，但也不能失去判断力。无论如何，都得先判断奇偶性、轮换对称性来化简。
+
+抛开这种情况，再来讨论一下我并不擅长的这类题（也就是假设这道题只有正半边的情况），做题方法如下：
+
+1. 判断 x 和 y 的取值范围
+2. 绘制被积函数 = 0 情况的图像
+3. 根据 x 和 y 的范围以及该图像向上（或者向外），>0 的时候，占比的范围
+4. 实在不行，直接硬算出来
+
+### 880 综合 2 刷第 5 章
+
+![5.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCh1q6fdDgsEkt1CA5hFxa9EdA4E6lQACcxZrGyUXUFde7grHPvU-MwEAAwIAA3cAAz0E)
+
+这道题 1 刷的时候就没做出来，2 刷的时候还是没思路（不过做对了）。原因是什么呢？很简单，惯性思维。
+
+本题并不需要一直去利用奇偶性拆分，而是可以得出 A=0（这个得出来了也选了 C），然后呢，然后就是排除 ABD，显然右侧都不为 0。
+
+同时，本题犯了一个严重的错误，那就是变换 y=-x 轮换，这个操作本身合法，但是得出的信息为 0，直接根据题设代换即可（题目没要求对我这个条件进行讨论），也就是交换 x 和 y，管他合不合法，先换了再说，题设又不要求 f(x,y)=f(y,x)。
+
+![5.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChxq6fSXDZfNGEhDLjTvWWmhNqU2xQACChlrG3LyUVfH2bgSulMkXwEAAwIAA3kAAz0E)
+
+这道题做对了（猜出来的），不过可以注意一下，遇到这类题的时候该怎么思考：
+
+1. 交换积分上限
+2. 二重积分的积分中值定理
+
 ### 880 基础第 6 章选填
 
 ![6.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChhq6H3EINp8uutwDvi9EpaczbmlRQAC-xRrG3LySVfPycUVlKTEIwEAAwIAA3cAAz0E)
 
 感觉被阴了这道题，需要注意 C 是任意常数，所以，这道题应该是 A，而不是 C，因为 C 选项的 C 可以小于 0。
+
+### 880 综合 2 刷第 6 章
+
+![6.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChlq6d78eDvfbPPlpYW_AAFemrjMQUwAAr4Yaxty8lFX0231jYXQx4IBAAMCAAN3AAM9BA)
+
+这道题做的是对的，不过可以注意一下，λ+μ=1，而不是 1/2。也就是说，应该是之和，而不是 = 其中一个，这个我觉得和初高中的中位线相关。
+
+![6.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChpq6d_bGzuEqUKBQLuzS-fp4gpk3gACvxhrG3LyUVfzAxn8htAq0wEAAwIAA3cAAz0E)
+
+这道题也是对的，但我觉得也可以注意一下。
+
+这道题的关键点在于求出 f(x)，但是不一定要利用 f(x)，也可以利用 f(a)。
 
 ## 660 1 刷（仅挑着做，不过也写了大部分）
 

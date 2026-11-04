@@ -4050,6 +4050,8 @@ CMCD/CA 协议
 
 这道题做的是对的，选 D，需要注意，左归和右归的意思是保持小数点不动而动数字。
 
+> 1103 安：这里还可以再深挖理解一下，尾数左移意味着阶码 -1。
+
 ![2.3.38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADh2rEkejzb_BgCEFCjSuJDus_QgyJAAI1E2sbxNooVk48i8AEwoa0AQADAgADeAADPQQ)
 
 错选为 D。本题错误原因在于没注意是 int，将之当成无符号数去算了。
@@ -4243,6 +4245,8 @@ CMCD/CA 协议
 对于 C，最开始执行的一定是根据中断优先级。
 
 对于 D，考虑硬件 1>2>3，而中断屏蔽字为 2>1>3，三个同时来，先执行 1，1 在执行中断处理程序的时候会开中断，此时 2 可以打断 1......
+
+响应优先级和中断优先级是两码事，改变的是中断优先级（也就是执行的时候谁可以打断谁），而不是响应优先级
 
 ![7.3.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADrWrEpZth1OGpt2c79GRALRws7lscAAKUE2sbxNooVnV0ix8KwawtAQADAgADeAADPQQ)
 
