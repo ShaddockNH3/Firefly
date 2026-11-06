@@ -5366,139 +5366,222 @@ $$
   - 大题：
 - 时间：
 
-## 27 张八
+## 660 1 刷（仅挑着做，不过也写了大部分）
 
-- 完成时间：2026
-- 平均分：
-- 平均作答时间：
+### 660 1 刷填空题第 1 章 - 函数、极限、连续
 
-### 27 张八 1
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgxq5XUIK-kcqaYrNUo0nRxKf2YOEwACehlrGwFAKVcKehnZyBhFBgEAAwIAA3cAAz0E)
 
-- 完成时间：20261025
-- 分数：123
-  - 选择：-5
-  - 填空：-5
-  - 大题：-17
-- 时间：120+15
+有点神秘了，这题不会做。还是一句话，碰到这种题就反解。
 
-怎么说呢，出师不利。我以为这份卷子可以 130 多的，结果最后只有 123。因为我想出来这道比较偏的线代怎么做了，然后还检查了选填，想着怎么说 130+，或者至少 130 附近是有的，结果就这个分数。
+### 660 1 刷填空题第 7 章 - 微分方程
 
-先复盘一下，首先是态度问题，这次态度好了不少，选填确实花了 15min 检查一遍，但是大题没验算。以后规定，对于所有的大题，都至少需要验算积分部分，尤其是积分上下限。
+尽量化简成 $y=f(x)$ 的形式或者 $x=f(y)$ 的形式。
 
-第 2 题这个属于经验问题了，A 可能是错的，所以不选，B 一定是对的，更强，所以选。再加上检查的时候想当然了。
+![147](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf5q4z1VndFEmr2bnpZSwdHzupTecAACghhrG2iXGVcpOFTVuMrbjQEAAwIAA3cAAz0E)
 
-第 14 题这个是非常经典的低级错误，求导的时候，$(1-t)^{-2}$ 求导出来是 $-1$，而不是 $-2$，导致错误。
+这类题其实一直都不是很会做，再深度问一下 ai。
 
-第 19 题这个算 x0 暂时不做评价，确实一下没想出来。
+突然反应过来了，其实这道题就是利用一下变上限积分的形式表达，捋清楚了就不难了。
 
-倒数第二题积分上下限有又写错了！我都不知道要说自己什么好了。
+![161](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf1q4z04EyCWi5SyOHm6kBMEgZTOGgACfxhrG2iXGVf9xfMsnoZBGQEAAwIAA3cAAz0E)
 
-最后是证明题，证明题那 12 分第一方面题设条件看错了，题设完全没写二阶可导之类的东西。然后即便给了其实也是不会做。
+注意分类讨论，当 λ=0 和 ≠0 的情况。
 
-写到这里，突然想起来了：
+### 660 1 刷选择题第 1 章 - 函数、极限、连续
 
-我貌似这次没有干一件特别重要的事情：
+![213](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf9q40IpkqW8KK9OefQUfQxR8x4ltwACihhrG2iXGVdrc1uktp7k5AEAAwIAA3cAAz0E)
 
-在开卷子的开头写上三行：
+本题做错选为 A（看了 A 直接选了）对于这类题，一定要注意 xsin(1/x) 的情况，我觉得这类题我也比较容易错。
 
-1. 牛莱公式
-2. y*
-3. 积分区域
+![216](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgFq40TCNhBTZcZXTMBP0hx_REgXuAACkhhrG2iXGVctcI-Kj-ZjbgEAAwIAA3cAAz0E)
 
-果不其然，这次又是牛莱公式错了。
+![216 1029 感悟](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf9q40IpkqW8KK9OefQUfQxR8x4ltwACihhrG2iXGVdrc1uktp7k5AEAAwIAA3cAAz0E)
 
-![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCetq3iOEqKIGcYA6eZ0CzCdCHvIlhQACNxJrG3KB8VYTz_mDCDzmOwEAAwIAA3cAAz0E)
+![230](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgJq40kAAZ3jh9R69bhharHSH1u2XvcAApkYaxtolxlXdNUhVSVEJ2wBAAMCAAN3AAM9BA)
 
-本题错选为 A，确确实实算出来 F'(0) 在 x 趋于 0+ 和 0—的时候分别是什么了，但是理解错题目意思了。对于 A，当情况是 B 的时候，确确实实是可导的。
+本题应该选 C，其中 1,2,3 正确，4 错误。
 
-这个就属于积累了，积累一下下次肯定就不会错了。
+这类问题还是要好好研究（选对但是判断错了）。
 
-![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCexq3iQDj1uHikyq1-awdhz8D7o2gwACOhJrG3KB8Vb6ZuZl0BMNjAEAAwIAA3kAAz0E)
+3 肯定是对的，这是定理。
 
-本题最后的答案少乘了一个 2，具体原因上面已经说了，这里就不重复了。对于求导，一定是要仔细认真的求，而不是想当然求解。尤其是对于 $(1-t)^{-2}$ 类式子，我认为我的问题是——
+2 页是对的，直观上理解，后者去掉前 l 项就是前者（前有限项）
 
-u/v 求导与 1/u 求导混用导致的想当然错误。
+1 很显然页是对的，注意这里是数组，所以 1/x 并不是反例
 
-也错过特别多次了，需要谨慎。
+4 的话，xn = n，显然举出来反例。
 
-![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe1q3iUI-z34CpmCR5je9RWOipZghgACOxJrG3KB8VaL3FfuAV_D1QEAAwIAA3cAAz0E)
+![231](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgNq40wHgzF13NG7GH_kfDhT6SUhaAACrhhrG2iXGVfPS73UGpJOJAEAAwIAA3cAAz0E)
 
-本题 -4 这个是确实一下不知道怎么求 A 的横坐标，然而可以类比 ax^2+bx+c 即可。
+这道题做对了，选的 D，但是也应该好好研究一下。
 
-![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe5q3iU9BbpqjOJ5JC-gF0vIKYTVkgACPBJrG3KB8VY-3M5xe3ZmPQEAAwIAA3cAAz0E)
+对于 A，等于的时候无法判断。
 
-本题 -10，扫了一眼答案貌似是利用割线去做，回头再来看。
+对于 B，应该是 >=
 
-![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe9q3iVt3xd2N5mZ7RRu8RVGMYfFZgACPRJrG3KB8VbXBYTF1VIhAgEAAwIAA3kAAz0E)
+对于 C，没有假定极限存在
 
-本题 -3，对 y 的积分积分上限应该是 pi/2，而不是 1。
+对于 D 是正确的。
 
-再次总结一下，当你觉得一切顺风的时候，你就要死了！
+![233](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgRq40_l4emzA7ndo03LASbfzOXSXgACuhhrG2iXGVeJi8W6kIqNqgEAAwIAA3cAAz0E)
 
-### 27 张八 2
+本题错选为 C。对于 B，xsin1/x，这个例子其实在看到答案的一瞬间就想出来了。
 
-- 完成时间：20261028
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+只能说概念题还是得多积累。
 
-### 27 张八 3
+![235](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgVq41IVoYbeHVY0WN82rvVC6JqyjwACvhhrG2iXGVdVMrGbehHopQEAAwIAA3cAAz0E)
 
-- 完成时间：20261031
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+这道题对了，但是 B 不知道为什么错了。考虑狄利克雷函数 D(x)，反例为 xD(x)
 
-### 27 张八 4
+![237](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgZq41KewNixvGQk1lEPqlkCBi5IyQACvxhrG2iXGVeJkSPfhKafuwEAAwIAA3cAAz0E)
 
-- 完成时间：20261101
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+这道题采用朴素的想法，函数可以推数列，但是数列不能推函数，按照这个想法，没具体分析，然后直接看了答案，结果答案是 C。
 
-### 27 张八 5
+实际上是没有具体题目具体分析导致的。
 
-- 完成时间：20261102
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+![237 例外](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgdq41Ur3QOfwHrCeu7FM6Jl6VzMogAC4BNrG2iXIVcNtHXUMLMSmQEAAwIAA3cAAz0E)
 
-### 27 张八 6
+![244](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCghq5V30FNZm9CiyaB6mJ5LI9MU7UQACUhlrGwFAKVff-bjes2K62wEAAwIAA3cAAz0E)
 
-- 完成时间：20261103
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+本题属于低级错误。对于 sin(x+pi/2)，可以使用诱导公式将之化为 cos，也可以直接硬做，需要注意的是，这道题的 +x 是在 sin 里，而不是在 sin 外。
 
-### 27 张八 7
+属于是几天没做题导致的。
 
-- 完成时间：20261104
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+![253](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCglq5WJ7h-EIdzzYaGfmdjPWglRpQgACWBlrGwFAKVd4hrWFq6D9CAEAAwIAA3cAAz0E)
 
-### 27 张八 8
+选对做错。
 
-- 完成时间：20261105
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+认为 1,2 是对的，3,4 是错的。本题应该是 1,4 是对的，2,3 是错的。
 
-## 880 2 刷（基础选填 + 综合 + 拔高）
+本题及结论即可，只有连续的连续是可确定的，其他都是不确定的。一定要记住狄利克雷函数。
+
+### 660 1 刷选择题第 2 章 - 导数与微分
+
+![255](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgpq5WRlMIwYjcROOkHHR3SRbh2UIwACWhlrGwFAKVc7kKf8zyxomQEAAwIAA3kAAz0E)
+
+选对，但不知道 A 为什么是错的。考虑振荡函数 x+x^2sin1/x。
+
+对于反例，一定要想起来振荡函数。
+
+这里简单总结一下常见反例：
+
+振荡函数，常数函数，0-1 函数，狄利克雷函数。
+
+![268](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgtq5WllvMoPiRmiWRlHynqKkvBFIQACbxlrGwFAKVeFNgx8o4Ft7gEAAwIAA3cAAz0E)
+
+选对，但是要辨析。
+
+注意 |x-x0|^k，这个 k=1，和 k>=2 之类的区别。
+
+![296](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg1q5Yv92bAMea8RrsaQFbxLM0wTkAACohlrGwFAKVe6FadcRP9ozAEAAwIAA3cAAz0E)
+
+用的导数定义做的，没做出来。
+
+简单让 AI 跟着我的思路向下走，发现这个方法非常复杂，且还要技巧性构造。
+
+这道题使用泰勒公式，我觉得是有技巧性的一道题目，打个标记。
+
+核心是对左右两侧同时展开。
+
+### 660 1 刷选择题第 5 章 - 定积分与反常积分
+
+![348](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg5q5ZpXJTtF-nvoUW2KfGdTaJs0wAACyxlrGwFAKVf_-pglJUkb-gEAAwIAA3cAAz0E)
+
+本题是对的，但是我觉得可以规范一下。
+
+这道题更好的做法是利用夹逼定理，也就是 x 必然在 (n+1)pi 和 npi 之间，从而推导出来。
+
+我是直接 2x/pi
+
+### 660 1 刷选择题第 8 章 - 多元函数微分学
+
+![433](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg9q5bgMRGUH9XU-NAEUGHS3AnO_vgACOxprGwFAKVe3Ia2xyLTZTwEAAwIAA3cAAz0E)
+
+本题只能判断出 A 和 C 是对的，而且主要靠的是背诵。
+
+感觉 D 能出来也只是因为积累反例，而且考场上我肯定选 D。
+
+这道题的反例我大概有想到，但是没举出具体例子，比如说 y/x。我想的是构造一个正一个负，也就是 xy 相关，但是确实没想到可以构造 y/x。
+
+积累一下。
+
+### 660 1 刷选择题第 9 章 - 二重积分
+
+![444](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChBq5s47sLqPakWWf_9Yp_fVenFVGQACShVrGzJyOVdT3jUD48ghqAEAAwIAA3cAAz0E)
+
+本题没做出来。
+
+总结一下这类题怎么做：按照要对其积分的函数，令里面为 0，然后绘制出函数，然后上下移动（因为得令其为其他值），最后判断这一整串值的大小，根据图来比较。
+
+本题 (x+y)/4<1，所以应该 I3 最大。
+
+![460](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChFq5s9lbpXRF6ykgsSVlT2qAaYkHQACTBVrGzJyOVdUqIYHhXrvKwEAAwIAA3cAAz0E)
+
+这道题没什么问题，但是值得注意一下图像：
+
+![460 图](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChJq5s-cdZ2wOEdJHWUPGRNo79w0LwACTRVrGzJyOVeXEFFtOsUDhwEAAwIAA3kAAz0E)
+
+## 880 基础选填 1 刷 + 综合 2 刷
+
+### 880 基础 1 刷选填第 2 章
+
+可以注意一下 (1+2/n)^(n)
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCh5q6yt7dg-5oXwSEtU_gLsuecafHgAC0xVrGyUXYFfAqaD4HZSBfAEAAwIAA3cAAz0E)
+
+这道题用特值法做对的，可以注意一下答案是用泰勒公式做的。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCh9q6ywPJazruE-opEeLXaW5ouYipQAC1RVrGyUXYFdjO-SP8t1ubwEAAwIAA3cAAz0E)
+
+这道题做对了，不过可以注意一下 C 可以用振荡函数当特例。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCiFq6zgI_2bk8huXbIZWKnZuwyukzAAC_xVrGyUXYFf6qUGDIB0PHAEAAwIAA3cAAz0E)
+
+低级错误了，这类题应该很熟练才对。
+
+不能想当然把前面那项直接改为 0，而是要展开分析。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCiBq6ze3BkTbZk0Wl_9dUWQuN3uw0QAC_hVrGyUXYFcaSuZI_i79mAEAAwIAA3kAAz0E)
+
+正负。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCiJq7FK7u4ZPHdeosXRDQwcVFhz1hQACfBdrG2nWYFeRygz6HZm2TQEAAwIAA3gAAz0E)
+
+这道题错在以为左侧的形式是 f'(x^3)，但事实上这道题的左侧还没有对里面求导。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCiNq7FMAAeRCChdGO7tYX8sSwntWb9YAAn0Xaxtp1mBXljlHZo79OVABAAMCAAN5AAM9BA)
+
+这道题是对的，但是可以注意简便方法，时刻记住：
+
+(1+x)^n 的麦克劳林展开，这个总是忘记。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCi5q7cGKEL-lBOz5beUtjCe-oyUsUwAC9BlrG2nWcFdlOOLjArx57QEAAwIAA3cAAz0E)
+
+后推前很容易用做题法理解，前推后可以这么理解：
+
+就是说只能保证从 1 出发的那个斜率是单调递增的，但是如果凹凸性变化比斜率变化更剧烈，那么就不一定是凹。
+
+比如说 x^3(1-x) 就不满足。
+
+在高等数学与数学分析中，函数 $f(x)$ 在区间 $I$ 上是严格凹的（下凸），其充要条件为三点斜率单调性定理（即“三弦斜率递增性质”）：
+
+对区间内任意满足 $x_1 < x_2 < x_3$ 的三点，有：$$\frac{f(x_2) - f(x_1)}{x_2 - x_1} < \frac{f(x_3) - f(x_1)}{x_3 - x_1} < \frac{f(x_3) - f(x_2)}{x_3 - x_2}$$
+
+这个性质我突然一下子想起来了，很重要很重要，因为 25 年的证明题貌似考的就是这玩意。
+
+拓宽一下思路。
+
+![30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCi9q7cKQp9NNKkIuStFzzqVRUo2PLAAC9RlrG2nWcFeL5Sp8iIZQNQEAAwIAA3cAAz0E)
+
+错选为 D。求曲率圆啥的没什么问题，二次泰勒，没除以 2。
+
+### 880 综合 2 刷第 2 章
+
+对于带绝对值的参数方程，可以注意以下几类解法，不要一条路走到死：
+
+1. 转换为原本的方程，常用于很显然可以转换的时候，如果带三角函数或者带根式的时候，慎重
+2. 分类讨论后，利用参数方程求到的性质（尤其注意，1 是反套路，但是反套路做多了，正套路别不会了）
 
 ### 880 综合 2 刷第 3 章
 
@@ -5736,163 +5819,207 @@ $$
 
 这道题的关键点在于求出 f(x)，但是不一定要利用 f(x)，也可以利用 f(a)。
 
-## 660 1 刷（仅挑着做，不过也写了大部分）
+### 880 基础选填 1 刷第 9 章
 
-写于真题 2 刷和 27 张八时候。
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCiRq7Lg-gxGQvV7KlWv1bgGFaRgCggACuxRrG2nWaFe8ohoYcMv97AEAAwIAA3cAAz0E)
 
-### 660 1 刷填空题第 1 章 - 函数、极限、连续
+错选为 A，本题应该选 D。
 
-![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgxq5XUIK-kcqaYrNUo0nRxKf2YOEwACehlrGwFAKVcKehnZyBhFBgEAAwIAA3cAAz0E)
+感觉属于是模型没转换过来，ax+by+c=0，这个 c 指的是常数，而不是变量值，所以不是 A，应该模型变为 D。
 
-有点神秘了，这题不会做。还是一句话，碰到这种题就反解。
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCiVq7LnNKgNZ-0jdBh-Y1MJslBycCgACvhRrG2nWaFeaKXPjHvO4rwEAAwIAA3cAAz0E)
 
-### 660 1 刷填空题第 7 章 - 微分方程
+分析范式问题。
 
-尽量化简成 $y=f(x)$ 的形式或者 $x=f(y)$ 的形式。
+其实这道题想到了分析方法，另 x1a1+x2a2=-y1b1-y2b2，然后移动过来分析。最后的答案应该是 x1a1+x2a2，而不是求出来的解。
 
-![147](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf5q4z1VndFEmr2bnpZSwdHzupTecAACghhrG2iXGVcpOFTVuMrbjQEAAwIAA3cAAz0E)
+### 880 基础选填 1 刷第 10 章
 
-这类题其实一直都不是很会做，再深度问一下 ai。
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCiZq7aIvb_cBuWeREwUZ5045Qv-dfgACrRlrG2nWcFeZhVLkhDJ5ygEAAwIAA3cAAz0E)
 
-突然反应过来了，其实这道题就是利用一下变上限积分的形式表达，捋清楚了就不难了。
+本题排除了 A 和 C 之后，便无从下手。对于 A 和 C，显然应该是 (n1+n2)/2 作为特解即可。然而通解呢，因为 n1-n2 不能说明和 e1 线性无关，所以舍去。
 
-![161](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf1q4z04EyCWi5SyOHm6kBMEgZTOGgACfxhrG2iXGVf9xfMsnoZBGQEAAwIAA3cAAz0E)
+综上应该选 B。
 
-注意分类讨论，当 λ=0 和 ≠0 的情况。
+### 880 综合 2 刷第 10 章
 
-### 660 1 刷选择题第 1 章 - 函数、极限、连续
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCi1q7b3N5FpxQ6uzaUjbT4UenBLuEgAC7BlrG2nWcFfFleqsl7u6TwEAAwIAA3cAAz0E)
 
-![213](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf9q40IpkqW8KK9OefQUfQxR8x4ltwACihhrG2iXGVdrc1uktp7k5AEAAwIAA3cAAz0E)
+这道题也是真不会做，A 和 B 很容易排除，C 和 D 只能猜出来一个 C。
 
-本题做错选为 A（看了 A 直接选了）对于这类题，一定要注意 xsin(1/x) 的情况，我觉得这类题我也比较容易错。
+不过 C 的意思很明显，就是加一列线性无关的，那肯定不就是秩 +1 吗
 
-![216](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgFq40TCNhBTZcZXTMBP0hx_REgXuAACkhhrG2iXGVctcI-Kj-ZjbgEAAwIAA3cAAz0E)
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCilq7biemZGzuiSmdn8VL1_fVXE7cgAC4hlrG2nWcFdbssXWBGNIegEAAwIAA3cAAz0E)
 
-![216 1029 感悟](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf9q40IpkqW8KK9OefQUfQxR8x4ltwACihhrG2iXGVdrc1uktp7k5AEAAwIAA3cAAz0E)
+本题我的想法是将 A 拆开，然后就不会做了。事实上，按照我的想法继续下去就直接 Ax 就可以了，因为本质上是算 x。
 
-![230](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgJq40kAAZ3jh9R69bhharHSH1u2XvcAApkYaxtolxlXdNUhVSVEJ2wBAAMCAAN3AAM9BA)
+更朴素一点的想法，其实直接 1,1,2,3 凑出来为 b，然后就解出来了。
 
-本题应该选 C，其中 1,2,3 正确，4 错误。
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCipq7bl23JRCMfs2VkK4vxDu_KycDwAC4xlrG2nWcFeVEBd1kXMplgEAAwIAA3cAAz0E)
 
-这类问题还是要好好研究（选对但是判断错了）。
+这道题属于非常规题，确实没想出来怎么做。
 
-3 肯定是对的，这是定理。
+本题本质上是求 x，所以将最终式同时左乘一个 A 的逆即可，然后就解出来了。
 
-2 页是对的，直观上理解，后者去掉前 l 项就是前者（前有限项）
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCixq7b1_KwcQFbOtyI2x6SmhGgAB4DUAAusZaxtp1nBXgNW_KFotJ90BAAMCAAN3AAM9BA)
 
-1 很显然页是对的，注意这里是数组，所以 1/x 并不是反例
+我直接令 k=-1 做，然后肯定是错的。这道题不只是前面 e 的关系，还有后面的，都得考虑。
 
-4 的话，xn = n，显然举出来反例。
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCitq7b1cKHiPrtZFLm8ip1kMY41JPgAC6hlrG2nWcFcYPhYct3bAuAEAAwIAA3cAAz0E)
 
-![231](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgNq40wHgzF13NG7GH_kfDhT6SUhaAACrhhrG2iXGVfPS73UGpJOJAEAAwIAA3cAAz0E)
+这道题我感觉属于是一下没反应过来：因为只需要把 a 提出去，然后用 λ 做就好了。
 
-这道题做对了，选的 D，但是也应该好好研究一下。
+### 880 基础选填 1 刷第 11 章
 
-对于 A，等于的时候无法判断。
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCidq7aefm-R2x4k5hcRt797dfaw_DQACuxlrG2nWcFe1n9P6eB7l_QEAAwIAA3cAAz0E)
 
-对于 B，应该是 >=
+犯了一个经典的错误，标准的零分：
 
-对于 C，没有假定极限存在
+那就是 a 可以被解出来。
 
-对于 D 是正确的。
+这类可以被解出来的，条件比较隐含的，我也错了特别多次，值得注意。
 
-![233](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgRq40_l4emzA7ndo03LASbfzOXSXgACuhhrG2iXGVeJi8W6kIqNqgEAAwIAA3cAAz0E)
+### 880 基础选填 1 刷第 12 章
 
-本题错选为 C。对于 B，xsin1/x，这个例子其实在看到答案的一瞬间就想出来了。
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCihq7bK6iXcH6VeC5Pby0w0hA818oAAC0xlrG2nWcFd5wpggZQL6BQEAAwIAA3kAAz0E)
 
-只能说概念题还是得多积累。
+本题 AD 犹豫不决。对于 A，没给 C 是可逆的，所以排除。
 
-![235](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgVq41IVoYbeHVY0WN82rvVC6JqyjwACvhhrG2iXGVdVMrGbehHopQEAAwIAA3cAAz0E)
+### 880 综合 2 刷第 12 章
 
-这道题对了，但是 B 不知道为什么错了。考虑狄利克雷函数 D(x)，反例为 xD(x)
+选择题第 8 题开始就没写了。
 
-![237](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgZq41KewNixvGQk1lEPqlkCBi5IyQACvxhrG2iXGVeJkSPfhKafuwEAAwIAA3cAAz0E)
+## 27 张八
 
-这道题采用朴素的想法，函数可以推数列，但是数列不能推函数，按照这个想法，没具体分析，然后直接看了答案，结果答案是 C。
+- 完成时间：2026
+- 平均分：
+- 平均作答时间：
 
-实际上是没有具体题目具体分析导致的。
+### 27 张八 1
 
-![237 例外](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgdq41Ur3QOfwHrCeu7FM6Jl6VzMogAC4BNrG2iXIVcNtHXUMLMSmQEAAwIAA3cAAz0E)
+- 完成时间：20261025
+- 分数：123
+  - 选择：-5
+  - 填空：-5
+  - 大题：-17
+- 时间：120+15
 
-![244](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCghq5V30FNZm9CiyaB6mJ5LI9MU7UQACUhlrGwFAKVff-bjes2K62wEAAwIAA3cAAz0E)
+怎么说呢，出师不利。我以为这份卷子可以 130 多的，结果最后只有 123。因为我想出来这道比较偏的线代怎么做了，然后还检查了选填，想着怎么说 130+，或者至少 130 附近是有的，结果就这个分数。
 
-本题属于低级错误。对于 sin(x+pi/2)，可以使用诱导公式将之化为 cos，也可以直接硬做，需要注意的是，这道题的 +x 是在 sin 里，而不是在 sin 外。
+先复盘一下，首先是态度问题，这次态度好了不少，选填确实花了 15min 检查一遍，但是大题没验算。以后规定，对于所有的大题，都至少需要验算积分部分，尤其是积分上下限。
 
-属于是几天没做题导致的。
+第 2 题这个属于经验问题了，A 可能是错的，所以不选，B 一定是对的，更强，所以选。再加上检查的时候想当然了。
 
-![253](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCglq5WJ7h-EIdzzYaGfmdjPWglRpQgACWBlrGwFAKVd4hrWFq6D9CAEAAwIAA3cAAz0E)
+第 14 题这个是非常经典的低级错误，求导的时候，$(1-t)^{-2}$ 求导出来是 $-1$，而不是 $-2$，导致错误。
 
-选对做错。
+第 19 题这个算 x0 暂时不做评价，确实一下没想出来。
 
-认为 1,2 是对的，3,4 是错的。本题应该是 1,4 是对的，2,3 是错的。
+倒数第二题积分上下限有又写错了！我都不知道要说自己什么好了。
 
-本题及结论即可，只有连续的连续是可确定的，其他都是不确定的。一定要记住狄利克雷函数。
+最后是证明题，证明题那 12 分第一方面题设条件看错了，题设完全没写二阶可导之类的东西。然后即便给了其实也是不会做。
 
-### 660 1 刷选择题第 2 章 - 导数与微分
+写到这里，突然想起来了：
 
-![255](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgpq5WRlMIwYjcROOkHHR3SRbh2UIwACWhlrGwFAKVc7kKf8zyxomQEAAwIAA3kAAz0E)
+我貌似这次没有干一件特别重要的事情：
 
-选对，但不知道 A 为什么是错的。考虑振荡函数 x+x^2sin1/x。
+在开卷子的开头写上三行：
 
-对于反例，一定要想起来振荡函数。
+1. 牛莱公式
+2. y*
+3. 积分区域
 
-这里简单总结一下常见反例：
+果不其然，这次又是牛莱公式错了。
 
-振荡函数，常数函数，0-1 函数，狄利克雷函数。
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCetq3iOEqKIGcYA6eZ0CzCdCHvIlhQACNxJrG3KB8VYTz_mDCDzmOwEAAwIAA3cAAz0E)
 
-![268](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgtq5WllvMoPiRmiWRlHynqKkvBFIQACbxlrGwFAKVeFNgx8o4Ft7gEAAwIAA3cAAz0E)
+本题错选为 A，确确实实算出来 F'(0) 在 x 趋于 0+ 和 0—的时候分别是什么了，但是理解错题目意思了。对于 A，当情况是 B 的时候，确确实实是可导的。
 
-选对，但是要辨析。
+这个就属于积累了，积累一下下次肯定就不会错了。
 
-注意 |x-x0|^k，这个 k=1，和 k>=2 之类的区别。
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCexq3iQDj1uHikyq1-awdhz8D7o2gwACOhJrG3KB8Vb6ZuZl0BMNjAEAAwIAA3kAAz0E)
 
-![296](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg1q5Yv92bAMea8RrsaQFbxLM0wTkAACohlrGwFAKVe6FadcRP9ozAEAAwIAA3cAAz0E)
+本题最后的答案少乘了一个 2，具体原因上面已经说了，这里就不重复了。对于求导，一定是要仔细认真的求，而不是想当然求解。尤其是对于 $(1-t)^{-2}$ 类式子，我认为我的问题是——
 
-用的导数定义做的，没做出来。
+u/v 求导与 1/u 求导混用导致的想当然错误。
 
-简单让 AI 跟着我的思路向下走，发现这个方法非常复杂，且还要技巧性构造。
+也错过特别多次了，需要谨慎。
 
-这道题使用泰勒公式，我觉得是有技巧性的一道题目，打个标记。
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe1q3iUI-z34CpmCR5je9RWOipZghgACOxJrG3KB8VaL3FfuAV_D1QEAAwIAA3cAAz0E)
 
-核心是对左右两侧同时展开。
+本题 -4 这个是确实一下不知道怎么求 A 的横坐标，然而可以类比 ax^2+bx+c 即可。
 
-### 660 1 刷选择题第 5 章 - 定积分与反常积分
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe5q3iU9BbpqjOJ5JC-gF0vIKYTVkgACPBJrG3KB8VY-3M5xe3ZmPQEAAwIAA3cAAz0E)
 
-![348](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg5q5ZpXJTtF-nvoUW2KfGdTaJs0wAACyxlrGwFAKVf_-pglJUkb-gEAAwIAA3cAAz0E)
+本题 -10，扫了一眼答案貌似是利用割线去做，回头再来看。
 
-本题是对的，但是我觉得可以规范一下。
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe9q3iVt3xd2N5mZ7RRu8RVGMYfFZgACPRJrG3KB8VbXBYTF1VIhAgEAAwIAA3kAAz0E)
 
-这道题更好的做法是利用夹逼定理，也就是 x 必然在 (n+1)pi 和 npi 之间，从而推导出来。
+本题 -3，对 y 的积分积分上限应该是 pi/2，而不是 1。
 
-我是直接 2x/pi
+再次总结一下，当你觉得一切顺风的时候，你就要死了！
 
-### 660 1 刷选择题第 8 章 - 多元函数微分学
+### 27 张八 2
 
-![433](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg9q5bgMRGUH9XU-NAEUGHS3AnO_vgACOxprGwFAKVe3Ia2xyLTZTwEAAwIAA3cAAz0E)
+- 完成时间：20261028
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-本题只能判断出 A 和 C 是对的，而且主要靠的是背诵。
+### 27 张八 3
 
-感觉 D 能出来也只是因为积累反例，而且考场上我肯定选 D。
+- 完成时间：20261031
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-这道题的反例我大概有想到，但是没举出具体例子，比如说 y/x。我想的是构造一个正一个负，也就是 xy 相关，但是确实没想到可以构造 y/x。
+### 27 张八 4
 
-积累一下。
+- 完成时间：20261101
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-### 660 1 刷选择题第 9 章 - 二重积分
+### 27 张八 5
 
-![444](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChBq5s47sLqPakWWf_9Yp_fVenFVGQACShVrGzJyOVdT3jUD48ghqAEAAwIAA3cAAz0E)
+- 完成时间：20261102
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-本题没做出来。
+### 27 张八 6
 
-总结一下这类题怎么做：按照要对其积分的函数，令里面为 0，然后绘制出函数，然后上下移动（因为得令其为其他值），最后判断这一整串值的大小，根据图来比较。
+- 完成时间：20261103
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-本题 (x+y)/4<1，所以应该 I3 最大。
+### 27 张八 7
 
-![460](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChFq5s9lbpXRF6ykgsSVlT2qAaYkHQACTBVrGzJyOVdUqIYHhXrvKwEAAwIAA3cAAz0E)
+- 完成时间：20261104
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
-这道题没什么问题，但是值得注意一下图像：
+### 27 张八 8
 
-![460 图](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChJq5s-cdZ2wOEdJHWUPGRNo79w0LwACTRVrGzJyOVeXEFFtOsUDhwEAAwIAA3kAAz0E)
+- 完成时间：20261105
+- 分数：
+  - 选择：
+  - 填空：
+  - 大题：
+- 时间：
 
 ## 24 超越
 
