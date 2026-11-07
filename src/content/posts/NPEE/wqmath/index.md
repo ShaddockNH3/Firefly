@@ -304,7 +304,7 @@ $\frac{\ln(\cos x)}{x^2}$，其中不可以直接利用 $\ln x<x$，第一是因
 
 ![2.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADgGrEiFlaSeOXiU9lGEEBgl3TEicSAAIfE2sbxNooVmPzllZRtJbuAQADAgADeAADPQQ)
 
-> “存在正整数 $N$，当 $n\geq N$ 时，恒有 $|x_n-a|\leq\dfrac{1}{n}$” 是数列 $\{x_n\}$ 收敛于 $a$ 的（ ）。
+> “存在正整数 $N$，当 $n\geq N$ 时，恒有 $|x_n-a|\leq\dfrac{1}{n}$”是数列 $\{x_n\}$ 收敛于 $a$ 的（ ）。
 >
 > - A. 充分不必要条件
 > - B. 必要不充分条件
@@ -1048,7 +1048,7 @@ $$
 
 ![9.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBZlq0Ic0km0v7toNS_9pxKUzgRJf6wAC2BJrG6jniFbLZUC_CoX5uAEAAwIAA20AAz0E)
 
-> 求 $\int\max\{1,|x|\}dx$。
+> 求 $\int\max\{1，|x|\}dx$。
 
 做的时候没处理好连续。
 
@@ -1279,7 +1279,7 @@ $$
 
 ![12.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBcJq0I4KHxYZTMGUq4QW77LkAk3oDAACDBNrG6jniFacDzL6W14wjAEAAwIAA3gAAz0E)
 
-> (仅数学一、数学二) 斜边长为 $2a$ 的等腰直角三角形平板铅直地沉没在水中，且斜边与水面相齐.记重力加速度为 $g$，水的密度为 $\rho$，则该平板一侧所受的水压力为 ______.
+> (仅数学一、数学二) 斜边长为 $2a$ 的等腰直角三角形平板铅直地沉没在水中，且斜边与水面相齐。记重力加速度为 $g$，水的密度为 $\rho$，则该平板一侧所受的水压力为 ______.
 
 这里的 $P$ 其实就是 $F$（公式里的），按照自己的理解就好了。
 
@@ -1379,11 +1379,11 @@ $$
 
 ![13.1.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBc5q0I7oJaaYz9mHuoe69qlgmyGS0gACGRNrG6jniFbx10gheWWfEgEAAwIAA3gAAz0E)
 
-> 已知函数 $z=z(x,y)$ 由方程 $(x^2+y^2)z+\ln z+2(x+y+1)=0$ 确定，求 $z(x,y)$ 的极值.
+> 已知函数 $z=z(x,y)$ 由方程 $(x^2+y^2)z+\ln z+2(x+y+1)=0$ 确定，求 $z(x,y)$ 的极值。
 
 ![13.1.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBc9q0I715soH0sk4HCXDW0HpYg5eeAACGhNrG6jniFbB5mHTuFVSJgEAAwIAA3gAAz0E)
 
-> 设 $a,b$ 满足 $\int_a^b|x|dx=\frac{1}{2}$（$a<0,b>0$），求曲线 $y=x^2+ax$ 与直线 $y=bx$ 所围区域面积的最大值和最小值.
+> 设 $a,b$ 满足 $\int_a^b|x|dx=\frac{1}{2}$（$a<0,b>0$），求曲线 $y=x^2+ax$ 与直线 $y=bx$ 所围区域面积的最大值和最小值。
 
 本题是不封闭曲线（也就是得考虑区间），所以使用拉格朗日乘数法算出来的只是边界条件。
 
@@ -1391,7 +1391,7 @@ $$
 
 ![13.1.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdBq0I8LsMkdkOd4oNLmtnUwt9P2ogACGxNrG6jniFZJaIwo_H8_pAEAAwIAA3gAAz0E)
 
-> 已知函数 $z=f(x,y)$ 的全微分 $dz=2xdx-2ydy$，并且 $f(1,1)=2$.求 $f(x,y)$ 在椭圆域 $D=\left\{(x,y)\left|x^2+\frac{y^2}{4}\leq1\right.\right\}$ 上的最大值和最小值.
+> 已知函数 $z=f(x,y)$ 的全微分 $dz=2xdx-2ydy$，并且 $f(1,1)=2$.求 $f(x,y)$ 在椭圆域 $D=\left\{(x,y)\left|x^2+\frac{y^2}{4}\leq1\right.\right\}$ 上的最大值和最小值。
 
 这题当时 1 刷的时候没看懂是什么意思，其实很简单，先利用偏积分求出原函数，然后因为是面积内，所以需要考虑边界和本身。
 
@@ -1482,7 +1482,7 @@ $$
 
 ![14.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBdpq0JNibt-1DtiFYo6faR1vKUXJ1QACJhNrG6jniFay-Fi_pMbM4gEAAwIAA3gAAz0E)
 
-> 设 $f(x)=\iint_{D(x)}\frac{v\ln\sqrt{u^2+v^2}}{u+v}dudv$，$D(x)=\left\{(u,v)\left|\frac{1}{4}\leq u^2+v^2\leq x^2,u>0,v>0\right.\right\}$，求曲线 $y(x)=\int_1^x f(t)dt\left(x>\frac{1}{2}\right)$ 的拐点.
+> 设 $f(x)=\iint_{D(x)}\frac{v\ln\sqrt{u^2+v^2}}{u+v}dudv$，$D(x)=\left\{(u,v)\left|\frac{1}{4}\leq u^2+v^2\leq x^2,u>0,v>0\right.\right\}$，求曲线 $y(x)=\int_1^x f(t)dt\left(x>\frac{1}{2}\right)$ 的拐点。
 
 积分区域搞成整个圆。
 
@@ -1496,7 +1496,7 @@ $$
 
 ![14.1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBd1q0JPnRZ2oYwy7JBukfIrsBnC2xQACKBNrG6jniFbs42gVq-jOhgEAAwIAA20AAz0E)
 
-> 已知 $\lim\limits_{x\to+\infty}\frac{\int_0^x t^2e^{x^2-t^2}dt+ae^{x^2}}{x^b}=-\frac{1}{2}$，求 $a,b$ 的值.
+> 已知 $\lim\limits_{x\to+\infty}\frac{\int_0^x t^2e^{x^2-t^2}dt+ae^{x^2}}{x^b}=-\frac{1}{2}$，求 $a,b$ 的值。
 
 本质这道题 $a$ 不会算是对极限的定义理解不清晰以及对知识点迁移的能力还是不够。
 
@@ -2059,7 +2059,7 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![5.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBh9q0J0WpKwIxyc0vNSuwj1yZC6ehAACcRNrG6jniFbJ0-uihHOD7wEAAwIAA3gAAz0E)
 
-> 求矩阵 $A=\begin{pmatrix}2&2&-2\\2&5&-4\\-2&-4&5\end{pmatrix}$ 的特征值与特征向量.
+> 求矩阵 $A=\begin{pmatrix}2&2&-2\\2&5&-4\\-2&-4&5\end{pmatrix}$ 的特征值与特征向量。
 
 本题理解错行列式，对于行列式，初等行变换和初等列变换都是可以的。
 
@@ -2075,7 +2075,7 @@ $0$ 向量肯定和其他向量线性相关。
 >
 > (1) 求 $A$ 的特征值可能的取值；
 >
-> (2) 证明：$E+A$ 是可逆矩阵.
+> (2) 证明：$E+A$ 是可逆矩阵。
 
 对于这道题没有理解透约束，在强化阶段理解了。
 
@@ -2087,7 +2087,7 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![5.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBiNq0J2glr4P0bVAyvywk2f0C1whSwACdhNrG6jniFZ9O5P-QGurGgEAAwIAA3gAAz0E)
 
-> 设 $A=(a_{ij})$ 为 3 阶矩阵，$A_{ij}$ 为元素 $a_{ij}$ 的代数余子式. 若 $A$ 的每行元素之和均为 2，且 $|A|=3$，则 $A_{11}+A_{21}+A_{31}=$ ______.
+> 设 $A=(a_{ij})$ 为 3 阶矩阵，$A_{ij}$ 为元素 $a_{ij}$ 的代数余子式。若 $A$ 的每行元素之和均为 2，且 $|A|=3$，则 $A_{11}+A_{21}+A_{31}=$ ______.
 
 本题毫无思路，原因是没有意识到 $A$ 得每行元素之和为 $2$ 意味着什么。并且本题也没有意识到 $A^*$ 与 $A$ 的关系。
 
@@ -2121,7 +2121,7 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![5.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBidq0J5PbuGzaJMjxohoCKOOCT0cCAACfRNrG6jniFYZBj3FRoyrzwEAAwIAA3gAAz0E)
 
-> 设 $A$ 是 3 阶矩阵，已知 $|E+A|=0$，$(3E-A)x=0$ 有非零解，$E-3A$ 不可逆，问 $A$ 是否相似于对角矩阵，并说明理由.
+> 设 $A$ 是 3 阶矩阵，已知 $|E+A|=0$，$(3E-A)x=0$ 有非零解，$E-3A$ 不可逆，问 $A$ 是否相似于对角矩阵，并说明理由。
 
 即凑形式。
 
@@ -2138,11 +2138,11 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![5.1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBilq0J50P6ts33dgG_-1GixL_q6XjQACfxNrG6jniFbUXJOyBwsPEgEAAwIAA3gAAz0E)
 
-> 设 $A$ 为 2 阶矩阵且 $A^2-A=2E$，$P=[\alpha,A\alpha]$，其中 $\alpha$ 是非零向量且不是 $A$ 的特征向量.
+> 设 $A$ 为 2 阶矩阵且 $A^2-A=2E$，$P=[\alpha,A\alpha]$，其中 $\alpha$ 是非零向量且不是 $A$ 的特征向量。
 >
 > (1) 证明 $|P|\neq 0$；
 >
-> (2) 求 $P^{-1}AP$，并判断 $A$ 是否相似于对角矩阵.
+> (2) 求 $P^{-1}AP$，并判断 $A$ 是否相似于对角矩阵。
 
 本题想当然认为 $P=A\alpha$。
 
@@ -2171,7 +2171,7 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![5.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBi1q0J76eyndX2bkdgjpb-3AOJLhbQACgxNrG6jniFbEkdPbUm7a5AEAAwIAA3gAAz0E)
 
-> 设 $A$ 是 $n$ 阶实对称矩阵，$P$ 是 $n$ 阶可逆矩阵. 已知 $n$ 维列向量 $\alpha$ 是 $A$ 的属于特征值 $\lambda$ 的特征向量，则矩阵 $(P^{-1}AP)^T$ 属于特征值 $\lambda$ 的特征向量是（ ）.
+> 设 $A$ 是 $n$ 阶实对称矩阵，$P$ 是 $n$ 阶可逆矩阵。已知 $n$ 维列向量 $\alpha$ 是 $A$ 的属于特征值 $\lambda$ 的特征向量，则矩阵 $(P^{-1}AP)^T$ 属于特征值 $\lambda$ 的特征向量是（ ）.
 >
 > - A. $P^{-1}\alpha$
 > - B. $P^T\alpha$
@@ -2206,19 +2206,19 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![6.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBjFq0J-ecbXHZ1QhZ9WFE3gp5h8hTgAChxNrG6jniFYfqt0FJyswewEAAwIAA3gAAz0E)
 
-> 化二次型 $f(x_1,x_2,x_3)=x_1^2+2x_1x_2+2x_1x_3-x_2^2-2x_2x_3-x_3^2$ 为标准形，并写出所作的可逆线性变换.
+> 化二次型 $f(x_1,x_2,x_3)=x_1^2+2x_1x_2+2x_1x_3-x_2^2-2x_2x_3-x_3^2$ 为标准形，并写出所作的可逆线性变换。
 
 注意配方法，以及必须得写出可逆线性变换是什么。
 
 ![6.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBjJq0J-wO4DTcWXzOxKYJWNtcSDshgACiBNrG6jniFZZRmOFF8VI8QEAAwIAA3gAAz0E)
 
-> 将二次型 $f(x_1,x_2,x_3)=x_1x_2+x_1x_3-x_2x_3$ 化为规范形，并求所用的可逆线性变换.
+> 将二次型 $f(x_1,x_2,x_3)=x_1x_2+x_1x_3-x_2x_3$ 化为规范形，并求所用的可逆线性变换。
 
 使用配方法的时候，没有平方项要去凑。
 
 ![6.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBjNq0J_DbbTwgnTscIvklRbKGEUb3QACiRNrG6jniFZ39j7qdOYOVwEAAwIAA3gAAz0E)
 
-> 用正交变换化二次型 $f(x_1,x_2,x_3)=2x_1^2+5x_2^2+5x_3^2+4x_1x_2-4x_1x_3-8x_2x_3$ 为标准形，并求所作的正交变换.
+> 用正交变换化二次型 $f(x_1,x_2,x_3)=2x_1^2+5x_2^2+5x_3^2+4x_1x_2-4x_1x_3-8x_2x_3$ 为标准形，并求所作的正交变换。
 
 注意是化成标准型，而不是规范形。
 
@@ -2403,7 +2403,7 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![4.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkVq0KNZujK41kv2WJY8lzs1IPshuwACqxNrG6jniFb1NdZbjyvkwgEAAwIAA3gAAz0E)
 
-> 设函数 $y=f(x)$ 由 $\begin{cases}x=2t+|t|,\\ y=|t|\tan t\end{cases}$ 所确定，则在 $\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$ 内（ ）。
+> 设函数 $y=f(x)$ 由 $\begin{cases}x=2t+|t|，\\ y=|t|\tan t\end{cases}$ 所确定，则在 $\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$ 内（ ）。
 >
 > - A. $f(x)$ 连续，$f'(0)$ 不存在
 > - B. $f'(0)$ 存在，$f'(x)$ 在 $x=0$ 处不连续
@@ -2433,7 +2433,7 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![5.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBkdq0KObMoBQUh8mQ-4Yv3SyyyKdFwACrhNrG6jniFaz1uuROHtKbAEAAwIAA3gAAz0E)
 
-> 已知函数 $f(x)=ax^{3}+x^{2}+2$ 在 $x=0$ 和 $x=-1$ 处取得极值，求 $f(x)$ 的增减区间、极大值、极小值和拐点.
+> 已知函数 $f(x)=ax^{3}+x^{2}+2$ 在 $x=0$ 和 $x=-1$ 处取得极值，求 $f(x)$ 的增减区间、极大值、极小值和拐点。
 
 本题 $-\frac{1}{2}$ 带入错误。
 
@@ -2489,7 +2489,7 @@ $0$ 向量肯定和其他向量线性相关。
 
 ![7.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBk5q0KcJt0iXRJ4onkoUbK8QIluFjAACuBNrG6jniFbhZA1cmT0qKwEAAwIAA3gAAz0E)
 
-> 已知一容器中水增加的速率为 $1\ \mathrm{m^3/min}$，且水的体积 $V$ 与水面高度 $y$ 满足 $V=\frac{\pi}{2}y^{2}$，当水面上升到高为 $1\ \mathrm{m}$ 时，求水面高度上升的速率.
+> 已知一容器中水增加的速率为 $1\ \mathrm{m^3/min}$，且水的体积 $V$ 与水面高度 $y$ 满足 $V=\frac{\pi}{2}y^{2}$，当水面上升到高为 $1\ \mathrm{m}$ 时，求水面高度上升的速率。
 
 对于这题属于低级错误，$2$ 和 $\frac{1}{2}$ 约分的时候，结果是 $1$ 而不是 $2$。另外也需要注意这道题具体是求什么，$\frac{\mathrm{d}V}{\mathrm{d}t}=1$，而不是其他东西。
 
@@ -2984,10 +2984,10 @@ $0$ 向量肯定和其他向量线性相关。
 >
 > 设 $A$ 为 $m\times n$ 矩阵，$e=[1,1,\cdots,1]^T$。若方程组 $Ay=e$ 有解，则对于 (Ⅰ) $A^Tx=0$ 与 (Ⅱ) $\begin{cases}A^Tx=0,\\e^Tx=0\end{cases}$，说法正确的是（ ）。
 >
-> - A. (Ⅰ)的解都是(Ⅱ)的解，但(Ⅱ)的解未必是(Ⅰ)的解
-> - B. (Ⅱ)的解都是(Ⅰ)的解，但(Ⅰ)的解未必是(Ⅱ)的解
-> - C. (Ⅰ)的解不是(Ⅱ)的解，且(Ⅱ)的解也不是(Ⅰ)的解
-> - D. (Ⅰ)的解都是(Ⅱ)的解，且(Ⅱ)的解也都是(Ⅰ)的解
+> - A. (Ⅰ) 的解都是 (Ⅱ) 的解，但 (Ⅱ) 的解未必是 (Ⅰ) 的解
+> - B. (Ⅱ) 的解都是 (Ⅰ) 的解，但 (Ⅰ) 的解未必是 (Ⅱ) 的解
+> - C. (Ⅰ) 的解不是 (Ⅱ) 的解，且 (Ⅱ) 的解也不是 (Ⅰ) 的解
+> - D. (Ⅰ) 的解都是 (Ⅱ) 的解，且 (Ⅱ) 的解也都是 (Ⅰ) 的解
 >
 > 设齐次线性方程组 (Ⅰ) $\begin{cases}x_1+3x_3+5x_4=0,\\x_1-x_2-2x_3+2x_4=0,\\2x_1-x_2+x_3+3x_4=0.\end{cases}$ 在齐次线性方程组 (Ⅰ) 的基础上增添一个方程 $ax_1+bx_2+cx_3+dx_4=0$，得 (Ⅱ) $\begin{cases}x_1+3x_3+5x_4=0,\\x_1-x_2-2x_3+2x_4=0,\\2x_1-x_2+x_3+3x_4=0,\\ax_1+bx_2+cx_3+dx_4=0.\end{cases}$ 问 $a$，$b$，$c$，$d$ 满足什么条件时，方程组 (Ⅰ)，(Ⅱ) 是同解方程组？并求出此时方程组 (Ⅱ) 的通解。
 
@@ -3394,14 +3394,14 @@ $$
 
 > 已知 $\{x_n\},\{y_n\}$ 满足：$x_1=y_1=\frac12$，$x_{n+1}=\sin x_n$，$y_{n+1}=y_n^2\ (n=1,2,\cdots)$，则当 $n\to\infty$ 时，
 >
-> - A. $x_n$ 是 $y_n$ 的高阶无穷小.
-> - B. $y_n$ 是 $x_n$ 的高阶无穷小.
-> - C. $x_n$ 与 $y_n$ 是等价无穷小.
-> - D. $x_n$ 与 $y_n$ 是同阶但不等价的无穷小.
+> - A. $x_n$ 是 $y_n$ 的高阶无穷小。
+> - B. $y_n$ 是 $x_n$ 的高阶无穷小。
+> - C. $x_n$ 与 $y_n$ 是等价无穷小。
+> - D. $x_n$ 与 $y_n$ 是同阶但不等价的无穷小。
 
 ![34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBP5qz3QbOr_HhpAoQTrHBz9I932txgACQRRrG7fmeVYVuBzUQOgXkwEAAwIAA3gAAz0E)
 
-> 讨论函数 $f(x)=\frac{x\arctan\frac{1}{x-1}}{\sin\frac{\pi}{2}x}$ 的连续性并指出间断点类型.
+> 讨论函数 $f(x)=\frac{x\arctan\frac{1}{x-1}}{\sin\frac{\pi}{2}x}$ 的连续性并指出间断点类型。
 
 没有考虑 $k\pi$
 
@@ -3438,8 +3438,8 @@ $$
 >
 > - A. 若 $\lim\limits_{x\to0}\frac{f(x)}{x}$ 存在，则 $f(0)=0$.
 > - B. 若 $\lim\limits_{x\to0}\frac{f(x)+f(-x)}{x}$ 存在，则 $f(0)=0$.
-> - C. 若 $\lim\limits_{x\to0}\frac{f(x)}{x}$ 存在，则 $f'(0)$ 存在.
-> - D. 若 $\lim\limits_{x\to0}\frac{f(x)-f(-x)}{x}$ 存在，则 $f'(0)$ 存在.
+> - C. 若 $\lim\limits_{x\to0}\frac{f(x)}{x}$ 存在，则 $f'(0)$ 存在。
+> - D. 若 $\lim\limits_{x\to0}\frac{f(x)-f(-x)}{x}$ 存在，则 $f'(0)$ 存在。
 
 注意直接法和间接法的问题。对于 $D$，经典的反例，也就是 $|x|$。
 
@@ -3472,7 +3472,7 @@ $$
 
 ![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQVqz3U2zhIBrx-ax5LV63mfi4e62gACSxRrG7fmeVb6mhhm46z2UQEAAwIAA3gAAz0E)
 
-> 已知曲线的极坐标方程是 $r=1-\cos\theta$，求该曲线上对应于 $\theta=\frac{\pi}{2}$ 处的切线和法线的直角坐标方程.
+> 已知曲线的极坐标方程是 $r=1-\cos\theta$，求该曲线上对应于 $\theta=\frac{\pi}{2}$ 处的切线和法线的直角坐标方程。
 
 只需要把握 $\tan x$ 的几何意义即可。
 
@@ -3484,7 +3484,7 @@ $$
 
 ![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQdqz3VZdgABxrPDrxZC2XpAbStU8ToAAk0Uaxu35nlWlpfDA7aL50EBAAMCAAN4AAM9BA)
 
-> 设 $\varphi(x)=\begin{cases}x^3\sin\frac1x,&x\ne0,\\0,&x=0,\end{cases}$ 函数 $f(x)$ 可导，求 $F(x)=f(\varphi(x))$ 的导数.
+> 设 $\varphi(x)=\begin{cases}x^3\sin\frac1x,&x\ne0,\\0,&x=0,\end{cases}$ 函数 $f(x)$ 可导，求 $F(x)=f(\varphi(x))$ 的导数。
 
 注意导数的链式法则可以直接用。
 
@@ -3508,7 +3508,7 @@ $$
 
 ![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBQtqz3ctxfMi1gk4S9a0qOGyEtuKtAACUxRrG7fmeVZjNQMzH4wrpQEAAwIAA3gAAz0E)
 
-> 求函数 $f(x)=x^2\ln(1+x)$ 在 $x=0$ 处的 $n(n>2)$ 阶导数.
+> 求函数 $f(x)=x^2\ln(1+x)$ 在 $x=0$ 处的 $n(n>2)$ 阶导数。
 
 注意使用泰勒展开的时候是把 $0$ 带进去的。
 
@@ -3516,10 +3516,10 @@ $$
 
 > 设 $f(x)$ 有二阶连续导数，且 $f'(0)=0$，$\lim\limits_{x\to0}\frac{f''(x)}{|x|}=1$，则
 >
-> - A. $f(0)$ 是 $f(x)$ 的极大值.
-> - B. $f(0)$ 是 $f(x)$ 的极小值.
-> - C. $(0,f(0))$ 是曲线 $y=f(x)$ 的拐点.
-> - D. $f(0)$ 不是 $f(x)$ 的极值，$(0,f(0))$ 也不是曲线 $y=f(x)$ 的拐点.
+> - A. $f(0)$ 是 $f(x)$ 的极大值。
+> - B. $f(0)$ 是 $f(x)$ 的极小值。
+> - C. $(0,f(0))$ 是曲线 $y=f(x)$ 的拐点。
+> - D. $f(0)$ 不是 $f(x)$ 的极值，$(0,f(0))$ 也不是曲线 $y=f(x)$ 的拐点。
 
 本题的问题是脑子抽了想错了，所以最后选错了。
 
@@ -3527,10 +3527,10 @@ $$
 
 > 设 $f(x)$ 有二阶连续导数，且 $f'(0)=0$，$\lim\limits_{x\to0}\frac{f''(x)+f(x)-f(-x)}{|x|}=1$ 则
 >
-> - A. $f(0)$ 是 $f(x)$ 的极大值.
-> - B. $f''(0)>0$，$f(0)$ 是 $f(x)$ 的极小值.
-> - C. $(0,f(0))$ 是曲线 $y=f(x)$ 的拐点.
-> - D. $f(0)$ 是 $f(x)$ 的极值，$(0,f(0))$ 不是曲线 $y=f(x)$ 的拐点.
+> - A. $f(0)$ 是 $f(x)$ 的极大值。
+> - B. $f''(0)>0$，$f(0)$ 是 $f(x)$ 的极小值。
+> - C. $(0,f(0))$ 是曲线 $y=f(x)$ 的拐点。
+> - D. $f(0)$ 是 $f(x)$ 的极值，$(0,f(0))$ 不是曲线 $y=f(x)$ 的拐点。
 
 关于这道题的辨析详见 2 刷。
 
@@ -3682,10 +3682,10 @@ $$
 
 > 设 $m,n$ 均是正整数，则反常积分 $\int_0^1\frac{\sqrt[m]{\ln^2(1-x)}}{\sqrt[n]{x}}dx$ 的收敛性
 >
-> - A. 仅与 $m$ 的取值有关.
-> - B. 仅与 $n$ 的取值有关.
-> - C. 与 $m,n$ 的取值都有关.
-> - D. 与 $m,n$ 的取值都无关.
+> - A. 仅与 $m$ 的取值有关。
+> - B. 仅与 $n$ 的取值有关。
+> - C. 与 $m,n$ 的取值都有关。
+> - D. 与 $m,n$ 的取值都无关。
 
 事实上，这道题直到 2 刷完基础 1000 之后才彻底理解了怎么做。
 
@@ -3732,7 +3732,7 @@ $$
 >
 > (2) 它的周长；
 >
-> (3) 它绕 $x$ 轴旋转而成旋转体的体积和侧面积.
+> (3) 它绕 $x$ 轴旋转而成旋转体的体积和侧面积。
 
 对于这道题，利用换元法的思想 + 二重积分来理解。
 
@@ -3768,7 +3768,7 @@ $$
 
 ![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBW5q0ILDu1KRj_gfyekUjitbLE6u7QACqRJrG6jniFbfK6tFe7nzXAEAAwIAA3gAAz0E)
 
-> 设连续曲线 $y=f(x)$ 为连接 $A(1,0)$ 与 $B(0,1)$ 的弧段且位于弦 $AB$ 的上方(如图 4-1)，$P(x,y)$ 为其上任意一点，弦 $BP$ 与该曲线围成的面积为 $x^3$，试求该曲线方程.
+> 设连续曲线 $y=f(x)$ 为连接 $A(1,0)$ 与 $B(0,1)$ 的弧段且位于弦 $AB$ 的上方 (如图 4-1)，$P(x,y)$ 为其上任意一点，弦 $BP$ 与该曲线围成的面积为 $x^3$，试求该曲线方程。
 
 注意两个问题：谁是 $X$ 谁是 $x$；可以利用面积相减来化简，不一定要求出直线坐标方程。
 
@@ -3786,10 +3786,10 @@ $$
 
 > 已知函数 $f(x,y)=\begin{cases}(x^2+y^2)\cdot\sin\dfrac{1}{xy}, & xy\neq 0,\\ 0, & xy=0,\end{cases}$ 则在点 $(0,0)$ 处
 >
-> - A. $\dfrac{\partial f(x,y)}{\partial x}$ 连续，$f(x,y)$ 可微.
-> - B. $\dfrac{\partial f(x,y)}{\partial x}$ 连续，$f(x,y)$ 不可微.
-> - C. $\dfrac{\partial f(x,y)}{\partial x}$ 不连续，$f(x,y)$ 可微.
-> - D. $\dfrac{\partial f(x,y)}{\partial x}$ 不连续，$f(x,y)$ 不可微.
+> - A. $\dfrac{\partial f(x,y)}{\partial x}$ 连续，$f(x,y)$ 可微。
+> - B. $\dfrac{\partial f(x,y)}{\partial x}$ 连续，$f(x,y)$ 不可微。
+> - C. $\dfrac{\partial f(x,y)}{\partial x}$ 不连续，$f(x,y)$ 可微。
+> - D. $\dfrac{\partial f(x,y)}{\partial x}$ 不连续，$f(x,y)$ 不可微。
 
 先求后代？先代后求？忽略了定义。
 
@@ -3797,10 +3797,10 @@ $$
 
 > 如果函数 $f(x,y)$ 在 $(0,0)$ 处连续，那么下列命题正确的是
 >
-> - A. 若极限 $\lim\limits_{x\to 0\atop y\to 0}\dfrac{f(x,y)}{|x|+|y|}$ 存在，则 $f(x,y)$ 在 $(0,0)$ 处可微.
-> - B. 若极限 $\lim\limits_{x\to 0\atop y\to 0}\dfrac{f(x,y)}{x^2+y^2}$ 存在，则 $f(x,y)$ 在 $(0,0)$ 处可微.
-> - C. 若 $f(x,y)$ 在 $(0,0)$ 处可微，则极限 $\lim\limits_{x\to 0\atop y\to 0}\dfrac{f(x,y)}{|x|+|y|}$ 存在.
-> - D. 若 $f(x,y)$ 在 $(0,0)$ 处可微，则极限 $\lim\limits_{x\to 0\atop y\to 0}\dfrac{f(x,y)}{x^2+y^2}$ 存在.
+> - A. 若极限 $\lim\limits_{x\to 0\atop y\to 0}\dfrac{f(x,y)}{|x|+|y|}$ 存在，则 $f(x,y)$ 在 $(0,0)$ 处可微。
+> - B. 若极限 $\lim\limits_{x\to 0\atop y\to 0}\dfrac{f(x,y)}{x^2+y^2}$ 存在，则 $f(x,y)$ 在 $(0,0)$ 处可微。
+> - C. 若 $f(x,y)$ 在 $(0,0)$ 处可微，则极限 $\lim\limits_{x\to 0\atop y\to 0}\dfrac{f(x,y)}{|x|+|y|}$ 存在。
+> - D. 若 $f(x,y)$ 在 $(0,0)$ 处可微，则极限 $\lim\limits_{x\to 0\atop y\to 0}\dfrac{f(x,y)}{x^2+y^2}$ 存在。
 
 本质是对高阶无穷小的理解错误。
 
@@ -3808,9 +3808,9 @@ $$
 
 > 设 $f(x,y)=|x-y|\varphi(x,y)$，其中 $\varphi(x,y)$ 在点 $(0,0)$ 的某邻域内连续，问
 >
-> (1) $\varphi(x,y)$ 应满足什么条件才能使 $f'_x(0,0)$ 和 $f'_y(0,0)$ 都存在?
+> (1) $\varphi(x,y)$ 应满足什么条件才能使 $f'_x(0,0)$ 和 $f'_y(0,0)$ 都存在？
 >
-> (2) 在上述条件下 $f(x,y)$ 在 $(0,0)$ 点是否可微?
+> (2) 在上述条件下 $f(x,y)$ 在 $(0,0)$ 点是否可微？
 
 这道题其实是不会求最后的不等式？我在 2 刷时的想法是拆成 $y>x$ 和 $y<x$ 讨论，这道题则是直接判断有界。
 
@@ -3834,7 +3834,7 @@ $$
 >
 > (Ⅰ) 求 $\dfrac{\partial^2 f}{\partial u\partial v}$；
 >
-> (Ⅱ) 若 $\dfrac{\partial f(u,0)}{\partial u}=ue^{-u}$，$f(0,v)=\dfrac{1}{50}v^2-1$，求 $f(u,v)$ 的表达式.
+> (Ⅱ) 若 $\dfrac{\partial f(u,0)}{\partial u}=ue^{-u}$，$f(0,v)=\dfrac{1}{50}v^2-1$，求 $f(u,v)$ 的表达式。
 
 没做。
 
@@ -3865,25 +3865,25 @@ $$
 
 ![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXlq0IOJy6D7Lh2xMaCCOH3d1NBQaQACtBJrG6jniFaWcY6_6nye9AEAAwIAA20AAz0E)
 
-> 求函数 $z=x^3+y^3-3x^2-3y^2$ 的极值.
+> 求函数 $z=x^3+y^3-3x^2-3y^2$ 的极值。
 
 漏了 $0$，$0$ 这个根。
 
 ![11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXpq0IOasQMk9LbCFnXj1X982TD5SgACtRJrG6jniFYiWukINGn5zwEAAwIAA3gAAz0E)
 
-> 求函数 $z=x^2y(4-x-y)$ 在直线 $x+y=6$，$x$ 轴和 $y$ 轴所围成的区域 $D$ 上的最大值和最小值.
+> 求函数 $z=x^2y(4-x-y)$ 在直线 $x+y=6$，$x$ 轴和 $y$ 轴所围成的区域 $D$ 上的最大值和最小值。
 
 对于这类题，尤其是要注意区域内的极值和条件最值都要算。
 
 ![12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXtq0IOp0As36FaXY-df34xSnDaS1AACthJrG6jniFbrm22yZ6CvTwEAAwIAA3gAAz0E)
 
-> 在椭圆 $x^2+4y^2=4$ 上求一点，使其到直线 $2x+3y-6=0$ 的距离最短.
+> 在椭圆 $x^2+4y^2=4$ 上求一点，使其到直线 $2x+3y-6=0$ 的距离最短。
 
 本质是没有捋清楚谁是目标函数，显然这道题 $d$ 是目标函数。
 
 ![13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBXxq0IO6ElYMTJ-uyvuivzQmjmFkPAACtxJrG6jniFaIBecomCHTVQEAAwIAA3gAAz0E)
 
-> 过椭圆 $3x^2+2xy+3y^2=1$ 上任意一点作椭圆的切线，试求该切线与两坐标轴所围三角形面积的最小值.
+> 过椭圆 $3x^2+2xy+3y^2=1$ 上任意一点作椭圆的切线，试求该切线与两坐标轴所围三角形面积的最小值。
 
 求偏导计算错误。
 
@@ -3907,7 +3907,7 @@ $$
 
 ![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYBq0IQvS5XI_VCKO8j4lf4VmP3W7wACuxJrG6jniFZOnp_f7XMnjQEAAwIAA3gAAz0E)
 
-> 计算 $\iint\limits_D y^2\,\mathrm{d}\sigma$，其中 $D$ 由 $\begin{cases}x=a(t-\sin t),\\ y=a(1-\cos t)\end{cases}$ $(0\leqslant t\leqslant 2\pi)$ 与 $y=0$ 围成.
+> 计算 $\iint\limits_D y^2\,\mathrm{d}\sigma$，其中 $D$ 由 $\begin{cases}x=a(t-\sin t),\\ y=a(1-\cos t)\end{cases}$ $(0\leqslant t\leqslant 2\pi)$ 与 $y=0$ 围成。
 
 在 $\frac{t}{2}$ 变成 $u$ 的时候，不能想当然，必须要实打实的写出那些经典步骤。
 
@@ -3921,7 +3921,7 @@ $$
 
 ![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBYJq0IRbTb_JniVbC-fci-rYfvM-EQACvRJrG6jniFYP2Aa5YPbFlAEAAwIAA3gAAz0E)
 
-> 计算 $\iint\limits_D |x^2+y^2-2y|\,\mathrm{d}\sigma$，其中 $D$ 由 $x^2+y^2\leqslant 4$ 所确定.
+> 计算 $\iint\limits_D |x^2+y^2-2y|\,\mathrm{d}\sigma$，其中 $D$ 由 $x^2+y^2\leqslant 4$ 所确定。
 
 这道题当时是最后一步的时候，对点火公式的对称性理解错误。
 
@@ -4352,7 +4352,7 @@ D. 设矩阵 $A$、$B$ 满足 $AB=E$，$E$ 为 $n$ 阶单位矩阵，则 $A$ 的
 
 > 已知齐次线性方程组
 >
-> （Ⅰ）$\begin{cases}x_1+2x_2+3x_3=0\\2x_1+3x_2+5x_3=0\\x_1+x_2+ax_3=0\end{cases}$ 和 （Ⅱ）$\begin{cases}x_1+bx_2+cx_3=0\\2x_1+b^2x_2+(c+1)x_3=0\end{cases}$ 同解，求 $a$，$b$，$c$ 的值。
+> （Ⅰ）$\begin{cases}x_1+2x_2+3x_3=0\\2x_1+3x_2+5x_3=0\\x_1+x_2+ax_3=0\end{cases}$ 和（Ⅱ）$\begin{cases}x_1+bx_2+cx_3=0\\2x_1+b^2x_2+(c+1)x_3=0\end{cases}$ 同解，求 $a$，$b$，$c$ 的值。
 
 计算。
 
@@ -4665,7 +4665,7 @@ D. 设矩阵 $A$、$B$ 满足 $AB=E$，$E$ 为 $n$ 阶单位矩阵，则 $A$ 的
 
 ![2.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBu9q0Z2Uz86LIn9lyByvTDEbE3jzFQACAxBrG6jnkFYMK3KC5brn-wEAAwIAA3gAAz0E)
 
-> 设 $y=f(x)$ 由 $\begin{cases}x=t|t|,\\ y=|t|\int_0^{|t|}e^{u^2}du\end{cases}$ 确定，则下列选项正确的是（ ）。
+> 设 $y=f(x)$ 由 $\begin{cases}x=t|t|，\\ y=|t|\int_0^{|t|}e^{u^2}du\end{cases}$ 确定，则下列选项正确的是（ ）。
 >
 > - A. $f'(x)$ 在 $x=0$ 处连续
 > - B. $f(x)$ 在 $x=0$ 处不连续
@@ -4965,7 +4965,7 @@ D 改为 C 又改为 B，错选为 B。这错题重刷时仍然不怎么会，�
 >
 > 将半径为 $R$ 的球沉入水中，它与水面相切，设球的密度与水的密度相等，现将球从水中取出，问至少需要做功多少？
 >
-> 设图 3-1 所示的三角形薄板为同一等腰三角形薄板，已知其底为 $2b$、高为 $h$，将其垂直放入静水中，图(a) 是其底与水面相齐，图(b) 是其顶点与水面相齐，设图(a) 与图(b) 薄板一侧所受压力分别为 $P_1$ 和 $P_2$，求 $\frac{P_2}{P_1}$。
+> 设图 3-1 所示的三角形薄板为同一等腰三角形薄板，已知其底为 $2b$、高为 $h$，将其垂直放入静水中，图 (a) 是其底与水面相齐，图 (b) 是其顶点与水面相齐，设图 (a) 与图 (b) 薄板一侧所受压力分别为 $P_1$ 和 $P_2$，求 $\frac{P_2}{P_1}$。
 >
 > - [图示] 图 3-1 给出同一等腰三角形薄板的两种放置方式：(a) 中顶点在下、底边 $x$ 轴与水面相齐；(b) 中顶点与水面 $x$ 轴相齐、底边在下。
 >
@@ -6657,7 +6657,7 @@ $$
 
 ![12.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB95q0zMmIZLK0Np4JDm-Sow3wGgQBAACnxlrG-BrmFYdyLP18Bpn5gEAAwIAA3gAAz0E)
 
-> 在一个高为 $1\,\mathrm{m}$ 的圆柱形容器内储存某种液体，并将容器横放. 底面圆的方程为 $x^2+y^2=1$（单位：$\mathrm{m}$）. 如果容器内存满了液体后，以 $0.2\,\mathrm{m}^3/\mathrm{min}$ 的速率将液体从容器顶端抽出.
+> 在一个高为 $1\,\mathrm{m}$ 的圆柱形容器内储存某种液体，并将容器横放。底面圆的方程为 $x^2+y^2=1$（单位：$\mathrm{m}$）. 如果容器内存满了液体后，以 $0.2\,\mathrm{m}^3/\mathrm{min}$ 的速率将液体从容器顶端抽出。
 >
 > (1) 当液面在 $y=0$ 时，求液面下降的速率；
 >
@@ -6667,7 +6667,7 @@ $$
 
 ![12.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB99q0zM4HQblFnBM9WlU2t99XuCrMQACoBlrG-BrmFaACkSKGhG0DAEAAwIAA3gAAz0E)
 
-> 设一单位质量细杆的长为 1，$G$ 为引力常数. 当质量为 $a$ 的质点在细杆延长线上距杆右端点的 $\frac{1}{2}$ 处移至 $\frac{1}{3}$ 处时，引力做功大小为（ ）.
+> 设一单位质量细杆的长为 1，$G$ 为引力常数。当质量为 $a$ 的质点在细杆延长线上距杆右端点的 $\frac{1}{2}$ 处移至 $\frac{1}{3}$ 处时，引力做功大小为（ ）.
 >
 > - A. $Ga\ln\frac{4}{3}$
 > - B. $Ga\ln\frac{5}{3}$
@@ -6696,7 +6696,7 @@ $$
 
 ![13.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-Jq0zPOH-1zK7clR7pLbx4kvMtppgACoxlrG-BrmFa_yEu7og74cgEAAwIAA3gAAz0E)
 
-> 设 $f(x,y)$ 在有界闭区域 $D$ 上连续，在 $D$ 内有一阶偏导数. 若 $f(x,y)$ 在 $D$ 的边界 $\partial D$ 上的值均为 0，且 $\frac{\partial[f(x,y)]}{\partial x}+\frac{\partial[f(x,y)]}{\partial y}=f(x,y)$，则 $f(x,y)$（ ）.
+> 设 $f(x,y)$ 在有界闭区域 $D$ 上连续，在 $D$ 内有一阶偏导数。若 $f(x,y)$ 在 $D$ 的边界 $\partial D$ 上的值均为 0，且 $\frac{\partial[f(x,y)]}{\partial x}+\frac{\partial[f(x,y)]}{\partial y}=f(x,y)$，则 $f(x,y)$（ ）.
 >
 > - A. 在 $D$ 内有正的最大值
 > - B. 在 $D$ 内有负的最小值
@@ -6740,7 +6740,7 @@ $$
 
 > 计算 $I=\iint_D\sqrt{x^2+y^2}\,\mathrm{d}x\mathrm{d}y$，其中 $D$ 是 $x^2+y^2\le a^2$ 和 $\left(x-\frac{a}{2}\right)^2+y^2\ge\frac{a^2}{4}$ 的公共部分，$a>0$.
 >
-> 计算 $\iint_D\sqrt{\frac{1-x^2-y^2}{1+x^2+y^2}}\,\mathrm{d}x\mathrm{d}y$，其中 $D$ 为圆 $x^2+y^2=1$ 所包围的在第一象限内的区域.
+> 计算 $\iint_D\sqrt{\frac{1-x^2-y^2}{1+x^2+y^2}}\,\mathrm{d}x\mathrm{d}y$，其中 $D$ 为圆 $x^2+y^2=1$ 所包围的在第一象限内的区域。
 
 第 23 题最后一小步错了，$I_1-I_2$ 减错误。
 
@@ -6752,9 +6752,9 @@ $$
 
 ![15.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-dq0zSCTBrSrC1CYAbAVfjktx_lpgACqRlrG-BrmFZSKz_HirfLTQEAAwIAA3gAAz0E)
 
-> (2) 求曲线 $y(x)$ 的斜渐近线.
+> (2) 求曲线 $y(x)$ 的斜渐近线。
 >
-> 以 $yOz$ 面上的平面曲线段 $y=f(z)(z\ge 0)$ 绕 $z$ 轴旋转一周所成旋转曲面与 $xOy$ 面围成一个无上盖容器（见图），现以 $3\,\mathrm{cm}^3/\mathrm{s}$ 的速率把水注入容器内，水面的面积以 $\pi\,\mathrm{cm}^2/\mathrm{s}$ 的速率增大. 已知容器底面积为 $16\pi\,\mathrm{cm}^2$，求曲线 $y=f(z)$ 的方程.
+> 以 $yOz$ 面上的平面曲线段 $y=f(z)(z\ge 0)$ 绕 $z$ 轴旋转一周所成旋转曲面与 $xOy$ 面围成一个无上盖容器（见图），现以 $3\,\mathrm{cm}^3/\mathrm{s}$ 的速率把水注入容器内，水面的面积以 $\pi\,\mathrm{cm}^2/\mathrm{s}$ 的速率增大。已知容器底面积为 $16\pi\,\mathrm{cm}^2$，求曲线 $y=f(z)$ 的方程。
 >
 > - [图示] 旋转容器示意图，竖轴为 $z$，水平轴为 $y$ 与 $x$，图中标出原点 $O$ 及母线 $y=f(z)$
 
@@ -6774,7 +6774,7 @@ $$
 
 ![15.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-pq0zS3hcZQMFK6vWBFbs8TRJndvwACrBlrG-BrmFafyq8nELMr4AEAAwIAA20AAz0E)
 
-> 求微分方程 $y''-2y'+y=2(3x^2-2)e^x$ 的通解.
+> 求微分方程 $y''-2y'+y=2(3x^2-2)e^x$ 的通解。
 
 属于低级错误。本题错误原因在算出来所有东西后往回带（即带 $y''$ 之类的时候），$-2y'$ 的中间一部没有 $\times2$。
 
@@ -6819,7 +6819,7 @@ $$
 
 ![4.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB-5q0zVUlHfFykVRFHgO-N1v00CokQACsBlrG-BrmFbWhbpsP5KJDgEAAwIAA3gAAz0E)
 
-> 设齐次线性方程组（Ⅰ）$\begin{cases}x_1+3x_3+5x_4=0,\\x_1-x_2-2x_3+2x_4=0,\\2x_1-x_2+x_3+3x_4=0,\end{cases}$ 在线性方程组（Ⅰ）的基础上增添一个方程 $ax_1+bx_2+cx_3+dx_4=0$，得（Ⅱ）$\begin{cases}x_1+3x_3+5x_4=0,\\x_1-x_2-2x_3+2x_4=0,\\2x_1-x_2+x_3+3x_4=0,\\ax_1+bx_2+cx_3+dx_4=0.\end{cases}$ 问 $a,b,c,d$ 满足什么条件时，方程组（Ⅰ），（Ⅱ）是同解方程组？并求出此时方程组（Ⅱ）的通解.
+> 设齐次线性方程组（Ⅰ）$\begin{cases}x_1+3x_3+5x_4=0,\\x_1-x_2-2x_3+2x_4=0,\\2x_1-x_2+x_3+3x_4=0,\end{cases}$ 在线性方程组（Ⅰ）的基础上增添一个方程 $ax_1+bx_2+cx_3+dx_4=0$，得（Ⅱ）$\begin{cases}x_1+3x_3+5x_4=0,\\x_1-x_2-2x_3+2x_4=0,\\2x_1-x_2+x_3+3x_4=0,\\ax_1+bx_2+cx_3+dx_4=0.\end{cases}$ 问 $a,b,c,d$ 满足什么条件时，方程组（Ⅰ），（Ⅱ）是同解方程组？并求出此时方程组（Ⅱ）的通解。
 
 属于低级错误，$2+(-5)=-3\ne-7$。
 
@@ -6835,7 +6835,7 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 
 > (1) 设 $A,B$ 是 $n$ 阶矩阵，$A$ 有特征值 $\lambda=1,2,\cdots,n$. 证明 $AB$ 和 $BA$ 有相同的特征值且 $AB\sim BA$.
 >
-> (2) 对一般的 $n$ 阶矩阵 $A,B$，是否必有 $AB\sim BA$？说明理由.
+> (2) 对一般的 $n$ 阶矩阵 $A,B$，是否必有 $AB\sim BA$？说明理由。
 
 没有想到从特征值的角度走。
 
@@ -6858,7 +6858,7 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 >
 > (1) 求 $a$ 的值和正交矩阵 $Q$.
 >
-> (2) 设矩阵 $B=\begin{bmatrix}1&0&0\\c&b&0\\-1&-1&1\end{bmatrix}$，若 $A$ 与 $B$ 相似，求 $b,c$ 的值. 在此情形下，是否存在正交矩阵 $P$，[?]
+> (2) 设矩阵 $B=\begin{bmatrix}1&0&0\\c&b&0\\-1&-1&1\end{bmatrix}$，若 $A$ 与 $B$ 相似，求 $b,c$ 的值。在此情形下，是否存在正交矩阵 $P$，[?]
 
 本题不想做，跳了。这里等略清醒的时候再看看。
 
@@ -6870,7 +6870,7 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 >
 > ② 若 $A$ 相似于对角矩阵 $\Lambda$，则 $A$ 与 $\Lambda$ 合同；
 >
-> ③ 若 $A$ 与正定矩阵合同，则 $A$ 为正定矩阵.
+> ③ 若 $A$ 与正定矩阵合同，则 $A$ 为正定矩阵。
 >
 > 则正确结论的个数为（ ）.
 >
@@ -6879,11 +6879,11 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 > - C. 2
 > - D. 3
 >
-> 已知 $A$ 为 3 阶矩阵，$E$ 为 3 阶单位矩阵，且 $(aE+A)^2=\begin{bmatrix}1&0&1\\0&2&0\\1&0&1\end{bmatrix}$，$\mathrm{tr}(A)=2\sqrt{2}-3a$，$a$ 为常数.
+> 已知 $A$ 为 3 阶矩阵，$E$ 为 3 阶单位矩阵，且 $(aE+A)^2=\begin{bmatrix}1&0&1\\0&2&0\\1&0&1\end{bmatrix}$，$\mathrm{tr}(A)=2\sqrt{2}-3a$，$a$ 为常数。
 >
 > (1) 求矩阵 $A$；
 >
-> (2) 若 $A$ 正定，求 $a$ 的取值范围.
+> (2) 若 $A$ 正定，求 $a$ 的取值范围。
 
 第 11 题错选为 C。需要注意实对称
 
@@ -6901,13 +6901,13 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 
 > (1) 设二次型 $f(x,y,z)=y^2+2xz$，用正交变换 $x=Qy$ 将其化为标准形，并写出 $Q$；
 >
-> (2) 求函数 $g(x,y,z)=\frac{y^2+2xz}{x^2+y^2+z^2}(x^2+y^2+z^2\ne 0)$ 的最大值，并求出一个最大值点.
+> (2) 求函数 $g(x,y,z)=\frac{y^2+2xz}{x^2+y^2+z^2}(x^2+y^2+z^2\ne 0)$ 的最大值，并求出一个最大值点。
 
 关于这类题得研究一下这种题的最大值点怎么解。实际上有个等价变化，然后取最大即可。这个什么 $uvw$，$-w\le w$ 也只是单纯因为可以凑出来。
 
 ![6.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB_Zq0zXsZrBowBYyvd4Jg9mgSlC8owACuBlrG-BrmFYEEVxxZdNczwEAAwIAA3gAAz0E)
 
-> 设 $A=\begin{bmatrix}1&1&1&\cdots&1\\1&2&3&\cdots&s\\1&2^2&3^2&\cdots&s^2\\\vdots&\vdots&\vdots&&\vdots\\1&2^{n-1}&3^{n-1}&\cdots&s^{n-1}\end{bmatrix}$，其中 $s,n$ 是正整数，证明 $A^{\mathrm{T}}A$ 是实对称矩阵，并就整数 $s,n$ 的情况讨论矩阵 $A^{\mathrm{T}}A$ 的正定性.
+> 设 $A=\begin{bmatrix}1&1&1&\cdots&1\\1&2&3&\cdots&s\\1&2^2&3^2&\cdots&s^2\\\vdots&\vdots&\vdots&&\vdots\\1&2^{n-1}&3^{n-1}&\cdots&s^{n-1}\end{bmatrix}$，其中 $s,n$ 是正整数，证明 $A^{\mathrm{T}}A$ 是实对称矩阵，并就整数 $s,n$ 的情况讨论矩阵 $A^{\mathrm{T}}A$ 的正定性。
 
 本题属于是脑子不清醒的产物，被意淫的答案影响了。事实上很简单。
 
@@ -6925,9 +6925,9 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 >
 > ② 若 $f'(x_0)>0$，则当 $n$ 充分大时，$\left[f\left(x_0+\frac{1}{n}\right)-f(x_0)\right]\left[f\left(x_0-\frac{1}{n}\right)-f(x_0)\right]<0$.
 >
-> ③ 若 $\lim\limits_{x\to x_0}\frac{f'(x)}{(x-x_0)^2}=1$，则 $f(x)$ 在 $x_0$ 点的某邻域内严格单调增加.
+> ③ 若 $\lim\limits_{x\to x_0}\frac{f'(x)}{(x-x_0)^2}=1$，则 $f(x)$ 在 $x_0$ 点的某邻域内严格单调增加。
 >
-> ④ 若在 $x_0$ 点的某邻域内 $f(x)$ 可导且 $f'(x)\ne 0$，则 $f(x)$ 在 $x_0$ 的该邻域内严格单调.
+> ④ 若在 $x_0$ 点的某邻域内 $f(x)$ 可导且 $f'(x)\ne 0$，则 $f(x)$ 在 $x_0$ 的该邻域内严格单调。
 >
 > 其中真命题个数为
 >
@@ -6964,7 +6964,7 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 >
 > (3) 若 $\lim\limits_{x\to+\infty}[f'(x)+f(x)]$ 存在，则 $\lim\limits_{x\to+\infty}f(x)$ 存在；
 >
-> (4) 若 $f(x)$ 连续，则当 $\lim\limits_{x\to+\infty}f(x)$ 存在时，$\lim\limits_{x\to+\infty}\frac{\int_0^x f(t)\,\mathrm{d}t}{x}$ 存在.
+> (4) 若 $f(x)$ 连续，则当 $\lim\limits_{x\to+\infty}f(x)$ 存在时，$\lim\limits_{x\to+\infty}\frac{\int_0^x f(t)\,\mathrm{d}t}{x}$ 存在。
 >
 > 其中正确命题的个数是
 >
@@ -7042,7 +7042,7 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 
 ![1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCI5q1hixtIR4ybVrTSIv4rq3fX5mAANuFmsbxiqxVl3_RwbaAyYmAQADAgADbQADPQQ)
 
-> 设 $\lim\limits_{x\to\infty}\left(\frac{x^2+1}{x+1}-ax+b\right)=3$，求 $a,b$ 的值.
+> 设 $\lim\limits_{x\to\infty}\left(\frac{x^2+1}{x+1}-ax+b\right)=3$，求 $a,b$ 的值。
 
 低级错误，$b-1=3$，$b=4$ 而不是 $2$。
 
@@ -7076,7 +7076,7 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 
 ![2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCJNq1hm7lSvuSP1nv_Ay0op_DNKC9QACdRZrG8YqsVYKkOnM4KaZZAEAAwIAA3gAAz0E)
 
-> 设 $\varphi(x)=\begin{cases}x^3\sin\frac{1}{x},&x\neq 0,\\0,&x=0,\end{cases}$ 函数 $f(x)$ 可导，求 $F(x)=f(\varphi(x))$ 的导数.
+> 设 $\varphi(x)=\begin{cases}x^3\sin\frac{1}{x},&x\neq 0,\\0,&x=0,\end{cases}$ 函数 $f(x)$ 可导，求 $F(x)=f(\varphi(x))$ 的导数。
 
 这道题我知道用不能用等价无穷小那个方法，但是还是没想到怎么做。这道题也错了非常多次了，没想到用求导法则直接得出结论。这个需要非常非常注意。可以直接用求导法则的那个结论。
 
@@ -7108,13 +7108,13 @@ $P^{-1}A^{-1}P=\lambda^{-1}\ne\lambda$。
 
 > 设 $f(x)$ 有二阶连续导数，且 $f'(0)=0$，$\lim\limits_{x\to 0}\frac{f''(x)+f(x)-f(-x)}{|x|}=1$，则
 >
-> - A. $f(0)$ 是 $f(x)$ 的极大值.
+> - A. $f(0)$ 是 $f(x)$ 的极大值。
 >
-> - B. $f''(0)>0$，$f(0)$ 是 $f(x)$ 的极小值.
+> - B. $f''(0)>0$，$f(0)$ 是 $f(x)$ 的极小值。
 >
-> - C. $(0,f(0))$ 是曲线 $y=f(x)$ 的拐点.
+> - C. $(0,f(0))$ 是曲线 $y=f(x)$ 的拐点。
 >
-> - D. $f(0)$ 是 $f(x)$ 的极值，$(0,f(0))$ 不是曲线 $y=f(x)$ 的拐点.
+> - D. $f(0)$ 是 $f(x)$ 的极值，$(0,f(0))$ 不是曲线 $y=f(x)$ 的拐点。
 
 这道题标圈了，知道自己的分析可能是有问题的。
 
@@ -7163,13 +7163,13 @@ $f''(x_0)=0$，判别法失效，必须得去看左右区间，而不是 $f''=0$
 
 > 设 $m,n$ 均是正整数，则反常积分 $\int_0^1\frac{\sqrt[m]{\ln^2(1-x)}}{\sqrt[n]{x}}\,\mathrm{d}x$ 的收敛性
 >
-> - A. 仅与 $m$ 的取值有关.
+> - A. 仅与 $m$ 的取值有关。
 >
-> - B. 仅与 $n$ 的取值有关.
+> - B. 仅与 $n$ 的取值有关。
 >
-> - C. 与 $m,n$ 的取值都有关.
+> - C. 与 $m,n$ 的取值都有关。
 >
-> - D. 与 $m,n$ 的取值都无关.
+> - D. 与 $m,n$ 的取值都无关。
 
 注意题目所说，$m$，$n$ 均为正整数！
 
@@ -7181,7 +7181,7 @@ $f''(x_0)=0$，判别法失效，必须得去看左右区间，而不是 $f''=0$
 
 ![3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCKBq1h-BdR-Fu7nMSEz2UVeer56fOwACiBZrG8YqsVbRqmFD_L-_FQEAAwIAA3gAAz0E)
 
-> 设 $f(x)=\int_{-1}^{x}(1-|t|)\,\mathrm{d}t\,(x\geqslant -1)$，求曲线 $y=f(x)$ 与 $x$ 轴所围图形的面积.
+> 设 $f(x)=\int_{-1}^{x}(1-|t|)\,\mathrm{d}t\,(x\geqslant -1)$，求曲线 $y=f(x)$ 与 $x$ 轴所围图形的面积。
 
 本题也可以用变现函数直接算的方法（当然也得分区间），只是稍微麻烦了一点。
 

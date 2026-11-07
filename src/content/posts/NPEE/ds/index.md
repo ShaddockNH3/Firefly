@@ -1177,7 +1177,7 @@ $n$ 个叶子的哈夫曼树共有 $2n-1$ 个结点，而且没有度为 1 的�
 
 ```c++
 // parent[i] >= 0 : i 的父结点
-// parent[i] <  0 : i 是根, 绝对值为集合大小
+// parent[i] <  0 : i 是根，绝对值为集合大小
 int parent[MAXSIZE];
 
 void init(int n) {
