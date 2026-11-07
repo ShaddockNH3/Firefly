@@ -23,6 +23,15 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
+		title: "rererego",
+		imgurl: "https://github.com/rererego.png",
+		desc: "🕊️",
+		siteurl: "https://rererego.github.io/Firefly/",
+		tags: ["Blog"],
+		weight: 11,
+		enabled: true,
+	},
+	{
 		title: "Schariac125",
 		imgurl: "https://github.com/schariac125.png",
 		desc: "雌小🍊",

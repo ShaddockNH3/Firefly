@@ -1110,6 +1110,51 @@ void InThread(ThreadNode *p) {
 
 本质为二叉树的中序遍历。
 
+#### 补 - 树、森林与二叉树的转换
+
+考纲里有「森林与二叉树的转换」，前面这块一直空着，补上。这节是纯手算题，不难，但三句话里错一句就全错。
+
+先说三种存储结构各自的毛病，因为转换的根源就在这儿。
+
+双亲表示法找父亲 $O(1)$，找孩子得扫全表，适合并查集那种「只往上不问下」的场景。
+
+孩子表示法反过来，找孩子快，找父亲得把整张表翻一遍。
+
+孩子兄弟表示法两边都能凑合：左指针指第一个孩子，右指针指下一个兄弟。它最大的意义不是找得快，而是**这玩意儿本身就是一个二叉链表**——所以树能直接当二叉树存，转换才成立。
+
+树转二叉树，手算就三步：加线、抹线、旋转。
+
+加线：把所有相邻的兄弟结点连起来。注意是兄弟，不是堂兄弟。
+
+抹线：每个结点只留下和第一个（最左）孩子的连线，其余全抹掉。
+
+旋转：以根为轴，把整棵树顺时针转大约 45 度，横平竖直地摆开。
+
+转完你会发现规律：左指针永远指向第一个孩子，右指针永远指向下一个兄弟。这就是「左孩子右兄弟」。
+
+森林转二叉树，先分别转，再串起来。
+
+每棵树各自转成二叉树，然后把第二棵树的根，当作第一棵树根的右孩子接上去，第三棵接第二棵的右边，一路串成一条右链。
+
+反过来，二叉树还原成森林，就是不停地断根结点的右链：根和它的左子树是第一棵树，根的右孩子和它的左子树是第二棵树，一直断下去。
+
+然后是遍历的对应，这块最容易混。
+
+| 树 / 森林 | 对应的二叉树 |
+| :--- | :--- |
+| 树的先根遍历 | 二叉树的先序遍历 |
+| 树的后根遍历 | 二叉树的中序遍历 |
+| 森林的先序遍历 | 二叉树的先序遍历 |
+| 森林的中序遍历 | 二叉树的中序遍历 |
+
+记法很简单：先根永远对先序，后根永远对中序。因为树的「访问根」发生在第一次碰到结点时，对应先序；「访问根」发生在孩子都走完之后，对应中序。
+
+需要注意，树没有中根遍历。树的孩子没有左右之分，你说不清哪个算「中间」，所以只有先根和后根两种。
+
+森林的「中序遍历」这个叫法有点别扭，它其实是依次对每棵树做后根遍历，结果恰好等于对应二叉树的中序序列。做题时按二叉树中序去算就不会错。
+
+> 出处：王道 2027 版 5.4.2；严蔚敏《数据结构（C 语言版）》第 2 版 6.4.2。
+
 ### 哈夫曼树
 
 哈夫曼树的构建，以及哈夫曼编码。
@@ -1131,61 +1176,66 @@ $n$ 个叶子的哈夫曼树共有 $2n-1$ 个结点，而且没有度为 1 的�
 并查集的朴素实现以及优化。
 
 ```c++
-// 数组模拟
+// parent[i] >= 0 : i 的父结点
+// parent[i] <  0 : i 是根, 绝对值为集合大小
 int parent[MAXSIZE];
+
 void init(int n) {
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         parent[i] = -1;
-        rank[i] = 0;
     }
 }
-// 朴素版本
+
+// 朴素查找
 int findNaive(int x) {
-    while(parent[x] != -1) {
+    while (parent[x] >= 0) {
         x = parent[x];
     }
     return x;
 }
-// 朴素版本合并
+
+// 朴素合并
 void uniteNaive(int x, int y) {
     int rootX = findNaive(x);
     int rootY = findNaive(y);
-    if(rootX != rootY) {
+    if (rootX != rootY) {
         parent[rootX] = rootY;
     }
 }
 
-// 优化版本压缩查找
+// 路径压缩查找
 int find(int x) {
     int root = x;
-    while(parent[root] != -1) {
+    while (parent[root] >= 0) {
         root = parent[root];
     }
-    // 得到 root 具体值后，把路径上所有的结点的 parent 都设置为 root
-    int temp = x;
-    while(temp != root) {
-        int next = parent[temp];
-        parent[temp] = root;
-        temp = next;
+    // 把路径上所有结点直接挂到 root 下
+    while (x != root) {
+        int next = parent[x];
+        parent[x] = root;
+        x = next;
     }
     return root;
 }
-// 按秩合并
+
+// 按大小合并（size 信息保存在根的负 parent 中）
 void unite(int x, int y) {
     int rootX = find(x);
     int rootY = find(y);
-    if(rootX != rootY) {
-        if(rank[rootX] > rank[rootY]) {
-            parent[rootY] = rootX;
-        } else if(rank[rootX] < rank[rootY]) {
-            parent[rootX] = rootY;
-        } else {
-            parent[rootX] = rootY;
-            rank[rootY]++;
-        }
+    if (rootX == rootY) return;
+
+    // parent 是负数，越负表示集合越大：
+    //   parent[rootX] > parent[rootY]  等价于  size(X) < size(Y)
+    if (parent[rootX] > parent[rootY]) {
+        // X 较小，挂到 Y 下
+        parent[rootY] += parent[rootX];
+        parent[rootX] = rootY;
+    } else {
+        // Y 较小（或相等），挂到 X 下
+        parent[rootX] += parent[rootY];
+        parent[rootY] = rootX;
     }
 }
-
 ```
 
 ### 树的一些值得注意的辨析

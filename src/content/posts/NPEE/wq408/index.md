@@ -2383,7 +2383,7 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 > 假设具有 5 个进程的进程集合 P = {P₀, P₁, P₂, P₃, P₄}，系统中有三类资源 A, B, C，假设在某时刻有如下状态，见下表。
 > 进程名 Allocation Max Available
->  A B C A B C
+> A B C A B C
 > P₀ 0 0 3 0 0 4
 > P₁ 1 0 0 1 7 5
 > P₂ 1 3 5 2 3 5
@@ -9597,6 +9597,26 @@ CMCD/CA 协议
 当前谁收，当前谁发，最开始来源于（或者最终要给谁）
 
 ## DS 王道选择题 3 刷（选做）
+
+只写了 6-8 章，前面的感觉没必要。
+
+### DS 王道选择题 3 刷第 6 章
+
+![6.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjdq7xVRk2hY6_iqSSO5r6K3kZUYBgACXhZrGwnUeFfvs3zvz8xYiQEAAwIAA3gAAz0E)
+
+这道题当然是对的，不过我突然发现了一个新的解法，那就是不再用作图法，而是用握手定理。
+
+边的两倍=度之和。
+
+![6.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjhq7xqWgNPsqw-FzXy3bkFrltBBMgACYRZrGwnUeFfMrRmGM2WFTwEAAwIAA3gAAz0E)
+
+有点猎奇了，语文阅读理解：
+
+对角线上的意思不是对角线上方，而是对角线本身。
+
+### DS 王道选择题 3 刷第 7 章
+
+### DS 王道选择题 3 刷第 8 章
 
 ## 计组王道选择题 3 刷
 
