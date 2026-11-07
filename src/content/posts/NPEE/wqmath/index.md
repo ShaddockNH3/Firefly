@@ -5357,6 +5357,133 @@ $$
 
 这份我觉得值得注意。
 
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjBq7su0J-1vrt2vSnqXX33KEusH5AACVRRrGwnUcFcXmIoErVT2TAEAAwIAA3gAAz0E)
+
+这道题我认为是属于不熟悉导致的问题，一下没反应过来导致的错误。这道题我认为有两种做法：
+
+第一，特值法，也就是将 -1 等值代入。然而我当时在考的时候，使用这种方法，脑子不清楚导致错误，从而失误。
+
+第二，分析法。对于 0 到 +♾️，很显然将左侧移过去即可以积分出来（我当时就是这么想的）。
+
+......
+
+纸质分析如下：
+
+![5 分析](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjFq7tOEsKoUIm9Sv5kLu2GTiQPx8QACChZrGwnUeFc5ZdWBpkrCYwEAAwIAA3cAAz0E)
+
+第一块尝试用原本的思路，也就是移过去然后积分，但是分析一直分析不出来。
+
+第二块有那么一点点懂了，但是没最终算出来。
+
+第三块看了 ai 的解法之后才真正意识到，这道题是分析范式错了。在第二块的时候就已经考虑到了 x1<0,x2<0，但是不知道怎么做，第三块看了 ai 才意识到我犯了两个错误：
+
+1. 负数和负数比较的平方要变号
+2. 可以利用韦达定理，注意韦达定理 x1+x2 是 -b/a。
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjJq7tQdNirB9RJJjiCuEly69ECEogACDBZrGwnUeFdp6inFyLd5HQEAAwIAA3gAAz0E)
+
+在考场上这道题绝对做的是错的（这道题有在武忠祥强化讲义里）
+
+分析一下：
+
+![7 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjNq7thozqlW7FbMOgzE8jU8tzWxUAACERZrGwnUeFe56DlCx_LLfwEAAwIAA3kAAz0E)
+
+1，2 和 3 都是 4 的弱化性表述，都可以转换为证明 4。
+
+对于 3，一定要记住保号性，从而推导出 A 是 0。
+
+这道题其实当初给我的教训就是不要想当然，应该实实在在分析，当然现在给我的感觉也是。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjRq7tl-UtmTbUl8giRdLnH7I3JR8AACFhZrGwnUeFf3rNtebaerLQEAAwIAA3gAAz0E)
+
+这道题方法用复杂了，用的是设 u=y/x 硬解。
+
+但是事实上，这道题可以使用偏积分做，也算是给我开拓了一条思路，本题用偏积分做迎刃而解，用传统方法做非常麻烦。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjVq7topvYjXqa5Qi1IAAWN-VkH2y7gAAhcWaxsJ1HhXlEAAAaJpvc_QAQADAgADeAADPQQ)
+
+这道题给自己 -4，原因上面说过了，从来没想到计算量真的那么大，从 0 到 pi/4 算 sinx 4 次方的积分，不过硬着头皮算下去了，三部分积分算对了两部分，算错了一部分。
+
+不过这个算错的一部分可以用轮换对称性化简，轮换对称性我向来都只用轮换然后加减，而没敢用取 0 到 pi/4 然后双倍。
+
+事实上本题就可以用——因为本题轮换后，积分函数是不变的，利用这个技巧就大大减轻计算量（这道题我正是算错了 pi/4 到 pi/2 拿出去的一小半函数）
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjZq7tp_2YEuv3-niWPjHXOpVDhoVgACGBZrGwnUeFf5phJ82WFQsAEAAwIAA3gAAz0E)
+
+证明题，这类题我确实不会做，但是昨天在写 880 2 刷扫尾的时候（综合选择第 26），偶然发现了凹函数的一个定理，也就是对于 `x1<x2<x3`，x1 和 x2 点对应的斜率是 k1，x2 和 x3 对应的是 k2，x1 和 x3 对应的是 k3，通过绘图可知：`k1<k3<k2`。
+
+尝试用这个做一下，本题必要性可以用拉格朗日中值定理证明，还是很简单的。
+
+对于充分性，先考虑其弱化版的证明：
+
+设函数 $f(x)$ 在区间 $(a,b)$ 内可导，证明导函数 $f'(x)$ 在 $(a,b)$ 内单调不减，即证任意 $u < v$，有 $f'(u) \le f'(v)$）的充分必要条件是：
+
+对 $(a,b)$ 内任意的 $x_1, x_2, x_3$，当 $x_1 < x_2 < x_3$ 时，
+$\frac{f(x_2)-f(x_1)}{x_2-x_1} \le \frac{f(x_3)-f(x_2)}{x_3-x_2}$
+
+第一步：在 $u$ 和 $v$ 之间抓点
+
+任取两个固定的点 $u < v$。
+
+我们在它们中间任取两个动点 $x_1, x_2$，满足排列顺序：
+$u < x_1 < x_2 < v$
+
+第二步：借用已知条件（三斜率的传递性）
+
+根据割线斜率的单调性，必然有：
+$\frac{f(x_1) - f(u)}{x_1 - u} \le \frac{f(x_2) - f(x_1)}{x_2 - x_1} \le \frac{f(v) - f(x_2)}{v - x_2}$
+
+直接抓住头尾：
+$\frac{f(x_1) - f(u)}{x_1 - u} \le \frac{f(v) - f(x_2)}{v - x_2}$
+
+第三步：分别向两头取单侧极限！
+
+先让左边的动点逼近左端点：令 $x_1 \to u^+$。
+
+根据导数定义与极限保号性：
+$\lim_{x_1 \to u^+} \frac{f(x_1) - f(u)}{x_1 - u} = f'(u)$
+
+于是得到：
+$f'(u) \le \frac{f(v) - f(x_2)}{v - x_2}$
+
+再让右边的动点逼近右端点：令 $x_2 \to v^-$。
+
+根据导数定义与极限保号性：
+$\lim_{x_2 \to v^-} \frac{f(v) - f(x_2)}{v - x_2} = f'(v)$
+
+于是立刻得到：
+$f'(u) \le f'(v)$
+
+然而对于本题的充分性而言，即便采用了类似的证明方法，会导致：
+
+若函数 $g(x) < h(y)$ 恒成立，当自变量取极限时，极限值只能保留弱不等式：
+$\lim g(x) \le \lim h(y)$
+
+因此，可以采用以下两种思路：
+
+第一，基于上述方法的情况下，采用反证法。
+
+若存在某对 $u < v$，使得：
+$f'(u) = f'(v) = C \quad (C \text{ 为常数})$
+
+因为 $f'(x)$ 已经单调不减，根据单调性的夹逼，对任意的 $x \in [u, v]$，导数都被死死夹在中间：
+$C = f'(u) \le f'(x) \le f'(v) = C \implies f'(x) \equiv C \quad (\forall x \in [u, v])$
+
+在区间 $[u, v]$ 上导数恒为常数 $C$，根据微积分基本事实，原函数必然是一条线性直线：
+$f(x) = C x + D \quad (\forall x \in [u, v])$
+
+既然是一条直线，那我们在 $[u, v]$ 内部任抓三个点 $x_1 < x_2 < x_3$，算它们的割线斜率：
+$\frac{f(x_2)-f(x_1)}{x_2-x_1} = C, \quad \frac{f(x_3)-f(x_2)}{x_3-x_2} = C$
+
+于是：
+$\frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{f(x_3)-f(x_2)}{x_3-x_2}$
+
+这与题目已知的“严格小于（$<$）”条件发生正面车祸，直接矛盾！
+
+第二，额外取一点 c，也就是任意取定两个目标点 $u < v$。取 $c$，满足：$u < c < v$
+
+这个方法有点没看懂，先过一下，大概原理就是利用 `k1<k3<k2` 的传递性，在 u x1 c x2 v 分别取斜率，然后利用拉格朗日中值定理做。
+
 ### 2026 真题
 
 - 完成时间：20261103
@@ -5944,6 +6071,8 @@ u/v 求导与 1/u 求导混用导致的想当然错误。
 
 也错过特别多次了，需要谨慎。
 
+这样，以后这类求导统一化为 x^n 求导（如果分子是 1 的话）。
+
 ![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe1q3iUI-z34CpmCR5je9RWOipZghgACOxJrG3KB8VaL3FfuAV_D1QEAAwIAA3cAAz0E)
 
 本题 -4 这个是确实一下不知道怎么求 A 的横坐标，然而可以类比 ax^2+bx+c 即可。
@@ -5951,6 +6080,12 @@ u/v 求导与 1/u 求导混用导致的想当然错误。
 ![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe5q3iU9BbpqjOJ5JC-gF0vIKYTVkgACPBJrG3KB8VY-3M5xe3ZmPQEAAwIAA3cAAz0E)
 
 本题 -10，扫了一眼答案貌似是利用割线去做，回头再来看。
+
+这道题 100% 是从 2025 真题改编的，答案用的方法太复杂了。
+
+$\frac{f(x_2)-f(x_1)}{x_2-x_1} < \frac{f(x_3)-f(x_2)}{x_3-x_2}$
+
+其实核心思想就是凹函数上面的式子必然成立，利用拉格朗日中值定理就可以迎刃而解。
 
 ![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCe9q3iVt3xd2N5mZ7RRu8RVGMYfFZgACPRJrG3KB8VbXBYTF1VIhAgEAAwIAA3kAAz0E)
 
@@ -5960,7 +6095,7 @@ u/v 求导与 1/u 求导混用导致的想当然错误。
 
 ### 27 张八 2
 
-- 完成时间：20261028
+- 完成时间：20261107
 - 分数：
   - 选择：
   - 填空：

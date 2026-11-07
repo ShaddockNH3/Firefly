@@ -470,15 +470,44 @@ $$
 
 ![1.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhBqx74qXxEDY63kUIb8GyY-_oofdAACHBNrGz_BQFYBv7FfOvSdoAEAAwIAA3gAAz0E)
 
+> 计算机系统采用层次化结构，从最上层的应用程序到最底层的硬件，其层次化层次自上而下依次为（ ）。
+>
+> - A. 高级语言虚拟机→操作系统虚拟机→汇编语言虚拟机→机器语言机器
+> - B. 高级语言虚拟机→汇编语言虚拟机→机器语言机器→操作系统虚拟机
+> - C. 高级语言虚拟机→汇编语言虚拟机→操作系统虚拟机→机器语言机器
+> - D. 操作系统虚拟机→高级语言虚拟机→汇编语言虚拟机→机器语言机器
+>
+> 下列关于计算机系统层次结构的说法中，正确的是（ ）。
+>
+> - A. 高级语言程序经编译生成汇编语言后，可直接在机器上执行
+> - B. ISA 仅定义指令功能，不涉及硬件实现细节
+> - C. 同一 ISA 可由不同微体系结构实现，软件无须修改即可兼容
+> - D. 高级语言中的每条语句与 ISA 的机器指令一一对应
+
 第 5 题错选为 B。本题没有搞清楚谁为谁提供服务，纯凭感觉选的。对于这道题，正确的理解方式应该是 2 刷那样，谁为谁提供服务。机器语言是硬件本身的，操作系统是最接近硬件的一层软件。
 
 第 6 题错选为 B。ISA 是指令体系结构，是计算机软/硬件之间的接口，而微体系结构是处理器内部的硬件组织方式，用于实现 ISA 定义的功能。如果说 ISA 定义了做什么，那么微架构定义了怎么做。以 x86 为例，不同的处理器遵循同一套规范，但是内部组织方式差别显著。根据课本 p6 的材料再来看这道题：对于 A，显然是错误的，机器上执行的只有机器指令；对于 B，ISA 定义指令功能，定义了指令格式，操作类型，寻址方式，可访问寄存器等，因此强关联硬件；C 由材料可知；对于 D，即便是解释类语言，也并非一一对应，一条可能会被翻译为多条机器指令。
 
 ![1.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhFqx75xpIHo-SvV4oMPbhRsEdwBygACHRNrGz_BQFZMGjkYJBt5MwEAAwIAA3gAAz0E)
 
+> 计算机中，CPU 的 CPI 与下列（ ）因素无关。
+>
+> - A. 时钟频率
+> - B. 系统结构
+> - C. 指令集
+> - D. 计算机组织
+
 错选为 B。CPI 指的是一条指令平均需要多少时钟周期，显然和时钟频率无关。
 
 ![1.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhJqx76FkLCZdzoSZ5hwN0y_h_8a5wACHhNrGz_BQFa1FI5lAmgIkwEAAwIAA3gAAz0E)
+
+> 下列可用于评价计算机系统性能的指标是（ ）。
+>
+> - Ⅰ. MIPS / Ⅱ. IPC / Ⅲ. CPI / Ⅳ. 字长
+> - A. Ⅰ、Ⅲ
+> - B. Ⅰ、Ⅲ 和 Ⅳ
+> - C. Ⅰ、Ⅱ 和 Ⅲ
+> - D. 全部
 
 错选为 C。原因和 2 刷时一致，没有理解字长也是评价计算机系统性能的指标。
 
@@ -486,9 +515,30 @@ $$
 
 ![2.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhNqx767Lyr1C7wP-NYcVjaMMx8GmgACHxNrGz_BQFYt916U1ZFOzgEAAwIAA3gAAz0E)
 
+> 关于模 4 补码，下列说法正确的是（ ）。
+>
+> - A. 模 4 补码和模 2 补码不同，它不容易检查乘除运算中的溢出问题
+> - B. 每个模 4 补码存储时只需要一个符号位
+> - C. 存储每个模 4 补码需要两个符号位
+> - D. 模 4 补码，在算术与逻辑单元中为一个符号位
+
 本题错选为 C。模 4 补码指的是两个符号位进行运算，对于这个细节，尤其需要注意在存储的时候不可能出现 10，01 等情况，存储的符号是确定的，也就是必然为 00 或者 11，因此只需要存储 1 位即可。
 
 ![2.2.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhRqx77fcregJ1fkcyt8-_9F8ISzEAACIBNrGz_BQFYjP6UnwQGndQEAAwIAA3gAAz0E)
+
+> 某计算机字长为 8 位，CPU 中有一个 8 位加法器。已知无符号数 x=69，y=38，若在该加法器中计算 x-y，则加法器的两个输入端信息和输入的低位进位信息分别为（ ）。
+>
+> - A. 0100 0101、0010 0110、0
+> - B. 0100 0101、1101 1001、1
+> - C. 0100 0101、1101 1010、0
+> - D. 0100 0101、1101 1010、1
+>
+> 某计算机中有一个 8 位加法器，有符号整数 x 和 y 的机器数用补码表示，[x]补=F5H，[y]补=7EH，若在该加法器中计算 x-y，则加法器的低位进位输入信息和运算后的溢出标志 OF 分别是（ ）。
+>
+> - A. 1、1
+> - B. 1、0
+> - C. 0、1
+> - D. 0、0
 
 第 18 题错选为 C。本题没有理解加法器的底层原理，对于加法器而言，-y 只取反码，而最后的 +1 靠的是 cin 前一位的进位。
 
@@ -496,17 +546,52 @@ $$
 
 ![2.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhVqx7733USZSctBMxU0wneN2ELsXAACIRNrGz_BQFat0KVGcuZo2QEAAwIAA3gAAz0E)
 
+> 某 8 位计算机中，x 和 y 是两个有符号整数，用补码表示，[x]补=44H，[y]补=DCH，则 x-2y 的机器数及相应的溢出标志 OF 分别是（ ）。
+>
+> - A. 8CH、1
+> - B. 8CH、0
+> - C. 68H、1
+> - D. 68H、0
+
 第 21 题错选为 B。DCH 即 1101 1100，×2 即 1011 1000，-2y 的补码也就是 0100 1000，所以 0100 0100H+0100 1000H=1000 1100H。由于原来是两个正数相加，却得到了负数，所以溢出（根据草稿来看其实是算对了，但是想错了）。
 
 ![2.2.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhZqx78UWg--XLfeoBxFkYFZ67xdKwACJBNrGz_BQFZDgnqfyVfFUAEAAwIAA3gAAz0E)
+
+> 【2018 统考真题】假定有符号整数采用补码表示，若 int 型变量 x 和 y 的机器数分别是 FFFF FFDFH 和 0000 0041H，则 x、y 的值及 x-y 的机器数分别是（ ）。
+>
+> - A. x=-65，y=41，x-y 的机器数溢出
+> - B. x=-33，y=65，x-y 的机器数为 FFFF FF9DH
+> - C. x=-33，y=65，x-y 的机器数为 FFFF FF9EH
+> - D. x=-65，y=41，x-y 的机器数为 FFFF FF96H
 
 本题错选为 D。？我自己都看不懂我自己的草稿了。首先根据 FFFF FFDFH 可知 x=-1-32=-33，y=65……我大概知道我为什么错了，直接把 y 当 41 算了，导致全错了。
 
 ![2.2.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhhqx78v8J5sGQHwwi9Mcp3NEAr5vwACJhNrGz_BQFZhhNvYBp4rnAEAAwIAA3gAAz0E)
 
+> 【2018 统考真题】减法指令 "sub R1, R2, R3" 的功能为 "(R1)-(R2)→R3"，该指令执行后将生成进位/借位标志 CF 和溢出标志 OF。若 (R1) = FFFF FFFFH，(R2) = FFFF FFF0H，则该减法指令执行后，CF 与 OF 分别为（ ）。
+>
+> - A. CF=0，OF=0
+> - B. CF=1，OF=0
+> - C. CF=0，OF=1
+> - D. CF=1，OF=1
+
 本题错选为 B。FFFF FFFFH=-1,FFFF FFF0=-1-15=-16。OF=0，而对于 CF 也为 0。本题本质上是没有理解 CF 到底是怎么计算的。
 
 ![2.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhlqx79d3ttTD1Dqwu4hF4CIuc5kbAACJxNrGz_BQFb53m3Ffxz-QAEAAwIAA3gAAz0E)
+
+> 若某单精度浮点数、某原码、某补码、某移码的 32 位机器数均为 0xF0000000，则这些数从大到小的顺序是（ ）。
+>
+> - A. 浮原补移
+> - B. 浮移补原
+> - C. 移原补浮
+> - D. 移补原浮
+>
+> 采用规格化的浮点数最主要是为了（ ）。
+>
+> - A. 增加数据的表示范围
+> - B. 方便浮点运算
+> - C. 防止运算时数据溢出
+> - D. 增加数据的表示精度
 
 第 7 题错选为 C。原码≠无符号数。
 
@@ -516,11 +601,33 @@ $$
 
 ![3.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhtqx7-cZg4HSFnzJfIUV4ds1OFWwwACKBNrGz_BQFZqrvlZgy9mnQEAAwIAA3gAAz0E)
 
+> 下列关于多级存储系统的说法中，正确的有（ ）。
+>
+> - Ⅰ. 多级存储系统是为了降低存储成本 / Ⅱ. 虚拟存储器中主存和辅存之间的数据调动对任何程序员是透明的 / Ⅲ. CPU 只能与 Cache 直接交换信息，CPU 与主存交换信息也需要经过 Cache
+> - A. 仅Ⅰ
+> - B. 仅Ⅰ和Ⅱ
+> - C. Ⅰ、Ⅱ和Ⅲ
+> - D. 仅Ⅱ
+>
+> 若某存储器存取周期为 250ns，每次读出 16 位，该存储器的数据传输速率是（ ）。
+>
+> - A. 4×10^6B/s
+> - B. 16MB/s
+> - C. 8×10^6B/s
+> - D. 8×2^20B/s
+
 第 10 题错选为 C。对于 1，显然正确，这就是 cache 思想；对于 2，虚拟存储器中主存和辅存之间的数据调动对于机器级语言程序员是透明的，但是再往上就不是了；对于 3，CPU 与主存交换信息可以不经过 cache，例如直写法。
 
 第 11 题直接看的答案。每次读出 16b=2B，由于存储周期是 250ns，1s 内由 1s/250ns=1/(250×10^-9)=10^9/250=4×10^6 个周期，所以 4×10^6×2B=8×10^6B/s，也就是 C。
 
 ![3.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAhxqx7_LjzCf79HNzwEJ_KVFFQpD-QACKRNrGz_BQFZOAAEfiOGygWMBAAMCAAN4AAM9BA)
+
+> 下列关于存储器的说法中，不正确的是（ ）。
+>
+> - A. 随机存储器和只读存储器不可以统一编址
+> - B. 在访问随机存储器时，访问时间与存储单元的物理位置无关
+> - C. 随机存储器（RAM）芯片可随机存取信息，掉电后信息会丢失
+> - D. 只读存储器（ROM）芯片可随机存取信息，掉电后信息不会丢失
 
 本题错选为 B。属于低级错误。对于 A，随机存储器因为需要随机访问，而不应该挑选到只读存储器。深度分析一下，随机存储器比如说 RAM，只读存储器比如说 ROM；统一编址的意思是 CPU 不需要区分芯片到底是 RAM 还是 ROM，而是看成一个连续统一的内存地址，只需要将某一个地址段分出给 ROM，另外的地址段分配出去给 RAM，对 CPU 来说，它只需要发出一个地址，地址译码器电路就会自动帮 CPU 找到对应的芯片去读取数据。CPU 用的是完全相同的读写指令。
 
@@ -528,9 +635,30 @@ $$
 
 ![3.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAh1qx8AIXHwvFyoYUFhjJHBCpui8jgACKxNrGz_BQFYo3j85whR2QwEAAwIAA3gAAz0E)
 
+> 某一 DRAM 芯片，采用地址复用技术，容量为 1024×8 位，该芯片的地址引脚和数据引脚总数至少是（ ）。
+>
+> - A. 18
+> - B. 13
+> - C. 8
+> - D. 17
+
 本题错选为 A。DRAM 采用地址复用技术，所以 8 数据线 +10/2 地址线=13。
 
 ![3.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAh5qx8CG93bHFN3yZ9FtKd6TCzcUFQACLhNrGz_BQFbqgjpmgoTKqwEAAwIAA20AAz0E)
+
+> 下面有关 ROM 和 RAM 的叙述中，错误的是（ ）。
+>
+> - A. RAM 是可读可写存储器，ROM 是只读存储器
+> - B. ROM 和 RAM 都采用随机访问方式进行读/写
+> - C. 系统的主存由 RAM 和 ROM 组成
+> - D. 系统的主存都用 DRAM 芯片实现
+>
+> 下列说法正确的是（ ）。
+>
+> - A. EPROM 是可改写的，因此可以作为随机存储器
+> - B. EPROM 是可改写的，但不能作为随机存储器
+> - C. EPROM 是不可改写的，因此不能作为随机存储器
+> - D. EPROM 只能改写一次，因此不能作为随机存储器
 
 第 12 题错选为 C。主存不包括 cache，而对于主存而言，其内部包含 BIOS，所以有一部分的 ROM。
 
@@ -538,13 +666,34 @@ $$
 
 ![3.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAh9qx8DvKdjMPdCQ5tlaSCiTp3VoIAACMBNrGz_BQFa7aNWxcZzplQEAAwIAA3gAAz0E)
 
+> 每推出新一代 DRAM 芯片，地址引脚至少增加 1 根，则容量至少提高到原来的（ ）倍。
+>
+> - A. 2
+> - B. 4
+> - C. 8
+> - D. 16
+
 本题错选为 A，DRAM 采用地址引脚复用技术，那么问题来了，如果数据线增加 8 根呢？和地址线是表示 2^n 不同，数据线表示的就是数据本身，也就是 8 位需要 8 根地址线，假设原本有 D 根地址线，那么也就是 (D+8)/D 倍。
 
 ![3.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiFqx8EI7jwK0OTwyjPutDEd1Rgq4gACMRNrGz_BQFbXzrvhdNvkkQEAAwIAA20AAz0E)
 
+> 某 DRAM 芯片容量为 4M×4 位，下列说法中错误的是（ ）。
+>
+> - A. 芯片有 11 个地址引脚
+> - B. 芯片内部的行地址生成器（刷新计数器）为 11 位
+> - C. 芯片内部的行缓冲器容量为 2Kb
+> - D. 芯片有 4 个数据引脚
+
 本题错选为 A。对于 A，DRAM 采用地址引脚复用技术，即 2^22，所以是 11；对于 B，由于采用的是地址引脚复用，所以仅需发送两次信号即可；对于 C，一行是 2^11，而数据是 4b，所以是 8Kb；对于 D，显然正确。
 
 ![3.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiJqx8EfJ7inCppG-ciURrPxNxKvfgACMhNrGz_BQFaOwLNNtx53QgEAAwIAA3gAAz0E)
+
+> 下列关于单体多字存储器的说法中，不正确的是（ ）。
+>
+> - A. 单体多字存储器主要解决主存容量太小的问题
+> - B. 单体多字存储器中，每个存储单元存储多个字
+> - C. 指令与数据的连续存放有利于单体多字存储器提高主存的读/写速度
+> - D. 过多的转移指令会严重影响单体多字存储器的工作效率
 
 本题错选为。首先辨析一下以下概念：
 
@@ -562,9 +711,30 @@ $$
 
 ![3.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiNqx8G5464nDrb_tXVOIHzjHmU6uwACMxNrGz_BQFYlfIj-JrTBigEAAwIAA3gAAz0E)
 
+> 80386DX 是 32 位系统，以 4B 为编址单位，当在该系统中用 8KB（8K×8 位）的存储芯片构造 32KB 的存储体时，应完成存储器的（ ）设计。
+>
+> - A. 位扩展
+> - B. 字扩展
+> - C. 字位扩展
+> - D. 字位均不扩展
+
 本题错选为 C。显然这道题只需要字扩展即可。本题属于想当然的低级错误。
 
 ![3.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiRqx8MPxFbJiwYoHlq9jZxRqgVsVwACNRNrGz_BQFYK9YDPnv8WeQEAAwIAA3gAAz0E)
+
+> 地址总线 A₀（高位）～A₁₅（低位），用 4K×4 位的存储芯片组成 16KB 存储器，则产生片选信号的译码器的输入地址线应该是（ ）。
+>
+> - A. A₂A₃
+> - B. A₀A₁
+> - C. A₁₂A₁₃
+> - D. A₁₄A₁₅
+>
+> 若内存地址区间为 4000H～43FFH，每个存储单元可存储 16 位二进制数，该内存区域用 4 片存储芯片构成，构成该内存所用的存储芯片的容量是（ ）。
+>
+> - A. 512×16bit
+> - B. 256×8bit
+> - C. 256×16bit
+> - D. 1024×8bit
 
 第 6 题错选为 B。对于这道题尤其需要注意高位和低位。这道题 4K×4 位需要 16 个，也就是位扩展 + 字扩展，其中字扩展需要 4，而 16KB 总共占 2^14 个地址，所以也就是需要第 13 和第 14 个地址（从 1 开始算起），对应到题目里，也就是 A2 和 A3。本题错在想当然认为存储用满。
 
@@ -572,15 +742,36 @@ $$
 
 ![3.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiVqx8M90GupShB8AAG35yKq0hcz48sAAjcTaxs_wUBWefRy1D3rIdMBAAMCAAN4AAM9BA)
 
+> 内存按字节编址，地址从 90000H 到 CFFFFH，若用存储容量为 16K×8 位的芯片构成该内存，至少需要的芯片数是（ ）。
+>
+> - A. 2
+> - B. 4
+> - C. 8
+> - D. 16
+
 第 6 题错选为 B。对于这道题尤其需要注意高位和低位。这道题 4K×4 位需要 16 个，也就是位扩展 + 字扩展，其中字扩展需要 4，而 16KB 总共占 2^14 个地址，所以也就是需要第 13 和第 14 个地址（从 1 开始算起），对应到题目里，也就是 A2 和 A3。本题错在想当然认为存储用满。
 
 第 7 题错选为 A。43FFH+1-4000H=4400H-4000H=400H=0100 0000 0000H，也就是 2^10，注意题设采用的是 4 块芯片，所以 2^10×16bit/4，从而选择答案。本题错在把 4 当 4 算，而不是当成 16 进制去算。
 
 ![3.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAiVqx8M90GupShB8AAG35yKq0hcz48sAAjcTaxs_wUBWefRy1D3rIdMBAAMCAAN4AAM9BA)
 
+> 内存按字节编址，地址从 90000H 到 CFFFFH，若用存储容量为 16K×8 位的芯片构成该内存，至少需要的芯片数是（ ）。
+>
+> - A. 2
+> - B. 4
+> - C. 8
+> - D. 16
+
 本题错选为 A。CFFFFH+1-90000H=D0000H-90000H=40000H=0100 0000 0000 0000 0000H，即 2^18，16K=2^14，所以需要 16 片。
 
 ![3.3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAidqx8NuUv2DG2no6mfqiGnVf5OXtAACOBNrGz_BQFZ4X9jw3GmrNwEAAwIAA3gAAz0E)
+
+> 【2010 统考真题】假定用若干 2K×4 位的芯片组成一个 8K×8 位的存储器，则地址 0B1FH 所在芯片的最小地址是（ ）。
+>
+> - A. 0000H
+> - B. 0600H
+> - C. 0700H
+> - D. 0800H
 
 本题不知道为啥放进来了，而可能是当时没思路。8K×8bit/2K×4bit=8 个，而其中每 2 个组成一个完整的字，所以实际上其实是 4 个 2K×8bit 的芯片，由于默认采用的是高位交叉编址，2^13-1=10 0000 0000 0000-1=1FFFH。也就是说 A12 和 A11 可以用来当符号位，所以根据 0000 1011 0001 1111H 来看，是 01 组，也就是第 2 组，第 2 组起始地址是 0000 1000 0000 0000H，也就是 0800H。
 
@@ -588,11 +779,60 @@ $$
 
 ![3.4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAihqx8OJhCZhpsEJFk2jTfVsgXN_DgACORNrGz_BQFakkthwkJkB-wEAAwIAA20AAz0E)
 
+> 下列关于磁盘驱动器的叙述中，错误的是（ ）。
+>
+> - A. 送到磁盘驱动器的地址由磁头号、盘面号和扇区号组成
+> - B. 能控制磁头移动到指定磁道，并发回"寻道结束"信号
+> - C. 能控制磁盘片转过指定的扇区，并发回"扇区符合"信号
+> - D. 能控制对指定盘面的指定扇区进行数据的读/写操作
+>
+> 下列有关磁盘存储器读/写操作的叙述中，错误的是（ ）。
+>
+> - A. 最小读/写单位可以是一个扇区
+> - B. 采用直接存储器存取 DMA 方式进行输入/输出
+> - C. 按批处理方式进行一个数据块的读/写
+> - D. 磁盘存储器可与 CPU 交换盘面上的存储信息
+
 第 2 题错选为 C。对于 A，磁盘驱动器由磁道/柱面、磁头号/盘面号、扇区号组成，对于这一题的记忆可以联想磁盘的寻址，也就是磁盘移动磁盘/柱面是最好耗时的，而改变盘面不会那么耗时。
 
 第 3 题没选出来。显然 D 是错的，CPU 交换信息必须要经过 cache/内存。
 
 ![3.4.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAilqx8PRSxKL4qo0CfUC-u7-a4OMzQACOhNrGz_BQFa29FI9OxPRUQEAAwIAA3gAAz0E)
+
+> 下列关于固态硬盘（SSD）的叙述中，不正确的是（ ）。
+>
+> - A. 固态硬盘的读/写是以页为单位的
+> - B. 固态硬盘的擦除是以页为单位的
+> - C. 固态硬盘的写入速度比读取速度慢很多
+> - D. 固态硬盘的写入次数有限，引入磨损均衡可以延长使用寿命
+>
+> 下列关于固态硬盘（SSD）的说法中，错误的是（ ）。
+>
+> - A. 基于闪存的存储技术
+> - B. 随机读/写性能明显高于磁盘
+> - C. 随机写比较慢
+> - D. 读/写速度快，常用作主存
+>
+> 一个磁盘的转速为 7200 转/分，每个磁道有 160 个扇区，每个扇区有 512 字节，则在理想情况下，磁盘每秒传输的数据量是（ ）。
+>
+> - A. 7200×160KB
+> - B. 7200KB
+> - C. 9600KB
+> - D. 19200KB
+>
+> 某磁盘盘面共有 200 个磁道，盘面总存储容量为 60MB，磁盘旋转一周的时间为 25ms，每个磁道有 8 个扇区，各扇区之间有一间隙，磁头通过每个间隙需 1.25ms，则磁盘接口所需的最大传输速率是（ ）。
+>
+> - A. 10MB/s
+> - B. 60MB/s
+> - C. 83.3MB/s
+> - D. 20MB/s
+>
+> 【2013 统考真题】某磁盘的转速为 10000 转/分，平均寻道时间是 6ms，磁盘传输速率是 20MB/s，磁盘控制器延迟为 0.2ms，读取一个 4KB 的扇区所需的平均时间约为（ ）。
+>
+> - A. 9ms
+> - B. 9.4ms
+> - C. 12ms
+> - D. 12.4ms
 
 第 5 题没选出来。固态硬盘的读/写是以页为单位的，擦除是以块为单位的。
 
@@ -606,15 +846,43 @@ $$
 
 ![3.4.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAipqx8PzqsnQfLUPc6Q_hpf_PP71NAACOxNrGz_BQFYsSj-h60_Y5wEAAwIAA3gAAz0E)
 
+> 【2015 统考真题】若磁盘转速为 7200 转/分，平均寻道时间为 8ms，每个磁道包含 1000 个扇区，则访问一个扇区的平均存取时间大约是（ ）。
+>
+> - A. 8.1ms
+> - B. 12.2ms
+> - C. 16.3ms
+> - D. 20.5ms
+
 第 11 题不知道为啥放在这里。7200 转/分=120 转/s，即 1 转/ 1/120s，也就是平均转半圈需要 1/240s 所以 8ms+1/240s=12.167ms。
 
 ![3.5.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAitqx8QOLc8QhVwj4DWwS7GgJmgycQACPBNrGz_BQFashudZaIWkfwEAAwIAA3gAAz0E)
+
+> 某存储系统中，主存容量是 Cache 容量的 4096 倍，Cache 被分为 64 个块，采用直接映射方式、随机替换算法和全写法，则标记阵列（所有标记信息）的大小应为（ ）。
+>
+> - A. 6×4097bit
+> - B. 64×12bit
+> - C. 6×4096bit
+> - D. 64×13bit
 
 本题错选为 B。直接映射，随即替换和全写法均不需要额外位，cache 本身需要一个有效位，对于标记信息，也就是 12 位 tag，所以最终需要 12+1bit 也就是 13bit。
 
 对于这题分析一下要存储的信息是什么，直接映射也就是说分成 64 组，“组”这个信息是可以算出来的，所以不需要保存，真正需要比较的是 tag。
 
 ![3.5.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAixqx8QkTfPCLuiEtZAF_gABbxrT6DcAAj0Taxs_wUBW2sPzUM3Qc1kBAAMCAAN4AAM9BA)
+
+> 某计算机的 Cache 有 16 行，块大小为 16B，其映射方式可配置为直接映射或 2 路组相联映射，主存按字节编址，主存单元从 0 开始编号。若依次访问下列主存单元，则不论采取上述哪种映射方式都可能引起 Cache 冲突的是（ ）。
+>
+> - A. 52 号和 102 号单元
+> - B. 48 号和 308 号单元
+> - C. 60 号和 160 号单元
+> - D. 46 号和 236 号单元
+>
+> 假设主存地址位数为 32 位，按字节编址，主存和 Cache 之间采用全相联映射方式，主存块大小为 1 个字，每字 32 位，采用回写法（Write Back）方式和随机替换策略，则能存放 32K 字数据的 Cache 的总容量至少应有（ ）位。
+>
+> - A. 1536K
+> - B. 1568K
+> - C. 2016K
+> - D. 2048K
 
 第 20 题错选为。由于块大小为 16B，分别将上述单元变为 cache 行号。
 
@@ -623,6 +891,20 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 第 21 题错选为 C。一点一点分析，1 个字=32bit=4B，所以块内地址为 2，由于采用全相联，没有 cache 行号，所以有 30bit 用来存 tag。cache 本身需要 1 个有效位，回写法需要 1 个脏位，所以总共是 32 位。由于存放的数据是 1 字，所以总共 64 位。
 
 ![3.5.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAi1qx8RDROjsksI7XMIVfXVEEB9zVQACPhNrGz_BQFb0bQfn7px7tQEAAwIAA3gAAz0E)
+
+> 下列关于 Cache 替换算法的叙述中，错误的是（ ）。
+>
+> - A. 组相联映射和全相联映射都必须考虑如何进行替换
+> - B. 先进先出算法无须对每个 Cache 行记录替换信息
+> - C. 直接映射是多对一的映射，无须考虑替换问题
+> - D. LRU 算法需要对每个 Cache 行记录替换信息
+>
+> 下列关于 Cache 大小、主存块大小和 Cache 缺失率之间关系的叙述中，错误的是（ ）。
+>
+> - A. 主存块大小和 Cache 容量无直接关系
+> - B. Cache 容量越大，Cache 缺失率越低
+> - C. 主存块大小通常为几十到上百字节
+> - D. 主存块越大，Cache 缺失率越低
 
 第 25 题错选为 D。需要注意，在实际运行过程中，直接映射并不是顺序下来存的，而是随机存的，然后加时间戳或者先后顺序。
 
@@ -636,11 +918,32 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![3.6.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAi5qx8RkgstRpoqNLG7TjP2qRh5TbQACPxNrGz_BQFZsP27wnOpWEwEAAwIAA3gAAz0E)
 
+> 虚拟存储管理系统的基础是程序访问的局部性原理，此理论的基本含义是（ ）。
+>
+> - A. 在程序的执行过程中，程序对主存的访问是不均匀的
+> - B. 空间局部性
+> - C. 时间局部性
+> - D. 代码的顺序执行
+>
+> 虚拟存储器的常用管理方式有段式、页式、段页式，对于它们在与主存交换信息时的单位，以下表述正确的是（ ）。
+>
+> - A. 段式采用“页”
+> - B. 页式采用“块”
+> - C. 段页式采用“段”和“页”
+> - D. 页式和段页式均仅采用“页”
+
 第 2 题错选为 B。不全
 
 第 3 题错选为 C。学了操作系统就知道这道题应该是 D 了。
 
 ![3.6.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAi9qx8R22cLyjC4ESaGy5v2Jl3MsggACQBNrGz_BQFaTUvQi7EIfSwEAAwIAA3gAAz0E)
+
+> 【2010 统考真题】下列命令组合的一次访存过程中，不可能发生的是（ ）。
+>
+> - A. TLB 未命中，Cache 未命中，Page 未命中
+> - B. TLB 未命中，Cache 命中，Page 命中
+> - C. TLB 命中，Cache 未命中，Page 命中
+> - D. TLB 命中，Cache 命中，Page 未命中
 
 本题错选为 C。ABC 显然成立，分析 D，由于调入 TLB 的必在 Page 内，即便该进程下处理机，也会有专门的硬件将 TLB 内的有效位修改为 0，所以不可能出现 D 这种情况。
 
@@ -648,17 +951,59 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![4.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjBqx8SZSIOc3mFdxQGyDcny2t8yagACUhNrGz_BQFZkiaYpDOKXSQEAAwIAA20AAz0E)
 
+> 下列指令中不属于程序控制类指令的是（ ）。
+>
+> - A. 无条件转移指令
+> - B. 条件转移指令
+> - C. 中断隐指令
+> - D. 循环指令
+
 本题错选为 D。对于 ABD，本质上都是在控制程序流；对于 C，中断隐指令是程序由操作系统调度由 CPU 本身执行的（也就是硬件执行的指令），所以并不是程序控制类指令。
 
 ![4.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjFqx8ToNeclhDDTiCUZ_TY8vYIMgwACUxNrGz_BQFadCPnFQmHtJAEAAwIAA20AAz0E)
+
+> 在指令格式中，采用扩展操作码设计方案的目的是（ ）。
+>
+> - A. 减少指令字长度
+> - B. 增加指令字长度
+> - C. 保持指令字长度不变而增加指令的数量
+> - D. 保持指令字长度不变而增加寻址空间
 
 本题错选为 A。回顾扩展操作码的概念，其并不是减少指令字长度，而是采用哈夫曼树的思想。使操作码长度随地址码的减少而增加，并没有减少指令的长度。（比如说操作码 1bit，地址码 3bit，以及操作码 3bit，地址码 1bit）。
 
 ![4.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjJqx8bWsD7VMZVrs57ejN4DIDW-RAACWBNrGz_BQFbrKmfup0oS9AEAAwIAA20AAz0E)
 
+> 指令系统中采用不同寻址方式的目的是（ ）。
+>
+> - A. 提供扩展操作码的可能并降低指令译码难度
+> - B. 可缩短指令字长，扩大寻址空间，提高编程的灵活性
+> - C. 实现程序控制
+> - D. 三者都正确
+
 本题错选为 D。属于想当然错误。对于 A，显然采用扩展操作码增加译码难度；对于 C，采用不同寻址方式和程序控制无关系，程序控制一般都是采用相对寻址。
 
 ![4.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjNqx8brLD2i8aaaIg98l1aNDOU2vAACWRNrGz_BQFYzlqqh9c1RggEAAwIAA3gAAz0E)
+
+> 为了缩短指令中某个地址段的位数，有效的方法是采取（ ）。
+>
+> - A. 立即寻址
+> - B. 变址寻址
+> - C. 间接寻址
+> - D. 寄存器寻址
+>
+> 简化地址结构的基本方法是尽量采用（ ）。
+>
+> - A. 寄存器寻址
+> - B. 隐含寻址
+> - C. 直接寻址
+> - D. 间接寻址
+>
+> 在指令寻址的各种方式中，获取操作数最快的方式是（ ）。
+>
+> - A. 直接寻址
+> - B. 立即寻址
+> - C. 寄存器寻址
+> - D. 间接寻址
 
 第 3 题错选为 C。一般而言，寄存器的个数非常少，所以最短的地址（如果有）是寄存器寻址。注意，这里指的是地址码，而不是最终需要获取到的地址位。
 
@@ -668,13 +1013,48 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![4.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjRqx8cEfVCBUcG5VM1QtIwVzzO4RQACWhNrGz_BQFYi-IPh8JP6aQEAAwIAA20AAz0E)
 
+> 相对寻址方式中，指令所提供的相对地址实质上是一种（ ）。
+>
+> - A. 立即数
+> - B. 内存地址
+> - C. 以本条指令在内存中首地址为基准位置的偏移量
+> - D. 以下条指令在内存中首地址为基准位置的偏移量
+
 本题错选为 C。PC 自动 + “1”。
 
 ![4.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjVqx8dZ-Ocm84XYD2zjr-PiGmHV1wACXBNrGz_BQFYks-VcHSDXmwEAAwIAA3gAAz0E)
 
+> 某计算机的主存容量为 4M×16 位，且存储字长等于指令字长，若该机能完成 97 种操作，操作码位数固定，且有直接、间接、基址、变址、相对、立即六种寻址方式，则相对寻址的偏移量范围为（ ）。
+>
+> - A. (−32, +31)
+> - B. (−64, +63)
+> - C. (−128, +127)
+> - D. (−256, +255)
+
 本题错选为 D。由于存储字长=指令字长，所以有 16 位可以存储指令。97 种操作意味着需要 2^7=128，也就是 7 位；而寻址方式有 6 种，所以需要 2^3=8，也就是 3 位存储寻址方式。还剩下 16-7-3=6 位，采用补码表示即 -32-31。
 
 ![4.2.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjZqx8d0EaHs8aqdrHv0S9lIan5iSgACXRNrGz_BQFY3NHU4mIL4GgEAAwIAA3gAAz0E)
+
+> 假设某条指令的第一个操作数采用寄存器间接寻址方式，指令中给出的寄存器编号为 8，8 号寄存器的内容为 1200H，地址为 1200H 的单元中的内容为 12FCH，地址为 12FCH 的单元中的内容为 38D8H，而地址为 38D8H 的单元中的内容为 88F9H，则该操作数的有效地址为（ ）。
+>
+> - A. 1200H
+> - B. 12FCH
+> - C. 38D8H
+> - D. 88F9H
+>
+> 设相对寻址的转移指令占 3B，第 1 字节为操作码，第 2、3 字节为相对位移量（补码表示），数据在存储器中采用以低字节为字地址的存放方式，每当 CPU 从存储器取出一字节时，即自动完成 (PC) + 1→PC。若 PC 的当前值为 240（十进制），要求转移到 290（十进制），则转移指令的第 2、3 字节的机器代码是（ ）；若 PC 的当前值为 240（十进制），要求转移到 200（十进制），则转移指令的第 2、3 字节的机器代码是（ ）。
+>
+> - A. 2FH、FFH
+> - B. D5H、00H
+> - C. D5H、FFH
+> - D. 2FH、00H
+>
+> 某计算机按字节编址，采用大端方式，某指令的一个操作数的机器数为 ABCD 00FFH，该操作数采用基址寻址方式，指令中形式地址（用补码表示）为 FF00H，当前基址寄存器的内容为 C000 0000H，则该操作数的 LSB（FFH）存放的地址是（ ）。
+>
+> - A. C000 FF00H
+> - B. C000 FF03H
+> - C. BFFF FF00H
+> - D. BFFF FF03H
 
 第 17 题错选为 B。寄存器寻址意味着操作数在寄存器内，寄存器寻址意味着操作数的地址在寄存器里，一定要看清楚题目问了什么。
 
@@ -688,9 +1068,30 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![4.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjdqx8fgeB-YG6_KPNchqwE99OJnxQACXhNrGz_BQFbUymLOAAFtXccBAAMCAAN4AAM9BA)
 
+> 某计算机字长为 16 位，标志寄存器中存在 ZF、SF、OF 和 CF 标志位，采用双字节[?]长指令字。假定 bgt（大于零转移）指令的第一个字节指明操作码和寻址方式，第二个字节为立即数 Imm8，用补码表示。指令功能是：若转移条件成立，则 PC = PC + 2 + Imm8×2；否则，PC = PC + 2。则下列叙述中错误的是（ ）。
+>
+> - A. 该计算机按字节编址
+> - B. 若 bgt 指令是无符号整数的比较，则转移条件可以是 ZF + CF = 0
+> - C. 若 bgt 指令是有符号整数的比较，则转移条件可以是 SF⊕OF = 0
+> - D. 转移目标地址的范围是相对于 bgt 指令的前 127 条指令到后 128 条指令之间
+
 本题错选为 D，理由也是没有捋清楚这里的 + “2”的具体意思以及没有捋清楚 CF，OF 等的作用。题设说明采用双字节字长指令，即 1 指令长=2B，由于采用 Imm8，也就是 8 位数，范围为 -128-127，带入公式可得偏移的具体单位最后/2，即 D 选项。若 bgt 采用的是无符号整数的比较，如果两个数字相加没有溢出或者相减没有溢出，在无符号数里必然为正数，所以 CF=0，加上一个 0，所以转移条件就是 CF+ZF=0。若 bgt 是有符号数的比较，则有符号数溢出的标志为 SF，假设两个小负数相加，那么 SF=1，OF=0，1 异或 0=1，可得该选项错误。
 
 ![4.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjhqx8f-ym6qp9q1MOT5E4oNSc3bkQACYBNrGz_BQFaEHeLWlv_wcwEAAwIAA3gAAz0E)
+
+> 假设 R[ax] = 7FE6H，R[bx] = FFE8H，执行指令“sub bx, ax”后，寄存器的内容和各标志的变化为（ ）。
+>
+> - A. R[ax] = 8002H，OF = 0，SF = 1，CF = 1，ZF = 0
+> - B. R[bx] = 8002H，OF = 0，SF = 1，CF = 0，ZF = 0
+> - C. R[ax] = 8002H，OF = 1，SF = 1，CF = 0，ZF = 0
+> - D. R[bx] = 8002H，OF = 1，SF = 1，CF = 0，ZF = 0
+>
+> 某计算机的数据采用小端方式存储，减法指令“sub ax, imm”的功能为 (ax) − imm→ax，imm 表示立即数，该指令对应的十六进制机器码为 2dxxxx（从左到右以字节为单位由低地址到高地址），其中 xxxx 对应 imm 的机器码，若 imm = −3，(ax) = 7，则该指令对应的机器码和执行后 OF 标志位的值分别为（ ）。
+>
+> - A. 2DFFFDH，0
+> - B. 2DFFFDH，1
+> - C. 2DFDFFH，0
+> - D. 2DFDFFH，1
 
 第 2 题错选为 D。本题是 CF 理解不清晰，对于 sub bx，ax，显然够减，所以 CF=0。7FE6-FFE8=7FE6+0018，显然不会溢出，所以 OF 也是 0。
 
@@ -698,9 +1099,28 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![4.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjlqx8gXyVAx4fDUUOrtbQ01x1tcqgACYRNrGz_BQFajNokMTJkTIgEAAwIAA3gAAz0E)
 
+> 程序 P 中有两个变量 i 和 j，被分别分配在寄存器 eax 和 edx 中，P 中语句“if(i<j) { … }”对应的指令序列如下（左边为指令地址，中间为机器代码，右边为汇编指令），其中 jle 指令的偏移量为 0d：
+>
+> 804846a    39 c2    cmp dword ptr edx,eax
+> 804846c    7e 0d    jle xxxxxxxx
+>
+> 若执行到 804846aH 处的 cmp 指令时，i = 105，j = 100，则 jle 指令执行后将转到（ ）处的指令执行。
+>
+> - A. 8048461H
+> - B. 804846eH
+> - C. 8048479H
+> - D. 804847bH
+
 本题错选为 B。注意存储地址，i 存储在 eax 里，j 存储在 edx 里，由于题目为 i< j，显然这是不成立的，所以根据下一条指令需要跳转。根据题设可知 804846cH 为 2 字节指令，所以 PC=804846EH，再 +0dH，可得 27=16+11，也就是 D。
 
 ![4.3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjpqx8iXlLwsAXFuytOhMhSFoBD-BgACZBNrGz_BQFb1rGcqz4N1pAEAAwIAA3gAAz0E)
+
+> 下列有关调用指令（转子指令）的叙述中，错误的是（ ）。
+>
+> - A. 与高级语言源程序中的过程调用相对应，一次过程调用对应一条调用指令
+> - B. 指令执行时必须保留返回地址，调用指令随后一条指令的地址是返回地址
+> - C. 嵌套调用时返回地址通常保存在栈中，非嵌套调用时可保存在特定寄存器中
+> - D. 指令执行时将无条件转移到目标地址处，转移目标地址无须在指令中明显给出
 
 本题错选为 A。在 C 语言里写一个过程调用，经过编译后对应一个 call；对于 D，必须得告诉 CPU 去哪。
 
@@ -708,11 +1128,25 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![4.4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjtqx8kFOZJmy06MDIt0LN7V3F_BGAACZhNrGz_BQFae-5hGsK6fVgEAAwIAA20AAz0E)
 
+> 下列描述中，不符合 RISC 指令系统特点的是（ ）。
+>
+> - A. 指令长度固定，指令种类少
+> - B. 寻址方式种类尽量减少，指令功能尽可能强
+> - C. 增加寄存器的数目，以尽量减少访存次数
+> - D. 选取使用频率最高的一些简单指令，以及很有用但不复杂的指令
+
 本题错选为 B。显然 B 是 CISC 的系统特点。
 
 ### 计组王道选择题 1 刷第 5 章
 
 ![5.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAjxqx8khMSK3MEf8_-2Il76nq3CvhgACZxNrGz_BQFYml-tXOZfFMAEAAwIAA3gAAz0E)
+
+> 在 CPU 中，跟踪后继指令地址的寄存器是（ ）。
+>
+> - A. 指令寄存器
+> - B. 程序计数器
+> - C. 地址寄存器
+> - D. 状态寄存器
 
 本题错选为 C。为低级错误，看错选项。用一条指令的流动来解释一下这道题。
 
@@ -732,11 +1166,43 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![5.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAj1qx8lKwCAoISCRmqwtiw5wgFk4ngACaBNrGz_BQFYVFSubEd4RjgEAAwIAA20AAz0E)
 
+> 指令（ ）从主存储器中读出。
+>
+> - A. 总是根据程序计数器
+> - B. 有时根据程序计数器，有时根据转移指令
+> - C. 根据地址寄存器
+> - D. 有时根据程序计数器，有时根据地址寄存器
+
 本题错选为 B。指令从哪里读出，根据上一题的分析可知，指令总是从程序计数器，也就是 PC 内读出。对于转移指令，可能会改变 PC 值，但是指令仍然是从 PC 里读出来的；对于地址寄存器 MAR，它可能存乱七八糟的东西。
 
 ![5.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAj5qx8l8iREXsRf_xIsMp-1jzz6WBgACbRNrGz_BQFb8NafO5VDTeAEAAwIAA3gAAz0E)
 
+> 若指令按字边界对齐存放，程序计数器（PC）可以使用字地址，其位数取决于（ ）。
+>
+> I. 存储器的容量    II. 机器字长    III. 指令字长
+>
+> - A. I
+> - B. I 和 III
+> - C. II 和 III
+> - D. I、II 和 III
+>
+> 下列关于程序计数器（PC）的叙述中，错误的是（ ）。
+>
+> - A. 机器指令中不能显式地使用 PC
+> - B. 指令顺序执行时，PC 值总是自动加 1
+> - C. 调用指令执行后，PC 值一定是被调用过程的入口地址
+> - D. 无条件转移指令执行后，PC 值一定是转移目标地址
+>
+> 指令寄存器（IR）的位数取决于（ ）。
+>
+> - A. 存储器的容量
+> - B. 机器字长
+> - C. 指令字长
+> - D. 存储字长
+
 ![5.1.10 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAj9qx8mo9AO6AtEHAngCe2omBk6_4AACbxNrGz_BQFYhCblp4F0z7QEAAwIAA3gAAz0E)
+
+> [原图非题目：主人手写解析笔记截图]
 
 其实也不算，只要搞清楚一个公式就好了：PC = 存储容量 / IR。
 
@@ -746,18 +1212,46 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![5.1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkBqx8nqI-PHxaU6hNQnJJ3blvVRpwACcRNrGz_BQFadUGCja3KcoAEAAwIAA3gAAz0E)
 
+> 间址周期结束后，CPU 内寄存器 MDR 中的内容为（ ）。
+>
+> - A. 指令
+> - B. 操作数地址
+> - C. 操作数
+> - D. 无法确定
+
 本题错选为 C。取指令，将指令从 PC 送入 IR，并且解析出指令本身，PC+“1”；分析指令，分析指令的寻址方式，计算出指令的操作数地址；访存；运行；写回。
 
 ![5.1.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkFqx8oCWyne5KqPmHyBa679IqagxAACchNrGz_BQFb6KO0r9e4sHwEAAwIAA3gAAz0E)
+
+> 【2016 统考真题】某计算机的主存储器空间为 4GB，字长为 32 位，按字节编址，采用 32 位字长指令字格式。若指令按字边界对齐存放，则程序计数器（PC）和指令寄存器（IR）的位数至少分别是（ ）。
+>
+> - A. 30、30
+> - B. 30、32
+> - C. 32、30
+> - D. 32、32
 
 本题错选为 C。主存空间为 4GB，也就是 4×2^30B=2^32B，字长 32bit=4B。指令 32bit=4B。所以，PC，即程序计数器，可以用 2^32/2^2=2^30，即 30bit 来存储，剩下 2 位可以默认 00，指令寄存器是指令本身，即 32bit，所以本题应该选 B。
 这里解释一下按字边界对齐存放，也就是 0，4，8，12…
 
 ![5.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkJqx8qpscumTDKlW0RyWmC9rXSF3gACdhNrGz_BQFYaEZnlh5ne_gEAAwIAA20AAz0E)
 
+> 下列关于指令执行过程的叙述中，错误的是（ ）。
+>
+> - A. 取指操作是控制器固有的功能，不需要在操作码控制下完成
+> - B. 所有指令的取指操作是相同的
+> - C. 在指令长度相同的情况下，所有指令的取指操作是相同的
+> - D. 中断周期是在指令执行完成后出现的
+
 本题错选为 D。ACD 显然正确，对于 B，考虑 CISC，指令长度可能不相等，所以取的字节数可能不相等。
 
 ![5.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkNqx8rAWGr1oaK05fM-_xdaNluCrgACeBNrGz_BQFaFw2zq6Ud_4AEAAwIAA3gAAz0E)
+
+> 【2009 统考真题】冯·诺依曼机中指令和数据均以二进制形式存放在存储器中，CPU 区分它们的依据是（ ）。
+>
+> - A. 指令操作码的译码结果
+> - B. 指令和数据的寻址方式
+> - C. 指令周期的不同阶段
+> - D. 指令和数据所在的存储单元
 
 本题错选为 A。考虑 CPU 的五个阶段：取指令，分析指令，访存，执行，写回。CPU 在取指令的时候把指令读入内存，在分析指令的时候将操作码送入 CU 得出这是什么指令，然后根据其操作数进行访存，得到操作数的地址。访存阶段则是根据操作数的地址来得到操作数。
 
@@ -765,9 +1259,44 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![5.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkRqx8rpMh3U9PZTbtKzMzN65RAEswACeRNrGz_BQFZpiBoaUuEqVQEAAwIAA3gAAz0E)
 
+> 下列操作中，从开始到完成所持续的时间不一定等于一个时钟周期的是（ ）。
+>
+> I. 单总线数据通路中完成一次主存读操作
+> II. 单周期 CPU 中执行一条完整指令
+> III. 单总线数据通路中，寄存器 R1 经内部总线传至寄存器 R2
+> IV. 流水线数据通路中，数据从一个流水段寄存器传入下一个流水段寄存器
+> V. 单周期 CPU 中完成一次 ALU 运算
+>
+> - A. I、V
+> - B. I、III、V
+> - C. II、III、IV
+> - D. IV、V
+>
+> 下列关于单周期 CPU 和多周期 CPU 的描述中，错误的是（ ）。
+>
+> - A. 单周期 CPU 更容易支持复杂指令（如乘法、除法）
+> - B. 单周期 CPU 部件冗余大、利用率低，多周期 CPU 则刚好相反
+> - C. 单周期 CPU 在 1 个时钟周期内执行一条指令，CPI = 1
+> - D. 多周期 CPU 至少需要 2 个时钟周期才能执行一条指令，CPI > 1
+
 本题错选为 C。辨析一下这里的概念。CPU 主要由 CU 和数据通路组成，数据通路主要有操作原件（ALU）以及状态原件（MAR，MDR，PC 等）。
 
 ![5.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkRqx8rpMh3U9PZTbtKzMzN65RAEswACeRNrGz_BQFZpiBoaUuEqVQEAAwIAA3gAAz0E)
+
+> 下列操作中，从开始到完成所持续的时间不一定等于一个时钟周期的是（ ）。
+>
+> - Ⅰ. 单总线数据通路中完成一次主存读操作 / Ⅱ. 单周期 CPU 中执行一条完整指令 / Ⅲ. 单总线数据通路中，寄存器 R1 经内部总线传至寄存器 R2 / Ⅳ. 流水线数据通路中，数据从一个流水段寄存器传入下一个流水段寄存器 / Ⅴ. 单周期 CPU 中完成一次 ALU 运算
+> - A. Ⅰ、Ⅴ
+> - B. Ⅰ、Ⅲ、Ⅴ
+> - C. Ⅱ、Ⅲ、Ⅳ
+> - D. Ⅳ、Ⅴ
+>
+> 下列关于单周期 CPU 和多周期 CPU 的描述中，错误的是（ ）。
+>
+> - A. 单周期 CPU 更容易支持复杂指令（如乘法、除法）
+> - B. 单周期 CPU 部件冗余大、利用率低，多周期 CPU 则刚好相反
+> - C. 单周期 CPU 在 1 个时钟周期内执行一条指令，CPI = 1
+> - D. 多周期 CPU 至少需要 2 个时钟周期才能执行一条指令，CPI > 1
 
 第 8 题错选为 C。对于 1，单总线数据通路完成一次主存读操作。由于是单总线，所以在主存读指令的时候得取指令等等，会有竞争，所以 1 排除。对于 2 显然为 1 个时钟周期，对于 4 和 3，这里需要注意式寄存器内部，所以 ok。对于 5，显然是小于一个时钟周期的。
 
@@ -775,19 +1304,47 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![5.3.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkZqx8sZISv6JgT502H8MvsJoZyplwACexNrGz_BQFYLJWg8AAHUBDsBAAMCAAN4AAM9BA)
 
+> CPU 的读/写控制信号的作用是（ ）。
+>
+> - A. 决定数据总线上的数据流方向
+> - B. 控制存储器操作的读/写类型
+> - C. 控制流入、流出存储器信息的方向
+> - D. 以上都是
+
 本题错选为 B。即 Cin 和 Cout 线。Cin 代表想要写，Cout 代表进位读。显然 ABC 均正确，例如想要读数据，Cin=1，然后应该是数据流向 CPU，存储器流向总线。
 
 ![5.4.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkdqx8zF5Er9Bg471greK9GwL7bv_AAChxNrGz_BQFaBCN08p2AVogEAAwIAA3gAAz0E)
 
+> 通常一条指令对应一个微程序，一个微程序的周期对应一个（ ）。
+>
+> - A. 指令周期
+> - B. 主频周期
+> - C. 时钟周期
+> - D. 工作周期
+
 本题错选为 C。辨析一下这里的概念：一条机器指令=一个微程序=若干个微指令，微指令=若干个微命令，微命令=微操作。所以一个微程序周期等于一个机器指令周期，所以也就等于指令周期。
 
 ![5.4.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkhqx84HtLpL3NrjdNJgCpmmUgiGXAACihNrGz_BQFaSKqNKoEedUgEAAwIAA3gAAz0E)
+
+> 【2012 统考真题】某计算机的控制器采用微程序控制方式，微指令中的操作控制字段采用字段直接编码法，共有 33 个微命令，构成 5 个互斥类，分别包含 7、3、12、5 和 6 个微命令，则操作控制字段至少有（ ）。
+>
+> - A. 5 位
+> - B. 6 位
+> - C. 15 位
+> - D. 33 位
 
 本题错选为 D。操作控制字段主要有 3 种方式，直接编码法，字段直接编码，字段间接编码，对于直接编码而言，一位代表一个信号；对于字段直接编码，先花 x 位表示有多少个互斥类，然后每个再花 y 位。对于字段间接编码，则是 x+y 混杂编码器来，把互斥的操作可以放在一起编码成 2 个字段。需要注意的是，别忘了 000 代表空状态。
 
 对于这道题，5 个互斥类对应 5，也就是 3bit，对于后续的，7+1 需要 3bit，3+1 需要 2bit，12+1 需要 4 比特，5+1 需要 3bit，6+1 需要 3bit，总计 3+2+4+3+3=15，控制字段为 15bit。
 
 ![5.4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAklqx84bMaP9xYBVLvm7UtaTcU-njwACixNrGz_BQFbWLqpNz99TDgEAAwIAA3gAAz0E)
+
+> 【2014 统考真题】某计算机采用微程序控制器，共有 32 条指令，公共的取指令微程序包含 2 条微指令，各指令对应的微程序平均由 4 条微指令组成，采用断定法（后继地址字段法）确定下条微指令地址，则微指令中后继地址字段的位数至少是（ ）。
+>
+> - A. 5
+> - B. 6
+> - C. 8
+> - D. 9
 
 本题错选为 D。对于 CPU，想要翻译指令需要利用 CU，CU 有两种翻译指令的方式，一种是硬布线控制器，另一种式微程序控制器，即在 CU 内部再放一个微型控制器。主存（RAM）里存着机器指令；而 CPU 内部的控制存储器（ROM/CM）里，存着微指令。
 
@@ -800,11 +1357,39 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![5.5.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkpqx85t3_6eSxcowbSDf8vFf5HBbAACjRNrGz_BQFbVx8RP6yopzgEAAwIAA3gAAz0E)
 
+> 【2015 统考真题】内部异常（内中断）可分为故障（fault）、陷阱（trap）和终止（abort）三类，下列有关内部异常的叙述中，错误的是（ ）。
+>
+> - A. 内部异常的产生与当前执行指令相关
+> - B. 内部异常的检测由 CPU 内部逻辑实现
+> - C. 内部异常的响应发生在指令执行过程中
+> - D. 内部异常处理后返回到发生异常的指令继续执行
+
 本体错选为 C。对于 C，内部异常的“响应”是在指令的执行过程中。当指令一条指令结束后的末尾进行响应？对于 D，~~内部异常处理完之后返回异常执指令的下一条执行，而不是本条~~。
 
 对于内部中断有三种情况，故障，陷阱和终止，分别对应返回本条，下一条，不反悔。对于外部中断一定是返回下一条指令执行，因为检查是在每条指令执行结束之后。
 
 ![5.6.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAktqx86jTr0Yx1MdTohhH17ebPxFuQACjhNrGz_BQFZdnaZueKYzJgEAAwIAA3gAAz0E)
+
+> 下列关于数据冒险的叙述中，正确的是（ ）。
+>
+> - Ⅰ. 数据冒险是指后面指令用到的数据还未来得及由前面的指令产生 / Ⅱ. 在发生数据冒险的指令之间插入空操作指令能避免数据冒险 / Ⅲ. 采用转发（旁路）技术可以解决一部分数据冒险现象 / Ⅳ. 通过编译器调整指令顺序可解决部分数据冒险
+> - A. Ⅰ、Ⅱ、Ⅳ
+> - B. Ⅰ、Ⅱ、Ⅲ
+> - C. Ⅰ、Ⅲ、Ⅳ
+> - D. Ⅰ、Ⅱ、Ⅲ 和 Ⅳ
+>
+> 下列指令序列中，指令 I1 和 I3、I2 和 I3 之间发生数据相关，假定采用“取指、译码/取数、执行、访存、写回”五段流水线方式，那么在采用转发技术时，需要在指令 I3 之前加入（ ）条空操作指令才能使这段程序不发生数据冒险。
+>
+> ```text
+> I1: add r1, r0, 1    # (r1)←(r0) + 1
+> I2: load r3, 12(r2)    # (r3)← M[(r2) + 12]
+> I3: add r5, r3, r1    # (r5)←(r3) + (r1)
+> ```
+>
+> - A. 3
+> - B. 2
+> - C. 0
+> - D. 1
 
 第 12 题错选为 A。根据这道题总结一下所有的冒险。冒险主要分为 3 大类，结构冒险（资源冲突），数据冒险以及控制冒险。其中控制冒险主要分为 3 类，延迟执行相关指令，采用旁路转发技术以及采用 lode-use 技术。
 
@@ -821,15 +1406,72 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![6.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkxqyJlg7QvxDb48aia6EWhsBd7YpwACxxFrG6T-SFaXKtYQRlD8mwEAAwIAA3gAAz0E)
 
+> 间址寻址第一次访问内存所得到的信息经系统总线的（ ）传送到 CPU。
+>
+> - A. 数据总线
+> - B. 地址总线
+> - C. 控制总线
+> - D. 总线控制器
+>
+> 系统总线中地址线的功能是（ ）。
+>
+> - A. 选择主存单元地址
+> - B. 选择进行信息传输的设备
+> - C. 选择外存地址
+> - D. 指定主存和 I/O 设备接口电路的地址
+
 第 5 题错选为 B。取指令，分析指令（间指），也就是通过数据总线传输，all is data。
 
 第 6 题错选为 A。A 表述不全，除了主存地址之外还可以有 D 所说的东西。
 
 ![6.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAkxqyJlg7QvxDb48aia6EWhsBd7YpwACxxFrG6T-SFaXKtYQRlD8mwEAAwIAA3gAAz0E)
 
+> 间址寻址第一次访问内存所得到的信息经系统总线的（ ）传送到 CPU。
+>
+> - A. 数据总线
+> - B. 地址总线
+> - C. 控制总线
+> - D. 总线控制器
+>
+> 系统总线中地址线的功能是（ ）。
+>
+> - A. 选择主存单元地址
+> - B. 选择进行信息传输的设备
+> - C. 选择外存地址
+> - D. 指定主存和 I/O 设备接口电路的地址
+
 本题错选为 D。本题考虑来源于总线复用，但是也应该是控制总线，而不是控制单元。
 
 ![6.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAk5qyJpl5RIaSSJyZsny86p3uYeJpgACzBFrG6T-SFZIVBMcJBIETAEAAwIAA3gAAz0E)
+
+> 传输一幅分辨率为 640 像素×480 像素，颜色数量为 65536 的照片（采用无压缩方式），假设有效数据的传输速率为 56kb/s，则大约需要的时间是（ ）。
+>
+> - A. 34.82s
+> - B. 43.86s
+> - C. 85.71s
+> - D. 87.77s
+>
+> 某总线有 104 根信号线，其中数据线（DB）为 32 根，若总线工作频率为 33MHz，则其理论最大传输速率为（ ）。
+>
+> - A. 33MB/s
+> - B. 64MB/s
+> - C. 132MB/s
+> - D. 164MB/s
+>
+> 在一个 16 位的总线系统中，若时钟频率为 100MHz，总线周期为 5 个时钟周期传输一个字，则总线带宽是（ ）。
+>
+> - A. 4MB/s
+> - B. 40MB/s
+> - C. 16MB/s
+> - D. 64MB/s
+>
+> 下列信号中，可在系统总线中的控制总线上传输的有（ ）。
+>
+> - Ⅰ. 存储器和 I/O 设备的地址信息 / Ⅱ. 存储器和 I/O 设备的时序信号、控制信号 / Ⅲ. 存储器和 I/O 设备的响应信号 / Ⅳ. 存储器中存放的数据
+> - A. Ⅰ和Ⅳ
+> - B. Ⅱ和Ⅲ
+> - C. Ⅰ、Ⅱ和Ⅲ
+> - D. Ⅱ、Ⅲ和Ⅳ
 
 第 11 题不会做。
 
@@ -841,19 +1483,63 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![6.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAk9qyJq2bnCGV7oNsogQ3WNG-4CouwACzRFrG6T-SFZFqusJPfXXHAEAAwIAA20AAz0E)
 
+> 在异步总线中，传送操作（ ）。
+>
+> - A. 由设备控制器控制
+> - B. 由 CPU 控制
+> - C. 由统一时序信号控制
+> - D. 按需分配时间
+
 本题错选为 A。异步总线方式按需分配。整理一下四种方式。
 
 ![6.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAlBqyJran9UdPBxojowRbxXJnaCDPQACzhFrG6T-SFZEVv_7FWJ7mAEAAwIAA3gAAz0E)
 
+> 某 I/O 设备采用异步串行通信方式向主机传送 7 位 ASCII 字符，通信规程要求每个字符后附加 1 位奇偶校验位，若要求每秒传送 480 个字符，则该设备在异步串行线路上每秒传输的比特数为（ ）。
+>
+> - A. 3360
+> - B. 38400
+> - C. 3840
+> - D. 4800
+
 本题错选为 C。（本题算是略超纲，从 16 年之后就基本不考了）本题错误在于没有考虑异步串行通信的起始位和结束位。
 
 ![6.2.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAlFqyJwYppNdmHdUtKCedvNma3FXWAAC0RFrG6T-SFafESIt6vM-2gEAAwIAA3gAAz0E)
+
+> 【2017 统考真题】下列关于多总线结构的叙述中，错误的是（ ）。
+>
+> - A. 靠近 CPU 的总线速度较快
+> - B. 存储器总线可支持突发传送方式
+> - C. 总线之间须通过桥接器相连
+> - D. PCI-Express×16 采用并行传输方式
 
 本题错选为 C。超纲题。
 
 ### 计组王道选择题 1 刷第 7 章
 
 ![7.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAlJqyJ7cXwABz71M8MoK6q6EYriMUOQAAtMRaxuk_khWYd4YDyGUG14BAAMCAAN4AAM9BA)
+
+> 下列功能中，属于 I/O 接口的功能的是（ ）。
+>
+> - Ⅰ. 数据格式的转换 / Ⅱ. I/O 过程中错误与状态检测 / Ⅲ. I/O 操作的控制与定时 / Ⅳ. 与主机和外设通信
+> - A. Ⅰ和Ⅳ
+> - B. Ⅰ、Ⅲ和Ⅳ
+> - C. Ⅰ、Ⅱ和Ⅳ
+> - D. Ⅰ、Ⅱ、Ⅲ和Ⅳ
+>
+> 下列关于 I/O 端口和接口的说法中，正确的是（ ）。
+>
+> - A. 在统一编址方式下，对主存单元和 I/O 端口的存储保[?]措施是独立的
+> - B. 在统一编址方式下，主存单元和 I/O 端口是靠不同的地址线来区分的
+> - C. 在独立编址方式下，主存单元和 I/O 端口是靠不同的地址线来区分的
+> - D. 在独立编址方式下，CPU 需要设置专门的输入/输出指令访问 I/O 端口
+>
+> 下列属于 I/O 接口中寄存器的有（ ）。
+>
+> - Ⅰ. 指令寄存器 / Ⅱ. 控制寄存器 / Ⅲ. 状态寄存器 / Ⅴ. 数据缓冲寄存器 / Ⅳ. 存储器地址寄存器
+> - A. Ⅰ、Ⅱ、Ⅲ 和 Ⅴ
+> - B. Ⅱ、Ⅲ 和 Ⅳ
+> - C. Ⅱ、Ⅲ 和 Ⅴ
+> - D. Ⅱ、Ⅲ、Ⅳ 和 Ⅴ
 
 第 2 题错选为 B。IO 接口=设备控制器。
 
@@ -863,23 +1549,81 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![7.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAlRqyJ-hu0AOUoOgDPnfRIGTMbM_DwAC1BFrG6T-SFY44S0IDAne5gEAAwIAA3gAAz0E)
 
+> 磁盘驱动器向盘片磁道记录数据时采用（ ）方式写入。
+>
+> - A. 并行
+> - B. 串行
+> - C. 并行 - 串行
+> - D. 串行 - 并行
+>
+> 采用中断方式进行打印控制时，在打印控制接口和打印机之间交换的信息不包括（ ）。
+>
+> - A. 打印字符点阵信息
+> - B. 打印控制信息
+> - C. 打印机状态信息
+> - D. 中断请求信息
+
 第 10 题错选为 C。
 
 第 11 题错选为 B。打印控制接口和交换机之间交换的信息，指的是 IO 接口和 IO 设备之间。中断“请求”是 IO 接口发给 CPU 的，自然不需要再 IO 接口和 IO 设备之间传输。
 
 ![7.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAlVqyJ_MOHQl42t8GIfmYcjdjsQZ4AAC1RFrG6T-SFYO2CgvacP9igEAAwIAA20AAz0E)
 
+> 下列有关 I/O 接口功能和结构的叙述中，错误的是（ ）。
+>
+> - A. I/O 接口中主机侧数据宽度与设备侧数据宽度总是一样的
+> - B. I/O 接口是像显卡或网卡之类的一种外设控制逻辑
+> - C. CPU 可以从 I/O 接口读取状态信息，以了解接口和外设的状态
+> - D. CPU 可以向 I/O 接口传送用来对设备进行控制的命令
+
 本题错选为 C。对于 A，举一个很简单的例子，例如键盘，纯字符设备。
 
 ![7.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAlZqyJ_xNrOiURb_4ndPo2CdwS1XRQAC1hFrG6T-SFb-0xX91kWtVAEAAwIAA3gAAz0E)
+
+> 【2017 统考真题】I/O 指令实现的数据传送通常发生在（ ）。
+>
+> - A. I/O 设备和 I/O 端口之间
+> - B. 通用寄存器和 I/O 设备之间
+> - C. I/O 端口和 I/O 端口之间
+> - D. 通用寄存器和 I/O 端口之间
 
 本题错选为 A。IO 端口是 IO 设备的寄存器。假设 IO 设备需要向内存发送数据，那么先将数据写道 IO 端口（数据寄存器上），然后发往 CPU 内的寄存器，即 D。
 
 ![7.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAldqyKA5g6yhczGyWCdGnhsPwqC1lQAC1xFrG6T-SFbsyf57VvSmewEAAwIAA20AAz0E)
 
+> 下列关于中断的说法中，错误的是（ ）。
+>
+> - A. 中断服务程序一般是操作系统模块
+> - B. 中断向量方法可提高中断源的识别速度
+> - C. 中断向量地址是中断服务程序的入口地址
+> - D. 重叠处理中断的现象称为中断嵌套
+
 本题错选为 A。对于 A，中断服务程序最开始三个是硬件实现的。中断向量是中断服务程序的入口地址，而不是中断向量的地址。
 
 ![7.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAlhqyKCmGenxD1CozX1hDYB9V0ijKwAC2BFrG6T-SFZliTiKTyRSJQEAAwIAA3gAAz0E)
+
+> 下列关于程序中断方式和 DMA 方式的说法中，错误的是（ ）。
+>
+> - Ⅰ. 程序中断过程是由硬件和中断服务程序共同完成的 / Ⅱ. 在每条指令的执行过程中，每个总线周期要检查一次有无中断请求 / Ⅲ. 检测有无 DMA 请求，一般安排在一条指令执行过程的末尾 / Ⅳ. 中断服务程序的最后指令是无条件转移指令 / Ⅴ. 中断响应判优是根据中断屏蔽字来确定中断的优先级
+> - A. Ⅰ、Ⅲ、Ⅳ
+> - B. Ⅱ、Ⅲ、Ⅳ、Ⅴ
+> - C. Ⅱ、Ⅳ、Ⅴ
+> - D. Ⅱ、Ⅲ、Ⅳ
+>
+> 能产生 DMA 请求的总线部件是（ ）。
+>
+> - Ⅰ. 高速外设 / Ⅱ. 需要与主机批量交换数据的外设 / Ⅲ. 具有 DMA 接口的设备
+> - A. 仅Ⅰ
+> - B. 仅Ⅲ
+> - C. Ⅰ、Ⅲ
+> - D. Ⅱ、Ⅲ
+>
+> 在具有中断向量表的计算机中，中断向量地址是（ ）。
+>
+> - A. 子程序入口地址
+> - B. 中断服务程序的入口地址
+> - C. 中断服务程序入口地址的地址
+> - D. 中断程序断点
 
 第 4 题错选为 D。对于 1，显然；对于 2，是每个指令即将结束后；对于 3，关于 DMA 是可以在指令中间执行的；对于 4，中断服务程序的最后一般不是无条件转移指令，而是继续之前的服务运行；对于 5，这里辨析一下中断响应判优和中断屏蔽字。中断响应判优是硬件排队器，焊死在主板上，而中断屏蔽字决定的事中断处理优先级，即谁能打断谁。‘中断响应判优’，管的是门外的人怎么排队进门！
 
@@ -891,9 +1635,30 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![7.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAllqyKDdndZuaWtJv13eHWXi34fabQAC2RFrG6T-SFYsknV69jNhRgEAAwIAA3gAAz0E)
 
+> 下列关于中断 I/O 方式的叙述中，错误的是（ ）。
+>
+> - A. CPU 对外部中断的响应不可能发生在一条指令的执行过程中
+> - B. 在中断 I/O 方式下，外设接口中的寄存器和 CPU 中的寄存器直接交换数据
+> - C. 中断请求的是 CPU 时间，要求 CPU 执行程序来处理发生的相关事件
+> - D. 只要有中断请求发生，一条指令执行结束后 CPU 就进入中断响应周期
+
 本题错选为 A。辨析一下外中断和内中断。在一条指令执行的时候，外中断只能发生在一条指令执行的末尾，而内中断会发生在一条指令执行的时候（例如缺页异常）。对于 D 有两种可能性，关中断/中断屏蔽。
 
 ![7.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAlpqyKEIuJdshwvO4647-0SyCERPyQAC2hFrG6T-SFaMC4C2Te5KXgEAAwIAA3gAAz0E)
+
+> 在 I/O 接口中设置中断触发器保存外设发出的中断请求，是因为（ ）。
+>
+> - A. 中断不需要立即处理
+> - B. 中断设备的处理速度比 CPU 快
+> - C. CPU 无法对发生的中断请求立即进行处理
+> - D. 可能有多个中断同时发生
+>
+> 在中断响应周期中，由（ ）将允许中断触发器置 0。
+>
+> - A. 关中断指令
+> - B. 中断隐指令
+> - C. 开中断指令
+> - D. 中断服务程序
 
 第 14 题错选为 D。对于 A 是 C 的物理限制。多个中断同时发生，需要硬件判断器来判优，从而让 CPU 来轮流处理。
 
@@ -901,13 +1666,34 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![7.3.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAltqyKE3T5z1oermiQ1nQteooIADSAAC2xFrG6T-SFbkL6rFm2ZUygEAAwIAA3gAAz0E)
 
+> 设置中断屏蔽标志可以改变（ ）。
+>
+> - A. 多个中断源的中断请求优先级
+> - B. CPU 对多个中断请求响应的优先次序
+> - C. 多个中断服务程序开始执行的顺序
+> - D. 多个中断服务程序执行完的次序
+
 本题错选为 B。这里指的是中断屏蔽字，ABC 都是物理硬件的事，而谁最先，也就是门内谁可以打断谁。考虑这样一种情况，中断优先级是 A>B>C，如果没有设置中断屏蔽，那么 C 在执行过程中可以被 A 和 B 打断。如果设置中断屏蔽（例如屏蔽 A 打断的权利），那么 C 在执行过程中就不会被 A 打断。
 
 ![7.3.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAlxqyKFXDJI89tPNTzxOTuwOXIQC2AAC3BFrG6T-SFYDZ5aTDFZvMAEAAwIAA3gAAz0E)
 
+> 以下关于 DMA 方式进行 I/O 的描述中，正确的是（ ）。
+>
+> - A. 一个完整的 DMA 过程，部分由 DMA 控制器控制，部分由 CPU 控制
+> - B. 一个完整的 DMA 过程，完全由 CPU 控制
+> - C. 一个完整的 DMA 过程，完全由 DMA 控制器控制，CPU 不介入任何控制
+> - D. 一个完整的 DMA 过程，完全由 CPU 采用周期挪用法控制
+
 本题错选为 C。前处理和后处理。
 
 ![7.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAl1qyKGFhAv0UOX63KWPtcd1p-ytlAAC3xFrG6T-SFbCg3Dh1P-ckQEAAwIAA3gAAz0E)
+
+> 关于外中断（故障除外）和 DMA，下列说法中正确的是（ ）。
+>
+> - A. DMA 请求和中断请求同时发生时，响应 DMA 请求
+> - B. DMA 请求、非屏蔽中断、可屏蔽中断都要在当前指令结束之后才能被响应
+> - C. 非屏蔽中断请求优先级最高，可屏蔽中断请求优先级最低
+> - D. 若不开中断，所有中断请求就不能响应
 
 本体错选为 C。对于 A，DMA 请求优先；对于 B，DMA 请求在指令执行过程中就需要执行。对于 C 不确定，对于 D，有些指令即便是关中断下也必须响应。
 
@@ -915,13 +1701,50 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![7.3.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAl5qyKHJPH5nKkBEdMrklFamAyQbMgAC4BFrG6T-SFajCJtK9SJH1gEAAwIAA20AAz0E)
 
+> 中断发生时，程序计数器内容的保存和更新是由（ ）完成的。
+>
+> - A. 硬件自动
+> - B. 进栈指令和转移指令
+> - C. 访存指令
+> - D. 中断服务程序
+
 本题错选为 B。这里捋一遍中断的全流程：关中断；保存断点，也就是保存旧地址的 PC 以及 PSW；中断服务程序寻址，也就是找到新的 PC，直接覆盖；接下来是软件，把所有东西压栈，然后后续步骤。
 
 ![7.3.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAl9qyKIKBD6po12p-xXEH5x2yoB8CgAC4hFrG6T-SFZqOYsTPtQQfAEAAwIAA3gAAz0E)
 
+> 在 DMA 方式下，数据从内存传送到外设经过的路径是（ ）。
+>
+> - A. 内存→数据总线→数据通路→外设
+> - B. 内存→数据总线→DMAC→外设
+> - C. 内存→数据通路→数据总线→外设
+> - D. 内存→CPU→外设
+
 本题错选为 A。属于低级错误。DMAC 可以理解为 DMA 的数据寄存器，数据通路是 CPU 的概念，CPU 内部主要由 CU 和数据通路构成，数据通路又可以分成数据和状态两大类，其中 ALU 属于前面的。
 
 ![7.3.32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmBqyKIdMv5-bJ2ZO-2BgWE7FtOw1QAC4xFrG6T-SFYc7w0l6BZA_AEAAwIAA3gAAz0E)
+
+> 在磁盘存储器进行读/写操作之前，CPU 需要对磁盘控制器或 DMA 控制器进行初始化，在下列选项中，不包含在初始化信息中的是（ ）。
+>
+> - A. 传送信息所在的主存起始地址
+> - B. 传送方向（是读磁盘还是写磁盘）
+> - C. 传送信息所在的通用寄存器编号
+> - D. 传送数据的字数或字节数
+>
+> 【2009 统考真题】下列选项中，能引起外部中断的事件是（ ）。
+>
+> - A. 键盘输入
+> - B. 除数为 0
+> - C. 浮点运算下溢
+> - D. 访存缺页
+>
+> 【2010 统考真题】单重中断系统中，中断服务程序内的执行顺序是（ ）。
+> I. 保存现场    II. 开中断    III. 关中断    IV. 保存断点    V. 中断事件处理
+> VI. 恢复现场    VII. 中断返回
+>
+> - A. I→V→VI→II→VII
+> - B. III→I→V→VII
+> - C. III→IV→V→VI→VII
+> - D. IV→I→V→VI→VII
 
 第 32 题错选为 D。没必要传输 C，显然对于 DMA 方式，直接放在内存即可，不需要涉及到 CPU 寄存器
 
@@ -935,6 +1758,20 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![1.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmFqyKJRP3iSOsxLktd9qmkrvnQ3BAAC5BFrG6T-SFZyBAtFmLrJiAEAAwIAA3gAAz0E)
 
+> 操作系统是对（ ）进行管理的软件。
+>
+> - A. 软件
+> - B. 硬件
+> - C. 计算机资源
+> - D. 应用程序
+>
+> 下面的（ ）资源不是操作系统应该管理的。
+>
+> - A. CPU
+> - B. 内存
+> - C. 外存
+> - D. 源程序
+
 第 1 题选了 B、C，答案是 C、D
 
 关于第 1 题，是因为没背书，答案在第 1 页的黑字部分。
@@ -943,13 +1780,34 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![1.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmJqyKJjM7RgMsFCIZpOygths-q9MgAC5RFrG6T-SFYMdqPBOWGipQEAAwIAA3gAAz0E)
 
+> 下列选项中，不属于多道程序设计的基本特征的是（ ）。
+>
+> - A. 制约性
+> - B. 间断性
+> - C. 顺序性
+> - D. 共享性
+
 错选为 A。因为多道程序需要访问相同的临界资源，所以他们之间是相互制约的。对于顺序性，每道程序的内部是顺序的，但是程序间的执行顺序不是顺序的。
 
 ![1.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmNqyKKbIqVNnTaIORnb7vyohqxZDAAC5hFrG6T-SFaKjY-Jbb0TlwEAAwIAA3gAAz0E)
 
+> 实时操作系统必须在（ ）内处理来自外部的事件。
+>
+> - A. 一个机器周期
+> - B. 被控制对象规定时间
+> - C. 周转时间
+> - D. 时间片
+
 错选为 D。时间片的概念来自于 RR 调度，也就是分时操作系统。在分时操作系统下，每个对象轮流分配处理机，就好像他们单独拥有这台机子一样。即便在分时操作系统下，也不一定是在时间片内处理完所有的信息，此时就体现了中断的作用。
 
 ![1.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmRqyKKs7zA8G_YoTi__eKvwjFkvGgAC5xFrG6T-SFbGbGbHbG4YagEAAwIAA20AAz0E)
+
+> 下列关于分时操作系统的叙述中，错误的是（ ）。
+>
+> - A. 分时操作系统主要用于批处理作业
+> - B. 分时操作系统中每个任务依次轮流使用时间片
+> - C. 分时操作系统的响应时间好
+> - D. 分时操作系统是一种多用户操作系统
 
 错选为 D。分时操作系统确实是一种多用户系统，可以让每个用户轮流使用时间片。批处理系统主要用于处理批作业，这里把批作业理解为了轮流。分时操作系统让每个用户轮流使用时间片。
 
@@ -957,9 +1815,45 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![1.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmVqyKLrgkMP_w25vnEQ3JoTeje5SAAC6RFrG6T-SFZozQ8epV6JYwEAAwIAA3gAAz0E)
 
+> 引入多道程序设计技术的前提条件之一是系统具有（ ）。
+>
+> - A. 多个 CPU
+> - B. 多个终端
+> - C. 中断功能
+> - D. 分时功能
+
 本题错选为 A。多道程序系统意味着程序并发执行（非并行），而并发意味着轮流上处理机调度，所以必须拥有中断功能。
 
 ![1.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmZqyKMLbiRsnr-Cgiuen_yK_6Ng1QAC6hFrG6T-SFbkXklhzFSrAgEAAwIAA3gAAz0E)
+
+> 下列说法中，正确的是（ ）。
+> I. 批处理的主要缺点是需要大量内存
+> II. 当计算机提供了内核态和用户态时，输入/输出指令必须在内核态下执行
+> III. 操作系统中采用多道程序设计技术的最主要原因是提高 CPU 和外部设备的可靠性
+> IV. 操作系统中，通道技术是一种硬件技术
+>
+> - A. I、II
+> - B. I、III
+> - C. II、IV
+> - D. II、III、IV
+>
+> 下列关于系统调用的说法中，正确的是（ ）。
+> I. 用户程序使用系统调用命令，该命令经过编译后形成若干参数和陷入指令
+> II. 用户程序使用系统调用命令，该命令经过编译后形成若干参数和屏蔽中断指令
+> III. 用户程序创建一个新进程，需使用操作系统提供的系统调用接口
+> IV. 当操作系统完成用户请求的系统调用功能后，应使 CPU 从内核态转到用户态
+>
+> - A. I、III
+> - B. III、IV
+> - C. I、III、IV
+> - D. II、III、IV
+>
+> （ ）是操作系统必须提供的功能。
+>
+> - A. 图形用户界面（GUI）
+> - B. 为进程提供系统调用命令
+> - C. 中断处理
+> - D. 编译源程序
 
 第 2 题错选为 B。批处理系统的主要缺点是无法实时交互，I/O 指令必须在内核态进行，操作系统采用多道程序设计技术主要原因是提高利用，而非可靠。通道技术是 I/O 形式的第 4 钟（考纲已移除），是硬件技术。
 
@@ -971,21 +1865,71 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![1.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmdqyKMmNl7qj496WiU7vtOtM3bEVgAC6xFrG6T-SFYt_e1K1p9LbAEAAwIAA3gAAz0E)
 
+> 下列程序中，必须在内核态执行的是（ ）。
+> I. 磁盘调度程序    II. 中断处理程序    III. 设备驱动程序    IV. 操作系统初始化程序
+>
+> - A. I、II、III、IV
+> - B. I、II、III
+> - C. I、II、IV
+> - D. II、III
+
 本题错选为 C。设备驱动也需要在内核态执行，具体可以见操作系统的 I/O 管理——进程调用，设备独立性软件，驱动程序，中断处理，具体的硬件处理。
 
 ![1.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmhqyKM9CmQ4hPBlPRUT2YPrnSzfbAAC7BFrG6T-SFbHjy5KLwuGpgEAAwIAA3gAAz0E)
+
+> 下列关于系统调用和一般过程调用的说法中，正确的是（ ）。
+>
+> - A. 两者都需要将当前 CPU 中的 PSW 和 PC 的值压栈，以保存现场信息
+> - B. 系统调用的被调用过程一定运行在内核态
+> - C. 一般过程调用的被调用过程一定运行在用户态
+> - D. 两者的调用过程与被调用过程一定都运行在用户态
 
 本题错选为 A。保存 PSW 是中断处理中硬件完成的部分，一般过程调用不需要保存程序状态字指令。被调用过程的意思是说这个东西本身，也就是函数本身，而不是 trap 指令。我使用 trap 指令这个过程是调用过程，被调用过程是内核执行的东西。
 
 ![1.3.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmlqyKNNDC2vw67G9mp54F10akCRiwAC7RFrG6T-SFYiG_9ZljkSwwEAAwIAA3gAAz0E)
 
+> 【2012 统考真题】下列选项中，不可能在用户态发生的事件是（ ）。
+>
+> - A. 系统调用
+> - B. 外中断
+> - C. 进程切换
+> - D. 缺页
+
 本题错选为 A。用户态发生系统调用，系统调用的被调用态在内核态。进程切换必然是发生在内核态。外中断可能在用户态发生，这个时候应该转到内核态处理。进程切换泽必须需要在内核态。
 
 ![1.3.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmpqyKNkkJ9IrgbSZ--7RkgpoMPnQAAC7hFrG6T-SFYh3X_n6z0-8AEAAwIAA3gAAz0E)
 
+> 【2015 统考真题】处理外中断时，应该由操作系统保存的是（ ）。
+>
+> - A. 程序计数器（PC）的内容
+> - B. 通用寄存器的内容
+> - C. 快表（TLB）中的内容
+> - D. Cache 中的内容
+
 本题错选为 A。程序计数器的内容在中断处理的第 2 步由硬件保存（中断隐指令）通用寄存器在中断处理的后续步骤被操作系统保存。
 
 ![1.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmtqyKOULUjFqD_hzBcspwm0eaM_9AAC7xFrG6T-SFZZkFIJQFA8IAEAAwIAA3gAAz0E)
+
+> 【2018 统考真题】定时器产生时钟中断后，由时钟中断服务程序更新的部分内容是（ ）。
+> I. 内核中时钟变量的值
+> II. 当前进程占用 CPU 的时间
+> III. 当前进程在时间片内的剩余执行时间
+>
+> - A. 仅 I、II
+> - B. 仅 II、III
+> - C. 仅 I、III
+> - D. I、II、III
+>
+> 【2019 统考真题】下列关于系统调用的叙述中，正确的是（ ）。
+> I. 在执行系统调用服务程序的过程中，CPU 处于内核态
+> II. 操作系统通过提供系统调用避免用户程序直接访问外设
+> III. 不同的操作系统为应用程序提供了统一的系统调用接口
+> IV. 系统调用是操作系统内核为应用程序提供服务的接口
+>
+> - A. 仅 I、IV
+> - B. 仅 II、III
+> - C. 仅 I、II、IV
+> - D. 仅 I、III、IV
 
 第 25 题错选为 C。考虑 RR 调度，123 同时需要满足，更新这三者来判断是否进程需要被 RR 调度下掉。
 
@@ -993,17 +1937,51 @@ A：52/16=3，102/16=6；B：48/16=3，308/16=19；C：60/16=3，160/16=10；D�
 
 ![1.6.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAmxqyKPJgPn0mqD2ve4H2kgsyxfc3AAC8BFrG6T-SFYcrRGmt1NGOQEAAwIAA3gAAz0E)
 
+> 对于以下五种服务，在采用微内核结构的操作系统中，（ ）不宜放在微内核中。
+> I. 进程间通信机制    II. 低级 I/O    III. 低级进程管理和调度
+> IV. 中断和陷入处理    V. 文件系统服务
+>
+> - A. I、II 和 III
+> - B. II 和 V
+> - C. 仅 V
+> - D. IV 和 V
+
 本题错选为 B。实际考察的是操作系统必须的功能。
 
 ![1.6.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAm1qyKPwx01sEPe5H-6ewb5Dyopn2AAC8RFrG6T-SFappQ54VdXT6AEAAwIAA3gAAz0E)
+
+> 下列关于操作系统结构的说法中，正确的是（ ）。
+> I. 当前广泛使用的 Windows 操作系统，采用的是分层式 OS 结构
+> II. 模块化的 OS 结构设计的基本原则是，每一层都仅使用其底层所提供的功能和服务，这样就使系统的调试和验证都变得容易
+> III. 因为微内核结构能有效支持多处理机运行，所以非常适合于分布式系统环境
+> IV. 采用微内核结构设计和实现操作系统具有诸多好处，如添加系统服务时不必修改内核，使系统更高效。
+>
+> - A. I 和 II
+> - B. I 和 III
+> - C. III
+> - D. III 和 IV
 
 本题错选为 D。微内核并不高效，因为进行一些操作的时候需要频繁变态。
 
 ![1.6.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAm5qyKQB5T0pH9igh1J24_PEicnJ_QAC8hFrG6T-SFbj-FpOPwK9FQEAAwIAA3gAAz0E)
 
+> 对于计算机操作系统引导，描述不正确的是（ ）。
+>
+> - A. 计算机的引导程序驻留在 ROM 中，开机后自动执行
+> - B. 引导程序先做关键部位的自检，并识别已连接的外设
+> - C. 引导程序会将硬盘中存储的操作系统全部加载到内存中
+> - D. 若计算机中安装了双系统，引导程序会与用户交互加载有关系统
+
 本题错选为 B。背书。并不会将操作系统所有东西都加载到内存里，只会把必要的部分加载进来，也就是内核。
 
 ![1.6.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAm9qyKRZI9ytf1VbtzW3Wz3e85nA4AAC8xFrG6T-SFbpYREVgRgIOAEAAwIAA3gAAz0E)
+
+> 计算机操作系统的引导程序位于（ ）中。
+>
+> - A. 主板 BIOS
+> - B. 片外 Cache
+> - C. 主存 ROM 区
+> - D. 硬盘
 
 引导程序位于硬盘，背书。整个过程大致是先在 BIOS 初始化，自检，根据 CMOS 设置的设备优先级启动设备。加载主引导。确定活动分区。加载启动管理器。加载操作系统内核。初始化内核并且启动用户环境。
 
@@ -1019,9 +1997,29 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![1.6.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnBqyKUQ9WTg71exGJKOe7dGeYIw_wAC9BFrG6T-SFZ7eYF-qmWhQwEAAwIAA3gAAz0E)
 
+> 下列关于虚拟机的说法中，正确的是（ ）。
+> I. 虚拟机可以用软件实现    II. 虚拟机可以用硬件实现
+> III. 多台虚拟机可同时运行在同一物理机器上，它实现了真正的并行
+>
+> - A. I 和 II
+> - B. I 和 III
+> - C. 仅 I
+> - D. I、II 和 III
+
 本题错选 B，为低级错误，看错选项。考虑第二类虚拟机，依赖于宿主计算机的，不可以。考虑第一类虚拟机，底层硬件被第一类虚拟机管理程序综合管理的，所以也不行。
 
 ![1.6.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnFqyKUjHFbLjvhgCQ9AbpqkGMNyAgAC9RFrG6T-SFZteog_Wff9GwEAAwIAA3gAAz0E)
+
+> 虚拟机的实现离不开虚拟机管理程序（VMM），下列关于 VMM 的说法中正确的是（ ）。
+> I. 第一类 VMM 直接运行在硬件上，其效率通常高于第二类 VMM
+> II. VMM 的上层需要支持操作系统的运行、应用程序的运行，因此实现 VMM 的代码量通常大于实现一个完整操作系统的代码量
+> III. VMM 可将一台物理机虚拟化为多台虚拟机
+> IV. 为了支持客户操作系统的运行，第二类 VMM 需要完全运行在最高特权级
+>
+> - A. I、II 和 III
+> - B. I 和 III
+> - C. I、III 和 IV
+> - D. I、II、III 和 IV
 
 本题错选为 A。VMM 代码量远低于操作系统的量，比如说只需要实现一些特定的协议转换就可以了。
 
@@ -1029,17 +2027,50 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnJqyKVAu-bhRYFJppKRd2Gy8x38ogAC9hFrG6T-SFaRIl2NSiodwAEAAwIAA3gAAz0E)
 
+> 下列任务中，（ ）不是由进程创建原语完成的。
+>
+> - A. 申请 PCB 并初始化
+> - B. 为进程分配内存空间
+> - C. 为进程分配 CPU
+> - D. 将进程插入就绪队列
+
 本题错选为 B。进程在被创建后，进入就绪队列，为进程分配 CPU 是调度程序做的事情。
 
 ![2.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnNqyKVlMhoPMND0hfcDoxgcHgcs6AAC9xFrG6T-SFbG01xTOF4zowEAAwIAA3gAAz0E)
+
+> 下列选项中，导致创建新进程的操作是（ ）。
+> I. 用户登录    II. 高级调度发生时
+> III. 操作系统响应用户提出的请求    IV. 用户打开了一个浏览器程序
+>
+> - A. 仅 I 和 IV
+> - B. 仅 II 和 IV
+> - C. I、II 和 IV
+> - D. 全部
 
 本题错选为 B。用户登录意味着创建了一个用户进程，打开浏览器程序相当于点击 exe，点击 exe 肯定会创建新进程。
 
 ![2.1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnRqyKV4FIiWrPGuyKlMZRqTohk7ZgAC-BFrG6T-SFbXz5xJpVZxFQEAAwIAA3gAAz0E)
 
+> 在单处理器系统中，若同时存在 10 个进程，则处于就绪队列中的进程最多有（ ）个。
+>
+> - A. 1
+> - B. 8
+> - C. 9
+> - D. 10
+
 本题错选为 D。即便考虑闲逛进程，闲逛进程也是这 10 个进程之一，而非独立出去的。
 
 ![2.1.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnVqyKWG-GarUOwsidw6YYjyENPrTwAC-hFrG6T-SFb9gtJoRVC_dAEAAwIAA3gAAz0E)
+
+> 若一个进程实体由 PCB、共享正文段、数据堆段和数据栈段组成，请指出下列 C 语言程序中的内容及相关数据结构各位于哪一段中。
+> I. 全局赋值变量（ ）II. 未赋值的局部变量（ ）
+> III. 函数调用实参传递值（ ）IV. 用 malloc() 要求动态分配的存储区（ ）
+> V. 常量值（如 1995、"string"）（ ）VI. 进程的优先级（ ）
+>
+> - A. PCB
+> - B. 正文段
+> - C. 堆段
+> - D. 栈段
 
 本题 2 错选为 B。未赋值的局部变量在应在栈区。（局部变量都在栈区）
 
@@ -1047,9 +2078,23 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.1.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnZqyKWWfzTe3WWj8luHN7CNjjKuLgAC-xFrG6T-SFZnjh09knGZGgEAAwIAA3gAAz0E)
 
+> 下列进程间通信方式中，数据传输速度最快的是（ ）。
+>
+> - A. 消息传递
+> - B. 信号量
+> - C. 共享内存
+> - D. 管道
+
 本题错选为 B。通过信号量通信需要发送信号量和接收信号量，在这过程中会消耗时间，而采用共享内存直接访问即可。
 
 ![2.1.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAndqyKWmX8zDIVN534m8_09vqMwsyQAC_BFrG6T-SFZfP2vCT1SKFgEAAwIAA3gAAz0E)
+
+> 下列关于线程的叙述中，正确的是（ ）。
+>
+> - A. 线程包含 CPU 现场，可以独立执行程序
+> - B. 每个线程都有自己独立的地址空间
+> - C. 每个进程只能包含一个线程
+> - D. 同一进程中的线程间通信也必须使用系统调用函数
 
 本题错选为 B。对于进程以及线程的理解，可以从以下角度入手：
 
@@ -1059,31 +2104,98 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.1.49](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnhqyKW9MAABXJQSwtFgZox2vAt1570AAv0Raxuk_khWEcjOSuo4PIQBAAMCAAN4AAM9BA)
 
+> 在内核级线程相对于用户级线程的优点的如下描述中，错误的是（ ）
+>
+> - A. 同一进程内的线程切换，系统开销小
+> - B. 当内核线程阻塞时，同一进程中的其他内核级线程仍可被调度
+> - C. 内核级线程的程序实体可以在内核态运行
+> - D. 对多处理器系统，核心可以同时调度同一进程的多个线程并行运行
+
 本题错选为 C。看题目，主角是内核级线程。
 
 ![2.1.58](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnlqyKXSNePCrNnHglSLFM0nNoOtnwAC_hFrG6T-SFYg0tDNxvWhlAEAAwIAA3gAAz0E)
+
+> 【2010 统考真题】下列选项中，导致创建新进程的操作是（ ）。Ⅰ. 用户登录成功 Ⅱ. 设备分配 Ⅲ. 启动程序执行
+>
+> - A. 仅Ⅰ和Ⅱ
+> - B. 仅Ⅱ和Ⅲ
+> - C. 仅Ⅰ和Ⅲ
+> - D. Ⅰ、Ⅱ、Ⅲ
 
 本题错选为 D。设备分配显然并非创建进程，而是可能可以让其他进程从就绪态变成运行态。
 
 ![2.1.60](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnpqyKXmevl_QdhdVAbcmw8U8w3pPQAC_xFrG6T-SFYUTGoEUQ-SwQEAAwIAA3gAAz0E)
 
+> 【2012 统考真题】下列关于进程和线程的叙述中，正确的是（ ）。
+>
+> - A. 不管系统是否支持线程，进程都是资源分配的基本单位
+> - B. 线程是资源分配的基本单位，进程是调度的基本单位
+> - C. 系统级线程和用户级线程的切换都需要内核的支持
+> - D. 同一进程中的各个线程拥有各自不同的地址空间
+
 本题错选为 D，本质依旧是对线程与进程的不了解。
 
 ![2.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAntqyKYuboeBhFhkKoMuyVj5y2iJQAADEmsbpP5IVr_8CY_FyIOVAQADAgADeAADPQQ)
+
+> 在支持页式存储管理和多线程技术的系统中，当一个进程中的线程 T₁ 切换到同一个进程中的线程 T₂ 执行时，操作系统需要执行的操作是（ ）。Ⅰ. 更新程序计数器的值 Ⅱ. 更新栈基址寄存器的值 Ⅲ. 更新页基址寄存器的值 Ⅳ. 更新进程打开文件表
+>
+> - A. Ⅰ、Ⅱ、Ⅲ、Ⅳ
+> - B. Ⅱ、Ⅳ
+> - C. Ⅰ、Ⅱ
+> - D. Ⅰ、Ⅲ、Ⅳ
 
 本题错选为 A。依旧是对线程和进程的不充分理解。对于打开文件表，这个是分配给进程的。对于页基址寄存器，一个进程分配一个页表，所以不变。而线程私有的需要变。
 
 ![2.2.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAnxqyKaZB76vIDP80wSCDc_zp3Q6awACARJrG6T-SFb7ERR9-QABhysBAAMCAAN4AAM9BA)
 
+> 有 5 个批处理作业 A, B, C, D, E 几乎同时到达，其预计运行时间分别为 10, 6, 2, 4, 8，其优先级（由外部设定）分别为 3, 5, 2, 1, 4，这里 5 为最高优先级。以下各种调度算法中，平均周转时间为 14 的是（ ）调度算法。
+>
+> - A. 时间片轮转（时间片为 1）
+> - B. 优先级
+> - C. 先来先服务（按照顺序 10, 6, 2, 4, 8）
+> - D. 短作业优先
+
 错选为 B。本题应该是脑子里认为是 B，然后即便是算出来了 D，也脑子想想就改为了 B
 
 ![2.2.40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAn1qyKbLdP4KsWtSkWzkUASyIB9AJQACAhJrG6T-SFa5nGlvLYpRqwEAAwIAA3gAAz0E)
+
+> 【2012 统考真题】一个多道批处理系统中仅有 P₁ 和 P₂ 两个作业，P₂ 比 P₁ 晚 5ms 到达，它的计算和 I/O 操作顺序如下。
+> P₁：计算 60ms，I/O 80ms，计算 20ms
+> P₂：计算 120ms，I/O 40ms，计算 40ms
+> 若不考虑调度和切换时间，则完成两个作业需要的时间最少是（ ）。
+>
+> - A. 240ms
+> - B. 260ms
+> - C. 340ms
+> - D. 360ms
 
 错选为 A
 
 注意 P2 比 P1 晚来 5min。
 
 ![2.2.48](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAn5qyKdEP0dhaTejjyu-H_2sVpQ5KwACAxJrG6T-SFZmxUyrL8mDGgEAAwIAA3gAAz0E)
+
+> 【2018 统考真题】某系统采用基于优先权的非抢占式进程调度策略，完成一次进程调度和进程切换的系统时间开销为 1μs。在 T 时刻就绪队列中有 3 个进程 P₁、P₂ 和 P₃，其在就绪队列中的等待时间、需要的 CPU 时间和优先权如下表所示。
+> 进程名 等待时间 需要的 CPU 时间 优先权
+> P₁ 30μs 12μs 10
+> P₂ 15μs 24μs 30
+> P₃ 18μs 36μs 20
+>
+> - [图示] 表格共 4 列（进程名、等待时间、需要的 CPU 时间、优先权），3 行数据为 P₁、P₂、P₃
+>
+> 若优先权大的进程优先获得 CPU，从 T 时刻起系统开始进程调度，则系统的平均周转时间为（ ）。
+>
+> - A. 54μs
+> - B. 73μs
+> - C. 74μs
+> - D. 75μs
+>
+> 【2019 统考真题】系统采用二级反馈队列调度算法进行进程调度。就绪队列 Q₁ 采用时间片轮转调度算法，时间片为 10ms；就绪队列 Q₂ 采用短进程优先调度算法；系统优先调度 Q₁ 队列中的进程，当 Q₁ 为空时系统才会调度 Q₂ 中的进程；新创建的进程首先进入 Q₁；Q₁ 中的进程执行一个时间片后，若未结束，则转入 Q₂。若当前 Q₁、Q₂ 为空，系统依次创建进程 P₁、P₂ 后即开始进程调度，P₁、P₂ 需要的 CPU 时间分别为 30ms 和 20ms，则进程 P₁、P₂ 在系统中的平均等待时间为（ ）。
+>
+> - A. 25ms
+> - B. 20ms
+> - C. 15ms
+> - D. 10ms
 
 第 47 题错选为 A。这题在做的时候完全没有理解什么意思，但是 2 刷的时候细想，就意识到这题应该是从 P1 上处理机开始算（也就是只有 P1 的等待时间不算，其他的等待时间都要照常算。
 
@@ -1095,13 +2207,34 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAn9qyKhO6OrDJca8q_5_iTu-ac5TtgACCBJrG6T-SFbH-Pkb3X4XCQEAAwIAA3gAAz0E)
 
+> 两个旅行社甲和乙为旅客到某航空公司订飞机票，形成互斥资源的是（ ）。
+>
+> - A. 旅行社
+> - B. 航空公司
+> - C. 飞机票
+> - D. 旅行社与航空公司
+
 本题错选为 B。航空公司可以有很多订阅渠道，所以不是互斥资源。而每一张飞机票只能卖给一个人。
 
 ![2.3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAoBqyKhqf3QSf9BPx_HmRH-GL7PQWgACCRJrG6T-SFaM3-pq-AABy1QBAAMCAAN4AAM9BA)
 
+> 用 P、V 操作实现进程同步，信号量的初值为（ ）。
+>
+> - A. -1
+> - B. 0
+> - C. 1
+> - D. 由用户确定
+
 错选为 B。这题应该是受到了以前什么同步先 V 后 P 的影响，摒弃这种思想，改为：互斥指的是对临界区的访问，而同步是制约先后顺序的。考虑这样一个场景：一个消费者和一个生产者，生产者可以消耗 x 个空间，这个 x 就是用户指定的。
 
 ![2.3.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAoFqyKh7QQlSTdAi8d60w7QZG1DLCgACChJrG6T-SFaFHs-bYz3qcgEAAwIAA20AAz0E)
+
+> 在使用互斥锁进行同步互斥时，下列（ ）情况会导致死锁。
+>
+> - A. 一个线程对同一个互斥锁连续加锁两次
+> - B. 一个线程尝试对一个已加锁的互斥锁再次加锁
+> - C. 两个线程分别对两个不同的互斥锁先后加锁，但顺序相反
+> - D. 一个线程对一个互斥锁加锁后忘记解锁
 
 错选为 D。对一个互斥锁加锁后忘记解锁，只能导致其他人无法访问这个临界资源（也就是 P(mutex) 后忘记 V，这种都是 P，执行完后立刻 V，所以一般不会死锁）；
 
@@ -1109,9 +2242,41 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.3.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAoJqyKiPTm6--LkV9MrIjbfT4Ay1sgACCxJrG6T-SFb_wDslRtu-VwEAAwIAA3gAAz0E)
 
+> 一个系统中共有 5 个并发进程涉及某个相同的变量 A，变量 A 的相关临界区是由（ ）个临界区构成的。
+>
+> - A. 1
+> - B. 3
+> - C. 5
+> - D. 6
+
 错选为 A。临界区指的是进程访问临界资源的代码。
 
 ![2.3.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAoNqyKigAdvLhFMqQCTTiYm8qi9nhwACDBJrG6T-SFaIDTzD4RibvQEAAwIAA3gAAz0E)
+
+> 以下关于管程的叙述中，错误的是（ ）。
+>
+> - A. 管程是进程同步工具，解决信号量机制大量同步操作分散的问题
+> - B. 管程每次只允许一个进程进入管程
+> - C. 管程中 signal 操作的作用和信号量机制中的 V 操作相同
+> - D. 管程是被进程调用的，管程是语法范围，无法创建和撤销
+>
+> 对信号量 S 执行 P 操作后，使该进程进入资源等待队列的条件是（ ）。
+>
+> - A. S.value < 0
+> - B. S.value <= 0
+> - C. S.value > 0
+> - D. S.value >= 0
+>
+> 若系统有 n 个进程，则就绪队列中进程的个数最多有（①）个；阻塞队列中进程的个数最多有（②）个。
+>
+> - ① A. n+1
+> - B. n
+> - C. n-1
+> - D. 1
+> - ② A. n+1
+> - B. n
+> - C. n-1
+> - D. 1
 
 29 题错选为 D。管程可以理解为对 PV 操作的类封装。对于 C，考虑读者写者问题的读者。
 对于 B，对于一个读者而言，只能互斥的访问+-count。
@@ -1125,13 +2290,90 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.3.42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAoRqyKi7FNdap8rA8pD29AABxN97EMsAAg0Saxuk_khWHpCmx00HYaABAAMCAAN4AAM9BA)
 
+> 在 9 个生产者、6 个消费者共享容量为 8 的生产者 - 消费者问题中，互斥使用缓冲区的信号量初始值为（ ）。
+>
+> - A. 1
+> - B. 6
+> - C. 8
+> - D. 9
+
 本题错选为 C。互斥使用缓冲区的互斥信号量，而非同步信号量。
 
 ![2.3.50](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAoVqyKjR8fjgSHM5y-nEL_nMWfaEngACDhJrG6T-SFbU8uGXXUjLFAEAAwIAA3gAAz0E)
 
+> 【2016 统考真题】进程 P₁ 和 P₂ 均包含并发执行的线程，部分伪代码描述如下所示。
+> // 进程 P1
+> int x=0;
+> Thread1( )
+> {
+> int a;
+> a=1; x += 1;
+> }
+> Thread2( )
+> {
+> int a;
+> a=2; x += 2;
+> }
+> // 进程 P2
+> int x=0;
+> Thread3( )
+> {
+> int a;
+> a=x; x += 3;
+> }
+> Thread4( )
+> {
+> int b;
+> b=x; x += 4;
+> }
+>
+> - [图示] 代码框分左右两列：左列为 // 进程 P1（Thread1、Thread2），右列为 // 进程 P2（Thread3、Thread4）
+>
+> 下列选项中，需要互斥执行的操作是（ ）。
+>
+> - A. a=1 与 a=2
+> - B. a=x 与 b=x
+> - C. x += 1 与 x += 2
+> - D. x += 1 与 x += 3
+
 本体错选为 A。a 为线程的私有变量，所以不需要加锁。对于同一个进程的相同全局变量需要加锁。
 
 ![2.4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAoZqyKjk5vXAZR56o93fH0v91PtxwQACDxJrG6T-SFaCygoflSjKcwEAAwIAA3gAAz0E)
+
+> 下面是并发进程的程序代码，正确的是（ ）。
+> Semaphore x1=x2=y=1;
+> int c1=c2=0;
+> P1( )
+> {
+> while(1){
+> P(x1);
+> if(++c1==1) P(y);
+> V(x1);
+> computer(A);
+> P(x1);
+> if(--c1==0) V(y);
+> V(x1);
+> }
+> }
+> P2( )
+> {
+> while(1){
+> P(x2);
+> if(++c2==1) P(y);
+> V(x2);
+> computer(B);
+> P(x2);
+> if(--c2==0) V(y);
+> V(x2);
+> }
+> }
+>
+> - [图示] 代码框分左右两列：左列为 P1( )，右列为 P2( )
+>
+> - A. 进程不会死锁，也不会“饥饿”
+> - B. 进程不会死锁，但是会“饥饿”
+> - C. 进程会死锁，但是不会“饥饿”
+> - D. 进程会死锁，也会“饥饿”
 
 错选为 A。本题是读者写者问题读优先的代码，可以注意。
 
@@ -1139,31 +2381,104 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.4.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAodqyKj4uVc22AJhp4b-mo8iNh28bQACEBJrG6T-SFaGiyBuAAHDjwsBAAMCAAN4AAM9BA)
 
+> 假设具有 5 个进程的进程集合 P = {P₀, P₁, P₂, P₃, P₄}，系统中有三类资源 A, B, C，假设在某时刻有如下状态，见下表。
+> 进程名 Allocation Max Available
+>  A B C A B C
+> P₀ 0 0 3 0 0 4
+> P₁ 1 0 0 1 7 5
+> P₂ 1 3 5 2 3 5
+> P₃ 0 0 2 0 6 4
+> P₄ 0 0 1 0 6 5
+> A B C x y z
+>
+> - [图示] 表格 5 行数据为 P₀~P₄；Allocation、Max 下各有 A B C 三列；Available 列为 A B C，取值 x y z
+>
+> 系统是处于安全状态的，则 x, y, z 的取值可能是（ ）。Ⅰ. 1, 4, 0 Ⅱ. 0, 6, 2 Ⅲ. 1, 1, 1 Ⅳ. 0, 4, 7
+>
+> - A. Ⅰ、Ⅱ、Ⅳ
+> - B. Ⅰ、Ⅱ
+> - C. 仅Ⅰ
+> - D. Ⅰ、Ⅲ
+
 错选为 B。计算错误，属于低级错误。
 
 ![2.4.26 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAohqyKkS8783oU_qlpeHlj6OGpNpOwACERJrG6T-SFa2a5iFy7YtEgEAAwIAA3gAAz0E)
 
+> [原图非题目：主人手写订正演算笔记截图（含手写数字、删除线与圈注）]
+
 ![2.4.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAolqyKkgptnNPHCpVM9PK81QORF9yAACEhJrG6T-SFbej9m9j4rIgwEAAwIAA3gAAz0E)
+
+> 【2015 统考真题】若系统 S₁ 采用死锁避免方法，S₂ 采用死锁检测方法，下列叙述中，正确的是（ ）。Ⅰ. S₁ 会限制用户申请资源的顺序，而 S₂ 不会 Ⅱ. S₁ 需要进程运行所需的资源总量信息，而 S₂ 不需要 Ⅲ. S₁ 不会给可能导致死锁的进程分配资源，而 S₂ 会
+>
+> - A. 仅Ⅰ、Ⅱ
+> - B. 仅Ⅱ、Ⅲ
+> - C. 仅Ⅰ、Ⅲ
+> - D. Ⅰ、Ⅱ、Ⅲ
 
 错选为 B。死锁避免指的是银行家算法那一套，死锁检测则是先分配，然后检测是否死锁。对于 1，限制用户申请资源的顺序是死锁预防干的事情。
 
 ![2.4.43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAopqyKkxYJpNJ2AGoFJm3a_Jk0NWcQACFBJrG6T-SFbYWD2YzhF7jwEAAwIAA3gAAz0E)
 
+> 【2020 统考真题】某系统中有 A、B 两类资源各 6 个，t 时刻的资源分配及需求情况如下表所示。
+> 进程名 A 已分配数量 B 已分配数量 A 需求总量 B 需求总量
+> P₁ 2 3 4 4
+> P₂ 2 1 3 1
+> P₃ 1 2 3 4
+>
+> - [图示] 表格共 5 列（进程名、A 已分配数量、B 已分配数量、A 需求总量、B 需求总量），3 行数据为 P₁、P₂、P₃
+>
+> t 时刻安全性检测结果是（ ）。
+>
+> - A. 存在安全序列 P₁、P₂、P₃
+> - B. 存在安全序列 P₂、P₁、P₃
+> - C. 存在安全序列 P₂、P₃、P₁
+> - D. 不存在安全序列
+
 错选为 B。计算错误，属于低级错误。
 
 ![2.4.43 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAotqyKlCPTn9w1FdPIhxfNSaTlvZDAACFRJrG6T-SFaNE6fzK0c0xQEAAwIAA3gAAz0E)
+
+> [原图非题目：主人手写订正演算笔记截图（含手写数字、删除线与圈注）]
 
 ### OS 王道选择题 1 刷第 3 章
 
 ![3.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAoxqyKlgtYiGRNhh0H0a59eZiGAOAwACFhJrG6T-SFajkc8-PSRwgwEAAwIAA3gAAz0E)
 
+> 下列各种存储管理方式中，需要硬件地址变换机构的是（ ）。Ⅰ. 单一连续分配 Ⅱ. 固定分区分配 Ⅲ. 页式存储管理 Ⅳ. 动态分区分配 Ⅴ. 页式虚拟存储管理
+>
+> - A. Ⅰ、Ⅲ、Ⅴ
+> - B. Ⅱ、Ⅲ、Ⅳ
+> - C. Ⅲ、Ⅳ、Ⅴ
+> - D. Ⅱ、Ⅲ、Ⅳ、Ⅴ
+
 错选为 D。固定分区是直接采用的固定地址（也就是固定把这一块分给你，或者意思是说，提前分区分好了这一块大小，只能拿这么大大小的）
 
 ![3.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAo1qyKl04Gz4b6xtJYkzN-8ykvQ-qAACFxJrG6T-SFa0NKoGkzI5LQEAAwIAA3gAAz0E)
 
+> 动态重定位的过程依赖于（ ）。Ⅰ. 可重定位装入程序 Ⅱ. 重定位寄存器 Ⅲ. 地址变换机构 Ⅳ. 目标程序
+>
+> - A. Ⅰ和Ⅱ
+> - B. Ⅱ和Ⅲ
+> - C. Ⅰ、Ⅱ和Ⅲ
+> - D. Ⅰ、Ⅱ、Ⅲ和Ⅳ
+
 错选为 D。不依赖于目标程序，目标程序本质是在磁盘里的东西，而且是逻辑地址。
 
 ![3.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAo5qyKmCDhsJaL4Sb3JUJqSUFGwYwAACGRJrG6T-SFa98AmfvN0-BwEAAwIAA3gAAz0E)
+
+> 对重定位存储管理方式，应（ ）。
+>
+> - A. 在整个系统中设置一个重定位寄存器
+> - B. 为每道程序设置一个重定位寄存器
+> - C. 为每道程序设置两个重定位寄存器
+> - D. 为每道程序和数据都设置一个重定位寄存器
+>
+> 在可变分区管理中，采用拼接技术的目的是（ ）。
+>
+> - A. 合并空闲区
+> - B. 合并分配区
+> - C. 增加主存容量
+> - D. 便于地址转换
 
 第 14 题错选为 B。重定位寄存器是寄存器，很贵，只有一个
 
@@ -1171,27 +2486,77 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![3.1.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAo9qyKmUFmhZMCyBSmPMTB3mV_-liwACGhJrG6T-SFY-04uPMvnVWwEAAwIAA3gAAz0E)
 
+> 在段式存储管理中，共享段表是用来实现（ ）的。
+>
+> - A. 多个进程共享同一段代码或数据
+> - B. 多个进程共享同一段物理内存空间
+> - C. 多个进程共享同一段逻辑地址空间
+> - D. 多个进程共享同一段号
+
 错选为 B。二刷也是错的。
 
 ![3.1.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACApBqyKm0juKJby-KWG_bGaY4oBnIaQACGxJrG6T-SFY5A6BQN-lmhgEAAwIAA3gAAz0E)
+
+> 采用分页或分段管理后，提供给用户的物理地址空间为（ ）。
+>
+> - A. 分页支持更大的物理地址空间
+> - B. 分段支持更大的物理地址空间
+> - C. 不能确定
+> - D. 一样大
 
 错选为 B。2 刷也是错的这题。
 
 ![3.1.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACApFqyKnFRQkPa48W5xcY1O-CEdX3SAACHBJrG6T-SFayG6t5sjCeaAEAAwIAA3gAAz0E)
 
+> 某个操作系统对内存的管理采用页式存储管理方法，所划分的页面大小（ ）。
+>
+> - A. 要根据内存大小确定
+> - B. 必须相同
+> - C. 要根据 CPU 的地址结构确定
+> - D. 要依据外存和内存的大小确定
+
 错选为 D。分页式管理和外存无关，划分大小必须相同。
 
 ![3.1.41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACApJqyKnWICfEE6MBIl3Gf8dD13X65gACHhJrG6T-SFYsIViK5gABjwgBAAMCAAN4AAM9BA)
 
+> 对主存储器的访问，（ ）。
+>
+> - A. 以块（页）或段为单位
+> - B. 以字节或字为单位
+> - C. 随存储器的管理方案不同而异
+> - D. 以用户的逻辑记录为单位
+
 错选为 A。主存访问以 B，交换数据之类的是 A。
 
 ![3.1.48](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACApNqyKnmm6wg7lkFFFaXbrGzPR5s2QACHxJrG6T-SFYXNlXPXkan9AEAAwIAA3gAAz0E)
+
+> 操作系统采用分页存储管理方式，要求（ ）。
+>
+> - A. 每个进程拥有一张页表，且进程的页表驻留在内存中
+> - B. 每个进程拥有一张页表，但只有执行进程的页表驻留在内存中
+> - C. 所有进程共享一张页表，以节约有限的内存空间，但页表必须驻留在内存中
+> - D. 所有进程共享一张页表，只有页表中当前使用的页面必须驻留在内存中，以最大限度地节省有限的内存空间
 
 错选为 B。2 刷也是错的。2 的意思是说，对于一些进程（这些进程分别在就绪态，运行态，阻塞态），只有在运行态的页表在内存里，这句话显然是错误的。对于这些只要在就绪，运行，阻塞的，都有存一份 pcb 在内核里，pcb 里存着页表基址，只要运行的时候把值赋值给 cpu 的 PTR 寄存器就可以了。
 
 辨析一下，PTR 寄存器是页表基址寄存器，基址寄存器其实等同于重定位寄存器。
 
 ![3.1.57](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACApRqyKo6HCcY9n79PX6Bu7jS9RxmGAACIBJrG6T-SFZQIhh9k0ry6QEAAwIAA3gAAz0E)
+
+> 在采用页式存储管理的系统中，逻辑地址空间大小为 256TB，页表项大小为 8B，页面大小为 4KB，则该系统中的页表应该采用（ ）级页表。
+>
+> - A. 2
+> - B. 3
+> - C. 4
+> - D. 5
+>
+> 若对经典的页式存储管理方式的页表做出稍微改进，允许不同页表的页表项指向同一个页帧，则可能的结果有（ ）。
+>
+> - I. 可以实现对可重入代码的共享 / II. 只需修改页表项，就能实现内存“复制”操作 / III. 容易发生越界访问 / IV. 可以实现进程间通信
+> - A. I、II、IV
+> - B. II、III
+> - C. I、II、III
+> - D. 仅 I
 
 第 57 题错选为 B。页面大小 4KB/表项大小 8B=512 个表项。256TB=2^48。2^48/4K=2^36，所以还剩下 36 个位置放页号。由于 512 个表项需要 9 位，恰好 4x9=36。
 
@@ -1200,9 +2565,37 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![3.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACApVqyKpmn90IMDm_tAHl9z2w4V5W7gACIRJrG6T-SFYtH_oemXjzagEAAwIAA3gAAz0E)
 
+> 请求分页存储管理中，若把页面尺寸增大一倍而且可容纳的最大页数不变，则在程序顺序执行时缺页中断次数会（ ）。
+>
+> - A. 增加
+> - B. 减少
+> - C. 不变
+> - D. 可能增加也可能减少
+
 错选为 C。页面变大，存的东西变多了。
 
 ![3.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACApZqyKqhMOtyAUbbsbUy0I9KQgABee8AAiISaxuk_khWu5bO__EVhSQBAAMCAAN4AAM9BA)
+
+> 假设某个进程分配有 4 个页框，每个页框大小为 128 个字（一个整数占一个字）。进程的代码段正好可以存放在一页中，而且总是占用 0 号页框。数据会在其他 3 个页框中换进或换出。数组 X 为按行优先存储，则执行该进程会发生（ ）次缺页中断。
+>
+> ```text
+> int X[64][64];
+> for(int j=0;j<64;j++)
+>     for(int i=0;i<64;i++)
+>         X[i][j]=0;
+> ```
+>
+> - A. 32
+> - B. 1024
+> - C. 2048
+> - D. 其他都不对
+>
+> 在配置了 TLB 的页式虚拟存储管理的系统中，假设 TLB 的命中率约为 75%，忽略访问 TLB 的时间，并且使用二级页表，则每次存取的平均访存次数是（ ）。
+>
+> - A. 1.25
+> - B. 1.5
+> - C. 1.75
+> - D. 2
 
 第 13 题见 2 刷，错选为 D。
 
@@ -1210,25 +2603,68 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![3.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACApdqyKq1lLubU-FZUhxX8cBe142N2wACIxJrG6T-SFZphsm1zlL5UwEAAwIAA3gAAz0E)
 
+> 考虑页面置换算法，系统有 m 个物理块供调度，初始时全空，页面引用串长度为 p，包含了 n 个不同的页号，无论用什么算法，缺页次数不会少于（ ）。
+>
+> - A. m
+> - B. p
+> - C. n
+> - D. min(m, n)
+
 错选为 D。详见 2 刷。
 
 ![3.2.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAphqyKrtlNEu3rBhv0wckW5OjGlAlAACJBJrG6T-SFZo3wSn4O8MogEAAwIAA3gAAz0E)
+
+> 设主存容量为 1MB，外存容量为 400MB，计算机系统的地址寄存器有 32 位，那么虚拟存储器的最大容量是（ ）。
+>
+> - A. 1MB
+> - B. 401MB
+> - C. 1MB + 2³²MB
+> - D. 2³²B
 
 错选为 B。虚拟存储不依赖物理存储。
 
 ![3.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAplqyKr-mfsSOgvSt0ZcPX8KxXs_qgACJRJrG6T-SFax53tL4t2M3AEAAwIAA3gAAz0E)
 
+> LRU 页面置换算法软件实现开销高的直接原因是（ ）。
+>
+> - A. 需要硬件的特殊支持
+> - B. 需要特殊的中断处理程序
+> - C. 需要在页表中标明特殊的页类型
+> - D. 需维护访问历史并遍历查找
+
 棍母，错选为 A，详见 2 刷。
 
 ![3.2.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAppqyKtTkPuF2nxee7jJpyWrah2sRAACJhJrG6T-SFYrv3fnfTQ38wEAAwIAA3gAAz0E)
+
+> 下列选项中，（ ）不是页面换进换出效率的影响因素。
+>
+> - A. 页面置换算法
+> - B. 已修改页面写回磁盘的频率
+> - C. 磁盘数据读入内存的频率
+> - D. CPU 与内存交换的速度
 
 错选为 B。对于 B，感觉不可以从文件系统的角度理解。文件系统那个角度是关闭文件，关闭文件不等于立刻把文件写回，但是这里是换页面，写回速度越慢可能会导致换的速度越慢。CPU 和内存交换的速度是 CPU 和内存之间的关系，而题目里是内存和磁盘之前的关系。
 
 ![3.2.46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAptqyKtlMmzekBuFX0xG5rsg38t1YwACJxJrG6T-SFaEarwpFZa49gEAAwIAA3gAAz0E)
 
+> 【2013 统考真题】若用户进程访问内存时产生缺页，则在下列选项中，操作系统可能执行的操作是（ ）。
+>
+> - I. 处理越界错 / II. 置换页 / III. 分配内存
+> - A. 仅 I、II
+> - B. 仅 II、III
+> - C. 仅 I、III
+> - D. I、II 和 III
+
 错选为 D。2 刷也错了。
 
 ![3.2.49](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACApxqyKt4bZZWhZ4SywkJXAiY3JRCjwACKBJrG6T-SFYiBwq4I86jjAEAAwIAA3gAAz0E)
+
+> 【2015 统考真题】在请求分页系统中，页面分配策略与页面置换策略不能组合使用的是（ ）。
+>
+> - A. 可变分配，全局置换
+> - B. 可变分配，局部置换
+> - C. 固定分配，全局置换
+> - D. 固定分配，局部置换
 
 错选为 D。本题为概念背诵。固定分配了再去别人那里抢位置，棍母了。
 
@@ -1236,29 +2672,87 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![4.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAp1qyKubbG1v1p6YUl7l2WXSU9nbhAACKRJrG6T-SFaV1IA9Fn1eYAEAAwIAA3gAAz0E)
 
+> FAT32 的文件目录项不包括（ ）。
+>
+> - A. 文件名
+> - B. 文件访问权限说明
+> - C. 文件控制块的物理位置
+> - D. 文件所在的物理位置
+
 本题错选为 B。FAT32 所有的信息都包含在其本身，而不需要包括其本身的物理位置。
 
 ![4.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAp5qyKuttrewVUwQo9JCgNr1_o5vhgACKhJrG6T-SFZrq7vnOj8IgwEAAwIAA3gAAz0E)
+
+> 下列选项中，（ ）不是为了提升文件系统性能的操作。
+>
+> - A. 目录项分解
+> - B. 文件高速缓存
+> - C. 磁盘调度算法
+> - D. 异步 I/O
 
 本题错选为 A。异步 IO 是节约 CPU 的。
 
 ![4.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAp9qyKu7P0saQg4BBc90VnI4lBTF-gACKxJrG6T-SFagVaCDOzhevQEAAwIAA3gAAz0E)
 
+> 在一个采用索引节点的文件系统中，目录项分为文件名和索引节点编号两部分，文件名和索引节点编号各占 8B，盘块大小为 1KB，采用一级目录，假定文件目录中有 3200 个目录项，则读入一个文件的索引节点平均需要（ ）次访问磁盘。
+>
+> - A. 25
+> - B. 26
+> - C. 51
+> - D. 52
+
 本题错选为 A，需要注意读入，两个过程，open 和 read。
 
 ![4.2.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqBqyKvLgcvnsIIfpeyhdKpqUZbjLAACLBJrG6T-SFaX9EMcFJZvlwEAAwIAA3gAAz0E)
+
+> 设有一个记录文件，采用隐式链接分配方式，逻辑记录的固定长度为 100B，在磁盘上存储时采用记录成组分解技术。盘块长度为 512B。若该文件的目录项已经读入内存，则对第 22 个逻辑记录完成修改后，共启动了磁盘（ ）次。
+>
+> - A. 3
+> - B. 4
+> - C. 5
+> - D. 6
 
 本题没做出来。首先是 open 过程，本题已经 open 好了，然后是 write，第 22 个逻辑记录也就是 5，5，5，5，2，启动五次，然后写，写完要写回去。
 
 ![4.2.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqFqyKva0cjmR7lLTxwLnNQKnejzXQACLRJrG6T-SFZehIRyVFmSsQEAAwIAA3gAAz0E)
 
+> 某文件系统采用显[?]链接分配方式组织文件，磁盘块大小为 4KB，一个簇包含两个磁盘块，操作系统以簇为单位进行盘块分配。已知系统支持的最大文件长度为 512MB，若 FAT 的每个表项仅存放簇号，则 FAT 表占用的空间大约是（ ）。
+>
+> - A. 64KB
+> - B. 128KB
+> - C. 512KB
+> - D. 1024KB
+
 本题错选为 A。采用 FAT+ 显示链接分配，也就意味着该文件系统采用 FAT。FAT 文件系统的特点是臃肿，只有数据信息不在 FAT 里。512MB/8KB=2^16 个，即 16bit 来记录，一条文件信息需要记录 2B 的数据。由于 FAT 表必须连续且不可拆，所以最多有 2^16 条文件记录，所以 2^16×2B=128KB。
 
 ![4.2.38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqJqyKvs3_TxQkarVkmDE6Ammg6ahgACLhJrG6T-SFYj3MS5L2xPhQEAAwIAA3gAAz0E)
 
+> 某用户程序发起 open() 系统调用，下列对该过程的描述中最准确的是（ ）。
+>
+> - A. open() 调用必然导致文件 I/O
+> - B. open() 调用的参数含有需要打开的文件的文件名
+> - C. open() 调用完成后，系统打开文件表将增加一个表目
+> - D. open() 调用的参数的文件名不同时，必然会打开不同的文件实体
+
 本题错选为 C。
 
 ![4.2.40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqNqyKv8wqgHnEFujKYoRCmTlielfgACLxJrG6T-SFZnygGsXUrqugEAAwIAA3gAAz0E)
+
+> 读文件操作的正确次序应该是（ ）。
+>
+> - I. 向设备驱动程序发出 I/O 请求，完成数据交换工作 / II. 按存取控制说明检查访问的合法性 / III. 根据目录项中该文件的逻辑和物理组织形式，将逻辑记录号转换成物理块号 / IV. 按文件描述符在打开文件表中找到该文件的目录项
+> - A. II、IV、III、I
+> - B. IV、II、III、I
+> - C. IV、III、II、I
+> - D. II、IV、I、III
+>
+> 下列关于文件与文件系统的说法中，错误的是（ ）。
+>
+> - I. 一个文件在同一系统中、不同的存储介质上的复制文件，应采用同一种物理结构 / II. 对一个文件的访问，常由用户访问权限和用户优先级共同限制 / III. 文件系统采用树形目录结构后，对于不同用户的文件，其文件名应该不同 / IV. 为防止系统故障造成系统内文件受损，常采用存取控制矩阵方法保护文件
+> - A. II
+> - B. I、III
+> - C. I、III、IV
+> - D. 全选
 
 第 40 题错选为 B。先检查合法性然后再 read；发动请求交换后然后再将得到的物理转换为逻辑。
 
@@ -1266,25 +2760,75 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![4.2.44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqRqyKwRSD3EQGpjhYh-WT-rcqZIuwACMBJrG6T-SFbVCZj_4ldj-QEAAwIAA3gAAz0E)
 
+> 设文件 F1 的当前引用计数值为 1，先建立 F1 的硬链接文件 F2，再建立 F2 的符号链接文件 F3。现有两个进程 P₁ 和 P₂ 分别打开了 F1 和 F2，则下列说法中正确的是（ ）。
+>
+> - A. 两次打开操作只涉及一次文件索引节点的磁盘读取操作
+> - B. 进程 P₁ 和 P₂ 对 F1 具有相同的访问权限
+> - C. 若删除文件 F3，则 F2 的引用计数值减 1
+> - D. 进程 P₁ 读取 F1 时需要提供 F1 的绝对路径作为系统调用参数
+
 本题错选为 B。
 
 ![4.2.47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqVqyKwgYGIevo1BIr1O8S0cJiga7gACMRJrG6T-SFbiJrNuMdW8IwEAAwIAA3gAAz0E)
+
+> 对一个文件的访问，常由（ ）共同限制。
+>
+> - A. 用户访问权限和文件属性
+> - B. 用户访问权限和用户优先级
+> - C. 优先级和文件属性
+> - D. 文件属性和口令
 
 本题错选为 B。
 
 ![4.2.56](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqZqyKwwlI0WBCJyUH9qDYoQkXxPCgACMhJrG6T-SFaL0el8qYa_GwEAAwIAA3gAAz0E)
 
+> 【2013 统考真题】若某文件系统索引节点（inode）中有直接地址项和间接地址项，则下列选项中，与单个文件长度无关的因素是（ ）。
+>
+> - A. 索引节点的总数
+> - B. 间接地址索引的级数
+> - C. 地址项的个数
+> - D. 文件块大小
+
 本题没选出来。采用 inode 结点也就意味着采用 UFS 文件系统，UFS 文件系统的 inode 结点存储在文件系统分配的地方，通常是磁盘刚开始那块。Inode 结点总数意味着这个操作系统最多拥有多少个文件数量，所以 A 无关。对于 B，间接地址索引的级数越多，意味着乘级越大；对于 C，地址项越多意味着对于单个级别有越大的索引范围；对于 D，文件块越大可以存储的文件越多。
 
 ![4.2.60](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqdqyKxCTC4_LoK-k5ivKinWWekAAbgAAjMSaxuk_khW-pBlMxkKYWUBAAMCAAN4AAM9BA)
+
+> 【2017 统考真题】某文件系统中，针对每个文件，用户类别分为 4 类：安全管理员、文件主、文件主的伙伴、其他用户；访问权限分为 5 种：完全控制、执行、修改、读取、写入。若文件控制块中用二进制位串表示文件权限，为表示不同类别用户对一个文件的访问权限，则描述文件权限的位数至少应为（ ）。
+>
+> - A. 5
+> - B. 9
+> - C. 12
+> - D. 20
 
 本题错选为 A。文件要完全表示。
 
 ![4.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqhqyKxULxulSsYyAsvTf-MpkgtlYQACNhJrG6T-SFbOm6jIYbYeAwEAAwIAA3gAAz0E)
 
+> 若用 8 个字（字长 32 位）组成的位示图管理内存，即位示图有 8 行、32 列，行号和列号均从 1 开始，则块号为 100 的内存块所对应位示图的位置是（ ）。
+>
+> - A. 字号为 3，位号为 5
+> - B. 字号为 4，位号为 4
+> - C. 字号为 3，位号为 4
+> - D. 字号为 4，位号为 5
+
 本题没选出来。对于位示图，100=32+32+32+4，即 B。
 
 ![4.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqlqyKxkzZ8FITMf-vTUdVraqA_zCQACNxJrG6T-SFYBVI6h6hVfMQEAAwIAA3gAAz0E)
+
+> 【2015 统考真题】文件系统用位图法表示磁盘空间的分配情况，位图存于磁盘的 32 - 127 号块中，每个盘块占 1024B，盘块和块内字节均从 0 开始编号。假设要释放的盘块号为 409612，则位图中要修改的位所在的盘块号和块内字节序号分别是（ ）。
+>
+> - A. 81，1
+> - B. 81，2
+> - C. 82，1
+> - D. 82，2
+>
+> 【2019 统考真题】下列选项中，可用于文件系统管理空闲磁盘块的数据结构是（ ）。
+>
+> - I. 位图 / II. 索引节点 / III. 空闲磁盘块链 / IV. 文件分配表（FAT）
+> - A. 仅 I、II
+> - B. 仅 I、III、IV
+> - C. 仅 I、III
+> - D. 仅 II、III、IV
 
 第 14 题错选为 D。
 
@@ -1294,17 +2838,52 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![5.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqpqyKx-taObiPkN9Pl0C_ZY2t_fowACOBJrG6T-SFZApiqxAVFWagEAAwIAA3gAAz0E)
 
+> 在设备控制器中用于实现设备控制功能的是（ ）。
+>
+> - A. CPU
+> - B. 设备控制器与处理器的接口
+> - C. I/O 逻辑
+> - D. 设备控制器与设备的接口
+
 本题错选为 D。设备控制器=IO 设备=IO 接口。
 
 ![5.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqtqyKyVEWWN2DtAAAGnR59hvXL5JuwAAjkSaxuk_khWFgt45A46AaoBAAMCAAN4AAM9BA)
+
+> DMA 传输前需要进行预处理，传输后需要进行后处理，则下列说法中正确的是（ ）。
+>
+> - A. 预处理程序运行在用户态，后处理程序运行在内核态
+> - B. 负责预处理和后处理程序的进程都是请求 I/O 的进程
+> - C. 预处理阶段不需要 CPU 参与，后处理阶段需要 CPU 参与
+> - D. 预处理阶段请求 I/O 的进程处于运行态，后处理阶段处于阻塞态
 
 本体错选为 B。见 2 刷。
 
 ![5.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAqxqyK0OqDdB378FW1qggw0cFh_QrAACOxJrG6T-SFa9uNj0EdmaHwEAAwIAA3gAAz0E)
 
+> 将系统调用参数翻译成设备操作命令的工作由（ ）完成。
+>
+> - A. 用户层 I/O
+> - B. 设备无关的操作系统软件
+> - C. 中断处理
+> - D. 设备驱动程序
+
 本题错选为 D。参数翻译为操作命令由设备无关性软件完成，驱动程序将这些命令翻译成操作系统听得懂的东西。
 
 ![5.1.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAq1qyK0glm7vPwpbCr7R2abCj2PR7QACPBJrG6T-SFZCSEEAAdZq3ZYBAAMCAAN4AAM9BA)
+
+> 【2010 统考真题】本地用户通过键盘登录系统时，首先获得键盘输入信息的程序是（ ）。
+>
+> - A. 命令解释程序
+> - B. 中断处理程序
+> - C. 系统调用服务程序
+> - D. 用户登录程序
+>
+> 【2011 统考真题】用户程序发出磁盘 I/O 请求后，系统的正确处理流程是（ ）。
+>
+> - A. 用户程序→系统调用处理程序→中断处理程序→设备驱动程序
+> - B. 用户程序→系统调用处理程序→设备驱动程序→中断处理程序
+> - C. 用户程序→设备驱动程序→系统调用处理程序→中断处理程序
+> - D. 用户程序→设备驱动程序→中断处理程序→系统调用处理程序
 
 第 23 题错选为 D。见 2 刷的流程分析。
 
@@ -1312,21 +2891,63 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![5.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAq5qyK00Wg9wT2tfhRPbJJ0EOaXCawACPRJrG6T-SFYgG1KW3PhqIgEAAwIAA20AAz0E)
 
+> 设备的独立性是指（ ）。
+>
+> - A. 设备独立于计算机系统
+> - B. 系统对设备的管理是独立的
+> - C. 用户编程时使用的设备与实际使用的设备无关
+> - D. 每台设备都有唯一的编号
+
 本体错选为 B。设备独立性可以理解为设备独立性软件那块。
 
 ![5.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAq9qyK1NiYyUcNl-QsYZDm8hOCiSrwACPhJrG6T-SFaV88IlfsVQsAEAAwIAA3gAAz0E)
+
+> 设从磁盘将一块数据传送到缓冲区所用的时间为 80μs，将缓冲区中的数据传送到用户区所用的时间为 40μs，CPU 处理一个数据块所用的时间为 30μs。若有多块数据需要处理，并采用单缓冲区传送某磁盘数据，则处理一块数据所用的总时间为（ ）。
+>
+> - A. 120μs
+> - B. 110μs
+> - C. 150μs
+> - D. 70μs
 
 本题错选为 C。使用单缓冲，本题显然情景为稳定的时候，而不是一开始的时候。
 
 ![5.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArBqyK1jrdGAVzDyMjCP3YAoA48aeQACPxJrG6T-SFYem2jm3piruQEAAwIAA3gAAz0E)
 
+> 考虑单用户计算机上的下列 I/O 操作，需要使用缓冲技术的是（ ）。I. 图形用户界面下使用鼠标 II. 多任务操作系统下的磁盘驱动器（假设没有设备预分配）III. 包含用户文件的磁盘驱动器 IV. 使用存储器映射 I/O，直接和总线相连的图形卡
+>
+> - A. I、III
+> - B. II、IV
+> - C. II、III、IV
+> - D. 全选
+
 本体错选为 B。
 
 ![5.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArFqyK10luGFKprxzETazZvFYntsZAACQRJrG6T-SFalbEdbOVG3iwEAAwIAA3gAAz0E)
 
+> 虚拟设备是靠（ ）技术来实现的。
+>
+> - A. 通道
+> - B. 缓冲
+> - C. SPOOLing
+> - D. 控制器
+
 本题错选为 B。
 
 ![5.2.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArJqyK2L8DKjRYlmpkhWzWuXWi4ZQwACQhJrG6T-SFav8A6NyNccUQEAAwIAA3gAAz0E)
+
+> 采用 SPOOLing 技术的计算机系统，外围计算机需要（ ）。
+>
+> - A. 一台
+> - B. 多台
+> - C. 至少一台
+> - D. 0 台
+>
+> SPOOLing 系统由（ ）组成。
+>
+> - A. 预输入程序、井管理程序和缓输出程序
+> - B. 预输入程序、井管理程序和井管理输出程序
+> - C. 输入程序、井管理程序和输出程序
+> - D. 预输入程序、井管理程序和输出程序
 
 第 22 题错选为 C。
 
@@ -1334,29 +2955,85 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![5.2.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArNqyK2f3Bn40hSsX7wme45rcim5ewACQxJrG6T-SFYKcGpMWkzhhgEAAwIAA3gAAz0E)
 
+> 下面关于 SPOOLing 系统的说法中，正确的是（ ）。
+>
+> - A. 构成 SPOOLing 系统的基本条件是有外围输入机与外围输出机
+> - B. 构成 SPOOLing 系统的基本条件仅是要[?]高速的大容量硬盘作为输入井和输出井
+> - C. 当输入设备忙时，SPOOLing 系统中的用户程序暂停执行，待 I/O 空闲时再被唤醒执行输出操作
+> - D. SPOOLing 系统中的用户程序可以随时将输出数据送到输出井中，待输出设备空闲时再由 SPOOLing 系统完成数据的输出操作
+
 本题错选为 A。
 
 ![5.2.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArRqyK2v9SgD5p5z6tcdOqB5sFVPGgACRBJrG6T-SFbNtLtnE4jv1gEAAwIAA3gAAz0E)
+
+> 下列设备管理工作中，适合由设备独立性软件来完成的有（ ）。I. 向设备寄存器写命令 II. 检查用户是否有权使用设备 III. 将二进制整数转换成 ASCII 码格式打印 IV. 缓冲区管理
+>
+> - A. I、II 和 III
+> - B. II、III 和 IV
+> - C. II 和 IV
+> - D. I、III 和 IV
 
 本题错选为 D。设备独立性软件做的事情是将用户操作转换为设备操作。向设备寄存器内写命令是将设备操作转换为操作系统操作。对于 3 是属于用户层软件做的事情。
 
 ![5.2.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArVqyK3Gjm3Xix3qF8Af5k5_fw-mYQACRhJrG6T-SFZCScCk3etYkgEAAwIAA3gAAz0E)
 
+> 对设备驱动程序的处理过程进行排序，正确的处理顺序是（ ）。①对服务请求进行校验 ②传送必要的参数 ③启动 I/O 设备 ④将抽象要求转化为具体要求 ⑤检查设备的状态
+>
+> - A. ①④⑤②③
+> - B. ④①⑤②③
+> - C. ①④②⑤③
+> - D. ④①②⑤③
+
 本题错选为 D。
 
 ![5.3.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArZqyK3YwdMxKIgCG9rzXpVYXl5_xgACRxJrG6T-SFYvjjobzbdWbQEAAwIAA3gAAz0E)
+
+> 文件系统和整个磁盘的关系是（ ）。
+>
+> - A. 没有磁盘就没有文件系统
+> - B. 文件系统的组织信息放在磁盘上，这些信息和代码合在一起形成文件系统
+> - C. 文件系统就是整个磁盘
+> - D. 没有关系
 
 本体错选为 A。
 
 ![5.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArdqyK306VnCP7LWnr_2ujRHpxQS8AACSBJrG6T-SFZprx8r79Qx-gEAAwIAA3gAAz0E)
 
+> 既可以顺序读/写，又可以按任意次序读/写的存储器有（ ）。I. 光盘 II. 磁带 III. U 盘 IV. 磁盘
+>
+> - A. II、III、IV
+> - B. I、III、IV
+> - C. III、IV
+> - D. 仅 IV
+
 本题错选为 C，注意光盘，例如选特定动画片的集
 
 ![5.3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArhqyK4HGLcPtUm62R7y-zVcWuXYlgACSRJrG6T-SFYkfmriXA0fbAEAAwIAA3gAAz0E)
 
+> 下列各种算法中，（ ）算法和其他算法存在根本的不同。
+>
+> - A. SCAN
+> - B. FCFS
+> - C. C-LOOK
+> - D. CLOCK
+
 本题错选为 B。显然 CLOCK 是内存管理的东西。
 
 ![5.3.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArlqyK4ZmgtczIXeW3Kzby_ASx10jwACSxJrG6T-SFYF1sTqDFKO4QEAAwIAA3gAAz0E)
+
+> 假设磁盘有 100 个柱面，每个柱面上有 8 个磁道，每个磁道有 8 个扇区。文件 A 含有 6400 个逻辑记录，逻辑记录大小与扇区大小一致，该文件以顺序结构的形式存放在磁盘上。文件的第 0 个逻辑记录存放在磁盘地址（0 号柱面、0 号盘面、0 号扇区）中，则磁盘地址（78 号柱面、6 号盘面、6 号扇区）中存放了该文件的第（ ）个逻辑记录。
+>
+> - A. 5045
+> - B. 5046
+> - C. 5047
+> - D. 5048
+>
+> 已知某磁盘的平均转速为 r 秒/转，平均寻道时间为 T 秒，每个磁道可以存储的字节数为 N，现向该磁盘读/写 b 字节的数据，采用随机寻道的方法，每道的所有扇区组成一个簇，其平均访问时间是（ ）。
+>
+> - A. (r + T)b/N
+> - B. b/NT
+> - C. (b/N + T)r
+> - D. bT/N + r
 
 第 16 题错选为 C。
 
@@ -1367,6 +3044,15 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 ### 计网王道选择题 1 刷第 1 章
 
 ![1.1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArpqyK5D9a2TEol7YRZoCh6HEXuMbwACTBJrG6T-SFYBA_72TcK6vQEAAwIAA3gAAz0E)
+
+> 如下图所示，主机 H1 和 H2 之间有三种可选的交换方式——电路交换、报文交换和分组交换，其中电路交换建立电路连接的时间为 2s，报文交换和分组交换都要经过由一个路由器连接的链路，分组大小为 5kb。三种交换方式的数据传输速率均为 2.5kb/s，忽略所有的传播时延、分组开销和不可预料的线路延迟，下列说法中正确的是（ ）。
+>
+> - [图示] 图中文字：H1、H2、路由器、电路交换、报文交换和分组交换。左图标注「电路交换」，H1 与 H2 由一条链路直接相连；右图标注「报文交换和分组交换」，H1 经路由器与 H2 相连。
+>
+> - A. 若 H1 向 H2 发送 5kb 的数据，则电路交换最节省时间
+> - B. 若 H1 向 H2 发送 500kb 的数据，则电路交换和分组交换的时间相同
+> - C. 若 H1 向 H2 发送 10kb 的数据，则报文交换比分组交换更节省时间
+> - D. 若 H1 向 H2 发送 15kb 的数据，则报文交换比电路交换更节省时间
 
 本题错选为 A。
 
@@ -1380,9 +3066,30 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![1.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArtqyK5gP0Thl8q6j0iL2jzZqyo1ZAACTRJrG6T-SFb896aLY-5BPQEAAwIAA3gAAz0E)
 
+> OSI 参考模型中的实体指的是（ ）。
+>
+> - A. 实现各层功能的规则
+> - B. 上下层之间进行交互时所要的信息
+> - C. 各层中实现该层功能的软件或硬件
+> - D. 同一节点中相邻两层相互作用的地方
+
 本题错选为 A。本题为背书，实体指的是实现该层。
 
 ![1.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACArxqyK56xMVU1Q_JJN1XU_BGs3DvcQACThJrG6T-SFa_WFYjQpWd4gEAAwIAA3gAAz0E)
+
+> 负责将比特转换成电信号进行传输的层是（ ）。
+>
+> - A. 应用层
+> - B. 网络层
+> - C. 数据链路层
+> - D. 物理层
+>
+> 下列关于 OSI 参考模型的物理层功能的描述中，错误的是（ ）。
+>
+> - A. 比特 0 和 1 使用何种电信号表示
+> - B. 传输能否在两个方向上同时进行
+> - C. 1 个比特持续多长时间
+> - D. 避免快速发送方“淹没”慢速接收方
 
 第 12 题错选为 A，为超级低级错误，脑子不知道怎么想的选的 D。
 
@@ -1390,17 +3097,76 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![1.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAr1qyK6X8oubL8H8LFHvgZwwPHHRXwACTxJrG6T-SFbeaRifpc1SdQEAAwIAA3gAAz0E)
 
+> 下列能够最好地描述 OSI 参考模型的数据链路层功能的是（ ）。
+>
+> - A. 提供用户和网络的接口
+> - B. 处理信号通过介质的传输
+> - C. 控制报文通过网络的路由选择
+> - D. 保证数据正确的顺序和完整性
+
 本题错选为 A。A 是应用层的功能，需要记住，用户处在最高位；对于 B，B 是物理层的功能；对于 C，C 是网络层的功能。
 
 ![1.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAr5qyK-hTi3sV32xO0dgcDCUswJ-CQACURJrG6T-SFbEi3bJESMjhQEAAwIAA3gAAz0E)
+
+> 在 OSI 参考模型中，提供流量控制功能的层是第（①）层；提供建立、维护和拆除端到端的连接的层是（②）；为数据分组提供在网络中路由功能的是（③）；传输层提供（④）的数据传送；为网络层实体提供数据发送和接收功能及过程的是（⑤）。
+>
+> - ① A. 1、2、3
+> - B. 2、3、4
+> - C. 3、4、5
+> - D. 4、5、6
+> - ② A. 物理层
+> - B. 数据链路层
+> - C. 会话层
+> - D. 传输层
+> - ③ A. 物理层
+> - B. 数据链路层
+> - C. 网络层
+> - D. 传输层
+> - ④ A. 主机进程之间
+> - B. 网络之间
+> - C. 数据链路之间
+> - D. 物理线路之间
+> - ⑤ A. 物理层
+> - B. 数据链路层
+> - C. 会话层
+> - D. 传输层
 
 本题第 5 空错选为 C。为网络实体提供，所以是为网络层提供服务，所以应该是数据链路层。
 
 ![1.2.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAr9qyK-34qgTGLPh5erdNcM_AsPL5gACUhJrG6T-SFay25-K1-LJ3gEAAwIAA3gAAz0E)
 
+> 在 OSI 参考模型中，各层都有差错控制过程，指出以下每种差错发生在哪些层中：噪声使传输链路上的一个 0 变成 1 或一个 1 变成 0（①）。收到一个序号错误的目的帧（②）。一台打印机正在打印，突然收到一个错误指令要打印头回到本行的开始位置（③）。
+>
+> - ① A. 物理层
+> - B. 网络层
+> - C. 数据链路层
+> - D. 会话层
+> - ② A. 物理层
+> - B. 网络层
+> - C. 数据链路层
+> - D. 会话层
+> - ③ A. 物理层
+> - B. 网络层
+> - C. 应用层
+> - D. 会话层
+
 第 2 空错选为 B。差错控制再 OSI 模型在数据链路层，而且这道题说了序号错误的是帧。
 
 ![1.2.33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAsBqyK_OqpR8BEDxGQYgz-N2-emQdAACUxJrG6T-SFZAbyXCbNjBCwEAAwIAA3gAAz0E)
+
+> 【2016 统考真题】在 OSI 参考模型中，路由器、交换机（Switch）、集线器（Hub）实现的最高功能层分别是（ ）。
+>
+> - A. 2、2、1
+> - B. 2、2、2
+> - C. 3、2、1
+> - D. 3、2、2
+>
+> 【2017 统考真题】假设 OSI 参考模型的应用层欲发送 400B 的数据（无拆分），除物理层和应用层外，其他各层在封装 PDU 时均引入 20B 的额外开销，则应用层的数据传输效率约为（ ）。
+>
+> - A. 80%
+> - B. 83%
+> - C. 87%
+> - D. 91%
 
 第 33 题错选为 D。不说了。
 
@@ -1410,17 +3176,52 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAsFqyLADlBexgGGHMjgrk4qqmPrh0wACVBJrG6T-SFY7EJwYJLjb8wEAAwIAA3gAAz0E)
 
+> 影响信道最大传输速率的因素主要有（ ）。
+>
+> - A. 信道带宽和信噪比
+> - B. 码元传输速率和噪声功率
+> - C. 频率特性和带宽
+> - D. 发送功率和噪声功率
+
 本题错选为 B。根据奈奎斯特定理，无噪声信道最大传输速率为 2Wlog2V，其中 W 为频率范围，V 为物理状态；根据香浓定理，有噪声信道最大传输速率为 Wlog2(1+S/N)，其中 W 为频率范围，S/N 为信噪比。所以
 
 ![2.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAsJqyLAUzpE9NXVw2qtk83baf0SpcAACVRJrG6T-SFayowyykm1CsgEAAwIAA3gAAz0E)
+
+> 在数据通信中使用曼彻斯特编码的主要原因是（ ）。
+>
+> - A. 实现对通信过程中传输错误的恢复
+> - B. 实现对通信过程中收发双方的数据同步
+> - C. 提高对数据的有效传输速率
+> - D. 提高传输信号的抗干扰能力
 
 本题错选为 D。更强的抗干扰能力为差分曼彻斯特编码，可以 10bastT 快速以太网默认采用的是差分曼彻斯特编码。
 
 ![2.1.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAsNqyLAoMVZkKbVcmmRlmC3A0lfG7AACVhJrG6T-SFbDbrA0ywABBVgBAAMCAAN4AAM9BA)
 
+> 某信道的波特率为 1000Baud，若令其数据传输速率达到 4kb/s，则一个信号码元所取的有效离散值个数为（ ）。
+>
+> - A. 2
+> - B. 4
+> - C. 8
+> - D. 16
+
 本题错选为 B。该题为无噪声的信道，且需要注意，4kb/s 不是最大传输速率，只是一个稀疏平常的值，所以 Wlog2V=4000，即 V=16。
 
 ![2.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAsRqyLA8XFDB3BC9XUnq9MGd71E-IwACVxJrG6T-SFa1ioxFVKztGQEAAwIAA3gAAz0E)
+
+> 已知某信道的信息传输速率为 64kb/s，一个载波信号码元有 4 个有效离散值，则该信道的波特率为（ ）。
+>
+> - A. 16kBaud
+> - B. 32kBaud
+> - C. 64kBaud
+> - D. 128kBaud
+>
+> 有一个无噪声的 8kHz 信道，每个信号包含 8 级，每秒采样 24k 次，那么可以获得的最大传输速率是（ ）。
+>
+> - A. 24kb/s
+> - B. 32kb/s
+> - C. 48kb/s
+> - D. 72kb/s
 
 第 9 题错选为 A。某信道传输速率为 64kb/s，没说是最大的，所以就按照普通的算，所以 Wlog2V=64000 可得 W=32000，即有 32000Baud。
 
@@ -1428,13 +3229,48 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.1.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAsVqyLBTf8yGjIzQWadU6ej8U5TMvgACWBJrG6T-SFa_2M6Zmsy7vgEAAwIAA3gAAz0E)
 
+> 二进制信号在信噪比为 127:1 的 4kHz 信道上传输，最大数据传输速率可以达到（ ）。
+>
+> - A. 28000b/s
+> - B. 8000b/s
+> - C. 4000b/s
+> - D. 无限大
+
 第 12 题错选为 A。考虑有噪声的信道，Wlog2(1+127/1)=4000×7；考虑无噪声的信道，2Wlog2V，注意这里题目说了是二进制信号，所以 V=2。如果 V=1，那么电线上只能由一种状态，显然无法表示信号。
 
 ![2.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAsZqyLBm25pR0OznVjVurfqf4wxvUgACWRJrG6T-SFY1-lskwuehRAEAAwIAA3gAAz0E)
 
+> 一个信道的信号功率是 0.14W，噪声功率是 0.02W，频率范围为 3.5 - 3.9MHz，则该信道的最高数据传输速率是（ ）。
+>
+> - A. 1.2Mb/s
+> - B. 2.4Mb/s
+> - C. 11.7Mb/s
+> - D. 23.4Mb/s
+
 本题错选为 C。这里的频率指的是频率范围，所以 W=0.4MHz。信噪比为 0.14/0.02=7。所以考虑无噪声的信道，2Wlog2V，由于没有给 V，所以先略去；考虑有噪声的信道，Wlog2(1+7)=3×0.4MHz=A。
 
 ![2.1.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAsdqyLB4COZ00PBJlRlKOEEqzzJ2BAACWhJrG6T-SFZZ_Xuwihb2xgEAAwIAA3gAAz0E)
+
+> 采用 8 种相位，每种相位各有两种幅度的 QAM 调制方法，在 1200Baud 的信息传输速率下能达到的数据传输速率为（ ）。
+>
+> - A. 2400b/s
+> - B. 3600b/s
+> - C. 9600b/s
+> - D. 4800b/s
+>
+> 一个信道每 1/8s 采样一次，传输信号共有 16 种变化状态，最大数据传输速率是（ ）。
+>
+> - A. 16b/s
+> - B. 32b/s
+> - C. 48b/s
+> - D. 64b/s
+>
+> 某信道的带宽为 10MHz，信噪比为 30dB，采用 QAM-32 调制方案。若将带宽提高到 20MHz，信噪比提高到 40dB，则信道的极限数据传输速率大约提高到原来的（ ）倍。
+>
+> - A. 2
+> - B. 2.2
+> - C. 2.4
+> - D. 2.6
 
 第 15 题错选为 B。8 相位两种幅度意味着 log2V=4，所以为 D。
 
@@ -1444,19 +3280,54 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![2.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAshqyLCkGp1ic3uyqA_Xf7HLGdpKCQACWxJrG6T-SFZDNi92WhtEmgEAAwIAA3gAAz0E)
 
+> 同轴电缆比双绞线的传输速率更快，得益于（ ）。
+>
+> - A. 同轴电缆的铜芯比双绞线的粗，能通过更大的电流
+> - B. 同轴电缆的阻抗比较标准，减少了信号的衰减
+> - C. 同轴电缆具有更高的屏蔽性，同时有更好的抗噪声性
+> - D. 以上都正确
+
 本题想当然直接选 D。让网速变快是让电压跳变频率更快以及波形更清晰；减少信号衰减并没有影响到传输速率。
 
 这里辨析一下，粗同轴电缆 10BASE5，细同轴电缆 10BASE2（最长 185 米），10BASET 双绞线（早期双绞线屏蔽行不如同轴电缆）
 
 ![2.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAslqyLC1VQJpKulY-nDDx7cm1RJXGwACXBJrG6T-SFaciTnOJERynwEAAwIAA3gAAz0E)
 
+> 以下关于单模光纤的说法中，正确的是（ ）。
+>
+> - A. 光纤越粗，数据传输速率越高
+> - B. 光纤的直径减小到只有光的一个波长大小时，光沿直线传播
+> - C. 光源是发光二极管或激光
+> - D. 光纤是中空的
+
 本题错选为 D。光纤越粗，也就是多模光纤，多模光纤只适合近距离传输，并且采用普通灯光即可；单模光纤得用昂贵的激光作为光源，传输距离非常长。对于多模光纤，三束光再同一时刻进入，但是由于射入∠不一样，所以时间就不一样。光纤里肯定不是空的，因为要全反射。
 
 ![2.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAspqyLDOgYYV9bNZz0ihnhptr6SBGAACXRJrG6T-SFYCyVBIZC_mYAEAAwIAA3gAAz0E)
 
+> 以太网遵循 IEEE 802.3 标准，用粗缆组网时每段的长度不能大于 500m，超过 500m 时就要分段，段间相连利用的是（ ）。
+>
+> - A. 网络适配器
+> - B. 中继器
+> - C. 调制解调器
+> - D. 网关
+
 本题错选为 C。调制解调器是在解析的时候用的，而不是中继器。中继器的作用是放大和整形。
 
 ![2.3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAstqyLDkTVSPmyACL_E0Wfdof5elQwACXhJrG6T-SFaf6lUbxuIYxgEAAwIAA3gAAz0E)
+
+> 用集线器连接的工作站集合（ ）。
+>
+> - A. 同属一个冲突域，也同属一个广播域
+> - B. 不同属一个冲突域，但同属一个广播域
+> - C. 不同属一个冲突域，也不同属一个广播域
+> - D. 同属一个冲突域，但不同属一个广播域
+>
+> 中继器可以用来连接（ ）。
+>
+> - A. 不同类型的局域网
+> - B. 广域网和局域网
+> - C. 不同介质的局域网
+> - D. 不同协议的局域网
 
 第 5 题错选为 D，为极其低级的错误
 
@@ -1466,13 +3337,35 @@ B→"自"→"主"→"分"→"管"→"核"→"始"
 
 ![3.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAsxqyLEDxoA3nhFR0oLq_68JNTH6UgACXxJrG6T-SFZ76Xz2utr4IQEAAwIAA3gAAz0E)
 
+> 下列选项中，不属于数据链路层协议功能的是（ ）。
+>
+> - A. 定义数据格式
+> - B. 提供节点之间的可靠传输
+> - C. 控制对物理传输介质的访问
+> - D. 为终端节点隐蔽物理传输的细节
+
 本题错选为。对于数据链路层这里考虑 OSI 模型，显然 AB 都是其功能。对于 D，显然 MAC 层需要根据物理层来设计，所以不可能屏蔽物理层，D 是网络层的功能。对于 C，需要理解介质控制子层也就是 MAC 的概念，例如以太网和令牌环的区别之类的。
 
 ![3.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAs1qyLERbhWR4x1TT59adlRM7fVjYQACYBJrG6T-SFZMHj8l16kXcQEAAwIAA3gAAz0E)
 
+> 对于信道比较可靠且对实时性要求高的网络，数据链路层采用（ ）比较合适。
+>
+> - A. 无确认的无连接服务
+> - B. 有确认的无连接服务
+> - C. 无确认的面向连接服务
+> - D. 有确认的面向连接服务
+
 本题错选为 B。首先，这道题需要辨析，这里的“信道比较可靠”指的是信道本身可靠，而不是需要可靠。
 
 ![3.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAs5qyLEjnDxinuUMr7HLxAswDGCSwQACYRJrG6T-SFaBg5A5gK5pfAEAAwIAA3gAAz0E)
+
+> 【2013 统考真题】HDLC 协议对 01111100 01111110 组帧后，对应的比特串为（ ）。
+> （注：HDLC 协议已从最新大纲中删除。）
+>
+> - A. 01111100 00111110 10
+> - B. 01111100 01111101 01111110
+> - C. 01111100 01111101 0
+> - D. 01111100 01111110 01111101
 
 HDLC 协议采用零比特填充法，即用 0111 1110 作为帧的起始和结束，除了这两个之外，剩下的每遇到 5 个 1 就填充 1 个 0。
 
@@ -1488,6 +3381,13 @@ HDLC 协议采用零比特填充法，即用 0111 1110 作为帧的起始和结�
 其四，违规编码法，若采用曼彻斯特编码，那么必然中间会有 1 跳变至 0（代表 1），0 跳变至 1，如果没有跳变，那么意味着为边界，这样的好处是不用扫描。
 
 ![3.3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAs9qyLFBckgF5szbiB0MsXQq7-YcYgACYhJrG6T-SFbQXluzx332-AEAAwIAA3gAAz0E)
+
+> 【2025 统考真题】某差错编码的编码集为 {1001 1010, 0101 1100, 1111 0000, 0000 1111}，该差错编码的检错和纠错能力是（ ）。
+>
+> - A. 不超过 2 位错的 100% 检错、不超过 1 位错的纠错
+> - B. 不超过 2 位错的 100% 检错、不超过 2 位错的纠错
+> - C. 不超过 3 位错的 100% 检错、不超过 1 位错的纠错
+> - D. 不超过 3 位错的 100% 检错、不超过 2 位错的纠错
 
 需要注意的是，逗号才是分隔编码的，而不是空格与逗号都分隔。
 
@@ -1510,25 +3410,82 @@ CRC 采用硬件计算，所以快，而 IP 那块如果再用的话，成本很
 
 ![3.4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtBqyLF71EMaJBU4LuwGpaC9WMwXtwACZBJrG6T-SFY0lWvbTQORZwEAAwIAA3gAAz0E)
 
+> 下列情况中，会使停止 - 等待协议的效率变得很低的是（ ）。
+>
+> - A. 当源主机和目的主机之间的距离很近而且数据传输速率很高时
+> - B. 当源主机和目的主机之间的距离很远而且数据传输速率很高时
+> - C. 当源主机和目的主机之间的距离很近而且数据传输速率很低时
+> - D. 当源主机和目的主机之间的距离很远而且数据传输速率很低时
+
 本题错选为 D。本题想当然，没有具体情况具体分析。停止等待协议的使用场景主要是卫星链路，卫星链路源主机和目的主机距离间隔远，数据传输率低，误码率高。定量分析一下，假定忽略 ACK 帧的传输时延，则传输 1 个数据所需要的时间为 t+RTT，其中 t 为发送时延，效率=t/(t+RTT)，显然，当 t 变大的时候，即传输速率变低，整体效率变高；当 t 变小，即传输速率变高，整体效率变低。
 
 ![3.4.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtFqyLGPeM4wxF5GWbRyfEd7MqgG1wACZRJrG6T-SFZuoVVZyfzt0QEAAwIAA3gAAz0E)
+
+> 下列关于连续 ARQ 的说法中，错误的是（ ）。
+>
+> - A. 发送方可以连续发送若干数据帧，而不是发完一个数据帧就停下来等待确认帧
+> - B. 发送方收到了接收方发来的确认帧，还可以接着发送数据帧
+> - C. 相比停止 - 等待协议，连续 ARQ 因为减少了等待时间，所以提高了信道利用率
+> - D. 接收方可以不按序接收数据帧
 
 本题错选为 C。连续 ARQ 主要有两种形式，回退 N 帧与选择重传协议。对于回退 N 帧协议，接收窗口只有 1，所以必须按序接收。
 
 ![3.4.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtJqyLGgmoSkE7XFz8g-x8LQflv-cgACZhJrG6T-SFZqXAEJeySpFQEAAwIAA3gAAz0E)
 
+> 数据链路层采用选择重传协议（SR）传输数据，若帧序号采用 4 比特编号，接收窗口大小为 7，则发送窗口最大是（ ）。
+>
+> - A. 17
+> - B. 8
+> - C. 9
+> - D. 10
+
 本题错选为 B。这里是理解死板的问题，永远记住总窗口为 2^4=16，然后发送窗口 + 接收窗口≤16，所以本题发送窗口最大为 9。
 
 ![3.4.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtNqyLIFRSUtPdbnzAAB-wABDwABKp4ERAACaRJrG6T-SFYolBe8_TbdygEAAwIAA3gAAz0E)
+
+> 采用滑动窗口机制对两个相邻节点 A 和 B 的通信过程进行流量控制。A 和 B 之间的数据传输速率为 20kb/s，数据帧和确认帧的长度都为 2000B，往返传播时延为 1400ms，采用 3 比特给数据帧编号，测得在 A 和 B 的通信过程中信道利用率大于 80%，则（ ）。
+> （注：在 SR 协议中，默认发送窗口大小等于接收窗口大小。）
+>
+> - A. 节点 A、B 之间只能采用停止等待协议
+> - B. 节点 A、B 之间只能采用 GBN 协议
+> - C. 节点 A、B 之间只能采用 SR 协议
+> - D. 节点 A、B 之间可以采用 GBN 协议或 SR 协议
 
 本题错选为 C。2000B=16000bit，即发送时延为 16000/20000=0.8s=800ms。若采用停止等待协议，则传输一次数据的总时间为 RTT+800×2=1400+1600=3000ms，所以 800/3000<0.8；若采用 GBN 协议，采用 3bit 给数据帧编号，即发送窗口为 7，接收窗口为 1，~~假定采用发 7 个数据回 1 次帧，即总时间为 8×800+1400=7800ms，所以 8×800/7800=64/78>0/8~~；与后面的类似的做法，显然利用率=1；若采用 SR，则 NTd≥Td+RTT+Ta，所以利用率为 1。
 
 ![3.4.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtRqyLI4PaKTia91B1T72lJXoml9wgACahJrG6T-SFb71SXXWitAtwEAAwIAA3gAAz0E)
 
+> 假设两台主机之间采用后退 N 帧协议传输数据，数据传输速率为 16kb/s，单向传播时延为 250ms，数据帧的长度是 128B，确认帧的长度也是 128B，为使信道利用率达到最高，则帧序号的比特数至少为（ ）。
+>
+> - A. 2
+> - B. 3
+> - C. 4
+> - D. 5
+
 本题错选为 D。128B=128×8=1024。即 1024/16000=64ms，即 Td=Ta=64ms。为了使得信道利用率最高，即 NTd=Td+Ta+RTT，即 64N=64+64+500，向上取整，即 N=10，所以发送总窗口至少为 11，所以需要 4 位。
 
 ![3.4.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtVqyLJJ2tQSjD13lwNzeLHgB8uT8gACaxJrG6T-SFbVHHV0sFZYXAEAAwIAA3gAAz0E)
+
+> 【2012 统考真题】两台主机之间的数据链路层采用后退 N 帧协议（GBN）传输数据，数据传输速率为 16kb/s，单向传播时延为 270ms，数据帧长范围是 128 ~ 512B，接收方总是以与数据帧等长的帧进行确认。为使信道利用率达到最高，帧序号的比特数至少为（ ）。
+>
+> - A. 5
+> - B. 4
+> - C. 3
+> - D. 2
+>
+> 【2014 统考真题】主机甲与主机乙之间使用后退 N 帧协议（GBN）传输数据，主机甲的发送窗口尺寸为 1000，数据帧长为 1000B，信道带宽为 100Mb/s，主机乙每收到一个数据帧，就立即利用一个短帧（忽略其传输延迟）进行确认，若主机甲和主机乙之间的单向传播时延是 50ms，则主机甲可以达到的最大平均数据传输速率约为（ ）。
+>
+> - A. 10Mb/s
+> - B. 20Mb/s
+> - C. 80Mb/s
+> - D. 100Mb/s
+>
+> 【2015 统考真题】主机甲通过 128kb/s 卫星链路，采用滑动窗口协议向主机乙发送数据，链路单向传播时延为 250ms，帧长为 1000B。不考虑确认帧的开销，为使链路利用率不小于 80%，帧序号的比特数至少是（ ）。
+>
+> - A. 3
+> - B. 4
+> - C. 7
+> - D. 8
 
 第 24 题不会做。显然，128B-512B=128×8bit-512×8bit，此时 Ta=Tb=64ms-256ms，所以 NTd=Td+Ta+RTT，即 N=(2T+540)/T。当 T=64ms 时，N 向上取整，即 N=11，所以发送总窗口为 12，所以至少为 4。
 
@@ -1540,9 +3497,30 @@ CRC 采用硬件计算，所以快，而 IP 那块如果再用的话，成本很
 
 ![3.4.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtZqyLJghgz5QFhrCqBs_Z0iszD88wACbRJrG6T-SFba7j6qDb2oyAEAAwIAA3gAAz0E)
 
+> 【2019 统考真题】对于滑动窗口协议，若分组序号采用 3 比特编号，发送窗口大小为 5，则接收窗口最大是（ ）。
+>
+> - A. 2
+> - B. 3
+> - C. 4
+> - D. 5
+
 本题错选为 C。和之前类似的错误。
 
 ![3.5.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtdqyLJ1QznOAAEiZRIxAAFGRF3Dhe0eAAJuEmsbpP5IVhKj68Vtfct1AQADAgADeAADPQQ)
+
+> TDM 所用传输介质的性质是（ ）。（注：本题选项中的带宽是指信号的频率范围。）
+>
+> - A. 介质的带宽大于结合信号的位速率
+> - B. 介质的带宽小于单个信号的带宽
+> - C. 介质的位速率小于最小信号的带宽
+> - D. 介质的位速率大于单个信号的位速率
+>
+> 从表面上看，FDM 比 TDM 能更好地利用信道的传输能力，但现在计算机网络更多地使用 TDM 而非 FDM，其原因是（ ）。
+>
+> - A. FDM 实际能力更差
+> - B. TDM 可用于数字传输而 FDM 不行
+> - C. FDM 技术不成熟
+> - D. TDM 能更充分地利用带宽
 
 第 4 题不会做。第 5 题错选为 D。借助这两道题理解一下复用的概念。为了提高效率以及节约成本，提出公用物理线路（信道）的概念。然而如何互不打扰？
 
@@ -1557,17 +3535,56 @@ TDM，时分复用，每个人分固定的时间片。在 TDM 中，物理介质
 
 ![3.5.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAthqyLKS0NGIQ86Q2SawihLR3ptgRAACbxJrG6T-SFYpNnJGBOKEAgEAAwIAA3gAAz0E)
 
+> 下列关于令牌环网络的说法中，错误的是（ ）。
+> I. 信道的利用率比较公平
+> II. 重负载下信道利用率高
+> III. 节点可以一直持有令牌，直至所要发送的数据传输完毕
+> IV. 节点只能持有令牌一段固定的时间，对于没有数据要发送的节点也是如此
+>
+> - A. I、II 和 III
+> - B. III
+> - C. III 和 IV
+> - D. IV
+
 本题错选为 D。对于 1，2，显然正确，对于 3，节点在传输数据的时候，需要把令牌交付给下一个人。
 
 ![3.5.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtlqyLKnmf_zJUmqgJwECYO5vFrqkQACcBJrG6T-SFYThKV6POIlDgEAAwIAA3gAAz0E)
+
+> 【2013 统考真题】下列介质访问控制方法中，可能发生冲突的是（ ）。
+>
+> - A. CDMA
+> - B. CSMA
+> - C. TDMA
+> - D. FDMA
 
 本题错选为 A。CDMA 为码分复用，CSMA 为载波监听，TDMA 为时分复用，FDMA 为频分复用。
 
 ![3.6.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtpqyLK5Odxp8xNjHEXexpPvFIoHmAACcRJrG6T-SFZLu1BMkSKKZgEAAwIAA3gAAz0E)
 
+> 网卡实现的主要功能在（ ）。
+>
+> - A. 物理层和数据链路层
+> - B. 数据链路层和网络层
+> - C. 物理层和网络层
+> - D. 数据链路层和应用层
+
 本题错选为 B。网卡即网络接口卡，网络适配器，主要实现物理层和数据链路层。实际上也就是说，网卡本身并不具备网络层的功能，其并不负责帮别人转发数据。网卡拥有 mac 地址。
 
 ![3.6.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAttqyLLUjWC00zqMg4o4KuN-wICzMwACchJrG6T-SFZeqyGJ14YphQEAAwIAA3gAAz0E)
+
+> 根据 CSMA/CD 协议的工作原理，需要提高最短帧长的是（ ）。
+>
+> - A. 网络传输速率不变，冲突域的最大距离变短
+> - B. 冲突域的最大距离不变，网络传输速率提高
+> - C. 上层协议使用 TCP 的概率增加
+> - D. 在冲突域不变的情况下减少线路中的中继器数量
+>
+> 在某 CSMA/CD 局域网中，使用一个 Hub 连接所有站点，且限定站点到 Hub 的最长距离为 100m，信号的传播速率为 200000km/s，则站点的最长冲突检测时间是（ ）。
+>
+> - A. 2μs
+> - B. 2ms
+> - C. 1μs
+> - D. 1ms
 
 第 19 题错选为 D。本题实质上是对最短帧长之类的理解不足，这里总结一下。
 
@@ -1579,13 +3596,34 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![3.6.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAtxqyLL-2pMsiQEHL-iDccrl36JwKAACdBJrG6T-SFbf0_m47Z-ncAEAAwIAA3gAAz0E)
 
+> IEEE 802 局域网标准对应 OSI 参考模型的（ ）。
+>
+> - A. 数据链路层和网络层
+> - B. 物理层和数据链路层
+> - C. 物理层
+> - D. 数据链路层
+
 本体错选为 D。没什么好说的其实。
 
 ![3.6.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAt1qyLMlI4yIKnVHNs5wG7VII9E5pwACdxJrG6T-SFZBktlX0OVFtwEAAwIAA20AAz0E)
 
+> 下列关于吉比特以太网的说法中，错误的是（ ）。
+>
+> - A. 支持流量控制机制
+> - B. 采用曼彻斯特编码，利用光纤进行数据传输
+> - C. 数据的传输时间主要受线路传输延迟的制约
+> - D. 同时支持全双工模式和半双工模式
+
 本题错选为 C。吉比特以太网可以使用光纤/双绞线，有两种协议，支持全双工与半双工，半双工模式下使用 CSMA/CD；十吉比特以太网可以使用光纤/双绞线，只支持全双工。
 
 ![3.6.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAt5qyLM5opEhePd7f4it4CJHJp2szAACeBJrG6T-SFabOwmFBWuD8AEAAwIAA3gAAz0E)
+
+> CSMA/CA 协议的主要特点是（ ）。
+>
+> - A. 发送前先检测信道，信道空闲就立即发送，信道忙就随机推迟发送
+> - B. 边发送边检测信道，一旦发现冲突就立即停止发送
+> - C. 发送前先预约信道，获得信道授权后再发送
+> - D. 发送后等待确认帧，在规定时间内未收到确认帧就重传
 
 本体错选为 C。对于 A，如果信道空闲，需要等待 DIFS 的时间。B 是 CSMA/CD 的特点，对于 C，CSMA/CA 确实可以预约信道，但是并不是主要特点，而且也可以不适用这个（普通的不使用），对于 D，CSMA/CA 使用停止等待协议。
 
@@ -1593,9 +3631,27 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![3.6.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAt9qyLNR642HJPaGPOUhBXqaYkS9ugACehJrG6T-SFb520m0Epn90AEAAwIAA3gAAz0E)
 
+> 在下图所示的网络中，假定主机 A 给主机 B 发送数据，在 MAC 帧从接入点 AP2 转发到目的主机 B 的这段链路上，MAC 帧的地址 1、地址 2 和地址 3 分别是（ ）。
+>
+> - [图示] 图中文字：A、地址 MAC_A、AP1、地址 BSSID1、MAC1、MAC2、AP2、地址 BSSID2、B、地址 MAC_B。主机 A（地址 MAC_A）经虚线链路连到 AP1（地址 BSSID1），再经标注 MAC1 的链路连到中间设备，经标注 MAC2 的链路连到 AP2（地址 BSSID2），最后经虚线链路连到主机 B（地址 MAC_B）。
+>
+> - A. BSSID2，BSSID1，MAC_B
+> - B. MAC_B，BSSID2，BSSID1
+> - C. BSSID2，MAC_B，MAC_A
+> - D. MAC_B，BSSID2，MAC[?]
+
 本题错选为 B。谁收，谁发，最终。AP2 发给 B，B 收，所以第一个地址是 MACB，AP2 发，所以是 BSSID2，这里的最终是源地址，源地址这里应该是 MAC2（因为过了一个路由器）
 
 ![3.6.41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuBqyLNjqIPY3fkNSNgqlRjL5wsNPwACfBJrG6T-SFYkgoDPVc9DIQEAAwIAA3gAAz0E)
+
+> 【2016 统考真题】如下图所示，在 Hub 再生比特流的过程中会产生 1.535μs 的时延（Switch 和 Hub 均为 100Base-T 设备），信号传播速率为 200m/μs，不考虑以太网帧的前导码，则 H3 和 H4 之间理论上可以相距的最远距离是（ ）。
+>
+> - [图示] 图中文字：R2、192.168.3.254、E1、Switch、Hub、H4、192.168.3.252、H1、192.168.3.2、H2、192.168.3.3、H3、192.168.3.251。R2（192.168.3.254，标注 E1）连到 Switch，Switch 分别连 H1（192.168.3.2）、H2（192.168.3.3）和 Hub，Hub 分别连 H4（192.168.3.252）和 H3（192.168.3.251）。
+>
+> - A. 200m
+> - B. 205m
+> - C. 359m
+> - D. 512m
 
 本题错选为 C。100BaseT 而就意味着 100MB/s。假设总共距离为 x，那么单向最大传播时延为 x/200+1.535，争用期即 x/100+1.535×2，所以最短帧长即争用期×数据传输率=64B，其中数据传输率为 64Mbit/s。
 
@@ -1603,9 +3659,25 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![3.6.44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuFqyLO6S4t-877pAAHEj5pf4By3dqQAAn0Saxuk_khW4-W8Hjn2v9UBAAMCAAN4AAM9BA)
 
+> 【2019 统考真题】假设一个采用 CSMA/CD 协议的 100Mb/s 局域网，最小帧长是 128B，则在一个冲突域内，两个站点之间的单向传播时延最多是（ ）。
+>
+> - A. 2.56μs
+> - B. 5.12μs
+> - C. 10.24μs
+> - D. 20.48μs
+
 本题错选为 C。最短帧长=128B=2×单向传播时延×数据传输率，所以 128×8/(2×100)=5.12us。
 
 ![3.6.46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuJqyLPvnfeUkrvVmdecKblNiymfawACfhJrG6T-SFZ1Stp5sHEixgEAAwIAA3gAAz0E)
+
+> 【2020 统考真题】在某个 IEEE 802.11 无线局域网中，主机 H 与 AP 之间发送或接收 CSMA/CA 帧的过程如下图所示。在 H 或 AP 发送帧前等待的帧间间隔时间（IFS）中，最长的是（ ）。
+>
+> - [图示] 图中文字：H、AP、IFS1、RTS、IFS2、CTS、IFS3、DATA、IFS4、ACK、时间。两条竖线左为 H、右为 AP，时间轴自上向下；依次标注 IFS1、H 向 AP 发送 RTS、IFS2、AP 向 H 发送 CTS、IFS3、H 向 AP 发送 DATA、IFS4、AP 向 H 发送 ACK，底部标注 时间。
+>
+> - A. IFS1
+> - B. IFS2
+> - C. IFS3
+> - D. IFS4
 
 本题错选为 C。第一个是 DISF，后面三个都是 SIFS。
 
@@ -1617,9 +3689,30 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![3.7.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuNqyLQH09bEILLvD6jr886FB26J3wACfxJrG6T-SFYN0nraqxN8KQEAAwIAA3gAAz0E)
 
+> 局域网和广域网的差异不仅在于它们所覆盖的范围不同，还主要在于它们（ ）。
+>
+> - A. 所使用的介质不同
+> - B. 所使用的协议不同
+> - C. 所能支持的通信量不同
+> - D. 所提供的服务不同
+
 本题错选为 D。广域网使用 PPP 技术，局域网使用广播技术。
 
 ![3.7.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuRqyLQfZecNmtLz4yN3YJ4EysM5YQACgBJrG6T-SFbr-c4nBmrAIAEAAwIAA3gAAz0E)
+
+> 为实现透明传输（默认为异步线路），PPP 使用的填充方法是（ ）。
+>
+> - A. 位填充
+> - B. 字符填充
+> - C. 对字符数据使用字符填充，对非字符数据使用位填充
+> - D. 对字符数据使用位填充，对非字符数据使用字符填充
+>
+> 以下对 PPP 的描述中，错误的是（ ）。
+>
+> - A. 具有差错控制能力
+> - B. 仅支持 IP
+> - C. 支持动态分配 IP 地址
+> - D. 支持身份验证
 
 第 7 题错选为 C。PPP 是面向字节的协议。可以注意，差错控制指的是 CRC 这种，而不是传输是否可靠。使用校验然后丢弃和使用校验然后告知是两码事。
 
@@ -1627,11 +3720,32 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![3.7.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuVqyLQ5m8_NYf1m5biBORomfvr8fwACgRJrG6T-SFbn7bFCKTmj5QEAAwIAA20AAz0E)
 
+> 下列关于 PPP 的叙述中，正确的是（ ）。
+>
+> - A. PPP 是网络层协议
+> - B. PPP 支持半双工或全双工通信
+> - C. PPP 两端的网络层必须运行相同的网络层协议
+> - D. PPP 是面向字节的协议
+
 本题错选为 C。PPP 仅支持全双工协议。
 
 这里捋一下 PPP 协议，PPP 协议首先通过 LCP 鉴别，然后然后使用 NPC 配置网络参数；PPP 的主要特征是提供不可靠服务（不使用需要确认机制，仅提供无差错的接收，可以运行不同的网络层协议）
 
 ![3.8.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuZqyLRUXOZWyCxD_swnL8UEMQyuhAACghJrG6T-SFYZxxA1IlFgEgEAAwIAA3gAAz0E)
+
+> 下列关于用集线器连接的共享式以太网的说法中，正确的是（ ）。
+>
+> - A. 以太网的物理拓扑是总线形结构
+> - B. 以太网提供有确认的无连接服务
+> - C. 以太网参考模型一般只包括物理层和数据链路层
+> - D. 以太网不一定使用 CSMA/CD 协议
+>
+> 下列关于广播式网络的说法中，错误的是（ ）。
+>
+> - A. 共享广播信道
+> - B. 不存在路由选择问题
+> - C. 可以不要网络层
+> - D. 不需要服务接入点
 
 第 10 题错选为 A。共享型以太网采用集线器。以太网物理拓扑为星形，逻辑拓扑为总线型。以太网提供的是无确认无连接的服务。
 
@@ -1639,9 +3753,23 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![3.8.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAudqyLRpp9dpRV2NOmXVgglzk6gWAwACgxJrG6T-SFbISnhn11bvVQEAAwIAA3gAAz0E)
 
+> 假设以太网 A 中 80% 的通信量在本局域网内进行，其余 20% 在本局域网与因特网之间进行，而以太网 B 正好相反。在这两个局域网中，一个使用集线器，另一个使用交换机，则交换机应放置的局域网是（ ）。
+>
+> - A. 以太网 A
+> - B. 以太网 B
+> - C. 任意以太网
+> - D. 都不合适
+
 本题错选为 B。本网络通信频繁的应该使用交换机。
 
 ![3.8.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuhqyLR7ZXZuEleuIRmYQ8EX66JcCgAChBJrG6T-SFaqXLsGwxZeZwEAAwIAA3gAAz0E)
+
+> 【2013 统考真题】对于 100Mb/s 的以太网交换机，当输出端口无排队，以直通交换方式转发一个以太网帧（不包括前导码）时，引入的转发时延至少是（ ）。
+>
+> - A. 0μs
+> - B. 0.48μs
+> - C. 5.12μs
+> - D. 121.44μs
 
 本题错选为 C。以太网帧最短为 64B，最长为 1518B，但是需要注意这里的交换方式是直通，直通的意思是只检查帧的 mac 地址就选择出口，也就是 6B。
 
@@ -1651,11 +3779,32 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![4.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAulqyLSbOD7bK5i_ma9d_cWvK7-rPgAChRJrG6T-SFZ1AAEniH2ElNwBAAMCAAN4AAM9BA)
 
+> 在路由器互连的多个局域网的结构中，要求每个局域网（ ）。
+>
+> - A. 物理层协议可以不同，而数据链路层及其以上的高层协议必须相同
+> - B. 物理层、数据链路层协议可以不同，而数据链路层以上的高层协议必须相同
+> - C. 物理层、数据链路层、网络层协议可以不同，而网络层以上的高层协议必须相同
+> - D. 物理层、数据链路层、网络层及高层协议都可以不同
+
 本题错选为 B。可以理解为 ipv4 和 ipv6 网络。
 
 ![4.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAupqyLTBMVQD4cxnW8pFeGiIdfXfiwAChhJrG6T-SFZyDf7VqCq9BAEAAwIAA20AAz0E)
 
+> 下列关于各种数据交换方式的叙述中，错误的是（ ）。
+>
+> - A. 电路交换不提供差错控制功能
+> - B. 分组交换的分组有最大长度的限制
+> - C. 虚电路是面向连接的，它提供的是一种可靠的服务
+> - D. 在故障率很高的传输系统中，选择虚电路方式更合适
+
 ![4.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAutqyLT2WJomzRwl0s3-GFtYKvdj2QAChxJrG6T-SFbTjvVukGRsTwEAAwIAA3gAAz0E)
+
+> 同一报文中的分组可以由不同的传输路径通过通信子网的方法是（ ）。
+>
+> - A. 分组交换
+> - B. 电路交换
+> - C. 虚电路方式
+> - D. 数据报方式
 
 这两题均错选为 A。
 
@@ -1672,23 +3821,65 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![4.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAuxqyLUpL-oroLrgnXS-OTA66vcliQACiBJrG6T-SFa0Gz9aWfljNAEAAwIAA20AAz0E)
 
+> 下列关于 IP 分组的首部检验和字段的说法中，正确的是（ ）。
+>
+> - A. 检验和字段检查的范围是整个 IP 分组
+> - B. 计算检验和的方法是对首部的每个 16 比特按反码运算求和再取反码
+> - C. 若网络层发现检验和错误，则丢弃该 IP 分组并发送 ICMP 差错报文
+> - D. IP 分组检验和的计算需要加入一个伪首部
+
 本题错选为 C。对于 AB，IP 分组的校验和作用范围为首部（对于 IPv6 则没有校验和），计算校验和的方法是每 16bit 按反码求和再取反。如果是 TCP/UDP 的话，则是作用范围为全部，并且校验和每 16bit 按反码求和后需回卷，再取反。对于 C，TCP/IP 的网络层提供差错校验，但是不提供补救措施，仅丢弃该 IP 分组。ICMP 差错报文是 IP 分组不可达/时间超过/参数问题/改变路由时发送的。需要注意对于源点抑制（即拥塞丢弃），新版的已经取消。
 
 ![4.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAu1qyLVPc7pLP03s4kL1-ivEQu1BeQACiRJrG6T-SFbWe5oa0D_8SAEAAwIAA3gAAz0E)
+
+> 某 IP 分组的片偏移字段值为 100，首部长度字段值为 5，总长度字段值为 100，则该 IP 分组的数据部分的第一个字节的编号与最后一个字节的编号是（ ）。
+>
+> - A. 100, 200
+> - B. 100, 500
+> - C. 800, 879
+> - D. 800, 900
 
 本题错选为 D。IP 片偏移字段为 100，即偏移为 800，IP 长度字段为 5，即 20B，总长度字段值为 100，即 100B。所以该分组数据部分长度为 100B-20B=80B，即 800-879（不给首部编号）
 
 ![4.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAu5qyLVh3nm38PDMaaFQlObSPJysjQACihJrG6T-SFYkMn3npK2owQEAAwIAA20AAz0E)
 
+> 在下列 4 个地址中，属于单播地址的是（ ）。
+>
+> - A. 172.31.128.255/18
+> - B. 10.255.255.255
+> - C. 192.168.24.59/30
+> - D. 224.105.5.211
+
 本题错选为 C。单播地址，也就意味着非广播/多播地址。对于 D，224.0.0.0 至 239.0.0.0 为多播地址，对于 C，192.168.24.0011 1011/30，为广播地址；对于B，显然为广播地址，对于A，172.31.1000 0000.1111 1111，并没有后 32-18=14 位均为 1，所以显然是单波地址。
 
 ![4.2.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAu9qyLVwMuWJl_m4LRxdDUvvI5kPlgACixJrG6T-SFbARreFSssipAEAAwIAA3gAAz0E)
+
+> 一个网段的网络号为 198.90.10.0/27，最多可以分成（ ）个子网；此网段划分成若干子网后，每个子网最多具有（ ）个可分配给主机的 IP 地址。
+>
+> - A. 8，30
+> - B. 4，62
+> - C. 16，14
+> - D. 32，6
+>
+> 一台主机有两个 IP 地址，一个地址是 192.168.11.25，另一个地址可能是（ ）。
+>
+> - A. 192.168.11.0
+> - B. 192.168.11.26
+> - C. 192.168.13.25
+> - D. 192.168.11.24
 
 第 22 题没理解题目意思，所以没做出来。198.90.0000 1010.0000 0000/27，显然这是一个C类地址，即32-27=5，所以后5位作为IP地址，前3位作为主机地址。
 
 第 23 题错选为。一个主机有 2 个 IP 地址，意味着这个主机有两块网卡。显然这是一个 C 类地址，且为私有地址。192.168.11.0001 1001；对于 A，显然这是网络号，所以不可以作为主机地址。对于 B，192.168.11.0001 1010，待定；对于 C，这是另一个网络的 IP 地址；对于 D，192.168.11.0001 1000。显然对于 B 和 D 而言，它们没有什么区别。
 
 ![4.2.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvBqyLWB7uzRNaXfAAEa0VT8f7F37uEAAowSaxuk_khWyp8cG6IyiDoBAAMCAAN4AAM9BA)
+
+> 当下列 IP 地址作为 IP 数据报的目的地址时，互联网上的路由器不会正常转发的是（ ）。
+>
+> - A. 192.172.56.23
+> - B. 172.15.34.128
+> - C. 192.168.32.17
+> - D. 172.128.45.34
 
 本题错选为 B。
 
@@ -1698,9 +3889,23 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![4.2.33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvFqyLWWH3sw57TMUzi6lMxVYcZUGgACjRJrG6T-SFbBpozBfF3v9AEAAwIAA3gAAz0E)
 
+> 主机 A 和主机 B 的 IP 地址分别为 216.12.31.20 和 216.13.32.21，要想让 A 和 B 工作在同一个 IP 子网内，应该给它们分配的子网掩码是（ ）。
+>
+> - A. 255.255.255.0
+> - B. 255.255.0.0
+> - C. 255.255.255.255
+> - D. 255.0.0.0
+
 本题错选为 B。属于脑子抽了。
 
 ![4.2.40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvNqyLXGSoaY1t92CfZzPV7OagQlXwACjxJrG6T-SFb6p8IOjHYRNgEAAwIAA3gAAz0E)
+
+> 现将一个 IP 网络划分为 4 个子网，若其中一个子网是 192.168.1.130/26，则下列网络中不可能是另外 3 个子网之一的是（ ）。
+>
+> - A. 192.168.1.0/25
+> - B. 192.168.1.64/26
+> - C. 192.168.1.96/27
+> - D. 192.168.1.224/27
 
 本题错选为 A。可以采用类似哈夫曼树的思想。
 
@@ -1720,6 +3925,15 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![4.2.45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvRqyLXlbIPxJNJ-4He5rOZrq1nbjgACkBJrG6T-SFYhQOmK-IMH0AEAAwIAA3gAAz0E)
 
+> 某网络拓扑如下图所示，H1 与 H2 的默认网关和子网掩码都分别配置为 192.168.3.1 和 255.255.255.0，H3 和 H4 的默认网关和子网掩码都分别配置为 192.168.3.254 和 255.255.255.128，初始时所有设备的 ARP 缓存均为空。则下列说法中错误的是（ ）。
+>
+> - [图示] 图中文字：R2、192.168.3.254、E1、Switch、Hub、H4、192.168.3.252、H1、192.168.3.2、H2、192.168.3.3、H3、192.168.3.251。R2（192.168.3.254，标注 E1）连到 Switch，Switch 分别连 H1（192.168.3.2）、H2（192.168.3.3）和 Hub，Hub 分别连 H4（192.168.3.252）和 H3（192.168.3.251）。
+>
+> - A. 若 H1 向 H3 发送数据，则 H2、H3、H4 都能收到 H1 发来的 ARP 请求报文
+> - B. 若 H3 向 H1 发送数据，则 H3 能收到 H1 发来的 ARP 响应报文
+> - C. 若 H1 向 H2 发送数据，则 H2、H3、H4 都能收到 H1 发来的 ARP 请求报文
+> - D. 若 H3 向 H4 发送数据，则 H3 能收到 H4 发来的 ARP 响应报文
+
 本题错选为 C。首先观察子网掩码与默认网关，从 H1，H2 的视角来看，所有主机都在本网络内，从 H3 和 H4 的视角来看，只有它们相互认识，而不认识的必须交付给默认网关。
 
 对于 A，H1 向 H3 发送数据，首先检查 IP 和子网掩码，发现属于同一个网络，所以直接发，但是没有 mac 地址，所以进行 ARP 请求。交换机收到这个请求后，由于为空，所以进行自学习，填 MACH1，随后进行泛洪，除了 H1 进入的那个端口外全部都发一遍广播帧。H2 收到广播帧后，在网络层将之丢弃，集线器收到之后直接信号放大转发，H3 和 H4 都收到，H4 在网络层丢弃，H3 收到。
@@ -1734,17 +3948,52 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![4.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvVqyLYhIYoAASSg6mgEy3_ng3hB31UAApESaxuk_khWBb8Rr726mq4BAAMCAAN4AAM9BA)
 
+> 一个 IPv6 地址的简化写法为 8::D0:123:CDEF:89A，则其完整地址应该是（ ）。
+>
+> - A. 8000:0000:0000:0000:00D0:1230:CDEF:89A0
+> - B. 0008:0000:0000:0000:00D0:0123:CDEF:89A0
+> - C. 8000:0000:0000:0000:D000:1230:CDEF:89A0
+> - D. 0008:0000:0000:0000:00D0:0123:CDEF:089A
+
 本题错选为 C。需要注意，可以省略的是前导 0。
 
 ![4.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvZqyLYyIMcMVsnHv6Sq6C_v8R0UjwACkhJrG6T-SFa1V_gljk79twEAAwIAA3gAAz0E)
+
+> 若一个路由器收到的 IPv6 数据报因太大而不能转发到链路上，则路由器将把该数据报（ ）。
+>
+> - A. 丢弃
+> - B. 暂存
+> - C. 分片
+> - D. 转发至能支持该数据报的链路上
 
 本题错选为 D。IPv6 只有源主机才能分片，路由器收到太大的分片直接丢弃。
 
 ![4.4.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvdqyLZWjaWIEZjfJbMGF7DP-n_hjAACkxJrG6T-SFa7luhnOTzHigEAAwIAA3gAAz0E)
 
+> 下列关于链路状态协议的描述中，错误的是（ ）。
+>
+> - A. 仅相邻路由器需要交换各自的路由表
+> - B. 全网路由器的拓扑数据库是一致的
+> - C. 采用洪泛技术更新链路变化信息
+> - D. 具有快速收敛的优点
+
 本题错选为 B。A 显然是 RIP 的，对于 B，在稳定了之后是一样的（没必要重复去算）
 
 ![4.4.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvhqyLZnjMR7mFU2ffJwVa4IXMe1EAAClBJrG6T-SFagt4i8Q3NkjwEAAwIAA3gAAz0E)
+
+> 下列关于分层路由的描述中，错误的是（ ）。
+>
+> - A. 采用分层路由后，路由器被划分成区域
+> - B. 每个路由器不仅知道如何将分组路由到自己区域的目标地址，还知道如何路由到其他区域
+> - C. 采用分层路由后，可以将不同的网络连接起来
+> - D. 对于大型网络，可能需要多级分层路由来管理
+>
+> 以下关于自治系统的描述中，错误的是（ ）。
+>
+> - A. 自治系统划分区域的好处是，将利用洪泛法交换链路状态信息的范围局限在每个区域内，而不是整个自治系统
+> - B. 采用分层划分区域的方法使交换信息的种类增多，同时也使 OSPF 协议更加简单
+> - C. OSPF 协议将一个自治系统再划分为若干更小的范围，称为区域
+> - D. 在一个区域内部的路由器只知道本区域的网络拓扑，而不知道其他区域的网络拓扑的情况
 
 第 5 题错选为 A。B，并不是每个路由器都知道，而是只需要区域边界路由知道即可。
 
@@ -1752,11 +4001,27 @@ CSMA/CD主要用于10BaseT网络中，最大段长为100m，争用期为51.2us�
 
 ![4.4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvlqyLZ6CVUDxCSioUS12dEMxWWqBAAClRJrG6T-SFZAwuwK9ZUe4QEAAwIAA3gAAz0E)
 
+> 某分组交换网络的拓扑如下图所示，各路由器使用 OSPF 协议且均已收敛，各链路的度量已在图中标注。假设各段链路的带宽均为 100Mb/s，分组长度为 1000B，其中分组的首部长度为 20B。若主机 A 向主机 B 发送一个大小为 980000B 的文件，忽略分组的传播时延和封装/解封时间，从 A 发送开始到 B 接收完毕为止，需要的时间是（ ）。
+>
+> - [图示] 图中文字：A、B、2、6、2、3、1、1。主机 A 经标注 2 的链路连到左上路由器，左上路由器经标注 6 的链路连到右上路由器，右上路由器经标注 2 的链路连到主机 B；左上路由器经标注 3 的链路连到左下路由器，左下路由器经标注 1 的链路连到右下路由器，右下路由器经标注 1 的链路连到右上路由器，四个路由器首尾相接构成环状。
+>
+> - A. 80.08ms
+> - B. 80.16ms
+> - C. 80.32ms
+> - D. 80.64ms
+
 本题没做出来，其实只是因为最前面的分组转发没理解。
 
 IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地址即可。
 
 ![4.4.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvpqyLaXTSj-TyPCuiiz6BHCLNoAAdoAApYSaxuk_khW_eRvqwU2wX8BAAMCAAN4AAM9BA)
+
+> 以下关于移动 IP 工作原理的描述中，错误的是（ ）。
+>
+> - A. 移动 IP 的基本工作过程可以分为代理发现、注册、分组路由与注销 4 个阶段
+> - B. 节点在使用移动 IP 进行通信时，归属代理和外部代理之间需要建立一条隧道
+> - C. 移动节点到达新的网络后，通过注册过程把自己新的可达信息通知外部代理
+> - D. 移动 IP 的分组路由可以分为单播、广播与多播
 
 本题错选为 D。
 
@@ -1764,9 +4029,30 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![4.7.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvtqyLasC8EyHngx2-Ilgg_WZri5iwAClxJrG6T-SFbalSbpSnBdfwEAAwIAA20AAz0E)
 
+> 下列关于冲突域的叙述中，正确的是（ ）。
+>
+> - A. 能接收到同一广播帧的所有设备的集合
+> - B. 能发送同一广播帧的所有设备的集合
+> - C. 能产生冲突的所有设备的集合
+> - D. 能隔离冲突的所有设备的集合
+
 本题错选为 A。其实理解一下就知道了。A 指的是广播域内的设备，B，显然很多设备都可以发送广播帧，对于 D，隔离冲突的设备是交换机，显然交换机的集合并不是冲突域。
 
 ![4.7.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAvxqyLbH5HRrsS9rBiqwW65hZjwD0gACmBJrG6T-SFYQPBSWN9_IpgEAAwIAA3gAAz0E)
+
+> 路由器的路由选择部分包括（ ）。
+>
+> - A. 路由选择处理机
+> - B. 路由选择协议
+> - C. 路由表
+> - D. 以上都是
+>
+> 不同网络设备传输数据的延迟时间是不同的，下列设备中传输时延最大的是（ ）。
+>
+> - A. 局域网交换机
+> - B. 网桥
+> - C. 路由器
+> - D. 集线器
 
 第 13 题错选为 B。显然是 D。
 
@@ -1774,9 +4060,27 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![4.7.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAv1qyLbfNBtnj4VC1f3fxHKh9oTYmgACmRJrG6T-SFb76QpyHEa8LwEAAwIAA3gAAz0E)
 
+> 路由器转发分组（在路由表中已找到匹配的条目）时，会根据路由表中的（ ）字段来确定输出端口。
+>
+> - A. 目的网络地址
+> - B. 下一跳地址
+> - C. 距离度量值
+> - D. 接口标识符
+
 本题错选为 A。已经找到目的条目后，根据标识符转发。
 
 ![4.7.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAv5qyLbzVcroZePUPbNXMVotmhab-gACmhJrG6T-SFZrzqX8SKJ4twEAAwIAA3gAAz0E)
+
+> 【2012 统考真题】下列关于 IP 路由器功能的描述中，正确的是（ ）。
+> I. 运行路由协议，设置路由表
+> II. 监测到拥塞时，合理丢弃 IP 分组
+> III. 对收到的 IP 分组头进行差错检验，确保传输的 IP 分组不丢失
+> IV. 根据收到的 IP 分组的目的 IP 地址，将其转发到合适的输出线路上
+>
+> - A. 仅 III、IV
+> - B. 仅 I、II、III
+> - C. 仅 I、II、IV
+> - D. I、II、III、IV
 
 本题错选为 D。对于 3，对于 IP 分组进行差错检测后，如果错了直接丢了。
 
@@ -1784,17 +4088,50 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![6.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAv9qyLcQn3IpGmzyaKUMgiqRlXEoTgACmxJrG6T-SFZ5mKoT8DBXeAEAAwIAA3gAAz0E)
 
+> 下列关于客户/服务器模型的说法中，不正确的是（ ）。
+>
+> - A. 服务器专注于完成某些服务，而客户则作为这些服务的使用者
+> - B. 客户通常位于前端，服务器通常位于后端
+> - C. 客户和服务器通过网络实现协同计算任务
+> - D. 客户是面向任务的，服务器是面向用户的
+
 本题错选为 C。客户是面向用户的，服务器是面向任务的。
 
 ![6.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwABasi3Ij-hNHjE93E7Z3iRh68TA8MAApwSaxuk_khW1gdM5aaDcUgBAAMCAAN4AAM9BA)
+
+> 互联网中域名解析依赖于由域名服务器组成的逻辑树。在域名解析过程中，主机上请求域名解析的软件不需要知道（ ）信息。
+> I. 本地域名服务器的 IP
+> II. 本地域名服务器父节点的 IP
+> III. 域名服务器树根节点的 IP
+>
+> - A. I 和 II
+> - B. I 和 III
+> - C. II 和 III
+> - D. I、II 和 III
 
 本题错选为 A。主机请求域名解析的软件只需要知道本地域名服务器的地址并且委托其查询。
 
 ![6.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwJqyLeMzYd_NPrBrUA-jFns_mtIfgACnRJrG6T-SFZOs9e5RDWRogEAAwIAA3gAAz0E)
 
+> （ ）可以将其管辖的主机名转换为主机的 IP 地址。
+>
+> - A. 本地域名服务器
+> - B. 根域名服务器
+> - C. 权限域名服务器
+> - D. 代理域名服务器
+
 本题错选为 A，事实上应该是背书题。
 
 ![6.2.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwNqyLeeSTZxqybYCI48PU7Gj4XWwwACnhJrG6T-SFYhorof_6v-bwEAAwIAA3gAAz0E)
+
+> 【2020 统考真题】假设下图所示网络中的本地域名服务器只提供递归查询服务，其他域名服务器都只提供迭代查询服务；局域网内主机访问 Internet 上各服务器的往返时间（RTT）均为 10ms，忽略其他各种时延。若主机 H 通过超链接 `http://www.abc.com/index.html` 请求浏览纯文本 Web 页 index.html，则从单击超链接开始到浏览器接收到 index.html 页面为止，所需的最短时间与最长时间分别是（ ）。
+>
+> - [图示] 图中文字：本地域名服务器、路由器、局域网、H、Internet、根域名服务器、com 顶级域名服务器、abc.com 域名服务器、`www.abc.com`。主机 H 与本地域名服务器接在总线型局域网上，局域网经路由器连入 Internet 云，云内画有根域名服务器、com 顶级域名服务器、abc.com 域名服务器和 `www.abc.com` 四台服务器。
+>
+> - A. 10ms，40ms
+> - B. 10ms，50ms
+> - C. 20ms，40ms
+> - D. 20ms，50ms
 
 本题错选为 B。捋一下过程：
 
@@ -1802,21 +4139,63 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![6.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwRqyLe0iF1L9n_Ibw2olTqBTh23HgACnxJrG6T-SFZ2HATPSnaYrQEAAwIAA3gAAz0E)
 
+> 一个 FTP 用户发送了一个 LIST 命令来获取服务器的文件列表，这时服务器应通过（ ）端口来传输该列表。
+>
+> - A. 21
+> - B. 20
+> - C. 22
+> - D. 19
+
 本题错选为 A。传输数据应该由 20 号端口走。
 
 ![6.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwVqyLfLhV0mXvKi_-9VmgQnYWOg_QACoBJrG6T-SFamAAFl06ho6PwBAAMCAAN4AAM9BA)
+
+> 直接封装 FTP、DNS、DHCP 报文的协议分别是（ ）。
+>
+> - A. TCP、UDP、UDP
+> - B. UDP、TCP、TCP
+> - C. TCP、UDP、IP
+> - D. UDP、UDP、UDP
 
 本题错选为 C。属于低级错误，在 IP 协议上跑的是 OSPF。
 
 ![6.4.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwZqyLfgQ-gtXB2m-pnlbZwUQfwzFgACoRJrG6T-SFYWlhZI_UlXugEAAwIAA3gAAz0E)
 
+> 下列关于电子邮件格式的说法中，错误的是（ ）。
+>
+> - A. 电子邮件内容包括邮件头与邮件体两部分
+> - B. 邮件头中发信人地址（From: ）、发送时间、收信人地址（To: ）及邮件主题（Subject: ）是由系统自动生成的
+> - C. 邮件体是实际要传送的信函内容
+> - D. MIME 允许电子邮件系统传输文字、图像、语音与视频等多种信息
+
 本题错选为 D。显然 B 是错误的。
 
 ![6.5.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwdqyLfzYRVr80digBdwWzEAASVU7YcAAqISaxuk_khWkoJlwCPlfkoBAAMCAAN4AAM9BA)
 
+> 下面的（ ）协议中，客户与服务器之间采用面向无连接的协议进行通信。
+>
+> - A. FTP
+> - B. SMTP
+> - C. DNS
+> - D. HTTP
+
 本题错选为 D，属于低级错误。
 
 ![6.5.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwlqyLgGYYnKspzSKUncdbsnuL7IGwACoxJrG6T-SFYFl9fqr627mwEAAwIAA3gAAz0E)
+
+> 使用鼠标单击一个万维网文档时，若该文档除有文本外，还有三幅 gif 图像，则在 HTTP/1.0 中需要建立（ ）次 TCP 连接。
+>
+> - A. 4
+> - B. 3
+> - C. 2
+> - D. 1
+>
+> 仅需 Web 服务器对 HTTP 报文进行响应，但不需要返回请求对象时，HTTP 请求报文应该使用的方法是（ ）。
+>
+> - A. GET
+> - B. PUT
+> - C. POST
+> - D. HEAD
 
 第 6 题错选为 C。首先获得 index 建立一次，然后获取 3 个图像建立 3 次。
 
@@ -1824,9 +4203,39 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![6.5.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwpqyLgW4BZyERNLmZM8j4gxN8OVCwACpRJrG6T-SFYAARzQwIPKlLgBAAMCAAN4AAM9BA)
 
+> 若浏览器支持并行 TCP 连接，使用非持久的 HTTP/1.0 协议请求浏览 1 个 Web 页，该页中引用同一网站上的 7 个小图像文件，则从浏览器为传输 Web 页请求建立 TCP 连接开始，到接收完所有内容为止，所需的往返时间 RTT 数至少是（ ）。
+>
+> - A. 3
+> - B. 4
+> - C. 8
+> - D. 9
+
 本题错选为 C。并行 TCP，所以首先先建立 TCP，花费 2RTT 的时间拿到 index，然后花费 2RTT 的时间拿到剩下的图片。
 
 ![6.5.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwtqyLgzNl5ijxOsjRz07s65w6WLcQACpxJrG6T-SFbYXS5Z9FZz1gEAAwIAA3gAAz0E)
+
+> 主机 H 通过持久的 HTTP/1.1 协议请求服务器 S 上的 5KB 数据，最大段长 MSS = 1KB，往返时间 RTT = 50ms，最长报文段寿命 MSL = 800ms，假设双方的接收窗口都足够大，当 H 收到来自 S 的第一个携带数据的报文段后，立即向 S 发送连接释放报文段（注：连接释放报文段可以携带数据信息或确认信息）。从 H 请求与 S 建立 TCP 连接时刻起，到 H 进入 CLOSED 状态为止，所需的时间至少是（ ）。
+>
+> - A. 1000ms
+> - B. 1200ms
+> - C. 1600ms
+> - D. 1800ms
+>
+> 假定一个 NAT 路由器的公网地址为 205.56.79.35，并且有如下表项：
+>
+> | 转换端口 | 源 IP 地址 | 源端口 |
+> | --- | --- | --- |
+> | 2056 | 192.168.32.56 | 21 |
+> | 2057 | 192.168.32.56 | 20 |
+> | 1892 | 192.168.48.26 | 80 |
+> | 2256 | 192.168.55.106 | 80 |
+>
+> 它收到一个源 IP 地址为 192.168.32.56、源端口为 80 的分组，其动作是（ ）。
+>
+> - A. 转换地址，将源 IP 变为 205.56.79.35，端口变为 2056，然后发送到公网
+> - B. 添加一个新的条目，转换 IP 地址及端口后发送到公网
+> - C. 不转发，丢弃该分组
+> - D. 直接将分组转发到公网
 
 第 14 题错选为 A。5KB/MSS=5，所以数据信息抽象为 5。首先建立 TCP 连接，花费 1.5RTT，然后采用慢开始，也就是 0 时刻传输 1（花费 0.5RTT），1 时刻传输 2（花费 1RTT），2 时刻传输 2（花费 1RTT），这样可以传输完所有数据。此时总共是 4RTT。然后进行四报文挥手，花费 2RTT 后再消耗 2MSL 的时间，也就是总共 6RTT+2MSL=300ms+1600ms=1800ms。
 
@@ -1838,9 +4247,44 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![1.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADy2rFHD9qCarlJkIZk02KjGRq7QFzAAK6FGsbxNooVmV88A6bSeh4AQADAgADbQADPQQ)
 
+> 某算法的时间复杂度为 O(n²)，则表示该算法的（ ）。
+>
+> - A. 问题规模是 n²
+> - B. 执行时间等于 n²
+> - C. 执行时间与 n² 成正比
+> - D. 问题规模与 n² 成正比
+
 错选为 D。考虑一个 n×n 大小的图，我的任务是得到这个图边 1 的入度，那么我只需要竖着遍历一次即可，即时间复杂度是 O(n)
 
 ![1.2.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADzGrFHGf5DJSqDOiBLyahlGwAASDISQACuxRrG8TaKFaMq7pTKC5CfwEAAwIAA3gAAz0E)
+
+> 【2022 统考真题】下列程序段的时间复杂度是（ ）。
+>
+> ```c
+> int sum=0;
+> for(int i=1;i<n;i*=2)
+>     for(int j=0;j<i;j++)
+>         sum++;
+> ```
+>
+> - A. O(log₂n)
+> - B. O(n)
+> - C. O(nlog₂n)
+> - D. O(n²)
+>
+> 【2025 统考真题】下列程序段的时间复杂度是（ ）。
+>
+> ```c
+> int count=0,i,j;
+> for(i=1;i*i<=n;i++)
+>     for(j=1;j<=i;j++)
+>         count++;
+> ```
+>
+> - A. O(log₂n)
+> - B. O(n)
+> - C. O(nlog₂n)
+> - D. O(n²)
 
 第 17 题错选为 C。显然，执行时间为 $1+2+4+8+\cdots+2^t$，其中 $t \le \log_2 n$。前者由等比数列求和公式可得 $2^{t+1}-1$，将 $t \le \log_2 n$ 代入，显然是 $n$ 的规模。
 
@@ -1850,13 +4294,34 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![2.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADzWrFHILmAwtvb4Z406DeocHKL_0UAAK8FGsbxNooVtCx9jGM2KTWAQADAgADeAADPQQ)
 
+> 线性表是具有 n 个（ ）的有限序列。
+>
+> - A. 数据表
+> - B. 字符
+> - C. 数据元素
+> - D. 数据项
+
 本题错选为 D。数据元素的意思是一个 struct，而数据项是数据元素里的数据。
 
 ![2.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADzmrFHKjJtuVvHrYazeHPM_PmJHhAAAK_FGsbxNooVlxL5Ae6KMpNAQADAgADeAADPQQ)
 
+> 链式存储设计时，结点内的存储单元地址（ ）。
+>
+> - A. 一定连续
+> - B. 一定不连续
+> - C. 不一定连续
+> - D. 部分连续，部分不连续
+
 本题错选为 C。这里注意是结点内的单元。
 
 ![2.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADz2rFHL3ENueBMP4UsONhoOubdl5uAALAFGsbxNooVmsw80_Jg-xnAQADAgADeAADPQQ)
+
+> 给定有 n 个元素的一维数组，建立一个有序单链表的最低时间复杂度是（ ）。
+>
+> - A. O(1)
+> - B. O(n)
+> - C. O(n²)
+> - D. O(nlog₂n)
 
 本题错选为 B。注意这里是有序。
 
@@ -1864,13 +4329,47 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![2.3.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD0GrFHXGPQkmXUi67BxRVIDRXvCBCAALCFGsbxNooViUvHDhZZ9ubAQADAgADeAADPQQ)
 
+> 对于一个带头结点的循环单链表 L，判断该表为空表的条件是（ ）。
+>
+> - A. 头结点的指针域为空
+> - B. L 的值为 NULL
+> - C. 头结点的指针域与 L 的值相等
+> - D. 头结点的指针域与 L 的地址相等
+
 本题错选为 D。L 本身就是指针。
 
 ![2.3.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD0WrFHaL1XAfBQaymsjaMxNkHh0mCAALDFGsbxNooVmntTF-HV-kOAQADAgADeAADPQQ)
 
+> 有两个长度都为 n 的双链表，若以 h₁ 为头指针的双链表是非循环的，以 h₂ 为头指针的双链表是循环的，则下列叙述中正确的是（ ）。
+>
+> - A. 对于双链表 h₁，删除首结点的时间复杂度是 O(n)
+> - B. 对于双链表 h₂，删除首结点的时间复杂度是 O(n)
+> - C. 对于双链表 h₁，删除尾结点的时间复杂度是 O(1)
+> - D. 对于双链表 h₂，删除尾结点的时间复杂度是 O(1)
+
 本题错选为 C。属于低级错误，没仔细看。
 
 ![2.3.33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD0mrFHe8aPrzXkXMgtKZ7oBmjPp6QAALFFGsbxNooVpTg6zIAAd0F3QEAAwIAA3gAAz0E)
+
+> 【2016 统考真题】已知表头元素为 c 的单链表在内存中的存储状态如下表所示。
+>
+> - [图示] 表格三列：地址 / 元素 / 链接地址；各行：1000H / a / 1010H；1004H / b / 100CH；1008H / c / 1000H；100CH / d / NULL；1010H / e / 1004H；1014H / 空 / 空
+>
+> 现将 f 存放于 1014H 处并插入单链表，若 f 在逻辑上位于 a 和 e 之间，则 a、e、f 的“链接地址”依次是（ ）。
+>
+> - A. 1010H、1014H、1004H
+> - B. 1010H、1004H、1014H
+> - C. 1014H、1010H、1004H
+> - D. 1014H、1004H、1010H
+>
+> 【2021 统考真题】已知头指针 h 指向一个带头结点的非空循环单链表，结点结构为 data|next，其中 next 是指向直接后继结点的指针，p 是尾指针，q 是临时指针。现要删除该链表的第一个元素，正确的语句序列是（ ）。
+>
+> - [图示] 结点结构小图：data | next 两个域
+>
+> - A. h->next=h->next->next;q=h->next;free(q);
+> - B. q=h->next;h->next=h->next->next;free(q);
+> - C. q=h->next;h->next=q->next;if(p!=q) p=h;free(q);
+> - D. q=h->next;h->next=q->next;if(p==q) p=h;free(q);
 
 第 33 题错选为 C。注意这道题是 a，e，f，最终的选项不是 a，f，e。
 
@@ -1880,13 +4379,42 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![3.1.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD02rFHhCbrX94o28Wysxwdwu-oM_YAALHFGsbxNooVhrrS6NHCHtEAQADAgADeAADPQQ)
 
+> 4 个元素依次入栈的次序为 abcd，则以 cd 开头的出栈序列的个数为（ ）。
+>
+> - A. 1
+> - B. 2
+> - C. 3
+> - D. 4
+
 本题错选为 B。本题的意思是说，出栈的时候，必须 c 是第一个，d 是第二个。所以一开始必须 a 压进去，然后 b 压进去，c 压进去的时候必须立刻出去，然后 d 压进去的时候也必须立刻出去，然后出 b 和 a。这道题的意思不是 c 或 d 是最开始的，而是必须出栈顺序是 cd。
 
 ![3.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD1GrFHi8Mfv6RKhOKDxEsusukmc8XAALIFGsbxNooVtUzf5iT0gHSAQADAgADbQADPQQ)
 
+> 队列的“先进先出”特性是指（ ）。
+>
+> - I. 最后插入队列中的元素总是最后被删除 / II. 当同时进行插入、删除操作时，总是插入操作优先 / III. 每当有删除操作时，总要先做一次插入操作 / IV. 每次从队列中删除的总是最早插入的元素
+> - A. I
+> - B. I 和 IV
+> - C. II 和 III
+> - D. IV
+
 本题错选为 D。漏看了选项。
 
 ![3.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD1WrFHkXXkbMKIg2hKbQjfBlZDuvxAALKFGsbxNooVge7RIYYHLxtAQADAgADeAADPQQ)
+
+> 用链式存储方式的队列进行删除操作时需要（ ）。
+>
+> - A. 仅修改头指针
+> - B. 仅修改尾指针
+> - C. 头尾指针都要修改
+> - D. 头尾指针可能都要修改
+>
+> 在一个链式队列中，假设队首指针为 front，队尾指针为 rear，x 所指向的元素需要入队，则需要执行的操作为（ ）。
+>
+> - A. front=x, front=front->next
+> - B. x->next=front->next, front=x
+> - C. rear->next=x, rear=x
+> - D. rear->next=x, x->next=NULL, rear=x
 
 第 15 题错选为 A。全删的话，需要全部指向 null。其实多考虑几种情况，如果用的是循环双链表。
 
@@ -1894,15 +4422,44 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![3.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD1mrFHmZuoyMejQE9JfgmOFXJnG6-AALLFGsbxNooVnDvouvgQLUbAQADAgADeAADPQQ)
 
+> 设有如下递归函数，则计算 F(8) 需要调用该递归函数的次数为（ ）。
+>
+> ```text
+> int F(int n){
+>     if(n<=3) return 1;
+>     else return F(n-2)+F(n-4)+1;
+> }
+> ```
+>
+> - A. 7
+> - B. 8
+> - C. 9
+> - D. 10
+
 本题错选为 B。对于这类题有几个非常需要注意的地方，那就是调用最后不需要调用，这道题的思想反而在计组的 19 年大题理解了，以前还以为单纯是粗心大意。
 
 对于这类题只需要记住，如果 f(1)=1 而不是调用，则不需要算。绘制出调用树即可（只需要包含 f 的结点）
 
 ![3.3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD12rFHpbbciptkWXPmg-09cNu3ugIAALMFGsbxNooVpuZe2b5zBFLAQADAgADeAADPQQ)
 
+> 下列说法中，正确的是（ ）。
+>
+> - A. 消除递归不一定需要使用栈
+> - B. 对同一输入序列进行两组不同的合法入栈和出栈组合操作，所得的输出序列也一定相同
+> - C. 通常使用队列来处理函数或过程调用
+> - D. 队列和栈都是运算受限的线性表，只允许在表的两端进行运算
+
 本题错选为 D。显然栈只允许在一端进行操作。对于 A，例如可以用动态规划。
 
 ![3.4.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD2GrFHrFjy9CCo5mZN9YQcLJ2zr9HAALPFGsbxNooVgb-Sw4AAdoXdgEAAwIAA3gAAz0E)
+
+> 下列关于矩阵的说法中，正确的是（ ）。
+>
+> - I. 在 n（n>3）阶三对角矩阵中，每行都有 3 个非零元素 / II. 稀疏矩阵的特点是矩阵中的元素较少
+> - A. 仅 I
+> - B. 仅 II
+> - C. I 和 II
+> - D. 无正确项
 
 本题错选为 B。对于 1，显然第一行和最后一行不是；对于 2，需要考虑 0 这个元素。
 
@@ -1910,7 +4467,21 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![4.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD2WrFHzZkHRpq37h2-El4TzP_fSuQAALQFGsbxNooVtPG6akP4PfwAQADAgADeAADPQQ)
 
+> KMP 算法使用 nextval 数组进行模式匹配，模式串为 S='ababaa'，当主串中的某个字符与 S 中的第 6 个字符失配时，S 向右滑动的距离是（ ）。
+>
+> - A. 1
+> - B. 2
+> - C. 3
+> - D. 4
+
 ![4.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD2mrFH09Brg1P_ymqLlIe0B15hjLrAALSFGsbxNooVnr94f6sKhp_AQADAgADeAADPQQ)
+
+> 【2024 统考真题】KMP 算法使用修正后的 next 数组进行模式匹配，模式串为 S='aabaab'，当主串的某个字符与 S 的某个字符失配时，S 向右滑动的最长距离是（ ）。
+>
+> - A. 5
+> - B. 4
+> - C. 3
+> - D. 2
 
 这两题放一起讲，属于同类错误。首先先分别计算出两道题的 nextval，next 数组，然后尤其注意这道题是“滑动”距离，移动到的下标。
 
@@ -1920,21 +4491,57 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![5.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD22rFH3oiQV2S2KbrEehwDlo4ge1RAALTFGsbxNooVtTvsRUs-mDsAQADAgADeAADPQQ)
 
+> 设有 n（n≥1）个结点的二叉树采用三叉链表表示，其中每个结点包含三个指针，分别指向其左孩子、右孩子及双亲（若不存在，则置为空），则下列说法中正确的是（ ）。
+>
+> - I. 树中空指针的数量为 n+2 / II. 所有度为 2 的结点均被三个指针指向 / III. 每个叶结点均被一个指针所指向
+> - A. I
+> - B. I、II
+> - C. I、III
+> - D. II、III
+
 本题错选为 B。对于 1，显然正确；对于 2，显然根节点并非；对于 3，对于只有一个根节点的树并非。
 
 ![5.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD3WrFIP0sxdii8yWWVD9_YyzGOj6gAALXFGsbxNooVhIil4SIUwxmAQADAgADeAADPQQ)
+
+> 设 n, m 为一棵二叉树上的两个结点，在中序遍历时，n 在 m 前的条件是（ ）。
+>
+> - A. n 在 m 右方
+> - B. n 是 m 祖先
+> - C. n 在 m 左方
+> - D. n 是 m 子孙
 
 本题错选为 D。这道题得考虑多种情况，而不是只考虑一种。
 
 ![5.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD32rFIREPu3pWS2jBOhGYFHHbFKdWAALYFGsbxNooVh1FrRJ62LFnAQADAgADeAADPQQ)
 
+> 对二叉树的结点从 1 开始进行连续编号，要求每个结点的编号大于其左右孩子的编号，同一结点的左右孩子中，其左孩子的编号小于其右孩子的编号，可采用（ ）次序的遍历实现编号。
+>
+> - A. 先序遍历
+> - B. 中序遍历
+> - C. 后序遍历
+> - D. 层次遍历
+
 本题错选为 D。为想当然的错误。这道题一下子比较反直觉，不过想一下就知道应该是 C 了。
 
 ![5.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD4GrFISsiT2zZeZbVtJYUzyjP19s2AALZFGsbxNooVpdGAAGjVpSHvQEAAwIAA3gAAz0E)
 
+> 一棵完全二叉树的后序遍历序列为 CDBFGEA，则其先序遍历序列是（ ）。
+>
+> - A. CBDAFEG
+> - B. ABECDFG
+> - C. ABCDEFG
+> - D. 无法确定
+
 本题错选为 A。首先后序遍历的最后一个 A 是根，所以选项 A 可以直接排除。然后再绘制出完全二叉树的位置，一个个填上去就行了。
 
 ![5.3.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD4WrFIXYSjPNpDPCxong0-fWvwav6AALaFGsbxNooVtOmnZZvlocTAQADAgADeAADPQQ)
+
+> 某二叉树 T 采用二叉链表存储结构，T 的中序遍历序列为一个升序序列，要求采用某种方法对 T 进行某种操作之后得到一棵新的二叉树 T'，要求 T' 的中序遍历序列为一个降序序列，则下列关于该算法的叙述中，正确的是（ ）。
+>
+> - A. 采用中序遍历的方法最合适
+> - B. 采用后序遍历的方法最合适
+> - C. T' 中的根结点一定不是原 T 中的根结点
+> - D. T' 中的叶结点不一定是原 T 中的叶结点
 
 本题错选为 D。T 的中序遍历是一个升序序列，也就是原本的顺序是左根右，现在需要的顺序是右根左，所以采用递归交换左右子树，也就是先递归交换最左子树，递归交换右子树，最后再向上传递。对于 C 和 D 显然错误。
 
@@ -1942,13 +4549,34 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![5.3.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD4mrFIb0oGdAcYnc-SzK4s0QipVPvAALbFGsbxNooVqlEJl__dpIeAQADAgADbQADPQQ)
 
+> 判断线索二叉树中 *p 结点有右孩子结点的条件是（ ）。
+>
+> - A. p!=NULL
+> - B. p->rchild!=NULL
+> - C. p->rtag==0
+> - D. p->rtag==1
+
 本体错选为 B。线索二叉树的指针可能是指向下一个点，也可能是指向结点。对于 tag 而言，如果 tag==0，那么意味着该结点有孩子，如果 tag==1，那么意味着这个指针指的是下一个点。
 
 ![5.3.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD42rFIdbugiZLQkwKBw5jXoCuspGDAALcFGsbxNooVuGEUOVLUwZ3AQADAgADeAADPQQ)
 
+> 二叉树在线索化后，仍不能有效求解的问题是（ ）。
+>
+> - A. 先序线索二叉树中求先序后继
+> - B. 中序线索二叉树中求中序后继
+> - C. 中序线索二叉树中求中序前驱
+> - D. 后序线索二叉树中求后序后继
+
 本题错选为 A。首先排除 BC。对于 A，无法解决先序前驱问题，对于 D，无法解决后续后继问题。
 
 ![5.5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD5GrFJVGiDGofjF0V6hJx5EalHsmIAAIFFWsbxNooVlAXsCRo6VlsAQADAgADeAADPQQ)
+
+> 若度为 m 的哈夫曼树中，叶结点数为 n，则非叶结点的个数为（ ）。
+>
+> - A. n-1
+> - B. ⌊n/m⌋-1
+> - C. ⌈(n-1)/(m-1)⌉
+> - D. ⌈n/(m-1)⌉-1
 
 本题错选为 A。首先辨析概念，什么是度为 m 的哈夫曼树。首先辨析一下什么是度，对于普通的二叉树来说，每个非叶结点最大的度数为 2，对于 m 叉树，每个非叶节点最大的度数为 m。这里这道题指的是 m 叉树。
 
@@ -1956,9 +4584,23 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![5.5.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD5WrFKJEFyjNy1v7ztdVXlOX-JS6MAAIIFWsbxNooVqqbmqUw2bW4AQADAgADeAADPQQ)
 
+> 【2014 统考真题】5 个字符有如下 4 种编码方案，不是前缀编码的是（ ）。
+>
+> - A. 01,0000,0001,001,1
+> - B. 011,000,001,010,1
+> - C. 000,001,010,011,100
+> - D. 0,100,110,1110,1100
+
 本题错选为 C，属于低级错误。显然对于 D，110，1100 重复。
 
 ![5.5.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD5mrFKKlrj5lq1qF7s2QfQZD6AajiAAIJFWsbxNooVq3ZwWaZPNd7AQADAgADeAADPQQ)
+
+> 【2022 统考真题】对任意给定的含 n（n>2）个字符的有限集 S，用二叉树表示 S 的哈夫曼编码集和定长编码集，分别得到二叉树 T₁ 和 T₂，下列叙述中，正确的是（ ）。
+>
+> - A. T₁ 与 T₂ 的结点数相同
+> - B. T₁ 的高度大于 T₂ 的高度
+> - C. 出现频次不同的字符在 T₁ 中处于不同的层
+> - D. 出现频次不同的字符在 T₂ 中处于相同的层
 
 本题错选为 C。对于 T1 而言，显然可能成立可能不成立。对于这类题应该多考虑边界情况。
 
@@ -1966,21 +4608,69 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![6.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD52rFKTJRr4DDQzJXfcP3o906s-emAAIKFWsbxNooVpmWNOLn1wHKAQADAgADeAADPQQ)
 
+> 以下关于图的叙述中，正确的是（ ）。
+>
+> - A. 图与树的区别在于图的边数大于或等于顶点数
+> - B. 假设有图 G={V,{E}}，顶点集 V'⊆V，E'⊆E，则 V'和{E'}构成 G 的子图
+> - C. 无向图的连通分量是指无向图中的极大连通子图
+> - D. 图的遍历就是从图中某一顶点出发访问遍图中其余顶点
+
 本题错选为 D。对于 D，图可能是不连通的，所以不成立
 
 ![6.1.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD6GrFKVjL86tz-xqzZlVTqZ1riORNAAIMFWsbxNooVmNG1neYk4GiAQADAgADeAADPQQ)
+
+> 一个有 28 条边的非连通无向图至少有（ ）个顶点。
+>
+> - A. 7
+> - B. 8
+> - C. 9
+> - D. 10
 
 对于这道题，显然让一个结点孤立无援，剩下的所有节点成为完全图。所以 n(n-1)/2=28，可得 n=8，所以 n+1=9。注意这里不是 n(n+1)。
 
 ![6.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD6WrFKW6lkFQvkwvLS1rMJIfycJnNAAINFWsbxNooVj4k_geqRVO2AQADAgADeAADPQQ)
 
+> 设有无向图 G=(V,E) 和 G'=(V',E')，若 G'是 G 的生成树，则下列不正确的是（ ）。
+>
+> - I. G'为 G 的连通分量 / II. G'为 G 的无环子图 / III. G'为 G 的极小连通子图且 V'=V
+> - A. I、II
+> - B. 只有 III
+> - C. II、III
+> - D. 只有 I
+
 本题错选为 C。这道题一定要注意，连通分量指的是最大连通子图。
 
 ![6.2.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD6mrFNKJzGcr3VeQyvzSmeLqNVwx9AAIXFWsbxNooVs7T4qClWewWAQADAgADeAADPQQ)
 
+> 假设有 n 个顶点、e 条边的有向图用邻接表表示，则删除与某个顶点 v 相关的所有边的时间复杂度为（ ）。
+>
+> - A. O(n)
+> - B. O(e)
+> - C. O(n+e)
+> - D. O(ne)
+>
+> 设 n 个顶点、e 条边的有向图用邻接表表示，则求某顶点 v 的入度的时间复杂度为（ ）。
+>
+> - A. O(n)
+> - B. O(e)
+> - C. O(n+e)
+> - D. O(ne)
+
 第 14 题错选为 D。第 15 题错选为 D。对于这题，被求入度和删除结点被要遍历所有边影响了。辨析一下，这道题注意是 1 个，如果要求所有结点的入度的话，是 O(n^2+ne)（得注意 n 和 e 谁更大），当然如果用数组记录的话会是 n+e。D 属于经典迷惑项，需要注意。
 
 ![6.3.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD62rFWEFEv7GWOiLmB2_bMOa2m-OfAALoD2sbxNowVkBJOzCZ86uUAQADAgADeAADPQQ)
+
+> 下列关于图的说法中，错误的是（ ）。
+>
+> I. 对一个无向图进行深度优先遍历时，得到的深度优先遍历序列是唯一的
+> II. 若有向图不存在回路，即使不用访问标志位，同一顶点也不会被访问两次
+> III. 采用深度优先遍历或拓扑排序算法可以判断一个有向图中是否有环（回路）
+> IV. 对任何非强连通图必须 2 次或以上调用广度优先遍历算法才可访问所有的顶点
+>
+> - A. I、II、III
+> - B. II、III
+> - C. I、II
+> - D. I、II、IV
 
 本题错选为 C。对于 1 和 2 显然是错误的。对于 4，非强连通图显然对于有向图 A->B->C，其只需要一次遍历即可。
 
@@ -1998,13 +4688,38 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![6.4.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD7GrFWHDK0zVKP6HXt3AlFu7jVHCFAALpD2sbxNowVhSZ70CjoL_GAQADAgADeAADPQQ)
 
+> 下列关于图的最短路径的相关叙述中，正确的是（ ）。
+>
+> I. Dijkstra 算法求单源最短路径不允许边的权为负
+> II. Dijkstra 算法求每对顶点间的最短路径的时间复杂度为 O(n[?])
+> III. Floyd 算法求每对顶点间的最短路径允许边的权为负，但不允许含有负权的回路
+>
+> - A. I、II 和 III
+> - B. 仅 I
+> - C. I 和 III
+> - D. II 和 III
+
 本题错选为 A。对于 1 和 3 显然正确，对于 2，这道题的意思是求所有的每一对顶点，所以是 On3。
 
 ![6.4.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD7WrFWjLAWc51IY60KJji1QdqKUoYAALqD2sbxNowVtPJotDIhkUxAQADAgADeAADPQQ)
 
+> 下面关于求关键路径的说法中，不正确的是（ ）。
+>
+> - A. 求关键路径是以拓扑排序为基础的
+> - B. 一个事件的最早发生时间与以该事件为始的弧的活动的最早开始时间相同
+> - C. 一个事件的最迟发生时间是以该事件为尾的弧的活动的最迟开始时间与该活动的持续时间的差
+> - D. 任何一个活动的持续时间的改变可能会影响关键路径的改变
+
 本题错选为 D。对于 D，可能。对于 C，是从所有出发的活动里最迟开始时间的最小值，这里不需要再减去什么东西。
 
 ![6.4.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD7mrFWm8Di4bJEv-5M0Rv4INSy6AtAALrD2sbxNowVkzWeH7DUhi9AQADAgADeAADPQQ)
+
+> 在求 AOE 网的关键路径时，若该有向图用邻接矩阵表示且第 i 列值全为 ∞，则（ ）。
+>
+> - A. 若关键路径存在，第 i 个顶点一定是起点
+> - B. 若关键路径存在，第 i 个顶点一定是终点
+> - C. 关键路径不存在
+> - D. 该有向图对应的无向图存在多个连通分量
 
 本题错选为 C。入度为 0，所以一定是起点。
 
@@ -2012,9 +4727,31 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![6.4.44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD72rFWqaFjHPGjwxvjY3Q1_locI05AALsD2sbxNowVvQ1-8hw4rrtAQADAgADeAADPQQ)
 
+> 【2021 统考真题】使用 Dijkstra 算法求下图中从顶点 1 到其余各顶点的最短路径，将当前找到的从顶点 1 到顶点 2，3，4，5 的最短路径长度保存在数组 dist 中，求出第二条最短路径后，dist 中的内容更新为（ ）。
+>
+> - [图示] 带权有向图，顶点 1、2、3、4、5:1→5 权值 6，1→2 权值 26，1→3 权值 3，5→2 权值 15，5→4 权值 8，5→3 权值 6，4→2 权值 1，4→3 权值 6，3→2 权值 22
+>
+> - A. 26, 3, 14, 6
+> - B. 25, 3, 14, 6
+> - C. 21, 3, 14, 6
+> - D. 15, 3, 14, 6
+
 ![6.4.44 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD8GrFWtJSozUV4azG4PZUpJx4ae3OAALtD2sbxNowVqufDOQ0K7RoAQADAgADeAADPQQ)
 
+> [原图非题目：主人记录本题错选 B 的手写订正笔记截图，含 dist 数组表格与段落标记]
+
 ![6.4.46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD8WrFWuujI8OXY4Og3IhUdSWjqC64AALuD2sbxNowVujonMuMmjjiAQADAgADeAADPQQ)
+
+> 【2023 统考真题】已知无向连通图 G 中各边的权值均为 1，在下列算法中，一定能够求出图 G 中从某顶点到其余各顶点最短路径的是（ ）。
+>
+> I. Prim 算法
+> II. Kruskal 算法
+> III. 图的广度优先搜索算法
+>
+> - A. 仅 I
+> - B. 仅 III
+> - C. 仅 I、II
+> - D. I、II、III
 
 显然 1 和 2 是错的，3 是对的，所以是 B。
 
@@ -2022,13 +4759,41 @@ IP 多播主要需要注意，将 IP 地址的后 23 位映射到多播 mac 地�
 
 ![7.2.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD8mrFWyKhKUQ0shciHWFovM0U3oLIAALvD2sbxNowVgNkLbGbbpn5AQADAgADeAADPQQ)
 
+> 由 n 个数据元素组成的两个表：一个递增有序，一个无序。采用顺序查找算法，对有序表从头开始查找，发现当前元素已不小于待查元素时，停止查找，确定查找不成功。已知查找任意一个元素的概率是相同的，则在两种表中成功查找（ ）。
+>
+> - A. 平均时间后者小
+> - B. 平均时间两者相同
+> - C. 平均时间前者小
+> - D. 无法确定
+
 本题错选为 C。对于这道题，想当然没有计算 ASL，想当然导致的错误。
 
 ![7.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD82rFXEt1zqtaqRjaLGxZ36rzZMAlAALwD2sbxNowVr4NEpOmkeWFAQADAgADeAADPQQ)
 
+> 为提高查找效率，对有 65025 个元素的有序顺序表建立索引顺序结构，在最好情况下查找到表中已有元素最多需要执行（ ）次关键字比较。
+>
+> - A. 10
+> - B. 14
+> - C. 16
+> - D. 21
+
 对于这类题，首先先开根号。65025 开根是 255。现在最开始 255 进行折半查找，得出 8 次比较，而因为是最好的情况，所以内部也是有序的，所以也是 8。
 
 ![7.3.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD9GrFXGgr5hVWDQLVfxfoE6j8iGQ7AALxD2sbxNowVtxQFY6NL_xKAQADAgADeAADPQQ)
+
+> 含有 20 个结点的平衡二叉树的最大深度为（ ）。
+>
+> - A. 4
+> - B. 5
+> - C. 6
+> - D. 7
+>
+> 具有 5 层结点的平衡二叉树至少有（ ）个结点。
+>
+> - A. 10
+> - B. 12
+> - C. 15
+> - D. 17
 
 对于第 11 题和第 12 题，采用递推求解方式，也就是 Cn=Cn-1+Cn-2+1，代入计算即可。
 
@@ -2050,6 +4815,25 @@ $N_6 = N_5 + N_4 + 1 = 12 + 7 + 1 = 20$
 
 ![7.3.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD9WrFXTNNXDzaIHEjMts-xnrGd3pZAALyD2sbxNowVqoWfBU4S_eQAQADAgADeAADPQQ)
 
+> 将关键字 1, 2, 3, ⋯, 1024 依次插入到初始为空的平衡二叉树中，假设只有一个根结点的二叉树的高度为 0，则插入结束后的平衡二叉树的高度为（ ）。
+>
+> - A. 8
+> - B. 9
+> - C. 10
+> - D. 11
+>
+> 下列关于红黑树和 AVL 树的说法中，不正确的是（ ）。
+>
+> I. 一棵含有 n 个结点的红黑树的高度至多为 2log₂(n+1)
+> II. 若一个结点是红色的，则它的父结点和孩子结点都是黑色的
+> III. 红黑树的查询效率一般要优于含有相同结点数的 AVL 树
+> IV. 若 AVL 树的某结点的左右孩子的平衡因子都是零，则该结点的平衡因子也是零
+>
+> - A. I、III
+> - B. III
+> - C. II、IV
+> - D. III、IV
+
 对于第 15 题，注意这道题只有一个根节点的二叉树高度是 0。
 
 对于第 16 题，显然 AB 正确。
@@ -2066,15 +4850,52 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 ![7.4.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD9mrFXirTSRr0nw7DPIGnVDgMz8DaAALzD2sbxNowVl0O3SQ0Y36oAQADAgADeAADPQQ)
 
+> 右图所示是一棵（ ）。
+>
+> - [图示] 根结点框内「12 25」，其下三个孩子结点框内分别为「05 10」「15 19 22」「26 28」，根与三个孩子之间有连线
+>
+> - A. 4 阶 B 树
+> - B. 3 阶 B 树
+> - C. 4 阶 B+ 树
+> - D. 无法确定
+
 本题错选为 A。如果是 4，那么 4/2 取高，也就是至少有 2 个分叉，至少 1 个结点，至多 3 个结点；如果是 3，那么 3/2 取高，也就是至少 2 个分叉，至少 1 个结点，但是至多 2 个结点；如果是 5，那么 5/2 取高，也就是至少 3 个分叉，至少 2 个结点，至多 4 个结点。所以可能是 4，5。
 
 ![7.4.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD92rFXki-P__kAzYqGN6fqLjeQWZKAAL0D2sbxNowVsQeGcY3taN-AQADAgADeAADPQQ)
+
+> 在一棵 m 阶 B 树中做插入操作前，若一个结点中的关键字个数等于（ ），则插入操作后必须分裂成两个结点；在一棵 m 阶 B 树中做删除操作前，若一个结点中的关键字个数等于（ ），则删除操作后可能需要同它的左兄弟或右兄弟结点合并成一个结点。
+>
+> - A. m，⌈m/2⌉-2
+> - B. m-1，⌈m/2⌉-1
+> - C. m+1，⌈m/2⌉
+> - D. m/2，⌈m/2⌉+1
+>
+> 具有 n 个关键字的 m 阶 B 树，应有（ ）个叶结点。
+>
+> - A. n+1
+> - B. n-1
+> - C. mn
+> - D. nm/2
 
 第 4 题错选为 A。属于低级错误。显然应该是 B。
 
 第 5 题错选为 D。m 阶 B 树，假设 3 阶 B 树有 1 个关键字（需要注意 B 树的叶节点指的是 null），那么显然是 2 个页结点。
 
 ![7.4.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD-GrFXrQI9qqynihRWli4iJwhfnyVAAL1D2sbxNowViXoXR2Pxoj2AQADAgADeAADPQQ)
+
+> 含有 n 个非叶结点的 m 阶 B 树中至少包含（ ）个关键字。
+>
+> - A. n(m+1)
+> - B. n
+> - C. n(⌈m/2⌉-1)
+> - D. (n-1)(⌈m/2⌉-1)+1
+>
+> 已知一棵 5 阶 B 树中共有 53 个关键字，则树的最大高度为（ ），最小高度为（ ）。
+>
+> - A. 2
+> - B. 3
+> - C. 4
+> - D. 5
 
 第 7 题错选为 A。一样注意 B 树的叶节点指的是 null，所以假设 m 为很大的数，n 为 1，那么关键字至少为 1，显然可以排除法做出为 D。
 
@@ -2086,13 +4907,48 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 ![7.4.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD_GrFXyqNbmRQY6xK5Q9nKfKKkQbUAAL2D2sbxNowVgbYCPoqTXEcAQADAgADeAADPQQ)
 
+> 在 7 阶 B 树中，按从上往下、从左往右的顺序搜索第 2016 个关键字，若根结点已读入内存，则最多需启动（ ）次 I/O。
+>
+> - A. 4
+> - B. 5
+> - C. 6
+> - D. 7
+
 本题错选为 C。根节点已经读入内存，所以不需要花费额外时间去读根。那么假设查找失败为 2017，也就是 $2017 \ge 2 \times 7^{h-1}$，可得 $h=5$
 
 ![7.4.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD_WrFX1q0Xk9ADXM1N9wXg1oL6WmSAAL3D2sbxNowVmz-Fqrf2Q6MAQADAgADbQADPQQ)
 
+> 下列关于 B 树和 B+ 树的叙述中，错误的是（ ）。
+>
+> - A. B 树和 B+ 树都能有效地支持顺序查找
+> - B. B 树和 B+ 树都能有效地支持随机查找
+> - C. B 树和 B+ 树都是平衡的多叉树
+> - D. B 树和 B+ 树都可以用于文件索引结构
+
 本题错选为 D，属于低级错误。显然对于 B 树只支持…
 
 ![7.4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD_mrFX30JKeQpU1ECyE_O5nTwfXrUAAL4D2sbxNowVlbdWqQrYSNcAQADAgADeAADPQQ)
+
+> 【2022 统考真题】在下图所示的 5 阶 B 树 T 中，删除关键字 260 之后需要进行必要的调整，得到新的 B 树 T₁。下列选项中，不可能是 T₁ 根结点中关键字序列的是（ ）。
+>
+> - [图示] 5 阶 B 树：根结点「60 90 260 350」，其下五个孩子结点分别为「30 50」「70 80 85」「100 110」「280 300」「400 500」，根与五个孩子之间有连线
+>
+> - A. 60, 90, 280
+> - B. 60, 90, 350
+> - C. 60, 85, 110, 350
+> - D. 60, 90, 110, 350
+>
+> 【2023 统考真题】下列关于非空 B 树的叙述中，正确的是（ ）。
+>
+> I. 插入操作可能增加树的高度
+> II. 删除操作一定会导致叶结点的变化
+> III. 查找某关键字总是要查找到叶结点
+> IV. 插入的新关键字最终位于叶结点中
+>
+> - A. 仅 I
+> - B. 仅 I、II
+> - C. 仅 III、IV
+> - D. 仅 I、II、IV
 
 第 23 题错选为 C。删除 260 后，可能用其直接前驱来补，所以也就是把 110 补上去。但是把 110 补上去又导致 100 那里缺了一个关键字，所以访问左右兄弟，发现左兄弟可以拿一个结点，所以变成 90，100；
 删除 260 后，从其直接后继补，也就是 280，300 缺了人，左右兄弟都补不了，所以需要合并，合并的时候，显然 A 是对的，B 也是对的。假设是 D，那么……
@@ -2103,13 +4959,48 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 ![7.5.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQAD_2rFX8Qi1mt5r-cTpq1UfW9Oio9QAAL5D2sbxNowVj7ic1uqKHDaAQADAgADbQADPQQ)
 
+> 散列查找一般适用于（ ）的情况下的查找。
+>
+> - A. 查找表为链表
+> - B. 查找表为有序表
+> - C. 关键字集合比地址集合大得多
+> - D. 关键字集合与地址集合之间存在对应关系
+
 本题错选为 C。很小也可以用哈希。
 
 ![7.5.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQABasVf4veYzV67n9mfs8tlU0NouPYAAvsPaxvE2jBWW6s6y6Ns5v0BAAMCAAN4AAM9BA)
 
+> 在开放定址法中散列到同一个地址而引起的“堆积”问题是由（ ）引起的。
+>
+> - A. 同义词之间发生冲突
+> - B. 非同义词之间发生冲突
+> - C. 同义词之间或非同义词之间发生冲突
+> - D. 散列表“溢出”
+
 本题错选为 A，属于低级错误。显然对于开放定址法，非同义词之间也有可能发生冲突。
 
 ![7.5.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQFqxWAE8yGUFUdlAlY7q1G9b537DgAC_A9rG8TaMFYO-3RUBKe-WgEAAwIAA3gAAz0E)
+
+> 对包含 n 个元素的散列表进行查找，平均查找长度（ ）。
+>
+> - A. 为 O(log₂n)
+> - B. 为 O(1)
+> - C. 不直接依赖于 n
+> - D. 直接依赖于表长 m
+>
+> 采用开放定址法解决冲突的散列查找中，发生聚集的原因主要是（ ）。
+>
+> - A. 数据元素过多
+> - B. 负载因子过大
+> - C. 散列函数选择不当
+> - D. 解决冲突的方法选择不当
+>
+> 当用线性探测再散列法解决冲突时，计算出的一系列“下一个空位”的要求是（ ）。
+>
+> - A. 必须大于或等于原散列地址
+> - B. 必须小于或等于原散列地址
+> - C. 可以大于或小于但不等于原散列地址
+> - D. 对地址在何处没有限制
 
 第 8 题错选为 B。为低级错误。如果选择一个很烂的散列函数。
 
@@ -2119,15 +5010,36 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 ![7.5.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQJqxWB7CJAiyXpK1nq4nSEJ0nI9hwAC_Q9rG8TaMFY9vfM5UxrejgEAAwIAA3gAAz0E)
 
+> 一组记录的关键字为{19, 14, 23, 1, 68, 20, 84, 27, 55, 11, 10, 79}，用链地址法构造散列表，散列函数为 H(key) = key mod 13，散列地址为 1 的链中有（ ）个记录。
+>
+> - A. 1
+> - B. 2
+> - C. 3
+> - D. 4
+
 本题错选为 C，属于低级错误。拉链法构造，mod13 即可，这道题忽略了 1。
 
 ![7.5.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQNqxWCaxHbQHWyqRP1AC-sFnUHzjgAC_g9rG8TaMFZMzzO5NDRepgEAAwIAA3gAAz0E)
+
+> 【2014 统考真题】用哈希（散列）方法处理冲突（碰撞）时可能出现堆积（聚集）现象，下列选项中，会受堆积现象直接影响的是（ ）。
+>
+> - A. 存储效率
+> - B. 散列函数
+> - C. 装填（装载）因子
+> - D. 平均查找长度
 
 本题错选为 A。显然 AB 是肯定正确的，对于 C，不管有没有发生都 +1。
 
 ### DS 王道选择题 2 刷第 8 章
 
 ![8.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQRqxWEb0Feq4qO5v0in_GnJGxC6AwAC_w9rG8TaMFY8gh8Y7hMhJwEAAwIAA3gAAz0E)
+
+> 对序列{E, A, S, Y, Q, U, E, S, T, I, O, N}按照字典顺序排序，采用增量 d = 6, 3, 1 的希尔排序算法，则前两趟排序后，关键字的总比较次数为（ ）。
+>
+> - A. 15
+> - B. 17
+> - C. 16
+> - D. 18
 
 原本的：EASYQUESTION
 
@@ -2139,11 +5051,25 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 ![8.3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQVqxWE8LxAh0u3-OmjlWy89E_0cDQADEGsbxNowVnima8HhEVTvAQADAgADeAADPQQ)
 
+> 快速排序算法在（ ）情况下最不利于发挥其长处。
+>
+> - A. 要排序的数据量太大
+> - B. 要排序的数据中含有多个相同值
+> - C. 要排序的数据个数为奇数
+> - D. 要排序的数据已基本有序
+
 本题错选为 D。扣个字眼，最。对于 D，可以 shuffle 一下，但是对于 B 却无法解决。
 
 > 安：这道题就该选 D，这个属于是课内 408 的问题。
 
 ![8.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQZqxWFXzg5w38HX-ZPt9YQoj1v4PgACARBrG8TaMFaqwpBcYoxhZAEAAwIAA3gAAz0E)
+
+> 对 8 个元素的序列进行快速排序，在最好情况下的关键字比较次数是（ ）。
+>
+> - A. 7
+> - B. 8
+> - C. 12
+> - D. 13
 
 本题错选为 A。注意，即便是最好的情况，也就是 12345678，以 4 开始划分，那么第 1 轮比较 7 次（这仅是第 1 轮的），第 2 轮 123 比较 2 次，5678 比较 3 次；第 3 轮 78 比较 1 次，总计 7+2+3+1=13。
 
@@ -2151,17 +5077,52 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 ![8.3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQdqxWF4ehqi6rXYuCk4JAZrhSvZ9wACAhBrG8TaMFbIMMX_Di6-2QEAAwIAA3gAAz0E)
 
+> 【2019 统考真题】排序过程中，对尚未确定最终位置的所有元素进行一遍处理称为一趟。下列序列中，不可能是快速排序第二趟结果的是（ ）。
+>
+> - A. 5, 2, 16, 12, 28, 60, 32, 72
+> - B. 2, 16, 5, 28, 12, 60, 32, 72
+> - C. 2, 12, 16, 5, 28, 32, 72, 60
+> - D. 5, 2, 12, 28, 16, 32, 72, 60
+
 本题错选为 B。快排的第二趟结果，意思是能不能找到 2 个轴。对于这类题一定要想到先找端点最值。对于 A，显然可以以 28 和 72 划分；对于 B，显然可以以 2 和 72 划分；对于 C，显然可以以 2 和 28 划分。
 
 ![8.3.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQhqxWGh9Ln2PtqoPQ0_qjA6O84XvQACAxBrG8TaMFaevc1fSWiOAQEAAwIAA3gAAz0E)
+
+> 【2024 统考真题】使用快速排序算法对含 n（n>3）个元素的数组 M 进行排序，若第一趟排序将 M 中除枢轴外的 n-1 个元素划分为均不为空的 P 和 Q 两块，则下列叙述中，正确的是（ ）。
+>
+> - A. P 与 Q 块间有序
+> - B. P 与 Q 均块内有序
+> - C. P 和 Q 的元素个数大致相等
+> - D. P 中和 Q 中均不存在相等的元素
 
 本题错选为 B，属于低级错误，低级到我都不想分析了。
 
 ![8.4.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQlqxWIC6w0blmI-Mnl_255OLZ5zQgACBBBrG8TaMFbEazhgb5dffwEAAwIAA3gAAz0E)
 
+> 已知大根堆{62, 34, 53, 12, 8, 46, 22}，删除堆顶元素后需要重新调整堆，则在此过程中关键字的比较次数为（ ）。
+>
+> - A. 2
+> - B. 3
+> - C. 4
+> - D. 5
+
 绘制树之后，22 换到最前面，先和 34，53 比较，22 和 53 换，然后再和 46 比较。总共 3 次。
 
 ![8.5.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQpqxWIZX6-_YddjxlrQ-8pNmrzm7AACBRBrG8TaMFajmD_rkqM1ogEAAwIAA3gAAz0E)
+
+> 【2011 统考真题】已知序列{25, 13, 10, 12, 9}是大根堆，在序列尾部插入新元素 18，再将其调整为大根堆，调整过程中元素之间进行的比较次数是（ ）。
+>
+> - A. 1
+> - B. 2
+> - C. 4
+> - D. 5
+>
+> 【2015 统考真题】已知小根堆为 8, 15, 10, 21, 34, 16, 12，删除关键字 8 之后需重建堆，在此过程中，关键字之间的比较次数是（ ）。
+>
+> - A. 1
+> - B. 2
+> - C. 3
+> - D. 4
 
 第 16 题错选为 D。我都不知道为啥我会选 D。插到最后一个比较两次啊。
 
@@ -2171,15 +5132,72 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 ![8.5.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQtqxWI0GYxSic_FtGgQ5iuVulaDlwACBhBrG8TaMFZ7GKKBwNH5EwEAAwIAA3gAAz0E)
 
+> 用归并排序算法对序列{1, 2, 6, 4, 5, 3, 8, 7}进行排序，共需要进行（ ）次比较。
+>
+> - A. 12
+> - B. 13
+> - C. 14
+> - D. 15
+
 本题错选为 A，首先是分治过程，先切成 1，2，6，4，5，3，8，7。第一次比较是 1 和 2，6 和 4，5 和 3，8 和 7，共计 4 次比较，排序为 12，46，35，78；第二次比较是 1 和 4，2 和 4，3 和 7，5 和 7，所以总共 4 次比较，排序为 1246，3578；第三次比较是 1 和 3，2 和 3，4 和 3，4 和 5，6 和 5，6 和 7，这部分总计 6 次。所以总共为 4+4+6=14。
 
 ![8.5.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQxqxWJPt-aGMfBRVhU1P0tyzYkkxgACBxBrG8TaMFbQ0SvalTC63gEAAwIAA3gAAz0E)
+
+> 设线性表中每个元素有两个数据项 k₁ 和 k₂，现对线性表按以下规则进行排序：先看数据项 k₁，k₁ 值小的元素在前，大的元素在后；在 k₁ 值相同的情况下，再看 k₂，k₂ 值小的元素在前，大的元素在后。满足这种要求的排序算法是（ ）。
+>
+> - A. 先按 k₁ 进行直接插入排序，再按 k₂ 进行简单选择排序
+> - B. 先按 k₂ 进行直接插入排序，再按 k₁ 进行简单选择排序
+> - C. 先按 k₁ 进行简单选择排序，再按 k₂ 进行直接插入排序
+> - D. 先按 k₂ 进行简单选择排序，再按 k₁ 进行直接插入排序
 
 本题错选为 C。判断稳定性，简单选择排序不稳定，直接插入排序稳定。由题设可知，先按照低位的排（不要被结构体排序的思维影响了），然后再排高位，所以排除 AC。由于第一次排已经确定了低位的顺序，所以高位不能采用非稳定的排序。综上述选 D。
 
 其实考虑 LSD，这道题意思是就是 k1k2，所以先排 k2 然后排 k1，由于简单选择排序不稳定，直接插入排序稳定，因为 k1 值不能改变 k2 的顺序，所以需要稳定。
 
 ![8.6.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQ1qxWMvVsR8iq18io4gnCgNv12kTQACCBBrG8TaMFbbgYB9sCr6lAEAAwIAA3gAAz0E)
+
+> 排序趟数与序列的初始状态有关的排序算法是（ ）。
+>
+> - A. 直接插入排序
+> - B. 2 路归并排序
+> - C. 快速排序
+> - D. 堆排序
+>
+> 对 n 个元素进行排序，其排序趟数肯定为 n-1 趟的排序算法是（ ）。
+>
+> - A. 直接插入排序和快速排序
+> - B. 冒泡排序和快速排序
+> - C. 简单选择排序和直接插入排序
+> - D. 简单选择排序和冒泡排序
+>
+> 若序列的初始状态为{1, 2, 3, 4, 5, 10, 6, 7, 8, 9}，要想使得排序过程中的元素比较次数最少，则应该采用（ ）方法。
+>
+> - A. 插入排序
+> - B. 选择排序
+> - C. 希尔排序
+> - D. 冒泡排序
+>
+> 对于元素个数相同的不同初始序列，总比较次数大致相同的排序算法是（ ）。
+>
+> - A. 折半插入排序和简单选择排序
+> - B. 基数排序和归并排序
+> - C. 冒泡排序和快速排序
+> - D. 堆排序
+>
+> 一般情况下，以下查找效率最低的数据结构是（ ）。
+>
+> - A. 有序顺序表
+> - B. 二叉排序树
+> - C. 堆
+> - D. 平衡二叉树
+>
+> 一台计算机具有多核 CPU，可以同时执行相互独立的任务，归并排序的各个归并段可以并行执行，在下列排序算法中，不可以并行执行的有（ ）。
+>
+> - Ⅰ. 基数排序 / Ⅱ. 快速排序 / Ⅲ. 冒泡排序 / Ⅳ. 堆排序
+> - A. Ⅰ、Ⅲ
+> - B. Ⅰ、Ⅱ
+> - C. Ⅰ、Ⅲ、Ⅳ
+> - D. Ⅱ、Ⅳ
 
 第 7 题错选为 A。对于直接插入排序，排序的趟数显然一直是 n-1，不要和其他排序（例如冒泡排序混淆了）
 
@@ -2195,19 +5213,56 @@ AVL 树是绝对高度平衡的（左右子树高度差绝对值小于 1），�
 
 ![8.6.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQ5qxWNVoRc114DU03XN5vQRTzf_UAACCRBrG8TaMFYy2AKd0-ebSwEAAwIAA3gAAz0E)
 
+> 【2017 统考真题】下列排序算法中，若将顺序存储更换为链式存储，则算法的时间效率会降低的是（ ）。
+>
+> - Ⅰ. 插入排序 / Ⅱ. 选择排序 / Ⅲ. 冒泡排序 / Ⅳ. 希尔排序 / Ⅴ. 堆排序
+> - A. 仅Ⅰ、Ⅱ
+> - B. 仅Ⅱ、Ⅲ
+> - C. 仅Ⅲ、Ⅳ
+> - D. 仅Ⅳ、Ⅴ
+
 本体错选为 C。对于 1，2，3 都可以，而对于 4 和 5 利用了随机访问。
 
 ![8.6.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAQ9qxWN8E5-HdxTYkoyv3WXAm7u9SQACChBrG8TaMFa0QnGexi3Q0gEAAwIAA3gAAz0E)
 
+> 【2020 统考真题】对大部分元素已有序的数组排序时，直接插入排序比简单选择排序效率更高，其原因是（ ）。
+>
+> - Ⅰ. 直接插入排序过程中元素之间的比较次数更少 / Ⅱ. 直接插入排序过程中所需的辅助空间更少 / Ⅲ. 直接插入排序过程中元素的移动次数更少
+> - A. 仅Ⅰ
+> - B. 仅Ⅲ
+> - C. 仅Ⅰ、Ⅱ
+> - D. Ⅰ、Ⅱ和Ⅲ
+
 本题错选为 D。属于很低级的错误，其实也不想解释。
 
 ![8.7.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARBqxWOT1TeOXM3GPc2wqgIXYpBUYgACCxBrG8TaMFauCVqfnkeW9AEAAwIAA3gAAz0E)
+
+> 设在磁盘上存放有 375000 个记录，进行 5 路平衡归并排序，内存工作区能容纳 600 个记录，为把所有记录排好序，需要进行（ ）趟归并排序。
+>
+> - A. 3
+> - B. 4
+> - C. 5
+> - D. 6
+>
+> 在下列关于外部排序过程输入/输出缓冲区作用的叙述中，不正确的是（ ）。
+>
+> - A. 暂存输入/输出记录
+> - B. 内部归并的工作区
+> - C. 产生初始归并段的工作区
+> - D. 传送用户界面的消息
 
 第 4 题错选为 C。首先计算初始归并段，由于能容纳 600 个记录，所以 375000/600=625，625 个归并段一直除以 5 就好了，得到 4 趟归并。
 
 第 5 题错选为 B。显然 D 是错的（）我也不知道为什么要选其他选项。
 
 ![8.7.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACARFqxWOzuO68siEWQlRT1vviDxu9NgACDBBrG8TaMFbDl3qISnfPggEAAwIAA3gAAz0E)
+
+> 最佳归并树在外部排序中的作用是（ ）。
+>
+> - A. 完成 m 路归并排序
+> - B. 设计 m 路归并排序的优化方案
+> - C. 产生初始归并段
+> - D. 与锦标赛树的作用类似
 
 本题错选为 A。最佳归并树是外部排序得第二步。应该是 B。
 
@@ -2221,25 +5276,75 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![1.2.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeBqx7QCBBKwwZEIlmkC9wywkYlEdgAC3hJrGz_BQFbS20Cs750TsgEAAwIAA3gAAz0E)
 
+> 完整的计算机系统应包括（ ）。
+>
+> - A. 运算器、存储器、控制器
+> - B. 外部设备和主机
+> - C. 主机和应用程序
+> - D. 配套的硬件设备和软件系统
+>
+> 冯·诺依曼机的基本工作方式是（ ）。
+>
+> - A. 控制流驱动方式
+> - B. 多指令多数据流方式
+> - C. 微程序控制方式
+> - D. 数据流驱动方式
+
 第 1 题错选为 A。运算器 + 控制器 + 存储器是 CPU，而不是完整的计算机系统；主机 + 外设只有硬件，没有软件；主机 + 应用没有外设。
 
 第 2 题错选为 D。冯诺伊曼机也就是现代计算机的前身，根据汇编来看的话，事实上每一条指令都是数据（只是解释的方式不一样），所以采用的是数据流驱动。显然，前面是错误的解释。对于 A，现代的计算机是根据 PC 来进行的；对于 B，指的是多核 CPU；对于 C，指的是 CPU 内部控制器；对于 D，其打破了按照顺序驱动的方式，而是某条指令的数据需求好了就立刻开始运行。
 
 ![1.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeJqx7RBmX0iaHvV6Pvgyf7izrqzOQAC3xJrGz_BQFaof20k8Rzw7QEAAwIAA3gAAz0E)
 
+> 计算机系统采用层次化结构，从最上层的应用程序到最底层的硬件，其类型层次自上而下依次为（ ）。
+>
+> - A. 高级语言虚拟机→操作系统虚拟机→汇编语言虚拟机→机器语言机器
+> - B. 高级语言虚拟机→汇编语言虚拟机→机器语言机器→操作系统虚拟机
+> - C. 高级语言虚拟机→汇编语言虚拟机→操作系统虚拟机→机器语言机器
+> - D. 操作系统虚拟机→高级语言虚拟机→汇编语言虚拟机→机器语言机器
+
 本题错选为 A。本题可以从系统结构那门课的角度去看，并且操作系统事实上可以由汇编/高级语言编写，显然，前面是错误的解释。事实上应该从谁为谁服务的角度去考虑。机器语言只认识二进制指令，OS 对硬件（也就是裸机）进行扩展，提供了系统调用，操作系统是最接近硬件的软件；有了 OS 提供的基础服务后，程序员可以直接用汇编语言来写程序，不仅可以直接用硬件的机器指令，还可以调用 OS 提供的系统调用。
 
 ![1.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeNqx7S-XWkPRKhnyBgSja1l4Xm8VAAC4RJrGz_BQFbfQvj_K6xiQQEAAwIAA3gAAz0E)
 
+> 【2016 统考真题】将高级语言源程序转换为机器级目标代码文件的程序是（ ）。
+>
+> - A. 汇编程序
+> - B. 链接程序
+> - C. 编译程序
+> - D. 解释程序
+
 本题错选为 D。梳理一下，这几个概念：链接指的是打包 exe；汇编指的是将汇编语言程序转换为机器级语言程序；编译指的是将高级语言转换为汇编或者机器级别语言；解释指的是将高级语言程序一条条翻译为机器级代码，不会生成代码文件。
 
 ![1.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeRqx7Tn_hDZUPBMsoHscDR9wO2N-QAC4hJrGz_BQFaidsFNYLHRmAEAAwIAA3gAAz0E)
+
+> 在计算机 M1 和计算机 M2 上分别运行功能完全相同的高级语言程序，程序在 M1 和 M2 上的平均 CPI 相等，则对于该类程序而言（ ）。
+>
+> - A. M1 和 M2 执行速度相等
+> - B. M1 和 M2 中主频高的计算机执行速度快
+> - C. M1 和 M2 中主频低的计算机执行速度快
+> - D. 无法确定哪台机器的执行速度快
 
 本体错选为 B。平均 CPI 相等意味着每条指令的平均时钟周期数相等，功能完全相同意味着程序需要执行的指令数相同（存疑？），并且假设数量为 N。假设有两个主频，G1 和 G2，且 G1>G2，则时钟周期分别为 1/G1，1/G2，执行时间分别为 N/G1< N/G2，即 M1 中主频搞得计算机执行速度快。
 
 事实上，功能完全相同并不意味着指令的数量相同，所以无法确定哪一台机器更快。
 
 ![1.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeVqx7UCsgT5thcNghNJX-JOLv6ujgAC4xJrGz_BQFZFTkDvUl1yowEAAwIAA3gAAz0E)
+
+> 下列可用于评价计算机系统性能的指标是（ ）。
+>
+> - Ⅰ. MIPS / Ⅱ. IPC / Ⅲ. CPI / Ⅳ. 字长
+> - A. Ⅰ、Ⅲ
+> - B. Ⅰ、Ⅲ和Ⅳ
+> - C. Ⅰ、Ⅱ和Ⅲ
+> - D. 全部
+>
+> 计算机的机器字长与下列（ ）指标最密切相关。
+>
+> - A. 运算速度
+> - B. 存取速度
+> - C. 内存容量
+> - D. 运算精度
 
 第 7 题错选为。辨析一下各个概念，CPI 指的是平均一条指令执行需要多少个时钟周期，IPC 指的是一个时钟周期内可以执行多少条指令，IPS 指的是每秒指令执行条数；MIPS 指的是每秒执行百万条指令条数；字长可以分为 64 字，32 字等。
 
@@ -2249,43 +5354,132 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![2.1.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAeZqx7Wg_KjAtFhVVD4S_6pLg4faHgAC5hJrGz_BQFazZ61K0zv5oQEAAwIAA3gAAz0E)
 
+> 若定点整数为 64 位，含 1 位符号位，则采用补码表示的绝对值最大的负数为（ ）。
+>
+> - A. -2^64
+> - B. -(2^64-1)
+> - C. -2^63
+> - D. -(2^63-1)
+>
+> 下列关于补码和移码关系的叙述中，（ ）是不正确的。
+>
+> - A. 相同位数的补码和移码表示具有相同的数据表示范围
+> - B. 0 的补码和移码表示相同
+> - C. 同一个数的补码和移码表示，其数值部分相同，而符号位相反
+> - D. 一般用移码表示浮点数的阶码，而补码表示定点整数
+
 第 9 题错选为 A，属于低级错误。对于这种题尤其需要注意补码的范围，千万不要想当然。补码可以表示 -2^63~2^63-1，对于无符号数则是 0~2^64-1。
 
 第 10 题错选为 C。本题需要注意，在没有 IEEE 的语境之下，移码的默认偏移量就是 2^(n-1)，而不是 IEEE 浮点数的标准。
 
 ![2.1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAedqx7XVcI-Q68d3hXS2vb7-MjgqTwAC5xJrGz_BQFaikJMMJSsCHQEAAwIAA3gAAz0E)
 
+> 设 x 为真值，x*为其绝对值，满足[-x*]补=[-x]补，当且仅当（ ）。
+>
+> - A. x 任意
+> - B. x 为正数
+> - C. x 为负数
+> - D. 以上说法都不对
+
 错选为 B。注意 0。
 
 ![2.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAepqx7aRKECATAPy950wVRLcybw_zAAC6RJrGz_BQFYYGz89MddfbwEAAwIAA3gAAz0E)
+
+> 若寄存器内容为 11111111，若它等于 +127，则为（ ）。
+>
+> - A. 反码
+> - B. 补码
+> - C. 原码
+> - D. 移码
 
 错选为 C。属于低级错误。
 
 ![2.1.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAetqx7bF5zJfU38CX9h2kUBxI2-luwAC6hJrGz_BQFaBo37_v9d5KQEAAwIAA3gAAz0E)
 
+> 在计算机中，通常用来表示主存地址的是（ ）。
+>
+> - A. 移码
+> - B. 补码
+> - C. 原码
+> - D. 无符号数
+
 错选为 B。本题和后续的概念混淆，对于主存地址（显然没有负数），但是对于偏移寻址的偏移量而言，是有正负的概念之分的。
 
 ![2.1.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAexqx7bsZTZt6YkguVQIwW7gKaejpQAC7BJrGz_BQFZf9aIUNRzvwAEAAwIAA3gAAz0E)
+
+> 【2012 统考真题】假定编译器规定 int 型和 short 型长度分别为 32 位和 16 位，执行下列 C 语言语句：
+> unsigned short x = 65530;
+> unsigned int y = x;
+> 得到 y 的机器数为（ ）。
+>
+> - A. 0000 7FFAH
+> - B. 0000 FFFAH
+> - C. FFFF 7FFAH
+> - D. FFFF FFFAH
 
 本题错选为 A，属于低级错误，65536。unsigned short 首先先扩展为 unsigned int，也就是从 FFFA 扩展为 0000FFFA。
 
 ![2.1.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAe1qx7b_4nFueqjvcv30_LGgaEGIWAAC7RJrGz_BQFa41dxmlQrAsAEAAwIAA3gAAz0E)
 
+> 【2025 统考真题】在 32 位计算机上执行下列 C 语言代码段后，ui 的值是（ ）。
+> short si = -32767;
+> unsigned int ui = si;
+>
+> - A. 2^15-1
+> - B. 2^15+1
+> - C. 2^32-2^15-1
+> - D. 2^32-2^15+1
+
 错选为 B。对于这类题总结一下，首先先基于原来的性质去扩展位数，也就是从 short 先扩展为 int，从 -32767，也就是 1-2^15，即 8000 0000 0000 0001，扩展为 FFFF FFFF FFFF FFFF 8000 0000 0000 0001，然后再根据 unsigned int 去解释，也就是 2^32-1-(2^15-1-2)=2^32-2^15+1。
 
 ![2.2.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAe5qx7cZmuDLt0R0MH8YgZpGX2E07AAC7hJrGz_BQFbZkS3CKXk8mAEAAwIAA3gAAz0E)
+
+> 下列四个补码整数存放于 8 位寄存器中，算术左移不会发生溢出的是（ ）。
+>
+> - A. 80H
+> - B. 90H
+> - C. B0H
+> - D. C0H
 
 本题错选为 C，为低级错误。算数左移不会发生溢出=符号位不变，向左移动一位，只有 D 的第一位是保持不变的。
 
 ![2.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAe9qx7cvnXZoOshrt8KpF55v7atzmQAC7xJrGz_BQFYSplHsmYq7-AEAAwIAA3gAAz0E)
 
+> 机器运算发生溢出的根本原因是（ ）。
+>
+> - A. 寄存器的位数有限
+> - B. 运算中将符号位的进位丢弃
+> - C. 运算中将符号位的借位丢弃
+> - D. 数据运算中发生错误
+
 本题错选为 C。根本。
 
 ![2.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfFqx7eg1K7Qz-b-Y_UQtQX3QjcmtwAC8BJrGz_BQFax2nuCchZ0ogEAAwIAA3gAAz0E)
 
+> 某计算机中有一个 8 位加法器，有符号整数 x 和 y 的机器数用补码表示，[x]补 = F5H，[y]补 = 7EH，若在该加法器中计算 x-y，则加法器的低位进位输入信息和运算后的溢出标志 OF 分别是（ ）。
+>
+> - A. 1、1
+> - B. 1、0
+> - C. 0、1
+> - D. 0、0
+
 本题错选为 B，逻辑混乱了，属于低级错误。[-y]补=10000010，[x]补+[-y]补=11110101+10000010=1 01110111，溢出，所以 OF 是 1。而由于是减法，所以补 1，所以这道题应该选 A。
 
 ![2.2.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfJqx7f6rOlDIEBCQs3w2M-O943-RwAC9BJrGz_BQFYCv8IIDw_DfQEAAwIAA3gAAz0E)
+
+> 【2018 统考真题】减法指令 "sub R1, R2, R3" 的功能为 "(R1)-(R2)→R3"，该指令执行后将生成进位/借位标志 CF 和溢出标志 OF，若 (R1) = FFFF FFFFH，(R2) = FFFF FFF0H，则该减法指令执行后，CF 与 OF 分别为（ ）。
+>
+> - A. CF = 0, OF = 0
+> - B. CF = 1, OF = 0
+> - C. CF = 0, OF = 1
+> - D. CF = 1, OF = 1
+>
+> 【2023 统考真题】已知 x, y 为 int 型，当 x = 100, y = 200 时，执行 "x 减 y" 指令得到的溢出标志 OF 和借位标志 CF 分别为 0, 1，那么当 x = 10, y = -20 时，执行该指令得到的 OF 和 CF 分别为（ ）。
+>
+> - A. OF = 0, CF = 0
+> - B. OF = 0, CF = 1
+> - C. OF = 1, CF = 0
+> - D. OF = 1, CF = 1
 
 第 31 题错选为 B。按照朴素的想法，显然按照有符号数解释，FFFF FFFFH=-1，FFFF FFF0H=-16，相减后肯定不会溢出，所以 OF=0，而按照无符号数解释，FFFF FFFFH>FFFF FFF0H 显然成立，够减，所以显然 CF=0。
 
@@ -2295,13 +5489,65 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![2.3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfRqx7g4KLSMYrldnloQTCnj7OqKZgAC9hJrGz_BQFZLpqSaU1t6lgEAAwIAA3gAAz0E)
 
+> 设 x 是采用 IEEE 754 标准表示的 32 位单精度浮点数，下列说法中正确的是（ ）。
+>
+> I. 当|x| < 1.0×2⁻¹²⁶ 时，x 将被置为机器零
+> II. 当|x| > 1.0×2¹²⁷ 时，将发生溢出
+> III. x 所能表示的最小非规格化正数与最大非规格化负数的绝对值相等
+> IV. x 可表示的最大正数与最小负数的绝对值相等
+>
+> - A. I, II, III, IV
+> - B. I, II
+> - C. II, III, IV
+> - D. III, IV
+
 本题错选为 C，忽略了非规格化小数。
 
 ![2.3.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfVqx7hOwoDZYq5_I84KES26Z4WD_AAC9xJrGz_BQFaxSopylAaxVQEAAwIAA3gAAz0E)
 
+> 在按字节编址的 32 位计算机中，按边界对齐方式为以下结构型变量 x 分配存储空间：
+>
+> ```text
+> struct cont info{
+>     char id;
+>     unsigned post;
+>     char phone;
+> } x;
+> ```
+>
+> 若 x 的首地址为 0x8049820，则成员变量 phone 的起始地址为（ ）。
+>
+> - A. 0x8049828
+> - B. 0x8049826
+> - C. 0x8049825
+> - D. 0x8049822
+
 本题错选为 C。尤其需要注意“边界对齐”。观察这个 struct，char 占 1，unsigned(int) 占 4，char 占 1，所以每一个结构体都是 12，所以 phone 的起始地址是 +8，也就是 A。
 
 ![2.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfZqx7hhBoFXMm3OQAzfx6GO0JL4RQAC-BJrGz_BQFYc3-3Na_wuIAEAAwIAA3gAAz0E)
+
+> 有以下 C 语言代码段：
+>
+> ```text
+> int m=13;
+> float a=12.6,x;
+> x=m/2+a/2;
+> printf("%f\n",x);
+> ```
+>
+> 执行上述代码后，输出的 x 值为（ ）。
+>
+> - A. 12.000000
+> - B. 12.300000
+> - C. 12.800000
+> - D. 12
+>
+> 【2009 统考真题】浮点加、减运算过程一般包括对阶、尾数运算、规格化、舍入和判断溢出等步骤。设浮点数的阶码和尾数均采用补码表示，且位数分别为 5 和 7（均含 2 位符号位）。若有两个数 X = 2⁷×29/32 和 Y = 2⁵×5/8，则用浮点加法计算 X + Y 的最终结果是（ ）。
+>
+> - A. 00111 1100010
+> - B. 00111 0100010
+> - C. 01000 0010001
+> - D. 发生溢出
 
 第 25 题错选为 C。属于低级错误，先计算再解释（也就是和别人合并的时候才强制类型转换，而不是一开始就强制类型转换。
 
@@ -2309,17 +5555,75 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![2.3.30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfdqx7iHSynKFqS64wEY3qdogEKLmgAC-RJrGz_BQFaMreOzZ5zlOQEAAwIAA3gAAz0E)
 
+> 【2012 统考真题】某计算机存储器按字节编址，采用小端方式存放数据，假定编译器规定 int 型和 short 型长度分别为 32 位和 16 位，并且数据按边界对齐存储。某 C 语言程序段如下：
+>
+> ```text
+> struct{
+>     int     a;
+>     char    b;
+>     short   c;
+> }record;
+> record.a = 273;
+> ```
+>
+> 若 record 变量的首地址为 0xC008，地址 0xC008 中的内容及 record.c 的地址分别为（ ）。
+>
+> - A. 0x00, 0xC00D
+> - B. 0x00, 0xC00E
+> - C. 0x11, 0xC00D
+> - D. 0x11, 0xC00E
+
 错选为 A。一样是边界对齐的问题。273=00 00 00 01 00 01 00 01，按照小端存储，第一个是 01，而对于 record.c，因为边界对齐，所以 short 必须得是偶数开头，所以得再 +1。
 
 ![2.3.37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfhqx7ie6TF-XhTsGnk4D2t4pIF4fQAC-hJrGz_BQFbgb0Ue64saFQEAAwIAA3gAAz0E)
+
+> 【2020 统考真题】在按字节编址、采用小端方式的 32 位计算机中，按边界对齐方式为以下 C 语言结构型变量 a 分配存储空间：
+>
+> ```text
+> struct record{
+>     short  x1;
+>     int    x2;
+> } a;
+> ```
+>
+> 若 a 的首地址为 2020 FE00H，a 的成员变量 x2 的机器数为 1234 0000H，则其中 34H 所在存储单元的地址是（ ）。
+>
+> - A. 2020 FE03H
+> - B. 2020 FE04H
+> - C. 2020 FE05H
+> - D. 2020 FE06H
 
 本题错选为 B。short 为 2，int 为 4，边界对齐，所以 x2 的首地址为 2020FE04H，由于采用的是小端法存储，所以机器数 00 先存，也就是 00，00，34，12，也就是 D。
 
 ![2.3.42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAflqx7i5NHiCt65xEZEISOeHyCkbJQAC-xJrGz_BQFZ0h2RodezjQQEAAwIAA3gAAz0E)
 
+> 【2023 统考真题】已知 float 型变量用 IEEE 754 单精度浮点数格式表示。若 float 型变量 x 的机器数为 8020 0000H，则 x 的值是（ ）。
+>
+> - A. -2⁻¹²⁸
+> - B. -1.01×2⁻¹²⁷
+> - C. -1.01×2⁻¹²⁶
+> - D. 非数（NaN）
+
 本题错选为 B。1000 0000 0010 0000 0000 0000 0000 0000，即符号位：1，阶码：0000 0000，尾数：0100…，所以本题为非规格化的小数，-2^126(0.01)，也就是移两位，所以也就是 A。
 
 ![2.3.45](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfpqx7joavsNSE97ekxhtX_ZjrssSQAC_BJrGz_BQFY33U83JjBsVwEAAwIAA3gAAz0E)
+
+> 【2025 统考真题】某 32 位计算机按字节编址，采用小端方式存放数据，编译器按边界对齐方式为下列 C 语言结构型数组变量 employee 分配存储空间。
+>
+> ```text
+> struct record {
+>     int   id;
+>     char  name[10];
+>     int   salary;
+> }employee[200];
+> ```
+>
+> 若 employee 的首地址为 0000 A0B0H，employee[1].id 的机器数为 1234 5678H，则该机器数中的 56H 所在存储单元的地址是（ ）。
+>
+> - A. 0000 A0C3H
+> - B. 0000 A0C4H
+> - C. 0000 A0C5H
+> - D. 0000 A0C6H
 
 本题错选为 A，一样也是边界对齐问题，struct 结构体：4+10(+2)+4，所以 0000A0B0+20=0000A0C4，由于采用的是小端法，所以 78，56，也就是 C5。
 
@@ -2327,13 +5631,34 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![3.1.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAftqx7kSaWdDq_I80iK0_aZto76l6gAC_RJrGz_BQFa08emSl8hxTwEAAwIAA20AAz0E)
 
+> 存储器的存取周期是指（ ）。
+>
+> - A. 存储器的读出时间
+> - B. 存储器的写入时间
+> - C. 存储器进行连续读/写操作所允许的最短时间间隔
+> - D. 存储器进行一次读/写操作所需的平均时间
+
 本题错选为 D。本题主要是辨析存储时间和存储周期的概念，存储时间仅包含具体的 IO，而存储周期需要包含 IO 的恢复。
 
 ![3.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAfxqx7koyEEv6D__Bj9okpgGP5rG2wAC_hJrGz_BQFYue5dkAo5hXQEAAwIAA20AAz0E)
 
+> 下列说法正确的是（ ）。
+>
+> - A. EPROM 是可改写的，因此可以作为随机存储器
+> - B. EPROM 是可改写的，但不能作为随机存储器
+> - C. EPROM 是不可改写的，因此不能作为随机存储器
+> - D. EPROM 只能改写一次，因此不能作为随机存储器
+
 本题错选为 A。本题与 1 刷时错因类似，随机存储器指的是 RAM
 
 ![3.2.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAf1qx7lELimCeMrZT7zitwptDD2_QwAC_xJrGz_BQFaM5HhCzlfFiwEAAwIAA3gAAz0E)
+
+> 某机器采用四体低位交叉存储器，现分别执行下述操作：① 读取 6 个连续地址单元中存放的存储字，重复 80 次；② 读取 8 个连续地址单元中存放的存储字，重复 60 次。则①、②所花费的时间之比为（ ）。
+>
+> - A. 1:1
+> - B. 2:1
+> - C. 4:3
+> - D. 3:4
 
 本题错选为 A。读取 6 个连续地址的存储字，重复 80 次，也就是需要 120 个 4 时间单位，读取 8 个连续地址单元存放的存储字，重复 60 次，也就是需要 120 个 4 时间单位，这是错误的想法。
 
@@ -2345,13 +5670,34 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![3.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAf5qx7lbkaLyGK0d8jVJ6Ulzqs6m0gADE2sbP8FAVqJEXHnb7DBEAQADAgADeAADPQQ)
 
+> 下列关于单体多字存储器的说法中，不正确的是（ ）。
+>
+> - A. 单体多字存储器主要解决主存容量太小的问题
+> - B. 单体多字存储器中，每个存储单元存储多个字
+> - C. 指令与数据的连续存放有利于单体多字存储器提高主存的读/写速度
+> - D. 过多的转移指令会严重影响单体多字存储器的工作效率
+
 本题错选为 C。和 1 刷时错的地方类似。
 
 ![3.3.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAf9qx7l3438jqDnC_fzCxawQe-iXrQACARNrGz_BQFa3LxJ5YlVjqAEAAwIAA3gAAz0E)
 
+> 地址总线 A₀（高位）~ A₁₅（低位），用 4K×4 位的存储芯片组成 16KB 存储器，则产生片选信号的译码器的输入地址线应该是（ ）。
+>
+> - A. A₂A₃
+> - B. A₀A₁
+> - C. A₁₂A₁₅
+> - D. A₁₄A₁₅
+
 本题错选为 C。注意高位和低位。
 
 ![3.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgABase5yfoc6vVbBOh_yZWrjBFSCFcAAgMTaxs_wUBWpaIbLQq8YSYBAAMCAAN4AAM9BA)
+
+> 【2011 统考真题】某计算机存储器按字节编址，主存地址空间大小为 64MB，现用 4M×8 位的 RAM 芯片组成 32MB 的主存储器，则存储器地址寄存器 MAR 的位数至少是（ ）。
+>
+> - A. 22 位
+> - B. 23 位
+> - C. 25 位
+> - D. 26 位
 
 本题错选为 C。主存空间大小为 64MB，也就意味着至少需要 2^26，由于采用的是 4M×8 位的，也就是需要 4 块芯片来组成 32MB。由于你不知道这块主存放在哪，有可能放在后续的位置，所以还是需要 64MB。
 
@@ -2359,21 +5705,67 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![3.4.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgFqx7nrPgZK2dDTGaJO_aN8Hn-PVwACBBNrGz_BQFa1ssSDabBuwwEAAwIAA20AAz0E)
 
+> 下列有关磁盘存储器读/写操作的叙述中，错误的是（ ）。
+>
+> - A. 最小读/写单位可以是一个扇区
+> - B. 采用直接存储器存取 DMA 方式进行输入/输出
+> - C. 按批处理方式进行一个数据块的读/写
+> - D. 磁盘存储器可与 CPU 交换盘面上的存储信息
+
 本题错选为 B，本质是对 DMA 方式的不理解，磁盘采用的是 DMA 方式与主存交换数据，对于 D，显然错误。
 
 ![3.5.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgJqx7oJdI5cXa3fbKa26FBmZ7LJvgACBhNrGz_BQFYWiKw2Jiu50QEAAwIAA20AAz0E)
+
+> 下列关于 Cache 的描述中，比较合理的是（ ）。
+>
+> I. 指令 Cache 通常比数据 Cache 具有更好的空间局部性
+> II. 由于空间局部性，适当增加 Cache 块大小通常会提高命中率
+> III. 回写法的写主存操作次数少于直写法
+>
+> - A. III
+> - B. I 和 II
+> - C. II 和 III
+> - D. I 和 II 和 III
 
 本题错选为 A。对于 1，由于指令一般是顺序执行的，而数据只是数据，所以 1 正确；对于 2，“适当”，是正确的；对于 3，回写法是在修改的时候写 cache，而不是写主存，所以少于直写法。
 
 ![3.5.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgNqx7ppkEPAmFHH_XzJOiRw0ue8dgACCRNrGz_BQFZ_F79FV1qQ8AEAAwIAA3gAAz0E)
 
+> 某计算机的 Cache 有 16 行，块大小为 16B，其映射方式可配置为直接映射或 2 路组相联映射，主存按字节编址，主存单元从 0 开始编号。若依次访问下列主存单元，则不论采取上述哪种映射方式都可能引起 Cache 冲突的是（ ）。
+>
+> - A. 52 号和 102 号单元
+> - B. 48 号和 308 号单元
+> - C. 60 号和 160 号单元
+> - D. 46 号和 236 号单元
+
 本题错选为 D。解题方法 1 刷复盘时写了。
 
 ![3.5.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgRqx7qM4x0AAaGsqrO-7fcoI5nvefkAAgoTaxs_wUBWpJC1yF8mrcgBAAMCAAN4AAM9BA)
 
+> 下列关于 Cache 大小、主存块大小和 Cache 缺失率之间关系的叙述中，错误的是（ ）。
+>
+> - A. 主存块大小和 Cache 容量无直接关系
+> - B. Cache 容量越大，Cache 缺失率越低
+> - C. 主存块大小通常为几十到上百字节
+> - D. 主存块越大，Cache 缺失率越低
+
 本题错选为 B，具体原因 1 刷那里写了。
 
 ![3.5.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgVqx7qxoMqLvDLQAAHNhWERD-saIiwAAgsTaxs_wUBWdSpGv_q8lOoBAAMCAAN4AAM9BA)
+
+> 【2009 统考真题】某计算机的 Cache 共有 16 块，采用 2 路组相联映射方式（每组 2 块），每个主存块大小为 32B，按字节编址，主存 129 号单元所在主存块应装入的 Cache 组号是（ ）。
+>
+> - A. 0
+> - B. 2
+> - C. 4
+> - D. 6
+>
+> 【2012 统考真题】假设某计算机按字编址，Cache 有 4 行，Cache 和主存之间交换的块大小为 1 个字。若 Cache 的内容初始为空，采用 2 路组相联映射方式和 LRU 算法，则访问的主存地址依次为 0, 4, 8, 2, 0, 6, 8, 6, 4, 8 时，命中 Cache 的次数是（ ）。【提示，本题的映射方式与本书所讲的映射方式不同，具体见解析部分的"注意"】
+>
+> - A. 1
+> - B. 2
+> - C. 3
+> - D. 4
 
 第 29 题错选为 A。显然这道题是从 0 开始编址，129 号存储单元即 129/32=4，也就是存储在第 4 块主存块（按从 0 开始算）。采用 2 路组相联，所以需要 16/2=8，也就是 3 个 bit 存储 cache 行号。由于存储在 4 号主存块，所以 4%8=4，所以应该存放在第 4 组。
 
@@ -2385,19 +5777,56 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![3.5.30 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgZqx7riWHbXWImryznfQz__Nc1G8gACDBNrGz_BQFZ3pvJevHvSfwEAAwIAA3gAAz0E)
 
+> [原图非题目：主人关于组相联映射方式的订正/解析笔记截图，含 Cache 置换过程表与"注意"说明框]
+
 ![3.5.32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgdqx7r2rj3zDFZCXiZoYpgiJPRNQwACDRNrGz_BQFbDnikVghCMbgEAAwIAA3gAAz0E)
+
+> 【2016 统考真题】有如下 C 语言程序段：
+>
+> ```text
+> for(k=0; k<1000; k++)
+>     a[k] = a[k]+32;
+> ```
+>
+> 若数组 a 和变量 k 均为 int 型，int 型数据占 4B，数据 Cache 采用直接映射方式，数据区大小为 1KB、块大小为 16B，该程序段执行前 Cache 为空，则该程序段执行过程中访问数组 a 的 Cache 缺失率约为（ ）。
+>
+> - A. 1.25%
+> - B. 2.5%
+> - C. 12.5%
+> - D. 25%
 
 本题错选为 D。由于采用直接映射，每块可以存储 16B/4B=4 个 int 数据，所以每访问 4 个数据就有 1 次 cache 缺失，而需要注意的是，本题每次访问两次 a[k]，总共方位 2000 次，也就是每访问 8 个数据 1 次 cache 缺失，所以最终答案是 C。
 
 ![3.6.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAghqx7uicMf5A_dEKQGDWj9H3WPZHQACDhNrGz_BQFb0OKiTdqN_7QEAAwIAA3gAAz0E)
 
+> 虚拟存储管理系统的基础是程序访问的局部性原理，此理论的基本含义是（ ）。
+>
+> - A. 在程序的执行过程中，程序对主存的访问是不均匀的
+> - B. 空间局部性
+> - C. 时间局部性
+> - D. 代码的顺序执行
+
 错选为 C，与 1 刷时错误原因类似。
 
 ![3.6.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAglqx7wPZW1fi0tOrXToo6BmbJJP5QACERNrGz_BQFYjXGJPIjrd-AEAAwIAA3gAAz0E)
 
+> 【2020 统考真题】下列关于 TLB 和 Cache 的叙述中，错误的是（ ）。
+>
+> - A. 命中率都与程序局部性有关
+> - B. 缺失后都需要去访问主存
+> - C. 缺失处理都可以由硬件实现
+> - D. 都由 DRAM 存储器组成
+
 本题错选为 C。本题错选为 C，显然 D 是错的。TLB 和 cache 都采用 SRAM，其中 TLB 也可以采用相联存储器 CAM。SRAM 是静态随机存储器。TLB 本质上是内存的一块区域。
 
 ![3.6.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgpqx7wo0rOmCOTErZDsqJxjnIAXmQACEhNrGz_BQFaQy8xrOU7UNQEAAwIAA3gAAz0E)
+
+> 【2024 统考真题】某计算机按字节编址，采用页式虚拟存储管理方式，虚拟地址为 32 位，主存地址为 30 位，页大小为 1KB。若 TLB 共有 32 个表项，采用 4 路组相联映射方式，则 TLB 表项中标记字段的位数至少是（ ）。
+>
+> - A. 17
+> - B. 18
+> - C. 19
+> - D. 20
 
 本题错选为 C。TLB 的标记字段是虚拟地址。由于 TLB 页大小为 1 个页，所以需要 10bit 来存储块内地址，由于采用 4 路组相联，所以 32/4=8，需要 3bit 来存储 TLB 行号，所以 32-3-10=19。
 
@@ -2405,21 +5834,70 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![4.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgtqx7xYPX_rGLBKvr87_Ovq_MblfwACExNrGz_BQFYHGIUaFaRq3wEAAwIAA3gAAz0E)
 
+> 为了缩短指令中某个地址段的位数，有效的方法是采取（ ）。
+>
+> - A. 立即寻址
+> - B. 变址寻址
+> - C. 间接寻址
+> - D. 寄存器寻址
+
 本题错选为 B，与 1 刷时错误原因类似。
 
 ![4.2.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAgxqx7xtiRFe10PW6DZf4zPLoyCkiwACFBNrGz_BQFbnFVU1NwcjrQEAAwIAA20AAz0E)
+
+> 相对寻址方式中，指令所提供的相对地址实质上是一种（ ）。
+>
+> - A. 立即数
+> - B. 内存地址
+> - C. 以本条指令在内存中首地址为基准位置的偏移量
+> - D. 以下条指令在内存中首地址为基准位置的偏移量
 
 本题错选为 C，与 1 刷时错误原因类似，属于低级错误。
 
 ![4.2.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAg1qx7yHKSmA9-KopZCz_FUsPBS1MAACFRNrGz_BQFapiTySaZZYfgEAAwIAA3gAAz0E)
 
+> 寄存器 R1、R2 均为 16 位，指令 MOV R1, [R2]的功能是把内存数据传送至寄存器 R1，寻址方式为寄存器间接寻址。R2 的值为 1234H，内存单元 1234H 存放数据 56H，内存单元 1235H 存放数据 78H，采用小端方式存储，则执行指令后 R1 的值为（ ）。
+>
+> - A. 5678H
+> - B. 7856H
+> - C. 8765H
+> - D. 6587H
+
 本题错选为 A。R2 的值为 1234H，1234H 存放的数据为 56H，由于寄存器是 16 位，所以应该是移动 2B 到寄存器里，所以是将 1234H 和 1235H 的内容移动到 R1，由于采用小端法，所以在以人类的视角阅读时，和计算机是反过来的，所以低地址的在后面，高地址的在前面，也就是 7856H。
 
 ![4.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAg5qx7ydXCGa0-4yPDfKZMaMaVdMOAACFhNrGz_BQFZLTEiAcZeMLwEAAwIAA3gAAz0E)
 
+> 【2009 统考真题】某机器字长为 16 位，主存按字节编址，转移指令采用相对寻址，由 2 字节组成，第一字节为操作码字段，第二字节为相对位移量字段。假定取指令时，每取一字节，PC 自动加 1。若某转移指令所在主存地址为 2000H，相对位移量字段的内容为 06H，则该转移指令成功转移后的目标地址是（ ）。
+>
+> - A. 2006H
+> - B. 2007H
+> - C. 2008H
+> - D. 2009H
+
 本题错选为 B。机器字长为 16 位，采用相对寻址，2 字节组成，显然一条指令长度为 2B，所以每次 PC 值应该 +2，所以由于本来在 2000H，自动 +2，也就是 2002H，转移 06H，即 2008H。
 
 ![4.2.30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAg9qx7yy29PqJNDzNp9gL7IGsRtcKgACFxNrGz_BQFY8tHEWRvZwNwEAAwIAA3gAAz0E)
+
+> 【2018 统考真题】按字节编址的计算机中，某 double 型数组 A 的首地址为 2000H，使用变址寻址和循环结构访问数组 A，保存数组下标的变址寄存器的初值为 0，每次循环取一个数组元素，其偏移地址为变址值乘以 sizeof (double)，取完后变址寄存器的内容自动加 1。若某次循环所取元素的地址为 2100H，则进入该次循环时变址寄存器的内容是（ ）。
+>
+> - A. 25
+> - B. 32
+> - C. 64
+> - D. 100
+>
+> 【2019 统考真题】某计算机采用大端方式，按字节编址。某指令中操作数的机器数为 1234 FF00H，该操作数采用基址寻址方式，形式地址（用补码表示）为 FF12H，基址寄存器的内容为 F000 0000H，则该操作数的 LSB（最低有效字节）所在的地址是（ ）。
+>
+> - A. F000 FF12H
+> - B. F000 FF15H
+> - C. EFFF FF12H
+> - D. EFFF FF15H
+>
+> 【2020 统考真题】某计算机采用 16 位定长指令字格式，操作码位数和寻址方式位数固定，指令系统有 48 条指令，支持直接、间接、立即、相对 4 种寻址方式。在单地址指令中，直接寻址方式的可寻址范围是（ ）。
+>
+> - A. 0~255
+> - B. 0~1023
+> - C. -128~127
+> - D. -512~511
 
 第 30 题错选为。考虑 double 型数组占 64bit，即 8B。也就是说，2100H-2000H=100H 即 0001 0000 0000，100H>>3=20H=0010 0000H，即 32。本题没有搞清楚 16 进制和 2 进制的相关问题。
 
@@ -2437,11 +5915,44 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![1.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRlqz5Tp7gzcJl3dYHVVGUjEzuqRAAPFFGsbt-Z5VqC-PY1SQJ7vAQADAgADeAADPQQ)
 
+> 操作系统有多种类型，允许多个用户以交互的方式使用计算机的操作系统，称为（ ）；允许多个用户将若干作业提交给计算机系统集中处理的操作系统，称为（ ）；在（ ）的控制下，计算机系统能及时处理由过程控制反馈的数据，并及时做出响应；在 IBM-PC 中，操作系统称为（ ）。
+>
+> - A. 批处理系统
+> - B. 分时操作系统
+> - C. 实时操作系统
+> - D. 微型计算机操作系统
+>
+> 下列各种系统中，（ ）可以使多个进程并行执行。
+>
+> - A. 分时操作系统
+> - B. 多处理器系统
+> - C. 批处理系统
+> - D. 实时操作系统
+
 第 13 题答案为 BACD，错选为 BADC。为低级错误。IBM-PC 是微型计算机，实时操作系统即使做出相应。这里提一嘴，实时操作系统分为软实时和硬实时，软实时比如说车票系统，不需要太强的时效性，硬实时比如说金融场景。
 
 第 14 题错选为 C，注意此处为并行，而非并发。与 1 刷第 16 题类似错误。并行意味着需要有多个处理器，因为并行意味着微观时间内也是同时
 
 ![1.2.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRpqz5XnWiAPcb9ar0gB4Fg4fvpWJQACxxRrG7fmeVYkXlZJjartgAEAAwIAA3gAAz0E)
+
+> 【2017 统考真题】与单道程序系统相比，多道程序系统的优点是（ ）。
+> Ⅰ. CPU 的利用率高    Ⅱ. 系统开销小
+> Ⅲ. 系统吞吐量大    Ⅳ. I/O 设备利用率高
+>
+> - A. 仅Ⅰ、Ⅲ
+> - B. 仅Ⅰ、Ⅳ
+> - C. 仅Ⅱ、Ⅲ
+> - D. 仅Ⅰ、Ⅲ、Ⅳ
+>
+> 【2018 统考真题】下列关于多任务操作系统的叙述中，正确的是（ ）。
+> Ⅰ. 具有并发和并行的特点
+> Ⅱ. 需要实现对共享资源的保护
+> Ⅲ. 需要运行在多 CPU 的硬件平台上
+>
+> - A. 仅Ⅰ
+> - B. 仅Ⅱ
+> - C. 仅Ⅰ、Ⅱ
+> - D. Ⅰ、Ⅱ、Ⅲ
 
 第 18 题错选为 A。考虑这样一个场景，假设单道程序系统和多道程序系统同时处理若干个程序，某时该进程需要进行 I/O 操作，此时单道程序系统无法切换进程，只能让 CPU 等待该进程处理完 I/O 后再继续运行该进程，而多道程序系统可以趁着该进程处理 I/O 时，切换到其他需要 CPU 的进程。
 
@@ -2455,9 +5966,33 @@ IEEE 表示法理解为科学计数法，10(24 个 0),精读其实不会发生�
 
 ![1.3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRtqz5aOXZomNWha70v1vAxZGhK3fgAC2hRrG7fmeVYTvZ_r9jRxAgEAAwIAA3gAAz0E)
 
+> 下列指令中，必须在内核态执行的是（ ）。
+> Ⅰ. 陷入指令    Ⅱ. 系统调用指令    Ⅲ. 开中断指令
+> Ⅳ. 转移指令    Ⅴ. 中断屏蔽字设置指令
+>
+> - A. Ⅰ、Ⅱ、Ⅲ、Ⅳ
+> - B. Ⅱ、Ⅲ
+> - C. Ⅱ、Ⅲ、Ⅴ
+> - D. Ⅰ、Ⅳ
+
 本题错选为 B。陷入指令是在用户态执行的，系统调用指令的执行是在内核态，调用在用户态。转移指令不需要在内核态执行，可以理解为 jumpto。中断屏蔽字指令由于需要修改中断屏蔽字，所以必须在内核态执行。
 
 ![1.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBRxqz5bnYknNVGARM7fqct2Grbw_dQAC3RRrG7fmeVbj4MJEexxYzgEAAwIAA3gAAz0E)
+
+> 下列中断事件中，能引起外中断的事件是（ ）。
+> Ⅰ. 时钟中断    Ⅱ. 访管中断    Ⅲ. 缺页中断
+>
+> - A. Ⅰ
+> - B. Ⅲ
+> - C. Ⅰ和Ⅱ
+> - D. Ⅱ和Ⅲ
+>
+> 下列关于库函数和系统调用的说法中，不正确的是（ ）。
+>
+> - A. 库函数运行在用户态，系统调用运行在内核态
+> - B. 使用库函数时开销较小，使用系统调用时开销较大
+> - C. 库函数不方便被替换，系统调用通常很方便被替换
+> - D. 库函数可以很方便地调试，而系统调用很麻烦
 
 第 12 题错选为 C。内中断又称异常，分为三类：故障、陷入、终止。访管指令就是 trap 指令，对于 1 可以理解为 RR 调度。
 Trap 是内中断。
@@ -2468,13 +6003,43 @@ Trap 是内中断。
 
 ![1.3.12 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBR1qz5deB_qMK3rEbINroR2psldmQAAC4RRrG7fmeVbq7BMkLzXpjgEAAwIAA3gAAz0E)
 
+> [原图非题目：主人整理的 scanf 系统调用与中断处理流程解析笔记（带行号的文本截图）]
+
 第 13 题错选为 A，为低级错误。库函数运行在用户态，系统调用运行在用户态，而系统调用的执行是在内核态。即使是 malloc 函数，操作的也是堆区，堆区是被分配给用户的。
 
 ![1.3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBR5qz5d-8rWFEPFHFSfsxsz5Ss_0KwAC4xRrG7fmeVZEuHDOyhrXogEAAwIAA3gAAz0E)
 
+> 【2012 统考真题】中断处理和子程序调用都需要压栈，以便保护现场，中断处理一定会保存而子程序调用不需要保存其内容的是（ ）。
+>
+> - A. 程序计数器
+> - B. 程序状态字寄存器
+> - C. 通用数据寄存器
+> - D. 通用地址寄存器
+
 错选为 D，为低级错误，显然为 PSW。
 
 ![1.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBR9qz5ev_lo9QsS0yctFi8LN7H8SFgAC5BRrG7fmeVZyg3m7wd5PXQEAAwIAA3gAAz0E)
+
+> 【2018 统考真题】定时器产生时钟中断后，由时钟中断服务程序更新的部分内容是（ ）。
+> Ⅰ. 内核中时钟变量的值
+> Ⅱ. 当前进程占用 CPU 的时间
+> Ⅲ. 当前进程在时间片内的剩余执行时间
+>
+> - A. 仅Ⅰ、Ⅱ
+> - B. 仅Ⅱ、Ⅲ
+> - C. 仅Ⅰ、Ⅲ
+> - D. Ⅰ、Ⅱ、Ⅲ
+>
+> 【2019 统考真题】下列关于系统调用的叙述中，正确的是（ ）。
+> Ⅰ. 在执行系统调用服务程序的过程中，CPU 处于内核态
+> Ⅱ. 操作系统通过提供系统调用避免用户程序直接访问外设
+> Ⅲ. 不同的操作系统为应用程序提供了统一的系统调用接口
+> Ⅳ. 系统调用是操作系统内核为应用程序提供服务的接口
+>
+> - A. 仅Ⅰ、Ⅳ
+> - B. 仅Ⅱ、Ⅲ
+> - C. 仅Ⅰ、Ⅱ、Ⅳ
+> - D. 仅Ⅰ、Ⅲ、Ⅳ
 
 第 25 题错选为 A（划掉）C。
 
@@ -2484,17 +6049,56 @@ Trap 是内中断。
 
 ![1.3.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSBqz5fTlIE3SUp0h2Ocu7QbvC3_TgAC5RRrG7fmeVaUaDGAXRn_8gEAAwIAA3gAAz0E)
 
+> 【2021 统考真题】下列指令中，只能在内核态执行的是（ ）。
+>
+> - A. Trap 指令
+> - B. I/O 指令
+> - C. 数据传送指令
+> - D. 设置断点指令
+
 本题错选为 D。设置断点可以理解为高级语言的打断点，也可以理解为汇编的打断点。I/O 指令需要在内核态执行。
 
 ![1.3.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSFqz5ftbGT69y8BNvhQjbfiP4S9QwAC5hRrG7fmeVaK0SxYRoYJhQEAAwIAA3gAAz0E)
+
+> 【2022 统考真题】执行系统调用的过程涉及下列操作，其中由操作系统完成的是（ ）。
+> Ⅰ. 保存断点和程序状态字    Ⅱ. 保存通用寄存器的内容
+> Ⅲ. 执行系统调用服务例程    Ⅳ. 将 CPU 模式改为内核态
+>
+> - A. 仅Ⅰ、Ⅲ
+> - B. 仅Ⅱ、Ⅲ
+> - C. 仅Ⅱ、Ⅳ
+> - D. 仅Ⅱ、Ⅲ、Ⅳ
 
 本题错选为 D。修改 CPU 模式由硬件完成，可以理解为中断指令那部分。
 
 ![1.6.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSJqz5gEnEVoqNB4c1yXmRueOuLcKwAC5xRrG7fmeVYRBSFWOMvZRwEAAwIAA3gAAz0E)
 
+> 下列选项中，（ ）不属于模块化操作系统的特点。
+>
+> - A. 很多模块化的操作系统，可以支持动态加载新模块到内核，适应性强
+> - B. 内核中的某个功能模块出错不会导致整个系统崩溃，可靠性高
+> - C. 内核中的各个模块可以相互调用，无须通过消息传递进行通信，效率高
+> - D. 各模块间相互依赖，相比于分层式操作系统，模块化操作系统更难调试和验证
+
 本题错选为 C。内核中的某个功能块出错会导致依赖该功能的部分崩溃，从而导致连锁反应。
 
 ![1.6.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSNqz5gW_oYZm2EAAfSqraV26dHlkFIAAugUaxu35nlWRUjDZbhxyOsBAAMCAAN4AAM9BA)
+
+> 下列说法中，（ ）不适合描述微内核操作系统。
+>
+> - A. 内核足够小
+> - B. 功能分层设计
+> - C. 基于 C/S 模式
+> - D. 策略与机制分离
+>
+> 对于以下五种服务，在采用微内核结构的操作系统中，（ ）不宜放在微内核中。
+> Ⅰ. 进程间通信机制    Ⅱ. 低级 I/O    Ⅲ. 低级进程管理和调度
+> Ⅳ. 中断和陷入处理    Ⅴ. 文件系统服务
+>
+> - A. Ⅰ、Ⅱ和Ⅲ
+> - B. Ⅱ和Ⅴ
+> - C. 仅Ⅴ
+> - D. Ⅳ和Ⅴ
 
 第 5 题错选为 C。功能分层设计是分层设计系统。
 
@@ -2502,9 +6106,34 @@ Trap 是内中断。
 
 ![1.6.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSRqz5guAQZXrAafBMdowR9gluJoXAAC6RRrG7fmeVYOMxuN7uXKLgEAAwIAA3gAAz0E)
 
+> 下列关于操作系统结构的说法中，正确的是（ ）。
+> Ⅰ. 当前广泛使用的 Windows 操作系统，采用的是分层式 OS 结构
+> Ⅱ. 模块化的 OS 结构设计的基本原则是，每一层都仅使用其底层所提供的功能和服务，这样就使系统的调试和验证都变得容易
+> Ⅲ. 因为微内核结构能有效支持多处理机运行，所以非常适合于分布式系统环境
+> Ⅳ. 采用微内核结构设计和实现操作系统具有诸多好处，如添加系统服务时不必修改内核，使系统更高效。
+>
+> - A. Ⅰ和Ⅱ
+> - B. Ⅰ和Ⅲ
+> - C. Ⅲ
+> - D. Ⅲ和Ⅳ
+
 本题错选为 D。微内核架构不会让系统更高效，因为做一件事就需要不停的变态。
 
 ![1.6.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSVqz5hJmLRSYNHuo4iUmr2hFTd4aQAC6hRrG7fmeVaQnXwfI5PR1gEAAwIAA3gAAz0E)
+
+> 存放操作系统自举程序的芯片是（ ）。
+>
+> - A. SRAM
+> - B. DRAM
+> - C. ROM
+> - D. CMOS
+>
+> 计算机操作系统的引导程序位于（ ）中。
+>
+> - A. 主板 BIOS
+> - B. 片外 Cache
+> - C. 主存 ROM 区
+> - D. 硬盘
 
 第 12 题错选为 D。典型的乱选。本题其实考察的是 BIOS 在哪，显然位于 ROM 中。
 
@@ -2512,15 +6141,41 @@ Trap 是内中断。
 
 ![1.6.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSZqz5hhE3PLwYwJ9Z86iwsMQzKdSAAC6xRrG7fmeVYPYaevd9RK9QEAAwIAA3gAAz0E)
 
+> 【2013 统考真题】计算机开机后，操作系统最终被加载到（ ）。
+>
+> - A. BIOS
+> - B. ROM
+> - C. EPROM
+> - D. RAM
+
 本题错选为 A。没读完题目，显然被加载到内存中，也就是 RAM。
 
 ### OS 王道选择题 2 刷第 2 章
 
 ![2.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSdqz5h3c_zMNwU_Mye5CWIBrDWYhgACRhBrG7fmgVbFcWCGnQFkFwEAAwIAA3gAAz0E)
 
+> 下列选项中，导致创建新进程的操作是（ ）。
+> Ⅰ. 用户登录    Ⅱ. 高级调度发生时
+> Ⅲ. 操作系统响应用户提出的请求    Ⅳ. 用户打开了一个浏览器程序
+>
+> - A. 仅Ⅰ和Ⅳ
+> - B. 仅Ⅱ和Ⅳ
+> - C. Ⅰ、Ⅱ和Ⅳ
+> - D. 全部
+
 本题错选为 C，1 刷也错了，详见 1 刷。
 
 ![2.1.22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBShqz5iOz88boprfOWso3GlLzNM6rgACRxBrG7fmgVYqIgIhGI3htgEAAwIAA3gAAz0E)
+
+> 若一个进程实体由 PCB、共享正文段、数据堆段和数据栈段组成，请指出下列 C 语言程序中的内容及相关数据结构各位于哪一段中。
+> Ⅰ. 全局赋值变量（ ）Ⅱ. 未赋值的局部变量（ ）
+> Ⅲ. 函数调用实参传递值（ ）Ⅳ. 用 malloc() 要求动态分配的存储区（ ）
+> Ⅴ. 常量值（如 1995、"string"）（ ）Ⅵ. 进程的优先级（ ）
+>
+> - A. PCB
+> - B. 正文段
+> - C. 堆段
+> - D. 栈段
 
 这题是没做完。本质是背书不够。分配的逻辑空间从低地址到高地址可以理解为：
 
@@ -2530,9 +6185,23 @@ Trap 是内中断。
 
 ![2.1.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSlqz5mtA5VXNt3fBFfhuadukPa5AANIEGsbt-aBVju3iEkEUagkAQADAgADeAADPQQ)
 
+> 下列进程间通信方式中，数据传输速度最快的是（ ）。
+>
+> - A. 消息传递
+> - B. 信号量
+> - C. 共享内存
+> - D. 管道
+
 本题错选为 D。管道可以理解为是两个进程间先建立管道，然后进行半双工通信，没有共享内存来的快。1 刷也错了，详见 1 刷。
 
 ![2.1.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSpqz5u5HGl2s982k5wtJDmeoBHhsgACSxBrG7fmgVYVWEDXGTc7egEAAwIAA20AAz0E)
+
+> 下列关于信号发送和处理的描述中，错误的是（ ）。
+>
+> - A. 一个进程可以给自己发送信号
+> - B. 操作系统的内核可以给进程发送信号
+> - C. 操作系统的内核对每种信号都有默认处理程序
+> - D. 用户可以对每种信号自定义处理函数
 
 错选为 B。用户可以对一部分信号自定义，对于 kill 之类的显然不可以。
 
@@ -2542,41 +6211,111 @@ Trap 是内中断。
 
 ![2.1.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBStqz5vgVQS6sak8_LVQWccVBB4yCQACTBBrG7fmgVanp8sqUt1oRgEAAwIAA3gAAz0E)
 
+> 下列关于线程的叙述中，正确的是（ ）。
+>
+> - A. 线程包含 CPU 现场，可以独立执行程序
+> - B. 每个线程都有自己独立的地址空间
+> - C. 每个进程只能包含一个线程
+> - D. 同一进程中的线程间通信也必须使用系统调用函数
+
 错选为 B，1 刷也错了，详见 1 刷。
 
 ![2.1.40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBSxqz5vzMGlbqb5k4RLWPZHgJbzH0QACThBrG7fmgVbHRJ1yaN0h4AEAAwIAA3gAAz0E)
+
+> 在进程转换时，下列（ ）转换是不可能发生的。
+>
+> - A. 就绪态→运行态
+> - B. 运行态→就绪态
+> - C. 运行态→阻塞态
+> - D. 阻塞态→运行态
 
 错选为 C，为低级错误，把图画出来就 100% 不会错。
 
 ![2.1.42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBS1qz5wLI3iywUw4wNgu4BXaWekgwgACTxBrG7fmgVYtd-3YHZjfJgEAAwIAA3gAAz0E)
 
+> 两个合作进程（Cooperating Processes）无法利用（ ）交换数据。
+>
+> - A. 文件系统
+> - B. 共享内存
+> - C. 高级语言程序设计中的全局变量
+> - D. 消息传递系统
+
 错选为 A，本题的 C 可以用进程实体那部分去理解存储在哪。
 
 ![2.1.48](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBS5qz5wdvat3WbhUgffgdlgj8iernAACUBBrG7fmgVbrMomssRi-bwEAAwIAA3gAAz0E)
+
+> 下面关于用户级线程和内核级线程的描述中，错误的是（ ）。
+>
+> - A. 采用轮转调度算法，进程中设置内核级线程和用户级线程的效果完全不同
+> - B. 跨进程的用户级线程调度也不需要内核参与，控制简单
+> - C. 用户级线程可以在任何操作系统中运行
+> - D. 若系统中只有用户级线程，则 CPU 的调度对象是进程
 
 错选为 A。本体为低级错误，可以理解为用户级线程的时间分配是在已经分配的这个时间片上切分，而内核的是真全局切。
 
 ![2.1.52](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBS9qz5wu4tGxC64XacdK4rBXud2OsQACURBrG7fmgVak18fsQcDDPgEAAwIAA3gAAz0E)
 
+> 下列选项中，可能导致用户级线程切换的事件是（ ）。
+>
+> - A. 系统调用
+> - B. I/O 请求
+> - C. 异常处理
+> - D. 线程同步
+
 错选为 B。本题为用户级线程切换，也就是相当于用户态到用户态的切换，不涉及到内核态。
 
 ![2.1.60](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTBqz5xCC8KxVX84vo6CHGt0j8vK_AACUhBrG7fmgVbr4F72d7VjWQEAAwIAA3gAAz0E)
+
+> 【2012 统考真题】下列关于进程和线程的叙述中，正确的是（ ）。
+>
+> - A. 不管系统是否支持线程，进程都是资源分配的基本单位
+> - B. 线程是资源分配的基本单位，进程是调度的基本单位
+> - C. 系统级线程和用户级线程的切换都需要内核的支持
+> - D. 同一进程中的各个线程拥有各自不同的地址空间
 
 本题错选为 D。对线程和进程的理解不够准确。1 刷也错了，详见 1 刷。
 
 ![2.1.62](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTFqz52TAelvIvN8XT0ky-WPtWn5XAACYBBrG7fmgVa9MsmP6PH3RwEAAwIAA3gAAz0E)
 
+> 【2014 统考真题】下列关于管道（Pipe）通信的叙述中，正确的是（ ）。
+>
+> - A. 一个管道可实现双向数据传输
+> - B. 管道的容量仅受磁盘容量大小限制
+> - C. 进程对管道进行读操作和写操作都可能被阻塞
+> - D. 一个管道只能有一个读进程或一个写进程对其操作
+
 本题错选为 D。这里可以理解为读者写者问题，同一时间可以有多个读者进行操作。管道的大小为内存的 1 页。
 
 ![2.1.65](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTJqz520t-grEYf0UTVmv0ZoVPpewwACYRBrG7fmgVaF_hCy2gABXgUBAAMCAAN4AAM9BA)
+
+> 【2019 统考真题】下列选项中，可能将进程唤醒的事件是（ ）。I. I/O 结束  II. 某进程退出临界区  III. 当前进程的时间片用完
+>
+> - A. 仅 I
+> - B. 仅 III
+> - C. 仅 I、II
+> - D. I、II、III
 
 本题错选为 B。可能将进程唤醒，意味着从阻塞态到就绪态。
 
 ![2.1.73](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTNqz53MPTS73j0W4_rW737t9wXZcQACYhBrG7fmgVbTlcSxlzXcKgEAAwIAA3gAAz0E)
 
+> 【2024 统考真题】若进程 P 中的线程 T 先打开文件，得到文件描述符 fd，再创建两个线程 Ta 和 Tb，则在下列资源中，Ta 与 Tb 可共享的是（ ）。I. 进程 P 的地址空间  II. 线程 T 的栈  III. 文件描述符 fd
+>
+> - A. 仅 I
+> - B. 仅 I、III
+> - C. 仅 II、III
+> - D. I、II、III
+
 本题错选为 A，也是对线程和进程的区别不了解，具体见前面。
 
 ![2.2.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTRqz53iWGwPzQYAAbq_3prlAxjBXLwAAmMQaxu35oFWRsHtRSfwPgIBAAMCAAN4AAM9BA)
+
+> 在某单处理器系统中，若此刻有多个就绪态进程，则下列叙述中错误的是（ ）。
+>
+> - A. 进程调度的目标是让进程轮流使用处理器
+> - B. 当一个进程运行结束后，会调度下一个就绪进程运行
+> - C. 上下文切换是进程调度的实现手段
+> - D. 处于临界区的进程在退出临界区前，无法被调度
 
 错选为 A。1 刷时只知道这个 D 是对的，但是不知道 D 为什么是对的。临界区的定义是进入那段代码，而那段代码里假设 P 了一些东西，还没有真正执行，那么还会被调度，结果发现还在 P 状态中，所以重新返回队列？
 
@@ -2588,25 +6327,86 @@ Trap 是内中断。
 
 ![2.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTVqz54KC17CKmkwD7clJjrX3qWKbQACZRBrG7fmgVaENWnGF1WQ4wEAAwIAA3gAAz0E)
 
+> 支持多道程序设计的操作系统在运行过程中，不断地选择新进程运行来实现 CPU 的共享，但其中（ ）不是引起操作系统选择新进程的直接原因。
+>
+> - A. 运行进程的时间片用完
+> - B. 运行进程出错
+> - C. 运行进程要等待某一事件发生
+> - D. 有新进程被创建进入就绪态
+
 本题错选为 C。本题实质上考虑的是什么行为可以导致有进程从就绪态转换为运行态。对于 A，考虑 RR，一个进程的时间片用完了，那么可能会有其他进程换上去。对于 B，如果有进程出错，那么肯定也要退出运行态，从而有其他进程进入运行态。对于 C，含义是有一个进程从就绪态变为阻塞态，CPU 空余，所以会导致有新进程被调度上处理机；对于 D，即便是有新进程创建进入就绪态，并不会影响还在处理机上运行的。
 
 ![2.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTZqz6DxzrfGzElHmxeQ3lUMWZR4dgACchBrG7fmgVYml5nXzIGS2AEAAwIAA3gAAz0E)
+
+> 设有 4 个作业同时到达，每个作业的执行时间均为 2h，它们在一台处理器上按单道式运行，则平均周转时间为（ ）。
+>
+> - A. 1h
+> - B. 5h
+> - C. 2.5h
+> - D. 8h
 
 错选为 C。低级错误，我自己都看不懂我的草稿在算什么（2/2+4/2+6/2+8/2）。
 
 ![2.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTdqz6HigV5sLvf5U0WNsRRwrIcmxAACdBBrG7fmgVYT_j7UUO3eLAEAAwIAA3gAAz0E)
 
+> 一个作业 8:00 到达系统，估计运行时间为 1h。若 10:00 开始执行该作业，其响应比是（ ）。
+>
+> - A. 2
+> - B. 1
+> - C. 3
+> - D. 0.5
+
 错选为 A。本题记错高相应比计算公式，应该为：（等待时间 + 预计运行时间）/预计运行时间。
 
 ![2.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBThqz6H_F6CGgvt4mDqP7Hh6fjNFcAACdhBrG7fmgVYMrF5qDsMM2QEAAwIAA3gAAz0E)
+
+> 下列调度算法中，（ ）调度算法是绝对可抢占的。
+>
+> - A. 先来先服务
+> - B. 时间片轮转
+> - C. 优先级
+> - D. 短进程优先
 
 本题错选为 C。优先级算法有抢占式调度也有非抢占式调度的。优先级算法可以保证进程不会饥饿。
 
 ![2.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTlqz6IeGwZfSuJKLXGhb9YXfONB8wACdxBrG7fmgVZf_wV3Ey114wEAAwIAA3gAAz0E)
 
+> 有以下的进程需要调度执行（见下表）：
+>
+> 进程名 | 到达时间/h | 运行时间/h
+> P1 | 0.0 | 9
+> P2 | 0.4 | 4
+> P3 | 1.0 | 1
+> P4 | 5.5 | 4
+> P5 | 7 | 2
+>
+> - [图示] 表格共 3 列（进程名、到达时间/h、运行时间/h）、5 行数据（P1~P5）
+>
+> 1）若用非抢占式短进程优先调度算法，问这 5 个进程的平均周转时间是多少？
+> 2）若采用抢占式短进程优先调度算法，问这 5 个进程的平均周转时间是多少？
+>
+> - A. 8.62h; 6.34h
+> - B. 8.62h; 6.8h
+> - C. 10.62h; 6.34h
+> - D. 10.62h; 6.8h
+
 本题 2 刷时没写（
 
 ![2.2.38](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTpqz6JIZGJ2rXtB42IsHXihy8nAPwACeRBrG7fmgVYnUPnMiX6HBwEAAwIAA3gAAz0E)
+
+> 【2010 统考真题】下列选项中，降低进程优先级的合理时机是（ ）。
+>
+> - A. 进程时间片用完
+> - B. 进程刚完成 I/O 操作，进入就绪队列
+> - C. 进程长期处于就绪队列
+> - D. 进程从就绪态转换为运行态
+>
+> 【2011 统考真题】下列选项中，满足短作业优先且不会发生饥饿现象的是（ ）调度算法。
+>
+> - A. 先来先服务
+> - B. 高响应比优先
+> - C. 时间片轮转
+> - D. 非抢占式短作业优先
 
 38 题错选为 D。考虑这样一种情况，进程从就绪态转换为运行态的时候，降低优先级为最低，假设该系统采用的是抢占式的优先级调度，那么该进程就会被换下来。对于 A，进程的时间片用完，假设仍然保持原来的优先级，可能会霸占处理机。对于 B，完成 I/O 操作意味着其可以被调度，所以并不合适；对于 C，饥饿。
 
@@ -2614,41 +6414,135 @@ Trap 是内中断。
 
 ![2.2.51](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTtqz6KVf1EffbnPowTN6FDVfvyMLgACehBrG7fmgVar-MFxTa4H3gEAAwIAA3gAAz0E)
 
+> 【2021 统考真题】下列事件中，可能引起进程调度程序执行的是（ ）。I. 中断处理结束  II. 进程阻塞  III. 进程执行结束  IV. 进程的时间片用完
+>
+> - A. 仅 I、III
+> - B. 仅 II、IV
+> - C. 仅 III、IV
+> - D. I、II、III 和 IV
+>
+> 【2022 统考真题】进程 P0、P1、P2 和 P3 进入就绪队列的时刻、优先级（值越小优先权越高）及 CPU 执行时间如下表所示。
+>
+> 进程名 | 进入就绪队列的时刻 | 优先级 | CPU 执行时间
+> P0 | 0ms | 15 | 100ms
+> P1 | 10ms | 20 | 60ms
+> P2 | 10ms | 10 | 20ms
+> P3 | 15ms | 6 | 10ms
+>
+> - [图示] 表格共 4 列（进程名、进入就绪队列的时刻、优先级、CPU 执行时间）、4 行数据（P0~P3）
+>
+> 若系统采用基于优先权的抢占式进程调度算法，则从 0ms 时刻开始调度，到 4 个进程都运行结束为止，发生进程调度的总次数为（ ）。
+>
+> - A. 4
+> - B. 5
+> - C. 6
+> - D. 7
+
 51 题错选为 C。本题含义为：某行为结束后可能会引发就绪态到运行态的转变。对于 1，中断处理结束可以理解为 I/O 操作结束（例如 DMA 传输完了），此时 I/O 好了，从阻塞态变味了就绪态，自然可能会引发调度。对于 2，进程阻塞意味着有进程从运行成阻塞态，也就意味着 CPU 空出来了，可能可以有进程上处理机。对于 3，和 2 类似的道理，进程结束 CPU 空出来。对于 4，和 2、3 类似的道理，从运行态变为就绪态，导致 CPU 空出来。
 
 52 题错选为 B。第一次调度也是调度。
 
 ![2.5.54](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBTxqz6Kqf0DQ17_u68Az7ot3KqjbbwACfBBrG7fmgVYDe7UHwDQuRAEAAwIAA3gAAz0E)
 
+> 【2024 统考真题】假设某系统使用时间片轮转调度算法进行 CPU 调度，时间片大小为 5ms，系统共有 10 个进程，初始时均处于就绪队列，执行结束前仅处于运行态或就绪态，若队尾的进程 P 所需的 CPU 时间最短，时间为 25ms，不考虑系统开销，则进程 P 的周转时间为（ ）。
+>
+> - A. 200ms
+> - B. 205ms
+> - C. 250ms
+> - D. 295ms
+
 本题错选为 B。一上系统就算是处于就绪队列（已经到达了，并且在等待处理机），而不是等其他人运行，自己第一次上处理机的时候才开始算。如果是自己第一次上处理机的时候才开始算的话，那么如果不是 RR 的所有周转时间都是运行时间。
 
 ![2.3.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBT1qz6LBd1o_dEyjahTbWAI4eixy6gACfRBrG7fmgVZl_W9hV4R5jAEAAwIAA3gAAz0E)
+
+> 两个旅行社甲和乙为旅客到某航空公司订飞机票，形成互斥资源的是（ ）。
+>
+> - A. 旅行社
+> - B. 航空公司
+> - C. 飞机票
+> - D. 旅行社与航空公司
 
 本题错选为 B。2 刷也错了。
 
 ![2.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBT5qz6LS8E3b4Wd2VkgcQIfluv14WQACfhBrG7fmgVZ-a2JmD4NMWwEAAwIAA20AAz0E)
 
+> 在操作系统中，要对并发进程进行同步的原因是（ ）。
+>
+> - A. 进程必须在有限的时间内完成
+> - B. 进程具有动态性
+> - C. 并发进程是异步的
+> - D. 进程具有结构性
+
 本题错选为 D。因为进程是异步的（不同进程运行的时序是不固定的），有些进程有先后关系，所以选 C。进程有结构性的含义例如是这一块被分给用户作为堆区等，显然和题目无关。
 
 ![2.3.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBT9qz6LjdIrcZk7bdgnP11nPP9e4nAACgBBrG7fmgVbxfsI0gm7f1gEAAwIAA3gAAz0E)
+
+> （ ）定义了共享数据结构和各种进程在该数据结构上的全部操作。
+>
+> - A. 管程
+> - B. 类程
+> - C. 线程
+> - D. 程序
 
 错选为 D。程序是放在外存的静态代码和数据，概念比较泛。
 
 ![2.3.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUBqz6L9MaLnh6XFYdSPNCzf9bOFgQACgRBrG7fmgVZ3yHScsLCURQEAAwIAA3gAAz0E)
 
+> 用 P、V 操作实现进程同步，信号量的初值为（ ）。
+>
+> - A. -1
+> - B. 0
+> - C. 1
+> - D. 由用户确定
+
 错选为 B。一样的错误原因。
 
 ![2.3.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUFqz6MORf3tSp-MG9XGeTn0m-xqBwACghBrG7fmgVaj0UuzhyUkOAEAAwIAA3gAAz0E)
 
+> 一个进程映像由程序、数据及 PCB 组成，其中（ ）必须用可重入编码编写。
+>
+> - A. PCB
+> - B. 程序
+> - C. 数据
+> - D. 共享程序段
+
 错选为 C。ABC 均为一个进程私有的。
 
 ![2.3.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUJqz6MhHJtHF6QQUIvvG_AU0gVbfgAChBBrG7fmgVbSBYpbzRWXpQEAAwIAA3gAAz0E)
+
+> 一个进程因在互斥信号量 mutex 上执行 V(mutex) 操作而导致唤醒另一个进程时，执行 V 操作后 mutex 的值为（ ）。
+>
+> - A. 大于 0
+> - B. 小于 0
+> - C. 大于或等于 0
+> - D. 小于或等于 0
+>
+> 一个系统中共有 5 个并发进程涉及某个相同的变量 A，变量 A 的相关临界区是由（ ）个临界区构成的。
+>
+> - A. 1
+> - B. 3
+> - C. 5
+> - D. 6
 
 26 题错选为 A。导致唤醒一个进程意味着等待队列里有人，也就意味着原本的 mutex 值至少为 -1，所以 +1 也就是 D。
 
 27 题错选为 A，一样的错误。
 
 ![2.3.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUNqz6M-tu4Z-0xBSk2o6oO83yw_bAAChRBrG7fmgVY3ARUq40Ni2AEAAwIAA3gAAz0E)
+
+> 以下关于管程的叙述中，错误的是（ ）。
+>
+> - A. 管程是进程同步工具，解决信号量机制大量同步操作分散的问题
+> - B. 管程每次只允许一个进程进入管程
+> - C. 管程中 signal 操作的作用和信号量机制中的 V 操作相同
+> - D. 管程是被进程调用的，管程是语法范围，无法创建和撤销
+>
+> 对信号量 S 执行 P 操作后，使该进程进入资源等待队列的条件是（ ）。
+>
+> - A. S.value < 0
+> - B. S.value <= 0
+> - C. S.value > 0
+> - D. S.value >= 0
 
 29 题错选为 D。管程中的 signal 和 V 不一样，管程中的 signal 假设执行的时候恰巧没有人在里面，那么这次是浪费的。换句话说，管程是没有记忆的，V 是有记忆的。
 
@@ -2658,13 +6552,41 @@ Trap 是内中断。
 
 ![2.3.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBURqz6NaRJXvgdIBRZ_zYvx4VDAONgAChxBrG7fmgVaLZ3yVHu4_xgEAAwIAA3gAAz0E)
 
+> 并发进程之间的关系是（ ）。
+>
+> - A. 无关的
+> - B. 相关的
+> - C. 可能相关的
+> - D. 可能是无关的，也可能是有交往的
+
 错选为 C。没读完选项，属于低级错误。
 
 ![2.3.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUVqz6NzILS5ojDtOv441nVM3CqAsgACiBBrG7fmgVZ2h1ui88n6IAEAAwIAA3gAAz0E)
 
+> 生产者 - 消费者问题用于解决（ ）。
+>
+> - A. 多个进程共享一个数据对象的问题
+> - B. 多个进程之间的同步和互斥问题
+> - C. 多个进程共享资源的死锁与饥饿问题
+> - D. 利用信号量实现多个进程并发的问题
+
 错选为 A，属于低级错误。
 
 ![2.3.41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUZqz6OX4UhB8f-Mz2uVKVrVYE7ioQACixBrG7fmgVZBdQjE0Yb1OwEAAwIAA3gAAz0E)
+
+> 下列关于生产者 - 消费者问题的唤醒操作的说法中，正确的是（ ）。I. 生产者唤醒其他生产者  II. 生产者唤醒消费者  III. 消费者唤醒其他消费者  IV. 消费者唤醒生产者
+>
+> - A. I 和 II
+> - B. III 和 IV
+> - C. II 和 III
+> - D. I、II、III 和 IV
+>
+> 在 9 个生产者、6 个消费者共享容量为 8 的缓冲区的生产者 - 消费者问题中，互斥使用缓冲区的信号量初始值为（ ）。
+>
+> - A. 1
+> - B. 6
+> - C. 8
+> - D. 9
 
 41 题错选为 C，属于低级错误，这题结合 PV 操作大题其实就可以理解地七七八八了。
 
@@ -2672,31 +6594,229 @@ Trap 是内中断。
 
 ![2.3.48](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUdqz6Ov6ySlR0PFQ1dwpJccpNVpIwACjBBrG7fmgVZjbPjY8cT3jwEAAwIAA3gAAz0E)
 
+> 【2010 统考真题】进程 P₀ 和进程 P₁ 的共享变量定义及其初值为：
+>
+> ```text
+> boolean flag[2];
+> int turn=0;
+> flag[0]=false; flag[1]=false;
+> ```
+>
+> 若进程 P₀ 和进程 P₁ 访问临界资源的类 C 代码实现如下：
+>
+> - [图示] 左列为进程 P₀ 的类 C 代码，右列为进程 P₁ 的类 C 代码
+>
+> ```text
+> void P0()  //进程 P0
+> {
+>     while(true)
+>     {
+>         flag[0]=true;turn=1;
+>         while(flag[1]&&(turn==1));
+>         临界区;
+>         flag[0]=false;
+>     }
+> }
+> ```
+>
+> ```text
+> void P1()  //进程 P1
+> {
+>     while(true)
+>     {
+>         flag[1]=true;turn=0;
+>         while(flag[0]&&(turn==0));
+>         临界区;
+>         flag[1]=false;
+>     }
+> }
+> ```
+>
+> 则并发执行进程 P₀ 和进程 P₁ 时产生的情况是（ ）。
+>
+> - A. 不能保证进程互斥进入临界区，会出现“饥饿”现象
+> - B. 不能保证进程互斥进入临界区，不会出现“饥饿”现象
+> - C. 能保证进程互斥进入临界区，会出现“饥饿”现象
+> - D. 能保证进程互斥进入临界区，不会出现“饥饿”现象
+
 错选为 C。本题的代码其实是皮特松算法，违背让权等待（也就是忙等待），但是满足其他三个：空闲让进，忙则等待，有限等待。
 
 ![2.4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUhqz6PKaTc485C99U83NJLoksZe2gACjhBrG7fmgVbN_VXc_PgKSwEAAwIAA3gAAz0E)
+
+> 在哲学家进餐问题中，若所有哲学家同时拿起左筷子，则发生死锁，因为他们都需要右筷子才能用餐。为了让尽可能多的哲学家可以同时用餐，并且不发生死锁，可以利用信号量 PV 操作实现同步互斥，下列说法中正确的是（ ）。
+>
+> - A. 使用信号量进行控制的方法一定可以避免死锁
+> - B. 同时检查两支筷子是否可用的方法可以预防死锁，但是会导致饥饿问题
+> - C. 限制允许拿起筷子的哲学家数量可以预防死锁，它破坏了“循环等待”条件
+> - D. 对哲学家顺序编号，奇数号哲学家先拿左筷子，然后拿右筷子，而偶数号哲学家刚好相反，可以预防死锁，它破坏了“互斥”条件
 
 错选为 B。结合 PV 操作的大题来理解，同时检测两只筷子是否可用适配于一次性拿去所有自己需要的资源，这么做可以增加并发程度，并且也不会导致饥饿问题。对于 D，破坏的也是循环等待条件，互斥条件指的是你访问这个东西是互斥的，不可能改变互斥条件。
 
 ![2.4.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUlqz6PhAAFo2hwvYF3Nzs9jP70bWREAAo8Qaxu35oFW72w48dgkjdMBAAMCAAN4AAM9BA)
 
+> 一次分配所有资源的方法可以预防死锁的发生，它破坏死锁 4 个必要条件中的（ ）。
+>
+> - A. 互斥
+> - B. 占有并请求
+> - C. 非剥夺
+> - D. 循环等待
+
 错选为 A。如上一题所述，互斥条件基本不可能被破坏，一次性分配可以避免进程申请一些之后再申请资源，所以是破坏占有并请求（一样可以结合 PV 操作去理解）
 
 ![2.4.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUpqz6P0zcR0vLTktZqDjwM1KwiYlAACkBBrG7fmgVZmtj0dSB66IAEAAwIAA3gAAz0E)
+
+> 死锁的避免是根据（ ）采取措施实现的。
+>
+> - A. 配置足够的系统资源
+> - B. 使进程的推进顺序合理
+> - C. 破坏死锁的四个必要条件之一
+> - D. 防止系统进入不安全状态
 
 错选为 C。为低级错误，死锁避免指的是银行家算法那一套，是为了防止系统进入不安全状态。
 
 ![2.4.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUtqz6QF6SKAahKBw9CBa33JZ1uOTgACkRBrG7fmgVYmMPqm1NbdeAEAAwIAA3gAAz0E)
 
+> 解除死锁通常不采用的方法是（ ）。
+>
+> - A. 终止一个死锁进程
+> - B. 终止所有死锁进程
+> - C. 从死锁进程处抢夺资源
+> - D. 从非死锁进程处抢夺资源
+
 错选为 B，为低级错误，没读完题目。
 
 ![2.4.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBUxqz6QZyGAjXQ8iCSx3gMBgwmGezQACkhBrG7fmgVaiEt8BDvvrWwEAAwIAA3gAAz0E)
+
+> 下面是并发进程的程序代码，正确的是（ ）。
+>
+> - [图示] 上方为共享变量定义，下方左列为并发进程 P1() 的代码，右列为并发进程 P2() 的代码
+>
+> ```text
+> Semaphore x1=x2=y=1;
+> int c1=c2=0;
+> ```
+>
+> ```text
+> P1()
+> {
+>     while(1){
+>         P(x1);
+>         if(++c1==1)P(y);
+>         V(x1);
+>         computer(A);
+>         P(x1);
+>         if(--c1==0)V(y);
+>         V(x1);
+>     }
+> }
+> ```
+>
+> ```text
+> P2()
+> {
+>     while(1){
+>         P(x2);
+>         if(++c2==1)P(y);
+>         V(x2);
+>         computer(B);
+>         P(x2);
+>         if(--c2==0)V(y);
+>         V(x2);
+>     }
+> }
+> ```
+>
+> - A. 进程不会死锁，也不会“饥饿”
+> - B. 进程不会死锁，但是会“饥饿”
+> - C. 进程会死锁，但是不会“饥饿”
+> - D. 进程会死锁，也会“饥饿”
+>
+> 有两个并发进程，对于如下这段程序的运行，正确的说法是（ ）。
+>
+> int x,y,z,t,u;
+>
+> - [图示] 左列为 P1() 的代码，右列为 P2() 的代码
+>
+> ```text
+> P1()
+> {
+>     while(1){
+>         x=1;
+>         y=0;
+>         if x>=1 then y=y+1;
+>         z=y;
+>     }
+> }
+> ```
+>
+> ```text
+> P2()
+> {
+>     while(1){
+>         x=0;
+>         t=0;
+>         if x<=1 then t=t+2;
+>         u=t;
+>     }
+> }
+> ```
+>
+> - A. 程序能正确运行，结果唯一
+> - B. 程序不能正确运行，可能有两种结果
+> - C. 程序不能正确运行，结果不确定
+> - D. 程序不能正确运行，可能死锁
 
 第 23 题错选为 A。和 1 刷一样的错误。
 
 第 24 题错选为 B。这题脑子抽了，考虑到了有 3 钟可能的情况，但是还是选了 B。
 
 ![2.4.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBU1qz6QsqwqNonB1XG8bUv1eSfcsHAACkxBrG7fmgVZqtPJl_YYaAAEBAAMCAAN4AAM9BA)
+
+> 一个进程在获得资源后，只能在使用完资源后由自己释放，这属于死锁必要条件的（ ）。
+>
+> - A. 互斥条件
+> - B. 请求和释放条件
+> - C. 不剥夺条件
+> - D. 防止系统进入不安全状态
+>
+> 假设具有 5 个进程的进程集合 P = {P₀, P₁, P₂, P₃, P₄}，系统中有三类资源 A, B, C，假设在某时刻有如下状态，见下表。
+>
+> - [图示] 表格：表头为「进程名 / Allocation(A B C) / Max(A B C) / Available」，共五行数据，Available 列另标 A B C 与 x y z
+>
+> ```text
+> 进程名  Allocation  Max  Available
+>         A B C      A B C
+> P₀      0 0 3      0 0 4
+> P₁      1 0 0      1 7 5
+> P₂      1 3 5      2 3 5
+> P₃      0 0 2      0 6 4
+> P₄      0 0 1      0 6 5
+>                        A B C
+>                        x y z
+> ```
+>
+> 系统是处于安全状态的，则 x,y,z 的取值可能是（ ）。
+>
+> I. 1,4,0 / II. 0,6,2 / III. 1,1,1 / IV. 0,4,7
+>
+> - A. I、II、IV
+> - B. I、II
+> - C. 仅 I
+> - D. I、III
+>
+> 死锁定理是用于处理死锁的（ ）方法。
+>
+> - A. 预防死锁
+> - B. 避免死锁
+> - C. 检测死锁
+> - D. 解除死锁
+>
+> 某系统有 m 个同类资源供 n 个进程共享，若每个进程最多申请 k 个资源 (k>1)，采用银行家算法分配资源，为保证系统不发生死锁，则各进程的最大需求量之和应（ ）。
+>
+> - A. 等于 m
+> - B. 等于 m+n
+> - C. 小于 m+n
+> - D. 大于 m+n
 
 第 25 题错选为 B。使用完资源自己释放，显然是不剥夺，请求和释放条件指的是占用并请求，这两个需要想清楚。
 
@@ -2708,13 +6828,56 @@ Trap 是内中断。
 
 ![2.4.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBU5qz6RFWTt-WGq0bY9D9C2e_5BEqgAClBBrG7fmgVb5WcwPndbjGQEAAwIAA3gAAz0E)
 
+> 下列各种方法中，可用于解除已发生死锁的是（ ）。
+>
+> - A. 撤销部分或全部死锁进程
+> - B. 剥夺部分或全部死锁进程的资源
+> - C. 降低部分或全部死锁进程的优先级
+> - D. A 和 B 都可以
+
 本题错选为 B，低级错误，没看完题目。
 
 ![2.4.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBU9qz6RX0wyjKF5kMgbNI_K8H5v6twAClhBrG7fmgVYsFB9h5a0-JwEAAwIAA3gAAz0E)
 
+> 【2011 统考真题】某时刻进程的资源使用情况见下表，此时的安全序列是（ ）。
+>
+> - A. P₁, P₂, P₃, P₄
+> - B. P₁, P₃, P₂, P₄
+> - C. P₁, P₄, P₃, P₂
+> - D. 不存在
+>
+> - [图示] 表格：表头为「进程名 / 已分配资源 (R₁ R₂ R₃) / 尚需分配 (R₁ R₂ R₃) / 可用资源 (R₁ R₂ R₃)」，共四行数据，可用资源列为 0 2 1
+>
+> ```text
+> 进程名  已分配资源  尚需分配  可用资源
+>        R₁ R₂ R₃   R₁ R₂ R₃  R₁ R₂ R₃
+> P₁     2 0 0      0 0 1     0 2 1
+> P₂     1 2 0      1 3 2
+> P₃     0 1 1      1 3 1
+> P₄     0 0 1      2 0 0
+> ```
+
 错选为 C，为低级错误。本题都不需要你去计算 NEED，它直接给了，所以直接看：021 可以满足 P1，拿回来也就是 221，221 可以满足 P4，拿回来也就是 222，222 无法满足 P2/P3，所以不存在安全序列。
 
 ![2.4.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBVBqz6RrSNc3FWtvu7zFl5h80nPd0wACmRBrG7fmgVY8YKz7tTl-bgEAAwIAA3gAAz0E)
+
+> 【2015 统考真题】若系统 S₁ 采用死锁避免方法，S₂ 采用死锁检测方法。下列叙述中，正确的是（ ）。
+>
+> I. S₁ 会限制用户申请资源的顺序，而 S₂ 不会
+> II. S₁ 需要进程运行所需的资源总量信息，而 S₂ 不需要
+> III. S₁ 不会给可能导致死锁的进程分配资源，而 S₂ 会
+>
+> - A. 仅 I、II
+> - B. 仅 II、III
+> - C. 仅 I、III
+> - D. I、II、III
+>
+> 【2016 统考真题】系统中有 3 个不同的临界资源 R₁, R₂ 和 R₃，被 4 个进程 P₁, P₂, P₃, P₄ 共享。各进程对资源的需求为：P₁ 申请 R₁ 和 R₂，P₂ 申请 R₂ 和 R₃，P₃ 申请 R₁ 和 R₃，P₄ 申请 R₂。若系统出现死锁，则处于死锁状态的进程数至少是（ ）。
+>
+> - A. 1
+> - B. 2
+> - C. 3
+> - D. 4
 
 第 39 题错选为 D。死锁避免也就是银行家算法，死锁检测也就是分配图。死锁避免只会限制用户申请的个数，而不会限制这个用户的申请顺序（也就是会影响用户申请顺序，而不会影响用户本身申请的顺序）
 
@@ -2722,11 +6885,32 @@ Trap 是内中断。
 
 ![2.4.42](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBVFqz6SHCMnUByhYG73gshNHUqq1uAACmhBrG7fmgVY8JfS1t-eN1QEAAwIAA3gAAz0E)
 
+> 【2019 统考真题】下列关于死锁的叙述中，正确的是（ ）。
+>
+> I. 可以通过剥夺进程资源解除死锁
+> II. 死锁的预防方法能确保系统不发生死锁
+> III. 银行家算法可以判断系统是否处于死锁状态
+> IV. 当系统出现死锁时，必然有两个或两个以上的进程处于阻塞态
+>
+> - A. 仅 II、III
+> - B. 仅 I、II、IV
+> - C. 仅 I、II、III
+> - D. 仅 I、III、IV
+
 本题错选为 D。1 显然正确，2 显然正确，3 不能判断系统此时是否处于死锁状态，它只能判断系统会不会进入不安全的状态，也就是知道可能会发成死锁。3 这件事是死锁定理干的。
 
 ### OS 王道选择题 2 刷第 3 章
 
 ![3.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB4xq0yHomZlbRvVJA5TXmob2gSdVlgACOBlrG-BrmFYRg3ykE8TqPwEAAwIAA3gAAz0E)
+
+> 下列各种存储管理方式中，需要硬件地址变换机构的是（ ）。
+>
+> I. 单一连续分配 / II. 固定分区分配 / III. 页式存储管理 / IV. 动态分区分配 / V. 页式虚拟存储管理
+>
+> - A. I、III、V
+> - B. II、III、IV
+> - C. III、IV、V
+> - D. II、III、IV、V
 
 本题错选为 A。单一连续分配指的是最古老的分配方式，是单一作业模式，没有动态分配，属于静态分配方式。
 
@@ -2734,39 +6918,126 @@ Trap 是内中断。
 
 ![3.1.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB41q0yKg9KzpAnsz4vnmEnHzwuk65AACORlrG-BrmFan9mzUa-4TcwEAAwIAA3gAAz0E)
 
+> 下列关于程序装入的动态重定位方式的描述中，错误的是（ ）。
+>
+> - A. 系统将程序装入内存后，程序在内存中的位置可能发生移动
+> - B. 系统为每个进程分配一个重定位寄存器
+> - C. 被访问单元的物理地址 = 逻辑地址 + 重定位寄存器的值
+> - D. 逻辑地址到物理地址的映射过程在进程执行时发生
+>
+> 动态重定位的过程依赖于（ ）。
+>
+> I. 可重定位装入程序 / II. 重定位寄存器 / III. 地址变换机构 / IV. 目标程序
+>
+> - A. I 和 II
+> - B. II 和 III
+> - C. I、II 和 III
+> - D. I、II、III 和 IV
+
 第 10 题错选为 D。重定位寄存器是寄存器，而寄存器很贵，整个 cpu 只有一个重定位寄存器；对于 D，程序的装入有三种方式，绝对装入，可重定位装入以及动态装入；对于绝对装入，是只能变不了位置的，对于可重定位装入，是分配连续的一整块空间，一次性转换为物理地址后然后装入，对于动态装入，进程执行的时候等待指令需要被执行的时候才被转换地址。
 
 第 11 题错选为 A。显然为 123，没有可重定位装入程序，那么就不知道怎么变，没有重定位寄存器，就不知道变多少（基于什么变），如果没有 3，那就变不了。而对于 4，目标程序采用的是逻辑地址，和重定位无关。
 
 ![3.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB45q0yLeHoljgCQ_Aqv-8Y1wx8zHxAACOhlrG-BrmFaeJ7av3GdpugEAAwIAA20AAz0E)
 
+> 对重定位存储管理方式，应（ ）。
+>
+> - A. 在整个系统中设置一个重定位寄存器
+> - B. 为每道程序设置一个重定位寄存器
+> - C. 为每道程序设置两个重定位寄存器
+> - D. 为每道程序和数据都设置一个重定位寄存器
+
 本题错选为 B。具体分析见第 10 题，重定位寄存器是寄存器，很贵的。
 
 ![3.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB49q0yLyDQi750fWhSLNEiJkBT5dMQACOxlrG-BrmFYeOpLCcftDNgEAAwIAA3gAAz0E)
+
+> 某页式存储管理系统中，按字节编址，页表内容如下表所示。若页的大小为 4KB，则地址转换机构将逻辑地址 4097 转换成的物理地址为（ ）。（地址均用十进制表示。）
+>
+> - [图示] 页表两列「页号 / 页框号」，共四行
+>
+> 页号  页框号
+> 0     2
+> 1     1
+> 3     0
+> 4     5
+>
+> - A. 8193
+> - B. 4097
+> - C. 2049
+> - D. 1025
 
 错选为 A。2^12=4096≠4098。4097/4KB=1，页号 1 对应 1，1×4096+1=4097。
 
 ![3.1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Bq0yMYS5wqUj1nINVM8xOfQTJyYQACPBlrG-BrmFY_QFK0XULJaQEAAwIAA3gAAz0E)
 
+> 分区管理中采用最佳适应分配算法时，把空闲区按（ ）次序登记在空闲区表中。
+>
+> - A. 长度递增
+> - B. 长度递减
+> - C. 地址递增
+> - D. 地址递减
+
 错选为 C。最佳适应算法是要最小的地址块在前，所以应该是长度递增的。
 
 ![3.1.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Fq0yXiGG0NN7Wv5DbXcWs4oMOa4gACQBlrG-BrmFaAJneEUHc9UAEAAwIAA3gAAz0E)
+
+> 在段式存储管理中，共享段表是用来实现（ ）的。
+>
+> - A. 多个进程共享同一段代码或数据
+> - B. 多个进程共享同一段物理内存空间
+> - C. 多个进程共享同一段逻辑地址空间
+> - D. 多个进程共享同一段号
 
 错选为 C。对于 A，段表是本质是逻辑上需要有关系，也就是共享的时候需要共享有意义的数据；对于 B 是页表做的事情，对于 C 和 D，每个进程都有自己独立的逻辑地址空间，而对于共享的数据而言，进程内部给他分配的段号可能是不一样的。
 
 ![3.1.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Jq0yX5f0NphLJaDFgCOnbCqFbo5gACQRlrG-BrmFY4RkNNueQFqQEAAwIAA3gAAz0E)
 
+> 采用分页或分段管理后，提供给用户的物理地址空间为（ ）。
+>
+> - A. 分页支持更大的物理地址空间
+> - B. 分段支持更大的物理地址空间
+> - C. 不能确定
+> - D. 一样大
+
 错选为 D。分页是从操作系统角度出发，操作系统已经给你分配好了这一页的大小，并且你也不知道操作系统给你的程序拆分成多少，塞进哪几个页里，所以对于分页，答案是不知道；对于分段，尽管是汇编级语言程序员可以操作的，但是分页的物理地址空间无法获取（是透明的）从而无法比较。
 
 ![3.1.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Nq0yY9gpro4AfaHZlYNKfTOV6OaAACQhlrG-BrmFYAASqkcDGCYh0BAAMCAAN4AAM9BA)
+
+> 在页式存储管理中，当 CPU 形成一个有效地址时，查找页表的工作是由（ ）实现的。
+>
+> - A. 操作系统
+> - B. 页表查询程序
+> - C. 硬件
+> - D. 存储管理进程
 
 错选为 A。可以联想到页表查询机构，显然这是硬件自动完成的事情，取指令。
 
 ![3.1.33](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Rq0yZRJYzw0lMhSlndHdxFo_VzggACQxlrG-BrmFZQcM3w_ppW4gEAAwIAA20AAz0E)
 
+> 下面的（ ）方法有利于程序的动态链接。
+>
+> - A. 分段存储管理
+> - B. 分页存储管理
+> - C. 可变式分区管理
+> - D. 固定式分区管理
+
 错选为 B。程序的动态链接做的事情是把标准库之类的东西串起来，打包成 exe。如果使用的是分页存储管理，由于没有逻辑，所以必然是零散的。分段是按照逻辑划分的。
 
 ![3.1.40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Vq0yZhsTR9VRIZ1CW1bbrmSgiU4QACRBlrG-BrmFZK5wLBQtqXzwEAAwIAA3gAAz0E)
+
+> 引入段式存储管理方式，主要是为了更好地满足用户的一系列要求。下面选项中不属于这一系列要求的是（ ）。
+>
+> - A. 提高内存利用率
+> - B. 方便编程
+> - C. 共享和保护
+> - D. 动态链接和增长
+>
+> 对主存储器的访问，（ ）。
+>
+> - A. 以块（页）或段为单位
+> - B. 以字节或字为单位
+> - C. 随存储器的管理方案不同而异
+> - D. 以用户的逻辑记录为单位
 
 第 40 题错选为 D。由于段表是人工自行分配的，所以会有较多的外部碎片难以利用。
 
@@ -2774,9 +7045,30 @@ Trap 是内中断。
 
 ![3.1.48](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5Zq0yZ1bHjKIxEupeJh1ok4olbIygACRRlrG-BrmFZT2IAC-ZzZogEAAwIAA3gAAz0E)
 
+> 操作系统采用分页存储管理方式，要求（ ）。
+>
+> - A. 每个进程拥有一张页表，且进程的页表驻留在内存中
+> - B. 每个进程拥有一张页表，但只有执行进程的页表驻留在内存中
+> - C. 所有进程共享一张页表，以节约有限的内存空间，但页表必须驻留在内存中
+> - D. 所有进程共享一张页表，只有页表中当前使用的页面必须驻留在内存中，以最大限度地节省有限的内存空间
+
 第 48 题错选为 C。每个进程都有自己的页表，并且页表需要驻留在内存中，否则这个程序就没法运行了。
 
 ![3.1.55](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5dq0yaPUeSkFgtxwGa2B0Q4QcJFZgACRhlrG-BrmFYTyMB0R53ApgEAAwIAA3gAAz0E)
+
+> 在某页式存储管理的系统中，主存容量为 1MB，被分成 256 个页框，页框号为 0, 1, 2, …, 255。某作业的地址空间占用 4 页，其页号为 0, 1, 2, 3，被分配到主存的第 2, 4, 1, 5 号页框中，则作业中的 2 号页在主存中的地址是（ ）。
+>
+> - A. 1
+> - B. 1024
+> - C. 2048
+> - D. 4096
+>
+> 下列关于分页和分段的描述中，正确的是（ ）。
+>
+> - A. 分段是信息的逻辑单位，段长由系统决定
+> - B. 引入分段的主要目的是实现离散分配并提高内存利用率
+> - C. 分页是信息的物理单位，页长由用户决定
+> - D. 页面在物理内存中只能从页面大小的整数倍地址开始存放
 
 第 55 题错选为 C。由题设可知，逻辑 2 号页对应主存 1 号页框，一个页框大小是 1MB/256=4096B，所以应该是 D。
 
@@ -2784,43 +7076,166 @@ Trap 是内中断。
 
 ![3.1.62](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5hq0yahRbqobHB1tPeNdK1sDvqKswACRxlrG-BrmFZ3YVb7ZPL9BAEAAwIAA3gAAz0E)
 
+> 【2010 统考真题】某计算机采用二级页表的分页存储管理方式，按字节编址，页大小为 2^10B，页表项大小为 2B，逻辑地址结构为
+>
+> - [图示] 逻辑地址结构为一个分三格的长方框，从左到右依次标注「页目录号」「页 号」「页内偏移量」
+>
+> 页目录号 | 页 号 | 页内偏移量
+>
+> 逻辑地址空间大小为 2^16 页，则表示整个逻辑地址空间的页目录表中包含表项的个数至少是（ ）。
+>
+> - A. 64
+> - B. 128
+> - C. 256
+> - D. 512
+>
+> 【2011 统考真题】在虚拟内存管理中，地址变换机构将逻辑地址变换为物理地址，形成该逻辑地址的阶段是（ ）。
+>
+> - A. 编辑
+> - B. 编译
+> - C. 链接
+> - D. 装载
+
 第 62 题错选为 A。页大小位 2048B，所以一个页可以装 1024/2=512 个页表项。由于逻辑地址空间大小是 2^16 页，所以需要 2^16 页/512=2=128 个页。
 
 第 63 题错选为 D。属于低级错误，没细看题目。读完题目可以发现这道题要的是逻辑地址，所以逻辑地址形成的时间是链接。
 
 ![3.1.66](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5lq0ya79v1KO5TIOlQ6_n7src2t3QACSRlrG-BrmFaxoXVpaFQgMQEAAwIAA3gAAz0E)
 
+> 【2017 统考真题】某计算机按字节编址，其动态分区内存管理采用最佳适应算法，每次分配和回收内存后都对空闲分区链重新排序。当前空闲分区信息如下表所示。
+>
+> - [图示] 表格两行「分区地址」「分区大小」，各有四列数值
+>
+> 分区地址  20K   500K   1000K  200K
+> 分区大小  40KB  80KB   100KB  200KB
+>
+> 回收始址为 60K、大小为 140KB 的分区后，系统中空闲分区的数量、空闲分区链第一个分区的始址和大小分别是（ ）。
+>
+> - A. 3, 20K, 380KB
+> - B. 3, 500K, 80KB
+> - C. 4, 20K, 180KB
+> - D. 4, 500K, 80KB
+
 本题错选为 A。进行最佳适应算法的时候需要重排！
 
 ![3.1.70](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5pq0ybVQ6lODhwLAAEfU7I_ofqS9T0AAkoZaxvga5hWkDXFWzLl_64BAAMCAAN4AAM9BA)
+
+> 【2021 统考真题】在采用二级页表的分页系统中，CPU 页表基址寄存器中的内容是（ ）。
+>
+> - A. 当前进程的一级页表的起始虚拟地址
+> - B. 当前进程的一级页表的起始物理地址
+> - C. 当前进程的二级页表的起始虚拟地址
+> - D. 当前进程的二级页表的起始物理地址
 
 本题错选为 A。本题应该结合大题强化去理解，很显然本题应该选 B。
 
 ![3.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5tq0ydJeh0a8hitc8oeSdmxys8roAACTBlrG-BrmFZdS6nvLbpUMwEAAwIAA20AAz0E)
 
+> 在页式虚拟存储管理中，程序的链接方式必然是（ ）。
+>
+> - A. 静态链接
+> - B. 装入时动态链接
+> - C. 运行时动态链接
+> - D. 不确定哪种链接方式
+
 本题错选为 B。可见上一节的运行时动态链接，运行时才进行链接。
 
 ![3.2.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB5xq0ydlq5e2BbxhhxMSkQABtJzEnksAAk0Zaxvga5hWHOMDivkHag8BAAMCAAN4AAM9BA)
+
+> 假设某个进程分配有 4 个页框，每个页框大小为 128 个字（一个整数占一个字），进程的代码段正好可以存放在一页中，而且总是占用 0 号页框。数据会在其他 3 个页框中换进或换出。数组 X 为按行优先存储，则执行该进程会发生（ ）次缺页中断。
+>
+> ```text
+> int X[64][64];
+> for(int j=0;j<64;j++)
+>     for(int i=0;i<64;i++)
+>         X[i][j]=0;
+> ```
+>
+> - A. 32
+> - B. 1024
+> - C. 2048
+> - D. 其他都不对
 
 本题不会做。事实上这道题也可以从大题的角度出发去理解，一个页框 128 个字，由于进程的代码段占有一个页，所以总共现在只有 3 个页。又因为一个整数占一个字，所以一个页框可以塞 128 个字，当第一次访问 `x[0][0]` 的时候，一次性调入 128 个字，也就是一次性塞 2 行到一个页框里。而由于是按列访问，所以读 `x[1][0]` 的时候不会缺页，而读下一个数的时候又缺页了。所以每 2 个数缺一次页，所以 64×64/2=2048。
 
 ![3.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB51q0yeYTMJxLnpkUnIZGJo6u2h_RAACTxlrG-BrmFYOITx0B8xxogEAAwIAA3gAAz0E)
 
+> 考虑页面置换算法，系统有 m 个物理块供调度，初始时全空，页面引用串长度为 p，包含了 n 个不同的页号，无论用什么算法，缺页次数不会少于（ ）。
+>
+> - A. m
+> - B. p
+> - C. n
+> - D. min(m, n)
+
 本题错选为 D。n 个不同的页号，那么意味着至少要缺页 n 次。
 
 ![3.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB55q0yevYEncXVJ-p_Yc1U3TNLFwRgACUBlrG-BrmFaCQnOPUPAAAdoBAAMCAAN4AAM9BA)
+
+> LRU 页面置换算法软件实现开销高的直接原因是（ ）。
+>
+> - A. 需要硬件的特殊支持
+> - B. 需要特殊的中断处理程序
+> - C. 需要在页表中标明特殊的页类型
+> - D. 需维护访问历史并遍历查找
 
 错选为 A。棍母题目，过。
 
 ![3.2.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB59q0yfFQTmbjOrVq5UVepbDJt3PsQACURlrG-BrmFZE9d_yihBgnwEAAwIAA20AAz0E)
 
+> 请求分页存储管理的主要特点是（ ）。
+>
+> - A. 消除了内部碎片
+> - B. 扩充了内存
+> - C. 便于动态链接
+> - D. 便于信息共享
+
 错选为 C。应该是 B。其他三个都是分段的优点。
 
 ![3.2.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Bq0yfmWkkkV6RkkvNO6RwPdGmSWgACUhlrG-BrmFZ5bKDqMzr8zAEAAwIAA20AAz0E)
 
+> 提供虚拟存储技术的存储管理方法有（ ）。
+>
+> - A. 动态分区存储管理
+> - B. 页式存储管理
+> - C. 请求段式存储管理
+> - D. 存储覆盖技术
+
 没做出来。虚拟存储技术意味着离散和多次，所以要“请求”开头的。
 
 ![3.2.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Fq0yf-3Lq48fplx-qlzODVuAlAcwACUxlrG-BrmFb9EUu_MiHWNAEAAwIAA3gAAz0E)
+
+> 下列说法中，正确的是（ ）。
+>
+> Ⅰ. 先进先出（FIFO）页面置换算法会产生 Belady 现象
+> Ⅱ. 最近最少使用（LRU）页面置换算法会产生 Belady 现象
+> Ⅲ. 在进程运行时，若其工作集页面都在虚拟存储器内，则能够使该进程有效地运行，否则会出现频繁的页面调入/调出现象
+> Ⅳ. 在进程运行时，若其工作集页面都在主存储器内，则能够使该进程有效地运行，否则会出现频繁的页面调入/调出现象
+>
+> - A. Ⅰ、Ⅲ
+> - B. Ⅰ、Ⅳ
+> - C. Ⅱ、Ⅲ
+> - D. Ⅱ、Ⅳ
+>
+> 测得某个采用按需调页策略的计算机系统的部分状态数据为：CPU 利用率为 20%，用于交换空间的磁盘利用率为 97.7%，其他设备的利用率为 5%。由此判断系统出现异常，这种情况下（ ）能提高系统性能。
+>
+> - A. 安装一个更快的硬盘
+> - B. 通过扩大硬盘容量增加交换空间
+> - C. 增加运行进程数
+> - D. 加内存条来增加物理空间容量
+>
+> 假定有一个请求分页存储管理系统，测得系统各相关设备的利用率为：CPU 的利用率为 10%，磁盘交换区的利用率为 99.7%，其他 I/O 设备的利用率为 5%。下面（ ）措施将显著地改进 CPU 的利用率。
+>
+> Ⅰ. 增大内存的容量
+> Ⅱ. 增大磁盘交换区的容量
+> Ⅲ. 减少多道程序的度数
+> Ⅳ. 增加多道程序的度数
+> Ⅴ. 使用更快速的磁盘交换区
+> Ⅵ. 使用更快速的 CPU
+>
+> - A. Ⅰ、Ⅱ、Ⅲ、Ⅳ
+> - B. Ⅰ、Ⅲ
+> - C. Ⅱ、Ⅲ、Ⅴ
+> - D. Ⅱ、Ⅵ
 
 第 39 题错选为 A。对于 1 和 2，FIFO 有可能出现增加页面还降低命中率。对于 3 和 4，显然工作集页面时在主存的，而虚拟存储器是存放它们的逻辑位的。且虚拟存储器对应的实际物理位置在磁盘。
 
@@ -2830,15 +7245,78 @@ Trap 是内中断。
 
 ![3.2.46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Jq0ygaMxqNGNv7-k8SsU9UqvG2dAACVBlrG-BrmFZZOLDkJX5kgwEAAwIAA3gAAz0E)
 
+> 【2013 统考真题】若用户进程访问内存时产生缺页，则在下列选项中，操作系统可能执行的操作是（ ）。
+>
+> Ⅰ. 处理越界错 / Ⅱ. 置换页 / Ⅲ. 分配内存
+>
+> - A. 仅Ⅰ、Ⅱ
+> - B. 仅Ⅱ、Ⅲ
+> - C. 仅Ⅰ、Ⅲ
+> - D. Ⅰ、Ⅱ和Ⅲ
+>
+> 【2014 统考真题】下列措施中，能加快虚实地址转换的是（ ）。
+>
+> Ⅰ. 增大快表（TLB）容量
+> Ⅱ. 让页表常驻内存
+> Ⅲ. 增大交换区（swap）
+>
+> - A. 仅Ⅰ
+> - B. 仅Ⅱ
+> - C. 仅Ⅰ、Ⅱ
+> - D. 仅Ⅱ、Ⅲ
+
 第 46 题错选为 D。考虑这样的情况，用户进程访问缺页，假设页表满了，此时需要置换页，把对应的页调入内存中，然后给它分配内存，然后重新回到这个程序的初始地址开始运行。由于上一轮触发了缺页异常，那肯定不是越界异常，因此不可能发成越界。
 
 第 47 题错选为 B。增大块表容量可以减少缺页异常的次数，所以可以增加虚实地址转换。页表常驻内存才可以快速访问，增大交换区只是增大交换页大小的容量，例如写脏位的容量，不会加快地址转换。
 
 ![3.2.55](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Nq0yg9KvCZSjXWF9i8-a6R2gGB3gACVRlrG-BrmFZhA_yhzLdTlQEAAwIAA3gAAz0E)
 
+> 【2021 统考真题】某请求分页存储系统的页大小为 4KB，按字节编址，系统给进程 P 分配 2 个固定的页框，并采用改进型 CLOCK 算法，进程 P 页表的部分内容见下表。
+>
+> | 页号 | 页框号 | 存在位 | 访问位 | 修改位 |
+> | | | 1：存在，0：不存在 | 1：访问，0：未访问 | 1：修改，0：未修改 |
+> | ... | ... | ... | ... | ... |
+> | 2 | 20H | 0 | 0 | 0 |
+> | 3 | 60H | 1 | 1 | 0 |
+> | 4 | 80H | 1 | 1 | 1 |
+> | ... | ... | ... | ... | ... |
+>
+> 若 P 访问虚拟地址为 02A01H 的存储单元，则经地址变换后得到的物理地址是（ ）。
+>
+> - A. 00A01H
+> - B. 20A01H
+> - C. 60A01H
+> - D. 80A01H
+
 错选为 B。首先注意到存在位是页框号 60H 和 80H 的存储起始地址（物理地址），由于 60H 物理地址访问位和修改为为 10，所以先被换出。由于系统采用的是固定页框，所以虚拟地址 02A01H 会被塞到页框号为 60H 的部分。
 
 ![3.2.59](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Rq0yhUUcf2g5JuK1DIYcdaGVeHXQACVhlrG-BrmFakY8sAAXpHlqoBAAMCAAN4AAM9BA)
+
+> 【2025 统考真题】某页式虚拟存储管理系统采用固定分配局部置换的 LRU 算法，若系统为进程 P 分配了 3 个页框，P 从某时刻开始的页访问序列为 0, 1, 2, 0, 5, 1, 4, 3, 0, 2, 3, 2, 0，且 0, 1, 2 三个页已在内存中，则完成上述页序列的访问时，系统执行缺页异常处理程序的次数为（ ）。
+>
+> - A. 5
+> - B. 6
+> - C. 7
+> - D. 8
+>
+> 【2025 统考真题】在页式虚拟存储管理系统中，确定进程正常运行所需的最少页框数时，下列因素中需要考虑的是（ ）。
+>
+> - A. 代码段长度
+> - B. 进程的虚拟地址空间大小
+> - C. 物理内存大小
+> - D. 指令系统支持的寻址方式
+>
+> 【2025 统考真题】下列关于内存映射文件（memory-mapped files）机制的叙述中，正确的是（ ）。
+>
+> Ⅰ. 可实现进程之间的通信
+> Ⅱ. 可实现页到磁盘块的映射
+> Ⅲ. 将文件映射到进程的虚拟地址空间
+> Ⅳ. 将文件映射到系统的物理地址空间
+>
+> - A. 仅Ⅰ、Ⅲ
+> - B. 仅Ⅰ、Ⅳ
+> - C. 仅Ⅱ、Ⅲ
+> - D. 仅Ⅰ、Ⅱ、Ⅲ
 
 第 59 题错了。
 
@@ -2853,6 +7331,13 @@ Trap 是内中断。
 
 ![4.2.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Vq0yjRHOSauCdaFSmwBZgiyFaTrQACWRlrG-BrmFYaIp7YpEd8qgEAAwIAA3gAAz0E)
 
+> FAT32 的文件目录项不包括（ ）。
+>
+> - A. 文件名
+> - B. 文件访问权限说明
+> - C. 文件控制块的物理位置
+> - D. 文件所在的物理位置
+
 错选为 A。
 
 捋一遍 FAT 文件系统的查表过程。假设有一个文件目录为/A/D，B/M，C，A 为目录项，B 为目录项，M 为目录项，D 和 C 都是文件。
@@ -2863,21 +7348,63 @@ Trap 是内中断。
 
 ![4.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6Zq0yj1mp4cPVt1E4_MnI9O__FZgAACWhlrG-BrmFbwnGx35LhAVwEAAwIAA3gAAz0E)
 
+> 下列选项中，（ ）不是为了提升文件系统性能的操作。
+>
+> - A. 目录项分解
+> - B. 文件高速缓存
+> - C. 磁盘调度算法
+> - D. 异步 I/O
+
 错选为 C。对于 A，目录项分解正式 FAT 到 UFS 的转变；对于 B，文件系统高速缓存，例如 open 文件后系统存在一个 open 表。如果其他软件也需要打开这个文件，就不需要重复 open 了；对于 C，读文件需要从磁盘调块进内存；对于 D，异步 I/O 是进程调度那块的东西，可以让 CPU 利用率提升。
 
 ![4.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6dq0ykIVkwdLSvySaECL0-J53OwwQACWxlrG-BrmFb-gis58dxQGAEAAwIAA3gAAz0E)
+
+> 在一个采用索引节点的文件系统中，目录项分为文件名和索引节点编号两部分，文件名和索引节点编号各占 8B，盘块大小为 1KB，采用一级目录，假定文件目录中有 3200 个目录项，则读入一个文件的索引节点平均需要（ ）次访问磁盘。
+>
+> - A. 25
+> - B. 26
+> - C. 51
+> - D. 52
 
 错选为 A。本题考查 UFS 系统。盘块大小为 1KB 意味着 1 个盘块可以存 1KB/16B=64 个目录项，也就是说存 3200 个目录项需要 3200/64=50 个磁盘块。为了找到这个目录项，需要平均花 50/2=25 次磁盘才能找到该文件的目录项，因为采用的是单级索引分配，所以需要再花 1 次找到具体的文件。
 
 ![4.2.19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6hq0ykayio6-g_DorDVqQXG0bfE0wACXBlrG-BrmFZeXuI54Ca9SgEAAwIAA3gAAz0E)
 
+> 在磁盘上，最容易导致存储碎片发生的物理文件结构是（ ）。
+>
+> - A. 隐式链接
+> - B. 顺序存放
+> - C. 索引存放
+> - D. 显式链接
+
 错选为 A。属于低级错误。这里一般指的应该是外部碎片，顺序存放会导致产生大量小块无法利用的块。
 
 ![4.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6lq0ykruAzaOSBIapa43VDwloUcQQACXRlrG-BrmFZzvvbTZLhIHQEAAwIAA3gAAz0E)
 
+> 文件系统为每个文件创建一张（ ），存放文件数据块的磁盘存放位置。
+>
+> - A. 打开文件表
+> - B. 位图
+> - C. 索引表
+> - D. 空闲盘块链表
+
 错选为 A。索引表，翻译一下就是 inode（索引节点）指向的表，存放文件的具体信息，这个信息是存放在磁盘的特定块的。对于 fat 系统而言，fat 系统是为全局创建一张 fat 表，本题其实考察的是 ufs 系统。对于 A，打开文件表是调用 open 后在内存记录的一张表，一旦所有文件都关了，那么这个记录就没了。而且存放的是一条记录，不是专门创建一张表。位图和空闲盘块链表是用来管理空闲块的。
 
 ![4.2.24](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6pq0ylDCJe_xTzPzi_8xj86TYAwKgACXhlrG-BrmFaAZUvCRRi1wQEAAwIAA3gAAz0E)
+
+> 某 500 个盘块的文件的目录项已调入内存（若为索引分配，其索引块也在内存中），若需要在文件中增加一块，下列分配方式中磁盘 I/O 次数最多的是（ ）。
+>
+> - A. 连续分配
+> - B. 隐式链接分配
+> - C. 显式链接分配
+> - D. 索引分配
+>
+> 设有一个记录文件，采用隐式链接分配方式，逻辑记录的固定长度为 100B，在磁盘上存储时采用记录成组分解技术，盘块长度为 512B，若该文件的目录项已经读入内存，则对第 22 个逻辑记录完成修改后，共启动了磁盘（ ）次。
+>
+> - A. 3
+> - B. 4
+> - C. 5
+> - D. 6
 
 第 24 题错选为 B。这道题的意思是说在最后一个块增加，而不是在中间增加。一个个个分析，对于 A，显然连续分配可以直接访问具体块，所以次数为 1。但是，如果存储空间不够了（因为要连续），此时需要把原来的给扬了，然后再次重新写入。也就是读 500 次，写 501 次；对于 B，隐式链接分配会记录 start 指针和 end 指针，所以只要在 end 指针处操作即可；对于 C 和 D，可以很方便的修改指针进行访问。
 
@@ -2885,9 +7412,37 @@ Trap 是内中断。
 
 ![4.2.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6tq0ylqq7V9dREtAAFPG_phr5QoaEoAAl8Zaxvga5hWaGshCT1JfmcBAAMCAAN4AAM9BA)
 
+> 某文件系统采用显示链接分配方式组织文件，磁盘块大小为 4KB，一个簇包含两个磁盘块，操作系统以簇为单位进行盘块分配，已知系统支持的最大文件长度为 512MB，若 FAT 的每个表项仅存放簇号，则 FAT 表占用的空间大约是（ ）。
+>
+> - A. 64KB
+> - B. 128KB
+> - C. 512KB
+> - D. 1024KB
+
 错选为 A。系统支持的最大文件长度为 512MB，磁盘块大小为 4KB，一个簇包含两个磁盘块。FAT 表按照题目要求只存放簇号。由于操作系统按照簇为大小进行盘块分配，一个簇大小为 8KB。由于 FAT 表是本质是静态链表，一开始就分配了，长度大小是一个最大的文件长度（这句话不准确，应该是系统支持的最大文件长度=整个磁盘的最大可寻址容量），所以 512MB/4KB=2^17 个磁盘块，也就是 2^16 个簇/记录。记录这么多簇需要 16b，也就是 2B 的空间，所以 2^16×2B=2^17B，也就是 128KB。
 
 ![4.2.32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB6xq0ynP0qcbMyS3fZdm66EgoZa1oQACZhlrG-BrmFZtz9xWMHtP-AEAAwIAA3gAAz0E)
+
+> 某文件系统使用类似于 Linux 的 inode 存储结构，文件块和磁盘块的大小都是 4KB，磁盘地址是 32 位，现在一个文件包含 10 个直接指针和 1 个一级间接指针，则这个文件所占用的磁盘块数量最多是（ ）块（不考虑索引块）。
+>
+> - A. 128
+> - B. 512
+> - C. 1024
+> - D. 1034
+>
+> 文件系统采用两级索引分配方式，若每个磁盘块的大小为 1KB，每个盘块号占 4B，则该系统中单个文件的最大长度是（ ）。
+>
+> - A. 64MB
+> - B. 128MB
+> - C. 32MB
+> - D. 以上都错误
+>
+> 某文件系统的物理结构采用三级索引分配方式，每个磁盘块的大小为 1024B，每个盘块索引号占用 4B，则该文件系统支持的最大文件的尺寸接近（ ）。
+>
+> - A. 8GB
+> - B. 16GB
+> - C. 32GB
+> - D. 2TB
 
 这三题都没做，一题题来看。
 
@@ -2899,17 +7454,50 @@ Trap 是内中断。
 
 ![4.2.37](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB61q0ynpaJOANqWqt5A1oZ5Bz1KSpQACZxlrG-BrmFaC4Mh-KaTYUQEAAwIAA20AAz0E)
 
+> 打开文件操作的主要工作是（ ）。
+>
+> - A. 把指定文件的目录项复制到内存指定的区域
+> - B. 把指定文件复制到内存指定的区域
+> - C. 在指定文件所在的存储介质上找到指定文件的目录项
+> - D. 在内存寻找指定的文件
+
 错选为 C。文件打开的操作做的事情是找到文件的目录项然后将之复制到打开文件表。而将指定文件复制到内存指定区域是 read 做的事情。没打开那么如何在内存里找。C 选项不全。
 
 ![4.2.39](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB65q0yoFBemRmchzLnxw6yP1QM-XvAACaBlrG-BrmFbZkFU8cgNfmAEAAwIAA3gAAz0E)
+
+> 关闭文件操作的主要工作是（ ）。
+>
+> - A. 将文件的最新信息从内存写回磁盘
+> - B. 将文件当前的控制信息从内存写回磁盘
+> - C. 将位示图从内存写回磁盘
+> - D. 将超级块当前的信息从内存写回磁盘
 
 错选为 A。本体应该选 B，这道题可以理解为 close 文件和 write 文件是两码事，和上一题 open 与 read 也是两码事一样。Close 文件之后操作系统可以自己慢慢再写。对于超级块，超级快的信息是比较宏观的信息，例如总共有多少个数据块，有多少个 inode，有多少个空闲块，第一个 inode 从几号盘块算起等信息。而对于关闭文件，只会影响自己的 FCB，所以不需要修改超级块信息，即便是导致块变少了也不会去写回磁盘。只有一些操作：卸载操作系统，弹出 U 盘等信息才会写回磁盘。
 
 ![4.2.41](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB69q0yoXYZ8MsKF1-5ZGurG1OfsyBgACaRlrG-BrmFYH_UIpfoxelQEAAwIAA3gAAz0E)
 
+> 下列关于文件与文件系统的说法中，错误的是（ ）。
+>
+> Ⅰ. 一个文件在同一系统中、不同的存储介质上的复制文件，应采用同一种物理结构
+> Ⅱ. 对一个文件的访问，常由用户访问权限和用户优先级共同限制
+> Ⅲ. 文件系统采用树形目录结构后，对于不同用户的文件，其文件名应该不同
+> Ⅳ. 为防止系统故障造成系统内文件受损，常采用存取控制矩阵方法保护文件
+>
+> - A. Ⅱ
+> - B. Ⅰ、Ⅲ
+> - C. Ⅰ、Ⅲ、Ⅳ
+> - D. 全选
+
 本题错选为 C。对于 1，考虑这样一个场景，从固态硬盘复制数据到磁盘；对于 2，用户优先级是进程调度需要考虑的事情，对于文件的访问，由用户访问权限和文件属性组成（例如只读）；对于 3，显然错误；对于 4，存取控制矩阵方法是用来保护密码的，对于系统故障等应该采用 RAID 磁阵列矩阵。
 
 ![4.2.43](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Bq0yomZVSTxU6Ohphjo0lOj54mxwACahlrG-BrmFZQLP9mnIFa8gEAAwIAA3gAAz0E)
+
+> 设文件 F1 的当前引用计数为 1，先建立 F1 的硬链接文件 F2，再建立 F1 的符号链接文件 F3，然后删除 F2，则此时文件 F1、F3 的引用计数值分别是（ ）。
+>
+> - A. 1、1
+> - B. 1、2
+> - C. 1、0
+> - D. 2、2
 
 错选为 B。F1 的硬链接 F2 建立出去，那么 F1 的引用计数是 2，F2 的也是 2，建立 F1 的符号连接，可以得到 F1 的引用计数是 2，F2 的是 2，F3 的是 1，删除 F2，那么 F1-1，F2 直接消失，F3 不变，所以就是 1。
 
@@ -2919,27 +7507,76 @@ Trap 是内中断。
 
 ![4.2.47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Fq0ypHmeKQVU1AtMM6Un2sCGbb5AACbRlrG-BrmFa_b0Yz3cB_ggEAAwIAA3gAAz0E)
 
+> 对一个文件的访问，常由（ ）共同限制。
+>
+> - A. 用户访问权限和文件属性
+> - B. 用户访问权限和用户优先级
+> - C. 优先级和文件属性
+> - D. 文件属性和口令
+>
+> 为了对文件系统中的文件进行安全管理，任何一个用户在进入系统时都必须进行注册，这一级安全管理是（ ）。
+>
+> - A. 系统级
+> - B. 目录级
+> - C. 用户级
+> - D. 文件级
+
 第 47 题错选为 B。
 
 第 48 题错选为 C。进入系统时需要进行注册，此时还没有进入系统，所以应该是系统级。
 
 ![4.2.53](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Jq0ypg7rCb-oZHvY9CjHNbHpjZFAACbhlrG-BrmFa9nyheAAHaQdQBAAMCAAN4AAM9BA)
 
+> 【2010 统考真题】设文件索引节点中有 7 个地址项，其中 4 个地址项是直接地址索引，2 个地址项是一级间接地址索引，1 个地址项是二级间接地址索引，每个地址项大小为 4B，若磁盘索引块和磁盘数据块大小均为 256B，则可表示的单个文件最大长度是（ ）。
+>
+> - A. 33KB
+> - B. 519KB
+> - C. 1057KB
+> - D. 16516KB
+
 错选为 D，属于低级错误。256B/4B=64，可知一块磁盘块可以存 64 个项，所以 4+2×64+64×64。
 
 ![4.2.56](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Nq0yp1w8xaZaCtu9LjUlc7aCDovQACcBlrG-BrmFbL5ApXEWUa2gEAAwIAA3gAAz0E)
+
+> 【2013 统考真题】若某文件系统索引结点（inode）中有直接地址项和间接地址项，则下列选项中，与单个文件长度无关的因素是（ ）。
+>
+> - A. 索引结点的总数
+> - B. 间接地址索引的级数
+> - C. 地址项的个数
+> - D. 文件块大小
 
 错选为 C。对于 A，索引结点总数也就是 inode 的总数，每 1 个 inode 都对应着一个文件，所以其和单文件无关；对于 B，简介索引级数越高，那么可以索引的范围就越大；对于 C，地址项个数意味着对于一个文件，需要有多少个地址信息才可以找得到，地址项越多，磁盘块也就越多；对于 D，文件块越大，意味着可以存储更多的信息。
 
 ![4.2.59](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Rq0yqL5nVOMKlU5dO388iUOEZ8IQACcRlrG-BrmFZljYjGpj1vfAEAAwIAA3gAAz0E)
 
+> 【2015 统考真题】在文件的索引结点中存放直接索引指针 10 个，一级和二级索引指针各 1 个，磁盘块大小为 1KB，每个索引指针占 4B，若某文件的索引结点已在内存中，则把该文件偏移量（按字节编址）为 1234 和 307400 处所在的磁盘块读入内存，需要访问的磁盘块个数分别是（ ）。
+>
+> - A. 1，2
+> - B. 1，3
+> - C. 2，3
+> - D. 2，4
+
 错选为内 C。由题设可知，某文件索引节点已经在内存，所以读这个结点不需要花次数。10+1024+1024×1024，然这是经典的错误标准的零分。因为磁盘块大小占 1KB，所以一个磁盘块最多有 1KB/4B=256 块，也就是 10+256+256×256。对于 1234，显然是 1 级索引，所以先根据 inode 找到 1 级索引信息，再将之读入内存，花费 2 次。显然这是经典的错误标准的零分，因为题目给的是文件偏移量。所以 1234/1024=1，所以在第 2 个磁盘（其实是 1234/256=4，也就是 5），所以已经找到索引信息，读入 1 次即可；对于 307400/256=1200，所以是 1201，显然是 2 级索引，所以现根据 inode 找到 1 级索引信息，然后再找到 2 级索引信息，最后再将这个 2 级索引信息读入内存，花费 3 次。
 
 ![4.2.63](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Vq0yqlUNDTTcW-IV2WTHnAHFBPGwACchlrG-BrmFYAASAp_2Y1xrsBAAMCAAN4AAM9BA)
 
+> 【2020 统考真题】某文件系统的目录项由文件名和索引结点号构成。若每个目录项长度为 64 字节，其中 4 字节存放索引结点号，60 字节存放文件名。文件名由小写英文字母构成，则该文件系统能创建的文件数量的上限为（ ）。
+>
+> - A. 2^26
+> - B. 2^32
+> - C. 2^60
+> - D. 2^64
+
 不知道选什么。由于每个目录项长度是 64 字节，4 字节存放索引号，所以 4B=32bit，也就是最多表示 2^32 个文件数。由于 60 字节存放文件名，一个 ASCLL 码是 1B 存储，应该是 26^60。显然，前者先耗尽。
 
 ![4.2.64](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7Zq0yq27bMp7H9hWgG30mL8Il6iAgACcxlrG-BrmFZfeT2KphVHvgEAAwIAA3gAAz0E)
+
+> 【2020 统考真题】若多个进程共享同一个文件 F，则下列叙述中，正确的是（ ）。
+>
+> - A. 各进程只能用“读”方式打开文件 F
+> - B. 在系统打开文件表中仅有一个表项包含 F 的属性
+> - C. 各进程的用户打开文件表中关于 F 的表项内容相同
+> - D. 进程关闭 F 时，系统删除 F 在系统打开文件表中的表项
 
 错选为 D。对于 A，显然不是，考虑这样一个场景，同时用 edge 和 wps 打开 pdf 文件，也可以考虑读者写者问题；对于 B，在系统打开文件表中，仅有 1 个；对于 C，各进程内部关于 F 的打开表项肯定不一样；对于 D，假设采用的是硬链接，则一个进程 close，F-1，如果为 0 的时候才删除在系统打开文件表的表项。
 
@@ -2947,11 +7584,39 @@ Trap 是内中断。
 
 ![4.2.69](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7dq0yrLgPd0B8SgBFNjwOCWp5PYtAACdBlrG-BrmFbwQFiyTDw0oAEAAwIAA3gAAz0E)
 
+> 【2025 统考真题】在下列选项中，文件系统可用于记录外存空间使用情况的是（ ）。
+>
+> - A. 目录
+> - B. 系统打开文件表
+> - C. 文件分配表（FAT）
+> - D. 文件控制块（FCB）
+>
+> 【2025 统考真题】某文件系统采用目录和索引结点管理文件，当用户在目录中新建文件 F 时，在下列操作中，文件系统不会做的是（ ）。
+>
+> - A. 对 F 的索引结点进行初始化
+> - B. 在目录文件中写入 F 的索引结点号
+> - C. 在目录文件中写入 F 的访问权限信息
+> - D. 在目录文件中增加一条 F 对应的目录项
+
 第 69 题（其实是对的）。对于 A，目录指的是一个比较泛的概念，可以理解为目录项，目录项指的是具体信息，指的是某一个文件的具体信息；对于 B，系统的打开文件表可以记录此时系统的全局文件的使用状况；对于 C，FAT 本身是一个静态的链表，其本身是预分配的，所以可以看得出来还剩多少外存；对于 D，FCB 指的是具体的文件含有的信息。
 
 第 70 题错选为 D。用户在目录中新建文件 F，根据选项可以知道本题采用的是 UFS 系统。首先需要分配并且初始化 F 的索引节点，也就是找一个空闲的 inode 号，然后初始化（对应 A），接下来在父目录 C 中增加一条目录项，也就是在 C 的数据区末尾新增一条目录项，这条目录项只有两个内容，也就是文件名 F 和 F 对应的 inode 号（对应 B 和 D）。而对于 C 是 FAT 系统做的事情。
 
 ![4.3.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7hq0yrjsZ16Q9aSBIKoVPiVtuZxVwACdRlrG-BrmFbTjy-cQKeUHgEAAwIAA3gAAz0E)
+
+> UNIX 操作系统中，文件的索引结构放在（ ）。
+>
+> - A. 超级块
+> - B. 索引结点
+> - C. 目录项
+> - D. 空闲块
+>
+> 文件的存储空间管理实质上是对（ ）的组织和管理。
+>
+> - A. 文件目录
+> - B. 外存已占用区域
+> - C. 外存空闲区
+> - D. 文件控制块
 
 第 4 题错选为 A。UNIX 采用 UFS 系统，超级块位于最开始的部分，而文件的索引结构是放在索引节点里的，目录项对于 UFS 而言是具体的文件信息。
 
@@ -2959,15 +7624,43 @@ Trap 是内中断。
 
 ![4.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7lq0ysMVrRl1CKI5KmzO6mH3LJpFQACdhlrG-BrmFYHaQwskVyCGwEAAwIAA3gAAz0E)
 
+> 下列各种文件存储空间的管理方法中，（ ）需要使用空闲盘块号栈。
+>
+> - A. 空闲表法
+> - B. 空闲链表法
+> - C. 位示图法
+> - D. 成组链接法
+>
+> 硬盘的主引导扇区（ ）。
+>
+> - A. 包含引导记录
+> - B. 包含分区表和主引导程序
+> - C. 只包含主引导程序
+> - D. 只包含分区表
+
 第 8 题错选为 D。什么是空闲盘块号栈，也就是需要额外的信息去记录空闲块。对于 A，显然需要，通常采用首次适应算法和最佳适应算法，可以和内存分配的那部分联系起来。
 
 第 9 题错选为 C。背书。
 
 ![4.3.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7pq0yse3MHfCuGVkZcJmww0dzqmYwACdxlrG-BrmFaZtsCqI1IcjQEAAwIAA3gAAz0E)
 
+> 下列选项中，（ ）不是 Linux 实现虚拟文件系统 VFS 所定义的对象类型。
+>
+> - A. 超级块（superblock）对象
+> - B. 目录项（inode）对象
+> - C. 文件（file）对象
+> - D. 数据（data）对象
+
 错选为 C。背书。
 
 ![4.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7tq0ysuZx7zUnZ5kJ5EHaXVENqKcAACeBlrG-BrmFZ2kAo9fsftfQEAAwIAA3gAAz0E)
+
+> 【2015 统考真题】文件系统用位图法表示磁盘空间的分配情况，位图存于磁盘的 32～127 号块中，每个盘块占 1024B，盘块和块内字节均从 0 开始编号。假设要释放的盘块号为 409612，则位图中要修改的位所在的盘块号和块内字节序号分别是（ ）。
+>
+> - A. 81，1
+> - B. 81，2
+> - C. 82，1
+> - D. 82，2
 
 错选为 D。本题为低级错误，事实上，这道题需要注意盘块和块内都是 0 来计算。
 
@@ -2975,11 +7668,46 @@ Trap 是内中断。
 
 ![5.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB7xq0ytav5FhhKxyoWPdpkNwsnTREAACeRlrG-BrmFYegN2d6KxGcAEAAwIAA3gAAz0E)
 
+> 下列关于设备属性的叙述中，正确的是（ ）。
+>
+> - A. 字符设备的基本特征是可寻址到字节，即能指定读/写操作的字节地址
+> - B. 共享设备必须是可寻址的和可随机访问的设备
+> - C. 共享设备是指同一时刻内允许多个进程同时访问的设备
+> - D. 在分配共享设备和独占设备时都可能引起进程死锁
+>
+> 下列关于虚拟设备的含义的描述中，正确的是（ ）。
+>
+> - A. 允许用户使用比系统中具有的物理设备更多的设备
+> - B. 允许用户以标准化方式来使用物理设备
+> - C. 把一个物理设备变换成多个对应的逻辑设备
+> - D. 允许用户程序不必全部装入主存便可使用系统中的设备
+
 第 1 题错选为 C。对于 A，可寻址到字节，指定读/写操作的字节地址的应该是 DMA 方式，DMA 控制器与 CPU 协商好内存地址后，DMA 搬运。前面的解释有误区，事实上，这是块设备和字符设备的区别，也就是说，块设备需要一个自一个字地按照设备按照顺序流过来，不可能跟字符设备说读取第 50 个字节地数据；对于 B，共享设备必须是可寻址和随机访问的设备，这句话是正确。考虑这样一种情况，所有人都在使用一个硬盘，A 进程可以访问 m 地址，B 进程可以访问 n 地址，二者不冲突，但是对于磁带而言，A 进程访问了 m 地址，而 B 进程却只能继续顺序访问，无法共享；对于 C，共享设备指的是同一个时间范围内允许多个进程同时访问的设备，这里需要注意的是一个时间范围，而不是同一个时刻；在分配共享设备的时候不会引发死锁，因为其他设备也可以访问。
 
 第 2 题错选为 A。对于 A，即使是设备虚拟化，但是本质上的设备也只有一个。例如多个进程想使用打印机，而打印机只有一个，所以采用 SPOOLing 技术将打印机逻辑抽象出来，可以被多个进程先分配（这里是分配），所以这里的意思是线性等待，使用比物理设备更多的设备指的是你可以在同一个时刻对于 1 个物理打印机使用 2 个逻辑打印机，显然这是错误的；对于 B，这是设备独立性需要做的事情，也就是无论采用什么品牌的打印机，在写代码的时候都是只用同一个标准化方式；对于 C，即假脱机技术；对于 D，这是虚拟内存。
 
 ![5.1.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB71q0yt1f5wGYIy_V3TLw24B8C-vGgACehlrG-BrmFbw_Ye36YHPdwEAAwIAA3gAAz0E)
+
+> 为了便于上层软件的编制，设备控制器通常需要提供（ ）。
+>
+> - A. 控制寄存器、状态寄存器和控制命令
+> - B. I/O 地址寄存器、工作方式状态寄存器和控制命令
+> - C. 中断寄存器、控制寄存器和控制命令
+> - D. 控制寄存器、编程空间和控制逻辑寄存器
+>
+> 在设备控制器中用于实现设备控制功能的是（ ）。
+>
+> - A. CPU
+> - B. 设备控制器与处理器的接口
+> - C. I/O 逻辑
+> - D. 设备控制器与设备的接口
+>
+> DMA 方式是在（ ）之间建立一条直接数据通路。
+>
+> - A. I/O 设备和主存
+> - B. 两个 I/O 设备
+> - C. I/O 设备和 CPU
+> - D. CPU 和主存
 
 第 4 题错选为 C。设备控制器=I/O 接口，I/O 有 I/O 端口，I/O 端口本质就是寄存器，其有状态寄存器（也就是标志寄存器），数据寄存器，控制寄存器。对于中断是 CPU 要实现的功能，所以不需要。
 
@@ -2988,6 +7716,48 @@ Trap 是内中断。
 第 6 题错选为 C。属于低级错误，DMA 方式是直接把设备的数据放入主存，由此可以半段出答案。
 
 ![5.1.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB75q0ywFIHrWOBQ2yYCxTZbLCDyvQQACexlrG-BrmFZAA_pfF7kMzgEAAwIAA3gAAz0E)
+
+> 若 I/O 设备与存储设备进行数据交换不经过 CPU 来完成，则这种数据交换方式是（ ）。
+>
+> - A. 程序查询
+> - B. 中断方式
+> - C. DMA 方式
+> - D. 直接存取方式
+>
+> 下列关于 DMA 方式的描述中，正确的是（ ）。
+>
+> - A. DMA 是一个专门负责输入/输出的处理机
+> - B. 数据传输过程由 DMA 控制器负责，CPU 只在预处理和后处理阶段进行干预
+> - C. CPU 通过程序的方式给出 DMA 可以解释的程序
+> - D. DMA 不需要 CPU 指出所取数据的地址与长度
+>
+> 计算机系统中，不属于 DMA 控制器的是（ ）。
+>
+> - A. 命令/状态寄存器
+> - B. 内存地址寄存器
+> - C. 数据寄存器
+> - D. 堆栈指针寄存器
+>
+> DMA 传输前需要进行预处理，传输后需要进行后处理，则下列说法中正确的是（ ）。
+>
+> - A. 预处理程序运行在用户态，后处理程序运行在内核态
+> - B. 负责预处理和后处理程序的进程都是请求 I/O 的进程
+> - C. 预处理阶段不需要 CPU 参与，后处理阶段需要 CPU 参与
+> - D. 预处理阶段请求 I/O 的进程处于运行态，后处理阶段处于阻塞态
+>
+> 在下列问题中，（ ）不是设备分配中应考虑的问题。
+>
+> - A. 及时性
+> - B. 设备的固有属性
+> - C. 设备独立性
+> - D. 安全性
+>
+> 将系统中的每台设备按某种原则统一进行编号，这些编号作为区分硬件和识别设备的代号，该编号称为设备的（ ）。
+>
+> - A. 绝对号
+> - B. 相对号
+> - C. 类型号
+> - D. 符号
 
 第 8 题错选为 D。直接存取方式是存储设备找数据块的方式之一，常用于磁盘，其他两种分别是顺序存取和随机存取。
 
@@ -3004,6 +7774,27 @@ Trap 是内中断。
 
 ![5.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB79q0ywrRlSha7b2GMemimwAAeyMiswAAnwZaxvga5hWlRs9xFvdJ0wBAAMCAAN4AAM9BA)
 
+> 将系统调用参数翻译成设备操作命令的工作由（ ）完成。
+>
+> - A. 用户层 I/O
+> - B. 设备无关的操作系统软件
+> - C. 中断处理
+> - D. 设备驱动程序
+>
+> 向设备寄存器的写命令是在 I/O 软件的（ ）中完成的。
+>
+> - A. 用户层软件
+> - B. 设备独立性软件
+> - C. 设备驱动程序
+> - D. 中断处理程序
+>
+> 一个典型的文本打印页面有 50 行，每行 80 个字符，假定一台标准的打印机每分钟能打印 6 页，向打印机的输出寄存器中写一个字符的时间很短，可忽略不计。若每打印一个字符都需要花费 50μs 的中断处理时间（包括所有服务），则使用中断驱动 I/O 方式运行这台打印机，中断的系统开销占 CPU 的百分比为（ ）。
+>
+> - A. 2%
+> - B. 5%
+> - C. 20%
+> - D. 50%
+
 第 16 题错选为 D。首先梳理一下 IO 设备的五层架构：用户 IO-设备独立性软件 - 设备驱动 - 中断 - 硬件。设备操作命令是什么，也就是用户向设备发送 IO，然后应该是由设备独立性软件找到正确的设备，然后翻译为设备操作命令，而设备操作命令是由设备驱动程序翻译为硬件看得懂的指令。
 
 第 17 题错选为 D，分析见第 16 题。
@@ -3012,23 +7803,70 @@ Trap 是内中断。
 
 ![5.1.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Bq0yxI0iTr9gMRHjfKMNnJ6kKtHwACfRlrG-BrmFZNDio2JrXodwEAAwIAA3gAAz0E)
 
+> 【2010 统考真题】本地用户通过键盘登录系统时，首先获得键盘输入信息的程序是（ ）。
+>
+> - A. 命令解释程序
+> - B. 中断处理程序
+> - C. 系统调用服务程序
+> - D. 用户登录程序
+
 第 23 题错选为 D。分析信息的流动，考虑程序中断方式来获取键盘信息。程序执行到 scanf 指令，此时进程调用 trap 指令，由操作系统将进程从运行态变为阻塞态，等待键盘输入信息。用户输入字符后，启动中断处理程序，将键盘控制器读入到系统缓冲区，然后将进程插入到就绪队列，最后等待处理机调度上 CPU 后，scanf 才算结束。
 
 根据本题的经验可知，对于每一道真题，需要捋清楚背后的逻辑，这题在 2023 年的大题考察。
 
 ![5.1.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Fq0yxe5Y44JSC_s2QbRx_xOyhhGQACfhlrG-BrmFYK9Z_HHvCNlgEAAwIAA3gAAz0E)
 
+> 【2017 统考真题】系统将数据从磁盘读到内存的过程包括以下操作：
+> ① DMA 控制器发出中断请求
+> ② 初始化 DMA 控制器并启动磁盘
+> ③ 从磁盘传输一块数据到内存缓冲区
+> ④ 执行“DMA 结束”中断服务程序
+> 正确的执行顺序是（ ）。
+>
+> - A. ③→①→②→④
+> - B. ②→③→①→④
+> - C. ②→①→③→④
+> - D. ①→②→④→③
+
 错选为 C。分析信息的流动 CPU 向 DMA 控制器发送需求，初始化 DMA 并且启动磁盘，DMA 控制器按照一个字一个字传输一块数据到内存缓冲器（这个过程是 DMA 请求），接着 DMA 控制器发送中断请求，CPU 后处理执行 DMA 结束。
 
 ![5.2.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Jq0yx3Qpdd0ssGjneL72WCyI5YIgACfxlrG-BrmFa57BgMK-_JzQEAAwIAA3gAAz0E)
+
+> 支持双向传送的设备应使用（ ）。
+>
+> - A. 单缓冲区
+> - B. 双缓冲区
+> - C. 多缓冲区
+> - D. 缓冲池
 
 错选为 D。这道题其实出的不算严谨？很多时候 CD 是不必要的，所以是 B。
 
 ![5.2.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Nq0yzRhGtKG7U8qtGpDlEyF9msQgACgRlrG-BrmFbm9PhbAZ-93AEAAwIAA3gAAz0E)
 
+> 使用单缓冲或双缓冲进行通信时，（ ）可以实现数据的双向并行传输。
+>
+> - A. 只有单缓冲
+> - B. 只有双缓冲
+> - C. 都
+> - D. 都不
+
 错选为 D。理解错误，绘制图片，本题的意思不是说两个设备同时向这个缓冲区写数据，而是针对一个缓冲区，A 设备可以向里写数据的通过是，B 设备可以从这里面拿数据。
 
 ![5.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Rq0yzp3o-aLVIBk8y7IToetVY4FAACghlrG-BrmFZyrVf52qe4-AEAAwIAA3gAAz0E)
+
+> 下列（ ）不是设备的分配方式。
+>
+> - A. 独占分配
+> - B. 共享分配
+> - C. 虚拟分配
+> - D. 分区分配
+>
+> 设备分配程序需要访问一系列的数据结构来给进程分配设备，这些数据结构有：设备控制表（DCT）、控制器控制表（COCT）、通道控制表（CHCT）、系统设备表（SDT）。在设备分配的过程中，访问这些数据结构的正确顺序是（ ）。
+>
+> - A. SDT, DCT, COCT, CHCT
+> - B. DCT, COCT, CHCT, SDT
+> - C. SDT, COCT, CHCT, DCT
+> - D. COCT, CHCT, SDT, DCT
 
 第 15 题不知道选什么。分区分配是内存分配的概念。
 
@@ -3036,17 +7874,47 @@ Trap 是内中断。
 
 ![5.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Vq0y0BKwvCHEIr0Ts7I-QgZSUTawACgxlrG-BrmFYyLayfxhe9EgEAAwIAA20AAz0E)
 
+> 下面关于 SPOOLing 的叙述中，不正确的是（ ）。
+>
+> - A. SPOOLing 系统中不需要独占设备
+> - B. SPOOLing 系统加快了作业执行的速度
+> - C. SPOOLing 系统使独占设备变成共享设备
+> - D. SPOOLing 系统提高了独占设备的利用率
+
 本题错选为 B。事实上，至少需要 1 台设备，不然再怎么逻辑化没有设备怎么分配？对于 B，SPOOLing 技术使作业不需要去等待，可以执行其他任务。
 
 ![5.2.30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8Zq0y02_4b0ifJ6t8KEyu1LhIPdtQAChBlrG-BrmFbWHZWi7tGKIQEAAwIAA3gAAz0E)
+
+> 当用户要求使用打印机打印某文件时，用户的要求是由操作系统的（ ）实现的。
+>
+> - A. 文件系统
+> - B. 设备管理程序
+> - C. 文件系统和设备管理程序
+> - D. 打印机启动程序和设备管理程序
 
 错选为 B。低级错误，没看完题目。
 
 ![5.2.34](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8dq0y1KYE5gx9KXN6DBnFMtiyMsyAAChRlrG-BrmFbYqIfW0dazNwEAAwIAA3gAAz0E)
 
+> 对设备驱动程序的处理过程进行排序，正确的处理顺序是（ ）。
+> ①对服务请求进行校验    ②传送必要的参数    ③启动 I/O 设备
+> ④将抽象要求转化为具体要求    ⑤检查设备的状态
+>
+> - A. ①④⑤②③
+> - B. ④①⑤②③
+> - C. ①④②⑤③
+> - D. ④①②⑤③
+
 错选为 A。注意这道题是驱动程序，驱动程序的任务是将对该设备的命令翻译为底层硬件调用，所以首先是要转换；而校验的意思是不是对这个请求校验，而是对操作对象进行校验，例如对想要向磁盘的第 4 道第 1 盘第 3 扇区写入数据，得去校验这个数据是否超了（可以理解为页表）
 
 ![5.2.46](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8hq0y1g_g_MBWaIN1X0PEOw5yLo1wAChhlrG-BrmFaeypEj141YOgEAAwIAA3gAAz0E)
+
+> 【2024 统考真题】当键盘中断服务例程执行结束时，所输入数据的存放位置是（ ）。
+>
+> - A. 用户缓冲区
+> - B. CPU 中的通用寄存器
+> - C. 内核缓冲区
+> - D. 键盘控制器的数据寄存器
 
 错选为 A。将上一节复制粘贴过来：分析信息的流动，考虑程序中断方式来获取键盘信息。程序执行到 scanf 指令，此时进程调用 trap 指令，由操作系统将进程从运行态变为阻塞态，等待键盘输入信息。用户输入字符后，启动中断处理程序，将键盘控制器读入到系统缓冲区，终端结束，然后将进程插入到就绪队列，最后等待处理机调度上 CPU 后，系统调用从内核拷贝数据，scanf 拿到数据，然后 scanf 才算结束。
 
@@ -3054,9 +7922,24 @@ Trap 是内中断。
 
 ![5.3.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8lq0y17BWxVGirPzROjUtTFrGxDEAAChxlrG-BrmFa3GOqpfJTgewEAAwIAA3gAAz0E)
 
+> 既可以顺序读/写，又可以按任意次序读/写的存储器有（ ）。
+> Ⅰ. 光盘    Ⅱ. 磁带    Ⅲ. U 盘    Ⅳ. 磁盘
+>
+> - A. Ⅱ、Ⅲ、Ⅳ
+> - B. Ⅰ、Ⅲ、Ⅳ
+> - C. Ⅲ、Ⅳ
+> - D. 仅Ⅳ
+
 错选为 C。光盘可以任意读，例如找第 x 集。
 
 ![5.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8pq0y2iH8tzVJf8iUPZ11k96djj9QACiBlrG-BrmFZj-3VsWI5c5gEAAwIAA3gAAz0E)
+
+> 硬盘的操作系统引导扇区产生在（ ）。
+>
+> - A. 对硬盘进行分区时
+> - B. 对硬盘进行低级格式化时
+> - C. 硬盘出厂时自带
+> - D. 对硬盘进行高级格式化时
 
 错选为 B。本题时背书，梳理一下硬盘的格式化：
 
@@ -3064,27 +7947,87 @@ Trap 是内中断。
 
 ![5.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8tq0y3M_3GR8ppuf45gv6w7f1s6JQACiRlrG-BrmFb3nWFG6toZ1gEAAwIAA20AAz0E)
 
+> 在下列有关旋转延迟的叙述中，不正确的是（ ）。
+>
+> - A. 旋转延迟的大小与磁盘调度算法无关
+> - B. 旋转延迟的大小取决于磁盘空闲空间的分配程序
+> - C. 旋转延迟的大小与文件的物理结构有关
+> - D. 扇区数据的处理时间对旋转延迟的影响较大
+
 本题错选为 B。对于 A，肯定是无关的，无论采用哪种调度算法，调度算法都不会影响到旋转，只会影响到寻道；对于 BC，如果采用的是连续分配，那么延迟会很小，那么如果采用的是隐式链接分配，那么影响就非常大了；对于 D，扇区的处理时间并不会影响旋转延迟，旋转本身只和硬件相关。事实上，如果和扇区的处理时间相关，那么就不会采用错开的方式去放逻辑数据了。
 
 ![5.3.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB8xq0y3kE5RrkWw2Dp6rTWkViYGm6QACihlrG-BrmFayMFLNUVnhBgEAAwIAA3gAAz0E)
+
+> 假设磁盘有 100 个柱面，每个柱面上有 8 个磁道，每个磁道有 8 个扇区。文件 A 含有 6400 个逻辑记录，逻辑记录大小与扇区大小一致，该文件以顺序结构的形式存放在磁盘上。文件的第 0 个逻辑记录存放在磁盘地址（0 号柱面、0 号盘面、0 号扇区）中，则磁盘地址（78 号柱面、6 号盘面、6 号扇区）中存放了该文件的第（ ）个逻辑记录。
+>
+> - A. 5045
+> - B. 5046
+> - C. 5047
+> - D. 5048
+>
+> 已知某磁盘的平均转速为 r 秒/转，平均寻道时间为 T 秒，每个磁道可以存储的字节数为 N。现向该磁盘读/写 b 字节的数据，采用随机寻道的方法，每道的所有扇区组成一个簇，其平均访问时间是（ ）。
+>
+> - A. (r + T)b/N
+> - B. b/NT
+> - C. (b/N + T)r
+> - D. bT/N + r
 
 对于第 17 题。首先注意才去随机寻道的方式，总共需要访问 b/N 个磁道。而由于所有的扇区组成一个簇，所以需要完整的转完一整圈才能度完这个数据。综上所述，对于 1 道，寻道需要 T，访问需要 r，总共是 b/N，所以选 A。
 
 ![5.3.25](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB81q0y398Oc2B3WLCT7M9vuctC2scgACixlrG-BrmFZ7mxiskYuI4AEAAwIAA3gAAz0E)
 
+> 下列关于固态硬盘的说法中，正确的是（ ）。
+>
+> - A. 固态硬盘的写速度比较慢，性能甚至弱于常规硬盘
+> - B. 相比常规硬盘，固态硬盘优势主要体现在连续存取的速度
+> - C. 静态磨损均衡算法通常比动态磨损均衡算法的表现更优秀
+> - D. 写入时，静态磨损均衡算法每次选择使用长期存放数据而很少擦写的存储块
+
 错选为 D。属于低级错误，静态更优的原因是静态会在背后把几乎不写的数据调道那些擦除多的块，对于 D 是动态做的事情。
 
 ![5.3.30](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB85q0y4weCDa9FxV-J8xu_iNVdlwkAACjBlrG-BrmFbiICSmpXB8XgEAAwIAA3gAAz0E)
 
+> 【2017 统考真题】下列选项中，磁盘逻辑格式化程序所做的工作是（ ）。
+> I. 对磁盘进行分区
+> II. 建立文件系统的根目录
+> III. 确定磁盘扇区校验码所占位数
+> IV. 对保存空闲磁盘块信息的数据结构进行初始化
+>
+> - A. 仅 II
+> - B. 仅 II、IV
+> - C. 仅 III、IV
+> - D. 仅 I、II、IV
+
 看书作对的。对于 1，分区是分区做的事情，对于 3，CRC 校验是低级格式化做的事情。
 
 ![5.3.32](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB89q0y5EqR4bkO-myzv9B3gU7fc2nwACjRlrG-BrmFZAJoQIHuGVrgEAAwIAA3gAAz0E)
+
+> 【2018 统考真题】系统总是访问磁盘的某个磁道而不响应对其他磁道的访问请求，这[?]现象称为磁头臂黏着。下列磁盘调度算法中，不会导致磁头臂黏着的是（ ）。
+>
+> - A. 先来先服务（FCFS）
+> - B. 最短寻道时间优先（SSTF）
+> - C. 扫描算法（SCAN）
+> - D. 循环扫描算法（C-SCAN）
+>
+> 【2021 统考真题】某系统中磁盘的磁道数为 200（0～199），磁头当前在 184 号磁道上[?]用户进程提出的磁盘访问请求对应的磁道号依次为 184, 187, 176, 182, 199。若采用最短寻道时间优先（SSTF）算法完成磁盘访问，则磁头移动的距离（磁道数）是（ ）。
+>
+> - A. 37
+> - B. 38
+> - C. 41
+> - D. 42
 
 第 32 题错选为 D。属于低级错误。
 
 第 33 题错选为 A。属于低级错误，184 和 182 的大小比较。
 
 ![5.3.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACB9Bq0y6aRfm7wZrsVVlzjSz42qeogAACjhlrG-BrmFYOmvmM32I-aQEAAwIAA3gAAz0E)
+
+> 【2025 统考真题】在下列选项中，文件系统需要为温彻斯特硬盘和固态硬盘都提供的功能是（ ）。
+>
+> - A. 划分扇区
+> - B. 确定盘块大小
+> - C. 降低寻道时间
+> - D. 实现均衡磨损
 
 错选为 D。属于低级错误，事实上，即便不知道温彻斯特硬盘就是磁盘，也应该想到这道题说的是文件系统，而均衡磨损是 SSD 自己本身实现的东西。
 
@@ -3094,19 +8037,74 @@ Trap 是内中断。
 
 ![1.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAwxqyLiRx6CYeYGIGLkUW7b99eO4BgACqBJrG6T-SFaMCohDlYcyPwEAAwIAA3gAAz0E)
 
+> 不同的数据交换方式有不同的性能。为了使数据在传输期间的时延最小，首选的交换方式是（①）；为保证数据无差错地传送，不应选用的交换方式是（②）；分组交换对报文交换的主要改进是（③），这种改进产生的直接结果是（④）。
+>
+> - ① A. 电路交换
+> - B. 报文交换
+> - C. 分组交换
+> - ② A. 电路交换
+> - B. 报文交换
+> - C. 分组交换
+> - ③ A. 传输单位更小且有固定的最大长度
+> - B. 传输单位更大且有固定的最大长度
+> - C. 差错控制更完善
+> - D. 路由算法更简单
+> - ④ A. 降低了误码率
+> - B. 提高了数据传输速率
+> - C. 减少传输时延
+> - D. 增加传输时延
+
 本题第 2 空错选为 B。数据无差错的传送，不应选择的方式是电路交换。这里辨析一下电路交换的特点，其是连接一条物理线路，没有差错校验，直接发，毕竟是纯硬件。
 
 ![1.1.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAw1qyLiprP6gdW06QvXKCcktfJOD_wACqxJrG6T-SFYJM2_vkbrtGwEAAwIAA3gAAz0E)
 
+> 【2025 统考真题】某网络拓扑及各链路带宽如下图所示。网络按电路交换方式运行时，主机 H1 与 H2 建立一条带宽为 10Mb/s 的电路，建立电路时间为 32μs；按分组交换方式运行时，分组长度为 400B，忽略分组首部开销。现 H1 向 H2 发送一个 2MB（1M=10⁶）的文件，分别采用电路交换、报文交换、分组交换方式时，H2 至少需 T_CS、T_MS、T_PS 时间才能接收到全部文件内容，则 T_CS、T_MS、T_PS 满足的关系是（ ）。
+>
+> - [图示] H1 —(10Mb/s)— R1 —(100Mb/s)— R2 —(1000Mb/s)— H2
+>
+> - A. T_CS > T_MS > T_PS
+> - B. T_MS > T_PS > T_CS
+> - C. T_MS > T_CS > T_PS
+> - D. T_PS > T_MS > T_CS
+
 ![1.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAw5qyLi24xbUc1-7QH00Gegqe6zl6QACrBJrG6T-SFbuLHXJxfms9wEAAwIAA3gAAz0E)
+
+> 负责将比特转换成电信号进行传输的层是（ ）。
+>
+> - A. 应用层
+> - B. 网络层
+> - C. 数据链路层
+> - D. 物理层
 
 本题错选为 A。与 1 刷时候一样的傻逼错误。
 
 ![1.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAw9qyLjzE9qi3tkr7cbmpWTTpC2x8QACrhJrG6T-SFbsOx2BwZAasgEAAwIAA3gAAz0E)
 
+> 当数据由端系统 A 传送至端系统 B 时，不参与数据封装工作的是（ ）。
+>
+> - A. 物理层
+> - B. 数据链路层
+> - C. 网络层
+> - D. 表示层
+
 本题错选为 D。显然物理层向上运输的时候不会参与数据封装，对于表示层，表示层的作用是数据格式转换与压缩，会话层的作用是打断点。
 
 ![1.2.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxBqyLkG-JZhJHtJUeNuBUv2WEhbGwACtxJrG6T-SFbvhZuBtVhCWAEAAwIAA3gAAz0E)
+
+> 在 OSI 参考模型中，各层都有差错控制过程，指出以下每种差错发生在哪些层中：噪声使传输链路上的一个 0 变成 1 或一个 1 变成 0（①），收到一个序号错误的目的帧（②），一台打印机正在打印，突然收到一个错误指令要打印头回到本行的开始位置（③）。
+>
+> - ① A. 物理层
+> - B. 网络层
+> - C. 数据链路层
+> - D. 会话层
+> - ② A. 物理层
+> - B. 网络层
+> - C. 数据链路层
+> - D. 会话层
+> - ③ A. 物理层
+> - B. 网络层
+> - C. 应用层
+> - D. 会话层
 
 本题第 3 空错选为 C。打断点是会话层的功能。
 
@@ -3114,9 +8112,31 @@ Trap 是内中断。
 
 ![2.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxJqyLk0aekJRt3OIat2ErQaCKWbnQACuBJrG6T-SFadfEIn_RMHzAEAAwIAA3gAAz0E)
 
+> 不含同步信息的编码是（ ）。
+> I. 非归零编码 II. 曼彻斯特编码 III. 差分曼彻斯特编码
+>
+> - A. 仅 I
+> - B. 仅 II
+> - C. 仅 II、III
+> - D. I、II、III
+
 本题错选为 C。不包含，属于低级错误。
 
 ![2.1.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxNqyLlF2Np_T1lxlMN81Eo27-hGKAACuRJrG6T-SFaDC2jRMR_YFQEAAwIAA3gAAz0E)
+
+> 电话系统的典型参数是信道带宽为 3000Hz，信噪比为 30dB，该系统的最大数据传输速率为（ ）。
+>
+> - A. 3kb/s
+> - B. 6kb/s
+> - C. 30kb/s
+> - D. 64kb/s
+>
+> 一个信道的信号功率是 0.14W，噪声功率是 0.02W，频率范围为 3.5 ~ 3.9MHz，则该信道的最高数据传输速率是（ ）。
+>
+> - A. 1.2Mb/s
+> - B. 2.4Mb/s
+> - C. 11.7Mb/s
+> - D. 23.4Mb/s
 
 第 13 题错选为 B。信道带宽为 3000Hz，信噪比为 30dB，考虑无噪声的信道，也就是 2×3000×log2V，本题没给 V，忽略；考虑有噪声的信道，Wlog2(1+1000)=3000×10=30kb/s。
 
@@ -3124,17 +8144,47 @@ Trap 是内中断。
 
 ![2.1.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxRqyLlXiivjsv1hi9RZ8I4aj6lUOAACuhJrG6T-SFbrV9UYA1PgRwEAAwIAA3gAAz0E)
 
+> 一个信道每 1/8s 采样一次，传输信号共有 16 种变化状态，最大数据传输速率是（ ）。
+>
+> - A. 16b/s
+> - B. 32b/s
+> - C. 48b/s
+> - D. 64b/s
+
 本题错选为 D。每 1/8s 采样一次，固定上限是 8Hz，所以 Wlog2V=32。
 
 ![2.1.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxVqyLlqqKtU9FLKo3g8aHzNbiBK5wACuxJrG6T-SFZ5eYr-axtRRQEAAwIAA3gAAz0E)
+
+> 【2014 统考真题】在下列因素中，不影响信道数据传输速率的是（ ）。
+>
+> - A. 信噪比
+> - B. 频率带宽
+> - C. 调制速率
+> - D. 信号传播速度
 
 本体错选为 C。信号传播速度指的是 RTT 相关，也就是光信号/电信号本身的传播速度，数据传输速率指的是发送时延，也就是 bps。
 
 ![2.1.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxZqyLmMB24QuT6xrjR8MV_L84RBcgACvBJrG6T-SFbD5RYkBs7EsgEAAwIAA3gAAz0E)
 
+> 【2016 统考真题】如下图所示，若连接 R2 和 R3 链路的频带宽度为 8kHz，信噪比为 30dB，该链路实际数据传输速率约为理论最大数据传输速率的 50%，则该链路的实际数据传输速率约为（ ）。
+>
+> - [图示] 路由器 R2 与 R3 之间由一条链路相连（图中标注 R2、R3）
+>
+> - A. 8kb/s
+> - B. 20kb/s
+> - C. 40kb/s
+> - D. 80kb/s
+
 本题错选为 C。考虑有噪声的信道，即 Wlog2(1+1000)=8000×10=80kb/s，除以 2 即 C。考虑无噪声的信道，即 2Wlog2V，此处没有提供 V，所以不需要考虑。
 
 ![2.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxdqyLmil5yklN1DvLfi2_6rX4Cy1QACvRJrG6T-SFZ5rWvh0nQ39gEAAwIAA3gAAz0E)
+
+> 当描述一个物理层接口引脚处于高电平时的含义时，该描述属于（ ）。
+>
+> - A. 机械特性
+> - B. 电气特性
+> - C. 功能特性
+> - D. 规程特性
 
 电器特性指的是多少伏之类的，逻辑 0 和逻辑 1 对应的电压区间是什么；
 
@@ -3144,11 +8194,32 @@ Trap 是内中断。
 
 ![2.3.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxhqyNXlsTEIAqd_n2cID-nTGt5j8QAC1RJrG6T-SFbyWS2HN2WHKwEAAwIAA3gAAz0E)
 
+> 当集线器的一个端口收到数据后，将其（ ）。
+>
+> - A. 从所有端口广播出去
+> - B. 从除输入端口外的所有端口广播出去
+> - C. 根据目的地址从合适的端口转发出去
+> - D. 随机选择一个端口转发出去
+
 本题错选为 A，没看完选项。
 
 ### 计网王道选择题 2 刷第 3 章
 
 ![3.1.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxlqyNZXRPI2HEFtf5jUiWbXYsZ-twAC1xJrG6T-SFYqX2FD8il1pwEAAwIAA3gAAz0E)
+
+> 下列选项中，不属于数据链路层协议功能的是（ ）。
+>
+> - A. 定义数据格式
+> - B. 提供节点之间的可靠传输
+> - C. 控制对物理传输介质的访问
+> - D. 为终端节点隐蔽物理传输的细节
+>
+> 为了避免传输过程中帧的丢失，数据链路层采用的方法是（ ）。
+>
+> - A. 帧编号机制
+> - B. 循环冗余检验码
+> - C. 海明码
+> - D. 计时器超时重发
 
 第 3 题错选为 C。D 是网络层的作用，对于 C，可理解为 MAC 子层，MAC 需要对特定的物理链路进行控制。
 
@@ -3156,25 +8227,74 @@ Trap 是内中断。
 
 ![3.1.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxpqyNZtv09cvMk6bsCL2BXlBzesqwAC2BJrG6T-SFa8SOWkg8Lm6AEAAwIAA3gAAz0E)
 
+> 流量控制实际上是对（ ）的控制。
+>
+> - A. 发送方的数据流量
+> - B. 接收方的数据流量
+> - C. 发送、接收方的数据流量
+> - D. 链路上任意两节点间的数据流量
+
 本体错选为 C。流量控制是对发送方的数据流量控制，拥塞控制是对接收方的数据流量控制。
 
 ![3.4.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxtqyNZ9_CPwErnW7w0sqZl6ww7RWgAC2RJrG6T-SFa-WAjMOl5SagEAAwIAA3gAAz0E)
+
+> 下列情况中，会使停止 - 等待协议的效率变得很低的是（ ）。
+>
+> - A. 当源主机和目的主机之间的距离很近而且数据传输速率很高时
+> - B. 当源主机和目的主机之间的距离很远而且数据传输速率很高时
+> - C. 当源主机和目的主机之间的距离很近而且数据传输速率很低时
+> - D. 当源主机和目的主机之间的距离很远而且数据传输速率很低时
 
 本题错选为 D，属于低级错误，和一刷时类似。
 
 ![3.4.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAxxqyNa34hADyYybaQh5qQwtQUWRKwAC3xJrG6T-SFYbGSGlr-g7GQEAAwIAA3gAAz0E)
 
+> 数据链路层采用后退 N 帧协议进行流量控制，发送方已发送编号为 0 - 6 的帧，之后收到 5 号数据帧的确认，发送方的滑动窗口向后移动后，发送方可发送的数据帧数量为 6 个，假设整个过程未发生超时，则应采用（ ）位给数据帧编号。
+>
+> - A. 3
+> - B. 4
+> - C. 5
+> - D. 6
+
 本题错选为 B，和一刷时一样的错误。
 
 ![3.4.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAx1qyNfDycwagF05QyMyj6vx1xduAgAC4RJrG6T-SFYlJp52tIRNngEAAwIAA3gAAz0E)
+
+> 对于窗口总大小为 n 的滑动窗口，最多可以有（ ）帧已发送但没有确认。
+>
+> - A. 0
+> - B. n-1
+> - C. n
+> - D. n/2
 
 本体错选为 C。发送窗口最大为 n-1。
 
 ![3.4.27](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAx5qyNfZfCsKWmOwrl8uOzyshhmo8wAC4hJrG6T-SFaUSNFXV8wCYQEAAwIAA3gAAz0E)
 
+> 【2018 统考真题】主机甲采用停止 - 等待协议向主机乙发送数据，数据传输速率是 3kb/s，单向传播时延是 200ms，忽略确认帧的传输时延。当信道利用率等于 40% 时，数据帧的长度为（ ）。
+>
+> - A. 240 比特
+> - B. 400 比特
+> - C. 480 比特
+> - D. 800 比特
+
 本题错选为 B。假设数据帧长度为 x，即 (x/3000)/(x/3000+RTT)=0.4，即 x=800bit。
 
 ![3.4.28](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAx9qyNf1UUhfvHk1hXslJ3lbw5oYgQAC4xJrG6T-SFYksGAtP2tvxQEAAwIAA3gAAz0E)
+
+> 【2019 统考真题】对于滑动窗口协议，若分组序号采用 3 比特编号，发送窗口大小为 5，则接收窗口最大是（ ）。
+>
+> - A. 2
+> - B. 3
+> - C. 4
+> - D. 5
+>
+> 【2020 统考真题】假设主机甲采用停止 - 等待协议向主机乙发送数据帧，数据帧长与确认帧长均为 1000B，数据传输速率是 10kb/s，单向传播时延是 200ms，则主机甲的最大信道利用率为（ ）。
+>
+> - A. 80%
+> - B. 66.7%
+> - C. 44.4%
+> - D. 40%
 
 第 28 题错选为 A。和 1 刷一样的错误。
 
@@ -3182,13 +8302,41 @@ Trap 是内中断。
 
 ![3.5.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyBqyNgVor7PoMpAPwQsWn5Zz5aaNwAC5hJrG6T-SFbhlnZhFbzvGQEAAwIAA3gAAz0E)
 
+> 介质访问控制（MAC）子层的主要功能是（ ）。
+>
+> - A. 提供可靠的数据传输
+> - B. 控制和协调所有站点对共享介质的访问
+> - C. 实现数据链路层和物理层之间的接口
+> - D. 为上层协议提供服务
+
 本题错选为 C。对于 C 是物理层的作用，MAC 层不提供可靠的数据传输，MAC 子层上面还有一个小的层？那个层才是对上层协议提供服务。上半层是 LLC 子层，也就是逻辑链路。不同的 MAC 层上面必须得有一个一样的 LLC。
 
 ![3.5.4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyFqyNg3VyLtglTqiTZjImSOL5LqqgAC5xJrG6T-SFa2NCgiLnTp0gEAAwIAA3gAAz0E)
 
+> TDM 所用传输介质的性质是（ ）。（注：本题选项中的带宽是指信号的频率范围。）
+>
+> - A. 介质的带宽大于结合信号的位速率
+> - B. 介质的带宽小于单个信号的带宽
+> - C. 介质的位速率小于最小信号的带宽
+> - D. 介质的位速率大于单个信号的位速率
+>
+> 从表面上看，FDM 比 TDM 能更好地利用信道的传输能力，但现在计算机网络更多地使用 TDM 而非 FDM，其原因是（ ）。
+>
+> - A. FDM 实际能力更差
+> - B. TDM 可用于数字传输而 FDM 不行
+> - C. FDM 技术不成熟
+> - D. TDM 能更充分地利用带宽
+
 这两题和 1 刷一样。
 
 ![3.5.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyJqyNhJMv-5VgflM15sQ2elomx6GwAC6BJrG6T-SFbgLMwChzuj5gEAAwIAA3gAAz0E)
+
+> 在 CSMA 的非坚持协议中，当站点监听到总线信道空闲时，它（ ）。
+>
+> - A. 以概率 p 传送
+> - B. 马上传送
+> - C. 以概率 1-p 传送
+> - D. 以概率 p 延迟一个时间单位后传送
 
 本体错选为 A，脑子抽了选了 A。
 
@@ -3196,33 +8344,114 @@ Trap 是内中断。
 
 ![3.5.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyNqyNkZdbkeK8CSfGNLAxRvkuZrRwAC6RJrG6T-SFY2lwABYBSF178BAAMCAAN4AAM9BA)
 
+> 下列关于令牌环网络的说法中，错误的是（ ）。
+> Ⅰ. 信道的利用率比较公平
+> Ⅱ. 重负载下信道利用率高
+> Ⅲ. 节点可以一直持有令牌，直至所要发送的数据传输完毕
+> Ⅳ. 节点只能持有令牌一段固定的时间，对于没有数据要发送的节点也是如此
+>
+> - A. Ⅰ、Ⅱ和Ⅲ
+> - B. Ⅲ
+> - C. Ⅲ和Ⅳ
+> - D. Ⅳ
+
 本体错选为 D，和 1 刷的时候一样的错误。
 
 ![3.5.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyVqyNnvGAnwVWSgw_u-eA617n6tJQAC6hJrG6T-SFbsrVbpayTsXAEAAwIAA3gAAz0E)
+
+> 一条广播信道上连有 4 个站点 a、b、c、d，采用码分复用技术，当 a、b、c 要向 d 发送数据时，设 a 的码片序列为（1,-1,1,-1），则 b 和 c 的码片序列可以为（ ）。
+>
+> - A. （-1, 1, 1, 1）和（-1, -1, -1, 1）
+> - B. （-1, -1, 1, 1）和（-1, 1, -1, 1）
+> - C. （-1, 1, 1, -1）和（1, 1, -1, -1）
+> - D. （-1, -1, -1, -1）和（1, 1, 1, 1）
 
 本体错选为 D。这道题只算了 D 的分别和 a，而没有算他们之间相互也得正交。
 
 ![3.6.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyZqyNoAATWZSSLfAZqfmQ8K1NEupEcAAuwSaxuk_khWI0I4_yE62HEBAAMCAAN4AAM9BA)
 
+> 某 100Mb/s 以太网使用 CSMA/CD 协议，该以太网中的某个站在发送帧时检测到冲突，并准备进行第二次重传，则所需等待的最大退避时间是（ ）。
+>
+> - A. 5.12μs
+> - B. 15.36μs
+> - C. 25.6μs
+> - D. 51.2μs
+
 本题错选为 A。第 2 次重传，是 0 至 $2^2-1$，所以最大是 3，也就是 $3 \times$ 争用期。
 
 ![3.6.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAydqyNoUi2UGVA_59LWEsET15g0Q9wAC7RJrG6T-SFaJZPvXelL8bQEAAwIAA3gAAz0E)
+
+> IEEE 802.3 标准规定，若采用同轴电缆作为传输介质，在无中继的情况下，传输介质的最大长度不能超过（ ）。
+>
+> - A. 500m
+> - B. 200m
+> - C. 100m
+> - D. 50m
 
 本题错选为 B，默认为粗同轴电缆，细同轴电缆也只是 180m。
 
 ![3.6.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyhqyNq3hV7bv5bC6pNee_-Eq_srsQAC7xJrG6T-SFalkYv48Se6KQEAAwIAA3gAAz0E)
 
+> IEEE 802 局域网标准对应 OSI 参考模型的（ ）。
+>
+> - A. 数据链路层和网络层
+> - B. 物理层和数据链路层
+> - C. 物理层
+> - D. 数据链路层
+
 本题和 1 刷一致的错误。
 
 ![3.7.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAylqyNrS_NH2uZmfm5pYGAmEZpS9IwAC8RJrG6T-SFZ1uAABRA8H-1sBAAMCAAN4AAM9BA)
 
+> 局域网和广域网的差异不仅在于它们所覆盖的范围不同，还主要在于它们（ ）。
+>
+> - A. 所使用的介质不同
+> - B. 所使用的协议不同
+> - C. 所能支持的通信量不同
+> - D. 所提供的服务不同
+
 ![3.7.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAypqyNrliC-F4TnVPW4hWooP6EcrjwAC8hJrG6T-SFbF6D1rFrmQUAEAAwIAA3gAAz0E)
+
+> 为实现透明传输（默认为异步线路），PPP 使用的填充方法是（ ）。
+>
+> - A. 位填充
+> - B. 字符填充
+> - C. 对字符数据使用字符填充，对非字符数据使用位填充
+> - D. 对字符数据使用位填充，对非字符数据使用字符填充
+>
+> 以下对 PPP 的描述中，错误的是（ ）。
+>
+> - A. 具有差错控制能力
+> - B. 仅支持 IP
+> - C. 支持动态分配 IP 地址
+> - D. 支持身份验证
 
 第 7 题错选为 C。第 8 题错选为 A，均和 1 刷一样的错误。
 
 ![3.8.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAytqyNr7sqAjZmtpyyJwW8b2HhTNPwAC9BJrG6T-SFZpU5HB5GvtYgEAAwIAA3gAAz0E)
 
+> 下列（ ）不是使用交换机分割网络所带来的好处。
+>
+> - A. 减少冲突域的范围
+> - B. 在一定条件下增加了网络的带宽
+> - C. 过滤网段之间的数据
+> - D. 缩小了广播域的范围
+
 ![3.8.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAyxqyNsO_otz9yeAaccgavukN5SwfQAC9hJrG6T-SFbhTF8HG5fxTAEAAwIAA3gAAz0E)
+
+> 下列关于用集线器连接的共享式以太网的说法中，正确的是（ ）。
+>
+> - A. 以太网的物理拓扑是总线形结构
+> - B. 以太网提供有确认的无连接服务
+> - C. 以太网参考模型一般只包括物理层和数据链路层
+> - D. 以太网不一定使用 CSMA/CD 协议
+>
+> 下列关于广播式网络的说法中，错误的是（ ）。
+>
+> - A. 共享广播信道
+> - B. 不存在路由选择问题
+> - C. 可以不要网络层
+> - D. 不需要服务接入点
 
 第 10 题错选为 D。与 1 刷一致的错误。
 
@@ -3230,9 +8459,23 @@ Trap 是内中断。
 
 ![3.8.17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAy1qyNsoJm3CJETtiUQ6L58C5ixE0wAC9xJrG6T-SFYlLAJOkzB9oQEAAwIAA3gAAz0E)
 
+> 当以太网交换机某接口收到帧时，若在交换表中未找到目的 MAC 地址，则（ ）。
+>
+> - A. 将帧发送到特定接口进行 ARP 查询
+> - B. 丢弃该帧
+> - C. 将帧发送到除本接口外的所有接口
+> - D. 将帧发送给 DHCP 服务器
+
 本题错选为 A。这里是交换机，需要注意。ARP 协议是主机干的。
 
 ![3.8.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAy5qyNtUvxAUIqnpE1C4xhOM0Z4rHgAC-BJrG6T-SFb6__OKrCdquAEAAwIAA3gAAz0E)
+
+> 【2013 统考真题】对于 100Mb/s 的以太网交换机，当输出端口无排队，以直通交换方式转发一个以太网帧（不包括前导码）时，引入的转发时延至少是（ ）。
+>
+> - A. 0μs
+> - B. 0.48μs
+> - C. 5.12μs
+> - D. 121.44μs
 
 本题错选为 C，与 1 刷一致错误。
 
@@ -3240,45 +8483,142 @@ Trap 是内中断。
 
 ![4.1.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAy9qyNuFWh4bQ1Hvojmm5kCFRKx2FAAC-RJrG6T-SFZQbZOCctsH0AEAAwIAA20AAz0E)
 
+> 路由器连接的异构网络是指（ ）。
+>
+> - A. 网络的拓扑结构不同
+> - B. 网络中计算机操作系统不同
+> - C. 数据链路层协议和物理层协议至少有一个不同
+> - D. 数据链路层协议相同，物理层协议不同
+
 本体错选为 A。细想之下属于低级错误。
 
 ![4.1.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzBqyNubSGHNv3zP9o0Y6g-VbT6hyAAC-hJrG6T-SFb7xu0OKcvbhwEAAwIAA3gAAz0E)
+
+> 同一报文中的分组可以由不同的传输路径通过通信子网的方法是（ ）。
+>
+> - A. 分组交换
+> - B. 电路交换
+> - C. 虚电路方式
+> - D. 数据报方式
 
 本题错选为 A，与 1 刷一致错误。
 
 ![4.1.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzFqyNv4PrmehH26ce8UVg6uj9ialgAC_BJrG6T-SFZBe9zopPc0vgEAAwIAA3gAAz0E)
 
+> 下列关于虚电路的说法中，正确的是（ ）。
+>
+> - A. 虚电路依赖其他协议实现差错控制
+> - B. 采用虚电路方式发送分组时，分组首部都必须包含目的地址
+> - C. 虚电路结合了电路交换的思想，适合对实时性要求较高的长时间通信
+> - D. 多站点同时使用一段物理链路实行虚电路交换会产生冲突，无法正常通信
+
 本题错选为 A，与 1 刷一样的错误。
 
 ![4.1.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzJqyNwwJ8kYypA1qIoPoqKKHGxk2gAC_hJrG6T-SFYQZQdfcrrqMwEAAwIAA3gAAz0E)
+
+> 下列关于 SDN（软件定义网络）的描述中，错误的是（ ）。
+> Ⅰ. SDN 是近年来出现的一种新型物理网络结构
+> Ⅱ. OpenFlow 交换机基于“流表”来转发分组
+> Ⅲ. SDN 远程控制器位于 OpenFlow 交换机中
+> Ⅳ. OpenFlow 可视为 SDN 的控制层面与数据层面的通信接口
+>
+> - A. Ⅰ和Ⅲ
+> - B. Ⅰ和Ⅳ
+> - C. Ⅱ和Ⅳ
+> - D. Ⅰ、Ⅲ和Ⅳ
 
 本题错选为 C。2，4 显然正确，对于 1，并非物理，对于 3，并且位于交换机中。
 
 ![4.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzNqyNxSVN_ywOlDwB0bD_Sgp_CzTAAC_xJrG6T-SFacXfK9UuTOyAEAAwIAA3gAAz0E)
 
+> 下列关于 IP 分组分片基本方法的描述中，错误的是（ ）。
+>
+> - A. IP 分组长度大于 MTU 时，就必须对其进行分片
+> - B. DF=1，分组的长度又超过 MTU 时，则丢弃该分组，不需要向源主机报告
+> - C. 分片的 MF 值为 1 表示接收到的分片不是最后一个分片
+> - D. 属于同一原始 IP 分组的分片具有相同的标识
+
 错选为 D。对于 B，需要汇报终点不可达。
 
 ![4.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzRqyNyr5sqOpeejviJlyn26coCWbwADE2sbpP5IVg8zYO1DFov8AQADAgADeAADPQQ)
+
+> 路由器 R0 的路由表见下表。若进入路由器 R0 的分组的目的地址为 132.19.237.5，则该分组应该被转发到（ ）下一跳路由器。
+>
+> - A. R1
+> - B. R2
+> - C. R3
+> - D. R4
+>
+> 目的网络 | 下一跳路由器
+> 132.0.0.0/8 | R1
+> 132.0.0.0/11 | R2
+> 132.19.232.0/22 | R3
+> 0.0.0.0/0 | R4
+>
+> - [图示] 两列表格，左列为目的网络，右列为下一跳路由器，共 4 行数据
+>
 
 本题错选为 C。属于低级错误。比对子网掩码即可。
 
 ![4.2.15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzVqyNzAa_d8byJDoOng--_uogUYTQACARNrG6T-SFZfvi5M3VJVGwEAAwIAA3gAAz0E)
 
+> 在下列 4 个地址中，属于单播地址的是（ ）。
+>
+> - A. 172.31.128.255/18
+> - B. 10.255.255.255
+> - C. 192.168.24.59/30
+> - D. 224.105.5.211
+
 本题错选为 C。和 1 刷一致的错误。
 
 ![4.2.21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzZqyN5yq9dpxkPdAxPQRs716oulkQACAxNrG6T-SFbXpRhbIZEHHQEAAwIAA3gAAz0E)
+
+> 把 IP 网络划分成子网，这样做的好处是（ ）。
+>
+> - A. 增加冲突域的大小
+> - B. 增加主机的数量
+> - C. 减少广播域的大小
+> - D. 增加网络的数量
 
 本题错选为 D。划分为子网反而还减少了网络数量。
 
 ![4.2.23](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzdqyN6CQw3is-JyjN5IZ_STjIahYwACBBNrG6T-SFYRkVN73WvxKAEAAwIAA3gAAz0E)
 
+> 一台主机有两个 IP 地址，一个地址是 192.168.11.25，另一个地址可能是（ ）。
+>
+> - A. 192.168.11.0
+> - B. 192.168.11.26
+> - C. 192.168.13.25
+> - D. 192.168.11.24
+
 本题错选为 D。为什么一个主机的两个网卡的 IP 地址必须属于不同的网络？IP 地址是被网卡所拥有的，但是接受和发送是属于电脑的。所以进行 ARP 的时候，如果处于同一个网络，那么就都会回，发送也是一样的。
 
 ![4.2.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzhqyN6pDtnKZdLqP0XtGdXojMm60AACBRNrG6T-SFbBmV0fTYyrZAEAAwIAA3gAAz0E)
 
+> 某网络的一台主机的 IP 地址是 200.15.10.6/29，其配置的默认网关地址是 200.15.10.7，这样配置后发现主机无法 PING 通任何远程设备，原因是（ ）。
+>
+> - A. 默认网关的地址不属于这个子网
+> - B. 默认网关的地址是子网中的广播地址
+> - C. 路由器接口的地址是子网的广播地址
+> - D. 路由器接口的地址是多播地址
+
 本题错选为 A。如果配了不属于这个子网的，确实会炸，但是不是这道题的原因。
 
 ![4.2.40](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzlqyN7AHrtfcnT6NsGVTuuYZd0NTAACBhNrG6T-SFaqGCgvpmcRswEAAwIAA3gAAz0E)
+
+> 现将一个 IP 网络划分为 4 个子网，若其中一个子网是 192.168.1.130/26，则下列网络中不可能是另外 3 个子网之一的是（ ）。
+>
+> - A. 192.168.1.0/25
+> - B. 192.168.1.64/26
+> - C. 192.168.1.96/27
+> - D. 192.168.1.224/27
+>
+> 位于不同子网的主机之间相互通信时，下列说法中正确的是（ ）。
+>
+> - A. 路由器在转发 IP 数据报时，重新封装源硬件地址和目的硬件地址
+> - B. 路由器在转发 IP 数据报时，重新封装源 IP 地址和目的 IP 地址
+> - C. 路由器在转发 IP 数据报时，重新封装目的硬件地址和目的 IP 地址
+> - D. 源站点可以直接进行 ARP 广播得到目的站点的硬件地址
 
 第 40 题错选为 A。和 1 刷时错误一样。
 
@@ -3286,25 +8626,78 @@ Trap 是内中断。
 
 ![4.2.54](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzpqyN7f1_c3gQxzGi-gs9MVviZ5aAACBxNrG6T-SFYEnYXcYUkGUQEAAwIAA3gAAz0E)
 
+> 【2012 统考真题】某主机的 IP 地址为 180.80.77.55，子网掩码为 255.255.252.0。若该主机向其所在子网发送广播分组，则目的地址可以是（ ）。
+>
+> - A. 180.80.76.0
+> - B. 180.80.76.255
+> - C. 180.80.77.255
+> - D. 180.80.79.255
+
 本体错选为 B。发送广播分组，意味着子网掩码非 1 的部分全为 1。
 
 ![4.2.58](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAztqyN8AAZciAxcq14wRQi908I8w7igAAggTaxuk_khWXlH1TuyylwEBAAMCAAN4AAM9BA)
+
+> 【2016 统考真题】如下图所示，假设 H1 与 H2 的默认网关和子网掩码均分别配置为 192.168.3.1 和 255.255.255.128，H3 和 H4 的默认网关和子网掩码均分别配置为 192.168.3.254 和 255.255.255.128，则下列现象中可能发生的是（ ）。
+>
+> 图中：R1～R3 为路由器；Switch 为 100Base-T 交换机；Hub 为 100Base-T 集线器；主机 H1～H[?]的默认域名服务器均配置为 201.1.1.1。
+>
+> - [图示] Internet（130.18.10.1，Web 服务器 S）连 R1（201.1.3.9），R1 向右连 R3 与 201.1.2.0/25 云，向下连 R2；R2 标注 NAT、L0、E0、L1、E1，L1 侧标 201.1.3.1，E1 侧标 192.168.3.254；R2 左连 201.1.1.0/24 云及 DNS 服务器 201.1.1.1；R2 下连 Switch，Switch 接 H1（192.168.3.2）、H2（192.168.3.3）并经 Hub 接 H3（192.168.3.251）、H4（192.168.3.252）。
+>
+> - A. H1 不能与 H2 进行正常 IP 通信
+> - B. H2 与 H4 均不能访问 Internet
+> - C. H1 不能与 H3 进行正常 IP 通信
+> - D. H3 不能与 H4 进行正常 IP 通信
 
 本题错选为 B。假设初始什么都有没有。对于 A，H1 要向 H2 发送报文。首先检测到 H1 和 H2 在同一个子网，所以不需要交给默认路由，查询 ARP 表，发现没有 ARP 缓存，于是向子网内广播，收到 H2 的 MAC 地址后直接传输即可，对于 H2 向 H1 发送同理。对于 B，H2 要访问互联网，假设 H2 需要发信息包到 8.8.8.8，检测到非本网络，于是发送到默认路由，因为没有 ARP 缓存，所以发送 ARP 请求。结果因为 R2 过滤了 ARP，所以无论如何也拿不到 R3 的 MAC 地址，至此结束，不能访问因特网，H4 要访问互联网，检测到非本网络，于是发给默认路由，因为没有 ARP 缓存，所以发送 ARP 请求，得到 R2 的 MAC 地址后，由 R2 转发到互联网。对于 C，H1 想和 H3 通信，检测到非本地网络，所以向默认路由发送 ARP 请求，得不到 MAC 地址，所以不能。对于 D，显然可以。
 
 ![4.2.63](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAzxqyN8eZV7g5qC5wD1C3T5eyl_9-wACCRNrG6T-SFbjynlutSo2QgEAAwIAA3gAAz0E)
 
+> 【2018 统考真题】路由器 R 通过以太网交换机 S1 和 S2 连接两个网络，R 的接口、主机 H1 和 H2 的 IP 地址与 MAC 地址如下图所示。若 H1 向 H2 发送一个 IP 分组 P，则 H1 发出的封装 P 的以太网帧的目的 MAC 地址、H2 收到的封装 P 的以太网帧的源 MAC 地址分别是（ ）。
+>
+> - [图示] S1 经路由器 R 连 S2；S1 与 R 之间标注 192.168.3.1、00-1a-2b-3c-4d-51；R 与 S2 之间标注 192.168.4.1、00-a1-b2-c3-d4-61；S1 下接 H1（192.168.3.2，00-1a-2b-3c-4d-52）；S2 下接 H2（192.168.4.2，00-a1-b2-c3-d4-62）。
+>
+> - A. 00-a1-b2-c3-d4-62、00-1a-2b-3c-4d-52
+> - B. 00-a1-b2-c3-d4-62、00-a1-b2-c3-d4-61
+> - C. 00-1a-2b-3c-4d-51、00-1a-2b-3c-4d-52
+> - D. 00-1a-2b-3c-4d-51、00-a1-b2-c3-d4-61
+
 本体错选为 B。注意本题非 CSMA/CA 协议的以太网帧，但事实类似的。对于 IP 地址，过路由器不会换 IP 地址，但是会换 MAC 地址。本题只需要会读题，就能做对。
 
 ![4.4.6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAz1qyN9mor0AAR2GJKIfGfb34HqDdioAAgoTaxuk_khW2Mr3NMnwncABAAMCAAN4AAM9BA)
+
+> 以下关于自治系统的描述中，错误的是（ ）。
+>
+> - A. 自治系统划分区域的好处是，将利用洪泛法交换链路状态信息的范围局限在每个区域内，而不是整个自治系统
+> - B. 采用分层划分区域的方法使交换信息的种类增多，同时也使 OSPF 协议更加简单
+> - C. OSPF 协议将一个自治系统再划分为若干更小的范围，称为区域
+> - D. 在一个区域内部的路由器只知道本区域的网络拓扑，而不知道其他区域的网络拓扑的情况
 
 本题错选为 D，与 1 刷类似的错误。
 
 ![4.7.2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAz5qyN-DFSqokF8QoI8o6vutzgHqJgACCxNrG6T-SFYHP1q-r5GhVAEAAwIAA20AAz0E)
 
+> 下列关于冲突域的叙述中，正确的是（ ）。
+>
+> - A. 能接收到同一广播帧的所有设备的集合
+> - B. 能发送同一广播帧的所有设备的集合
+> - C. 能产生冲突的所有设备的集合
+> - D. 能隔离冲突的所有设备的集合
+
 本题错选为 D。和 1 刷时候错误类似。
 
 ![4.7.20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACAz9qyN-f8p6N_ENbnHQmZdy0P24xnQACDBNrG6T-SFbfud0m0GTcmgEAAwIAA3gAAz0E)
+
+> 【2012 统考真题】下列关于 IP 路由器功能的描述中，正确的是（ ）。
+>
+> Ⅰ. 运行路由协议，设置路由表
+> Ⅱ. 监测到拥塞时，合理丢弃 IP 分组
+> Ⅲ. 对收到的 IP 分组头进行差错检验，确保传输的 IP 分组不丢失
+> Ⅳ. 根据收到的 IP 分组的目的 IP 地址，将其转发到合适的输出线路上
+>
+> - A. 仅Ⅲ、Ⅳ
+> - B. 仅Ⅰ、Ⅱ、Ⅲ
+> - C. 仅Ⅰ、Ⅱ、Ⅳ
+> - D. Ⅰ、Ⅱ、Ⅲ、Ⅳ
 
 本题错选为 D，与 1 刷时错误类似。
 
@@ -3312,9 +8705,30 @@ Trap 是内中断。
 
 ![5.2.12](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0BqyN_LJulkoSRr1w0hE3VtQtORhAACDRNrG6T-SFZX5FKAnaZ3VAEAAwIAA3gAAz0E)
 
+> 某应用层数据大小为 200B，传输层使用 UDP，网际层使用 IP（采用最大首部长度），使用以太网进行传输（不考虑前导码和 VLAN），则该应用层数据的传输效率是（ ）。
+>
+> - A. 82.6%
+> - B. 77.5%
+> - C. 69.9%
+> - D. 67.1%
+
 本题错选为 D。200B，UDP8B，IP60B，以太网 662N4。
 
 ![5.2.16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0JqyN_xaKpP8hhzajETSBlZ2NeRSQACDhNrG6T-SFbE2YekqvbH4gEAAwIAA3gAAz0E)
+
+> 【2018 统考真题】UDP 实现分用时所依据的首部字段是（ ）。
+>
+> - A. 源端口号
+> - B. 目的端口号
+> - C. 长度
+> - D. 检验和
+>
+> 【2024 统考真题】UDP 在计算检验和的过程中，计算得到中间结果为 1011 1001 1011 0110 时，还需要加上最后一个 16 位数 0110 0101 1100 0101，最终计算得到的检验和是（ ）。
+>
+> - A. 0001 1111 0111 1011
+> - B. 0001 1111 0111 1100
+> - C. 1110 0000 1000 0011
+> - D. 1110 0000 1000 0100
 
 第 15 题错选为 A。复用指的是根据源端口号去找其他的，分用是到达目的端口号。
 
@@ -3322,9 +8736,30 @@ Trap 是内中断。
 
 ![5.3.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0NqyOAIXVCjuzc7Z3nA25pCY-azPAACDxNrG6T-SFayKaghslz4_QEAAwIAA20AAz0E)
 
+> 下列关于 TCP 报头格式的描述中，错误的是（ ）。
+>
+> - A. 报头长度为 20 ~ 60B，其中固定部分为 20B
+> - B. 端口号字段依次表示源端口号与目的端口号
+> - C. 报头长度总是 4 的倍数个字节
+> - D. TCP 检验和伪首部中 IP 分组头的协议字段为 17
+
 本题错选为 C。TCP 的 IP 分组协议号为 6，UDP 的 IP 分组协议号为 17。
 
 ![5.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0RqyOAgPlxWOPn5FmTpRDZGi6DcNAACEBNrG6T-SFZ0abhwmUn5BwEAAwIAA3gAAz0E)
+
+> 在采用 TCP 连接的数据传输阶段，若发送端的发送窗口值由 1000 变为 2000，则发送端在收到一个确认之前可以发送（ ）。
+>
+> - A. 2000 个 TCP 报文段
+> - B. 2000B
+> - C. 1000B
+> - D. 1000 个 TCP 报文段
+>
+> A 和 B 建立了 TCP 连接，当 A 收到确认序号为 100 的确认报文段时，表示（ ）。
+>
+> - A. 报文段 99 已收到
+> - B. 报文段 100 已收到
+> - C. 末字节序号为 99 的报文段已收到
+> - D. 末字节序号为 100 的报文段已收到
 
 第 10 题错选为 A。首先注意量纲，齐次，我可不可以发和我应不应该发是两码事，这里题目并没有说是不是连续收到了三个 ack，没有其他条件，所以就直接 B 就好了。
 
@@ -3332,19 +8767,68 @@ Trap 是内中断。
 
 ![5.3.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0VqyOA1keKhc8n7CArr2551ZvUaWQACERNrG6T-SFZnvSUJIhNguAEAAwIAA3gAAz0E)
 
+> 在 TCP 中，发送方的窗口大小取决于（ ）。
+>
+> - A. 仅接收方允许的窗口
+> - B. 接收方允许的窗口和发送方允许的窗口
+> - C. 接收方允许的窗口和拥塞窗口
+> - D. 发送方允许的窗口和拥塞窗口
+>
+> TCP 利用滑动窗口来实现流量控制，只要发送方收到对方的零窗口通知，就启动（ ）计时器，若计时器超时，则发送一个零窗口探测报文段，以试图获得对方的窗口值。
+>
+> - A. 重传
+> - B. 保活
+> - C. 时间等待
+> - D. 持续
+
 第 13 题错选为 B。接受方允许的窗口=接收窗口，发送方允许的窗口=最大可以发送的窗口，发送方窗口大小=min。
 
 第 14 题错选为 B。背书。对于 A，为超时，对于 B，是长时间没有数据交互，对于 C，是四次挥手主动关闭的最后等待 2MSL 时间。
 
 ![5.3.29](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0ZqyOBUKZdI6nymAAGsyEWZdeAf5cEAAhITaxuk_khW1Dv0mMZ97rMBAAMCAAN4AAM9BA)
 
+> 一个 TCP 连接的数据传输阶段，若发送端的发送窗口值由 2000 变为 3000，则意味着发送端可以（ ）。
+>
+> - A. 在收到一个确认之前可以发送 3000 个 TCP 报文段
+> - B. 在收到一个确认之前可以发送 1000B
+> - C. 在收到一个确认之前可以发送 3000B
+> - D. 在收到一个确认之前可以发送 2000 个 TCP 报文段
+
 本题错选为 A。发送方窗口由 2000 变成 3000，意味着可以发 3000B 的数据，这里没有提到 MSS。
 
 ![5.3.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0dqyOCIdahXuZuOMd0h-DJfWKETrQACExNrG6T-SFbWPL2_0RMkNAEAAwIAA3gAAz0E)
 
+> 在一个 TCP 连接中，MSS 为 1KB，当拥塞窗口为 34KB 时发生了超时事件。若在接下来的 4RTT 内报文段传输都是成功的，则当这些报文段均得到确认后，拥塞窗口的大小是（ ）。
+>
+> - A. 8KB
+> - B. 9KB
+> - C. 16KB
+> - D. 17KB
+
 本题错选为 A。拥塞窗口为 34KB，发生超时，则拥塞窗口减为 17KB，接下来的 RTT 里，第一个 RTT 结束是 2KB，第 2 个 RTT 结束为 4KB，然后是 8KB，16KB。
 
 ![5.3.35](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0hqyOCYX2pTT_nWp_R3AuHd7DOOWwACFBNrG6T-SFaFbUtzs0qzvAEAAwIAA3gAAz0E)
+
+> 假设一个 TCP 连接的传输过程在慢开始阶段，在 tRTT 时刻到 (t+1)RTT 时刻之间发送了 k 个数据段，假设仍然保持在慢开始阶段，预期在 (t+1)RTT 时刻到 (t+2)RTT 时刻之间将发送（ ）个数据段（假设接收方有足够的缓存）。
+>
+> - A. k
+> - B. k+1
+> - C. 2^k
+> - D. 2k
+>
+> 下列关于 TCP 的拥塞控制机制的描述中，错误的是（ ）。
+>
+> - A. TCP 刚建立连接进入慢开始阶段
+> - B. 慢开始阶段拥塞窗口指数级增加
+> - C. 超时发生时，新门限值（慢开始和拥塞避免阶段的分界点）等于旧门限值的一半
+> - D. 拥塞避免阶段拥塞窗口线性增加
+>
+> 在一个 TCP 连接中，MSS 为 1KB，当拥塞窗口为 34KB 时收到了 3 个冗余 ACK 报文。若在接下来的 4RTT 内报文段传输都是成功的，则当这些报文段均得到确认后，拥塞窗口的大小是（ ）。
+>
+> - A. 8KB
+> - B. 16KB
+> - C. 20KB
+> - D. 21KB
 
 第 35 题错选为 C。发送 k 个数据段，下一个阶段就发送 2k 个段。
 
@@ -3354,9 +8838,27 @@ Trap 是内中断。
 
 ![5.3.56](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0lqyOCtV4Nkiq-5nyJQ2u0UhQmPkgACFRNrG6T-SFbY5KikAwJt8AEAAwIAA3gAAz0E)
 
+> 【2021 统考真题】设主机甲通过 TCP 向主机乙发送数据，部分过程如下图所示。甲在 t₀ 时刻发送一个序号 seq=501、封装 200B 数据的段，在 t₁ 时刻收到乙发送的序号 seq=601、确认序号 ack_seq=501、接收窗口 rcvwnd=500B 的段，则甲在未收到新的确认段之前，可以继续向乙发送的数据序号范围是（ ）。
+>
+> - [图示] 甲、乙两条竖线为时间轴（向下为时间）；t₀ 时甲向乙的箭头标注 seq=501, 200B 数据；t₁ 时乙向甲的箭头标注 seq=601, ack_seq=501, rcvwnd=500B。
+>
+> - A. 501 ~ 1000
+> - B. 601 ~ 1100
+> - C. 701 ~ 1000
+> - D. 801 ~ 1100
+
 本题错选为 A。需要注意，这里没有说收到 3 个 ACK，所以不需要重传。注意窗口被划分为两块，已发送未收到确认和未发送的。
 
 ![5.3.60](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0pqyODM6z0y_QVbdBDrlNkkkHScsgACFhNrG6T-SFb-f7nIvdcrvAEAAwIAA3gAAz0E)
+
+> 【2025 统考真题】主机甲通过 TCP 向主机乙发送数据的部分过程如下图所示，seq 为序号，ack_seq 为确认序号，rcvwnd 为接收窗口。甲在 t₀ 时刻的拥塞窗口和发送窗口均为 2000B，拥塞控制阈值为 8000B，MSS = 1000B，甲始终以 MSS 发送 TCP 段，若甲在 t₁ 时刻收到如图所示的确认段，则甲在未收到新的确认段之前，还可继续向乙发送的 TCP 段数是（ ）。
+>
+> - [图示] 甲、乙两条竖线为时间轴（向下为时间）；t₀ 时甲向乙发出两条箭头，分别标注 seq = 2001, 1000B 数据 与 seq = 3001, 1000B 数据；t₁ 时乙向甲发回箭头，标注 seq = 4001, ack_seq = 3001, rcvwnd = 4000B。
+>
+> - A. 2
+> - B. 3
+> - C. 4
+> - D. 5
 
 本题错选为 C。这里需要辨析一个概念，也就是每收到一个 ack 窗口 +1MSS，从宏观上来看，确实是翻倍，但是从围观上来看是一个 ack+1MSS。
 
@@ -3366,9 +8868,30 @@ Trap 是内中断。
 
 ![6.2.8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0tqyODtBN6_if1sQ7ZQngZ-TsEs_gACFxNrG6T-SFbVXvaHqorBUgEAAwIAA3gAAz0E)
 
+> 一台主机要解析 `www.cskaoyan.com` 的 IP 地址，若这台主机配置的域名服务器为 202.120.66.68，互联网顶级域名服务器为 11.2.8.6，而存储 `www.cskaoyan.com` 的 IP 地址对应关系的域名服务器为 202.113.16.10，则这台主机解析该域名通常首先查询（ ）。
+>
+> - A. 202.120.66.68 域名服务器
+> - B. 11.2.8.6 域名服务器
+> - C. 202.113.16.10 域名服务器
+> - D. 可以从这 3 个域名服务器中任选一个
+
 本题错选为 B。首先先找本地域名服务器，然后再委托本地域名服务器进行查询。
 
 ![6.2.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA0xqyOFBuSLB2wl1fWuTou48TAABTaEAAhgTaxuk_khWKHiRAAFPxDRdAQADAgADeAADPQQ)
+
+> 若本地域名服务器无缓存，用户主机采用递归查询向本地域名服务器查询另一网络某主机域名对应的 IP 地址，而本地域名服务器采用迭代查询向其他域名服务器进行查询，则用户主机和本地域名服务器发送的域名请求条数分别为（ ）。
+>
+> - A. 1 条，1 条
+> - B. 1 条，多条
+> - C. 多条，1 条
+> - D. 多条，多条
+>
+> 【2010 统考真题】若本地域名服务器无缓存，则在采用递归方法解析另一网络某主机域名时，用户主机和本地域名服务器发送的域名请求条数分别为（ ）。
+>
+> - A. 1 条，1 条
+> - B. 1 条，多条
+> - C. 多条，1 条
+> - D. 多条，多条
 
 第 10 题错选为 A，第 11 题错选为 B。
 
@@ -3376,33 +8899,86 @@ Trap 是内中断。
 
 ![6.2.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA01qyOFSicjBg-DuocNOh1d16m0qRwACGRNrG6T-SFYBlt58njkAAXoBAAMCAAN4AAM9BA)
 
+> 【2020 统考真题】假设下图所示网络中的本地域名服务器只提供递归查询服务，其他域名服务器都只提供迭代查询服务；局域网内主机访问 Internet 上各服务器的往返时间（RTT）均为 10ms，忽略其他各种时延。若主机 H 通过超链接 `http://www.abc.com/index.html` 请求浏览纯文本 Web 页 index.html，则从单击超链接开始到浏览器接收到 index.html 页面为止，所需的最短时间与最长时间分别是（ ）。
+>
+> - [图示] 局域网内有本地域名服务器、路由器、主机 H；路由器经链路连到 Internet 云，云内有根域名服务器、com 顶级域名服务器、abc.com 域名服务器、`www.abc.com`。
+>
+> - A. 10ms，40ms
+> - B. 10ms，50ms
+> - C. 20ms，40ms
+> - D. 20ms，50ms
+
 本体错选为 B。本题错误原因和 1 类似。
 
 ![6.5.1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA05qyOFrOxyDH2U7LUkvZpTNm3-ZhgACGhNrG6T-SFZyj2KR2aY0jAEAAwIAA3gAAz0E)
+
+> 下面的（ ）协议中，客户与服务器之间采用面向无连接的协议进行通信。
+>
+> - A. FTP
+> - B. SMTP
+> - C. DNS
+> - D. HTTP
 
 错选为 D，属于脑子抽了。
 
 ![6.5.3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA09qyOF53lTfRgMMeTFVJcCySIW1pAACGxNrG6T-SFZ6fU-7lQXQ9gEAAwIAA3gAAz0E)
 
+> TCP 和 UDP 的一些端口保留给一些特定的应用使用。为 HTTP 保留的端口号为（ ）。
+>
+> - A. TCP 的 80 端口
+> - B. UDP 的 80 端口
+> - C. TCP 的 25 端口
+> - D. UDP 的 25 端口
+
 错选为 C，属于低级错误。
 
 ![6.5.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1BqyOGJeGsR4HlTmMzhBH01_kL-2wACHBNrG6T-SFYgYm23-0QHoAEAAwIAA3gAAz0E)
+
+> 仅需 Web 服务器对 HTTP 报文进行响应，但不需要返回请求对象时，HTTP 请求报文应该使用的方法是（ ）。
+>
+> - A. GET
+> - B. PUT
+> - C. POST
+> - D. HEAD
 
 不知道选什么，错误原因见 1 刷。
 
 ![6.5.7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1FqyOLGEZ_Gwp3tnKhudZ3WJMK_-gACIBNrG6T-SFbhBdngP521nAEAAwIAA3gAAz0E)
 
+> 若浏览器支持并行 TCP 连接，使用非持久的 HTTP/1.0 协议请求浏览 1 个 Web 页，该页中引用同一网站上的 7 个小图像文件，则从浏览器为传输 Web 页请求建立 TCP 连接开始，到接收完所有内容为止，所需的往返时间 RTT 数至少是（ ）。
+>
+> - A. 3
+> - B. 4
+> - C. 8
+> - D. 9
+
 不知道选什么，错误原因见 1 刷。
 
 ![6.5.11](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1FqyOLGEZ_Gwp3tnKhudZ3WJMK_-gACIBNrG6T-SFbhBdngP521nAEAAwIAA3gAAz0E)
+
+> 若浏览器支持并行 TCP 连接，使用非持久的 HTTP/1.0 协议请求浏览 1 个 Web 页，该页中引用同一网站上的 7 个小图像文件，则从浏览器为传输 Web 页请求建立 TCP 连接开始，到接收完所有内容为止，所需的往返时间 RTT 数至少是（ ）。
+>
+> - A. 3
+> - B. 4
+> - C. 8
+> - D. 9
 
 错选为 A。首先使用 2 个 RTT 时间获取到 WEB 页，然后用 2 个 RTT 获取到资源。
 
 ![6.5.13](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1NqyOMF-Qr9fp7t1Q3sejNsu1_sdQACIhNrG6T-SFaSglhzMe8PUwEAAwIAA3gAAz0E)
 
+> 主机通过超链接 `http://www.cskaoyan.com/index.html` 请求浏览 Web 页 index.html，浏览器使用流水线方式的 HTTP/1.1 协议，该 Web 页引用了同一网站上的 7 个小图像文件，假设主机到本地域名服务器和互联网上各服务器的往返时延均为 1RTT，本地域名服务器只提供递归查询服务，其他域名服务器只提供迭代查询服务，忽略其他所有时延，则从点击超链接开始到浏览器接收到所有内容为止，所需的往返时间 RTT 数最多是（ ）。
+>
+> - A. 5
+> - B. 6
+> - C. 7
+> - D. 8
+
 本题错选为 D。委托本地域名服务器进行递归查询，本地域名服务器进行迭代查询，总共查询 3 次，也就是 3RTT 的时间获取到链接，随后使用 1.5RTT 的时间建立连接，在最后 0.5RTT 内不进行捎带返回 index。1RTT 时间获取到具体 index，然后再使用 1RTT 的时间并行请求 3+2+1+1=7。
 
 ![6.5.18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACA1RqyOMYlzePoNdKdcQvyU94bB9SWQACIxNrG6T-SFbGl43XZg8xsQEAAwIAA3gAAz0E)
+
+> 【2022 统考真题】假设主机 H 通过 HTTP/1.1 请求浏览某 Web 服务器 S 上的 Web 页 news408.html，news408.html 引用了同目录下的 1 幅图像，news408.html 文件大小为 1MSS（最大段长），图像文件大小为 3MSS，H 访问 S 的往返时间 RTT = 10 ms，忽略 HTTP 响应报文的首部开销和 TCP 段传输时延。若 H 已完成域名解析，则从 H 请求与 S 建立 TCP 连接时刻起，到接收到全部内容止，所需的时间至少是（ ）。
 
 本题错选为 A。建立请求开始花费 1.5RTT，0.5RTT 用于捎带传输 index。1RTT 的时间获取 2MSS 的内容，再 1RTT 的时间获取最后 1RTT 的内容，总计 4RTT。
 
