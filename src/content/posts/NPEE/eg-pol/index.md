@@ -479,31 +479,527 @@ In one series of studies, researchers instructed Chicago-area commuters using pu
 
 碰到不认识的词，根据语境推测模糊过去。
 
-## 小作文与图表作文
+## 英语作文
 
-### 这份东西怎么用
+### 怎么用
 
-真题区当题库用，模板区当骨架用。**模板只是参考，句子必须换掉一半再背**——市面模板人人一套，阅卷老师一天看几百份，撞句就是低分。
+#### 考场上五步
 
-三个数字记牢：
+题干永远给你两个点。所以第一步不是想内容，是把那两个动词圈出来。
 
-| 项 | 数量 | 说明 |
+1. 圈动词。2018 那题圈 `apologize and explain` 和 `suggest a future meeting`。圈不出两个，说明题读错了，回头重读。
+2. 照下面那张表找块。别现场判断——判断会犹豫，犹豫就出错。
+3. 抄块，从第一句往下数，凑到 95 词上下就停。90 到 115 都算合格，别硬凑。
+4. 套骨架：`Dear X,` → 开头句 → `[块]` → 收尾两句 → `Yours sincerely,` → `Li Ming`。
+5. 回头查三样：两点都写了没、落款是不是 `Yours`、字数在 90 到 115 之间没有。
+
+五步里只有第 3 步要动脑，其余都是抄。
+
+#### 动词找块
+
+| 题干里的动词 | 用哪块 |
+| :---------------------------- | :---------- |
+| invite / introduce / welcome | A 邀请 |
+| suggest / advise / recommend | B 建议 |
+| thank / congratulate | C 感谢 |
+| apologize / cancel / postpone | D 道歉 |
+| complain / demand | E 投诉 |
+| 以上都不是 | 见后面的三句结构 |
+
+两个动词就找两块，叠起来用。
+
+#### 方括号填什么
+
+每个方括号只填两样之一：一个名词短语，或者一个动词原形开头的短语。
+
+不填句子，不堆形容词。三到八个词就够。
+
+想不出漂亮的，就写最土的那个。`the library` 比 `a place of cultural significance` 安全一百倍——后者写错一个介词就露馅。
+
+| 模板位 | 别这么填 | 这么填 |
+| :------------------------ | :---------------------- | :--------------------------------- |
+| `invitation to [活动]` | `a meaningful activity` | `the welcome party` |
+| `a good chance to [好处]` | `improve yourself` | `meet people and practise Chinese` |
+| `I would start with [做法]` | `translation practice` | `one paragraph a day` |
+| `[对象] sits [位置]` | `in a nice place` | `at the north end of the old town` |
+
+一个共性：右边都带**具体名词**，左边都是空话。阅卷看的就是这个差别。
+
+#### 走一遍，2018
+
+题：给 Professor Smith 写信，取消访问，说明情况，另约时间。
+
+第 1 步，圈出 `apologize and explain` 和 `suggest a future meeting`。
+
+第 2 步，`apologize` 对到块 D。
+
+第 3 步，D1 到 D6 顺次抄，91 词，正好收手。
+
+第 4 步，套骨架（含开头句）。第 5 步，查：道歉在 D1、D2，另约在 D3，落款是 `Yours`，98 词在区间里。
+
+写完的样子在后面的成篇示范里。
+
+#### 双块的题怎么接
+
+2016 要写「感谢 + 给建议」，就是 C 全加 B 前四句。
+
+两段中间空一行，什么过渡词都不加。
+
+为什么能不加——上一段已经把「谢谢你」说完了，下一段直接开始给方法，读者不觉得断。硬塞 `Besides` 反而像凑字数。
+
+#### 背的顺序
+
+别从 A 背到 E。按覆盖年份排：
+
+| 顺序 | 背什么 | 一次覆盖 |
+| :- | :------- | :---------------------------- |
+| 1 | 骨架 29 词 | 每封信用 |
+| 2 | 块 A 71 词 | 2013 2015 2020 2021 2022 2025 |
+| 3 | 块 B 71 词 | 2011 2019 2023 2024 |
+| 4 | 块 D 69 词 | 2018 |
+| 5 | 块 C 35 词 | 2010 2016 |
+| 6 | 块 E 74 词 | 2012 |
+
+前四样背完，17 年里能写 12 年。C 和 E 是补漏的，放最后。
+
+每天的排期在本文最后。
+
+#### 怎么算背过了
+
+不是读顺了，是**合上文档默写，拼写和标点一个不错**。
+
+错一个字母，整段重来。
+
+理由很实在：你上次把 `Yours sincerely` 写成 `Your sincerely`，扣的不是知识点，是印象分。
+
+### 为什么推翻重来
+
+旧版 39 句、石雷鹏 20 篇，你两个都不满意，原因不是句子不好，是**记忆单元切错了**。
+
+功能句是零件，考场上要现装。你手写那两篇里的错——`insist in`、`reading ... and recite`、`Your sincerely`——全是装配期的错，不是不懂。
+
+所以这版改成背**整块**：一块 5-6 句，讲完一个信息点，语义完整。考场上只做两件事：选块、换名词。
+
+先把账说清楚，免得又是幻觉：
+
+> 小作文要 100 词，题干永远两个信息点，每块至少 65 词才撑得起一篇。  
+> 覆盖 17 年真题的下限是 **340 词左右**（不含接口句），这个减不掉。  
+> 能减的是**考场的思考量**：从「用哪个块、怎么缝」变成「选一段、换个名词」。
+>
+> 全书实际背诵量：小作文 418 词（五块 + 骨架 + 7 个接口句），大作文 147 词，合计 565 词。
+
+下面每个数字都是数出来的，不是估的。
+
+### 五条规则
+
+1. **一句不超过 16 词。** 默写错误率和句子长度成正比，你已经在落款上验证过。
+2. **整块背，不拆句。** 块是语义流，比孤立句子好记。
+3. **双信息点的题，两块直接叠。** 中间不加过渡词。
+4. **只有 4 个位置需要现场组织。** 其余全是默写。
+5. **准确优先于华丽。** 写对一句简单句，比写错一句长难句划算。
+
+### 小作文（10 分，100 词）
+
+#### 3.1 骨架（固定，29 词，所有信通用）
+
+```text
+Dear [称呼],
+
+[开头句]
+
+[一块]
+
+If anything here does not suit you, tell me. A line back by Friday is enough.
+
+Yours sincerely,
+Li Ming
+```
+
+| 场合   | 称呼                      | 落款                                |
+| :--- | :---------------------- | :-------------------------------- |
+| 朋友   | `Dear Jack,`            | `Yours sincerely,` 或 `Take care,` |
+| 教授   | `Dear Professor Smith,` | `Yours sincerely,`                |
+| 不知姓名 | `Dear Sir or Madam,`    | `Yours faithfully,`               |
+| 一群人  | `Dear friends,`         | `Yours sincerely,`                |
+
+> 落款是 `Yours`，不是 `Your`。写完回头看一眼。
+
+开头句三选一，按场合挑，别每篇都用同一句：
+
+| 用途 | 句子 | 词 |
 | :--- | :--- | :--- |
-| 小作文外壳 | 2 套 | 去信、回信，**第二句起完全共用**，只有打头那句换调子 |
-| 大作文外壳 | 1 套 | 首段 4 句 + 中段 2 因 + 尾段 3 句 |
-| 功能词块 | 11 组小 + 5 类大 | 中间全部靠块拼，不背整篇 |
+| 通用 | `I hope this email finds you well.` | 7 |
+| 回信 | `Thank you for your email last week.` | 7 |
+| 老朋友 | `It has been a while since we last spoke.` | 10 |
 
-背诵优先级：
+这句是**字数保底**用的。不算内容分，但也不扣分——它是最标准的书信开场白，阅卷看到不会皱眉。
 
-1. 先背 **小作文的头两行 + 尾两行**（两套共用，实际只有 3 句），这是小作文的地基；
-2. 再背 **小作文 6 个高频块**（介绍、邀请、建议、致歉、感谢、投诉），够覆盖 2010-2026 的 14 年；
-3. 最后背大作文的 **首段 4 句 + 中段 2 个原因句 + 尾段 3 句**，话题词块靠考前突击。
+真正的内容从下一句开始。
 
-> 标「译」的是给人看的中文，考场不写。
+#### 3.2 字数怎么算
 
----
+先说结论：**`Yours sincerely` 算 2 个词，`Li Ming` 算 2 个词，`Dear Jack,` 也算 2 个词。**
 
-### 第一部分 小作文真题（2010-2026）
+评卷按整篇数，称呼落款都在里面。以 2018 那篇（98 词）拆开为例：
+
+| 部分 | 词数 |
+| :--- | :--- |
+| 称呼 | 2 |
+| 开头句 | 7 |
+| 正文（块） | 69 |
+| 收尾两句 | 16 |
+| 落款 + 姓名 | 4 |
+| **合计** | **98** |
+
+块换成 A 或 E 就多三五个词，落点 101 到 103。都在区间里。
+
+但正文别太短。**正文（块加收尾）低于 80 词就悬了**——阅卷看到一大片空白，会先入为主判内容单薄。
+
+所以块写够是第一位的，开头句只是把总数顶到 100 附近。
+
+写完数一遍，落在 95 到 110 之间就放心。
+
+#### 3.3 块 A｜邀请 + 细节（72 词，配骨架 101 词）
+
+```text
+A1  This is an invitation to [活动], which takes place on [日期] at [地点].
+A2  There will be [内容一], [内容二] and [内容三], so there is something
+    for everyone.
+A3  Last year about forty students came, and this time we expect more.
+A4  Come if you can: it is a good chance to [好处].
+A5  Bring a friend if you like — the more the better.
+```
+
+译：这是……的邀请，活动在……（日期）……（地点）举行。会有……、……和……，总有一项适合你。去年来了四十来个学生，今年预计更多。能来就来：这是……的好机会。愿意的话带个朋友，人越多越好。
+
+> A1 是定语从句，一篇里有一条就够。  
+> A4 的 `[好处]` 填**动词原形**：`meet people and practise Chinese`。
+
+**A1 的介绍版**（2020 介绍景点这种「不请人来，只讲清楚」的题，换这一句就够）：
+
+```text
+A1' This is a short introduction to [对象], which sits [位置] and dates
+    back to [年代].
+```
+
+其余 A2-A5 照用，把 A4 的 `[好处]` 换成 `[看点]`。
+
+#### 3.4 块 B｜建议 + 理由（71 词，配骨架 100 词）
+
+```text
+B1  I would start with [做法]. It costs little and pays off fast.
+B2  Give it a month before you judge it. Most people quit too early.
+B3  A friend read a hundred pages once and remembered none of it.
+B4  Ten sentences a day beats a hundred once.
+B5  Slow and steady is boring, but it is the only thing that works.
+B6  The first week is the hardest, so keep it small.
+```
+
+译：我会从……开始。它几乎不花成本，见效还快。先做一个月再判断。多数人放弃得太早。有个朋友一口气读了一百页，结果什么都没记住。一天十句胜过一夜百句。慢而稳很无聊，但它是唯一有效的东西。第一周最难，所以量要小。
+
+> B1 的 `[做法]` 必须是**动作**：写 `one paragraph a day`，别写 `translation practice`。
+
+#### 3.5 块 C｜感谢 + 影响（35 词，半块）
+
+```text
+C1  Thank you for your congratulations — they came at the right time.
+C2  The contest was hard, and your note kept me going.
+C3  I still owe you one, and I hope to pay it back soon.
+```
+
+译：谢谢你的祝贺，来得正是时候。比赛很难，你的信让我撑了下去。我还欠你一份人情，希望能早点还上。
+
+> 这块只干「感谢」一个点，所以不单独成篇，永远配 A 或 B 用。
+
+#### 3.6 块 D｜道歉 + 另约（69 词，配骨架 98 词）
+
+```text
+D1  I am sorry to say I must call off my visit next week.
+D2  My mother had a fall and needs me at home.
+D3  Could we meet in early December instead? I will send the material ahead.
+D4  I would rather move it than drop it.
+D5  Thank you for your patience, and I am sorry for the short notice.
+D6  I will make the next visit longer to make up for it.
+```
+
+译：很抱歉，下周的拜访我得取消。我母亲摔了一跤，需要人照顾。能不能改到十二月初？我会提前把材料发过去。我宁愿改期也不想取消。谢谢你的耐心，也很抱歉通知得这么晚。下次拜访我会待久一些，把这次补回来。
+
+> D3 是题干的任务二（另约时间）。**漏了这句直接掉档**，2018 那篇就栽在这。
+
+#### 3.7 块 E｜投诉 + 要求（74 词，配骨架 103 词）
+
+```text
+E1  I am writing about the dictionary I bought from your store last month.
+E2  Three keys stick and the screen goes black, so it is hard to use.
+E3  I wrote to you on the 5th and got no reply.
+E4  I would like a replacement, and I hope we can settle this quietly.
+E5  A new one would solve it; a long explanation would not.
+E6  I have kept the receipt and can send a photo if needed.
+```
+
+译：我写信说说上个月在你们店买的那本词典。三个键按了弹不回来，屏幕会黑，用起来很费劲。我五号写过一次，没有人回。我希望换一个新的，也希望这件事私下解决。换个新的就能解决，长篇解释不行。收据我留着，需要的话可以拍照发过去。
+
+#### 3.8 接口句（7 个，68 词，每题最多一句）
+
+| 编号 | 句子 | 用在哪 |
+| :- | :------------------------------------------------------------------------------ | :----------- |
+| I1 | `Congratulations — you earned it.` | 2011 祝贺 |
+| I2 | `Tell me what you think before I decide.` | 2024 问意见 |
+| I3 | `I would be glad to come, and I will keep it to three points.` | 2017 接受邀请 |
+| I4 | `The video made me want to go there myself.` | 2026 谈感受 |
+| I5 | `Two hours of your time would help a lot.` | 2013／2015 号召 |
+| I6 | `I would also like to know where you stayed.` | 2026 想了解更多 |
+| I7 | `Take the exhibition — the robot show will come again; the paintings will not.` | 2023 二选一 |
+
+### 拼装表（2010-2026）
+
+「实算」= 块词数 + 骨架 29，全部按真词数相加，落在 95-112 才算合格。
+
+骨架 29 词已经含了开头句（7 词）。**开头句可以不加**，那样总数减 7，落到 88-105。低于 92 就加上。
+
+**块内句子按顺序取，凑到 95-110 词就停。** 不用记哪句必用、哪句可省——从第一句往下数，够数了收手。这是唯一需要临场判断的地方。
+
+| 年份 | 任务 | 用哪几块 | 实算 |
+| :--- | :--- | :--- | :--- |
+| 2010 | 感谢接待 + 邀请来访 | C 前 2 句 + A 前 4 句 | 112 |
+| 2011 | 祝贺升学 + 给建议 | I1 + B 前 5 句 | 95 |
+| 2012 | 投诉 + 要求解决 | E 全 | 103 |
+| 2013 | 义卖细节 + 号召参与 | A 全 + I5 | 110 |
+| 2014 | 生活习惯 + 求建议 | 见 4.1 | — |
+| 2015 | 夏令营介绍 + 招志愿者 | A 全 + I5 | 110 |
+| 2016 | 感谢祝贺 + 翻译建议 | C 全 + B 前 3 句 | 104 |
+| 2017 | 接受邀请 + 讲座要点 | 见 4.1 | — |
+| 2018 | 道歉说明 + 另约 | D 全 | 98 |
+| 2019 | 建议辩题 + 说明安排 | B 全，B1 换填充 ＋ 自补一句安排 | 100 |
+| 2020 | 介绍景点 + 游览建议 | A 全，首句换 A1' | 101 |
+| 2021 | 邀请参会 + 细节 | A 全 | 101 |
+| 2022 | 介绍美食节 + 邀请 | A 全 | 101 |
+| 2023 | 二选一建议 + 理由 | I7 + B 前 5 句 | 104 |
+| 2024 | 提出计划 + 问意见 | B 全 + I2 | 108 |
+| 2025 | 介绍短剧 + 邀请参演 | A 全 | 101 |
+| 2026 | 谈视频感受 + 想了解更多 | I4 + I6 + 自补 | — |
+
+#### 4.1 模板救不了的三类题
+
+2014（说生活习惯）、2017（讲讲座要点）、2026（谈视频感受）——内容高度个人化，任何模板都只能给框架，剩下 50 词必须自己写。
+
+写法固定成三句，每句一个具体细节：
+
+```text
+第一句：一件具体的事（时间／地点／人）
+第二句：一个可验证的细节（数字／次数／时长）
+第三句：所以这对你意味着什么
+```
+
+2014 的示范：
+
+```text
+I keep early hours and cook most nights, so the kitchen is busy until eight.
+I am out at weekends, which leaves the flat quiet for you.
+Music after eleven is the one thing I cannot sleep through.
+```
+
+> 三句没有生词，但每句都带一个具体信息。这就是内容分的来源——不靠形容词，靠细节。
+
+2017 的示范（三点用「并列 + 各带一个具体」）：
+
+```text
+I would cover three points: how festivals survive in cities, why food
+travels better than language, and what foreign students usually misread.
+Each point comes with one example from my own city, so the talk stays
+concrete rather than abstract.
+```
+
+> 这两句超过了 16 词——因为三项并列压不短。它们属于「现场组织句」，不计入必背，  
+> 但结构要记住：**冒号后三个 how／why／what 头，第二句补一句「每个都带例子」**。
+
+#### 4.2 两篇成篇示范
+
+2016（C 全 + B 前 3 句，104 词）：
+
+```text
+Dear Jack,
+
+I hope this email finds you well.
+
+Thank you for your congratulations — they came at the right time. The
+contest was hard, and your note kept me going. I still owe you one, and
+I hope to pay it back soon.
+
+I would start with one paragraph a day. It costs little and pays off
+fast. Give it a month before you judge it. Most people quit too early.
+
+If anything here does not suit you, tell me. A line back by Friday is enough.
+
+Yours sincerely,
+Li Ming
+```
+
+2018（D 全，98 词）：
+
+```text
+Dear Professor Smith,
+
+I hope this email finds you well.
+
+I am sorry to say I must call off my visit next week. My mother had a
+fall and needs me at home. Could we meet in early December instead? I
+will send the material ahead. I would rather move it than drop it.
+Thank you for your patience, and I am sorry for the short notice. I will
+make the next visit longer to make up for it.
+
+If anything here does not suit you, tell me. A line back by Friday is enough.
+
+Yours sincerely,
+Li Ming
+```
+
+> 两篇都没加过渡词。第二段开头直接 `I would start with ...`，读者不会觉得断——因为上一段已经把「谢谢你」说完了。
+
+### 大作文（15 分，150 词）
+
+#### 5.1 骨架（9 句，81 词）
+
+```text
+S1  The chart shows how [主题] changed between [年] and [年].
+S2  [A] rose from [x] to [y], while [B] fell from [x] to [y].
+S3  The gap is [n] times, too wide to be chance.
+S4  Two forces explain it.
+S5  The first is practical: [力量] has made [行为] cheaper and easier.
+S6  The second is personal: people now value [新] more than [旧].
+S7  The trend is unlikely to turn around by itself.
+S8  For [主体], the useful move is to [动作].
+S9  That is how a number becomes a benefit.
+```
+
+逐句译：图表显示了……在……到……之间的变化。……从……升到……，而……从……降到……。差距是……倍，大到不可能是巧合。两股力量可以解释。第一股是现实的：……让……变得又便宜又容易。第二股是个人的：人们现在更看重……而不是……。这个趋势不会自己掉头。对……来说，有用的做法是……。数字才能变成好处。
+
+> S3 的 `[n] times` 只写整数倍。算不准就换 `The gap is too wide to be chance.`——算错比不写更亏。
+>
+> S5 与 S6 必须来自两个系统：一个外部（成本、技术、政策），一个内部（观念、习惯）。两条都归到「方便」，说明你只找到一个原因。
+
+#### 5.2 首段三变体（只换 S1-S3）
+
+| 图型 | S1 | S2 | S3 |
+| :--------- | :------------------------------------------------------ | :---------------------------------------------- | :------------------------------------- |
+| 柱状／折线（有年份） | `The chart shows how [主题] changed between [年] and [年].` | `[A] rose from [x] to [y], while [B] fell.` | 倍数／拐点 |
+| 饼图／静态柱 | `The chart shows how [主题] are distributed among [对象].` | `[A] leads at [x]%, with [B] at [y]%.` | `The top two together take over half.` |
+| 表格 | 同饼图 | `The youngest group spends most, at [x] hours.` | 最反常识那一格 |
+
+> 静态图**绝不能写「逐年上升」**。这是最常见的读图硬伤，一见就掉档。
+
+#### 5.3 四个展开位（46 词，唯一要现场组织的部分）
+
+| 位置 | 接在 | 补什么 | 2025 真题的例子 |
+| :- | :--- | :----- | :-------------------------------------------------------------- |
+| X1 | S2 后 | 其余项怎么样 | `The rest are far behind, at under thirty percent each.` |
+| X2 | S5 后 | 机制，用对比 | `A screen costs less than a trip, and it never needs planning.` |
+| X3 | S6 后 | 心理，用对比 | `A familiar programme feels safer than a stranger at the door.` |
+| X4 | S8 后 | 一个具体动作 | `Join them for one walk a week, and let them set the pace.` |
+
+> X2／X3 的写法固定：**A 怎么样，而 B 怎么样**。两个具体名词一对比，内容就实了，不用形容词。
+>
+> X1 只在「有第三、第四项」时用。2025 那张图只有两项突出，所以下面那篇跳过了 X1。
+
+#### 5.4 字数不够时加这两句（20 词）
+
+骨架 81 + 展开 46 = 127 词，离 150 差 23，正好这两句补上。差多少加多少，按顺序取：
+
+```text
+P1（放 S3 后）That is a gap most people would not guess.
+P2（放 S7 后）Left alone, it will widen the difference between the two groups.
+```
+
+两句话都不带生词，且都能接住上下文。只缺 10 词就只加 P1。
+
+#### 5.5 走一遍（2025 真题，150 词）
+
+```text
+The chart shows how older people in one community spend their leisure
+time. Watching TV leads at 90.8%, with walking at 68.3%. The gap is wide,
+and the easiest activity wins by a large margin. That is a gap most people
+would not guess.
+
+Two forces explain it. The first is practical: cheap screens have made
+home entertainment easier than ever. A screen costs less than a trip, and
+it never needs planning. The second is personal: people now value comfort
+more than novelty. A familiar programme feels safer than a stranger at
+the door.
+
+The trend is unlikely to turn around by itself. Left alone, it will widen
+the difference between the two groups. For families, the useful move is to
+walk with them, not urge them to. Join them for one walk a week, and let
+them set the pace. That is how a number becomes a benefit.
+```
+
+> 90.8 与 68.3 之间是百分点差，算不出倍数，所以 S3 换成了「差距很大」的说法。  
+> **算不出倍数就别硬算**，写错一个数字比不写更亏。
+
+#### 5.6 万一考图画或材料（合计 30%）
+
+只换 S1，S2 起全部不动：
+
+- 图画：`The picture shows [场景]: [一句描述].`
+- 材料：`The passage describes [现象] in a few lines.`
+
+第二三段讨论的本来就是「现象、原因、态度」，跟出题形式无关。
+
+### 格式卡
+
+**通知**（不写称呼，标题居中，落款是单位）：
+
+```text
+Notice
+
+[活动名称]
+
+[活动] is scheduled for [日期] at [地点]. It opens with [环节一], and
+then moves on to [环节二]. Those interested are welcome to sign up at
+[地点] before [时间].
+
+The Students' Union
+```
+
+**会议纪要**（大纲新形式，本质是「记录 + 结论」）：
+
+```text
+Minutes of the [会议名称]
+
+Time: [时间]    Place: [地点]    Present: [参会人]
+
+The meeting opened with [议题]. After discussion it was agreed that
+[结论], and [负责人] will [后续动作].
+
+[记录人]
+```
+
+### 七天计划
+
+按前面那个顺序走，不跳。
+
+| 天 | 任务 | 用时 |
+| :---- | :----------------------- | :--- |
+| Day 1 | 骨架 + 块 A，背完默写 | 40 分 |
+| Day 2 | 块 B | 30 分 |
+| Day 3 | 块 D + 块 C | 40 分 |
+| Day 4 | 大作文 S1-S9 + P1 P2 默写 | 40 分 |
+| Day 5 | 块 E + 七个接口句 | 30 分 |
+| Day 6 | 2016／2018／2021 各写一篇小作文 | 40 分 |
+| Day 7 | 2025／2019 各写一篇大作文，全部默写一遍 | 40 分 |
+
+Day 6 和 Day 7 是唯一要动笔的两天，前面五天只做一件事：默写。
+
+默写的判定只有一条：**拼写和标点一个不错**。内容对不对是下一步的事。
+
+### 天花板在哪
+
+- 小作文稳 8 分，冲 9 分靠信息点写得比块更具体。
+- 大作文稳 11-12 分，冲 13 分靠第二段原因够具体——**这一项模板给不了**，只能靠 X2／X3 填得实。
+- 上限不是语言，是内容。句子全对但空，最多第四档。
+
+一句话：**语法分靠这 557 词拿稳，内容分靠四个展开位现场填。前者能背，后者只能拿真题练。**
+
+### 小作文真题（2010-2026）
 
 #### 年份 - 任务速查
 
@@ -734,213 +1230,7 @@ You should write about 100 words on the ANSWER SHEET.
 
 Do not use your own name in your email; use "Li Ming" instead. (10 points)
 
----
-
-### 第二部分 小作文模板（2 套外壳 + 11 组词块）
-
-#### 先想明白：为什么 2 套就够
-
-小作文的题干永远是「两个信息点」。所以：
-
-- 中间 = 2 个块（块 1 干任务 1，块 2 干任务 2），块从下面的库里抽；
-- 开头只管一件事：**我是谁、我为什么写**；
-- 结尾只管一件事：**把球踢回给对方**（等你回话 / 等你来 / 等你改）。
-
-于是「外壳 2 套 × 词块 11 组」就能覆盖 17 年真题。真正要背的只有开头两行、结尾两行，而这两套是**同一份**。
-
-#### 模板 A：去信（我发起）
-
-```text
-Dear [称呼],
-
-This is a short email with one purpose: [用不定式或从句说清请求].
-
-[块 1：干题干第一个点]
-
-[块 2：干题干第二个点]
-
-If any part of it does not suit you, say so and we will adjust it.
-Either way, a line by [时间] will do.
-
-Yours sincerely,
-Li Ming
-```
-
-译：
-这是一封很短的邮件，只说一件事：……。
-（两块正文）
-哪一部分对你不合适，就说，我们改。不管怎样，……之前给我一行回复就好。
-
-> **风格版**（好看但有风险，小作文 100 词不建议用，大作文可以）：
->
-> `Some things deserve to be put in writing rather than left to a passing remark, and this is one of them: …` / `If any part of this sits awkwardly with your plans, say so plainly — a plan that has to be forced is worse than one that has to be rewritten. Whichever way you lean, a line by [时间] will do.`
-
-#### 模板 B：回信（我回应）
-
-```text
-Dear [称呼],
-
-This is a short reply with one purpose: [用不定式或从句说清回答].
-
-[块 1]
-
-[块 2]
-
-If any part of it does not suit you, say so and we will adjust it.
-Either way, a line by [时间] will do.
-
-Yours sincerely,
-Li Ming
-```
-
-译：
-这是一封很短的回复，只说一件事：……。
-剩下的都是细节。
-（其余与去信一字不差。）
-
-> 两套从**第二句起完全相同**，结尾、签名、块库一字不改，只有打头那句换调子（email / reply）。
->
-> **小作文不要写「交代自己怎么写信」的句子**（诸如 "here are the details"、"the details follow"），那是元话语，占字数不传信息。破题句只承担一件事：说明这是请求还是答复。
->
-> **换语气**：给教授写信时，开头换成 `A matter of some importance has brought me to write: [点题].`，结尾第二句换成 `I would welcome your comments before anything is settled.`；投诉信里收尾换成 `I am not after a long explanation; a workable solution by [时间] is all I ask.`
-
-#### 写作口径（很影响分）
-
-- **称呼**：给朋友/同学 `Dear John,`；给教授 `Dear Professor Smith,`；不知道是谁 `Dear Sir or Madam,`；给一群人 `Dear friends,` / `Dear international students,`。
-- **落款**：`Yours sincerely,`（知道姓名的信）或 `Yours faithfully,`（不知姓名）；给朋友可 `Take care,`。姓名一律 `Li Ming`。
-- **开头分场合**：朋友 / 同学 / 留学生 → `This is a short email with one purpose: to …`（有个人腔）；教授 / 公司 / 机构 → `I am writing to …`（**这里该用常规句**，正式语域才是得体）；通知 → 不用第一人称。
-- **冒号后面接不定式或从句，不要接名词短语**——`with one purpose: your invitation` 语义不成立（那不是 purpose，是话题）。
-- **通知/告示不写称呼**，见后文附录。
-- 字数：**100 词左右，95-115 最稳**。大纲写的正是「100 词左右」，长度不符会「酌情扣分」，低于 90 词开始吃亏；超过 130 词只是徒增出错概率。
-
-#### 想上 9 分：三条结构位（大纲要求「丰富的语法结构」）
-
-只写简单句，小作文最多停在 8 分——第五档原文是「使用丰富的语法结构和词汇」。但不用整段重写，**每封信用一条就够**，插在块 1 里：
-
-| 结构 | 现成句（换词即用） |
-| :--- | :--- |
-| 定语从句 | `The meeting, which will run for an hour, starts at eight.` |
-| 非谓语 | `Three students report for ten minutes each, leaving the last half hour for questions.` |
-| 条件状语 | `If the time does not suit you, say so and we will move it.` |
-
-> 一条够用，两条封顶。堆三条会挤掉信息点，反而掉档。
-
-**硬规则：不许照抄题干句子。** 大纲原文——「允许在作文中使用提示语中出现过的个别关键词或词组，但使用提示语中出现的句子将被扣分」。所以 2025 那句 `invite him to take part in it` 不能原样搬，要写成 `have you on stage`。
-
----
-
-#### 中间块库（11 组，按任务抽两块）
-
-每个块 2 句，约 22-28 词。**用完记得把方括号换成具体信息，别连括号一起抄。**
-
-##### 块 1｜介绍活动（时间地点 + 内容亮点）
-
-> The event falls on [日期], from [时间] to [时间], at [地点]. What makes it worth a trip is [最亮的环节], on top of [第二亮点].
-
-译：活动定在……，地点在……。值得跑一趟的是……，除此之外还有……。
-
-##### 块 2｜介绍事物（定义 + 实际好处）
-
-> [对象] is best described as [一句大白话定义] — nothing fancy, but it does [核心功能] well. The practical payoff is simple: less time on [麻烦事], more on [要紧事].
-
-译：……可以说是……——不花哨，但……做得很扎实。实际好处很简单：少花时间在……上，多花在……上。
-
-##### 块 3｜邀请（为什么是你 + 来了能得到什么）
-
-> I am asking you in particular because [为什么是你], and I think [具体环节] would be your kind of thing. Bring [同伴/作品] along if you feel like it.
-
-译：我特意找你，是因为……，而且我觉得……会正合你口味。愿意的话把……带上。
-
-##### 块 4｜建议（给一个做法 + 给一个理由）
-
-> For a start, [做法一] — it costs you almost nothing and pays off quickly. Once that becomes a habit, [做法二] will feel natural rather than forced.
-
-译：先做……——几乎不费成本，见效还快。等它成了习惯，……就水到渠成，不用硬撑。
-
-##### 块 5｜致歉 / 取消（认错 + 补救）
-
-> The plan has to be called off on my side, and the fault is entirely mine: [原因一句话，别找借口]. To make up for it, I have [补救方案], and I will [进一步承诺].
-
-译：计划在我这边得取消，责任全在我：……。作为补偿，我已经……，并且我会……。
-
-##### 块 6｜投诉（事实 + 要求）
-
-> The problem showed up almost immediately: [具体表现，带时间和次数]. I am not after an explanation so much as a fix — [具体要求], preferably before [时间].
-
-译：问题几乎是立刻就出现了：……。我要的不是解释，而是解决——……，最好在……之前。
-
-##### 块 7｜感谢（具体到一件事 + 影响）
-
-> Looking back, [对方做的具体事] made a real difference; without it, [后果]. I still owe you one, and I intend to pay it back properly.
-
-译：回头看，……确实起了作用；没有它，……。我还欠你一份人情，而且我打算好好还。
-
-##### 块 8｜祝贺（肯定成绩 + 夸付出）
-
-> Congratulations are in order, and they are well earned: [成绩]. What impresses me most is not the result itself but the [坚持/取舍] behind it.
-
-译：恭喜，而且实至名归：……。最让我佩服的不是结果，而是背后的……。
-
-##### 块 9｜申请 / 自荐（岗位 + 两条资格）
-
-> I would like to be considered for [岗位/名额]. Two things make me a reasonable fit: [资格一], and [资格二].
-
-译：我想申请……。有两点让我还算合适：……，以及……。
-
-##### 块 10｜询问 / 求建议（问两点 + 为什么信你）
-
-> Before I commit, I would like your read on two points: [问题一], and [问题二]. You have been through this yourself, so your judgment carries more weight than any guidebook.
-
-译：在定下来之前，我想听听你对两点的看法：……，还有……。你自己走过这一遭，你的判断比任何攻略都管用。
-
-##### 块 11｜推荐（推什么 + 怎么用）
-
-> My recommendation is [对象], and the reason is simple: [理由]. If you go, start with [具体入口] — that is where it shows its best side.
-
-译：我推荐……，理由很简单：……。真去的话，从……开始——那里最见它的好处。
-
----
-
-#### 附：通知 / 告示 外壳（2015 考过，2026 大纲新增会议纪要）
-
-通知不写称呼、不写客套，**标题居中 + 正文 + 落款**，就这三块。
-
-```text
-Notice
-
-[活动名称]
-
-[背景一句] ... is scheduled for [日期] at [地点], and the organizers are now [动作].
-[内容] It opens with [亮点一], and then moves on to [亮点二].
-[号召] Those interested are welcome to sign up at [地点] before [时间].
-
-The Students' Union
-[日期]
-```
-
-会议纪要（大纲新形式，本质是「记录 + 结论」，用同一套块）：
-
-```text
-Minutes of the [会议名称]
-
-Time: [时间]      Place: [地点]      Present: [参会人]
-
-Chaired by [主持人], the meeting opened with [议题一].
-[某人] proposed [方案], and after discussion it was agreed that [结论].
-It was also decided that [后续安排], with [负责人] in charge.
-
-[记录人]
-```
-
-要背的功能句只有三句：
-
-- `... was scheduled for [时间] at [地点], and the response so far has been encouraging.`
-- `It was agreed that [结论], though [保留意见] still needs to be looked at.`
-- `Those interested are welcome to sign up at [地点] before [时间].`
-
----
-
-### 第三部分 大作文真题（2010-2026）
+### 大作文真题（2010-2026）
 
 题干统一长这样，不用逐字背：
 
@@ -1195,823 +1485,7 @@ xychart-beta
 
 坑：前两项**只差 0.1 个百分点**，属于并列第一；而且这是「看法」不是「效果」，不能写成「户外活动确实提高了观察力」。
 
----
-
-### 第四部分 大作文模板（1 套，11 句）
-
-#### 骨架
-
-三段共 11 句，约 155 词。**粗体是固定句，方括号是当天换的词。**
-
-```text
-第一段 描述 + 定性（4 句）
-S1  The chart turns something we usually only sense into numbers: [主题名词短语], measured across [调查对象或时间段].
-S2  [动态] Between [起点] and [终点], [A] climbed from [x] to [y], while [B] moved only from [x] to [y].
-    [静态] The leading item is [A], at [x]%, with [B] following at [y]%.
-S3  Put the two ends together and the gap is [差额]: [倍数] times over, which is hard to dismiss as noise.
-S4  In plain words, [一句人话结论，不超过 15 词].
-
-第二段 两个原因（4 句）
-S5  Two forces usually sit behind a shift like this, and neither is mysterious.
-S6  The first is structural: [政策/技术/经济] has driven the cost of [某行为] down, so what used to be a luxury has quietly become a default.
-S7  The second is personal: people now weigh [价值] differently — [旧标准] counts for less than [新标准].
-S8  [可选·让步] Not everyone welcomes it, and the worry about [担忧] is not unreasonable.
-
-第三段 判断 + 建议（3 句）
-S9  Where does that leave us? [趋势判断：还会走一段 / 已接近天花板].
-S10 The trend will not reverse on its own; the sensible response is to [宏观建议].
-S11 For individuals, the point [follows from the diagnosis / is simpler]: [个体建议] — that is how a trend turns into a benefit rather than a statistic.
-```
-
-> **骨架上有四个槽最容易写坏**，2021 那篇就是栽在第 1、4 条上：
->
-> 1. **S2 的括注位**——单位、口径、是否可多选，一律塞进括号，最多 5 词：`Exercising alone leads at 54.3% (multiple answers allowed)`。**不要为它单开一句**，那会变成技术说明，还可能被当成算错。
-> 2. **S3 是读图句，不是评图句**——只许出现「差距、倍数、拐点」，`shares add up to more than a hundred` 这种自我解释删掉。
-> 3. **S5 要防「伪二分」**——两个原因必须来自不同系统：一个是外部结构（成本、政策、技术），一个是内部动机（观念、情绪、算计）。如果两条都能归到同一件事，说明你只找到一个原因，第二条换成「让步 / 对比」。
-> 4. **S11 通常要带因果桥**——`the point follows from the diagnosis` 后面必须接一条**由第二段原因推出的动作**；只有建议与原因显然对应时，才用 `the point is simpler`。诊断和药方反着来，是第四档的典型特征。
->
-> **骨架自带的四种结构**（大纲要「丰富的语法结构」和「多种衔接手法」，这里已经够，不要再堆）：
->
-> - 倍数/差距句（S3）：`…, which is hard to dismiss as noise.`
-> - 因果从句（S6）：`…drove the cost down, so what used to be a luxury has become a default.`
-> - 让步句（S8，可选）：`Not everyone welcomes it, and the worry about … is not unreasonable.`
-> - 条件推演（S11）：`if calendars keep people apart, put the partner into the calendar.`
->
-> 衔接手法每段一个就够：`The first / The second`、`Put differently`、`That said`、`Either way`。骨架里已有三处，**不要再加 firstly / moreover / last but not least**——那是第三档的衔接。
->
-> S1 的三种备选，按图的「气质」挑，别三篇都用同一句：
->
-> - 反差明显：`Two numbers in the chart tell the whole story, and they pull in opposite directions.`
-> - 单一趋势：`The chart records a shift that took [年数] years to complete and about three sentences to describe.`
-> - 静态占比：`Ask people one question and the answers line up in a way that is almost too neat to be accidental.`
-
-译（S1-S4）：
-图表把一件我们平时只能感觉的事变成了数字：……，调查范围是……。
-从……到……，……从……升到……，而……只从……动到……。（静态题改：占比最高的是……，为……%，其后是……，为……%。）
-把两头放在一起看，差距是……：……倍，很难当成噪声忽略。
-说人话：……。
-
-译（S5-S8）：
-这种变化背后通常有两股力量，且都不神秘。
-第一股是结构性的：……把……的成本压低了，于是原来的奢侈品悄悄变成了默认选项。
-第二股是个人的：人们衡量……的尺子变了——……不如……重要了。
-当然不是人人都欢迎，对……的担心并非没有道理。
-
-译（S9-S11）：
-那这意味着什么？……。
-趋势不会自己掉头，所以理性的反应是……。
-对个人来说更简单：……——趋势才能变成红利，而不只是一个统计数字。
-
-> 想让尾段更「文」一点，S9 或 S11 可换成（**三篇里最多用一次**，否则通篇都在抒情）：
->
-> - `The numbers are only a mirror; what matters is what we choose to see in it.`
-> - `A trend is not a verdict — it is an invitation to decide what comes next.`
-> - `Statistics record where we have been; they say nothing about where we are willing to go.`
->
-> **尾段的建议必须接回第二段的原因。**第二段说「日程难对齐」，第三段就该说「把搭档写进日程」，而不是「顺其自然」。诊断和药方反着来，阅卷会判收束不力。
->
-> 反过来，只有**有争议**的题（2019 学历、2020 手机阅读、2025 老人看电视）才用 `neither to cheer nor to panic` 这版；中性题用它，会像在对着一个没人吵的问题喊口号。
-
-#### 用 2025 真题走一遍（考场原速）
-
-```text
-The chart turns something we usually only sense into numbers: the leisure habits of older people in one community, measured across five activities.
-The leading item is watching TV, at 90.8%, with walking following at 68.3%.
-Put the two ends together and the gap is 72.4 percentage points — nearly five times over, which is hard to dismiss as noise.
-In plain words, the easier an activity is, the more welcome it is.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious.
-The first is structural: cheaper screens and round-the-clock broadcasting have driven the cost of entertainment down, so what used to require a trip outside has quietly become a default at home.
-The second is personal: many older people now weigh comfort above novelty — a familiar programme feels safer than an unfamiliar chess partner.
-
-Where does that leave us? The preference for low-effort leisure is unlikely to fade on its own.
-The sensible response is neither to cheer nor to panic, but to make the alternatives easier to reach: more shaded walking paths, more chess tables in the courtyard.
-For individuals, the point is simpler: walk with them instead of urging them to — that is how a trend turns into a benefit rather than a statistic.
-```
-
-（168 词，全部用骨架长出来的，没有一句是「模板腔」。）
-
-#### 六种题型的首段改法
-
-| 题型 | 真题 | S2 换成 | S3 换成 |
-| :--- | :--- | :--- | :--- |
-| 单柱趋势 | 2014、2022 | climbed from … to … | 差距 / 翻倍倍数 |
-| 分组对比 | 2011、2019 | A fell from … to …, while B rose from … to … | 一升一降、换位 |
-| 静态占比 | 2025、2026 | The leading item is … at …%, with … at …% | 头尾差多少个百分点 |
-| 饼图 | 2015、2016、2018、2020 | A alone accounts for …%, with B and C at …% each | 前三项合计占多少 |
-| 折线 | 2017、2023 | rose from … to … over nine years | 拐点在哪一年 |
-| 表格 | 2012 | 按行说：the youngest group … , the middle group … | 最反常识的那一格 |
-
-**S2/S3 只换这两句，S1、S4 和整个二、三段一字不动。**这是这套模板的全部工作量。
-
-#### 五大话题词块（考前一周背）
-
-##### 经济消费
-
-- `disposable income` 可支配收入 / `purchasing power` 购买力
-- `spending has shifted from goods to experiences` 花钱从买东西转向买体验
-- `the cost of … has been driven down` ……的成本被压低了
-- `a buyer's market` 买方市场
-- 定性句：`What looks like a spending boom is really a change in what people are willing to pay for.`
-
-##### 教育就业
-
-- `credential pressure` 学历压力 / `a tighter job market` 更紧的就业市场
-- `signal competence to employers` 向雇主释放能力信号
-- `practical skills are valued over paper qualifications` 实操能力压过一纸文凭
-- 定性句：`Behind the numbers sits a generation hedging its bets against an uncertain job market.`
-
-##### 科技文化
-
-- `lower the threshold for …` 降低……的门槛
-- `technology has quietly rewritten the default` 技术悄悄改写了默认选项
-- `cultural confidence` 文化自信 / `heritage on screen` 荧幕上的传统
-- 定性句：`Convenience, once a bonus, has become the standard against which everything else is judged.`
-
-##### 社会民生
-
-- `an ageing population` 老龄化 / `public services` 公共服务
-- `the gap between … and …` ……与……之间的落差
-- `leave no one behind` 一个都不落下
-- 定性句：`The chart measures habits, but what it really exposes is who has access and who does not.`
-
-##### 生态健康
-
-- `health literacy` 健康素养 / `a low-carbon routine` 低碳日常
-- `prevention is cheaper than cure` 预防比治疗便宜
-- `sustainable in the long run` 长期可持续
-- 定性句：`A healthier population is less a medical achievement than a daily habit repeated by millions.`
-
-#### 反套话对照表（左边这些别写）
-
-| 市面常见（会被看穿） | 换成 |
-| :--- | :--- |
-| As is vividly depicted in the chart | The chart turns something we usually only sense into numbers |
-| It is universally acknowledged that | Few would dispute that …（或直接陈述事实） |
-| With the rapid development of society | 换成具体机制：cheaper screens / tighter job market |
-| Every coin has two sides | Not everyone welcomes it, and the worry about … is not unreasonable |
-| It is high time that we took measures | The trend will not reverse on its own; the sensible response is to … |
-| Last but not least | （直接删掉，用内容承接） |
-| plays an increasingly important role | has quietly become a default |
-| This phenomenon is worth our attention | （删；改成一句判断句） |
-| can not be ignored | 很难当成噪声：hard to dismiss as noise |
-| Only in this way can we … | that is how a trend turns into a benefit |
-
-#### 考前自查（30 秒）
-
-1. **单位**写了吗？十亿件 / 十万人次 / 百万人 / 百分点，别混。
-2. **对象**写清了吗？某高校 / 某市 / 某社区，不能推广成「我国」。
-3. 没时间轴的静态图，**绝不能写「逐年上升」**。
-4. 多选数据（2021、2025）**不能画饼图、不能说合计 100%**；也不要专门写一句解释「合计超过 100%」，那是技术说明，不是解读。
-5. 「看法」≠「事实」（2026），别写成「确实提高了」。
-6. 第二段有没有**两股不同的力量**？只写一条就是 12 分档。
-7. 结尾有没有落到**具体动作**？「加强宣传」这种等于没写。
-8. **有没有照抄题干句子**？大纲明写「使用提示语中出现的句子将被扣分」。
-9. 字数落在区间里了吗（小 95-115、大 150-180）？长度不符会被「酌情扣分」；书写别潦草，影响阅读直接降一档。
-
-#### 迭代流程（10 月起怎么滚）
-
-1. 先用这 3 套写出**第一版**，别边写边改；
-2. 拿 2010-2026 真题逐篇限时写：小作文 12 分钟、大作文 25 分钟，写完自己按评分点数一遍；
-3. 把原题 + 自己的作文 + 评分标准丢给 AI，只问三件事：**信息点漏没漏、哪句是中式英语、哪句能换更地道的说法**；
-4. 只改**固定句**（小作文头尾、S1、S5、S10），块库里的句子不要动——改多了就背不住；
-5. 每三轮把高频替换词沉淀回上面的话题词块表，模板才算真变成自己的。
-
----
-
-### 附录：起初那版（原样保留，只换变量名）
-
-#### 变量名对照
-
-| 旧写法 | 新写法 | 差别 |
-| :--- | :--- | :--- |
-| `[称呼]` | `[称呼]` | 不变 |
-| `[承接任务]` / `[动作核心]` | `[点题]` | 旧版填动词短语，新版填**一句结论**，信息量更大 |
-| `【肉块 1】` `【肉块 2】` `【肉块 3·可选】` | `[块 1]` `[块 2]` | 旧版三块，新版两块（第三块常被字数吃掉） |
-| `[要点 1]` / `[方面 1]` | `[块 1]` | 同上 |
-| `[期待点]` | 不需要 | 新版结尾只要「一行回复」，不再二次邀约 |
-
-#### 旧版·回信
-
-```text
-Dear [称呼],
-
-It was such a pleasant surprise to hear from you, and I truly appreciate your [kind words / thoughtful invitation / prompt email].
-In response to what you mentioned, I would be more than delighted to [承接任务].
-
-To give you a clearer picture, here is how I view the matter:
-
-【块 1】On the one hand, priority should be given to [要点 1].
-【块 2】Equally important is [要点 2], which will surely [带来某种良性结果].
-【块 3·可选】As an added bonus, it would be wonderful to [要点 3].
-I genuinely hope this clarifies things a bit.
-Please let me know if you would like me to elaborate on any particular part.
-Looking forward to our next interaction!
-
-Warm regards,
-Li Ming
-```
-
-#### 旧版·发信
-
-```text
-Dear [称呼],
-
-I hope this note finds you well.
-With [关键事件] just around the corner, I am reaching out to [动作核心].
-
-To ensure everything proceeds seamlessly, I have organized the essentials as follows:
-
-【块 1】First, as far as [方面 1] is concerned, [具体展开 1~2 句].
-【块 2】Meanwhile, I would be immensely grateful if you could shed some light on [方面 2].
-【块 3·可选】As an added bonus, it would be wonderful to [要点 3].
-Feel free to voice your thoughts if anything needs fine-tuning.
-Thank you so much for your understanding, and I cannot wait to [期待点].
-
-Yours sincerely,
-Li Ming
-```
-
-#### 旧版·图表作文三段表（原表照录，仅加一列判词）
-
-| 段 | 功能 | 原句 | 判 |
-| :--- | :--- | :--- | :--- |
-| 一 | 概述 | The provided chart vividly illustrates the striking changes regarding [图表主题] over the period from [年份 A] to [年份 B]. | 改——`vividly illustrates` 是图表八股第一号 |
-| 一 | 数据 A | Specifically, the figure for [主导项] [experienced a phenomenal surge / accounted for the lion's share], moving from [数据 1] to [数据 2]. | 留半句——`moving from…to…` 好用，`lion's share` 已泛滥 |
-| 一 | 数据 B | [In sharp contrast / In parallel], the data for [次要项] [remained relatively stable / registered a downward trajectory]. | 留——对比词表可用 |
-| 一 | 值得注意 | What is particularly noteworthy is that [最核心交叉点], which highlights a profound transition. | 改——`profound transition` 空洞，等于没说 |
-| 二 | 联系主旨 | Such statistical patterns, beyond doubt, can be deeply associated with the trend of [核心主旨]. | 删——纯过渡，浪费一句 |
-| 二 | 引出原因 | Then, what driving forces have propelled this prevailing phenomenon? Generally speaking, several interrelated factors account for it. | 改——设问句占 20 词，只换来「有几个原因」 |
-| 二 | 原因 1 | To begin with, the robust economic growth along with [技术/政策红利] has laid a solid foundation for [现象], unlocking unprecedented possibilities. | 留骨架——`laid a solid foundation for` 稳，`unprecedented` 删 |
-| 二 | 原因 2 | Furthermore, the general public nowadays places greater emphasis on [个人追求], which inevitably shifts their choices. | 留——观念类原因的标准写法 |
-| 三 | 建议 1 | To foster a healthier and more sustainable environment, it is highly advisable for relevant authorities to formulate forward-looking guidelines. | 改——任何题都能套，阅卷一眼看穿 |
-| 三 | 建议 2 | Meanwhile, individuals are expected to cultivate a rational mindset rather than following the trend blindly. | 改——`rational mindset` 空 |
-| 三 | 举例 | For instance, striking a balance between [积极面 A] and [潜在风险 B] will undoubtedly steer this trend toward a promising future. | 留句式——`steer … toward` 好用 |
-
-#### 两版对照：各让一步
-
-| 维度 | 旧版 | 新版 |
-| :--- | :--- | :--- |
-| 句式来源 | LinkedIn 商务邮件腔（`I am reaching out to`） | 论文/散文腔（`rather than left to a passing remark`） |
-| 抗撞句 | 差，全网都能搜到原句 | 好，句子是我拼的，搜不到 |
-| 信息密度 | 低：开头两句 45 词只说「我收到信了」 | 高：开头 20 词已点题 |
-| 容错率 | **高**：内容写空也能保 9-10 分 | 低：块写砸就没有安全句兜底 |
-| 背诵量 | 两套各一整篇 | 两套共用一套头尾 |
-| 图表结构 | 三段十一句，稳但空 | 三段十一句，骨架其实借的就是它 |
-
-结论：
-
-- **骨架用新版**（结构没变，还是旧版那套三段十一句，只是把空话换成真话）；
-- **兜底留旧版两句**：时间不够时，`I would be immensely grateful if you could shed some light on …` 和 `it is highly advisable for relevant authorities to formulate …` 直接抄上去，句子本身没错，只是不新鲜；
-- 旧版的 `Warm regards,` 可以留给朋友信，比 `Yours sincerely,` 松一点。
-
----
-
-### 第五部分 全真题套写（2010-2026，34 篇）
-
-全部用上面那 3 套骨架写成，**没有一个句子是临场编的**。年份后标的是用的外壳 / 首段类型。
-
-#### 一、小作文（17 篇）
-
-##### 2010｜回信 · 感谢 + 邀请
-
-```text
-Dear Mr. Brown,
-
-This is a short reply with one purpose: to thank you for the fortnight you gave me.
-
-Looking back, your patience with my halting English made a real difference; without it I would have eaten alone every night. I still owe you one.
-
-So come and see China when your term allows: the night market near my campus would be your kind of thing. Bring your camera.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by June will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2011｜去信 · 祝贺 + 建议
-
-```text
-Dear Li Ming,
-
-This is a short email with one purpose: to congratulate you on the admission letter and to offer two pieces of advice.
-
-Congratulations are in order, and they are well earned: two years at that desk finally paid off. What impresses me most is not the result but the persistence behind it.
-
-For a start, learn to live with a roommate before term begins — it costs you a week and saves you a year. Once that becomes a habit, budgeting will feel natural rather than forced.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line before September will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2012｜去信 · 投诉 + 要求
-
-```text
-Dear Sir or Madam,
-
-I am writing to complain about the dictionary I bought from you last month.
-
-The problem showed up almost immediately: three keys stick, the screen flickers, and the battery dies within an hour of a full charge. The box itself arrived dented, which may explain the rest.
-
-I am not after an explanation so much as a fix — a replacement unit, preferably before the new term starts.
-
-I would rather settle this quietly than take it further. A workable solution by next Friday is all I ask.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2013｜去信 · 义卖细节 + 号召
-
-```text
-Dear classmates,
-
-This is a short email with one purpose: to tell you what happens on Saturday and to ask for your help.
-
-The sale falls on Saturday, from nine to four, at the south gate of the library. What makes it worth a morning is that everything on those tables was donated, so the money goes only to the children.
-
-Two hours at the toy table is all we ask; bring a friend, since the crowd is the advertisement.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by Thursday will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2014｜去信 · 生活习惯 + 求建议
-
-```text
-Dear John,
-
-This is a short email with one purpose: to tell you how I live and to ask two questions about living there.
-
-I keep early hours and cook most nights; music after eleven is the one thing I cannot sleep through. Weekends I am out, so the bathroom is yours.
-
-Before I commit, I would like your read on two points: how quickly the landlord answers a broken boiler, and whether a bike is enough for the winter term.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line before August will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2015｜通知 · 夏令营 + 招募志愿者
-
-```text
-Notice
-
-Summer Camp for High School Students
-
-The camp is scheduled for July 15 at the university sports centre, and the organizers are now recruiting volunteers.
-It opens with a campus tour, and then moves on to two days of science workshops run by our own labs.
-Volunteers will guide the tours, run the workshops and stay with the groups at night, and each will receive a certificate.
-The camp runs from nine to five, and lunch is provided on site.
-Those interested are welcome to sign up at Room 203 before July 1.
-
-The Students' Union
-June 20
-```
-
-##### 2016｜回信 · 感谢 + 翻译建议
-
-```text
-Dear Jack,
-
-This is a short reply with one purpose: to thank you for your congratulations and to answer your question about translation.
-
-Looking back, that contest taught me more than any course; the only method that worked was translating one paragraph a day, out loud. I still owe that habit a debt.
-
-For a start, stop hunting for the perfect word — write the sentence first and polish it afterwards. Once that becomes a habit, your drafts will read like English rather than translated Chinese.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by June will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2017｜回信 · 接受邀请 + 讲座要点
-
-```text
-Dear Professor Williams,
-
-I am writing to accept your invitation, and to set out the three points I would cover.
-
-I would be glad to speak, and I would keep to three points: how festivals survive in cities, why food travels better than language, and what foreign students usually misread about both.
-
-Before I commit, I would like your read on one thing: how long the audience can sit still, so I can cut the slides to fit the hour.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by Friday will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2018｜去信 · 道歉取消 + 另约
-
-```text
-Dear Professor Smith,
-
-I am writing to postpone my visit, and to explain why before you plan around it.
-
-The plan has to be called off on my side, and the fault is entirely mine: my visa interview was moved to exactly that week, and missing it would cost me the term.
-
-To make up for it, I have booked a slot in the first week of December, and I will send the material ahead so that the meeting is not wasted.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by Friday will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2019｜去信 · 建议辩题 + 安排
-
-```text
-Dear Professor Smith,
-
-I am writing to propose a topic for the debate, and to say how I would run it.
-
-My suggestion is "Should city centres be closed to private cars?", a question that splits a room faster than any other and one every student has a stake in.
-
-The arrangements are simple: two teams of three, eight minutes a side, then twenty minutes of questions from the floor. I will circulate the reading list a week ahead.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by Friday will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2020｜去信 · 介绍古迹 + 游览提示
-
-```text
-Dear friends,
-
-This is a short email with one purpose: to tell you about Saturday's walk and to give you two tips.
-
-The site is best described as a Ming-era street that never quite became a museum — nothing fancy, but it still smells of woodsmoke in the morning.
-
-Two tips before you come: wear shoes you can walk in for three hours, and bring cash, because the noodle stall at the corner takes nothing else.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by Thursday will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2021｜去信 · 邀请参会 + 细节
-
-```text
-Dear Jack,
-
-This is a short email with one purpose: I would like to invite you to our online meeting this Thursday.
-
-The meeting runs from eight to nine on Tencent Meeting, room 815-220-337. Three students will report for ten minutes each, leaving the last half hour for questions.
-
-I am asking you in particular because half the room has never spoken to a student outside China, and one honest question from you would do more than my slides.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by Wednesday will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2022｜去信 · 美食节介绍 + 邀请
-
-```text
-Dear international students,
-
-This is a short email with one purpose: to tell you about the food festival and to invite you.
-
-The festival falls on Friday, from five till nine, with twenty stalls from eleven provinces. What makes it worth a detour is that every dish is cooked on the spot, not delivered in boxes.
-
-I am asking you in particular because your table would be the only one with a story from outside China — bring one dish; we will find you a stove.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by Wednesday will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2023｜回信 · 二选一 + 理由
-
-```text
-Dear David,
-
-This is a short reply with one purpose: to tell you which exhibition to choose.
-
-Take the robot show. The art exhibition will still be there next month, while half the machines on display are prototypes that may never be shown again.
-
-My recommendation is simple: go early, and start with the arm that plays chess — that is where it shows its best side. If you have an hour left, the speech booth is the second stop.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by Saturday will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2024｜去信 · 调查计划 + 询问意见
-
-```text
-Dear Jack,
-
-This is a short email with one purpose: to put forward my plan for the survey and to ask for your opinion.
-
-My plan is three days, three streets: we photograph the facades in the morning, interview whoever will talk in the afternoon, and leave a one-page questionnaire at the teahouses.
-
-Before I commit, I would like your read on two points: how many houses we can realistically cover in a day, and whether to ask residents about relocation at all.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line before the weekend will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2025｜去信 · 短剧介绍 + 邀请
-
-```text
-Dear John,
-
-This is a short email with one purpose: to invite you to join our short play.
-
-The play takes one chapter of a classic novel — the part where a clever servant outwits a magistrate — and turns it into forty minutes of comedy on a bare stage.
-
-I am asking you in particular because the servant needs an accent that is not mine, and yours would make the joke land. Rehearsals are Sunday afternoons.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line by Friday will do.
-
-Yours sincerely,
-Li Ming
-```
-
-##### 2026｜回信 · 视频感受 + 想了解更多
-
-```text
-Dear Jack,
-
-This is a short reply with one purpose: to tell you what I thought of your video and to ask two questions.
-
-Watching your mother argue with a ticket machine, and then win, was the best three minutes of my week; it made me homesick for a country I am already in.
-
-Before I plan anything similar, I would like your read on two points: which city that night market was in, and how you persuaded your father to try the skewers.
-
-If any part of it does not suit you, say so and we will adjust it. Either way, a line when you are free will do.
-
-Yours sincerely,
-Li Ming
-```
-
-#### 二、大作文（17 篇）
-
-##### 2010｜动态 · 手机订阅
-
-```text
-The chart turns something we usually only sense into numbers: mobile subscriptions in two worlds, measured across eight years.
-Between 2000 and 2008, subscriptions in developing countries climbed from 0.4 to 4 billion, while developed ones moved only from 0.7 to 1.
-Put the two ends together and the gap is tenfold — hard to dismiss as noise.
-In plain words, a phone stopped being a luxury exactly where people had waited longest.
-
-Two forces usually sit behind a shift like this, and neither is mysterious. The first is structural: cheap handsets and shared towers drove the cost down, so an office tool became a household object. The second is personal: for many families a number was the first address they ever had.
-
-Where does that leave us? The rich half has found its ceiling; the other half has not. The trend will not reverse on its own; the sensible response is to keep spectrum open to newcomers. For individuals, the point is simpler: a phone is only as useful as the market that resells it.
-```
-
-##### 2011｜分组对比 · 汽车品牌份额
-
-```text
-Two numbers in the chart tell the whole story, and they pull in opposite directions.
-In 2008 Japanese brands led at 35% and domestic ones trailed at 25%; a year later the order reversed, 25% against 32%.
-One year, seven points, and a decade-old hierarchy was gone — hard to dismiss as noise.
-In plain words, the badge on the bonnet stopped deciding the sale.
-
-Two forces usually sit behind a shift like this, and neither is mysterious. The first is structural: domestic makers moved their quality up while keeping prices below imported rivals. The second is personal: a car is increasingly bought as transport rather than as proof of taste, and buyers now read resale value before they read the logo.
-
-Where does that leave us? The gap will keep narrowing until quality, not nationality, is what separates the three. The trend will not reverse on its own; the sensible response is to compete on safety tests rather than on slogans. For individuals, the point is simpler: compare the service bill, not the advertisement.
-```
-
-##### 2012｜表格 · 员工满意度
-
-```text
-The chart turns something we usually only sense into numbers: how three age groups rate the same company, measured in one survey.
-The middle group is the puzzle: not one of them ticked "satisfied", while 64% ticked the opposite.
-Zero against forty — the youngest and the oldest are happier than the people in between, which is hard to dismiss as noise.
-In plain words, contentment dips exactly where ambition peaks.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious. The first is structural: the promotion ladder narrows between forty and fifty, so effort stops producing reward. The second is personal: this is when mortgages and school fees arrive together, and a flat salary feels like a verdict.
-
-Where does that leave us? The middle of a career is where loyalty is cheapest to lose. The trend will not reverse on its own; the sensible response is to rotate roles and talk about paths before people look outside. For individuals, the point is simpler: ask for a review rather than a raise.
-```
-
-##### 2013｜单柱趋势 · 学生兼职
-
-```text
-The chart turns something we usually only sense into numbers: how many students in each year take part-time work, measured across four grades.
-Between the first year and the fourth, the share climbed from 67.8% to 88.2%, with most of that gain in the final year.
-Twenty points, most of it coming late, is hard to dismiss as noise.
-In plain words, the closer graduation gets, the more the timetable bends.
-
-Two forces usually sit behind a shift like this, and neither is mysterious. The first is structural: internships became the entry ticket to most industries, so experience stopped being optional and became a cost of applying. The second is personal: students price a line on the CV above an afternoon of rest.
-
-Where does that leave us? The final-year jump suggests panic as much as planning. The trend will not reverse on its own; the sensible response is to cap weekly hours and treat marks as part of the same investment. For individuals, the point is simpler: choose the job that teaches a skill, not the one that pays the most.
-```
-
-##### 2014｜单柱趋势 · 城乡人口
-
-```text
-The chart turns something we usually only sense into numbers: where people in this country live, measured across two decades.
-Between 1990 and 2010, the urban population climbed from 300 million to 666 million, while the rural figure fell from 834 to 674.
-The two lines met almost exactly in 2010, which is hard to dismiss as noise.
-In plain words, a country that farmed for a thousand years finished moving to town in twenty.
-
-Two forces usually sit behind a shift like this, and neither is mysterious. The first is structural: factories and service jobs clustered where the roads already met. The second is personal: schools and hospitals decide where a family sleeps, and the countryside was short of both.
-
-Where does that leave us? The flow is slowing, but it has not stopped. The trend will not reverse on its own; the sensible response is to fund schools where the newcomers live, and to make farming pay at the other end. For individuals, the point is simpler: count the rent before counting the wage.
-```
-
-##### 2015｜饼图 · 春节花销
-
-```text
-The chart turns something we usually only sense into numbers: how one city spends during the Spring Festival, measured in four categories.
-Gifts alone account for 40%, with transport, dinners and everything else splitting the remaining sixty evenly.
-Four yuan in every ten go on presents, while the other three categories split the rest almost evenly, which is hard to dismiss as noise.
-In plain words, the festival is bought before it is enjoyed.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious. The first is structural: a gift has a market price, while a conversation does not, so the visible part of affection is the part that gets budgeted. The second is personal: most people spend to avoid being talked about, not to be talked about.
-
-Where does that leave us? The forty percent will not fall on its own. The trend will not reverse on its own; the sensible response is to make time the gift that everyone can afford. For individuals, the point is simpler: one fewer box, one more evening.
-```
-
-##### 2016｜饼图 · 旅游目的
-
-```text
-The chart turns something we usually only sense into numbers: why students travel, measured across five answers.
-Scenery takes 37% and relief from pressure 33%, while independence trails at 6%.
-Two motives account for seventy percent of the trips, which is hard to dismiss as noise.
-In plain words, students are not running towards a place so much as away from a timetable.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious. The first is structural: cheap tickets and two-day gaps in the term made the weekend trip a normal purchase rather than a rare adventure. The second is personal: an exam schedule leaves little room for anything that cannot be photographed and posted.
-
-Where does that leave us? The appetite for escape is unlikely to fade. The trend will not reverse on its own; the sensible response is to keep student discounts and hostel beds within reach. For individuals, the point is simpler: stay one day longer instead of seeing one more city.
-```
-
-##### 2017｜折线 · 博物馆
-
-```text
-The chart turns something we usually only sense into numbers: the country's museums and the people walking through them, measured from 2013 to 2015.
-Visitors rose from 6,378 to 7,811 ten-million-person-times, while the number of museums grew more modestly, from 4,165 to 4,697.
-Attendance grew almost twice as fast as the buildings did, which is hard to dismiss as noise.
-In plain words, the queues got longer while the walls stayed the same.
-
-Two forces usually sit behind a shift like this, and neither is mysterious. The first is structural: free admission turned a Sunday outing into a habit, and new galleries gave that habit somewhere to go. The second is personal: a museum is cheap, indoor and photogenic, which is exactly what a family with two children and one afternoon needs.
-
-Where does that leave us? The pressure will move from building halls to managing crowds. The trend will not reverse on its own; the sensible response is to spread demand with timed entry and evening openings. For individuals, the point is simpler: go on a Tuesday, not a holiday.
-```
-
-##### 2018｜饼图 · 选餐厅
-
-```text
-The chart turns something we usually only sense into numbers: what diners look for when they choose a restaurant, measured across five factors.
-Speciality takes 36.3%, service 26.8% and atmosphere 23.8%, while price trails at 8.4%.
-Three non-price factors account for 86.9%, which is hard to dismiss as noise.
-In plain words, people no longer go out to eat; they go out to be served.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious. The first is structural: delivery apps quietly took over the cheap, quick meal, leaving restaurants to compete on everything else. The second is personal: a dinner is now judged by what can be photographed and remembered, and a discount photographs badly.
-
-Where does that leave us? Price will keep sliding down this list. The trend will not reverse on its own; the sensible response is to let kitchens publish what they actually do well. For individuals, the point is simpler: pay for the dish, not for the lighting.
-```
-
-##### 2019｜分组对比 · 毕业去向
-
-```text
-Two numbers in the chart tell the whole story, and they pull in opposite directions.
-Between 2013 and 2018, employment fell from 68.1% to 60.7%, while further study rose from 26.3% to 34.0%.
-In five years, 7.4 points left the job market and 7.7 entered a classroom — hard to dismiss as noise.
-In plain words, the queue for a degree got longer because the queue for a job got slower.
-
-Two forces usually sit behind a shift like this, and neither is mysterious. The first is structural: a bachelor's degree no longer clears the first filter, so students buy a second. The second is personal: staying on feels like progress and postpones a decision nobody feels ready to make.
-
-Where does that leave us? A master's will soon be the entry ticket, not the advantage. The sensible response is neither to cheer nor to panic, but to stop screening by diploma and start testing by task. For individuals, the point is simpler: know what the extra year buys before paying for it.
-```
-
-##### 2020｜饼图 · 手机阅读
-
-```text
-The chart turns something we usually only sense into numbers: why students open a book on a phone, measured across four answers.
-Learning takes 59.5% and passing time 21.3%, while gathering information accounts for 17.0%.
-Almost three in five read to learn something, which is hard to dismiss as noise.
-In plain words, the pocket has become the library.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious. The first is structural: cheap data turned every dead ten minutes into reading time, and a phone is the only book people always carry. The second is personal: reading in fragments feels productive in a way that scrolling does not, and students are quietly grading themselves.
-
-Where does that leave us? Attention is now the scarce resource, not access. The sensible response is neither to cheer nor to panic, but to put serious material where the reading already happens. For individuals, the point is simpler: finish one long piece a week, not twenty short ones a day.
-```
-
-##### 2021｜静态占比 · 锻炼方式
-
-```text
-The chart turns something we usually only sense into numbers: how one city exercises, measured across four arrangements.
-Exercising alone leads at 54.3%, with friends at 47.7%, family at 23.9% and group classes at 15.8%.
-Solo exercise outnumbers every shared arrangement, and the gap to a class reaches forty points.
-In plain words, fitness has become a private appointment.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious. The first is structural: gym memberships and running apps made a workout something you can start at eleven at night. The second is personal: a shared class needs a shared calendar, and adult calendars rarely agree.
-
-Where does that leave us? The preference for solo training will hold as long as schedules stay crowded. The trend will not reverse on its own; the sensible response is to keep parks lit and tracks free, since the cheapest gym is public space. For individuals, the point follows from the diagnosis: if calendars keep people apart, put the partner into the calendar — one fixed hour is enough.
-```
-
-##### 2022｜单柱趋势 · 快递业务量
-
-```text
-The chart turns something we usually only sense into numbers: parcels moved across the country, measured from 2018 to 2020.
-Total volume climbed from 51 to 83 billion, while the rural share jumped from 12 to 30 in the same period.
-Rural deliveries more than doubled in a single year, which is hard to dismiss as noise.
-In plain words, the last mile finally reached the village.
-
-Two forces usually sit behind a shift like this, and neither is mysterious. The first is structural: pickup stations and shared truck routes cut the cost of a village parcel to almost nothing. The second is personal: once a farmer can sell directly, a phone becomes a shopfront rather than a toy.
-
-Where does that leave us? The growth will slow, but the map will keep filling in. The trend will not reverse on its own; the sensible response is to build recycling into the packaging before the rubbish does. For individuals, the point is simpler: combine orders, and keep the boxes for the next move.
-```
-
-##### 2023｜折线 · 健康素养
-
-```text
-The chart turns something we usually only sense into numbers: health literacy across the country, measured over ten years.
-Between 2012 and 2021 the level rose from 8.8% to 25.4%, and the slope steepens visibly after 2019.
-Sixteen points in a decade, with more than half gained in the last three years, which is hard to dismiss as noise.
-In plain words, people learned to read their own bodies.
-
-Two forces usually sit behind a shift like this, and neither is mysterious. The first is structural: public campaigns put basic knowledge on billboards, in lifts and on the evening news. The second is personal: a family that has nursed someone through an illness reads differently afterwards.
-
-Where does that leave us? The curve will flatten once the easy gains are gone. The trend will not reverse on its own; the sensible response is to aim the next campaign at the villages and the oldest readers. For individuals, the point is simpler: check who wrote the advice before forwarding it.
-```
-
-##### 2024｜静态占比 · 劳动课收获
-
-```text
-The chart turns something we usually only sense into numbers: what students say they gained from a labour course, measured across four outcomes.
-Knowledge leads at 91.3% and hands-on skill follows at 84.8%, while teamwork sits at 32.6%.
-Fifty-nine points separate the top and the bottom, which is hard to dismiss as noise.
-In plain words, the course teaches the hands and forgets the room.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious. The first is structural: a class of forty, marked individually, will always reward work that can be done alone. The second is personal: students treat a credit as a checklist, and cooperation cannot be ticked off quickly.
-
-Where does that leave us? A skill nobody practises is a skill nobody keeps. The trend will not reverse on its own; the sensible response is to make one project impossible to finish without a partner. For individuals, the point is simpler: choose the task that needs a second pair of hands.
-```
-
-##### 2025｜静态占比 · 老年人休闲
-
-```text
-The chart turns something we usually only sense into numbers: how older people in one community fill their day, measured across five activities.
-Watching television leads at 90.8%, with walking at 68.3% and chess at only 18.4%.
-Seventy-two points separate the first and the last, which is hard to dismiss as noise.
-In plain words, the easier an activity is, the more welcome it is.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious. The first is structural: a screen demands nothing but a socket, while a chess partner demands a phone call and a walk. The second is personal: after seventy, novelty costs more energy than it returns, and a familiar programme feels safer than an unfamiliar table.
-
-Where does that leave us? The preference for low-effort leisure will not fade on its own. The trend will not reverse on its own; the sensible response is to put the alternatives within a hundred metres: shaded paths, benches, a table under the tree. For individuals, the point is simpler: walk with them instead of urging them to.
-```
-
-##### 2026｜静态占比 · 儿童户外活动看法
-
-```text
-The chart turns something we usually only sense into numbers: what people believe outdoor play does for children, measured across four answers.
-Curiosity takes 54.6% and observation 54.5%, while fitness trails at 37.2% and family time at 33.2%.
-The top two are a tenth of a point apart; the bottom two lag twenty points behind.
-In plain words, adults praise what outdoor play does for the mind, and forget what it does for the legs.
-
-Two forces usually sit behind a pattern like this, and neither is mysterious. The first is structural: a playground safe enough for a parent is often too far to walk to. The second is personal: a belief costs nothing and requires no shoes.
-
-Where does that leave us? The chart records opinions, not results, and the gap between them is where policy belongs. The trend will not reverse on its own; the sensible response is to build the safe route before advertising the benefits. For individuals, the point is simpler: go outside with the child; the belief follows the habit.
-```
-
-#### 三、套写索引
-
-| 年份 | 小作文外壳 | 用到的块 | 大作文首段型 |
-| :--- | :--- | :--- | :--- |
-| 2010 | 回信 | 7 + 3 | 动态·双线 |
-| 2011 | 去信 | 8 + 4 | 分组对比 |
-| 2012 | 去信 | 6（拆两段） | 表格 |
-| 2013 | 去信 | 1 + 3 | 单柱趋势 |
-| 2014 | 去信 | 2 + 10 | 单柱趋势 |
-| 2015 | 通知 | — | 饼图 |
-| 2016 | 回信 | 7 + 4 | 饼图 |
-| 2017 | 回信 | 3 + 10 | 折线 |
-| 2018 | 去信 | 5 + 10 | 饼图 |
-| 2019 | 去信 | 11 + 自写安排 | 分组对比 |
-| 2020 | 去信 | 2 + 4 | 单柱趋势 |
-| 2021 | 去信 | 1 + 3 | 静态占比 |
-| 2022 | 去信 | 1 + 3 | 单柱趋势 |
-| 2023 | 回信 | 11 + 2 | 静态占比 |
-| 2024 | 去信 | 3 + 10 | 静态占比 |
-| 2025 | 去信 | 1 + 3 | 静态占比 |
-| 2026 | 回信 | 2 + 10 | 静态占比 |
-
-> 17 篇小作文只动用了 11 个块里的 10 个——**块 9（申请 / 自荐）一次都没考过**，可以不背。真正高频的是块 1、2、3、10，四个就够应付一半年份。
-
----
-
-### 附录二：评分标准（大纲口径）与模板校准
+### 评分标准（大纲口径）
 
 #### 一、评分是怎么进行的
 
@@ -2048,25 +1522,42 @@ Where does that leave us? The chart records opinions, not results, and the gap b
 - 大作文必须分段（三段最稳），段间空一行；小作文不分段也可以，但分段更清楚。
 - 别涂改、别用花体——书写影响阅读会降一档，这是十年来唯一一条"硬扣"。
 
-#### 五、标准 → 模板动作（这张表才是重点）
+### 考前一页速查
 
-| 大纲条目 | 模板里的位置 | 落地动作 |
-| :--- | :--- | :--- |
-| 信息点覆盖 | 小作文 块 1 + 块 2 | 题干几个点就几个块，一块不漏 |
-| 格式与语域 | 称呼 / 落款 / 通知外壳 | 朋友 `Dear John`，不知姓名 `Dear Sir or Madam`，通知不写称呼 |
-| 丰富的语法结构 | 小作文三条结构位；大作文 S3 S6 S8 S11 | 小作文一条、两条封顶；大作文骨架已含四类，不用再堆 |
-| 多种衔接手法 | 大作文 S5 / S9 / S11 | 每段一个显性衔接，全篇三处封顶 |
-| 内容完整（B 节） | 首段 4 句 + 中段 2 因 + 尾段 3 句 | 描述 / 解读 / 评论三样齐 |
-| 语言准确 | 11 组块库 + 5 类话题词块 | 现场只换名词和数字，不造新句式 |
-| 不抄题干句子 | 块库全部改写 | 题干的动词短语一律换说法（`take part in` → `be on stage`） |
-| 长度 | 小 95-115 / 大 150-180 | 写完全文数字数；低于下限补一个**细节句**，不要靠形容词凑 |
-| 书写 | 考场 | 不用花体，只划一处改错 |
+进场前最后看一眼这张。
 
-#### 六、拿这套模板去对照：现在几档
+```text
+小作文
+  圈两个动词 → 对块 → 块内按序抄，90-115 词 → 套骨架
+  invite A ｜ suggest B ｜ thank C ｜ apologize D ｜ complain E
+  Dear X, / [块] / If anything here does not suit you, tell me.
+  A line back by Friday is enough. / Yours sincerely, Li Ming
+  双块题：两段之间空一行，不加过渡词
 
-- **小作文**：信息点、格式、语域都在第五档线上，卡住的是"结构单一"。所以判 **8 分稳，补一条结构位争 9 分**。
-- **大作文**：三段齐全、衔接显性、四类结构 ✓，判 **12-13 是常态**。上 14 卡在第二段的原因够不够具体——这一项模板给不了，只能靠平时积累（所以有第五部分那 17 篇打底）。
-- 这套模板的天花板不是语言，是**内容的具体程度**。19 分的作文（小 9 + 大 14）里，模板贡献大约 24 分中的 20 分，剩下 4 分靠素材。
+大作文
+  S1 图 → S2 数据 → S3 差距 → S4 两股力量
+  S5 外部 → S6 内部 → S7 趋势不掉头 → S8 主体动作 → S9 变成好处
+  四个展开位 X1-X4，字数不够加 P1 P2
+  静态图不写「逐年上升」，算不出倍数就别算
+
+三处必查
+  落款是 Yours，不是 Your
+  题干两个点都写了没
+  拼写（apologize / congratulations / sincerely）
+```
+
+### 砍掉了什么
+
+| 砍掉的 | 原因 |
+| :------------------------------------------ | :--------------------------------- |
+| 11 组块库 | 块与块之间要缝合，缝合就是出错的地方 |
+| `This is a short email with one purpose` 外壳 | 一句装两件事，语义不自洽；给教授也不合语域 |
+| 三条结构位（定语从句／非谓语／条件句） | 骨架已自带，再堆会挤掉信息点 |
+| 五大话题词块 | 考前突击性价比低，容易背串 |
+| 石雷鹏式 `it is advisable for you to` | 功能句路线，拼装压力大 |
+| 20 词以上的长句 | 默写错误率陡增，你已在 `Yours sincerely` 上验证过 |
+
+保留的只有一条：**整块背，块间只选不拼。**
 
 ## 单词
 

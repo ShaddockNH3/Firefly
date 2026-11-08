@@ -9618,6 +9618,26 @@ CMCD/CA 协议
 
 ### DS 王道选择题 3 刷第 8 章
 
+![8.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkNq8ECoIYDxxl2rZSRkTeiRpYyGeAACSBVrG1zigFcl8McLCfvQEQEAAwIAA3gAAz0E)
+
+![8.3.14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkFq8D8lKve7kFyRIfEhBLOB7JOM_wACRxVrG1zigFePByrbAqHA3QEAAwIAA3gAAz0E)
+
+这两题放在一起讲。
+
+对于快速排序最快的情形，是每次划分都划分成长度相近的情况，这个确实忘了。
+
+![8.6.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkRq8GGjtv7sGJnO866rMPMWS79wZQACwhVrG1zigFeMulYp9sDwMwEAAwIAA3gAAz0E)
+
+本题没选出来（不过大概知道是 A，因为 A 的后半部分是对的。
+
+折半插入排序每次比较次数是固定的，是 log2m，m 为已排序好的数的个数。
+
+![8.7.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkVq8G2UIUZFEau2hzSHTdqTJ7l0EgAC6BVrG1zigFfa92KIUn4OewEAAwIAA3gAAz0E)
+
+本题属于有点想当然了，没仔细思考。
+
+对于 2 我确实有点忘了，对于 4 我则没有分析。
+
 ## 计组王道选择题 3 刷
 
 ### 计组王道选择题 3 刷第 1 章

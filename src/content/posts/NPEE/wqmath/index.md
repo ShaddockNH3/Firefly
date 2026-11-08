@@ -9699,16 +9699,88 @@ $\frac{f(x_2)-f(x_1)}{x_2-x_1} < \frac{f(x_3)-f(x_2)}{x_3-x_2}$
 
 ### 27 张八 2
 
-- 完成时间：20261107
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+- 完成时间：20261108
+- 分数：140
+  - 选择：-10
+- 时间：120+30
+
+这份卷子乍一看看上去很难，但是其实沉下心来认真思考并不难。尤其是很多题初上手很怪，但是最后还是稳扎稳打算出来了。
+
+不过我觉得这份卷子我自己的硬实力是低于 130 的，因为确实很多题都是猜的，比如说选择题第 9 题，填空题最后一题，以及线代大题。
+
+所以摸到了薄弱点，也就是现代第 6 章的选择题，这个确实不熟练（880 2 刷只剩下这个没刷了）
+
+下面把一些值得分析的题都放上来：
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjlq8Cc9_WuEiYZvyh6GupVr54Tl_QACIxVrG1zigFcmJblwYRrgkQEAAwIAA3gAAz0E)
+
+本题 -5。
+
+这道题竟然一个反例都没想到，属于积累问题。答案是取 sqrtn 以及 sin(sqrtn)，这两个反例要积累好。
+
+C 的证明就不看了，感觉难以理解。从直观上来讲，奇数项单调递减，偶数项单调递增，它们最后趋同于同一个值，所以也就是说 a1>a2，然后 a1>a3>...>a2n+1，`a2<a4<...` 从直观上理解可以是这样的。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjpq8Cgc_Da76Dos_WSPjwvm1_yv1wACJBVrG1zigFc7uA6zDTl0QAEAAwIAA3gAAz0E)
+
+本题是半猜半蒙的，首先可以很容易得出 A 的秩为 2。由于 ATA=E，所以 1 是对的。
+
+对于 2 我当时没判断，其实取 x=ATa 就行了。
+
+对于 3，把 b 代入就做出来了。
+
+对于 4，也是代入算一下，可以得出是 0。
+
+所以最后这道题我是只看出来 1,3,4 是对的，2 没去判断。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjtq8Cma_C1dBlrhuFItjLTojCKRPAACJhVrG1zigFcwl57yR322pwEAAwIAA3gAAz0E)
+
+本题半猜半蒙。
+
+首先充分性我是大概意会的，前面那个矩阵记为 M，而 M 是实对称矩阵，所以如果它是正定的，那么 A 必然是满秩的（因为 B 乘上去不可能是 0）（这个分析是错的）
+
+必要性也是半猜半蒙，因为 A 是满秩的，所以特征值都不为 0，取一个 B，在 A 是负的特征值的时候取负，在 A 是正的特征值的时候取正，这样就能凑出来全正（因为是存在性）
+
+答案的必要性是取 B=A-1，我觉得和我这个有点类似。
+
+答案的充分性是使用反证法，假设 A 是不满秩的，那么存在 Ax=0，所以将 xTMx，然后推导出来 M 不正定。（当成结论记下来吧）
+
+我觉得对于 8 和 9，我每次都想着正推，却没想到存在这两个字。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCjxq8CtDgFF1S46p33kkBFMKdVPd_wACKRVrG1zigFepOrliu0JxbQEAAwIAA3gAAz0E)
+
+本题 -5。
+
+这道题一方面是想当然，另一方面是没有找到合适的分析方法。
+
+分析方法如下：
+
+![10 分析](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCj9q8C1kxW1VeDZt9KqfgMSCI0Y-WQACNRVrG1zigFf15kJlJbXRbgEAAwIAA3gAAz0E)
+
+综合来讲，就是没意识到 x1^2+x2^2+x3^2=1。
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkBq8C2-9LKkx_-TFLxtV0PplBhQlwACNhVrG1zigFeue-07yhPaQgEAAwIAA3gAAz0E)
+
+半猜半蒙。
+
+想了一下，后者的秩必不为 2，所以解了一下。
+
+但是为什么可以这么想，其实也就是 r(A 上 B 下)=4（因为这个只有 0 解）
+
+![18](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCj1q8Cve6KxuudSEdPGT46tAa8geEQACKhVrG1zigFfLgLgWu1jCywEAAwIAA3gAAz0E)
+
+这道题注意一下，一开始绕了一个大弯。本题正半的意思是相对于 x=0，而不是 x=1。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCj5q8CwVlNMAAdoSxz0Uvqhqh3NJRVQAAisVaxtc4oBXCldAkqgXsHoBAAMCAAN4AAM9BA)
+
+本题属于非常规题，一开始也绕了弯子。
+
+第一问没啥好说的，对于第二问，先求 A 的特征向量，这个没问题。然后就是没想明白 P 是否唯一，其实想明白 P 不唯一，这道题就不难了，只要设 P=(a1,a2,a3)，然后解方程即可。
+
+解方程的时候，a1 和 a3 根据 A 的特征向量取即可，然后 a3 得凑一个有解的出来，最后解 a2 的时候取一个简单的特解即可。
 
 ### 27 张八 3
 
-- 完成时间：20261031
+- 完成时间：20261108
 - 分数：
   - 选择：
   - 填空：
