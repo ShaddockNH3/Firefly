@@ -4,6 +4,7 @@ import AnimeGrid from "@/components/pages/anime/AnimeGrid.svelte";
 import { siteConfig } from "@/config";
 import subjectsData from "@/data/anime/subjects.json";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import "@/styles/pages/media-grid.css";
 
 if (!siteConfig.pages.anime) {
 	return Astro.redirect("/404/");
@@ -31,8 +32,7 @@ const items = entries
 		const id = e.data.bgm || Number(e.id);
 		const meta = subjects[String(id)];
 		if (!meta) {
-			console.warn(`[anime] ${e.id} 缺少条目信息，跑一下 pnpm fetch:bangumi`);
-			return null;
+			throw new Error(`[anime] ${e.id} 缺少条目信息，先跑 pnpm fetch:bangumi`);
 		}
 		return {
 			id,
@@ -49,8 +49,7 @@ const items = entries
 			ep: e.data.ep,
 			updated: [e.data.finished, e.data.started, e.data.updated].filter(Boolean).sort().at(-1) ?? "",
 		};
-	})
-	.filter((x): x is NonNullable<typeof x> => x !== null);
+	});
 
 const watching = items.filter((i) => i.status === "在看").length;
 const finished = items.filter((i) => i.status === "看过").length;

@@ -13,9 +13,10 @@ export async function getStaticPaths() {
 	return entries
 		.map((entry) => {
 			const id = entry.data.bgm || Number(entry.id);
-			return { params: { id: String(id) }, props: { entry, id, meta: subjects[String(id)] } };
-		})
-		.filter((p) => p.props.meta);
+			const meta = subjects[String(id)];
+			if (!meta) throw new Error(`[anime] ${entry.id} 缺少条目信息，先跑 pnpm fetch:bangumi`);
+			return { params: { id: String(id) }, props: { entry, id, meta } };
+		});
 }
 
 const { entry, id, meta } = Astro.props;

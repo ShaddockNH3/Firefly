@@ -27,3 +27,434 @@
         grid-template-columns: repeat(3, 1fr) !important;
     }
 }
+
+/* ============================================================================
+   共用媒体列表样式：galgame / 小说 / 番剧 / 单机游戏
+   组件里不再写这些规则，改这里就三处一起变
+   ============================================================================ */
+
+/* 顶部标签页（小说页的平台切换） */
+.mg-tabs {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+.mg-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--content-meta);
+    background: var(--card-bg);
+    border: 1px solid var(--line-divider);
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+        background 0.15s,
+        color 0.15s,
+        border-color 0.15s;
+}
+.mg-tab:hover {
+    background: var(--btn-regular-bg);
+}
+.mg-tab[data-on="true"] {
+    background: var(--primary);
+    border-color: transparent;
+    color: #fff;
+}
+.mg-tab-n {
+    font-size: 0.68rem;
+    opacity: 0.55;
+    font-variant-numeric: tabular-nums;
+}
+.mg-tab[data-on="true"] .mg-tab-n {
+    opacity: 0.8;
+}
+
+/* 筛选行 */
+.mg-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.mg-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    row-gap: 7px;
+}
+.mg-row-t {
+    font-size: 0.72rem;
+    color: var(--content-meta);
+    min-width: 40px;
+    white-space: nowrap;
+    opacity: 0.78;
+}
+.mg-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--content-meta);
+    background: var(--card-bg);
+    border: 1px solid var(--line-divider);
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+        background 0.15s,
+        color 0.15s,
+        border-color 0.15s;
+}
+.mg-chip:hover {
+    background: var(--btn-regular-bg);
+}
+.mg-chip[data-on="true"] {
+    background: var(--primary);
+    border-color: transparent;
+    color: #fff;
+}
+.mg-chip-n {
+    font-size: 0.68rem;
+    opacity: 0.55;
+    font-variant-numeric: tabular-nums;
+}
+.mg-chip[data-on="true"] .mg-chip-n {
+    opacity: 0.8;
+}
+
+/* 封面网格 */
+.mg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+    gap: 18px 14px;
+}
+.mg-item {
+    display: block;
+    min-width: 0;
+    text-decoration: none;
+}
+.mg-cv {
+    position: relative;
+    aspect-ratio: 2 / 3;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--btn-regular-bg);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+    transition:
+        transform 0.18s,
+        box-shadow 0.18s;
+}
+.mg-item:hover .mg-cv {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.12);
+}
+.mg-cv img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mg-nm {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--deep-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mg-item:hover .mg-nm {
+    color: var(--primary);
+}
+.mg-sub {
+    margin-top: 1px;
+    font-size: 0.7rem;
+    color: var(--content-meta);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 角标：评分（右上）/ 状态（左下） */
+.mg-badge-score {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    min-width: 30px;
+    padding: 1px 7px;
+    border-radius: 8px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--primary);
+    background: rgb(255 255 255 / 0.92);
+    font-variant-numeric: tabular-nums;
+}
+.dark .mg-badge-score {
+    background: rgb(0 0 0 / 0.55);
+}
+.mg-badge-state {
+    position: absolute;
+    left: 7px;
+    bottom: 7px;
+    padding: 1px 7px;
+    border-radius: 7px;
+    font-size: 0.66rem;
+    font-weight: 600;
+    color: #fff;
+    background: rgb(0 0 0 / 0.5);
+    backdrop-filter: blur(4px);
+}
+/* 通关/看过 = 绿；在玩/在看 = 主色 ；搁置 = 灰；弃坑/抛弃 = 深灰 */
+.mg-badge-state[data-k="已通关"],
+.mg-badge-state[data-k="看过"] {
+    background: rgb(16 138 100 / 0.85);
+}
+.mg-badge-state[data-k="在玩"],
+.mg-badge-state[data-k="在看"] {
+    background: color-mix(in oklch, var(--primary) 88%, black);
+}
+.mg-badge-state[data-k="搁置"] {
+    background: rgb(120 110 100 / 0.8);
+}
+.mg-badge-state[data-k="弃坑"],
+.mg-badge-state[data-k="抛弃"] {
+    background: rgb(0 0 0 / 0.42);
+}
+
+/* 进度条（在追/在玩的条目） */
+.mg-bar {
+    margin-top: 5px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--btn-regular-bg);
+    overflow: hidden;
+}
+.mg-bar i {
+    display: block;
+    height: 100%;
+    border-radius: 2px;
+    background: var(--primary);
+}
+.mg-bar-t {
+    margin-top: 3px;
+    font-size: 0.66rem;
+    color: var(--content-meta);
+    font-variant-numeric: tabular-nums;
+}
+
+/* 行式列表（无封面的书单） */
+.mg-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mg-book {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 16px;
+    border: 1px solid var(--line-divider);
+    border-radius: 0.85rem;
+    background: var(--card-bg);
+    text-decoration: none;
+    transition:
+        border-color 0.15s,
+        box-shadow 0.15s;
+}
+.mg-book:hover {
+    border-color: color-mix(in oklch, var(--primary) 40%, var(--line-divider));
+    box-shadow: 0 6px 18px rgb(0 0 0 / 0.05);
+}
+.mg-book-main {
+    flex: 1;
+    min-width: 0;
+}
+.mg-book-t {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.mg-book-n {
+    font-size: 0.95rem;
+    font-weight: 650;
+    color: var(--deep-text);
+}
+.mg-book:hover .mg-book-n {
+    color: var(--primary);
+}
+.mg-book-a {
+    font-size: 0.74rem;
+    color: var(--content-meta);
+    margin-top: 3px;
+}
+.mg-book-d {
+    font-size: 0.8rem;
+    color: var(--content-meta);
+    margin-top: 6px;
+}
+.mg-book-r {
+    flex-shrink: 0;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+.mg-score {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--primary);
+}
+.mg-score.none {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--content-meta);
+}
+.mg-state {
+    font-size: 0.68rem;
+    color: var(--content-meta);
+    margin-top: 2px;
+}
+
+/* 标签 */
+.mg-tag {
+    font-size: 0.68rem;
+    padding: 1px 7px;
+    border-radius: 6px;
+    background: var(--btn-regular-bg);
+    color: var(--content-meta);
+}
+.mg-tag.cat {
+    color: var(--primary);
+    background: color-mix(in oklch, var(--primary) 12%, var(--card-bg));
+}
+
+.mg-empty {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--content-meta);
+}
+
+/* 书源面板（小说页的入口） */
+.mg-src-t {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--deep-text);
+    margin: 0 0 4px;
+}
+.mg-src-s {
+    font-size: 0.78rem;
+    color: var(--content-meta);
+    margin: 0 0 14px;
+}
+.mg-code-wrap {
+    --code-bg: color-mix(in oklch, var(--btn-regular-bg) 45%, var(--card-bg));
+    position: relative;
+    border: 1px solid var(--line-divider);
+    border-radius: 0.75rem;
+    background: var(--code-bg);
+    overflow: hidden;
+    max-height: 150px;
+}
+.mg-code-wrap.open {
+    max-height: 60vh;
+    overflow: auto;
+}
+.mg-code-wrap::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 52px;
+    background: linear-gradient(transparent, var(--code-bg));
+    pointer-events: none;
+}
+.mg-code-wrap.open::after {
+    display: none;
+}
+.mg-code {
+    margin: 0;
+    padding: 12px 14px;
+    font:
+        0.76rem/1.7 ui-monospace,
+        Menlo,
+        monospace;
+    color: color-mix(in oklch, var(--deep-text) 82%, transparent);
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.mg-code-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+.mg-btn {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary);
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+}
+.mg-btn.plain {
+    color: var(--content-meta);
+    background: var(--card-bg);
+    border-color: var(--line-divider);
+}
+.mg-src-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    padding-top: 6px;
+    border-top: 1px solid var(--line-divider);
+}
+.mg-src-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--line-divider);
+    font-size: 0.8rem;
+}
+.mg-src-item:last-child {
+    border-bottom: none;
+}
+.mg-src-n {
+    font-weight: 600;
+    color: var(--deep-text);
+}
+.mg-src-p {
+    font-size: 0.66rem;
+    padding: 1px 6px;
+    border-radius: 6px;
+    background: var(--btn-regular-bg);
+    color: var(--content-meta);
+    white-space: nowrap;
+}
+.mg-src-note {
+    margin-left: auto;
+    font-size: 0.74rem;
+    color: var(--content-meta);
+    text-align: right;
+}
+.mg-hint {
+    font-size: 0.72rem;
+    color: var(--content-meta);
+    margin: 12px 0 0;
+}

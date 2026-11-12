@@ -5,6 +5,7 @@ import { siteConfig } from "@/config";
 import sourceMeta from "@/data/novels/sources-meta.json";
 import sources from "@/data/novels/sources.json";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import "@/styles/pages/media-grid.css";
 
 if (!siteConfig.pages.novels) {
 	return Astro.redirect("/404/");
