@@ -142,7 +142,7 @@
 				<span class="sw-sec-own">已有 {arr.filter((k) => ownSet.has(k.n)).length}</span>
 			{/if}
 			{#if open.includes(th)}
-				<button class="sw-collapse" onclick={() => toggle(th)}>收起</button>
+				<button class="sw-collapse" onclick={() => toggle(th)}>收起 ↑</button>
 			{/if}
 		</div>
 		<div class="sw-grid">
@@ -285,29 +285,27 @@
 		color: var(--content-meta);
 	}
 	.sw-sec-own {
-		margin-left: auto;
 		font-size: 0.7rem;
 		color: var(--content-meta);
 	}
 	.sw-collapse {
 		margin-left: auto;
-		padding: 3px 12px;
-		border-radius: 999px;
-		border: 1px solid var(--line-divider);
-		background: var(--card-bg);
+		padding: 0;
+		border: none;
+		background: none;
 		color: var(--content-meta);
 		font-size: 0.72rem;
 		font-family: inherit;
 		cursor: pointer;
 		flex: none;
+		opacity: 0.75;
+		transition: opacity 0.15s, color 0.15s;
 	}
 	.sw-collapse:hover {
 		color: var(--primary);
-		border-color: var(--primary);
+		opacity: 1;
 	}
-	.sw-sec-own + .sw-collapse {
-		margin-left: 10px;
-	}
+
 
 	.sw-grid {
 		display: grid;
