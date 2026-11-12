@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon/components";
+import AlTabs from "@/components/pages/azurlane/AlTabs.astro";
+import SkinWall from "@/components/pages/azurlane/SkinWall.svelte";
+import { siteConfig } from "@/config";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import profile from "@/data/azurlane/profile.json";
+import skinsData from "@/data/azurlane/skins.json";
+import mine from "@/data/azurlane/mine.json";
+
+if (!siteConfig.pages.azurlane) {
+	return Astro.redirect("/404/");
+}
+---
+
+<MainGridLayout title="换装" description="碧蓝航线换装一览">
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<AlTabs active="skins" />
+
+		<div class="flex items-center gap-3 flex-wrap mb-4">
+			<h2 class="text-lg font-bold text-(--deep-text) m-0">换装</h2>
+			<span class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums">
+				{skinsData.length} 套
+			</span>
+			<span class="ml-auto inline-flex items-center gap-1 text-[0.7rem] text-(--content-meta)">
+				<Icon name="material-symbols:schedule" class="text-[0.9rem]" />
+				更新于 {profile.updated}
+			</span>
+		</div>
+
+		<SkinWall client:load skins={skinsData} owned={mine.skins} />
+	</div>
+</MainGridLayout>

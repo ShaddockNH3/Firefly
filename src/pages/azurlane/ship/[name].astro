@@ -1,0 +1,51 @@
+---
+import AlTabs from "@/components/pages/azurlane/AlTabs.astro";
+import ShipView from "@/components/pages/azurlane/ShipView.svelte";
+import { siteConfig } from "@/config";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import detailData from "@/data/azurlane/detail.json";
+import shipsData from "@/data/azurlane/ships.json";
+import skinsData from "@/data/azurlane/skins.json";
+import mine from "@/data/azurlane/mine.json";
+
+if (!siteConfig.pages.azurlane) {
+	return Astro.redirect("/404/");
+}
+
+export function getStaticPaths() {
+	return shipsData.map((ship) => ({ params: { name: ship.n }, props: { ship } }));
+}
+
+const { ship } = Astro.props;
+const info = (detailData as Record<string, any>)[ship.n] ?? {};
+const ownedSet = new Set(mine.skins as string[]);
+const copy = (mine.copies as Record<string, { need?: number; have?: number }>)[ship.n] ?? {};
+
+const skins = skinsData
+	.filter((k) => k.s === ship.n)
+	.map((k) => ({ ...k, owned: ownedSet.has(k.n) }));
+
+const isOwned = (mine.owned as string[]).includes(ship.n);
+---
+
+<MainGridLayout title={`${ship.n} · 碧蓝航线`} description={`${ship.n} 的档案、复制人与换装`}>
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<div class="mb-3 flex items-center justify-between gap-3">
+			<a href="/azurlane/dex/" class="inline-flex items-center gap-1 text-[0.78rem] text-(--content-meta) no-underline hover:text-(--primary)">
+				<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style="transform:rotate(180deg)"><path fill="currentColor" d="M9.29 6.71a1 1 0 0 0 0 1.41L13.17 12l-3.88 3.88a1 1 0 1 0 1.42 1.41l4.59-4.58a1 1 0 0 0 0-1.42L10.7 6.71a1 1 0 0 0-1.41 0"/></svg>
+				返回图鉴
+			</a>
+			<AlTabs active="dex" />
+		</div>
+
+		<ShipView
+			client:visible
+			ship={ship}
+			info={info}
+			skins={skins}
+			owned={isOwned}
+			have={copy.have ?? 0}
+			hasRecord={(mine.owned as string[]).length > 0 || (mine.skins as string[]).length > 0}
+		/>
+	</div>
+</MainGridLayout>

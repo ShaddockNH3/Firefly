@@ -51,3 +51,6 @@ package/
 
 # pnpm store (本地缓存，不入库)
 .pnpm-store/
+
+# 抓取缓存（可重生成）
+scripts/.cache/

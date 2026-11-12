@@ -68,6 +68,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 书签导航
 			LinkPresets.Booknav,
 
+			// 碧蓝航线
+			LinkPresets.Azurlane,
+
 			// 哔哩哔哩追番
 			LinkPresets.Bilibili,
 
@@ -215,6 +218,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/booknav/",
 		icon: "material-symbols:bookmarks",
 		pageKey: "booknav",
+	},
+	Azurlane: {
+		name: "碧蓝航线",
+		url: "/azurlane/",
+		icon: "material-symbols:sailing",
+		pageKey: "azurlane",
 	},
 	Bilibili: {
 		name: "哔哩哔哩",

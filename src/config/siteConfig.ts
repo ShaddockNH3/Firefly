@@ -33,6 +33,8 @@ const pages = resolvePageToggles({
 	vndb: false,
 	// MyAnimeList页面开关
 	mal: false,
+	// 碧蓝航线页面开关
+	azurlane: true,
 
 	// ── 关于 (About) ──────────────────────────────────
 
