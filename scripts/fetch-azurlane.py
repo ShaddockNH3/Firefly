@@ -174,7 +174,7 @@ def main():
             if not ii:
                 continue
             nm = re.sub(r"^(File|文件):", "", p["title"])
-            arts[re.sub(r"立绘\.jpg$", "", nm)] = ii[0].get("thumburl") or ii[0]["url"]
+            arts[re.sub(r"立绘\.jpg$", "", nm)] = ii[0]["url"]  # 原图，不用 440px 缩略图
         print(f"  {min(i + 50, len(names))}/{len(names)}", flush=True)
 
     # 3.5 改造 / 誓约 立绘
@@ -193,7 +193,7 @@ def main():
                     continue
                 nm = re.sub(r"^(File|文件):", "", p["title"])
                 nm = re.sub(f"{kind}\\.jpg$", "", nm)
-                extra_art[kind][nm] = ii[0].get("thumburl") or ii[0]["url"]
+                extra_art[kind][nm] = ii[0]["url"]  # 原图
         print(f"  {kind} {len(extra_art[kind])} 张", flush=True)
 
     # 4. 换装
@@ -241,7 +241,7 @@ def main():
             if not ii:
                 continue
             nm = re.sub(r"^(File|文件):", "", p["title"])
-            hd[nm] = ii[0].get("thumburl") or ii[0]["url"]
+            hd[nm] = ii[0]["url"]  # 原图
         if i % 300 == 0:
             print(f"    {i}/{len(uniq)}", flush=True)
     for k in skins:

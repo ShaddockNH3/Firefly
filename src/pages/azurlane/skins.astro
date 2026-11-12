@@ -5,12 +5,13 @@ import SkinWall from "@/components/pages/azurlane/SkinWall.svelte";
 import { siteConfig } from "@/config";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import profile from "@/data/azurlane/profile.json";
-import skinsData from "@/data/azurlane/skins.json";
+import { allSkins } from "@/utils/azurlane-skins";
 import mine from "@/data/azurlane/mine.json";
 
 if (!siteConfig.pages.azurlane) {
 	return Astro.redirect("/404/");
 }
+
 ---
 
 <MainGridLayout title="换装" description="碧蓝航线换装一览">
@@ -20,7 +21,7 @@ if (!siteConfig.pages.azurlane) {
 		<div class="flex items-center gap-3 flex-wrap mb-4">
 			<h2 class="text-lg font-bold text-(--deep-text) m-0">换装</h2>
 			<span class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums">
-				{skinsData.length} 套
+				{allSkins.length} 套
 			</span>
 			<span class="ml-auto inline-flex items-center gap-1 text-[0.7rem] text-(--content-meta)">
 				<Icon name="material-symbols:schedule" class="text-[0.9rem]" />
@@ -28,6 +29,6 @@ if (!siteConfig.pages.azurlane) {
 			</span>
 		</div>
 
-		<SkinWall client:load skins={skinsData} owned={mine.skins} />
+		<SkinWall client:load skins={allSkins} owned={mine.skins} />
 	</div>
 </MainGridLayout>

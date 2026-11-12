@@ -43,6 +43,7 @@
 		if (filter === "已拥有") list = list.filter((k) => ownSet.has(k.n));
 		else if (filter === "未拥有") list = list.filter((k) => !ownSet.has(k.n));
 		else if (filter === "L2D") list = list.filter((k) => k.k === "L2D");
+		else if (filter === "改造") list = list.filter((k) => k.k === "改造");
 
 		if (filter !== "全部") {
 			list = [...list].sort((a, b) => a.n.localeCompare(b.n, "zh"));
@@ -54,7 +55,7 @@
 	const view = $derived(filtered.slice((page - 1) * perPage, page * perPage));
 
 	const tabs = $derived(
-		hasRecord ? ["全部", "已拥有", "未拥有", "L2D"] : ["全部", "L2D"],
+		hasRecord ? ["全部", "已拥有", "未拥有", "L2D", "改造"] : ["全部", "L2D", "改造"],
 	);
 
 	function setFilter(k: string) {

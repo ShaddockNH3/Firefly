@@ -6,6 +6,7 @@ import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import profile from "@/data/azurlane/profile.json";
 import shipsData from "@/data/azurlane/ships.json";
 import skinsData from "@/data/azurlane/skins.json";
+import { allSkins } from "@/utils/azurlane-skins";
 import mine from "@/data/azurlane/mine.json";
 
 if (!siteConfig.pages.azurlane) {
@@ -13,7 +14,7 @@ if (!siteConfig.pages.azurlane) {
 }
 
 const total = shipsData.length;
-const skinsTotal = skinsData.length;
+const skinsTotal = allSkins.length;
 const l2d = skinsData.filter((k) => k.k === "L2D").length;
 
 const kpis = [
@@ -21,7 +22,7 @@ const kpis = [
 	{ icon: "material-symbols:shield", label: "舰队实力", value: profile.fleetPower.toLocaleString("en-US"), unit: "" },
 	{ icon: "material-symbols:insights", label: "舰队科技", value: profile.techPoints.toLocaleString("en-US"), unit: "" },
 	{ icon: "material-symbols:favorite", label: "誓约", value: `${profile.oath}`, unit: "" },
-	{ icon: "material-symbols:shopping-bag", label: "皮肤", value: `${profile.skins}`, unit: `/ ${skinsTotal.toLocaleString("en-US")}` },
+	{ icon: "material-symbols:shopping-bag", label: "皮肤", value: `${mine.skins.length}`, unit: `/ ${skinsTotal.toLocaleString("en-US")}` },
 ];
 ---
 
