@@ -85,6 +85,13 @@
 	};
 
 	let track = $state<HTMLDivElement | null>(null);
+	let zoom = $state<string | null>(null);
+	let dlg = $state<HTMLDialogElement | null>(null);
+
+	$effect(() => {
+		if (zoom && dlg && !dlg.open) dlg.showModal();
+		else if (!zoom && dlg?.open) dlg.close();
+	});
 
 	function scrollSkins(dir: number) {
 		track?.scrollBy({ left: dir * 340, behavior: "smooth" });
@@ -94,7 +101,7 @@
 <div class="sp-wrap">
 <div class="sp">
 	<div class="sp-media">
-		<img src={entries[idx].i} alt={ship.n} referrerpolicy="no-referrer" />
+		<img src={entries[idx].i} alt={ship.n} referrerpolicy="no-referrer" onclick={() => (zoom = entries[idx].i)} />
 		<div class="sp-cap">{entries[idx].n}</div>
 	</div>
 
@@ -192,6 +199,10 @@
 </div>
 
 </div>
+
+<dialog bind:this={dlg} class="sp-zoom" onclick={() => (zoom = null)}>
+	{#if zoom}<img src={zoom} alt="" referrerpolicy="no-referrer" />{/if}
+</dialog>
 
 <style>
 	.sp {
@@ -504,6 +515,36 @@
 
 	.sp-wrap {
 		container-type: inline-size;
+	}
+	.sp-media img {
+		cursor: zoom-in;
+	}
+	.sp-zoom {
+		position: fixed;
+		inset: 0;
+		width: 100vw;
+		height: 100vh;
+		max-width: none;
+		max-height: none;
+		margin: 0;
+		padding: 24px;
+		border: none;
+		background: rgb(0 0 0 / 0.86);
+		cursor: zoom-out;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.sp-zoom::backdrop {
+		background: rgb(0 0 0 / 0.5);
+	}
+	.sp-zoom img {
+		height: 88vh;
+		width: auto;
+		max-width: 90vw;
+		object-fit: contain;
+		border-radius: 10px;
+		box-shadow: 0 12px 48px rgb(0 0 0 / 0.4);
 	}
 	@container (max-width: 500px) {
 		.sp {

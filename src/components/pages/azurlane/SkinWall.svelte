@@ -9,6 +9,7 @@
 		p: string;
 		i: string;
 		t?: string;
+		full?: string;
 	}
 
 	interface Props {
@@ -26,6 +27,13 @@
 	let type = $state("全部");
 	let q = $state("");
 	let open = $state<string[]>([]);
+	let zoom = $state<string | null>(null);
+	let dlg = $state<HTMLDialogElement | null>(null);
+
+	$effect(() => {
+		if (zoom && dlg && !dlg.open) dlg.showModal();
+		else if (!zoom && dlg?.open) dlg.close();
+	});
 
 	const LIMIT = perGroup;
 
@@ -147,7 +155,7 @@
 		</div>
 		<div class="sw-grid">
 			{#each (open.includes(th) ? arr : arr.slice(0, LIMIT)) as k (k.i)}
-				<div class="sw-i" title={k.n}>
+				<div class="sw-i" title={k.n} onclick={() => (zoom = k.full || k.i)}>
 					<div class="sw-cv" data-off={hasRecord && !ownSet.has(k.n)}>
 						<img src={k.t || k.i} alt={k.n} loading="lazy" referrerpolicy="no-referrer" />
 						{#if k.k === "L2D"}
@@ -171,6 +179,10 @@
 		{/if}
 	</section>
 {/each}
+
+<dialog bind:this={dlg} class="sw-zoom" onclick={() => (zoom = null)}>
+	{#if zoom}<img src={zoom} alt="" referrerpolicy="no-referrer" />{/if}
+</dialog>
 
 <style>
 	.sw-bar {
@@ -322,8 +334,36 @@
 			width: 100%;
 		}
 	}
+	.sw-zoom {
+		position: fixed;
+		inset: 0;
+		width: 100vw;
+		height: 100vh;
+		max-width: none;
+		max-height: none;
+		margin: 0;
+		padding: 24px;
+		border: none;
+		background: rgb(0 0 0 / 0.86);
+		cursor: zoom-out;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.sw-zoom::backdrop {
+		background: rgb(0 0 0 / 0.5);
+	}
+	.sw-zoom img {
+		height: 88vh;
+		width: auto;
+		max-width: 90vw;
+		object-fit: contain;
+		border-radius: 10px;
+		box-shadow: 0 12px 48px rgb(0 0 0 / 0.4);
+	}
 	.sw-i {
 		display: block;
+		cursor: zoom-in;
 		text-align: left;
 		padding: 0;
 		border: none;
