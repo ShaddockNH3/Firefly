@@ -35,6 +35,8 @@ const pages = resolvePageToggles({
 	mal: false,
 	// 碧蓝航线页面开关
 	azurlane: true,
+	// galgame 页面开关
+	galgame: true,
 
 	// ── 关于 (About) ──────────────────────────────────
 

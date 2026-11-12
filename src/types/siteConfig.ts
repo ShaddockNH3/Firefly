@@ -98,6 +98,7 @@ export type SiteConfig = {
 		dynamic: boolean; // 动态页面开关
 		projects: boolean; // 项目展示页开关
 		azurlane: boolean; // 碧蓝航线页面开关
+		galgame: boolean; // galgame 页面开关
 	};
 
 	// 分类导航栏开关

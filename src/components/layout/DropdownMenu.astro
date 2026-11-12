@@ -25,12 +25,12 @@ const hasChildren = processedLink.children && processedLink.children.length > 0;
 <div class:list={["dropdown-container", className]} data-dropdown>
 	{hasChildren ? (
 		<button 
-			class="btn-plain scale-animation rounded-lg h-10 font-bold px-4 pr-8 active:scale-95 dropdown-trigger relative"
+			class="btn-plain scale-animation rounded-lg h-10 font-bold px-3 pr-7 active:scale-95 dropdown-trigger relative"
 			aria-expanded="false"
 			aria-haspopup="true"
 			data-dropdown-trigger
 		>
-			<div class="flex items-center gap-1.5">
+			<div class="flex items-center gap-1.5 whitespace-nowrap">
 				{processedLink.icon && <Icon name={processedLink.icon} class="text-[1.1rem] mr-1.5 navbar-icon" />}
 				{processedLink.name}
 			</div>
@@ -39,6 +39,9 @@ const hasChildren = processedLink.children && processedLink.children.length > 0;
 		<div class="dropdown-menu" data-dropdown-menu>
 			<DropdownPanel class="dropdown-content">
 				{processedLink.children?.map((child, index) => (
+					child.type === "caption" ? (
+						<div class="dropdown-caption">{child.name}</div>
+					) : (
 					<DropdownItem
 						href={child.external ? child.url : url(child.url)}
 						target={child.external ? "_blank" : undefined}
@@ -51,6 +54,7 @@ const hasChildren = processedLink.children && processedLink.children.length > 0;
 							<Icon name="fa7-solid:arrow-up-right-from-square" class="text-[0.75rem] text-black/25 dark:text-white/25 ml-auto" />
 						)}
 					</DropdownItem>
+					)
 				))}
 			</DropdownPanel>
 		</div>
@@ -59,9 +63,9 @@ const hasChildren = processedLink.children && processedLink.children.length > 0;
 			aria-label={processedLink.name} 
 			href={processedLink.external ? processedLink.url : url(processedLink.url)} 
 			target={processedLink.external ? "_blank" : null}
-			class="btn-plain scale-animation rounded-lg h-10 font-bold px-4 active:scale-95"
+			class="btn-plain scale-animation rounded-lg h-10 font-bold px-3 active:scale-95"
 		>
-			<div class="flex items-center gap-1.5">
+			<div class="flex items-center gap-1.5 whitespace-nowrap">
 				{processedLink.icon && <Icon name={processedLink.icon} class="text-[1.1rem] mr-1.5 navbar-icon" />}
 				{processedLink.name}
 				{processedLink.external && <Icon name="fa7-solid:arrow-up-right-from-square" class="text-[0.875rem] transition -translate-y-px ml-1 text-black/20 dark:text-white/20" />}
@@ -96,6 +100,32 @@ const hasChildren = processedLink.children && processedLink.children.length > 0;
 		.dropdown-container {
 			@apply hidden;
 		}
+	}
+
+	/* 分组小标题：只做分区，不可点 */
+	.dropdown-caption {
+		display: flex;
+		align-items: center;
+		gap: 7px;
+		padding: 9px 14px 3px;
+		font-size: 0.7rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		color: var(--content-meta);
+		user-select: none;
+		white-space: nowrap;
+	}
+	.dropdown-caption:first-child {
+		padding-top: 2px;
+	}
+	.dropdown-caption::before {
+		content: "";
+		width: 3px;
+		height: 9px;
+		border-radius: 2px;
+		background: currentColor;
+		opacity: 0.4;
+		flex-shrink: 0;
 	}
 </style>
 

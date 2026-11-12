@@ -54,6 +54,22 @@ type ProjectData = {
 	lang: string;
 };
 
+type GalgameData = {
+	title: string;
+	cn: string;
+	alt: string;
+	developer: string;
+	released: string;
+	cover: string;
+	vndb: string;
+	vndbRating: number | null;
+	status: string;
+	score: number | null;
+	hours: number | null;
+	finished: string;
+	draft: boolean;
+};
+
 type ContentCollection<T> = CollectionConfig<
 	ZodType<T>,
 	ReturnType<typeof glob>
@@ -130,14 +146,37 @@ const projectsCollection: ContentCollection<ProjectData> = defineCollection({
 	}),
 });
 
+const galgameCollection: ContentCollection<GalgameData> = defineCollection({
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/galgame" }),
+	schema: z.object({
+		title: z.string(),
+		cn: z.string().optional().default(""),
+		alt: z.string().optional().default(""),
+		developer: z.string().optional().default(""),
+		released: z.string().optional().default(""),
+		cover: z.string().optional().default(""),
+		vndb: z.string().optional().default(""),
+		vndbRating: z.number().nullable().optional().default(null),
+		// 已通关 / 在玩 / 想玩 / 弃坑，空表示还没记
+		status: z.string().optional().default(""),
+		score: z.number().nullable().optional().default(null),
+		hours: z.number().nullable().optional().default(null),
+		// 通关日期，空表示还没记
+		finished: z.string().optional().default(""),
+		draft: z.boolean().optional().default(false),
+	}),
+});
+
 export const collections: {
 	dynamic: typeof dynamicCollection;
 	posts: typeof postsCollection;
 	spec: typeof specCollection;
 	projects: typeof projectsCollection;
+	galgame: typeof galgameCollection;
 } = {
 	dynamic: dynamicCollection,
 	posts: postsCollection,
 	spec: specCollection,
 	projects: projectsCollection,
+	galgame: galgameCollection,
 };

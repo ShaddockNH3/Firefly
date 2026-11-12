@@ -50,6 +50,32 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		],
 	});
 
+	// ACG 及其子菜单：二级用分组小标题分区，具体条目挂在分组下
+	links.push({
+		name: "ACG",
+		url: "#",
+		icon: "material-symbols:interests",
+		children: [
+			{ type: "caption", name: "二游", url: "" },
+
+			// 碧蓝航线
+			LinkPresets.Azurlane,
+
+			{ type: "caption", name: "galgame", url: "" },
+
+			// galgame 作品
+			LinkPresets.Galgame,
+
+			{ type: "caption", name: "番剧", url: "" },
+
+			// 哔哩哔哩追番
+			LinkPresets.Bilibili,
+
+			// 番组计划
+			LinkPresets.Bangumi,
+		],
+	});
+
 	// 我的及其子菜单
 	links.push({
 		name: "我的",
@@ -67,29 +93,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 书签导航
 			LinkPresets.Booknav,
-		],
-	});
-
-	// ACG 及其子菜单
-	links.push({
-		name: "ACG",
-		url: "#",
-		icon: "material-symbols:interests",
-		children: [
-			// 碧蓝航线
-			LinkPresets.Azurlane,
-
-			// 哔哩哔哩追番
-			LinkPresets.Bilibili,
-
-			// 番组计划
-			LinkPresets.Bangumi,
-
-			// VNDB
-			LinkPresets.VNDB,
-
-			// MyAnimeList
-			LinkPresets.MAL,
 		],
 	});
 
@@ -232,6 +235,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/azurlane/",
 		icon: "material-symbols:sailing",
 		pageKey: "azurlane",
+	},
+	Galgame: {
+		name: "作品列表",
+		url: "/galgame/",
+		icon: "material-symbols:menu-book",
+		pageKey: "galgame",
 	},
 	Bilibili: {
 		name: "哔哩哔哩",

@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
+import GalgameGrid from "@/components/pages/galgame/GalgameGrid.svelte";
+import { siteConfig } from "@/config";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+if (!siteConfig.pages.galgame) {
+	return Astro.redirect("/404/");
+}
+
+const entries = (await getCollection("galgame")).filter((e) => !e.data.draft);
+
+const games = entries
+	.map((e) => ({
+		slug: e.id,
+		title: e.data.title,
+		cn: e.data.cn,
+		alt: e.data.alt,
+		developer: e.data.developer,
+		year: (e.data.released || "").slice(0, 4),
+		cover: e.data.cover,
+		status: e.data.status,
+		score: e.data.score,
+	}))
+	.sort((a, b) => (b.year || "").localeCompare(a.year || "") || a.title.localeCompare(b.title));
+
+const studios = new Set(games.map((g) => g.developer || "其他")).size;
+---
+
+<MainGridLayout title="galgame" description="galgame 收藏与评价">
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<div class="flex items-center gap-3 flex-wrap mb-4">
+			<h2 class="text-lg font-bold text-(--deep-text) m-0">galgame</h2>
+			<span class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums">
+				{games.length} 部
+			</span>
+			<span class="text-[0.72rem] text-(--content-meta)">{studios} 家会社</span>
+			<a
+				href="https://vndb.org/u358128"
+				target="_blank"
+				rel="noopener"
+				class="ml-auto inline-flex items-center gap-1 text-[0.72rem] text-(--content-meta) hover:text-(--primary)"
+			>
+				VNDB
+				<Icon name="fa7-solid:arrow-up-right-from-square" class="text-[0.62rem]" />
+			</a>
+		</div>
+
+		<GalgameGrid client:load games={games} />
+	</div>
+</MainGridLayout>
