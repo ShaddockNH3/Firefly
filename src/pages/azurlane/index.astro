@@ -31,11 +31,11 @@ const kpis = [
 
 		<!-- 档案头 -->
 		<div class="flex items-center gap-4 sm:gap-6 flex-wrap">
-			<img
-				src={profile.avatar}
-				alt={profile.name}
-				class="w-18 h-18 sm:w-20 sm:h-20 rounded-full object-cover shrink-0 ring-2 ring-(--btn-regular-bg) ring-offset-2 ring-offset-(--card-bg)"
-			/>
+			<div
+				class="w-18 h-18 sm:w-20 sm:h-20 rounded-full shrink-0 flex items-center justify-center bg-(--btn-regular-bg) text-(--primary)"
+			>
+				<Icon name="material-symbols:sailing" class="text-[2rem]" />
+			</div>
 			<div class="min-w-0 flex-1">
 				<div class="flex items-center gap-2 flex-wrap">
 					<span class="text-xl font-bold text-(--deep-text)">{profile.name}</span>
