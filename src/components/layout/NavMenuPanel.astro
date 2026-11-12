@@ -375,9 +375,9 @@ const navTitle = siteConfig.navbar.title || siteConfig.title;
         color: var(--drawer-on-surface-variant);
     }
 
-    /* ---- 子项缩进 ---- */
+    /* ---- 子项不缩进：与顶级项左边缘对齐，层级靠分组小标题表达 ---- */
     .mobile-submenu .mobile-menu-item {
-        padding-left: 52px;
+        padding-left: 16px;
     }
 
     /* ---- 分组小标题：只做分区，不可点 ---- */
@@ -385,7 +385,7 @@ const navTitle = siteConfig.navbar.title || siteConfig.title;
         display: flex;
         align-items: center;
         gap: 8px;
-        padding: 12px 16px 2px 52px;
+        padding: 12px 16px 2px 16px;
         font-size: 0.72rem;
         font-weight: 700;
         letter-spacing: 0.06em;
