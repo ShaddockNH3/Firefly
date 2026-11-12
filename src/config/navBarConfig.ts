@@ -67,7 +67,15 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 书签导航
 			LinkPresets.Booknav,
+		],
+	});
 
+	// ACG 及其子菜单
+	links.push({
+		name: "ACG",
+		url: "#",
+		icon: "material-symbols:interests",
+		children: [
 			// 碧蓝航线
 			LinkPresets.Azurlane,
 

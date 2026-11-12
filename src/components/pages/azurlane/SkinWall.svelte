@@ -68,7 +68,9 @@
 		{#each tabs as k (k)}
 			<button class="al-chip" data-on={filter === k} onclick={() => setFilter(k)}>{k}</button>
 		{/each}
-		<span class="sw-count">{filtered.length} 套</span>
+		<span class="sw-count">
+			{hasRecord ? `已拥有 ${owned.length} / ${skins.length} 套` : `${skins.length} 套`}
+		</span>
 	</div>
 </div>
 

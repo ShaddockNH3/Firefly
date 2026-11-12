@@ -238,6 +238,29 @@ def main():
             "rt": p.get("rt", False),
         }
 
+    # 合并「X改」：可改造船只保留一条，按改造形态显示（稀有度/头像用改造后的）
+    names_set = {s["n"] for s in ships}
+    pairs = {n[:-1]: n for n in names_set if n.endswith("改") and n[:-1] in names_set}
+    by_name = {s["n"]: s for s in ships}
+    for base, alt in pairs.items():
+        b, a = by_name.get(base), by_name.get(alt)
+        if not b or not a:
+            continue
+        b["r"] = a["r"]
+        b["av"] = a["av"] or b["av"]
+        b["g"] = "改造"
+        rec = detail.setdefault(base, {})
+        rec["rt"] = True
+        if not rec.get("art"):
+            rec["art"] = detail.get(alt, {}).get("art", "")
+        for k in skins:
+            if k["s"] == alt:
+                k["s"] = base
+    ships = [s for s in ships if s["n"] not in set(pairs.values())]
+    for n in pairs.values():
+        detail.pop(n, None)
+    print(f"  合并改造 {len(pairs)} 对", flush=True)
+
     order = {f: i for i, f in enumerate(CORE + LINK)}
     ships.sort(key=lambda s: (order.get(s["f"], 99),
                               int(s["i"]) if s["i"].isdigit() else 9999, s["n"]))
