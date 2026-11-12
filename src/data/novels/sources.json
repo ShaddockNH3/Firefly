@@ -1,31 +1,3 @@
----
-title: 书源分享
-published: 2026-10-28
-description: 自用书源分享，包含番茄小说，起点小说以及轻小说，持续更新中
-tags:
-  - 书源
-  - md3
-  - 番茄小说
-  - 起点小说
-  - 轻小说
-category: Novel
-draft: false
-series: "小说"
-seriesOrder: 1
-image: ./cover.png
----
-
-## 前言
-
-包含起点、番茄以及轻小说。
-
-对于番茄小说，建议搜作者名，其多名特性导致最终名可能非 Web 存储名。
-
-炸了尽量就更新。
-
-## 分享
-
-```json
 [
   {
     "bookSourceName": "番茄小说",
@@ -587,4 +559,3 @@ image: ./cover.png
     "loginUi": ""
   }
 ]
-```

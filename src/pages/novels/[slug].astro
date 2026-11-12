@@ -1,0 +1,164 @@
+---
+import { getCollection, render } from "astro:content";
+import { Icon } from "astro-icon/components";
+import Markdown from "@/components/common/Markdown.astro";
+import { siteConfig } from "@/config";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+export async function getStaticPaths() {
+	if (!siteConfig.pages.novels) return [];
+	const entries = await getCollection("novels");
+	return entries
+		.filter((e) => !e.data.draft)
+		.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const hasBody = (entry.body ?? "").trim().length > 0;
+const { Content } = await render(entry);
+
+const PLAT: Record<string, string> = { fanqie: "番茄", qidian: "起点", light: "轻小说" };
+const plat = PLAT[d.platform] ?? "";
+
+const rows = [
+	{ k: "平台", v: plat },
+	{ k: "分类", v: d.category },
+	{ k: "篇幅", v: d.length },
+	{ k: "开始", v: d.started },
+	{ k: "读完", v: d.finished },
+	{ k: "状态", v: d.status },
+	{ k: "我的评分", v: d.score !== null ? `${d.score.toFixed(1)} / 10` : "" },
+].filter((r) => r.v);
+---
+
+<MainGridLayout title={d.title} description={`${d.title} 的阅读记录`}>
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<a href={`/novels/#${d.platform}`} class="nv-back">
+			<Icon name="material-symbols:chevron-right-rounded" class="text-[1rem]" />
+			小说
+		</a>
+
+		<div class="nv-head">
+			<h1 class="nv-title">{d.title}</h1>
+			<div class="nv-meta">
+				{[d.author, plat].filter(Boolean).join(" · ")}
+			</div>
+		</div>
+
+		{d.tags.length > 0 && (
+			<div class="nv-tags" style="margin-top:12px">
+				{d.tags.map((t) => <span class="nv-tag">{t}</span>)}
+			</div>
+		)}
+
+		<div class="nv-rows" style="margin-top:16px">
+			{rows.map((r) => (
+				<div class="nv-row">
+					<span class="nv-k">{r.k}</span>
+					<span class="nv-v">{r.v}</span>
+				</div>
+			))}
+		</div>
+	</div>
+
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7 mt-4">
+		<div class="nv-sec-t">
+			评价
+			{d.score !== null && <span class="nv-sec-n">{d.score.toFixed(1)}</span>}
+		</div>
+		{hasBody ? <Markdown class="nv-review"><Content /></Markdown> : <p class="nv-empty">还没有写评价。</p>}
+	</div>
+</MainGridLayout>
+
+<style>
+	.nv-back {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+		font-size: 0.78rem;
+		color: var(--content-meta);
+		text-decoration: none;
+		margin-bottom: 16px;
+	}
+	.nv-back:hover {
+		color: var(--primary);
+	}
+	.nv-back :global(svg) {
+		transform: rotate(180deg);
+	}
+
+	.nv-title {
+		margin: 0;
+		font-size: 1.45rem;
+		font-weight: 700;
+		line-height: 1.35;
+		color: var(--deep-text);
+	}
+	.nv-meta {
+		margin-top: 5px;
+		font-size: 0.8rem;
+		color: var(--content-meta);
+	}
+
+	.nv-tags {
+		display: flex;
+		gap: 8px;
+		flex-wrap: wrap;
+	}
+	.nv-tag {
+		font-size: 0.68rem;
+		padding: 1px 7px;
+		border-radius: 6px;
+		background: var(--btn-regular-bg);
+		color: var(--content-meta);
+	}
+
+	.nv-rows {
+		display: flex;
+		flex-direction: column;
+	}
+	.nv-row {
+		display: flex;
+		align-items: baseline;
+		gap: 16px;
+		padding: 8px 0;
+		border-bottom: 1px solid var(--line-divider);
+		font-size: 0.82rem;
+	}
+	.nv-row:last-child {
+		border-bottom: none;
+	}
+	.nv-k {
+		width: 64px;
+		flex-shrink: 0;
+		color: var(--content-meta);
+	}
+	.nv-v {
+		color: var(--deep-text);
+		font-variant-numeric: tabular-nums;
+	}
+
+	.nv-sec-t {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 0.95rem;
+		font-weight: 700;
+		color: var(--deep-text);
+		margin-bottom: 10px;
+	}
+	.nv-sec-n {
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: var(--primary);
+	}
+	.nv-review {
+		font-size: 0.88rem;
+		line-height: 1.9;
+	}
+	.nv-empty {
+		font-size: 0.82rem;
+		color: var(--content-meta);
+	}
+</style>

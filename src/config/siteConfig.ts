@@ -37,6 +37,8 @@ const pages = resolvePageToggles({
 	azurlane: true,
 	// galgame 页面开关
 	galgame: true,
+	// 小说页面开关（书源分享 + 三平台书单）
+	novels: true,
 	// 战舰世界页面开关
 	wows: true,
 

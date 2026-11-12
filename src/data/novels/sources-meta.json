@@ -1,0 +1,11 @@
+[
+	{ "name": "番茄小说", "platform": "番茄", "note": "镜像，全本首选" },
+	{ "name": "番茄小说·官方", "platform": "番茄", "note": "需登录看全文" },
+	{ "name": "书海阁", "platform": "番茄 / 起点", "note": "通吃" },
+	{ "name": "速读谷", "platform": "起点", "note": "新书快" },
+	{ "name": "入殓师灵异录", "platform": "起点", "note": "更新快" },
+	{ "name": "天空书屋", "platform": "起点", "note": "收录全，限流" },
+	{ "name": "得奇小说", "platform": "起点", "note": "目录自动拼接" },
+	{ "name": "笔趣阁 39", "platform": "起点", "note": "走 WebView，慢" },
+	{ "name": "幻梦轻小说", "platform": "轻小说", "note": "日轻首选" }
+]

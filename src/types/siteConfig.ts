@@ -99,6 +99,7 @@ export type SiteConfig = {
 		projects: boolean; // 项目展示页开关
 		azurlane: boolean; // 碧蓝航线页面开关
 		galgame: boolean; // galgame 页面开关
+		novels: boolean; // 小说页面开关
 		wows: boolean; // 战舰世界页面开关
 	};
 

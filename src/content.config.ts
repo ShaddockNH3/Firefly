@@ -70,6 +70,22 @@ type GalgameData = {
 	draft: boolean;
 };
 
+type NovelData = {
+	title: string;
+	author: string;
+	platform: "fanqie" | "qidian" | "light";
+	category: string;
+	tags: string[];
+	status: string;
+	score: number | null;
+	length: string;
+	started: string;
+	finished: string;
+	updated: string;
+	note: string;
+	draft: boolean;
+};
+
 type ContentCollection<T> = CollectionConfig<
 	ZodType<T>,
 	ReturnType<typeof glob>
@@ -167,16 +183,43 @@ const galgameCollection: ContentCollection<GalgameData> = defineCollection({
 	}),
 });
 
+const novelsCollection: ContentCollection<NovelData> = defineCollection({
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/novels" }),
+	schema: z.object({
+		title: z.string(),
+		author: z.string().optional().default(""),
+		// 番茄 / 起点 / 轻小说
+		platform: z.enum(["fanqie", "qidian", "light"]),
+		// 分类自由填写，页面按出现过的值汇总成筛选项
+		category: z.string().optional().default(""),
+		tags: z.array(z.string()).optional().default([]),
+		// 在读 / 读过 / 想读 / 弃坑，空表示还没记
+		status: z.string().optional().default(""),
+		score: z.number().nullable().optional().default(null),
+		// 篇幅，网文写「470 万字」，轻小说写「18 卷」
+		length: z.string().optional().default(""),
+		started: z.string().optional().default(""),
+		finished: z.string().optional().default(""),
+		// 最近一次动过的时间，默认排序用
+		updated: z.string().optional().default(""),
+		// 列表里的一句话短评
+		note: z.string().optional().default(""),
+		draft: z.boolean().optional().default(false),
+	}),
+});
+
 export const collections: {
 	dynamic: typeof dynamicCollection;
 	posts: typeof postsCollection;
 	spec: typeof specCollection;
 	projects: typeof projectsCollection;
 	galgame: typeof galgameCollection;
+	novels: typeof novelsCollection;
 } = {
 	dynamic: dynamicCollection,
 	posts: postsCollection,
 	spec: specCollection,
 	projects: projectsCollection,
 	galgame: galgameCollection,
+	novels: novelsCollection,
 };

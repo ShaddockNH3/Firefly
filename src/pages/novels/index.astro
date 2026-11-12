@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+import NovelList from "@/components/pages/novels/NovelList.svelte";
+import { siteConfig } from "@/config";
+import sourceMeta from "@/data/novels/sources-meta.json";
+import sources from "@/data/novels/sources.json";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+if (!siteConfig.pages.novels) {
+	return Astro.redirect("/404/");
+}
+
+const entries = (await getCollection("novels")).filter((e) => !e.data.draft);
+
+const books = entries.map((e) => {
+	const d = e.data;
+	return {
+		slug: e.id,
+		title: d.title,
+		author: d.author,
+		platform: d.platform,
+		category: d.category,
+		tags: d.tags,
+		status: d.status,
+		score: d.score,
+		length: d.length,
+		note: d.note,
+		// 最近一次动过的时间，默认排序用
+		act: [d.finished, d.started, d.updated].filter(Boolean).sort().at(-1) ?? "",
+	};
+});
+
+const sourceJson = JSON.stringify(sources, null, 2);
+const lastUpdate = Math.max(...sources.map((s) => (s as { lastUpdateTime?: number }).lastUpdateTime ?? 0));
+const sourceUpdated = new Intl.DateTimeFormat("zh-CN", {
+	timeZone: "Asia/Shanghai",
+	year: "numeric",
+	month: "2-digit",
+	day: "2-digit",
+})
+	.format(new Date(lastUpdate))
+	.replaceAll("/", "-");
+
+const platCount = new Set(books.map((b) => b.platform)).size;
+---
+
+<MainGridLayout title="小说" description="小说书单与自用书源">
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<div class="flex items-center gap-3 flex-wrap mb-4">
+			<h2 class="text-lg font-bold text-(--deep-text) m-0">小说</h2>
+			<span
+				class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums"
+			>
+				{books.length} 本
+			</span>
+			<span class="text-[0.72rem] text-(--content-meta)">
+				{platCount} 个平台 · {sourceMeta.length} 个书源
+			</span>
+		</div>
+
+		<NovelList client:load books={books} sourceJson={sourceJson} sourceMeta={sourceMeta} sourceUpdated={sourceUpdated} />
+	</div>
+</MainGridLayout>

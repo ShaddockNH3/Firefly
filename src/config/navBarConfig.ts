@@ -71,6 +71,11 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// galgame 作品
 			LinkPresets.Galgame,
 
+			{ type: "caption", name: "小说", url: "" },
+
+			// 书单与书源
+			LinkPresets.Novels,
+
 		],
 	});
 
@@ -245,6 +250,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/galgame/",
 		icon: "material-symbols:menu-book",
 		pageKey: "galgame",
+	},
+	Novels: {
+		name: "书单",
+		url: "/novels/",
+		icon: "material-symbols:auto-stories",
+		pageKey: "novels",
 	},
 	Bilibili: {
 		name: "哔哩哔哩",
