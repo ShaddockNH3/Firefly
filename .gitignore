@@ -48,3 +48,6 @@ package/
 .claude
 .mimocode
 .codebuddy/
+
+# pnpm store (本地缓存，不入库)
+.pnpm-store/

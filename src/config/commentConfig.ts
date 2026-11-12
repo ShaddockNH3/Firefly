@@ -1,10 +1,10 @@
 import type { CommentConfig } from "../types/commentConfig";
 
 export const commentConfig: CommentConfig = {
-	// 评论系统类型：none, twikoo, waline, giscus, disqus, artalk，默认为 none，即不启用评论系统
-	type: "giscus",
+	// 评论系统类型: none, twikoo, waline, giscus, disqus, artalk，默认为none，即不启用评论系统
+	type: "none",
 
-	//twikoo 评论系统配置
+	//twikoo评论系统配置
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
 		// 设置 Twikoo 评论系统语言
@@ -12,15 +12,15 @@ export const commentConfig: CommentConfig = {
 		// 是否启用文章访问量统计功能
 		visitorCount: true,
 		// Twikoo JS 文件地址，支持 CDN 链接
-		// 中国推荐 1: https://registry.npmmirror.com/twikoo/1.7.14/files/dist/twikoo.min.js
-		// 中国推荐 2: https://s4.zstatic.net/npm/twikoo@1.7.14/dist/twikoo.min.js
-		// 国际推荐：https://cdn.jsdelivr.net/npm/twikoo@1.7.14/dist/twikoo.min.js
+		// 中国推荐1: https://registry.npmmirror.com/twikoo/1.7.14/files/dist/twikoo.min.js
+		// 中国推荐2: https://s4.zstatic.net/npm/twikoo@1.7.14/dist/twikoo.min.js
+		// 国际推荐: https://cdn.jsdelivr.net/npm/twikoo@1.7.14/dist/twikoo.min.js
 		jsUrl: "https://cdn.jsdelivr.net/npm/twikoo@1.7.14/dist/twikoo.min.js",
 		// Twikoo 自定义 CSS 文件地址，为空则不加载
 		cssUrl: "/assets/css/twikoo-custom.css",
 	},
 
-	//waline 评论系统配置
+	//waline评论系统配置
 	waline: {
 		// waline 后端服务地址
 		serverURL: "https://waline.vercel.app",
@@ -41,9 +41,9 @@ export const commentConfig: CommentConfig = {
 		visitorCount: true,
 	},
 
-	// artalk 评论系统配置
+	// artalk评论系统配置
 	artalk: {
-		// artalk 后端程序 API 地址
+		// artalk后端程序 API 地址
 		server: "https://artalk.example.com/",
 		// 设置 Artalk 语言
 		locale: "zh-CN",
@@ -51,18 +51,18 @@ export const commentConfig: CommentConfig = {
 		visitorCount: true,
 	},
 
-	//giscus 评论系统配置
+	//giscus评论系统配置
 	giscus: {
 		// 设置 Giscus 评论系统仓库
-		repo: "ShaddockNH3/Firefly",
-		// 设置 Giscus 评论系统仓库 ID
-		repoId: "R_kgDOUJPq5Q",
+		repo: "CuteLeaf/Firefly",
+		// 设置 Giscus 评论系统仓库ID
+		repoId: "R_kgD2gfdFGd",
 		// 设置 Giscus 评论系统分类
 		category: "General",
-		// 获取 Giscus 评论系统分类 ID
-		categoryId: "DIC_kwDOUJPq5c4DEjOe",
+		// 获取 Giscus 评论系统分类ID
+		categoryId: "DIC_kwDOKy9HOc4CegmW",
 		// 获取 Giscus 评论系统映射方式
-		mapping: "pathname",
+		mapping: "title",
 		// 获取 Giscus 评论系统严格模式
 		strict: "0",
 		// 获取 Giscus 评论系统反应功能
@@ -77,7 +77,7 @@ export const commentConfig: CommentConfig = {
 		loading: "lazy",
 	},
 
-	//disqus 评论系统配置
+	//disqus评论系统配置
 	disqus: {
 		// 获取 Disqus 评论系统
 		shortname: "firefly",

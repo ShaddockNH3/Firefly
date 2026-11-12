@@ -299,13 +299,13 @@ enum I18nKey {
 	paginationRecords = "paginationRecords",
 	paginationJump = "paginationJump",
 
-	// 404 页面
+	// 404页面
 	notFound = "notFound",
 	notFoundTitle = "notFoundTitle",
 	notFoundDescription = "notFoundDescription",
 	backToHome = "backToHome",
 
-	// RSS 页面
+	// RSS页面
 	rss = "rss",
 	rssDescription = "rssDescription",
 	rssSubtitle = "rssSubtitle",

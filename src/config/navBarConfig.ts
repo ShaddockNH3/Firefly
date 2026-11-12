@@ -68,13 +68,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 书签导航
 			LinkPresets.Booknav,
 
-			// 战舰世界舰长档案
-			{
-				name: "舰长档案",
-				url: "/wows/",
-				icon: "material-symbols:anchor",
-			},
-
 			// 哔哩哔哩追番
 			LinkPresets.Bilibili,
 
@@ -112,32 +105,22 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		children: [
 			{
 				name: "GitHub",
-				url: "https://github.com/ShaddockNH3",
+				url: "https://github.com/CuteLeaf/Firefly",
 				external: true,
 				icon: "fa7-brands:github",
 			},
-			/* 暂不展示
 			{
 				name: "Gitee",
 				url: "https://gitee.com/CuteLeaf/Firefly",
 				external: true,
 				icon: "fa7-brands:gitee",
 			},
-			*/
 			{
-				name: "QQ",
-				url: "https://qm.qq.com/q/toPZza2RrO",
-				external: true,
-				icon: "fa7-brands:qq",
-			},
-			/* 暂不展示
-			{
-				name: "Firefly 文档",
+				name: "Firefly文档",
 				url: "https://docs-firefly.cuteleaf.cn",
 				external: true,
 				icon: "material-symbols:docs",
 			},
-			*/
 		],
 	});
 
