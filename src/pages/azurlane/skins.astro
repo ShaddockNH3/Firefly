@@ -8,7 +8,7 @@ import profile from "@/data/azurlane/profile.json";
 import { allSkins } from "@/utils/azurlane-skins";
 
 // 墙上只放缩略图，原图不进客户端（省一半序列化体积）
-const wallSkins = allSkins.map(({ s, n, k, th, y, i, t }) => ({ s, n, k, th, y, i: t || i, full: i }));
+const wallSkins = allSkins.map(({ s, n, k, th, y, d, p, i, t }) => ({ s, n, k, th, y, d, p, i: t || i, full: i }));
 import mine from "@/data/azurlane/mine.json";
 
 if (!siteConfig.pages.azurlane) {

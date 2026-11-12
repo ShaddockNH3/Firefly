@@ -9,7 +9,20 @@ import MainGridLayout from "@/layouts/MainGridLayout.astro";
 export async function getStaticPaths() {
 	if (!siteConfig.pages.anime) return [];
 	const entries = (await getCollection("anime")).filter((e) => !e.data.draft);
-	const subjects = subjectsData.items as Record<string, { cn: string; jp: string }>;
+	const subjects = subjectsData.items as Record<
+		string,
+		{
+			cn: string;
+			jp: string;
+			cover: string;
+			date: string;
+			eps: number;
+			bgmScore: number | null;
+			rank: number | null;
+			tags: string[];
+			summary: string;
+		}
+	>;
 	return entries
 		.map((entry) => {
 			const id = entry.data.bgm || Number(entry.id);
