@@ -18,11 +18,13 @@ export interface Skin {
 	y: string;
 	d: string;
 	p: string;
-	/** 立绘地址（原图） */
+	/** 立绘地址（原图，角色页/大图用） */
 	i: string;
+	/** 缩略图（400px，换装墙用；原图本身就不大的话跟 i 相同） */
+	t?: string;
 }
 
-const refitArt = detailData as Record<string, { refit?: string }>;
+const refitArt = detailData as Record<string, { refit?: string; refitThumb?: string }>;
 
 export const refitSkins: Skin[] = (shipsData as { n: string; g: string }[])
 	.filter((s) => s.g === "改造" && refitArt[s.n]?.refit)
@@ -35,6 +37,7 @@ export const refitSkins: Skin[] = (shipsData as { n: string; g: string }[])
 		d: "",
 		p: "",
 		i: refitArt[s.n].refit as string,
+		t: refitArt[s.n].refitThumb || (refitArt[s.n].refit as string),
 	}));
 
 export const allSkins: Skin[] = [...(skinsData as Skin[]), ...refitSkins];

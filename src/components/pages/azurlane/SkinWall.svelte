@@ -79,7 +79,7 @@
 	{#each view as k (k.i)}
 		<div class="sw-i" title={k.n}>
 			<div class="sw-cv" data-off={hasRecord && !ownSet.has(k.n)}>
-				<img src={k.i} alt={k.n} loading="lazy" referrerpolicy="no-referrer" />
+				<img src={k.t || k.i} alt={k.n} loading="lazy" referrerpolicy="no-referrer" />
 				{#if k.k === "L2D"}<span class="sw-l2d">L2D</span>{/if}
 			</div>
 			<div class="sw-nm">{k.n}</div>
