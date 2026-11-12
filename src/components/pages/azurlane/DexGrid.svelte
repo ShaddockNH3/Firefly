@@ -112,7 +112,7 @@
 {#if view.length}
 	<div class="al-dex">
 		{#each view as s (s.n + s.i + s.r)}
-			<a class="al-dex-i" href={`/azurlane/ship/?id=${encodeURIComponent(s.n)}`} title={s.n}>
+			<a class="al-dex-i" href={`/azurlane/ship/${encodeURIComponent(s.n)}/`} title={s.n}>
 				<div
 					class="al-dex-cv"
 					style={`border-color:${RARITY_COLOR[s.r] ?? "transparent"}`}

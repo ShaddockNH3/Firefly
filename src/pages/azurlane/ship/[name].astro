@@ -26,6 +26,7 @@ const skins = skinsData
 	.map((k) => ({ ...k, owned: ownedSet.has(k.n) }));
 
 const isOwned = (mine.owned as string[]).includes(ship.n);
+const isMaxed = ((mine.maxed as string[] | undefined) ?? []).includes(ship.n);
 ---
 
 <MainGridLayout title={`${ship.n} · 碧蓝航线`} description={`${ship.n} 的档案、复制人与换装`}>
@@ -44,8 +45,9 @@ const isOwned = (mine.owned as string[]).includes(ship.n);
 			info={info}
 			skins={skins}
 			owned={isOwned}
-			have={copy.have ?? 0}
+			have={copy.have ?? (isOwned ? 1 : 0)}
 			hasRecord={(mine.owned as string[]).length > 0 || (mine.skins as string[]).length > 0}
+			maxed={isMaxed}
 		/>
 	</div>
 </MainGridLayout>

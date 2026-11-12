@@ -57,8 +57,6 @@
 		hasRecord ? ["全部", "已拥有", "未拥有", "L2D"] : ["全部", "L2D"],
 	);
 
-	let opened = $state<Skin | null>(null);
-
 	function setFilter(k: string) {
 		filter = k;
 		page = 1;
@@ -76,14 +74,14 @@
 
 <div class="sw-grid">
 	{#each view as k (k.i)}
-		<button class="sw-i" onclick={() => (opened = k)} title={k.n}>
+		<div class="sw-i" title={k.n}>
 			<div class="sw-cv" data-off={hasRecord && !ownSet.has(k.n)}>
 				<img src={k.i} alt={k.n} loading="lazy" referrerpolicy="no-referrer" />
 				{#if k.k === "L2D"}<span class="sw-l2d">L2D</span>{/if}
 			</div>
 			<div class="sw-nm">{k.n}</div>
 			<div class="sw-sub">{[k.s, k.th, k.y].filter(Boolean).join(" · ")}</div>
-		</button>
+		</div>
 	{/each}
 </div>
 
@@ -95,22 +93,7 @@
 	</div>
 {/if}
 
-{#if opened}
-	<div class="sw-modal" role="presentation" onclick={(e) => e.target === e.currentTarget && (opened = null)}>
-		<div class="sw-box">
-			<img src={opened.i} alt={opened.n} referrerpolicy="no-referrer" />
-			<div class="sw-info">
-				<div class="sw-title">{opened.n}</div>
-				<div class="sw-by">{opened.s} · {opened.k}</div>
-				<div class="sw-rows">
-					<div><span>主题</span><b>{opened.th || "—"}</b></div>
-					<div><span>原价</span><b>{opened.p ? `${opened.p} 钻石` : "—"}</b></div>
-					<div><span>实装</span><b>{opened.d || "—"}</b></div>
-				</div>
-			</div>
-		</div>
-	</div>
-{/if}
+
 
 <style>
 	.sw-bar {
@@ -243,67 +226,14 @@
 	}
 	.al-pager button:disabled { opacity: 0.4; cursor: default; }
 
-	.sw-modal {
-		position: fixed;
-		inset: 0;
-		z-index: 90;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 24px;
-		background: rgb(20 20 26 / 0.55);
-		backdrop-filter: blur(6px);
-	}
-	.sw-box {
-		display: flex;
-		gap: 26px;
-		padding: 20px;
-		max-width: min(800px, 100%);
-		border-radius: 18px;
-		background: var(--card-bg);
-	}
-	.sw-box > img {
-		width: 340px;
-		max-width: 45vw;
-		border-radius: 14px;
-		display: block;
-		box-shadow: 0 4px 18px rgb(0 0 0 / 0.1);
-	}
-	.sw-info {
-		width: 280px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.sw-title {
-		font-size: 1.2rem;
-		font-weight: 700;
-		color: var(--deep-text);
-		letter-spacing: -0.01em;
-	}
-	.sw-by {
-		margin-top: 5px;
-		font-size: 0.79rem;
-		color: var(--content-meta);
-	}
-	.sw-rows {
-		margin-top: 18px;
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-	}
-	.sw-rows div {
-		display: flex;
-		align-items: baseline;
-		font-size: 0.79rem;
-		color: var(--content-meta);
-		padding-bottom: 9px;
-		border-bottom: 1px solid var(--line-divider);
-	}
-	.sw-rows div:last-child { border-bottom: none; }
-	.sw-rows b {
-		margin-left: auto;
-		color: var(--deep-text);
-		font-weight: 650;
-	}
+
+
+
+
+
+
+
+
+
+
 </style>

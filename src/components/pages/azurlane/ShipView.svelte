@@ -18,9 +18,10 @@
 		owned?: boolean;
 		have?: number;
 		hasRecord?: boolean;
+		maxed?: boolean;
 	}
 
-	let { ship, info, skins, owned = false, have = 0, hasRecord = false }: Props = $props();
+	let { ship, info, skins, owned = false, have = 0, hasRecord = false, maxed = false }: Props = $props();
 
 	// -1 = 原始立绘
 	let cur = $state(-1);
@@ -99,8 +100,10 @@
 			<div class="sp-note">
 				需要 {need} 只
 				{#if hasRecord}
-					· 已有 {have} 只 ·
-					{#if have >= need}<span class="sp-done">已练齐</span>{:else}还差 {need - have} 只{/if}
+					· 已有 {have} 只
+					{#if !maxed}
+						· {#if have >= need}<span class="sp-done">已练齐</span>{:else}还差 {need - have} 只{/if}
+					{/if}
 				{:else}
 					· <span class="sp-done" style="color:inherit;opacity:.8">未记录</span>
 				{/if}
@@ -124,8 +127,8 @@
 			{#if hasRecord}
 				<div class="sp-dots">
 					<span data-on={owned}>已获得</span>
-					<span>满星</span>
-					<span>120 级</span>
+					<span data-on={maxed}>满星</span>
+					<span data-on={maxed}>120 级</span>
 				</div>
 			{:else}
 				<div class="sp-note">未记录</div>
