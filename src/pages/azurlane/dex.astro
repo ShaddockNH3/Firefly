@@ -3,10 +3,10 @@ import { Icon } from "astro-icon/components";
 import AlTabs from "@/components/pages/azurlane/AlTabs.astro";
 import DexGrid from "@/components/pages/azurlane/DexGrid.svelte";
 import { siteConfig } from "@/config";
-import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import mine from "@/data/azurlane/mine.json";
 import profile from "@/data/azurlane/profile.json";
 import shipsData from "@/data/azurlane/ships.json";
-import mine from "@/data/azurlane/mine.json";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
 
 if (!siteConfig.pages.azurlane) {
 	return Astro.redirect("/404/");

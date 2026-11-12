@@ -18,7 +18,11 @@ const d = entry.data;
 const hasBody = (entry.body ?? "").trim().length > 0;
 const { Content } = await render(entry);
 
-const PLAT: Record<string, string> = { fanqie: "番茄", qidian: "起点", light: "轻小说" };
+const PLAT: Record<string, string> = {
+	fanqie: "番茄",
+	qidian: "起点",
+	light: "轻小说",
+};
 const plat = PLAT[d.platform] ?? "";
 
 const rows = [

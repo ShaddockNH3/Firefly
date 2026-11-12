@@ -23,13 +23,15 @@ export async function getStaticPaths() {
 			summary: string;
 		}
 	>;
-	return entries
-		.map((entry) => {
-			const id = entry.data.bgm || Number(entry.id);
-			const meta = subjects[String(id)];
-			if (!meta) throw new Error(`[anime] ${entry.id} 缺少条目信息，先跑 pnpm fetch:bangumi`);
-			return { params: { id: String(id) }, props: { entry, id, meta } };
-		});
+	return entries.map((entry) => {
+		const id = entry.data.bgm || Number(entry.id);
+		const meta = subjects[String(id)];
+		if (!meta)
+			throw new Error(
+				`[anime] ${entry.id} 缺少条目信息，先跑 pnpm fetch:bangumi`,
+			);
+		return { params: { id: String(id) }, props: { entry, id, meta } };
+	});
 }
 
 const { entry, id, meta } = Astro.props;
@@ -42,7 +44,10 @@ const rows = [
 	{ k: "集数", v: meta.eps ? `${meta.eps} 集` : "—" },
 	{ k: "进度", v: d.ep > 0 ? `${d.ep} / ${meta.eps || "?"} 集` : "" },
 	{ k: "我的评分", v: d.score !== null ? `${d.score.toFixed(1)} / 10` : "" },
-	{ k: "Bangumi", v: meta.bgmScore !== null ? `${meta.bgmScore.toFixed(1)} / 10` : "" },
+	{
+		k: "Bangumi",
+		v: meta.bgmScore !== null ? `${meta.bgmScore.toFixed(1)} / 10` : "",
+	},
 	{ k: "排名", v: meta.rank ? `#${meta.rank}` : "" },
 	{ k: "状态", v: d.status },
 	{ k: "看完", v: d.finished },

@@ -1,92 +1,96 @@
 <script lang="ts">
-	import ClientPagination from "@/components/common/ClientPagination.svelte";
+import ClientPagination from "@/components/common/ClientPagination.svelte";
 
-	interface Ship {
-		shipId: number;
-		name: string;
-		tier: number;
-		type: string;
-		typeLabel: string;
-		nationLabel: string;
-		premium: boolean;
-		image: string | null;
-		battles: number;
-		winrate: number;
-		avgDamage: number;
-		pr: number | null;
-		prLabel: string;
+interface Ship {
+	shipId: number;
+	name: string;
+	tier: number;
+	type: string;
+	typeLabel: string;
+	nationLabel: string;
+	premium: boolean;
+	image: string | null;
+	battles: number;
+	winrate: number;
+	avgDamage: number;
+	pr: number | null;
+	prLabel: string;
+}
+
+interface Props {
+	ships: Ship[];
+	perPage?: number;
+}
+
+let { ships, perPage = 12 }: Props = $props();
+
+const SORTS = [
+	{ key: "battles", label: "场次" },
+	{ key: "winrate", label: "胜率" },
+	{ key: "avgDamage", label: "场均伤害" },
+	{ key: "pr", label: "PR" },
+] as const;
+
+type SortKey = (typeof SORTS)[number]["key"];
+
+/** 按某个字段归组，多的排前面 */
+const groupBy = (pick: (s: Ship) => string) => {
+	const map = new Map<string, number>();
+	for (const s of ships) {
+		const k = pick(s);
+		map.set(k, (map.get(k) ?? 0) + 1);
 	}
-
-	interface Props {
-		ships: Ship[];
-		perPage?: number;
-	}
-
-	let { ships, perPage = 12 }: Props = $props();
-
-	const SORTS = [
-		{ key: "battles", label: "场次" },
-		{ key: "winrate", label: "胜率" },
-		{ key: "avgDamage", label: "场均伤害" },
-		{ key: "pr", label: "PR" },
-	] as const;
-
-	type SortKey = (typeof SORTS)[number]["key"];
-
-	/** 按某个字段归组，多的排前面 */
-	const groupBy = (pick: (s: Ship) => string) => {
-		const map = new Map<string, number>();
-		for (const s of ships) {
-			const k = pick(s);
-			map.set(k, (map.get(k) ?? 0) + 1);
-		}
-		return [...map.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
-	};
-
-	const types = $derived(groupBy((s) => s.typeLabel));
-	const nations = $derived(groupBy((s) => s.nationLabel));
-	const tiers = $derived([...new Set(ships.map((s) => s.tier))].sort((a, b) => a - b));
-
-	let type = $state("全部");
-	let nation = $state("全部");
-	let tier = $state<number | "全部">("全部");
-	let sort = $state<SortKey>("battles");
-	let page = $state(1);
-
-	const list = $derived(
-		ships
-			.filter(
-				(s) =>
-					(type === "全部" || s.typeLabel === type) &&
-					(nation === "全部" || s.nationLabel === nation) &&
-					(tier === "全部" || s.tier === tier),
-			)
-			.slice()
-			.sort((a, b) => Number(b[sort] ?? 0) - Number(a[sort] ?? 0)),
+	return [...map.entries()].sort(
+		(a, b) => b[1] - a[1] || a[0].localeCompare(b[0]),
 	);
+};
 
-	const totalPages = $derived(Math.max(1, Math.ceil(list.length / perPage)));
-	const view = $derived(list.slice((page - 1) * perPage, page * perPage));
+const types = $derived(groupBy((s) => s.typeLabel));
+const nations = $derived(groupBy((s) => s.nationLabel));
+const tiers = $derived(
+	[...new Set(ships.map((s) => s.tier))].sort((a, b) => a - b),
+);
 
-	function pickType(v: string) {
-		type = v;
-		page = 1;
-	}
-	function pickNation(v: string) {
-		nation = v;
-		page = 1;
-	}
-	function pickTier(v: number | "全部") {
-		tier = v;
-		page = 1;
-	}
-	function pickSort(v: SortKey) {
-		sort = v;
-		page = 1;
-	}
+let type = $state("全部");
+let nation = $state("全部");
+let tier = $state<number | "全部">("全部");
+let sort = $state<SortKey>("battles");
+let page = $state(1);
 
-	const pct = (v: number) => `${(v * 100).toFixed(1)}%`;
-	const num = (v: number) => v.toLocaleString("en-US");
+const list = $derived(
+	ships
+		.filter(
+			(s) =>
+				(type === "全部" || s.typeLabel === type) &&
+				(nation === "全部" || s.nationLabel === nation) &&
+				(tier === "全部" || s.tier === tier),
+		)
+		.slice()
+		.sort((a, b) => Number(b[sort] ?? 0) - Number(a[sort] ?? 0)),
+);
+
+const totalPages = $derived(Math.max(1, Math.ceil(list.length / perPage)));
+const view = $derived(list.slice((page - 1) * perPage, page * perPage));
+
+function pickType(v: string) {
+	type = v;
+	page = 1;
+}
+function pickNation(v: string) {
+	nation = v;
+	page = 1;
+}
+function pickTier(v: number | "全部") {
+	tier = v;
+	page = 1;
+}
+function pickSort(v: SortKey) {
+	sort = v;
+	page = 1;
+}
+
+const pct = (v: number) => `${(v * 100).toFixed(1)}%`;
+const num = (v: number) => v.toLocaleString("en-US");
 </script>
 
 <div class="wsp-bar">

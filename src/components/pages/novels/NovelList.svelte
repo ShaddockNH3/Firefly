@@ -1,101 +1,113 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-	import { novelSorts, novelStatuses } from "@/config/media";
-	import { ALL, countAll, countStatuses, sortMedia } from "@/utils/media-utils";
-	import MediaFilters from "../media/MediaFilters.svelte";
+import { onMount } from "svelte";
+import { novelSorts, novelStatuses } from "@/config/media";
+import { ALL, countAll, countStatuses, sortMedia } from "@/utils/media-utils";
+import MediaFilters from "../media/MediaFilters.svelte";
 
-	interface Book {
-		slug: string;
-		title: string;
-		author: string;
-		platform: string;
-		category: string;
-		tags: string[];
-		status: string;
-		score: number | null;
-		length: string;
-		note: string;
-		act: string;
-	}
+interface Book {
+	slug: string;
+	title: string;
+	author: string;
+	platform: string;
+	category: string;
+	tags: string[];
+	status: string;
+	score: number | null;
+	length: string;
+	note: string;
+	act: string;
+}
 
-	interface SourceMeta {
-		name: string;
-		platform: string;
-		note: string;
-	}
+interface SourceMeta {
+	name: string;
+	platform: string;
+	note: string;
+}
 
-	interface Props {
-		books: Book[];
-		sourceJson: string;
-		sourceMeta: SourceMeta[];
-		sourceUpdated: string;
-	}
+interface Props {
+	books: Book[];
+	sourceJson: string;
+	sourceMeta: SourceMeta[];
+	sourceUpdated: string;
+}
 
-	let { books, sourceJson, sourceMeta, sourceUpdated }: Props = $props();
+let { books, sourceJson, sourceMeta, sourceUpdated }: Props = $props();
 
-	const PLATS: [string, string][] = [
-		["fanqie", "番茄"],
-		["qidian", "起点"],
-		["light", "轻小说"],
-	];
+const PLATS: [string, string][] = [
+	["fanqie", "番茄"],
+	["qidian", "起点"],
+	["light", "轻小说"],
+];
 
-	let tab = $state("src");
-	let st = $state(ALL);
-	let cat = $state(ALL);
-	let sort = $state(novelSorts[0].key);
-	let codeOpen = $state(false);
-	let copied = $state(false);
+let tab = $state("src");
+let st = $state(ALL);
+let cat = $state(ALL);
+let sort = $state(novelSorts[0].key);
+let codeOpen = $state(false);
+let copied = $state(false);
 
-	// 从详情页返回时靠 hash 停在原来的平台
-	onMount(() => {
-		const h = location.hash.slice(1);
-		if (h && PLATS.some(([k]) => k === h)) tab = h;
-	});
+// 从详情页返回时靠 hash 停在原来的平台
+onMount(() => {
+	const h = location.hash.slice(1);
+	if (h && PLATS.some(([k]) => k === h)) tab = h;
+});
 
-	const platBooks = $derived(books.filter((b) => b.platform === tab));
+const platBooks = $derived(books.filter((b) => b.platform === tab));
 
-	const rows = $derived([
-		{ key: "st", label: "状态", items: countStatuses(platBooks, novelStatuses, (b) => b.status) },
-		{ key: "cat", label: "分类", items: countAll(platBooks, (b) => b.category) },
-		{ key: "sort", label: "排序", items: novelSorts.map((s) => [s.label] as [string]) },
-	]);
+const rows = $derived([
+	{
+		key: "st",
+		label: "状态",
+		items: countStatuses(platBooks, novelStatuses, (b) => b.status),
+	},
+	{ key: "cat", label: "分类", items: countAll(platBooks, (b) => b.category) },
+	{
+		key: "sort",
+		label: "排序",
+		items: novelSorts.map((s) => [s.label] as [string]),
+	},
+]);
 
-	const sortLabel = $derived(novelSorts.find((s) => s.key === sort)?.label ?? novelSorts[0].label);
-	const values = $derived({ st, cat, sort: sortLabel });
+const sortLabel = $derived(
+	novelSorts.find((s) => s.key === sort)?.label ?? novelSorts[0].label,
+);
+const values = $derived({ st, cat, sort: sortLabel });
 
-	function pick(key: string, value: string) {
-		if (key === "st") st = value;
-		else if (key === "cat") cat = value;
-		else if (key === "sort") sort = novelSorts.find((s) => s.label === value)?.key ?? sort;
-	}
+function pick(key: string, value: string) {
+	if (key === "st") st = value;
+	else if (key === "cat") cat = value;
+	else if (key === "sort")
+		sort = novelSorts.find((s) => s.label === value)?.key ?? sort;
+}
 
-	const list = $derived(
-		sortMedia(
-			platBooks.filter(
-				(b) => (st === ALL || b.status === st) && (cat === ALL || b.category === cat),
-			),
-			sort,
-			{ recent: (b) => b.act, score: (b) => b.score, title: (b) => b.title },
+const list = $derived(
+	sortMedia(
+		platBooks.filter(
+			(b) =>
+				(st === ALL || b.status === st) && (cat === ALL || b.category === cat),
 		),
-	);
+		sort,
+		{ recent: (b) => b.act, score: (b) => b.score, title: (b) => b.title },
+	),
+);
 
-	function pickTab(key: string) {
-		tab = key;
-		st = ALL;
-		cat = ALL;
-		history.replaceState(null, "", key === "src" ? location.pathname : `#${key}`);
-		window.scrollTo({ top: 0 });
-	}
+function pickTab(key: string) {
+	tab = key;
+	st = ALL;
+	cat = ALL;
+	history.replaceState(null, "", key === "src" ? location.pathname : `#${key}`);
+	window.scrollTo({ top: 0 });
+}
 
-	async function copyJson() {
-		try {
-			await navigator.clipboard.writeText(sourceJson);
-			copied = true;
-			setTimeout(() => (copied = false), 1600);
-		} catch {
-			copied = false;
-		}
+async function copyJson() {
+	try {
+		await navigator.clipboard.writeText(sourceJson);
+		copied = true;
+		setTimeout(() => (copied = false), 1600);
+	} catch {
+		copied = false;
 	}
+}
 </script>
 
 <div class="mg-tabs">

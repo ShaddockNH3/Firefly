@@ -2,24 +2,29 @@
 import AlTabs from "@/components/pages/azurlane/AlTabs.astro";
 import ShipView from "@/components/pages/azurlane/ShipView.svelte";
 import { siteConfig } from "@/config";
-import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import detailData from "@/data/azurlane/detail.json";
+import mine from "@/data/azurlane/mine.json";
 import shipsData from "@/data/azurlane/ships.json";
 import skinsData from "@/data/azurlane/skins.json";
-import mine from "@/data/azurlane/mine.json";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
 
 if (!siteConfig.pages.azurlane) {
 	return Astro.redirect("/404/");
 }
 
 export function getStaticPaths() {
-	return shipsData.map((ship) => ({ params: { name: ship.n }, props: { ship } }));
+	return shipsData.map((ship) => ({
+		params: { name: ship.n },
+		props: { ship },
+	}));
 }
 
 const { ship } = Astro.props;
 const info = (detailData as Record<string, any>)[ship.n] ?? {};
 const ownedSet = new Set(mine.skins as string[]);
-const copy = (mine.copies as Record<string, { need?: number; have?: number }>)[ship.n] ?? {};
+const copy =
+	(mine.copies as Record<string, { need?: number; have?: number }>)[ship.n] ??
+	{};
 
 const skins = skinsData
 	.filter((k) => k.s === ship.n)

@@ -15,6 +15,7 @@
       "!**/src/public/**/*",
       "!**/dist/**/*",
       "!**/node_modules/**/*",
+      "!**/src/data/**",
       "!**/src/constants/icons-data.json",
       "!**/src/constants/lqips.json"
     ]

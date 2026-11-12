@@ -28,11 +28,16 @@ const games = entries
 	// 通关过的按通关日期倒序排前面，没通关的按发售年倒序跟在后面
 	.sort((a, b) => {
 		if (a.finished && b.finished) {
-			return b.finished.localeCompare(a.finished) || a.title.localeCompare(b.title);
+			return (
+				b.finished.localeCompare(a.finished) || a.title.localeCompare(b.title)
+			);
 		}
 		if (a.finished) return -1;
 		if (b.finished) return 1;
-		return (b.year || "").localeCompare(a.year || "") || a.title.localeCompare(b.title);
+		return (
+			(b.year || "").localeCompare(a.year || "") ||
+			a.title.localeCompare(b.title)
+		);
 	});
 
 const studios = new Set(games.map((g) => g.developer || "其他")).size;

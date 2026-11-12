@@ -80,7 +80,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 追番记录
 			LinkPresets.Anime,
-
 		],
 	});
 

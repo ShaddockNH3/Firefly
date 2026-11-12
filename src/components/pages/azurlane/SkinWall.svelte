@@ -1,104 +1,104 @@
 <script lang="ts">
-	interface Skin {
-		s: string;
-		n: string;
-		k: string;
-		th: string;
-		y: string;
-		d: string;
-		p: string;
-		i: string;
-		t?: string;
-		full?: string;
+interface Skin {
+	s: string;
+	n: string;
+	k: string;
+	th: string;
+	y: string;
+	d: string;
+	p: string;
+	i: string;
+	t?: string;
+	full?: string;
+}
+
+interface Props {
+	skins: Skin[];
+	owned?: string[];
+	perGroup?: number;
+}
+
+let { skins, owned = [], perGroup = 10 }: Props = $props();
+
+const ownSet = $derived(new Set(owned));
+const hasRecord = $derived(owned.length > 0);
+
+let own = $state("全部");
+let type = $state("全部");
+let q = $state("");
+let open = $state<string[]>([]);
+let zoom = $state<string | null>(null);
+let dlg = $state<HTMLDialogElement | null>(null);
+
+$effect(() => {
+	if (zoom && dlg && !dlg.open) dlg.showModal();
+	else if (!zoom && dlg?.open) dlg.close();
+});
+
+const LIMIT = perGroup;
+
+const matchOwn = (k: Skin) => {
+	if (own === "已拥有") return ownSet.has(k.n);
+	if (own === "未拥有") return !ownSet.has(k.n);
+	return true;
+};
+
+const matchType = (k: Skin) => {
+	if (type === "L2D") return k.k === "L2D";
+	if (type === "改造") return k.k === "改造";
+	if (type === "婚纱") return k.th === "誓约";
+	return true;
+};
+
+const matchQ = (k: Skin) => {
+	if (!q) return true;
+	const s = q.toLowerCase();
+	return k.n.toLowerCase().includes(s) || k.s.toLowerCase().includes(s);
+};
+
+const base = $derived(skins.filter((k) => matchType(k) && matchQ(k)));
+const list = $derived(base.filter(matchOwn));
+
+// 改造和婚纱固定排最后，其余按组内数量倒序
+const LAST: Record<string, number> = { 改造: 100, 誓约: 101 };
+
+const groups = $derived.by(() => {
+	const m = new Map<string, Skin[]>();
+	for (const k of list) {
+		const g = k.th || "其他";
+		if (!m.has(g)) m.set(g, []);
+		m.get(g)!.push(k);
 	}
-
-	interface Props {
-		skins: Skin[];
-		owned?: string[];
-		perGroup?: number;
-	}
-
-	let { skins, owned = [], perGroup = 10 }: Props = $props();
-
-	const ownSet = $derived(new Set(owned));
-	const hasRecord = $derived(owned.length > 0);
-
-	let own = $state("全部");
-	let type = $state("全部");
-	let q = $state("");
-	let open = $state<string[]>([]);
-	let zoom = $state<string | null>(null);
-	let dlg = $state<HTMLDialogElement | null>(null);
-
-	$effect(() => {
-		if (zoom && dlg && !dlg.open) dlg.showModal();
-		else if (!zoom && dlg?.open) dlg.close();
+	return [...m.entries()].sort((a, b) => {
+		const ra = LAST[a[0]] ?? 0;
+		const rb = LAST[b[0]] ?? 0;
+		if (ra !== rb) return ra - rb;
+		return b[1].length - a[1].length;
 	});
+});
 
-	const LIMIT = perGroup;
+const countOwn = $derived({
+	all: base.length,
+	yes: base.filter((k) => ownSet.has(k.n)).length,
+});
 
-	const matchOwn = (k: Skin) => {
-		if (own === "已拥有") return ownSet.has(k.n);
-		if (own === "未拥有") return !ownSet.has(k.n);
-		return true;
-	};
+const countType = $derived({
+	l2d: skins.filter((k) => k.k === "L2D" && matchQ(k)).length,
+	refit: skins.filter((k) => k.k === "改造" && matchQ(k)).length,
+	oath: skins.filter((k) => k.th === "誓约" && matchQ(k)).length,
+});
 
-	const matchType = (k: Skin) => {
-		if (type === "L2D") return k.k === "L2D";
-		if (type === "改造") return k.k === "改造";
-		if (type === "婚纱") return k.th === "誓约";
-		return true;
-	};
-
-	const matchQ = (k: Skin) => {
-		if (!q) return true;
-		const s = q.toLowerCase();
-		return k.n.toLowerCase().includes(s) || k.s.toLowerCase().includes(s);
-	};
-
-	const base = $derived(skins.filter((k) => matchType(k) && matchQ(k)));
-	const list = $derived(base.filter(matchOwn));
-
-	// 改造和婚纱固定排最后，其余按组内数量倒序
-	const LAST: Record<string, number> = { 改造: 100, 誓约: 101 };
-
-	const groups = $derived.by(() => {
-		const m = new Map<string, Skin[]>();
-		for (const k of list) {
-			const g = k.th || "其他";
-			if (!m.has(g)) m.set(g, []);
-			m.get(g)!.push(k);
-		}
-		return [...m.entries()].sort((a, b) => {
-			const ra = LAST[a[0]] ?? 0;
-			const rb = LAST[b[0]] ?? 0;
-			if (ra !== rb) return ra - rb;
-			return b[1].length - a[1].length;
-		});
-	});
-
-	const countOwn = $derived({
-		all: base.length,
-		yes: base.filter((k) => ownSet.has(k.n)).length,
-	});
-
-	const countType = $derived({
-		l2d: skins.filter((k) => k.k === "L2D" && matchQ(k)).length,
-		refit: skins.filter((k) => k.k === "改造" && matchQ(k)).length,
-		oath: skins.filter((k) => k.th === "誓约" && matchQ(k)).length,
-	});
-
-	function setOwn(v: string) {
-		own = v;
-		open = [];
-	}
-	function setType(v: string) {
-		type = v;
-		open = [];
-	}
-	function toggle(th: string) {
-		open = open.includes(th) ? open.filter((x) => x !== th) : [...open, th];
-	}
+function setOwn(v: string) {
+	own = v;
+	open = [];
+}
+function setType(v: string) {
+	type = v;
+	open = [];
+}
+function toggle(th: string) {
+	open = open.includes(th) ? open.filter((x) => x !== th) : [...open, th];
+}
 </script>
 
 <div class="sw-bar">

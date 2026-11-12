@@ -1,101 +1,123 @@
 <script lang="ts">
-	interface Skin {
-		s: string;
+interface Skin {
+	s: string;
+	n: string;
+	k: string;
+	th: string;
+	y: string;
+	d: string;
+	p: string;
+	i: string;
+	owned?: boolean;
+}
+
+interface Props {
+	ship: {
 		n: string;
-		k: string;
-		th: string;
-		y: string;
-		d: string;
-		p: string;
+		f: string;
+		t: string;
+		r: string;
 		i: string;
-		owned?: boolean;
-	}
-
-	interface Props {
-		ship: { n: string; f: string; t: string; r: string; i: string; av: string; g?: string };
-		info: {
-			art?: string;
-			refit?: string;
-			oath?: string;
-			tch?: { u: number; m: number; l: number; ub?: string; lb?: string } | null;
-			cp?: number;
-			rt?: boolean;
-		};
-		skins: Skin[];
-		owned?: boolean;
-		have?: number;
-		hasRecord?: boolean;
-		maxed?: boolean;
-	}
-
-	let { ship, info, skins, owned = false, have = 0, hasRecord = false, maxed = false }: Props = $props();
-
-	type Entry = { n: string; i: string; k: string; sub: string; owned: boolean };
-
-	// 通常 → 各套换装 → 改造 → 誓约
-	const entries = $derived<Entry[]>([
-		{ n: "通常", i: info.art || ship.av, k: "", sub: "", owned: true },
-		...skins.map((k) => ({
-			n: k.n,
-			i: k.i,
-			k: k.k,
-			sub: [k.th, k.y].filter(Boolean).join(" · "),
-			owned: !!k.owned,
-		})),
-		...(info.refit ? [{ n: "改造", i: info.refit, k: "改造", sub: "", owned: true }] : []),
-		...(info.oath ? [{ n: "誓约", i: info.oath, k: "誓约", sub: "", owned: false }] : []),
-	]);
-
-	const defIdx = $derived(entries.findIndex((e) => e.k === "改造"));
-
-	let picked = $state<number | null>(null);
-	const idx = $derived(picked ?? (defIdx >= 0 ? defIdx : 0));
-
-	const skinCount = $derived(entries.length - 1);
-	const ownedCount = $derived(entries.filter((e) => e.k !== "" && e.owned).length);
-
-	// 联动船不参与战力复制
-	const isLink = $derived(ship.g === "联动");
-	const need = $derived(isLink ? 0 : info.cp && info.cp > 0 ? info.cp : 1);
-	const tiers = ["0 破", "1 破", "2 破", "未改造", "满破"];
-	const slots = $derived(info.rt ? [3, 0, 1, 2, 4] : [0, 1, 2, 4]);
-
-	const spread = $derived.by(() => {
-		const build = (n: number) => {
-			const a = [0, 0, 0, 0, 0];
-			let r = n;
-			for (let k = slots.length - 1; k >= 0 && r > 0; k--) {
-				a[slots[k]] = 1;
-				r -= 1;
-			}
-			if (r > 0) a[4] += r;
-			return a;
-		};
-		return { needA: build(need), haveA: build(Math.min(have, need)) };
-	});
-
-	const RAR: Record<string, string> = {
-		普通: "#7c7f86",
-		稀有: "#3c7fc0",
-		精锐: "#7a4fc4",
-		超稀有: "#a97c14",
-		最高方案: "#a97c14",
-		海上传奇: "#c03a70",
-		决战方案: "#c03a70",
+		av: string;
+		g?: string;
 	};
+	info: {
+		art?: string;
+		refit?: string;
+		oath?: string;
+		tch?: { u: number; m: number; l: number; ub?: string; lb?: string } | null;
+		cp?: number;
+		rt?: boolean;
+	};
+	skins: Skin[];
+	owned?: boolean;
+	have?: number;
+	hasRecord?: boolean;
+	maxed?: boolean;
+}
 
-	let track = $state<HTMLDivElement | null>(null);
-	let zoom = $state<string | null>(null);
-	let dlg = $state<HTMLDialogElement | null>(null);
+let {
+	ship,
+	info,
+	skins,
+	owned = false,
+	have = 0,
+	hasRecord = false,
+	maxed = false,
+}: Props = $props();
 
-	$effect(() => {
-		if (zoom && dlg && !dlg.open) dlg.showModal();
-		else if (!zoom && dlg?.open) dlg.close();
-	});
+type Entry = { n: string; i: string; k: string; sub: string; owned: boolean };
 
-	function scrollSkins(dir: number) {
-		track?.scrollBy({ left: dir * 340, behavior: "smooth" });
-	}
+// 通常 → 各套换装 → 改造 → 誓约
+const entries = $derived<Entry[]>([
+	{ n: "通常", i: info.art || ship.av, k: "", sub: "", owned: true },
+	...skins.map((k) => ({
+		n: k.n,
+		i: k.i,
+		k: k.k,
+		sub: [k.th, k.y].filter(Boolean).join(" · "),
+		owned: !!k.owned,
+	})),
+	...(info.refit
+		? [{ n: "改造", i: info.refit, k: "改造", sub: "", owned: true }]
+		: []),
+	...(info.oath
+		? [{ n: "誓约", i: info.oath, k: "誓约", sub: "", owned: false }]
+		: []),
+]);
+
+const defIdx = $derived(entries.findIndex((e) => e.k === "改造"));
+
+let picked = $state<number | null>(null);
+const idx = $derived(picked ?? (defIdx >= 0 ? defIdx : 0));
+
+const skinCount = $derived(entries.length - 1);
+const ownedCount = $derived(
+	entries.filter((e) => e.k !== "" && e.owned).length,
+);
+
+// 联动船不参与战力复制
+const isLink = $derived(ship.g === "联动");
+const need = $derived(isLink ? 0 : info.cp && info.cp > 0 ? info.cp : 1);
+const tiers = ["0 破", "1 破", "2 破", "未改造", "满破"];
+const slots = $derived(info.rt ? [3, 0, 1, 2, 4] : [0, 1, 2, 4]);
+
+const spread = $derived.by(() => {
+	const build = (n: number) => {
+		const a = [0, 0, 0, 0, 0];
+		let r = n;
+		for (let k = slots.length - 1; k >= 0 && r > 0; k--) {
+			a[slots[k]] = 1;
+			r -= 1;
+		}
+		if (r > 0) a[4] += r;
+		return a;
+	};
+	return { needA: build(need), haveA: build(Math.min(have, need)) };
+});
+
+const RAR: Record<string, string> = {
+	普通: "#7c7f86",
+	稀有: "#3c7fc0",
+	精锐: "#7a4fc4",
+	超稀有: "#a97c14",
+	最高方案: "#a97c14",
+	海上传奇: "#c03a70",
+	决战方案: "#c03a70",
+};
+
+let track = $state<HTMLDivElement | null>(null);
+let zoom = $state<string | null>(null);
+let dlg = $state<HTMLDialogElement | null>(null);
+
+$effect(() => {
+	if (zoom && dlg && !dlg.open) dlg.showModal();
+	else if (!zoom && dlg?.open) dlg.close();
+});
+
+function scrollSkins(dir: number) {
+	track?.scrollBy({ left: dir * 340, behavior: "smooth" });
+}
 </script>
 
 <div class="sp-wrap">

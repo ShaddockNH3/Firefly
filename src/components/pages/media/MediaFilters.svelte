@@ -1,17 +1,17 @@
 <script lang="ts">
-	interface FilterRow {
-		key: string;
-		label: string;
-		items: [string, number?][];
-	}
+interface FilterRow {
+	key: string;
+	label: string;
+	items: [string, number?][];
+}
 
-	interface Props {
-		rows: FilterRow[];
-		values: Record<string, string>;
-		onpick: (key: string, value: string) => void;
-	}
+interface Props {
+	rows: FilterRow[];
+	values: Record<string, string>;
+	onpick: (key: string, value: string) => void;
+}
 
-	let { rows, values, onpick }: Props = $props();
+let { rows, values, onpick }: Props = $props();
 </script>
 
 <div class="mg-filters">

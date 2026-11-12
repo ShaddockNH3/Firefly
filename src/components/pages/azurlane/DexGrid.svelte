@@ -1,73 +1,82 @@
 <script lang="ts">
-	interface Ship {
-		i: string;
-		n: string;
-		f: string;
-		t: string;
-		r: string;
-		g: string;
-		av: string;
-	}
+interface Ship {
+	i: string;
+	n: string;
+	f: string;
+	t: string;
+	r: string;
+	g: string;
+	av: string;
+}
 
-	interface Props {
-		ships: Ship[];
-		owned?: string[];
-		perPage?: number;
-	}
+interface Props {
+	ships: Ship[];
+	owned?: string[];
+	perPage?: number;
+}
 
-	let { ships, owned = [], perPage = 96 }: Props = $props();
+let { ships, owned = [], perPage = 96 }: Props = $props();
 
-	const RARITY_COLOR: Record<string, string> = {
-		普通: "#b9bec6",
-		稀有: "#7fb3e8",
-		精锐: "#b394e8",
-		超稀有: "#e8c37f",
-		海上传奇: "#f08fb8",
-		最高方案: "#e8c37f",
-		决战方案: "#f08fb8",
-	};
+const RARITY_COLOR: Record<string, string> = {
+	普通: "#b9bec6",
+	稀有: "#7fb3e8",
+	精锐: "#b394e8",
+	超稀有: "#e8c37f",
+	海上传奇: "#f08fb8",
+	最高方案: "#e8c37f",
+	决战方案: "#f08fb8",
+};
 
-	const ownSet = $derived(new Set(owned));
-	const hasRecord = $derived(owned.length > 0);
+const ownSet = $derived(new Set(owned));
+const hasRecord = $derived(owned.length > 0);
 
-	const groups = $derived(
-		["全部", "常规", "改造", "方案", "META", "联动", "特殊"].map((k) => ({
-			k,
-			n: k === "全部" ? ships.length : ships.filter((s) => s.g === k).length,
-		})),
-	);
-	const rarities = ["全部", "海上传奇", "决战方案", "最高方案", "超稀有", "精锐", "稀有", "普通"];
-	const factions = $derived([
-		"全部",
-		...Array.from(new Set(ships.map((s) => s.f))),
-	]);
+const groups = $derived(
+	["全部", "常规", "改造", "方案", "META", "联动", "特殊"].map((k) => ({
+		k,
+		n: k === "全部" ? ships.length : ships.filter((s) => s.g === k).length,
+	})),
+);
+const rarities = [
+	"全部",
+	"海上传奇",
+	"决战方案",
+	"最高方案",
+	"超稀有",
+	"精锐",
+	"稀有",
+	"普通",
+];
+const factions = $derived([
+	"全部",
+	...Array.from(new Set(ships.map((s) => s.f))),
+]);
 
-	let q = $state("");
-	let st = $state("全部");
-	let grp = $state("全部");
-	let rar = $state("全部");
-	let fac = $state("全部");
-	let page = $state(1);
+let q = $state("");
+let st = $state("全部");
+let grp = $state("全部");
+let rar = $state("全部");
+let fac = $state("全部");
+let page = $state(1);
 
-	const filtered = $derived(
-		ships.filter((s) => {
-			if (q && !s.n.includes(q.trim())) return false;
-			if (st === "已拥有" && !ownSet.has(s.n)) return false;
-			if (st === "未拥有" && ownSet.has(s.n)) return false;
-			if (grp !== "全部" && s.g !== grp) return false;
-			if (rar !== "全部" && s.r !== rar) return false;
-			if (fac !== "全部" && s.f !== fac) return false;
-			return true;
-		}),
-	);
+const filtered = $derived(
+	ships.filter((s) => {
+		if (q && !s.n.includes(q.trim())) return false;
+		if (st === "已拥有" && !ownSet.has(s.n)) return false;
+		if (st === "未拥有" && ownSet.has(s.n)) return false;
+		if (grp !== "全部" && s.g !== grp) return false;
+		if (rar !== "全部" && s.r !== rar) return false;
+		if (fac !== "全部" && s.f !== fac) return false;
+		return true;
+	}),
+);
 
-	const pages = $derived(Math.max(1, Math.ceil(filtered.length / perPage)));
-	const view = $derived(filtered.slice((page - 1) * perPage, page * perPage));
+const pages = $derived(Math.max(1, Math.ceil(filtered.length / perPage)));
+const view = $derived(filtered.slice((page - 1) * perPage, page * perPage));
 
-	function pick(setter: (v: string) => void, v: string) {
-		setter(v);
-		page = 1;
-	}
+function pick(setter: (v: string) => void, v: string) {
+	setter(v);
+	page = 1;
+}
 </script>
 
 <div class="al-filters">

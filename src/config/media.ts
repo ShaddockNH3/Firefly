@@ -17,23 +17,23 @@ export const gameStatuses = ["通关", "在玩", "想玩", "弃坑"] as const;
 
 /** 小说排序项 */
 export const novelSorts: MediaSort[] = [
-    { key: "act", label: "最近" },
-    { key: "score", label: "评分" },
-    { key: "title", label: "书名" },
+	{ key: "act", label: "最近" },
+	{ key: "score", label: "评分" },
+	{ key: "title", label: "书名" },
 ];
 
 /** 番剧排序项 */
 export const animeSorts: MediaSort[] = [
-    { key: "recent", label: "最近" },
-    { key: "score", label: "我的评分" },
-    { key: "bgm", label: "Bangumi 评分" },
-    { key: "date", label: "放送" },
+	{ key: "recent", label: "最近" },
+	{ key: "score", label: "我的评分" },
+	{ key: "bgm", label: "Bangumi 评分" },
+	{ key: "date", label: "放送" },
 ];
 
 /** 单机游戏排序项 */
 export const gameSorts: MediaSort[] = [
-    { key: "recent", label: "最近" },
-    { key: "score", label: "我的评分" },
-    { key: "year", label: "年份" },
-    { key: "difficulty", label: "难度" },
+	{ key: "recent", label: "最近" },
+	{ key: "score", label: "我的评分" },
+	{ key: "year", label: "年份" },
+	{ key: "difficulty", label: "难度" },
 ];

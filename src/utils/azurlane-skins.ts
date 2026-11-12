@@ -24,7 +24,10 @@ export interface Skin {
 	t?: string;
 }
 
-const refitArt = detailData as Record<string, { refit?: string; refitThumb?: string }>;
+const refitArt = detailData as Record<
+	string,
+	{ refit?: string; refitThumb?: string }
+>;
 
 export const refitSkins: Skin[] = (shipsData as { n: string; g: string }[])
 	.filter((s) => s.g === "改造" && refitArt[s.n]?.refit)

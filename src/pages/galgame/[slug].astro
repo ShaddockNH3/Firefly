@@ -28,7 +28,10 @@ const rows = [
 	{ k: "时长", v: d.hours ? `${d.hours} 小时` : "—" },
 	{ k: "状态", v: d.status },
 	{ k: "我的评分", v: d.score !== null ? `${d.score.toFixed(1)} / 10` : "" },
-	{ k: "VNDB 评分", v: d.vndbRating !== null ? `${(d.vndbRating / 10).toFixed(1)} / 10` : "" },
+	{
+		k: "VNDB 评分",
+		v: d.vndbRating !== null ? `${(d.vndbRating / 10).toFixed(1)} / 10` : "",
+	},
 ].filter((r) => r.v);
 ---
 

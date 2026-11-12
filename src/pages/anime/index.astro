@@ -27,29 +27,32 @@ const subjects = subjectsData.items as Record<
 
 const entries = (await getCollection("anime")).filter((e) => !e.data.draft);
 
-const items = entries
-	.map((e) => {
-		const id = e.data.bgm || Number(e.id);
-		const meta = subjects[String(id)];
-		if (!meta) {
-			throw new Error(`[anime] ${e.id} 缺少条目信息，先跑 pnpm fetch:bangumi`);
-		}
-		return {
-			id,
-			cn: meta.cn,
-			jp: meta.jp,
-			cover: meta.cover,
-			date: meta.date,
-			eps: meta.eps,
-			bgmScore: meta.bgmScore,
-			rank: meta.rank,
-			tags: meta.tags,
-			status: e.data.status,
-			score: e.data.score,
-			ep: e.data.ep,
-			updated: [e.data.finished, e.data.started, e.data.updated].filter(Boolean).sort().at(-1) ?? "",
-		};
-	});
+const items = entries.map((e) => {
+	const id = e.data.bgm || Number(e.id);
+	const meta = subjects[String(id)];
+	if (!meta) {
+		throw new Error(`[anime] ${e.id} 缺少条目信息，先跑 pnpm fetch:bangumi`);
+	}
+	return {
+		id,
+		cn: meta.cn,
+		jp: meta.jp,
+		cover: meta.cover,
+		date: meta.date,
+		eps: meta.eps,
+		bgmScore: meta.bgmScore,
+		rank: meta.rank,
+		tags: meta.tags,
+		status: e.data.status,
+		score: e.data.score,
+		ep: e.data.ep,
+		updated:
+			[e.data.finished, e.data.started, e.data.updated]
+				.filter(Boolean)
+				.sort()
+				.at(-1) ?? "",
+	};
+});
 
 const watching = items.filter((i) => i.status === "在看").length;
 const finished = items.filter((i) => i.status === "看过").length;

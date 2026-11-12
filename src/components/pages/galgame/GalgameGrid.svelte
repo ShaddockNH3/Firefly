@@ -1,48 +1,56 @@
 <script lang="ts">
-	import { galgameStatuses } from "@/config/media";
-	import { ALL, countAll, countStatuses } from "@/utils/media-utils";
-	import MediaFilters from "../media/MediaFilters.svelte";
+import { galgameStatuses } from "@/config/media";
+import { ALL, countAll, countStatuses } from "@/utils/media-utils";
+import MediaFilters from "../media/MediaFilters.svelte";
 
-	interface Game {
-		slug: string;
-		title: string;
-		cn: string;
-		alt: string;
-		developer: string;
-		year: string;
-		cover: string;
-		status: string;
-		score: number | null;
-	}
+interface Game {
+	slug: string;
+	title: string;
+	cn: string;
+	alt: string;
+	developer: string;
+	year: string;
+	cover: string;
+	status: string;
+	score: number | null;
+}
 
-	interface Props {
-		games: Game[];
-	}
+interface Props {
+	games: Game[];
+}
 
-	let { games }: Props = $props();
+let { games }: Props = $props();
 
-	let dev = $state(ALL);
-	let st = $state(ALL);
+let dev = $state(ALL);
+let st = $state(ALL);
 
-	const rows = $derived([
-		{ key: "dev", label: "会社", items: countAll(games, (g) => g.developer || "其他") },
-		{ key: "st", label: "状态", items: countStatuses(games, galgameStatuses, (g) => g.status) },
-	]);
+const rows = $derived([
+	{
+		key: "dev",
+		label: "会社",
+		items: countAll(games, (g) => g.developer || "其他"),
+	},
+	{
+		key: "st",
+		label: "状态",
+		items: countStatuses(games, galgameStatuses, (g) => g.status),
+	},
+]);
 
-	const values = $derived({ dev, st });
+const values = $derived({ dev, st });
 
-	function pick(key: string, value: string) {
-		if (key === "dev") dev = value;
-		else if (key === "st") st = value;
-	}
+function pick(key: string, value: string) {
+	if (key === "dev") dev = value;
+	else if (key === "st") st = value;
+}
 
-	const list = $derived(
-		games.filter((g) => {
-			if (dev !== ALL && (g.developer || "其他") !== dev) return false;
-			if (st !== ALL && g.status !== st) return false;
-			return true;
-		}),
-	);
+const list = $derived(
+	games.filter((g) => {
+		if (dev !== ALL && (g.developer || "其他") !== dev) return false;
+		if (st !== ALL && g.status !== st) return false;
+		return true;
+	}),
+);
 </script>
 
 <MediaFilters {rows} {values} onpick={pick} />

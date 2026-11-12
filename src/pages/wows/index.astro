@@ -2,10 +2,10 @@
 import { Icon } from "astro-icon/components";
 import WowsShips from "@/components/pages/wows/WowsShips.svelte";
 import { siteConfig } from "@/config";
-import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import meta from "@/data/wows/meta.json";
 import profile from "@/data/wows/profile.json";
 import ships from "@/data/wows/ships.json";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
 
 if (!siteConfig.pages.wows) {
 	return Astro.redirect("/404/");
@@ -20,12 +20,38 @@ const pct = (v: number) => `${(v * 100).toFixed(1)}%`;
 const num = (v: number) => v.toLocaleString("en-US");
 
 const kpis = [
-	{ icon: "material-symbols:swords", label: "场次", value: num(p.battles), unit: "" },
-	{ icon: "material-symbols:percent", label: "胜率", value: pct(p.winrate), unit: "" },
-	{ icon: "material-symbols:destruction", label: "场均伤害", value: num(p.avgDamage), unit: "" },
-	{ icon: "material-symbols:local-fire-department", label: "最高伤害", value: num(p.maxDamage), unit: "" },
+	{
+		icon: "material-symbols:swords",
+		label: "场次",
+		value: num(p.battles),
+		unit: "",
+	},
+	{
+		icon: "material-symbols:percent",
+		label: "胜率",
+		value: pct(p.winrate),
+		unit: "",
+	},
+	{
+		icon: "material-symbols:destruction",
+		label: "场均伤害",
+		value: num(p.avgDamage),
+		unit: "",
+	},
+	{
+		icon: "material-symbols:local-fire-department",
+		label: "最高伤害",
+		value: num(p.maxDamage),
+		unit: "",
+	},
 	// 卡片窄，PR 的分档文字塞不进一行，只留数字
-	{ icon: "material-symbols:military-tech", label: "PR", value: overall ? num(overall.pr) : "—", unit: "", hi: true },
+	{
+		icon: "material-symbols:military-tech",
+		label: "PR",
+		value: overall ? num(overall.pr) : "—",
+		unit: "",
+		hi: true,
+	},
 ];
 ---
 
