@@ -72,7 +72,6 @@
 		return { needA: build(need), haveA: build(Math.min(have, need)) };
 	});
 
-	const tech = $derived(info.tch ?? { u: 0, m: 0, l: 0 });
 	const RAR: Record<string, string> = {
 		普通: "#7c7f86",
 		稀有: "#3c7fc0",
@@ -82,6 +81,12 @@
 		海上传奇: "#c03a70",
 		决战方案: "#c03a70",
 	};
+
+	let track = $state<HTMLDivElement | null>(null);
+
+	function scrollSkins(dir: number) {
+		track?.scrollBy({ left: dir * 340, behavior: "smooth" });
+	}
 </script>
 
 <div class="sp">
@@ -95,10 +100,24 @@
 			{ship.n}
 			<span class="sp-rar" style={`color:${RAR[ship.r] ?? "#7c7f86"}`}>{ship.r}</span>
 		</div>
+
 		<div class="sp-meta">
 			<span>{ship.f}</span><i></i><span>{ship.t}</span>
 			{#if ship.i}<i></i><span>图鉴 {ship.i}</span>{/if}
 			{#if ship.g !== "常规"}<i></i><span>{ship.g}</span>{/if}
+			<a
+				class="sp-wiki"
+				href={`https://wiki.biligame.com/blhx/${encodeURIComponent(ship.n)}`}
+				target="_blank"
+				rel="noopener">wiki ↗</a
+			>
+			{#if hasRecord}
+				<span class="sp-prog">
+					<span data-on={owned}><i></i>已获得</span>
+					<span data-on={maxed}><i></i>满星</span>
+					<span data-on={maxed}><i></i>120 级</span>
+				</span>
+			{/if}
 		</div>
 
 		<div class="sp-block">
@@ -133,43 +152,19 @@
 				{/if}
 			</div>
 		</div>
-
-		<div class="sp-block">
-			<div class="sp-t">科技点</div>
-			<div class="sp-tech">
-				<span>获得 <b>{tech.u}</b></span>
-				<span>满星 <b>{tech.m}</b></span>
-				<span>120 级 <b>{tech.l}</b></span>
-			</div>
-			{#if tech.ub || tech.lb}
-				<div class="sp-note">{[tech.ub, tech.lb].filter(Boolean).join(" · ")}</div>
-			{/if}
-		</div>
-
-		<div class="sp-block">
-			<div class="sp-t">我的进度</div>
-			{#if hasRecord}
-				<div class="sp-dots">
-					<span data-on={owned}>已获得</span>
-					<span data-on={maxed}>满星</span>
-					<span data-on={maxed}>120 级</span>
-				</div>
-			{:else}
-				<div class="sp-note">未记录</div>
-			{/if}
-		</div>
-
-		<a class="sp-wiki" href={`https://wiki.biligame.com/blhx/${encodeURIComponent(ship.n)}`} target="_blank" rel="noopener">
-			在 wiki 查看
-		</a>
 	</div>
 </div>
 
 <div class="sp-skins">
 	<div class="sp-skins-h">
-		换装 <span>共 {skinCount} 套{hasRecord ? ` · 已拥有 ${ownedCount}` : ""}</span>
+		<b>换装</b>
+		<span>共 {skinCount} 套{hasRecord ? ` · 已拥有 ${ownedCount}` : ""}</span>
+		<div class="sp-nav">
+			<button onclick={() => scrollSkins(-1)} aria-label="上一组">‹</button>
+			<button onclick={() => scrollSkins(1)} aria-label="下一组">›</button>
+		</div>
 	</div>
-	<div class="sp-grid">
+	<div class="sp-track" bind:this={track}>
 		{#each entries as e, i (e.n + i)}
 			<button class="sp-sk" data-off={hasRecord && !e.owned} data-on={idx === i} onclick={() => (picked = i)}>
 				<div class="sp-sk-cv">
@@ -178,6 +173,9 @@
 						<span class="sp-badge l2d">L2D</span>
 					{:else if e.k === "改造" || e.k === "誓约"}
 						<span class="sp-badge">{e.k}</span>
+					{/if}
+					{#if hasRecord && !e.owned}
+						<span class="sp-badge off">未拥有</span>
 					{/if}
 				</div>
 				<div class="sp-sk-nm">{e.n}</div>
@@ -191,14 +189,15 @@
 	.sp {
 		display: flex;
 		gap: 26px;
+		align-items: flex-start;
 	}
 	.sp-media {
-		width: 250px;
+		width: clamp(240px, 38%, 340px);
 		flex-shrink: 0;
 	}
 	.sp-media img {
 		width: 100%;
-		aspect-ratio: 3 / 4;
+		aspect-ratio: 2 / 3;
 		object-fit: cover;
 		display: block;
 		border-radius: 14px;
@@ -235,7 +234,7 @@
 		align-items: center;
 		gap: 10px;
 		flex-wrap: wrap;
-		margin-top: 5px;
+		margin-top: 6px;
 		font-size: 0.8rem;
 		color: var(--content-meta);
 	}
@@ -245,6 +244,42 @@
 		border-radius: 50%;
 		background: currentColor;
 		display: inline-block;
+	}
+	.sp-wiki {
+		font-size: 0.74rem;
+		color: var(--primary);
+		text-decoration: none;
+	}
+	.sp-wiki:hover {
+		text-decoration: underline;
+	}
+	.sp-prog {
+		display: inline-flex;
+		align-items: center;
+		gap: 14px;
+		padding-left: 12px;
+		border-left: 1px solid var(--line-divider);
+		font-size: 0.74rem;
+	}
+	.sp-prog span {
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+	}
+	.sp-prog i {
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: currentColor;
+		opacity: 0.3;
+		flex: none;
+	}
+	.sp-prog span[data-on="true"] {
+		color: var(--deep-text);
+	}
+	.sp-prog span[data-on="true"] i {
+		opacity: 1;
+		background: #108a64;
 	}
 	.sp-block {
 		margin-top: 16px;
@@ -261,15 +296,16 @@
 	}
 	.sp-mx {
 		display: grid;
-		grid-template-columns: 38px repeat(5, minmax(46px, 66px));
+		grid-template-columns: 34px repeat(5, minmax(0, 1fr));
 		gap: 6px;
 		align-items: center;
 	}
 	.sp-h {
-		font-size: 0.68rem;
+		font-size: 0.64rem;
 		color: var(--content-meta);
 		text-align: center;
 		padding-bottom: 2px;
+		white-space: nowrap;
 	}
 	.sp-h[data-dim="true"] {
 		opacity: 0.4;
@@ -321,94 +357,72 @@
 	:global(.dark) .sp-done {
 		color: #6ddbaa;
 	}
-	.sp-tech {
-		display: flex;
-		gap: 18px;
-		flex-wrap: wrap;
-		font-size: 0.78rem;
-		color: var(--content-meta);
-	}
-	.sp-tech b {
-		color: var(--deep-text);
-		font-weight: 700;
-		font-size: 0.95rem;
-		font-variant-numeric: tabular-nums;
-	}
-	.sp-dots {
-		display: flex;
-		gap: 18px;
-		flex-wrap: wrap;
-		font-size: 0.8rem;
-		color: var(--content-meta);
-		opacity: 0.55;
-	}
-	.sp-dots span {
-		display: inline-flex;
-		align-items: center;
-		gap: 6px;
-	}
-	.sp-dots span::before {
-		content: "";
-		width: 6px;
-		height: 6px;
-		border-radius: 50%;
-		border: 1px solid currentColor;
-	}
-	.sp-dots span[data-on="true"] {
-		opacity: 1;
-		color: var(--deep-text);
-		font-weight: 600;
-	}
-	.sp-dots span[data-on="true"]::before {
-		border-color: transparent;
-		background: var(--primary);
-	}
-	.sp-wiki {
-		display: inline-flex;
-		align-items: center;
-		margin-top: 14px;
-		font-size: 0.76rem;
-		color: var(--primary);
-		text-decoration: none;
-	}
-	.sp-wiki:hover {
-		text-decoration: underline;
-	}
 
 	.sp-skins {
 		margin-top: 22px;
 	}
 	.sp-skins-h {
 		display: flex;
-		align-items: baseline;
+		align-items: center;
 		gap: 8px;
 		font-size: 0.86rem;
-		font-weight: 700;
 		color: var(--deep-text);
 		margin-bottom: 12px;
+	}
+	.sp-skins-h b {
+		font-weight: 700;
 	}
 	.sp-skins-h span {
 		font-size: 0.74rem;
 		font-weight: 500;
 		color: var(--content-meta);
 	}
-	.sp-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(116px, 1fr));
+	.sp-nav {
+		margin-left: auto;
+		display: flex;
+		gap: 5px;
+	}
+	.sp-nav button {
+		width: 24px;
+		height: 24px;
+		padding: 0;
+		border-radius: 50%;
+		border: 1px solid var(--line-divider);
+		background: var(--card-bg);
+		color: var(--content-meta);
+		font-size: 14px;
+		line-height: 1;
+		cursor: pointer;
+	}
+	.sp-nav button:hover {
+		color: var(--primary);
+		border-color: var(--primary);
+	}
+	.sp-track {
+		display: flex;
 		gap: 12px;
+		overflow-x: auto;
+		padding: 2px 2px 6px;
+		scroll-snap-type: x proximity;
+		scrollbar-width: none;
+	}
+	.sp-track::-webkit-scrollbar {
+		height: 0;
 	}
 	.sp-sk {
+		flex: 0 0 146px;
 		padding: 0;
 		border: none;
 		background: none;
 		text-align: left;
 		cursor: pointer;
 		min-width: 0;
+		scroll-snap-align: start;
 	}
 	.sp-sk-cv {
 		position: relative;
 		aspect-ratio: 3 / 4;
-		border-radius: 12px;
+		border-radius: 14px;
 		overflow: hidden;
 		background: var(--card-bg);
 		box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
@@ -430,11 +444,11 @@
 		color: var(--primary);
 	}
 	.sp-sk[data-off="true"] .sp-sk-cv {
-		border: 1px dashed rgb(0 0 0 / 0.22);
+		border: 1.5px dashed rgb(0 0 0 / 0.22);
 	}
 	.sp-sk[data-off="true"] .sp-sk-cv img {
-		filter: grayscale(1);
-		opacity: 0.5;
+		filter: saturate(0.5);
+		opacity: 0.9;
 	}
 	.sp-badge {
 		position: absolute;
@@ -450,6 +464,13 @@
 	}
 	.sp-badge.l2d {
 		color: #b8681f;
+	}
+	.sp-badge.off {
+		left: auto;
+		right: 6px;
+		color: var(--content-meta);
+		background: rgb(255 255 255 / 0.95);
+		box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
 	}
 	.sp-sk-nm {
 		margin-top: 6px;
@@ -475,11 +496,16 @@
 			gap: 16px;
 		}
 		.sp-media {
-			width: 200px;
+			width: 100%;
 		}
 		.sp-mx {
 			grid-template-columns: 34px repeat(5, minmax(0, 1fr));
 			gap: 4px;
+		}
+		.sp-prog {
+			padding-left: 0;
+			border-left: none;
+			flex-basis: 100%;
 		}
 	}
 </style>
