@@ -12,7 +12,7 @@
 	}
 
 	interface Props {
-		ship: { n: string; f: string; t: string; r: string; i: string; av: string };
+		ship: { n: string; f: string; t: string; r: string; i: string; av: string; g?: string };
 		info: {
 			art?: string;
 			refit?: string;
@@ -54,7 +54,9 @@
 	const skinCount = $derived(entries.length - 1);
 	const ownedCount = $derived(entries.filter((e) => e.k !== "" && e.owned).length);
 
-	const need = $derived(info.cp && info.cp > 0 ? info.cp : 1);
+	// 联动船不参与战力复制
+	const isLink = $derived(ship.g === "联动");
+	const need = $derived(isLink ? 0 : info.cp && info.cp > 0 ? info.cp : 1);
 	const tiers = ["0 破", "1 破", "2 破", "未改造", "满破"];
 	const slots = $derived(info.rt ? [3, 0, 1, 2, 4] : [0, 1, 2, 4]);
 
@@ -142,49 +144,53 @@
 				{/each}
 			</div>
 			<div class="sp-note">
-				需要 {need} 只
-				{#if hasRecord}
-					· 已有 {have} 只
-					{#if !maxed}
-						· {#if have >= need}<span class="sp-done">已练齐</span>{:else}还差 {need - have} 只{/if}
-					{/if}
+				{#if isLink}
+					联动船 · 不计战力复制
 				{:else}
-					· <span style="opacity:.8">未记录</span>
+					需要 {need} 只
+					{#if hasRecord}
+						· 已有 {have} 只
+						{#if !maxed}
+							· {#if have >= need}<span class="sp-done">已练齐</span>{:else}还差 {need - have} 只{/if}
+						{/if}
+					{:else}
+						· <span style="opacity:.8">未记录</span>
+					{/if}
 				{/if}
 			</div>
 		</div>
+	<div class="sp-skins">
+		<div class="sp-skins-h">
+			<b>换装</b>
+			<span>共 {skinCount} 套{hasRecord ? ` · 已拥有 ${ownedCount}` : ""}</span>
+			<div class="sp-nav">
+				<button onclick={() => scrollSkins(-1)} aria-label="上一组">‹</button>
+				<button onclick={() => scrollSkins(1)} aria-label="下一组">›</button>
+			</div>
+		</div>
+		<div class="sp-track" bind:this={track}>
+			{#each entries as e, i (e.n + i)}
+				<button class="sp-sk" data-off={hasRecord && !e.owned} data-on={idx === i} onclick={() => (picked = i)}>
+					<div class="sp-sk-cv">
+						<img src={e.i} alt={e.n} loading="lazy" referrerpolicy="no-referrer" />
+						{#if e.k === "L2D"}
+							<span class="sp-badge l2d">L2D</span>
+						{:else if e.k === "改造" || e.k === "誓约"}
+							<span class="sp-badge">{e.k}</span>
+						{/if}
+						{#if hasRecord && !e.owned}
+							<span class="sp-badge off">未拥有</span>
+						{/if}
+					</div>
+					<div class="sp-sk-nm">{e.n}</div>
+					<div class="sp-sk-sub">{e.sub || "—"}</div>
+				</button>
+			{/each}
+		</div>
+	</div>
 	</div>
 </div>
 
-<div class="sp-skins">
-	<div class="sp-skins-h">
-		<b>换装</b>
-		<span>共 {skinCount} 套{hasRecord ? ` · 已拥有 ${ownedCount}` : ""}</span>
-		<div class="sp-nav">
-			<button onclick={() => scrollSkins(-1)} aria-label="上一组">‹</button>
-			<button onclick={() => scrollSkins(1)} aria-label="下一组">›</button>
-		</div>
-	</div>
-	<div class="sp-track" bind:this={track}>
-		{#each entries as e, i (e.n + i)}
-			<button class="sp-sk" data-off={hasRecord && !e.owned} data-on={idx === i} onclick={() => (picked = i)}>
-				<div class="sp-sk-cv">
-					<img src={e.i} alt={e.n} loading="lazy" referrerpolicy="no-referrer" />
-					{#if e.k === "L2D"}
-						<span class="sp-badge l2d">L2D</span>
-					{:else if e.k === "改造" || e.k === "誓约"}
-						<span class="sp-badge">{e.k}</span>
-					{/if}
-					{#if hasRecord && !e.owned}
-						<span class="sp-badge off">未拥有</span>
-					{/if}
-				</div>
-				<div class="sp-sk-nm">{e.n}</div>
-				<div class="sp-sk-sub">{e.sub || "—"}</div>
-			</button>
-		{/each}
-	</div>
-</div>
 </div>
 
 <style>
@@ -196,6 +202,8 @@
 	.sp-media {
 		width: clamp(240px, 38%, 340px);
 		flex-shrink: 0;
+		position: sticky;
+		top: 90px;
 	}
 	.sp-media img {
 		width: 100%;
@@ -497,7 +505,7 @@
 	.sp-wrap {
 		container-type: inline-size;
 	}
-	@container (max-width: 640px) {
+	@container (max-width: 500px) {
 		.sp {
 			flex-direction: column;
 			gap: 16px;
@@ -505,6 +513,7 @@
 		.sp-media {
 			width: 100%;
 			max-width: 340px;
+			position: static;
 		}
 		.sp-mx {
 			grid-template-columns: 30px repeat(5, minmax(0, 1fr));
