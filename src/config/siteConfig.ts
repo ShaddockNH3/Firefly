@@ -39,6 +39,8 @@ const pages = resolvePageToggles({
 	galgame: true,
 	// 小说页面开关（书源分享 + 三平台书单）
 	novels: true,
+	// 番剧页面开关
+	anime: true,
 	// 战舰世界页面开关
 	wows: true,
 

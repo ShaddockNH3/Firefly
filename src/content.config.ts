@@ -86,6 +86,18 @@ type NovelData = {
 	draft: boolean;
 };
 
+type AnimeData = {
+	bgm: number;
+	status: string;
+	score: number | null;
+	ep: number;
+	started: string;
+	finished: string;
+	updated: string;
+	note: string;
+	draft: boolean;
+};
+
 type ContentCollection<T> = CollectionConfig<
 	ZodType<T>,
 	ReturnType<typeof glob>
@@ -208,6 +220,27 @@ const novelsCollection: ContentCollection<NovelData> = defineCollection({
 	}),
 });
 
+const animeCollection: ContentCollection<AnimeData> = defineCollection({
+	// 我的记录手写在这里，条目信息（封面/简介/集数/评分）由 scripts/fetch-bangumi.mjs 抓
+	loader: glob({ pattern: "**/*.md", base: "./src/content/anime" }),
+	schema: z.object({
+		// 番组计划条目 ID，空则用文件名
+		bgm: z.number().optional().default(0),
+		// 在看 / 看过 / 想看 / 搁置 / 抛弃，空表示还没记
+		status: z.string().optional().default(""),
+		score: z.number().nullable().optional().default(null),
+		// 看到第几集
+		ep: z.number().optional().default(0),
+		started: z.string().optional().default(""),
+		finished: z.string().optional().default(""),
+		// 最近一次动过的时间，默认排序用
+		updated: z.string().optional().default(""),
+		// 列表里的一句话短评
+		note: z.string().optional().default(""),
+		draft: z.boolean().optional().default(false),
+	}),
+});
+
 export const collections: {
 	dynamic: typeof dynamicCollection;
 	posts: typeof postsCollection;
@@ -215,6 +248,7 @@ export const collections: {
 	projects: typeof projectsCollection;
 	galgame: typeof galgameCollection;
 	novels: typeof novelsCollection;
+	anime: typeof animeCollection;
 } = {
 	dynamic: dynamicCollection,
 	posts: postsCollection,
@@ -222,4 +256,5 @@ export const collections: {
 	projects: projectsCollection,
 	galgame: galgameCollection,
 	novels: novelsCollection,
+	anime: animeCollection,
 };

@@ -76,6 +76,11 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 书单与书源
 			LinkPresets.Novels,
 
+			{ type: "caption", name: "番剧", url: "" },
+
+			// 追番记录
+			LinkPresets.Anime,
+
 		],
 	});
 
@@ -256,6 +261,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/novels/",
 		icon: "material-symbols:auto-stories",
 		pageKey: "novels",
+	},
+	Anime: {
+		name: "追番记录",
+		url: "/anime/",
+		icon: "material-symbols:live-tv",
+		pageKey: "anime",
 	},
 	Bilibili: {
 		name: "哔哩哔哩",

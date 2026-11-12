@@ -1,0 +1,85 @@
+---
+import { getCollection } from "astro:content";
+import AnimeGrid from "@/components/pages/anime/AnimeGrid.svelte";
+import { siteConfig } from "@/config";
+import subjectsData from "@/data/anime/subjects.json";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+if (!siteConfig.pages.anime) {
+	return Astro.redirect("/404/");
+}
+
+const subjects = subjectsData.items as Record<
+	string,
+	{
+		cn: string;
+		jp: string;
+		cover: string;
+		date: string;
+		eps: number;
+		bgmScore: number | null;
+		rank: number | null;
+		tags: string[];
+		summary: string;
+	}
+>;
+
+const entries = (await getCollection("anime")).filter((e) => !e.data.draft);
+
+const items = entries
+	.map((e) => {
+		const id = e.data.bgm || Number(e.id);
+		const meta = subjects[String(id)];
+		if (!meta) {
+			console.warn(`[anime] ${e.id} 缺少条目信息，跑一下 pnpm fetch:bangumi`);
+			return null;
+		}
+		return {
+			id,
+			cn: meta.cn,
+			jp: meta.jp,
+			cover: meta.cover,
+			date: meta.date,
+			eps: meta.eps,
+			bgmScore: meta.bgmScore,
+			rank: meta.rank,
+			tags: meta.tags,
+			status: e.data.status,
+			score: e.data.score,
+			ep: e.data.ep,
+			updated: [e.data.finished, e.data.started, e.data.updated].filter(Boolean).sort().at(-1) ?? "",
+		};
+	})
+	.filter((x): x is NonNullable<typeof x> => x !== null);
+
+const watching = items.filter((i) => i.status === "在看").length;
+const finished = items.filter((i) => i.status === "看过").length;
+const bgmUser = siteConfig.bangumi?.userId;
+---
+
+<MainGridLayout title="番剧" description="追番记录与评价">
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<div class="flex items-center gap-3 flex-wrap mb-4">
+			<h2 class="text-lg font-bold text-(--deep-text) m-0">番剧</h2>
+			<span
+				class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums"
+			>
+				{items.length} 部
+			</span>
+			{watching > 0 && <span class="text-[0.72rem] text-(--content-meta)">在看 {watching}</span>}
+			{finished > 0 && <span class="text-[0.72rem] text-(--content-meta)">看过 {finished}</span>}
+			{bgmUser && (
+				<a
+					href={`https://bgm.tv/user/${bgmUser}/anime`}
+					target="_blank"
+					rel="noopener"
+					class="ml-auto text-[0.72rem] text-(--content-meta) hover:text-(--primary)"
+				>
+					番组计划
+				</a>
+			)}
+		</div>
+
+		<AnimeGrid client:load items={items} />
+	</div>
+</MainGridLayout>
