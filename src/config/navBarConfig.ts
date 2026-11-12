@@ -71,13 +71,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// galgame 作品
 			LinkPresets.Galgame,
 
-			{ type: "caption", name: "番剧", url: "" },
-
-			// 哔哩哔哩追番
-			LinkPresets.Bilibili,
-
-			// 番组计划
-			LinkPresets.Bangumi,
 		],
 	});
 
