@@ -42,7 +42,7 @@ seriesOrder: 7
 
 数学模拟卷 2 + 真题 + 二刷所有错题 + 卷子复盘：第 33 周 - 第 34 周，共 2 周。27 李 6，21 真题 - 22 真题，24 超越 9-10
 
-数学模拟卷 3 + 真题 + 选刷专题：第 35 周 - 第 38 周，共 4 周：23-26 数学真题，24 超越 4-8，27 张八，25 超越，660 选刷，880 线代
+数学模拟卷 3 + 真题 + 选刷专题：第 35 周 - 第 38 周，共 4 周：23-26 数学真题，24 超越 4-8，27 张 8，25 超越，660 选刷，880 线代
 
 ## 张宇 30 讲基础高数 1 刷（补）
 
@@ -8204,58 +8204,6 @@ $$
 - 基础概念基础手法比较薄弱
 - 重复的错误（比如说黎曼积分和，多元函数不存在二阶导情况需要使用定义，牛莱公式代入）
 
-## 26 李 6
-
-- 完成时间：20261006-
-- 平均分：
-- 平均作答时间：
-
-重新看了一遍遗憾邂逅的帖子，发现 26 李 6 质量很差，所以就先放弃了。
-
-正好 27 李 6 出了，转去做 27 李 6（听说质量不错）
-
-### 26 李 6 卷 1
-
-- 完成时间：20261006
-- 分数：132-15-10
-  - 选择：-10
-  - 大题：-8
-- 作答时间：150
-
-这份卷子写到后面发现太神秘了。而且这份卷子也是晚上写的，头脑晕晕的，对草稿纸我认为划分的还是不合理。
-
-做到最后半个小时没去检查，直接按照向下对答案，碰到错了看一遍草稿纸看看是不是简单错误或者一眼看出来的，是的分就加回去了。本来这份卷子应该选填额外 -15，不过选择 2 我知道这道题有其他可能性只是还没去写，填空 11 和 15 都是草稿纸上抄着抄着简单抄错，就算了，检查大概率是可以检查出来的（想了一下确实可以，因为这三题都画圈了）。
-
-此外对于大题，这份的大题太神秘了，我一开始写的时候感觉还好，但是越做越神秘，然后发现一堆奇奇怪怪的问题，好在最后把第 18 题，第 19 题，第 21 题第一问和第 22 题大部分做出来了，对于第 20 题知道大概怎么做，但是没做出来，最后问了一下 ai 才做出来的，重点是奇偶性问题，这个确实好久没做了忘光了。
-
-这份卷子按照自己的真实水平只有 115 附近，卷子还是要多练。还有就是写一步算一步的问题，这个也需要注意，一定要写一步算一步。想了一下，还是最后不想写了，感觉太难了想放弃。
-
-哈哈，迎难而上，坚持下去，从下一份开始又是全新的东西我说！吸取教训前进！
-
-但是没检查就是没检查，没得说，这份卷子我也会按照不合格来看待。
-
-![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADxWrE-zeBdR8WKu8cIpfchMVmrPdDAAI2FGsbxNooVgAB4f3njlt0ZAEAAwIAA3gAAz0E)
-
-条件代入的时候直接代入错误。
-
-![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADxmrE-0m5EUFbQd8vAAGQ6Zj--5YzGgACNxRrG8TaKFa3FdJb6OXd9AEAAwIAA3gAAz0E)
-
-特征值法判断合同只有实对称矩阵的时候才成立。
-
-所以直接排除一些选项。
-
-![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADx2rE-2s642zEfNR_Tlx3i3_i8rL4AAI4FGsbxNooVnv8baIdTB5DAQADAgADeAADPQQ)
-
-利用凹凸性凸函数的性质。
-
-确实不会。
-
-![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADyGrE-3w4XU_TWopGKNt0AAHyepKEaQACORRrG8TaKFYxFxg_IR3FgAEAAwIAA3gAAz0E)
-
-算到最后算昏头了，混淆了 $a$ 和 $b$。
-
-其实不会难。
-
 ## 27 李 6
 
 - 完成时间：20261008-20261017
@@ -8955,7 +8903,7 @@ $$
 
 选择题感觉巨奇怪，一开始直接跳了 6 题，回头才慢慢看出来的。比如说第 2 题一开始就跳了，觉得计算太麻烦；第 4 题有点生也跳了（不过后来举例子想起来了）；第 8 题则是一下没想到用配凑法做，第 10 题则是猜的答案（半猜半蒙）。
 
-大题的话，其实也做的不算很顺。首先是第 17 题计算出来很怪（但是答案就是这个样子的），第 18 题思路很卡，第 19 题和第 22 题很顺，第 20 题一开始没敢算下去，是在最后的最后算的检查的时候算的，最后还真是硬算。不过三部分我只算对的两部分，所以 -4。第 21 题证明题的充分性直接过了，先不管（但是这类式子好像挺常见的，比如说在张八的卷子 1 和 2 貌似都有类似的）
+大题的话，其实也做的不算很顺。首先是第 17 题计算出来很怪（但是答案就是这个样子的），第 18 题思路很卡，第 19 题和第 22 题很顺，第 20 题一开始没敢算下去，是在最后的最后算的检查的时候算的，最后还真是硬算。不过三部分我只算对的两部分，所以 -4。第 21 题证明题的充分性直接过了，先不管（但是这类式子好像挺常见的，比如说在张 8 的卷子 1 和 2 貌似都有类似的）
 
 总的来说，第一，有好几天没按时考试然后突然来考的感觉了（而且昨晚故意小熬来模拟，今早确实状态非常非常一般）。
 
@@ -9097,15 +9045,15 @@ $\frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{f(x_3)-f(x_2)}{x_3-x_2}$
   - 大题：
 - 时间：
 
-## 660 1 刷（仅挑着做，不过也写了大部分）
+## 660 高数 1 刷（仅挑着做，不过也写了大部分）
 
-### 660 1 刷填空题第 1 章 - 函数、极限、连续
+### 660 高数 1 刷填空题第 1 章 - 函数、极限、连续
 
 ![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgxq5XUIK-kcqaYrNUo0nRxKf2YOEwACehlrGwFAKVcKehnZyBhFBgEAAwIAA3cAAz0E)
 
 有点神秘了，这题不会做。还是一句话，碰到这种题就反解。
 
-### 660 1 刷填空题第 7 章 - 微分方程
+### 660 高数 1 刷填空题第 7 章 - 微分方程
 
 尽量化简成 $y=f(x)$ 的形式或者 $x=f(y)$ 的形式。
 
@@ -9119,7 +9067,7 @@ $\frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{f(x_3)-f(x_2)}{x_3-x_2}$
 
 注意分类讨论，当 λ=0 和 ≠0 的情况。
 
-### 660 1 刷选择题第 1 章 - 函数、极限、连续
+### 660 高数 1 刷选择题第 1 章 - 函数、极限、连续
 
 ![213](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCf9q40IpkqW8KK9OefQUfQxR8x4ltwACihhrG2iXGVdrc1uktp7k5AEAAwIAA3cAAz0E)
 
@@ -9187,7 +9135,7 @@ $\frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{f(x_3)-f(x_2)}{x_3-x_2}$
 
 本题及结论即可，只有连续的连续是可确定的，其他都是不确定的。一定要记住狄利克雷函数。
 
-### 660 1 刷选择题第 2 章 - 导数与微分
+### 660 高数 1 刷选择题第 2 章 - 导数与微分
 
 ![255](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCgpq5WRlMIwYjcROOkHHR3SRbh2UIwACWhlrGwFAKVc7kKf8zyxomQEAAwIAA3kAAz0E)
 
@@ -9215,7 +9163,7 @@ $\frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{f(x_3)-f(x_2)}{x_3-x_2}$
 
 核心是对左右两侧同时展开。
 
-### 660 1 刷选择题第 5 章 - 定积分与反常积分
+### 660 高数 1 刷选择题第 5 章 - 定积分与反常积分
 
 ![348](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg5q5ZpXJTtF-nvoUW2KfGdTaJs0wAACyxlrGwFAKVf_-pglJUkb-gEAAwIAA3cAAz0E)
 
@@ -9225,7 +9173,7 @@ $\frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{f(x_3)-f(x_2)}{x_3-x_2}$
 
 我是直接 2x/pi
 
-### 660 1 刷选择题第 8 章 - 多元函数微分学
+### 660 高数 1 刷选择题第 8 章 - 多元函数微分学
 
 ![433](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCg9q5bgMRGUH9XU-NAEUGHS3AnO_vgACOxprGwFAKVe3Ia2xyLTZTwEAAwIAA3cAAz0E)
 
@@ -9237,7 +9185,7 @@ $\frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{f(x_3)-f(x_2)}{x_3-x_2}$
 
 积累一下。
 
-### 660 1 刷选择题第 9 章 - 二重积分
+### 660 高数 1 刷选择题第 9 章 - 二重积分
 
 ![444](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACChBq5s47sLqPakWWf_9Yp_fVenFVGQACShVrGzJyOVdT3jUD48ghqAEAAwIAA3cAAz0E)
 
@@ -9620,13 +9568,13 @@ $$
 
 选择题第 8 题开始就没写了。
 
-## 27 张八
+## 27 张 8
 
-- 完成时间：2026
+- 完成时间：20261025-20261111
 - 平均分：
 - 平均作答时间：
 
-### 27 张八 1
+### 27 张 8  1
 
 - 完成时间：20261025
 - 分数：123
@@ -9697,7 +9645,7 @@ $\frac{f(x_2)-f(x_1)}{x_2-x_1} < \frac{f(x_3)-f(x_2)}{x_3-x_2}$
 
 再次总结一下，当你觉得一切顺风的时候，你就要死了！
 
-### 27 张八 2
+### 27 张 8  2
 
 - 完成时间：20261108
 - 分数：140
@@ -9778,59 +9726,297 @@ C 的证明就不看了，感觉难以理解。从直观上来讲，奇数项单
 
 解方程的时候，a1 和 a3 根据 A 的特征向量取即可，然后 a3 得凑一个有解的出来，最后解 a2 的时候取一个简单的特解即可。
 
-### 27 张八 3
+### 27 张 8  3
 
 - 完成时间：20261108
+- 分数：130
+  - 选择：-15
+  - 填空：-5
+- 时间：120+30
+
+这份卷子选填也是跳了一堆，然后大题前三题做的很快（大约在 120min 附近就开始写后三题了），而后三题，虽然最后全对，但是也造成了不小的影响：
+
+1. 第 20 题误入歧途，按照其他式子算了，不过最后还是搞回来了（答案很怪，但是是对的）
+2. 第 21 题巨神秘，答案用了一个很猎奇的换元法，我是觉得这道题如果不用超纲的雅可比变换那会非常难做
+3. 第 22 题我是试出来了，美名其曰：归纳法。结果答案还真是这么做的。我觉得这道题不用太放在心上。
+
+然后这一套下来就到了 120min 附近（3 题花了 60min），前面还有一堆跳了的题（分别是 2,3,4,7,8,12）
+
+然后小宇宙爆发，第 2 题想到了只和 a 相关，所以直接求导然后 n 取特值，算出来了答案，第 3 题还是没解出来，第 4 题想到了直接求导，然后就迎刃而解，第 7 题想到了都逼近 0 算，最后排除 A 和 B，想了一下没仔细推 e^-x 和 1-x 的关系，凭直觉选的 C（结果错了），第 8 题一开始是题看错了，所以很快就改对了）。
+
+也就是最后改对了 5 分，然后验算到第 12 题，就没时间验算了（这份卷子第 12 题也很怪，第 12 题让求范围，最后求出来一个值，答案也是一个值）。
+
+至于错的地方：
+
+第 3 题是真的不会做，算了非常久都出不来答案。
+
+第 7 题是概念理解问题，等下分析。
+
+第 8 题我估计就是时间压力之下没细想。
+
+第 15 题则是一个很经典的问题，即拆根号，拆根号要判断正负。
+
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkpq8au5tU43mg5z59-5TR5l6ydzxAACihNrG1ziiFe2NZ4Ecie0QgEAAwIAA3gAAz0E)
+
+本题特值法做对了，特值算出来那串很复杂的式子是 pi，正确做法是降幂，然后正负抵消。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCktq8awFpNJPND18ve1ujBfE-H6sEQACixNrG1ziiFchrAABwhAEFqABAAMCAAN4AAM9BA)
+
+这道题猜了一个 D。
+
+本题 2 这个边界就是迷惑我们的，我看了一遍答案（没看懂），然后看了一眼我让 AI 用我一开始想的换元法做的，整理答案后如下：
+
+![3 订](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClBq8bFCi75Vd2kFL4j5A8fP-Z0GuwACnBNrG1ziiFerhN_MsOnHhAEAAwIAA3cAAz0E)
+
+本题感觉就是属于半猜半蒙的类型，也不算常规题。
+
+![6](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkxq8axgav2cJLwEEsMUIguxeH-N8AACjhNrG1ziiFdIITWKw9njTAEAAwIAA3gAAz0E)
+
+本题 -5。
+
+错选为 C。
+
+我当时是这么想的，构造一个导函数，这个导函数本身有跳跃间断点，但是，我忽略了一件非常非常重要的事情，也是知识迁移（是当初张宇 30 讲里的东西）——
+
+导函数本身不能有跳跃间断点！
+
+回顾一下知识点，导函数必须连续，或者有某类震荡间断点，而不可以存在第一类间断点和无穷间断点。
+
+然后正推一下每一个选项：
+
+首先把握一点，看到 f 和 f' 的关系，就要想到拉格朗日中值定理，这道题就是完全没想到纯凭感觉想的 1 和 3 是对的。
+
+![6 解](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClFq8bWqPcz69TsRmsqbVhdCL13cpQACoxNrG1ziiFeU4P0AAaeugRsBAAMCAAN3AAM9BA)
+
+![7](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCk1q8a2Pc2sqYPSGCFqKpLIql2VjtgACkBNrG1ziiFf688oF78NsFwEAAwIAA3gAAz0E)
+
+这道题 -5。
+
+就像我前面说的那样，没时间列式子了，所以错了。本题粗略来算的话，就是趋近于 0，然后 J 可以变成 1-1/2x，I 可以变成 1-x，J 可以变成 1-x，所以粗略比较下来，J 是最大的，排除 B 和 A。
+
+对于 I 和 J，e^x>1+x，将 x 代成 -x 保持不变，所以最后选出来是 D。
+
+按照答案的做法如下，感觉很神秘没必要细看。
+
+![7 答案](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCk5q8a44MOJ4NJkeDXa9d0Hu1Jj3pwACkRNrG1ziiFcmr-1oznzX1AEAAwIAA3gAAz0E)
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCk9q8a5S5dOd1jz-SIR0zcymRJjZ3wACkxNrG1ziiFeRsRYgU8EqUQEAAwIAA20AAz0E)
+
+本题 -5。
+
+值得注意，我愿称之为和拆 arcsin(sinx) 同级别重要的东西——
+
+拆根号需不需要变号！
+
+本题是忽略了这个。
+
+### 27 张 8  4
+
+- 完成时间：20261109
+- 分数：130
+  - 大题：-20
+- 时间：90
+
+这份卷子感觉就不用非常在意分数，因为大题出的有点神秘（第 20 题）。
+
+除了证明题和第 20 题之外，这份卷子的其他题都很简单。
+
+没检查就直接对答案了。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClRq8dWjiTIJsRwdCqqtG5A2gbtKYwAC5BNrG1ziiFe9rFCAsBBwIAEAAwIAA3gAAz0E)
+
+猜了一个 A。
+
+A 属于是老生常谈的，这个我知道。
+
+对于 B，(A-E)(B-E)=E，可以反过来也就是 (B-E)(A-E)=E，展开即可。
+
+对于 C，按照 A(B-E)=B，以及反过来，都可以得到 R(A)<=R(B)，R(B)<=R(A)
+
+对于 D，设 a 为 B 的特征值，代入反解即可。
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClJq8dUsSRvupBBoBRHP-36h2p55EgAC4hNrG1ziiFdzyBdofqOc3AEAAwIAA3gAAz0E)
+
+本题 -8。
+
+不等式证明积累一下：
+
+sqrt(1+x^2)<=1+|x|，这个确实不会。
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClNq8dVcSiqIaXeqnbRMbfArMrCPbAAC4xNrG1ziiFcsP90hB4WWqgEAAwIAA3gAAz0E)
+
+-12，先过，等超越写完之后再看（我记得这类题在张宇基础 1000 的微分方程那一章有类似的）
+
+### 27 张 8  5
+
+- 完成时间：20261112
 - 分数：
   - 选择：
   - 填空：
   - 大题：
 - 时间：
 
-### 27 张八 4
+### 27 张 8  6
 
-- 完成时间：20261101
+- 完成时间：20261110
+- 分数：140
+  - 选择：-5
+  - 大题：-5
+- 时间：90
+
+这份卷子也是出的非常简单，不过有些题目还是卡了我一小下的，这里都总结复盘一下。
+
+比如说第 18 题和第 19 题其实都算卡了我一下，不过最后都分析出来了。
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClVq8tN0Athnjo_QBJJZeyYRzN9ohQAC0RdrG2mqmFcEqG39sl2X6AEAAwIAA3gAAz0E)
+
+这道题一开始没反应过来，直接跳了，猜了一个 D 上去，后来回过头来想了一下，其实就是把这个 i/n 换成 x，里面的 sinx/x 的 x 换成 t，然后套上一整个对 0 到 1 对 x 的积分，分部积分一下就出来了。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClZq8tO4TykOR8R1irAjcZfvpNdGkwAC1hdrG2mqmFeO7v9TTW0rrQEAAwIAA3gAAz0E)
+
+这道题我是直接没写，猜了一个答案上去，最后错了。我似乎一直都很不会做这类题。
+
+不过很显然 r(AB)<=2，r(BA)<=1，这个我是写出来了的，然后就填了一个 A 上去。
+
+再次分析一下，有非零公共解的意思是说 r(上 AB 下 BA) 的秩小于 3（这个没反应过来），该秩是 ＜= r(AB)+r(BA) = 3 的，所以不一定。
+
+而下面那个就很显然了，r(ABA)+r(BAB)<=2，所以必然有非零公共解。
+
+![9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClhq8tVR_ZC9sqTvaCYN5361B8SpVwAC4RdrG2mqmFdh13DkOqoJ5wEAAwIAA3gAAz0E)
+
+我当时的想法是，ABD 特征值都一样，减去本身之后特征向量求出来应该是不一样的，排除这三个。
+
+然后就 C 特征值不一样，所以填了一个 C 上去。
+
+当然这种想法是半错的，所以这道题也是纯运气做对的。
+
+对于 ABD 而言，这句是对的，不过也有矩阵不一样，特征值一样得出来相同的特征向量，比如说对角矩阵 1,2 和对角矩阵 2,1。
+
+对于 C，正确思路应该是背结论，也就是 AB=BA，我觉得有点阴。
+
+这个结论的证明可以反解出 A=P 伽马 P 的逆，然后 AB 和 BA 分别计算可以得出。
+
+![9 结论](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClpq8tZdD_3dMT7XwSwVIcZeEK9oMwACAxhrG2mqmFcQKxkh8aCa_AEAAwIAA3gAAz0E)
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCldq8tTnR72u6JApkkl2uwABBwkxnewAAt4XaxtpqphXWeCT1Ho4Gi8BAAMCAAN4AAM9BA)
+
+这道题没严谨做，是对的不过只是把 a 带进去算了一下，然后写了一个 B 就跑了。
+
+本题应该是把 AB=AC，然后 A(B-C)=0，从而得出 R(A)<=2，所以可以 A 的行列式，得出来可以是 1 或 7。
+
+![14](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCllq8tWFGSj5Y1diyDo-DDGLF9Gg9QAC4hdrG2mqmFeJFn8HuAOmugEAAwIAA3gAAz0E)
+
+这道题一下子没反应过来，不过想了一下，就知道应该是圆的周长乘单位面积。
+
+![17](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCltq8taGTEC1xv6b1qf0G7v9WcOyRAACIBhrG2mqmFc8qyd7YgU_CAEAAwIAA3gAAz0E)
+
+本题 -5。
+
+想当然了，本题对于 b 的求解有问题，两项 a-b，我对前者的分母单独做了变换，这是一个很低级的错误，并且我认为需要非常注意。
+
+### 27 张 8  7
+
+- 完成时间：20261110
 - 分数：
   - 选择：
   - 填空：
   - 大题：
 - 时间：
 
-### 27 张八 5
+### 27 张 8  8
 
-- 完成时间：20261102
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+- 完成时间：20261110
+- 分数：145
+  - 选择：-5
+- 时间：120
 
-### 27 张八 6
+这份卷子也不难，可以说是非常简单的级别，没造成什么障碍，值得注意的就是第 2 题和最后一题线代。
 
-- 完成时间：20261103
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+最后一道线代计算量很大，所以先去检查了一下前面的题，然后花了很久的时间算了一下线代（一直怀疑自己是错的，因为算出来太猎奇了）
 
-### 27 张八 7
+检查是我知道第 14 题计算题问题很大，所以特地多检查了几遍，才检查出来这道题哪里算错，其他倒是都对了。
 
-- 完成时间：20261104
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+![2](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACClxq8wm-Hqy8lLu6IWv-sDTyyd_K7wACCxlrG2mqmFfwe6HEvqfgpgEAAwIAA3gAAz0E)
 
-### 27 张八 8
+本题理解错误，我觉得需要很重视。可以选出来 Gx=0，Gy=0 和 Gz≠0，所以也就是 -Gx/Gz，-Gy/Gz 存在，然后我竟然直接选了 D。
 
-- 完成时间：20261105
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+分析一下，显然 -Gx/Gz = Zx，-Gy/Gz=Zy。
+
+### 27 张 8 总结
+
+总结一下，我觉得张 8 更多的是找感觉，大题基本不难，选填需要再看看。
+
+很多题目很明显都可以感受得出来是真题改编的。
+
+以及还有一些冷门的知识点可以当补充，比如说张 8 卷子 4 的那个神秘物理题。
+
+尤其是线代选择题，准备穿插写一下 660 的线代选择。
+
+## 660 线代 1 刷（仅选择，挑着刷）
+
+![549](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCl1q8xTuDgfal7raZFv2krIcSNSl0AACSRlrG2mqmFfawizKSBiwdAEAAwIAA3kAAz0E)
+
+对拉普拉斯公式的理解错误。
+
+拉普拉斯公式应该一步步来，也就是先算 A 和 BC，也就是先提出去 -1^(m)(n+t)，然后再提取 -1^nt，最后加起来，所以应该是 D，而不是 B。
+
+![559](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCl9q8xaPh3f4qvG_WfRkmi27mz4RRgACThlrG2mqmFckuGQqrlGIDgEAAwIAA3gAAz0E)
+
+注意 “形”，这也是我经常错的点。
+
+![583](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmBq8xjaAsVD8H8n9DmH_WS0gwf55QACVRlrG2mqmFfWMkNGXwyrxQEAAwIAA3gAAz0E)
+
+等价，何为等价，指的是秩相等。而且对于 B 而言，看清楚题目，问的是到 E，而不是 A 和 B 相互（也就是 D 那样）
+
+![604](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmFq9DYIjEIRPTZxdbqPFyqIxsDs_QAC7BxrG9ZZoVcIf7rQdea2tQEAAwIAA3cAAz0E)
+
+本题知道 C 一定是对的，但是不知道 D。这道题分量的意思是说，一行的某一个值改掉，而不是塞一个 0 向量作为新的列向量。
+
+![613](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmJq9DogBJ8tT5Ddj0f5rqwtOEYCRgAC8hxrG9ZZoVduLQ0ZJuHexQEAAwIAA3cAAz0E)
+
+这道题可以注意一下，注意一下矩阵乘的顺序，也就是 4✖️4,4✖️3
+
+![615](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmNq9Dqq9nyB0RCbbPuSDXj_TDL1zAAC9BxrG9ZZoVc2FitlLE4SrwEAAwIAA3cAAz0E)
+
+这道题脑子晕晕的，没想出来选啥，显然是A，因为A 可能有重复的问题。
+
+![630](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmVq9D09MoMiz91N07OztQzACvL7VQAC-RxrG9ZZoVc6-EPGyUrBKwEAAwIAA3cAAz0E)
+
+惯性思维了，想一下 m✖️n，m 特别大 n 特别小的情况。
+
+![638](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmZq9D-smf1CdUQWU3RrGcn6VEhCmQACAR1rG9ZZoVc_Szd3-4JdRQEAAwIAA3cAAz0E)
+
+这类题我是背诵的，我觉得得自己推导一遍，结果第一个就没推导出来。后面三个好推导其实，但是第一个就不能用后三个推导的思维。
+
+因为存在，所以取一个 A 的逆就完事了。
+
+![641](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmdq9EDKZV8E3E6bOMWN3zfw528sXgACBB1rG9ZZoVf8dwGIH_9_TgEAAwIAA3cAAz0E)
+
+这道题一眼看出来 B 是对的，但是 D 为什么是错的呢？
+
+![641 D](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmhq9EDpepXZYwH9ErfTItOMK58mwQACBR1rG9ZZoVfwh_xeYqR5wwEAAwIAA3gAAz0E)
+
+## 25 超越
+
+### 25 超越 1
+
+### 25 超越 2
+
+### 25 超越 3
+
+### 25 超越 4
+
+### 25 超越 5
+
+### 25 超越 6
+
+### 25 超越 7
+
+### 25 超越 8
+
+### 25 超越 9
+
+### 25 超越 10
 
 ## 24 超越
 
@@ -9859,7 +10045,7 @@ C 的证明就不看了，感觉难以理解。从直观上来讲，奇数项单
   - 大题：-4-8-6
 - 时间：105
 
-决定先写张八了。超越系列的卷子先丢一边，而且也应该先写 25 超越。
+决定先写张 8 了。超越系列的卷子先丢一边，而且也应该先写 25 超越。
 
 今天允许自己摆烂一天思考进程。
 
@@ -9867,7 +10053,7 @@ C 的证明就不看了，感觉难以理解。从直观上来讲，奇数项单
 
 感觉本质上是超越的题有一些些偏和难，但是上岸的学长就考的很好。
 
-我还是觉得得先把真题写完，然后写张八，而不是继续死磕超越。
+我还是觉得得先把真题写完，然后写张 8，而不是继续死磕超越。
 
 27 李 6 只有一点点怪偏难的题（第 6 份除外），所以也应该秉持信念，好好学，而不是像现在这样子感觉纯把考研当儿戏。
 
@@ -10025,29 +10211,63 @@ C 的证明就不看了，感觉难以理解。从直观上来讲，奇数项单
 
 小总结一下，这份卷子的低级错误就是第 4 和 22，也就是至少得 +9 分，剩下的确实认了，思路问题需要积累。
 
-## 25 超越
+## 27 张 4
 
-### 25 超越 1
+## 27 李 4
 
-### 25 超越 2
+## 26 张 4
 
-### 25 超越 3
+## 26 李 6
 
-### 25 超越 4
+- 完成时间：20261006-
+- 平均分：
+- 平均作答时间：
 
-### 25 超越 5
+重新看了一遍遗憾邂逅的帖子，发现 26 李 6 质量很差，所以就先放弃了。
 
-### 25 超越 6
+正好 27 李 6 出了，转去做 27 李 6（听说质量不错）
 
-### 25 超越 7
+### 26 李 6 卷 1
 
-### 25 超越 8
+- 完成时间：20261006
+- 分数：132-15-10
+  - 选择：-10
+  - 大题：-8
+- 作答时间：150
 
-### 25 超越 9
+这份卷子写到后面发现太神秘了。而且这份卷子也是晚上写的，头脑晕晕的，对草稿纸我认为划分的还是不合理。
 
-### 25 超越 10
+做到最后半个小时没去检查，直接按照向下对答案，碰到错了看一遍草稿纸看看是不是简单错误或者一眼看出来的，是的分就加回去了。本来这份卷子应该选填额外 -15，不过选择 2 我知道这道题有其他可能性只是还没去写，填空 11 和 15 都是草稿纸上抄着抄着简单抄错，就算了，检查大概率是可以检查出来的（想了一下确实可以，因为这三题都画圈了）。
 
-## 27 张四
+此外对于大题，这份的大题太神秘了，我一开始写的时候感觉还好，但是越做越神秘，然后发现一堆奇奇怪怪的问题，好在最后把第 18 题，第 19 题，第 21 题第一问和第 22 题大部分做出来了，对于第 20 题知道大概怎么做，但是没做出来，最后问了一下 ai 才做出来的，重点是奇偶性问题，这个确实好久没做了忘光了。
+
+这份卷子按照自己的真实水平只有 115 附近，卷子还是要多练。还有就是写一步算一步的问题，这个也需要注意，一定要写一步算一步。想了一下，还是最后不想写了，感觉太难了想放弃。
+
+哈哈，迎难而上，坚持下去，从下一份开始又是全新的东西我说！吸取教训前进！
+
+但是没检查就是没检查，没得说，这份卷子我也会按照不合格来看待。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADxWrE-zeBdR8WKu8cIpfchMVmrPdDAAI2FGsbxNooVgAB4f3njlt0ZAEAAwIAA3gAAz0E)
+
+条件代入的时候直接代入错误。
+
+![8](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADxmrE-0m5EUFbQd8vAAGQ6Zj--5YzGgACNxRrG8TaKFa3FdJb6OXd9AEAAwIAA3gAAz0E)
+
+特征值法判断合同只有实对称矩阵的时候才成立。
+
+所以直接排除一些选项。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADx2rE-2s642zEfNR_Tlx3i3_i8rL4AAI4FGsbxNooVnv8baIdTB5DAQADAgADeAADPQQ)
+
+利用凹凸性凸函数的性质。
+
+确实不会。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQADyGrE-3w4XU_TWopGKNt0AAHyepKEaQACORRrG8TaKFYxFxg_IR3FgAEAAwIAA3gAAz0E)
+
+算到最后算昏头了，混淆了 $a$ 和 $b$。
+
+其实不会难。
 
 ## 数学真题 2 刷
 

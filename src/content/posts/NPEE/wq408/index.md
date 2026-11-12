@@ -9616,6 +9616,40 @@ CMCD/CA 协议
 
 ### DS 王道选择题 3 刷第 7 章
 
+红黑树相关先跳了（17-22）
+
+![7.3.9](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkdq8W06lUBkaLnKL3Hr0jjtb4b-ZQACGRNrG1ziiFeRaAbYdDuSlAEAAwIAA3gAAz0E)
+
+卡特兰数，本题本质上在问具有 5 个结点的二叉树共有多少种不同的形态。
+
+$$
+ C_n = \frac{1}{n+1} \binom{2n}{n} = \frac{(2n)!}{(n+1)!n!}
+$$
+
+![7.3.26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkhq8W-Gza3dvH3mmhQJToZ72AhoSAACJxNrG1ziiFeS4CwF3w3xSAEAAwIAA3gAAz0E)
+
+以下结论的遗忘。
+
+对于平衡二叉树，则需要满足整棵树左子树和右子树高只差的绝对值小于等于 1 即可，可以注意最少结点的平衡二叉树公式，即变式的斐波那契数列。对于高为 h 的 AVL 树，和标准斐波那契数列的关系是 N(h)=F(h+2)-1。标准斐波那契数列是 0,1,1,2,3,5,8,13,21。例如对于高为 5 的平衡二叉树，其最小应该是 13-1 即 12 的高度。
+
+![7.3.31](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCklq8W-67Y02-8T2wprgWwABrsChlcMAAisTaxtc4ohX6AF38ydrAd0BAAMCAAN4AAM9BA)
+
+没实质性分析 3，直接选。
+
+以上两题都是真题，我觉得不应该。
+
+本章第 4 节，写着写着突然意识到——如果计算最高的话，根节点要额外按 1 算。对于 5 阶 B 树，假设结点数有 x，计算其最大的高。
+
+这么算，除了根节点有 2 个孩子之外，其他结点都取 m/2 向上取整个孩子，记为 a 个孩子，而每个孩子至少有 a-1 个关键字。
+
+也就是 1+2(a-1)+2a(a-1)+2a^2(a-1)+...
+
+此外还需要辨析清楚关键字和结点的区别，以及——
+
+![7.4.5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkZq8WT6ZHFb3ECH4Lr8DoiMAAG03OMAAvoSaxtc4ohXG8OdltTUTOYBAAMCAAN4AAM9BA)
+
+叶结点的意思是空节点。
+
 ### DS 王道选择题 3 刷第 8 章
 
 ![8.3.10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCkNq8ECoIYDxxl2rZSRkTeiRpYyGeAACSBVrG1zigFcl8McLCfvQEQEAAwIAA3gAAz0E)
@@ -19211,6 +19245,25 @@ ff-ff-ff-ff-ff-ff
 2. 题目要求分析 A，我分析 B
 3. A 推 B 可以，B 推 A 可不可以？
 4. 计网需不需要考虑建立 TCP 连接
+
+### 408 2025 真题
+
+- 完成时间：20261109
+- 分数：135
+  - DS：-3（非最优解，不重要）
+  - 计组：-2，-5（引起注意）
+  - OS：-2，-3（前者非最优解，后者低级错误）
+- 时间：40+70+检查（检查只检查了选择题和计组 2 题，一分都没检查出来）
+
+-15，比我预想中的多 5 分。
+
+首先是 OS，这个我觉得 -5 不应该。PV 操作这个，明明很显然只用起一个树坑的数量，初值为 3 即可，而我用了 int 变量加锁，所以显得很复杂，并且浇水的水桶也没敢去掉）。逻辑是对的，但是复杂了（盲等待）。
+
+然后后面一个 -3 的纯概念题我认为是轻视了，我当时写好了还说这道题不对可以跳了，结果还真扣了 3 分。
+
+计组扣了 7 分，第一个我觉得相对还行，一个是低级错误应该是 cache 的逻辑位，我看成了 tag，第二个是计算访问一个元素，我算成了访问整个数组需要的时间。第二个就是纯纯的没复习到位了（除法器），在考试考之前我还特地重新看了一遍除法器的原理，结果 9 分只拿了 4 分。
+
+DS 这个 3 分非最优解确实无所谓。
 
 ## DS-4.1f-1017 408 算法真题分析
 
