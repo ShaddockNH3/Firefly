@@ -13,7 +13,14 @@
 
 	interface Props {
 		ship: { n: string; f: string; t: string; r: string; i: string; av: string };
-		info: { art?: string; tch?: { u: number; m: number; l: number; ub?: string; lb?: string } | null; cp?: number; rt?: boolean };
+		info: {
+			art?: string;
+			refit?: string;
+			oath?: string;
+			tch?: { u: number; m: number; l: number; ub?: string; lb?: string } | null;
+			cp?: number;
+			rt?: boolean;
+		};
 		skins: Skin[];
 		owned?: boolean;
 		have?: number;
@@ -23,12 +30,29 @@
 
 	let { ship, info, skins, owned = false, have = 0, hasRecord = false, maxed = false }: Props = $props();
 
-	// -1 = 原始立绘
-	let cur = $state(-1);
+	type Entry = { n: string; i: string; k: string; sub: string; owned: boolean };
 
-	const art = $derived(info.art || ship.av);
-	const shown = $derived(cur >= 0 && skins[cur] ? skins[cur].i : art);
-	const shownName = $derived(cur >= 0 && skins[cur] ? skins[cur].n : "原始立绘");
+	// 通常 → 各套换装 → 改造 → 誓约
+	const entries = $derived<Entry[]>([
+		{ n: "通常", i: info.art || ship.av, k: "", sub: "", owned: true },
+		...skins.map((k) => ({
+			n: k.n,
+			i: k.i,
+			k: k.k,
+			sub: [k.th, k.y].filter(Boolean).join(" · "),
+			owned: !!k.owned,
+		})),
+		...(info.refit ? [{ n: "改造", i: info.refit, k: "改造", sub: "", owned: true }] : []),
+		...(info.oath ? [{ n: "誓约", i: info.oath, k: "誓约", sub: "", owned: false }] : []),
+	]);
+
+	const defIdx = $derived(entries.findIndex((e) => e.k === "改造"));
+
+	let picked = $state<number | null>(null);
+	const idx = $derived(picked ?? (defIdx >= 0 ? defIdx : 0));
+
+	const skinCount = $derived(entries.length - 1);
+	const ownedCount = $derived(entries.filter((e) => e.k !== "" && e.owned).length);
 
 	const need = $derived(info.cp && info.cp > 0 ? info.cp : 1);
 	const tiers = ["0 破", "1 破", "2 破", "未改造", "满破"];
@@ -62,8 +86,8 @@
 
 <div class="sp">
 	<div class="sp-media">
-		<img src={shown} alt={ship.n} referrerpolicy="no-referrer" />
-		<div class="sp-cap">{shownName}</div>
+		<img src={entries[idx].i} alt={ship.n} referrerpolicy="no-referrer" />
+		<div class="sp-cap">{entries[idx].n}</div>
 	</div>
 
 	<div class="sp-info">
@@ -78,7 +102,7 @@
 		</div>
 
 		<div class="sp-block">
-			<div class="sp-t">复制人</div>
+			<div class="sp-t">战力复制人</div>
 			<div class="sp-mx">
 				<span></span>
 				{#each tiers as t, k (t)}<span class="sp-h" data-dim={slots.length === 4 && k === 3}>{t}</span>{/each}
@@ -105,7 +129,7 @@
 						· {#if have >= need}<span class="sp-done">已练齐</span>{:else}还差 {need - have} 只{/if}
 					{/if}
 				{:else}
-					· <span class="sp-done" style="color:inherit;opacity:.8">未记录</span>
+					· <span style="opacity:.8">未记录</span>
 				{/if}
 			</div>
 		</div>
@@ -143,26 +167,21 @@
 
 <div class="sp-skins">
 	<div class="sp-skins-h">
-		换装 <span>共 {skins.length} 套{hasRecord ? ` · 已拥有 ${skins.filter((k) => k.owned).length}` : ""}</span>
+		换装 <span>共 {skinCount} 套{hasRecord ? ` · 已拥有 ${ownedCount}` : ""}</span>
 	</div>
 	<div class="sp-grid">
-		<button class="sp-sk" data-on={cur < 0} onclick={() => (cur = -1)}>
-			<div class="sp-sk-cv">
-				<img src={art} alt="原始立绘" loading="lazy" referrerpolicy="no-referrer" />
-				<span class="sp-badge">默认</span>
-			</div>
-			<div class="sp-sk-nm">原始立绘</div>
-			<div class="sp-sk-sub"></div>
-		</button>
-
-		{#each skins as k, idx (k.i)}
-			<button class="sp-sk" data-off={hasRecord && !k.owned} data-on={cur === idx} onclick={() => (cur = idx)}>
+		{#each entries as e, i (e.n + i)}
+			<button class="sp-sk" data-off={hasRecord && !e.owned} data-on={idx === i} onclick={() => (picked = i)}>
 				<div class="sp-sk-cv">
-					<img src={k.i} alt={k.n} loading="lazy" referrerpolicy="no-referrer" />
-					{#if k.k === "L2D"}<span class="sp-badge l2d">L2D</span>{/if}
+					<img src={e.i} alt={e.n} loading="lazy" referrerpolicy="no-referrer" />
+					{#if e.k === "L2D"}
+						<span class="sp-badge l2d">L2D</span>
+					{:else if e.k === "改造" || e.k === "誓约"}
+						<span class="sp-badge">{e.k}</span>
+					{/if}
 				</div>
-				<div class="sp-sk-nm">{k.n}</div>
-				<div class="sp-sk-sub">{[k.th, k.y].filter(Boolean).join(" · ") || "—"}</div>
+				<div class="sp-sk-nm">{e.n}</div>
+				<div class="sp-sk-sub">{e.sub || "—"}</div>
 			</button>
 		{/each}
 	</div>
@@ -288,14 +307,20 @@
 		background: color-mix(in oklch, var(--primary) 12%, transparent);
 		color: var(--primary);
 	}
-	:global(.dark) .sp-c[data-ok="true"] { color: #6ddbaa; }
+	:global(.dark) .sp-c[data-ok="true"] {
+		color: #6ddbaa;
+	}
 	.sp-note {
 		margin-top: 8px;
 		font-size: 0.72rem;
 		color: var(--content-meta);
 	}
-	.sp-done { color: #0a7452; }
-	:global(.dark) .sp-done { color: #6ddbaa; }
+	.sp-done {
+		color: #0a7452;
+	}
+	:global(.dark) .sp-done {
+		color: #6ddbaa;
+	}
 	.sp-tech {
 		display: flex;
 		gap: 18px;
@@ -346,9 +371,13 @@
 		color: var(--primary);
 		text-decoration: none;
 	}
-	.sp-wiki:hover { text-decoration: underline; }
+	.sp-wiki:hover {
+		text-decoration: underline;
+	}
 
-	.sp-skins { margin-top: 22px; }
+	.sp-skins {
+		margin-top: 22px;
+	}
 	.sp-skins-h {
 		display: flex;
 		align-items: baseline;
@@ -419,7 +448,9 @@
 		color: var(--primary);
 		letter-spacing: 0.03em;
 	}
-	.sp-badge.l2d { color: #b8681f; }
+	.sp-badge.l2d {
+		color: #b8681f;
+	}
 	.sp-sk-nm {
 		margin-top: 6px;
 		font-size: 0.78rem;
@@ -439,8 +470,16 @@
 	}
 
 	@media (max-width: 640px) {
-		.sp { flex-direction: column; gap: 16px; }
-		.sp-media { width: 200px; }
-		.sp-mx { grid-template-columns: 34px repeat(5, minmax(0, 1fr)); gap: 4px; }
+		.sp {
+			flex-direction: column;
+			gap: 16px;
+		}
+		.sp-media {
+			width: 200px;
+		}
+		.sp-mx {
+			grid-template-columns: 34px repeat(5, minmax(0, 1fr));
+			gap: 4px;
+		}
 	}
 </style>

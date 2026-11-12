@@ -36,7 +36,16 @@ H = {
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "src/data/azurlane"
 CACHE = ROOT / "scripts/.cache"
-POWER = ROOT.parent / "blhx-power/data/ships.json"
+for _cand in (
+    os.environ.get("AZURLANE_POWER"),
+    ROOT.parent / "shenmi/blhx-power/data/ships.json",
+    ROOT.parent / "blhx-power/data/ships.json",
+):
+    if _cand and Path(_cand).exists():
+        POWER = Path(_cand)
+        break
+else:
+    POWER = Path("/nonexistent")
 
 DISP = {
     "KizunaAI": "绊爱",
@@ -168,6 +177,25 @@ def main():
             arts[re.sub(r"立绘\.jpg$", "", nm)] = ii[0].get("thumburl") or ii[0]["url"]
         print(f"  {min(i + 50, len(names))}/{len(names)}", flush=True)
 
+    # 3.5 改造 / 誓约 立绘
+    print("[3.5/4] 改造与誓约立绘", flush=True)
+    extra_art = {"改造": {}, "誓约": {}}
+    for kind in ("改造", "誓约"):
+        titles = [f"File:{n}{kind}.jpg" for n in names]
+        for i in range(0, len(titles), 50):
+            d = api({
+                "action": "query", "titles": "|".join(titles[i:i + 50]), "prop": "imageinfo",
+                "iiprop": "url", "iiurlwidth": "700", "format": "json", "formatversion": "2",
+            })
+            for p in d.get("query", {}).get("pages", []):
+                ii = p.get("imageinfo")
+                if not ii:
+                    continue
+                nm = re.sub(r"^(File|文件):", "", p["title"])
+                nm = re.sub(f"{kind}\\.jpg$", "", nm)
+                extra_art[kind][nm] = ii[0].get("thumburl") or ii[0]["url"]
+        print(f"  {kind} {len(extra_art[kind])} 张", flush=True)
+
     # 4. 换装
     print("[4/4] 换装", flush=True)
     wiki = cached("skins.wiki", "https://wiki.biligame.com/blhx/index.php?title="
@@ -183,12 +211,14 @@ def main():
         if len(p) < 14:
             continue
         ship, _stype, _fac, name, seq, theme, price, _src, _diff, l2d, _bg, _pend, _note, date = p[:14]
-        img = imgs.get(f"{ship}{seq}.jpg")
+        fname = f"{ship}{seq}.jpg"
+        img = imgs.get(fname)
         if not img:
             continue
         skins.append({
             "s": ship,
             "n": name,
+            "_seq": seq,
             "k": "L2D" if l2d.strip("\\") else "静态",
             "th": theme.strip("\\"),
             "y": date[:4] if date[:4].isdigit() else "",
@@ -196,6 +226,28 @@ def main():
             "p": price.strip("\\"),
             "i": img,
         })
+    # 页面里是 250px 缩略图，换成能取到的最大尺寸（原图不足 700px 时 wiki 会直接给原图）
+    print("  取高清图", flush=True)
+    uniq = sorted({f"{k['s']}{k['_seq']}.jpg" for k in skins})
+    hd = {}
+    for i in range(0, len(uniq), 50):
+        d = api({
+            "action": "query", "titles": "|".join(f"File:{f}" for f in uniq[i:i + 50]),
+            "prop": "imageinfo", "iiprop": "url", "iiurlwidth": "700",
+            "format": "json", "formatversion": "2",
+        })
+        for p in d.get("query", {}).get("pages", []):
+            ii = p.get("imageinfo")
+            if not ii:
+                continue
+            nm = re.sub(r"^(File|文件):", "", p["title"])
+            hd[nm] = ii[0].get("thumburl") or ii[0]["url"]
+        if i % 300 == 0:
+            print(f"    {i}/{len(uniq)}", flush=True)
+    for k in skins:
+        k["i"] = hd.get(f"{k['s']}{k['_seq']}.jpg", k["i"])
+    for k in skins:
+        k.pop("_seq", None)
     print(f"  {len(skins)} 套", flush=True)
 
     # 5. 科技点 / 复制人（来自 blhx-power，缺了就留空）
@@ -223,7 +275,7 @@ def main():
             return "联动"
         if s["n"].endswith("改"):
             return "改造"
-        if "布里" in s["n"]:
+        if s["n"].startswith(("泛用型布里", "试作型布里", "特装型布里")):
             return "特殊"
         return "常规"
 
@@ -233,6 +285,8 @@ def main():
         p = power.get(s["n"]) or {}
         detail[s["n"]] = {
             "art": arts.get(s["n"], ""),
+            "refit": extra_art["改造"].get(s["n"], ""),
+            "oath": extra_art["誓约"].get(s["n"], ""),
             "tch": {"u": p["u"], "m": p["m"], "l": p["l"], "ub": p["ub"], "lb": p["lb"]} if p else None,
             "cp": p.get("cp", 0),
             "rt": p.get("rt", False),
