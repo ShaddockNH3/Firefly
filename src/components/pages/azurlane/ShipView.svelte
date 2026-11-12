@@ -89,6 +89,7 @@
 	}
 </script>
 
+<div class="sp-wrap">
 <div class="sp">
 	<div class="sp-media">
 		<img src={entries[idx].i} alt={ship.n} referrerpolicy="no-referrer" />
@@ -184,6 +185,7 @@
 		{/each}
 	</div>
 </div>
+</div>
 
 <style>
 	.sp {
@@ -256,6 +258,7 @@
 	.sp-prog {
 		display: inline-flex;
 		align-items: center;
+		flex-wrap: wrap;
 		gap: 14px;
 		padding-left: 12px;
 		border-left: 1px solid var(--line-divider);
@@ -265,6 +268,7 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 5px;
+		white-space: nowrap;
 	}
 	.sp-prog i {
 		width: 5px;
@@ -490,17 +494,20 @@
 		text-overflow: ellipsis;
 	}
 
-	@media (max-width: 640px) {
+	.sp-wrap {
+		container-type: inline-size;
+	}
+	@container (max-width: 640px) {
 		.sp {
 			flex-direction: column;
 			gap: 16px;
 		}
 		.sp-media {
 			width: 100%;
+			max-width: 340px;
 		}
 		.sp-mx {
-			grid-template-columns: 34px repeat(5, minmax(0, 1fr));
-			gap: 4px;
+			grid-template-columns: 30px repeat(5, minmax(0, 1fr));
 		}
 		.sp-prog {
 			padding-left: 0;

@@ -51,6 +51,9 @@
 	const base = $derived(skins.filter((k) => matchType(k) && matchQ(k)));
 	const list = $derived(base.filter(matchOwn));
 
+	// 改造和婚纱固定排最后，其余按组内数量倒序
+	const LAST: Record<string, number> = { 改造: 100, 誓约: 101 };
+
 	const groups = $derived.by(() => {
 		const m = new Map<string, Skin[]>();
 		for (const k of list) {
@@ -58,7 +61,12 @@
 			if (!m.has(g)) m.set(g, []);
 			m.get(g)!.push(k);
 		}
-		return [...m.entries()].sort((a, b) => b[1].length - a[1].length);
+		return [...m.entries()].sort((a, b) => {
+			const ra = LAST[a[0]] ?? 0;
+			const rb = LAST[b[0]] ?? 0;
+			if (ra !== rb) return ra - rb;
+			return b[1].length - a[1].length;
+		});
 	});
 
 	const countOwn = $derived({
