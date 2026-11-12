@@ -37,6 +37,8 @@ const pages = resolvePageToggles({
 	azurlane: true,
 	// galgame 页面开关
 	galgame: true,
+	// 战舰世界页面开关
+	wows: true,
 
 	// ── 关于 (About) ──────────────────────────────────
 

@@ -56,6 +56,11 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		url: "#",
 		icon: "material-symbols:interests",
 		children: [
+			{ type: "caption", name: "主机游戏", url: "" },
+
+			// 战舰世界
+			LinkPresets.Wows,
+
 			{ type: "caption", name: "二游", url: "" },
 
 			// 碧蓝航线
@@ -235,6 +240,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/azurlane/",
 		icon: "material-symbols:sailing",
 		pageKey: "azurlane",
+	},
+	Wows: {
+		name: "战舰世界",
+		url: "/wows/",
+		icon: "material-symbols:anchor",
+		pageKey: "wows",
 	},
 	Galgame: {
 		name: "作品列表",
