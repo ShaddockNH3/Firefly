@@ -346,6 +346,9 @@
 		border: none;
 		background: rgb(0 0 0 / 0.86);
 		cursor: zoom-out;
+		display: none;
+	}
+	.sw-zoom[open] {
 		display: flex;
 		align-items: center;
 		justify-content: center;
