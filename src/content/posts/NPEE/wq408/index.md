@@ -19253,7 +19253,7 @@ ff-ff-ff-ff-ff-ff
   - DS：-3（非最优解，不重要）
   - 计组：-2，-5（引起注意）
   - OS：-2，-3（前者非最优解，后者低级错误）
-- 时间：40+70+检查（检查只检查了选择题和计组 2 题，一分都没检查出来）
+- 时间：40+70+ 检查（检查只检查了选择题和计组 2 题，一分都没检查出来）
 
 -15，比我预想中的多 5 分。
 
@@ -19264,6 +19264,22 @@ ff-ff-ff-ff-ff-ff
 计组扣了 7 分，第一个我觉得相对还行，一个是低级错误应该是 cache 的逻辑位，我看成了 tag，第二个是计算访问一个元素，我算成了访问整个数组需要的时间。第二个就是纯纯的没复习到位了（除法器），在考试考之前我还特地重新看了一遍除法器的原理，结果 9 分只拿了 4 分。
 
 DS 这个 3 分非最优解确实无所谓。
+
+### 408 2026 真题
+
+- 完成时间：20261113
+
+### 408 27 王道模拟 1
+
+- 完成时间：20261115
+
+### 408 27 王道模拟 2
+
+- 完成时间：20261117
+
+### 408 27 王道模拟 3
+
+- 完成时间：20261119
 
 ## DS-4.1f-1017 408 算法真题分析
 
@@ -19295,17 +19311,13 @@ DS 这个 3 分非最优解确实无所谓。
 
 按大纲数一下，线性表（数组加链表）占了一半以上，树 3 道，图 3 道，查找 1 道。另外 21、23、24 连续考邻接矩阵，这个得留意。
 
-题单最后一列是优先级，按离考纲的距离分了五档，别看见题就刷。
+题单砍过一轮。原来八十多道，力扣味太重、跟真题对不上的全删了，现在剩 24 道。留下的不是「练手」，是同一套路的另一种问法，每道都能对上某一年真题，所以标准是：不看题解能写出来，写完能说清复杂度和边界。对着答案抄一遍不算。
 
-- 必做：真题同构或者考纲直接要求，不做就是送分。
-- 高优先级：同一套路的变式，真题换个壳就可能考。
-- 中优先级：思路是通的，但形式偏力扣，比如 N 叉树、二分图，学有余力再做。
-- 低优先级：明显超出 408，多源 BFS、并查集、BFS 求最短路这些，不做也不影响。
-- 满分冲刺：比 408 难不少，但能拔高思维，堆优化、对顶堆、LRU 这类，目标 130+ 再碰，不然直接跳过。
+优先级只留两档。必做是不做就送分，高优先级是换个壳就可能考。中间那几档都删了，408 到不了那个难度，练了也不涨分。
 
 ### 专题一：顺序表与数组（原地操作、计数、划分、多指针）
 
-这块是主力，套路就四类：原地逆置删除、拿值当下标、划分、多指针。
+真题 6 道，套路就四类：原地逆置删除、拿值当下标、划分、多指针。
 
 #### 2010 年第 42 题｜一维数组循环左移 p 位
 
@@ -19325,7 +19337,7 @@ DS 这个 3 分非最优解确实无所谓。
 
 最优解：摩尔投票，候选值加一个计数器，相同加一，不同减一，减到 0 就换候选。第二遍再数一次 cand 出现的次数，真的超过 n/2 才算。O(n) 时间 O(1) 空间。
 
-坑在第二步。投票只保证「有主元素的话一定是 cand」，像 (1,2,3) 会投出 3，但 3 并不是主元素，不验证就错。
+第二步不能省。投票只保证「有主元素的话一定是 cand」，像 (1,2,3) 会投出 3，但 3 并不是主元素，不验证就错。
 
 #### 2016 年第 43 题｜集合划分（个数差最小、和差最大）
 
@@ -19345,7 +19357,7 @@ DS 这个 3 分非最优解确实无所谓。
 
 最优解：原地哈希，把值 x 换到下标 x-1 的位置，扫完看第一个 `A[i] != i+1` 的位置，答案就是 i+1，全对就是 n+1。O(n) 时间 O(1) 空间。
 
-注意答案只可能在 1 到 n+1 之间，负数和大于 n 的直接不管。交换要用 while 不能只写 if，换过来的新值还得继续判。
+答案只可能在 1 到 n+1 之间，负数和大于 n 的直接不管。交换要用 while 不能只写 if，换过来的新值还得继续判。
 
 #### 2020 年第 41 题｜三元组最小距离
 
@@ -19365,35 +19377,21 @@ D 其实就是 2×(最大值减最小值)，盯住三个数的极值就行。挪
 
 最优解：从右往左扫，维护「包括 `A[i]` 在内」的后缀最大值和最小值，`res[i]` 就是 `A[i]×sufMax` 和 `A[i]×sufMin` 里大的那个。O(n) 时间 O(1) 空间。
 
-坑在负负得正，只记最大值一定错。还有 i≤j 这个条件，后缀必须包含 `A[i]` 自己，所以是先拿 `A[i]` 更新，再算 `res[i]`。
+负负得正，只记最大值一定错。还有 i≤j 这个条件，后缀必须包含 `A[i]` 自己，所以是先拿 `A[i]` 更新，再算 `res[i]`。
 
 来源：25 年真题，拿厦门工学院版答案和掌上考研的 PDF 对过。
 
 #### 题单：数组与顺序表
 
-| 题号 | 题目 | 对应考点 | 优先级 |
+6 道真题正好对应 5 道题，一题一个套路，没有重复。
+
+| 题号 | 题目 | 为什么留 | 优先级 |
 | --- | --- | --- | --- |
-| [27](https://leetcode.cn/problems/remove-element/) | 移除元素 | 原地删除 + 双指针，循环左移的退化版 | 必做 |
-| [26](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) | 删除有序数组中的重复项 | 原地去重 | 必做 |
-| [283](https://leetcode.cn/problems/move-zeroes/) | 移动零 | 原地移动，等价于「左边全非零」的循环移位 | 必做 |
-| [704](https://leetcode.cn/problems/binary-search/) | 二分查找 | 有序数组定位，一切二分的模板 | 必做 |
-| [977](https://leetcode.cn/problems/squares-of-a-sorted-array/) | 有序数组的平方 | 双指针从两端取大 | 必做 |
-| [209](https://leetcode.cn/problems/minimum-size-subarray-sum/) | 长度最小的子数组 | 滑动窗口 | 高优先级 |
-| [59](https://leetcode.cn/problems/spiral-matrix-ii/) | 螺旋矩阵 II | 下标边界控制，408 爱考边界 | 高优先级 |
-| [41](https://leetcode.cn/problems/first-missing-positive/) | 缺失的第一个正数 | 直接对应 2018 年第 41 题 | 必做 |
-| [448](https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/) | 找到所有数组中消失的数字 | 值作下标原地标记 | 必做 |
-| [442](https://leetcode.cn/problems/find-all-duplicates-in-an-array/) | 数组中重复的数据 | 同上，负数标记法 | 高优先级 |
-| [169](https://leetcode.cn/problems/majority-element/) | 多数元素 | 直接对应 2013 年第 41 题，摩尔投票 | 必做 |
-| [229](https://leetcode.cn/problems/majority-element-ii/) | 多数元素 II | 投票法扩展（超过 n/3） | 高优先级 |
-| [215](https://leetcode.cn/problems/kth-largest-element-in-an-array/) | 数组中的第 K 个最大元素 | 快速选择，对应 2016 年第 43 题的 partition | 必做 |
-| [75](https://leetcode.cn/problems/sort-colors/) | 颜色分类 | 三路划分，partition 的另一副面孔 | 必做 |
-| [912](https://leetcode.cn/problems/sort-an-array/) | 排序数组 | 手写快排、归并、堆排，408 只考思想但要会写 | 必做 |
-| [88](https://leetcode.cn/problems/merge-sorted-array/) | 合并两个有序数组 | 三指针从后往前，空间 O(1) | 必做 |
-| [16](https://leetcode.cn/problems/3sum-closest/) | 最接近的三数之和 | 多指针维护最小差，与 2020 年第 41 题最像 | 高优先级 |
-| [15](https://leetcode.cn/problems/3sum/) | 三数之和 | 排序 + 双指针去重 | 高优先级 |
-| [11](https://leetcode.cn/problems/container-with-most-water/) | 盛最多水的容器 | 双指针贪心，移动较小者的同一逻辑 | 高优先级 |
-| [56](https://leetcode.cn/problems/merge-intervals/) | 合并区间 | 排序后一次扫描 | 高优先级 |
-| [349](https://leetcode.cn/problems/intersection-of-two-arrays/) | 两个数组的交集 | 哈希去重入门 | 高优先级 |
+| [189](https://leetcode.cn/problems/rotate-array/) | 轮转数组 | 2010 年那道本身，三次逆置 | 必做 |
+| [41](https://leetcode.cn/problems/first-missing-positive/) | 缺失的第一个正数 | 2018 年原题，原地哈希 | 必做 |
+| [169](https://leetcode.cn/problems/majority-element/) | 多数元素 | 2013 年原题，摩尔投票 | 必做 |
+| [215](https://leetcode.cn/problems/kth-largest-element-in-an-array/) | 数组中的第 K 个最大元素 | 2016 年那个 partition，快速选择 | 必做 |
+| [16](https://leetcode.cn/problems/3sum-closest/) | 最接近的三数之和 | 2020 年同构，多指针缩范围 | 高优先级 |
 
 ### 专题二：单链表（双指针、长度差、原地重排）
 
@@ -19407,7 +19405,7 @@ D 其实就是 2×(最大值减最小值)，盯住三个数的极值就行。挪
 
 最优解：快慢指针，快指针先走 k 步，走不满 k 步说明链表不够长，直接返回 0；然后两个一起走，快指针到表尾时慢指针就是倒数第 k 个。O(n) 时间 O(1) 空间，一遍扫描。
 
-坑在带头结点，快指针得从第一个数据结点开始数。k 大于表长必须先判掉，不然会空指针。
+带头结点的话，快指针得从第一个数据结点开始数。k 大于表长必须先判掉，不然会空指针。
 
 #### 2012 年第 42 题｜两个链表的共同后缀起始位置
 
@@ -19417,7 +19415,7 @@ D 其实就是 2×(最大值减最小值)，盯住三个数的极值就行。挪
 
 最优解：分别求长度，长的先走长度差，然后两个一起走，第一个地址相同的结点就是起点。O(m+n) 时间 O(1) 空间。
 
-坑在比较条件，要比 `p1 == p2`，比 data 相等就错了，这是本题最大的失分点。另外后缀长度不会超过较短的那条表。
+比较条件是最容易翻车的地方，要比 `p1 == p2`，比 data 相等就错了。另外后缀长度不会超过较短的那条表。
 
 #### 2015 年第 41 题｜链表按绝对值去重
 
@@ -19427,7 +19425,7 @@ D 其实就是 2×(最大值减最小值)，盯住三个数的极值就行。挪
 
 最优解：题目给了 |data|≤n，这个就是提示。开一个 n+1 的标记数组，一遍扫描，第一次出现打上标记，已经标记过的就用前驱把它删掉。O(m) 时间 O(n) 空间。
 
-删的时候必须留住前驱。比的是绝对值，21 和 -21 算重复。留第一次出现的那个。
+删的时候必须留住前驱。比的是绝对值，21 和 -21 算重复，留第一次出现的那个。
 
 #### 2019 年第 41 题｜链表重排
 
@@ -19441,27 +19439,15 @@ n 是奇数时前半段会多一个结点，合并完记得把尾结点的 next 
 
 #### 题单：单链表
 
-| 题号 | 题目 | 对应考点 | 优先级 |
+四道真题全是双指针和长度差，题单就按这四条各配一道。
+
+| 题号 | 题目 | 为什么留 | 优先级 |
 | --- | --- | --- | --- |
-| [203](https://leetcode.cn/problems/remove-linked-list-elements/) | 移除链表元素 | 虚拟头结点 + 删除 | 必做 |
-| [707](https://leetcode.cn/problems/design-linked-list/) | 设计链表 | 增删改查全套，408 链表题的基本功 | 必做 |
-| [206](https://leetcode.cn/problems/reverse-linked-list/) | 反转链表 | 逆置，2019 年第 41 题的第二步 | 必做 |
-| [92](https://leetcode.cn/problems/reverse-linked-list-ii/) | 反转链表 II | 区间逆置，控制边界 | 高优先级 |
-| [24](https://leetcode.cn/problems/swap-nodes-in-pairs/) | 两两交换链表中的节点 | 指针交换 | 高优先级 |
-| [19](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | 删除链表的倒数第 N 个结点 | 直接对应 2009 年第 42 题 | 必做 |
-| [876](https://leetcode.cn/problems/middle-of-the-linked-list/) | 链表的中间结点 | 快慢指针，找中点 | 必做 |
-| [160](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | 相交链表 | 直接对应 2012 年第 42 题 | 必做 |
-| [面试题 02.07](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/) | 链表相交 | 同上，长度差做法 | 必做 |
-| [141](https://leetcode.cn/problems/linked-list-cycle/) | 环形链表 | 快慢指针判环 | 必做 |
-| [142](https://leetcode.cn/problems/linked-list-cycle-ii/) | 环形链表 II | 判环 + 找入环点，推导要会 | 必做 |
-| [143](https://leetcode.cn/problems/reorder-list/) | 重排链表 | 直接对应 2019 年第 41 题，三步全在里面 | 必做 |
-| [234](https://leetcode.cn/problems/palindrome-linked-list/) | 回文链表 | 找中点 + 逆置 + 比对 | 高优先级 |
-| [21](https://leetcode.cn/problems/merge-two-sorted-lists/) | 合并两个有序链表 | 尾插合并，408 常考思想 | 必做 |
-| [23](https://leetcode.cn/problems/merge-k-sorted-lists/) | 合并 K 个升序链表 | 两两合并 = 哈夫曼思想，对应 2012 年第 41 题 | 满分冲刺 |
-| [148](https://leetcode.cn/problems/sort-list/) | 排序链表 | 归并排序 + 找中点，O(n log n) O(1) 变式 | 满分冲刺 |
-| [83](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) | 删除排序链表中的重复元素 | 相邻去重 | 必做 |
-| [82](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) | 删除排序链表中的重复元素 II | 去重加强版，考前驱 | 高优先级 |
-| [25](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | K 个一组翻转链表 | 偏难，练指针操作可选 | 低优先级 |
+| [19](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | 删除链表的倒数第 N 个结点 | 2009 年原题，快慢指针 | 必做 |
+| [160](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | 相交链表 | 2012 年原题，长度差对齐 | 必做 |
+| [206](https://leetcode.cn/problems/reverse-linked-list/) | 反转链表 | 2019 年第一步，逆置是链表的基本功 | 必做 |
+| [143](https://leetcode.cn/problems/reorder-list/) | 重排链表 | 2019 年原题，三步全在里面 | 必做 |
+| [142](https://leetcode.cn/problems/linked-list-cycle-ii/) | 环形链表 II | 快慢指针的上限，判环还能找入口 | 高优先级 |
 
 ### 专题三：树与二叉树（遍历时带状态）
 
@@ -19475,7 +19461,7 @@ n 是奇数时前半段会多一个结点，合并完记得把尾结点的 next 
 
 最优解：递归先序，depth 当参数往下传，叶结点返回 depth×weight，非叶结点返回左右子树之和。O(n) 时间 O(h) 空间。
 
-注意只有叶结点算权重，根的深度是 0 不是 1。weight 这个域只有放在叶子上才有意义。
+只有叶结点算权重，根的深度是 0 不是 1。weight 这个域只有放在叶子上才有意义。
 
 #### 2017 年第 41 题｜表达式树转中缀表达式
 
@@ -19499,45 +19485,14 @@ n 是奇数时前半段会多一个结点，合并完记得把尾结点的 next 
 
 #### 题单：树与二叉树
 
-| 题号 | 题目 | 对应考点 | 优先级 |
+树只要会三种遍历加一个前驱，就够应付真题了。
+
+| 题号 | 题目 | 为什么留 | 优先级 |
 | --- | --- | --- | --- |
-| [144](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | 二叉树的前序遍历 | 递归 + 迭代两版都要会 | 必做 |
-| [94](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | 二叉树的中序遍历 | 判 BST 的基础 | 必做 |
-| [145](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | 二叉树的后序遍历 | 自底向上收集信息 | 必做 |
-| [102](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | 二叉树的层序遍历 | BFS 模板，WPL 的次优解靠它 | 必做 |
-| [199](https://leetcode.cn/problems/binary-tree-right-side-view/) | 二叉树的右视图 | 层序取每层最后一个 | 高优先级 |
-| [637](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) | 二叉树的层平均值 | 层序处理 | 高优先级 |
-| [515](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) | 在每个树行中找最大值 | 层序处理 | 高优先级 |
-| [429](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/) | N 叉树的层序遍历 | 层序扩展 | 中优先级 |
-| [226](https://leetcode.cn/problems/invert-binary-tree/) | 翻转二叉树 | 递归交换，树的入门 | 必做 |
-| [101](https://leetcode.cn/problems/symmetric-tree/) | 对称二叉树 | 双树对称递归 | 必做 |
-| [104](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) | 二叉树的最大深度 | 深度参数怎么写 | 必做 |
-| [111](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | 二叉树的最小深度 | 叶结点判定的坑 | 必做 |
-| [222](https://leetcode.cn/problems/count-complete-tree-nodes/) | 完全二叉树的节点个数 | 利用完全二叉树性质，O(log²n) | 高优先级 |
-| [110](https://leetcode.cn/problems/balanced-binary-tree/) | 平衡二叉树 | 自底向上返回高度 | 高优先级 |
-| [257](https://leetcode.cn/problems/binary-tree-paths/) | 二叉树的所有路径 | 路径 + 回溯 | 必做 |
-| [404](https://leetcode.cn/problems/sum-of-left-leaves/) | 左叶子之和 | 叶结点判定，与 WPL 同源 | 必做 |
-| [129](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) | 求根到叶子节点数字之和 | 路径累加，WPL 的最佳类比题 | 高优先级 |
-| [513](https://leetcode.cn/problems/find-bottom-left-tree-value/) | 找树左下角的值 | 层序 + 深度 | 高优先级 |
-| [112](https://leetcode.cn/problems/path-sum/) | 路径总和 | 递归带目标和 | 高优先级 |
-| [113](https://leetcode.cn/problems/path-sum-ii/) | 路径总和 II | 路径收集 | 高优先级 |
-| [105](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | 从前序与中序遍历序列构造二叉树 | 分治建树 | 高优先级 |
-| [106](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | 从中序与后序遍历序列构造二叉树 | 分治建树 | 高优先级 |
-| [654](https://leetcode.cn/problems/maximum-binary-tree/) | 最大二叉树 | 递归分治 | 高优先级 |
-| [617](https://leetcode.cn/problems/merge-two-binary-trees/) | 合并二叉树 | 双树递归合并 | 高优先级 |
-| [98](https://leetcode.cn/problems/validate-binary-search-tree/) | 验证二叉搜索树 | 直接对应 2022 年第 41 题 | 必做 |
-| [面试题 04.05](https://leetcode.cn/problems/legal-binary-search-tree-lcci/) | 合法二叉搜索树 | 同上，中序前驱写法 | 高优先级 |
-| [700](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | 二叉搜索树中的搜索 | BST 查找 | 必做 |
-| [530](https://leetcode.cn/problems/minimum-absolute-difference-in-bst/) | 二叉搜索树的最小绝对差 | 中序前驱作差，2026 年真题同源 | 高优先级 |
-| [501](https://leetcode.cn/problems/find-mode-in-binary-search-tree/) | 二叉搜索树中的众数 | 中序统计 | 高优先级 |
-| [235](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 二叉搜索树的最近公共祖先 | 利用有序性剪枝 | 必做 |
-| [236](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | 二叉树的最近公共祖先 | 后序自底向上，408 高频 | 必做 |
-| [701](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) | 二叉搜索树中的插入操作 | BST 插入 | 必做 |
-| [450](https://leetcode.cn/problems/delete-node-in-a-bst/) | 删除二叉搜索树中的节点 | BST 删除，五种情况 | 必做 |
-| [669](https://leetcode.cn/problems/trim-a-binary-search-tree/) | 修剪二叉搜索树 | 递归修剪 | 高优先级 |
-| [108](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | 将有序数组转换为二叉搜索树 | 中序还原 | 必做 |
-| [538](https://leetcode.cn/problems/convert-bst-to-greater-tree/) | 把二叉搜索树转换为累加树 | 反中序 | 高优先级 |
-| [230](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) | 二叉搜索树中第 K 小的元素 | 中序计数 | 必做 |
+| [94](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | 二叉树的中序遍历 | 判 BST 的底子，递归迭代都要会 | 必做 |
+| [102](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | 二叉树的层序遍历 | WPL 的次优解靠它，队列存深度 | 必做 |
+| [98](https://leetcode.cn/problems/validate-binary-search-tree/) | 验证二叉搜索树 | 2022 年原题，前驱法 | 必做 |
+| [257](https://leetcode.cn/problems/binary-tree-paths/) | 二叉树的所有路径 | 递归带状态往下传，和 WPL 一个模子 | 必做 |
 
 ### 专题四：图（邻接矩阵上是 O(n²) 的下限）
 
@@ -19551,7 +19506,7 @@ n 是奇数时前半段会多一个结点，合并完记得把尾结点的 next 
 
 最优解：其实不用转，逐行把矩阵加起来就是每个顶点的度，数一下奇数度的个数，看是不是 0 或 2 就行。O(n²) 时间 O(1) 空间。
 
-坑在判据，奇数度顶点个数必须是 0 或者 2，写成 ≤2 会漏掉「1 个」这种不可能的情况。另外 |E|>0 这个条件排除了孤立点图。
+判据是「0 个或 2 个」，写成 ≤2 会漏掉「1 个」这种不可能的情况。另外 |E|>0 这个条件排除了孤立点图。
 
 #### 2023 年第 41 题｜有向图的 K 顶点
 
@@ -19577,33 +19532,14 @@ n 是奇数时前半段会多一个结点，合并完记得把尾结点的 next 
 
 #### 题单：图
 
-| 题号 | 题目 | 对应考点 | 优先级 |
+21、23、24 三年连着考邻接矩阵，题单就盯这个。岛屿那两道是模板，剩下两道是出入度和拓扑。
+
+| 题号 | 题目 | 为什么留 | 优先级 |
 | --- | --- | --- | --- |
-| [1971](https://leetcode.cn/problems/find-if-path-exists-in-graph/) | 寻找图中是否存在路径 | 直接对应 2009 年第 41 题的「可达性」 | 必做 |
-| [面试题 04.01](https://leetcode.cn/problems/route-between-nodes-lcci/) | 节点间通路 | 同上，DFS/BFS 判连通 | 高优先级 |
-| [797](https://leetcode.cn/problems/all-paths-from-source-to-target/) | 所有可能的路径 | DFS 回溯，邻接矩阵/表遍历 | 必做 |
-| [841](https://leetcode.cn/problems/keys-and-rooms/) | 钥匙和房间 | 可达性统计 | 必做 |
-| [547](https://leetcode.cn/problems/number-of-provinces/) | 省份数量 | 连通分量计数 | 必做 |
+| [997](https://leetcode.cn/problems/find-the-town-judge/) | 找到小镇的法官 | 2023 年那道，出入度统计的原型 | 必做 |
+| [207](https://leetcode.cn/problems/course-schedule/) | 课程表 | 2024 年那道，拓扑判环 | 必做 |
+| [210](https://leetcode.cn/problems/course-schedule-ii/) | 课程表 II | 输出拓扑序，唯一性的底子 | 必做 |
 | [200](https://leetcode.cn/problems/number-of-islands/) | 岛屿数量 | DFS/BFS 模板，408 图题的基本功 | 必做 |
-| [695](https://leetcode.cn/problems/max-area-of-island/) | 岛屿的最大面积 | 网格 DFS 带返回值 | 必做 |
-| [463](https://leetcode.cn/problems/island-perimeter/) | 岛屿的周长 | 网格边界统计 | 必做 |
-| [1020](https://leetcode.cn/problems/number-of-enclaves/) | 飞地 | 边界反向 DFS | 高优先级 |
-| [130](https://leetcode.cn/problems/surrounded-regions/) | 被围绕的区域 | 边界反向标记 | 高优先级 |
-| [417](https://leetcode.cn/problems/pacific-atlantic-water-flow/) | 太平洋大西洋水流问题 | 反向可达 | 高优先级 |
-| [827](https://leetcode.cn/problems/making-a-large-island/) | 最大人工岛 | 连通块编号 + 面积 | 低优先级 |
-| [133](https://leetcode.cn/problems/clone-graph/) | 克隆图 | 图的遍历 + 哈希 | 中优先级 |
-| [785](https://leetcode.cn/problems/is-graph-bipartite/) | 判断二分图 | 染色法 DFS/BFS | 中优先级 |
-| [207](https://leetcode.cn/problems/course-schedule/) | 课程表 | 拓扑排序判环，对应 2024 年第 41 题 | 必做 |
-| [210](https://leetcode.cn/problems/course-schedule-ii/) | 课程表 II | 输出拓扑序，唯一性判定的基础 | 必做 |
-| [684](https://leetcode.cn/problems/redundant-connection/) | 冗余连接 | 并查集 | 满分冲刺 |
-| [685](https://leetcode.cn/problems/redundant-connection-ii/) | 冗余连接 II | 有向图并查集 | 低优先级 |
-| [743](https://leetcode.cn/problems/network-delay-time/) | 网络延迟时间 | Dijkstra，对应 2009 年第 41 题 | 满分冲刺 |
-| [1584](https://leetcode.cn/problems/min-cost-to-connect-all-points/) | 连接所有点的最小费用 | Prim / Kruskal，对应 2017、2018 年第 42 题 | 满分冲刺 |
-| [1091](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) | 二进制矩阵中的最短路径 | BFS 求最短路 | 低优先级 |
-| [542](https://leetcode.cn/problems/01-matrix/) | 01 矩阵 | 多源 BFS | 低优先级 |
-| [994](https://leetcode.cn/problems/rotting-oranges/) | 腐烂的橘子 | 多源 BFS | 低优先级 |
-| [1926](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) | 迷宫中离入口最近的出口 | BFS 边界判定 | 低优先级 |
-| [1306](https://leetcode.cn/problems/jump-game-iii/) | 跳跃游戏 III | 一维图 BFS | 低优先级 |
 
 ### 专题五：查找与排序（二分、堆、快速选择）
 
@@ -19617,37 +19553,16 @@ n 是奇数时前半段会多一个结点，合并完记得把尾结点的 next 
 
 最优解：二分，分别取 A、B 的中位数 a、b，相等就直接出；a<b 就丢掉 A 较小的一半和 B 较大的一半，两边丢的个数必须一样多；a>b 对称处理。重复到各剩一个元素，取小的那个。O(log n) 时间 O(1) 空间。
 
-这里容易错在偶数长度的边界，丢一半要按 ⌊len/2⌋ 严格对齐，两边丢得不一样多，后面取中位数就全错了。还有本题的中位数是第 ⌈L/2⌉ 个，是上中位数，不是下中位数。
+偶数长度那个边界最容易错，丢一半要按 ⌊len/2⌋ 严格对齐，两边丢得不一样多，后面取中位数就全错了。还有本题的中位数是第 ⌈L/2⌉ 个，是上中位数，不是下中位数。
 
 #### 题单：查找与排序
 
-| 题号 | 题目 | 对应考点 | 优先级 |
+这个专题只留两题，一道是同构，一道是二分模板。二分写不对，别的都白搭。
+
+| 题号 | 题目 | 为什么留 | 优先级 |
 | --- | --- | --- | --- |
-| [4](https://leetcode.cn/problems/median-of-two-sorted-arrays/) | 寻找两个正序数组的中位数 | 直接对应 2011 年第 42 题，困难但必须看 | 必做 |
-| [704](https://leetcode.cn/problems/binary-search/) | 二分查找 | 二分模板，[left,right] 与 [left,right) 两种写法 | 必做 |
-| [34](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | 在排序数组中查找元素的第一个和最后一个位置 | 二分找左右边界 | 必做 |
-| [35](https://leetcode.cn/problems/search-insert-position/) | 搜索插入位置 | 二分返回值语义 | 必做 |
-| [69](https://leetcode.cn/problems/sqrtx/) | x 的平方根 | 二分答案 | 高优先级 |
-| [367](https://leetcode.cn/problems/valid-perfect-square/) | 有效的完全平方数 | 二分答案 | 高优先级 |
-| [33](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | 搜索旋转排序数组 | 二分的区间判定 | 必做 |
-| [81](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) | 搜索旋转排序数组 II | 有重复元素时的退化 | 高优先级 |
-| [153](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) | 寻找旋转排序数组中的最小值 | 二分找拐点 | 必做 |
-| [154](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/) | 寻找旋转排序数组中的最小值 II | 同上，含重复 | 高优先级 |
-| [912](https://leetcode.cn/problems/sort-an-array/) | 排序数组 | 快排、归并、堆排三选一必须手写熟 | 必做 |
-| [215](https://leetcode.cn/problems/kth-largest-element-in-an-array/) | 数组中的第 K 个最大元素 | 快速选择 / 堆，对应 2016 年第 43 题 | 必做 |
-| [973](https://leetcode.cn/problems/k-closest-points-to-origin/) | 最接近原点的 K 个点 | 大根堆维护前 K 小，堆选型的同类练习 | 高优先级 |
-| [703](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) | 数据流中的第 K 大元素 | 小根堆维护前 K 大 | 高优先级 |
-| [295](https://leetcode.cn/problems/find-median-from-data-stream/) | 数据流的中位数 | 对顶堆，中位数题的加强版 | 满分冲刺 |
-| [347](https://leetcode.cn/problems/top-k-frequent-elements/) | 前 K 个高频元素 | 小根堆 / 桶排序 | 高优先级 |
-| [148](https://leetcode.cn/problems/sort-list/) | 排序链表 | 归并排序在链表上 | 满分冲刺 |
-| [23](https://leetcode.cn/problems/merge-k-sorted-lists/) | 合并 K 个升序链表 | 两两合并的哈夫曼思想，对应 2012 年第 41 题 | 满分冲刺 |
-| [75](https://leetcode.cn/problems/sort-colors/) | 颜色分类 | 三路划分 | 必做 |
-| [451](https://leetcode.cn/problems/sort-characters-by-frequency/) | 根据字符出现频率排序 | 计数 + 排序 | 高优先级 |
-| [705](https://leetcode.cn/problems/design-hashset/) | 设计哈希集合 | 散列表基础，2024 年第 42 题同源 | 高优先级 |
-| [706](https://leetcode.cn/problems/design-hashmap/) | 设计哈希映射 | 同上 | 高优先级 |
-| [1](https://leetcode.cn/problems/two-sum/) | 两数之和 | 哈希查找入门 | 高优先级 |
-| [242](https://leetcode.cn/problems/valid-anagram/) | 有效的字母异位词 | 计数数组 | 高优先级 |
-| [349](https://leetcode.cn/problems/intersection-of-two-arrays/) | 两个数组的交集 | 哈希去重 | 高优先级 |
+| [4](https://leetcode.cn/problems/median-of-two-sorted-arrays/) | 寻找两个正序数组的中位数 | 2011 年原题，困难但必看 | 必做 |
+| [704](https://leetcode.cn/problems/binary-search/) | 二分查找 | 模板，`[left,right]` 和 `[left,right)` 两种都要写熟 | 必做 |
 
 ### 专题六：数据结构设计题（不写算法，但每年 42 题爱考）
 
@@ -19665,7 +19580,7 @@ n 是奇数时前半段会多一个结点，合并完记得把尾结点的 next 
 
 入队在 rear 后面插新结点，rear 后移一位，O(1)。出队删的是 rear->next 后面的第一个数据结点，O(1)。
 
-坑在判空，写成 rear==NULL 就错了，循环链表没有 NULL。出队别把头结点删了。题目问的是「基本过程」，要用文字加图示，不是只写代码。
+判空写成 rear==NULL 就错了，循环链表没有 NULL。出队别把头结点删了。题目问的是「基本过程」，要用文字加图示，不是只写代码。
 
 #### 2020 年第 42 题｜前缀编码与译码
 
@@ -19683,31 +19598,18 @@ n 是奇数时前半段会多一个结点，合并完记得把尾结点的 next 
 
 #### 题单：数据结构设计题
 
-| 题号 | 题目 | 对应考点 | 优先级 |
+42 题这几年的方向是「选结构 + 讲流程」，下面四道覆盖了栈、队列、前缀树。
+
+| 题号 | 题目 | 为什么留 | 优先级 |
 | --- | --- | --- | --- |
-| [232](https://leetcode.cn/problems/implement-queue-using-stacks/) | 用栈实现队列 | 两个栈倒腾，结构设计经典 | 必做 |
-| [225](https://leetcode.cn/problems/implement-stack-using-queues/) | 用队列实现栈 | 同上反向 | 必做 |
-| [622](https://leetcode.cn/problems/design-circular-queue/) | 设计循环队列 | 直接对应 2019 年第 42 题的顺序存储对照方案 | 必做 |
-| [641](https://leetcode.cn/problems/design-circular-deque/) | 设计循环双端队列 | 循环队列加强版 | 高优先级 |
-| [707](https://leetcode.cn/problems/design-linked-list/) | 设计链表 | 链表增删改查全套 | 必做 |
-| [208](https://leetcode.cn/problems/implement-trie-prefix-tree/) | 实现 Trie（前缀树） | 直接对应 2020 年第 42 题的前缀结构 | 必做 |
-| [211](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) | 添加与搜索单词 | Trie + 通配符 | 中优先级 |
-| [648](https://leetcode.cn/problems/replace-words/) | 单词替换 | 前缀匹配应用 | 中优先级 |
-| [820](https://leetcode.cn/problems/short-encoding-of-words/) | 单词的压缩编码 | 后缀/前缀共享存储 | 低优先级 |
-| [20](https://leetcode.cn/problems/valid-parentheses/) | 有效的括号 | 栈的应用 | 必做 |
-| [1047](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | 删除字符串中的所有相邻重复项 | 栈的消除思想 | 高优先级 |
-| [150](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | 逆波兰表达式求值 | 表达式树/后缀表达式，对应 2017 年第 41 题 | 必做 |
-| [224](https://leetcode.cn/problems/basic-calculator/) | 基本计算器 | 表达式求值（中缀转后缀） | 满分冲刺 |
-| [227](https://leetcode.cn/problems/basic-calculator-ii/) | 基本计算器 II | 同上，带优先级 | 满分冲刺 |
-| [239](https://leetcode.cn/problems/sliding-window-maximum/) | 滑动窗口最大值 | 单调队列，408 常考结构 | 必做 |
-| [347](https://leetcode.cn/problems/top-k-frequent-elements/) | 前 K 个高频元素 | 堆 + 哈希组合设计 | 高优先级 |
-| [155](https://leetcode.cn/problems/min-stack/) | 最小栈 | 辅助栈设计 | 必做 |
-| [146](https://leetcode.cn/problems/lru-cache/) | LRU 缓存 | 哈希 + 双向链表，与 OS 页面置换联动 | 满分冲刺 |
-| [面试题 09](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) | 用两个栈实现队列 | 原「面试题 09」（现 LCR 125），232 的面试版 | 必做 |
+| [232](https://leetcode.cn/problems/implement-queue-using-stacks/) | 用栈实现队列 | 结构设计经典，两个栈倒腾 | 必做 |
+| [622](https://leetcode.cn/problems/design-circular-queue/) | 设计循环队列 | 2019 年那道顺序存储的对照方案 | 必做 |
+| [208](https://leetcode.cn/problems/implement-trie-prefix-tree/) | 实现 Trie（前缀树） | 2020 年前缀编码的树结构 | 必做 |
+| [20](https://leetcode.cn/problems/valid-parentheses/) | 有效的括号 | 栈的应用，判空判满的基本功 | 必做 |
 
 ### 这份文档怎么用
 
-先按专题过一遍，顺序表、链表、树、图、查找排序。前两块是基本盘，占了一半以上，先把这 10 道吃透。
+先按专题过一遍，顺序表、链表、树、图、查找排序、设计题。前两块是基本盘，占了一半以上，先把这 10 道吃透。
 
 每题只看三件事。题干里的约束，能不能开辅助空间、能不能改链表；最优解是怎么想到的；复杂度分别是多少。
 

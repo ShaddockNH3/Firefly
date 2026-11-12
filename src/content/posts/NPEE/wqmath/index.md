@@ -9850,11 +9850,13 @@ sqrt(1+x^2)<=1+|x|，这个确实不会。
 ### 27 张 8  5
 
 - 完成时间：20261112
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+- 分数：/
+  - 选择：/
+  - 填空：/
+  - 大题：/
+- 时间：/
+
+当练习卷做，不设时间。
 
 ### 27 张 8  6
 
@@ -9916,12 +9918,66 @@ sqrt(1+x^2)<=1+|x|，这个确实不会。
 
 ### 27 张 8  7
 
-- 完成时间：20261110
-- 分数：
-  - 选择：
-  - 填空：
-  - 大题：
-- 时间：
+- 完成时间：20261112
+- 分数：/
+  - 选择：/
+  - 填空：/
+  - 大题：/
+- 时间：/
+
+当练习卷做的，没有特地规定时间，也没有每一道题都去做，很多题出思路就跳了。
+
+感觉应该是张 8 里最简单的一份，选填没有任何卡你的地方。
+
+同时这份卷子的大题，我觉得还是挺常规的。
+
+但是，对于最后两题，有两个问题，最后两题我都采用了比较复杂的弯路，并且感觉都算是惯性思维。
+
+把这份卷子觉得有意思的题放上来（其实都不难，只是觉得有意思）
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCm1q9al4GtWVj5BpnIwxgLN_YlqIlwACrBFrG9ZZsVdeoED-vUChhQEAAwIAA3kAAz0E)
+
+可以注意一下，第一反应是正无穷负无穷选 C，仔细一看，噢还有间断点。
+
+这类题不要想当然，保持：正无穷，负无穷，无定义，除以 x 的正无穷，-ax，除以 x 的负无穷，-ax，这一流程考虑，不允许跳步漏步。
+
+![10](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCm5q9aoX5kNyG1KfKOP1rupl9e4QyAACrRFrG9ZZsVeoA1tKP1bZ-AEAAwIAA3cAAz0E)
+
+本题猜了一个 A 上去，因为想要 A 成立，那么 m>=n 且 r(B)=n。
+
+然后就推不出来了。
+
+感觉这类题一直很薄弱。
+
+我觉得解题步骤如下：
+
+1. 先辨析清楚题目条件，谁是已知条件，谁是可能有的条件，谁是要推出来的东西，这个必须得先搞清楚。
+
+对于本题，A 为 m 阶正定，B 为 m ✖️ n 实矩阵，C=B 的转置 AB，这些都是已经知道的条件，所以有时候我还在那里想已知条件怎么推。
+
+因为 A 是正定的，所以 xAx >=0，也就是说无论如何，xCx>0，那不正是 Bx 只有零解吗？
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmlq9ai2f_kfqbXKmI-IhoNug_iCFwAC3xVrG9ZZqVd7M_KRCE5QIAEAAwIAA3cAAz0E)
+
+![19](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmpq9ajVLf0Nm7mW_wpCVA5GHT9TMwAC4BVrG9ZZqVeEyl2XriOa2QEAAwIAA3kAAz0E)
+
+这两题思路都是一样的，都是利用 (a+-b)^2，可以注意一下思路。
+
+![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmtq9akGzLaAHAAB5R1YC40wN_vz24YAAqkRaxvWWbFXoYUxYCY3pB8BAAMCAAN3AAM9BA)
+
+这道题方法用复杂了，惯性思维换元后，直接 dp/dy 来的，这么算非常麻烦（因为得带着变量向下算）。
+
+事实上，这道题换元后正常用 dp/dx 算就好了。
+
+![22](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmxq9alKIhlAMfBiuFz8u01Q8PbOMQACqhFrG9ZZsVcV2_qd5JSbNQEAAwIAA3cAAz0E)
+
+方法过于复杂了。
+
+第一问在那里求特征值，求 Q，很麻烦很麻烦，然后第二问看第一问那么麻烦就不写了。
+
+一定要记住，题目里让求可逆，没有让求正交，那么第一思路一定是按照求 C 的方法求，而不是按求特征值的方法求。
+
+而对于第 2 题，一眼改编自 2022 真题，事实上这道题可以有两种解法，换元法和直接代入法都能做，不会很难。
 
 ### 27 张 8  8
 
@@ -9962,7 +10018,7 @@ sqrt(1+x^2)<=1+|x|，这个确实不会。
 
 ![559](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCl9q8xaPh3f4qvG_WfRkmi27mz4RRgACThlrG2mqmFckuGQqrlGIDgEAAwIAA3gAAz0E)
 
-注意 “形”，这也是我经常错的点。
+注意“形”，这也是我经常错的点。
 
 ![583](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmBq8xjaAsVD8H8n9DmH_WS0gwf55QACVRlrG2mqmFfWMkNGXwyrxQEAAwIAA3gAAz0E)
 
@@ -9978,7 +10034,7 @@ sqrt(1+x^2)<=1+|x|，这个确实不会。
 
 ![615](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmNq9Dqq9nyB0RCbbPuSDXj_TDL1zAAC9BxrG9ZZoVc2FitlLE4SrwEAAwIAA3cAAz0E)
 
-这道题脑子晕晕的，没想出来选啥，显然是A，因为A 可能有重复的问题。
+这道题脑子晕晕的，没想出来选啥，显然是 A，因为 A 可能有重复的问题。
 
 ![630](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmVq9D09MoMiz91N07OztQzACvL7VQAC-RxrG9ZZoVc6-EPGyUrBKwEAAwIAA3cAAz0E)
 
@@ -9995,6 +10051,25 @@ sqrt(1+x^2)<=1+|x|，这个确实不会。
 这道题一眼看出来 B 是对的，但是 D 为什么是错的呢？
 
 ![641 D](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCmhq9EDpepXZYwH9ErfTItOMK58mwQACBR1rG9ZZoVfwh_xeYqR5wwEAAwIAA3gAAz0E)
+
+## 武忠祥最后 17 堂课
+
+### 武忠祥最后 17 堂课 1
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCm9q9cD1UVgjTod3Jc1O2tkfSl0UpQACyhFrG9ZZsVddwarlpo1UCgEAAwIAA3cAAz0E)
+
+对于 3，注意不能等于那个点，而后者没有要求。
+
+其他俩错了都是因为特殊推一般。
+
+其他注意点
+
+1. 极限可能直接不存在，例如 limA > limB，这个式子本身可能就不能成立
+2. 不等于那个点
+3. >= 推 > 还是反过来，要搞得很清楚
+4. 特值法以及跳题法
+
+### 武忠祥最后 17 堂课 5
 
 ## 25 超越
 

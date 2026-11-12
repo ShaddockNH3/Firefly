@@ -1,6 +1,6 @@
 ---
 title: "Hamidashi Creative Totsu"
-cn: "常轨脱离Creative凸"
+cn: "常轨脱离 Creative 凸"
 alt: "ハミダシクリエイティブ凸"
 developer: "Madosoft"
 released: "2022-11-25"

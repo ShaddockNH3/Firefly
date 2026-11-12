@@ -1,6 +1,6 @@
 ---
 title: "Amairo Chocolata 3"
-cn: "巧可甜恋3"
+cn: "巧可甜恋 3"
 alt: "あまいろショコラータ 3"
 developer: "Cabbage Soft"
 released: "2023-11-24"

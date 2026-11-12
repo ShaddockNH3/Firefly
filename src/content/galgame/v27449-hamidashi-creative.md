@@ -1,6 +1,6 @@
 ---
 title: "Hamidashi Creative"
-cn: "常轨脱离Creative"
+cn: "常轨脱离 Creative"
 alt: "ハミダシクリエイティブ"
 developer: "Madosoft"
 released: "2020-09-25"
