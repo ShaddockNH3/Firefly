@@ -6,6 +6,9 @@ import { siteConfig } from "@/config";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import profile from "@/data/azurlane/profile.json";
 import { allSkins } from "@/utils/azurlane-skins";
+
+// 墙上只放缩略图，原图不进客户端（省一半序列化体积）
+const wallSkins = allSkins.map(({ s, n, k, th, y, i, t }) => ({ s, n, k, th, y, i: t || i }));
 import mine from "@/data/azurlane/mine.json";
 
 if (!siteConfig.pages.azurlane) {
@@ -29,6 +32,6 @@ if (!siteConfig.pages.azurlane) {
 			</span>
 		</div>
 
-		<SkinWall client:load skins={allSkins} owned={mine.skins} />
+		<SkinWall client:load skins={wallSkins} owned={mine.skins} />
 	</div>
 </MainGridLayout>
