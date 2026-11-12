@@ -88,8 +88,8 @@
 		type = v;
 		open = [];
 	}
-	function show(th: string) {
-		open = [...open, th];
+	function toggle(th: string) {
+		open = open.includes(th) ? open.filter((x) => x !== th) : [...open, th];
 	}
 </script>
 
@@ -141,6 +141,9 @@
 			{#if hasRecord}
 				<span class="sw-sec-own">已有 {arr.filter((k) => ownSet.has(k.n)).length}</span>
 			{/if}
+			{#if open.includes(th)}
+				<button class="sw-collapse" onclick={() => toggle(th)}>收起</button>
+			{/if}
 		</div>
 		<div class="sw-grid">
 			{#each (open.includes(th) ? arr : arr.slice(0, LIMIT)) as k (k.i)}
@@ -161,8 +164,10 @@
 				</div>
 			{/each}
 		</div>
-		{#if arr.length > LIMIT && !open.includes(th)}
-			<button class="sw-more" onclick={() => show(th)}>展开全部 {arr.length} 套</button>
+		{#if arr.length > LIMIT}
+			<button class="sw-more" onclick={() => toggle(th)}>
+				{open.includes(th) ? "收起" : `展开全部 ${arr.length} 套`}
+			</button>
 		{/if}
 	</section>
 {/each}
@@ -283,6 +288,25 @@
 		margin-left: auto;
 		font-size: 0.7rem;
 		color: var(--content-meta);
+	}
+	.sw-collapse {
+		margin-left: auto;
+		padding: 3px 12px;
+		border-radius: 999px;
+		border: 1px solid var(--line-divider);
+		background: var(--card-bg);
+		color: var(--content-meta);
+		font-size: 0.72rem;
+		font-family: inherit;
+		cursor: pointer;
+		flex: none;
+	}
+	.sw-collapse:hover {
+		color: var(--primary);
+		border-color: var(--primary);
+	}
+	.sw-sec-own + .sw-collapse {
+		margin-left: 10px;
 	}
 
 	.sw-grid {
