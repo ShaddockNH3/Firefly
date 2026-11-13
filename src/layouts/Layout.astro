@@ -159,6 +159,15 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
 <html lang={siteLang} class="bg-(--page-bg) text-[14px] md:text-[16px]" data-wallpaper-mode={backgroundWallpaper.mode} data-fullscreen-layout={fullscreenLayout} data-has-wallpaper={hasWallpaper ? "" : undefined} data-tag-style={siteConfig.tagStyle ?? "pill"} data-category-style={siteConfig.categoryStyle ?? "rectangle"}>
   <head>
     <meta charset="UTF-8" />
+    <script is:inline>
+      // 本地 http 下 crypto.subtle 不存在（解密、剪贴板等 API 都依赖安全上下文），
+      // 线上被 http 打开时同样如此，所以统一强制 https。localhost 放行。
+      (() => {
+        const { protocol, hostname, href } = location;
+        const local = hostname === "localhost" || hostname === "127.0.0.1" || hostname === "[::1]";
+        if (protocol === "http:" && !local) location.replace(href.replace(/^http:/, "https:"));
+      })();
+    </script>
     <style is:inline>
 			@layer properties, theme, base, components, utilities;
 		</style>

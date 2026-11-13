@@ -34,6 +34,12 @@ let busy = $state(false);
 let wrong = $state(false);
 let unlocked = $state(false);
 
+// crypto.subtle 只在安全上下文（https / localhost）里存在，没有它连解密的门都进不去，
+// 不能跟「密码不对」混成一个提示
+const canDecrypt = typeof globalThis.crypto?.subtle !== "undefined";
+let insecure = $state(false);
+let secureHref = $state("");
+
 // 筛选：状态 / 标签（Venera 收藏夹）/ 排序，和一般向同一套
 let st = $state(ALL);
 let tag = $state(ALL);
@@ -151,6 +157,10 @@ async function decrypt(p: string) {
 }
 
 async function unlock(p: string) {
+	if (!canDecrypt) {
+		insecure = true;
+		return;
+	}
 	busy = true;
 	wrong = false;
 	try {
@@ -198,6 +208,9 @@ function closeDetail() {
 onMount(() => {
 	syncHash();
 	window.addEventListener("hashchange", syncHash);
+	if (!canDecrypt && location.protocol === "http:") {
+		secureHref = `https://${location.host}${location.pathname}`;
+	}
 	const cached = sessionStorage.getItem(CACHE_KEY);
 	if (cached) unlock(cached);
 	return () => window.removeEventListener("hashchange", syncHash);
@@ -237,7 +250,12 @@ onMount(() => {
 				{busy ? "解密中…" : "解锁"}
 			</button>
 		</form>
-		{#if wrong}
+		{#if insecure}
+			<p class="m-0 mt-3 text-[0.72rem] text-red-500 dark:text-red-400">
+				当前不是 https，浏览器不提供解密接口。
+				{#if secureHref}<a class="underline" href={secureHref}>换成 https 再试</a>{/if}
+			</p>
+		{:else if wrong}
 			<p class="m-0 mt-3 text-[0.72rem] text-red-500 dark:text-red-400">密码不对</p>
 		{/if}
 		<p class="m-0 mt-4 text-[0.7rem] text-(--content-meta) opacity-70">
