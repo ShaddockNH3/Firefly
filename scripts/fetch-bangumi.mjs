@@ -16,15 +16,25 @@
  *   src/data/anime/subjects.json
  */
 
-import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import matter from "gray-matter";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-const CONTENT_DIR = path.join(ROOT, "src", "content", "anime");
-const DATA_DIR = path.join(ROOT, "src", "data", "anime");
+
+// 番剧和漫画共用这套逻辑：md 里写 bgm 条目 ID，条目信息从这里补。
+// --collection manga 就读 src/content/manga，产物落到 src/data/manga/subjects.json
+const args = process.argv.slice(2);
+const pick = (name, fallback) => {
+	const i = args.indexOf(`--${name}`);
+	return i >= 0 && args[i + 1] ? args[i + 1] : fallback;
+};
+const COLLECTION = pick("collection", "anime");
+
+const CONTENT_DIR = path.join(ROOT, "src", "content", COLLECTION);
+const DATA_DIR = path.join(ROOT, "src", "data", COLLECTION);
 const OUT_FILE = path.join(DATA_DIR, "subjects.json");
-const CACHE_DIR = path.join(ROOT, "scripts", ".cache", "bangumi");
+const CACHE_DIR = path.join(ROOT, "scripts", ".cache", `bangumi-${COLLECTION}`);
 const CACHE_FILE = path.join(CACHE_DIR, "subjects.json");
 
 const API = "https://api.bgm.tv";
@@ -76,6 +86,9 @@ async function fetchSubject(id) {
 		cover: s.images?.common || s.images?.large || "",
 		date: s.date || "",
 		eps: s.eps ?? 0,
+		// 书籍（漫画）的卷数，番剧为 0
+		volumes: s.volumes ?? 0,
+		platform: s.platform ?? "",
 		bgmScore: s.rating?.score ?? null,
 		rank: s.rating?.rank ?? null,
 		tags: (s.tags ?? []).slice(0, 8).map((t) => t.name),
@@ -84,7 +97,7 @@ async function fetchSubject(id) {
 }
 
 const ids = await collectIds();
-console.log(`[bangumi] 本地 md 声明了 ${ids.length} 个条目`);
+console.log(`[bangumi:${COLLECTION}] 本地 md 声明了 ${ids.length} 个条目`);
 
 const cache = await readCache();
 const items = {};
@@ -104,7 +117,9 @@ for (const id of ids) {
 		await sleep(DELAY);
 	} catch (err) {
 		failed += 1;
-		console.warn(`[bangumi] ${id} 拉取失败（${err.message}），这条先不显示条目信息`);
+		console.warn(
+			`[bangumi] ${id} 拉取失败（${err.message}），这条先不显示条目信息`,
+		);
 	}
 }
 
@@ -113,7 +128,8 @@ await mkdir(CACHE_DIR, { recursive: true });
 await writeFile(CACHE_FILE, JSON.stringify(cache, null, "\t"), "utf8");
 await writeFile(
 	OUT_FILE,
-	JSON.stringify({ fetchedAt: new Date().toISOString(), items }, null, "\t") + "\n",
+	JSON.stringify({ fetchedAt: new Date().toISOString(), items }, null, "\t") +
+		"\n",
 	"utf8",
 );
 

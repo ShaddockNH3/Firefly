@@ -55,18 +55,14 @@ type ProjectData = {
 };
 
 type MangaData = {
-	title: string;
-	cn: string;
-	alt: string;
-	author: string;
-	publisher: string;
-	released: string;
-	cover: string;
+	bgm: number;
 	status: string;
 	score: number | null;
-	volumes: number | null;
 	read: string;
+	started: string;
 	finished: string;
+	updated: string;
+	note: string;
 	draft: boolean;
 };
 
@@ -212,23 +208,23 @@ const galgameCollection: ContentCollection<GalgameData> = defineCollection({
 });
 
 const mangaCollection: ContentCollection<MangaData> = defineCollection({
-	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/manga" }),
+	// 和番剧分工一样：我的记录手写在这里，条目信息（封面/简介/卷数/评分）由
+	// scripts/fetch-bangumi.mjs --collection manga 抓
+	loader: glob({ pattern: "**/*.md", base: "./src/content/manga" }),
 	schema: z.object({
-		title: z.string(),
-		cn: z.string().optional().default(""),
-		alt: z.string().optional().default(""),
-		author: z.string().optional().default(""),
-		// 出版社（商业志）/ 社团（同人志）
-		publisher: z.string().optional().default(""),
-		released: z.string().optional().default(""),
-		cover: z.string().optional().default(""),
-		// 在读 / 已读完 / 想读 / 弃坑，空表示还没记
+		// 番组计划条目 ID，空则用文件名
+		bgm: z.number().optional().default(0),
+		// 在看 / 看过 / 想看 / 搁置 / 抛弃，空表示还没记
 		status: z.string().optional().default(""),
 		score: z.number().nullable().optional().default(null),
-		volumes: z.number().nullable().optional().default(null),
 		// 读到哪了，自由文本，写「第 42 话」或「第 3 卷」
 		read: z.string().optional().default(""),
+		started: z.string().optional().default(""),
 		finished: z.string().optional().default(""),
+		// 最近一次动过的时间，默认排序用
+		updated: z.string().optional().default(""),
+		// 列表里的一句话短评
+		note: z.string().optional().default(""),
 		draft: z.boolean().optional().default(false),
 	}),
 });

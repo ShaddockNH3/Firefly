@@ -23,7 +23,8 @@
 		"lqips": "npx tsx scripts/generate-lqips.ts",
 		"github-cards": "npx tsx scripts/generate-github-card-data.ts",
 		"fetch:bangumi": "node scripts/fetch-bangumi.mjs",
-		"scan:skins": "node scripts/azurlane-scan.mjs"
+		"scan:skins": "node scripts/azurlane-scan.mjs",
+		"fetch:bangumi:manga": "node scripts/fetch-bangumi.mjs --collection manga"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.12",

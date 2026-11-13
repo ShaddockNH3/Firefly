@@ -1,0 +1,255 @@
+---
+import { getCollection, render } from "astro:content";
+import { Icon } from "astro-icon/components";
+import Markdown from "@/components/common/Markdown.astro";
+import { siteConfig } from "@/config";
+import subjectsData from "@/data/manga/subjects.json";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+export async function getStaticPaths() {
+	if (!siteConfig.pages.manga) return [];
+	const entries = (await getCollection("manga")).filter((e) => !e.data.draft);
+	const subjects = subjectsData.items as Record<
+		string,
+		{
+			cn: string;
+			jp: string;
+			cover: string;
+			date: string;
+			volumes: number;
+			bgmScore: number | null;
+			rank: number | null;
+			tags: string[];
+			summary: string;
+		}
+	>;
+	return entries.map((entry) => {
+		const id = entry.data.bgm || Number(entry.id);
+		const meta = subjects[String(id)];
+		if (!meta) {
+			throw new Error(
+				`[manga] ${entry.id} 缺少条目信息，先跑 pnpm fetch:bangumi:manga`,
+			);
+		}
+		return { params: { id: String(id) }, props: { entry, id, meta } };
+	});
+}
+
+const { entry, id, meta } = Astro.props;
+const d = entry.data;
+const hasBody = (entry.body ?? "").trim().length > 0;
+const { Content } = await render(entry);
+
+const rows = [
+	{ k: "连载", v: meta.date || "—" },
+	{ k: "卷数", v: meta.volumes ? `${meta.volumes} 卷` : "" },
+	{ k: "进度", v: d.read },
+	{ k: "我的评分", v: d.score !== null ? `${d.score.toFixed(1)} / 10` : "" },
+	{
+		k: "Bangumi",
+		v: meta.bgmScore !== null ? `${meta.bgmScore.toFixed(1)} / 10` : "",
+	},
+	{ k: "排名", v: meta.rank ? `#${meta.rank}` : "" },
+	{ k: "状态", v: d.status },
+	{ k: "读完", v: d.finished },
+].filter((r) => r.v);
+---
+
+<MainGridLayout title={meta.cn} description={`${meta.cn} 的阅读记录`}>
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<a href="/manga/" class="md-back">
+			<Icon name="material-symbols:chevron-right-rounded" class="text-[1rem]" />
+			漫画
+		</a>
+
+		<div class="md-head">
+			<div class="md-cover">
+				{meta.cover ? <img src={meta.cover} alt={meta.cn} referrerpolicy="no-referrer" /> : null}
+			</div>
+
+			<div class="md-info">
+				<h1 class="md-title">{meta.cn}</h1>
+				{meta.jp && meta.jp !== meta.cn ? <p class="md-alt">{meta.jp}</p> : null}
+
+				{
+					meta.tags.length > 0 && (
+						<div class="md-tags">
+							{meta.tags.map((t) => <span class="md-tag">{t}</span>)}
+						</div>
+					)
+				}
+
+				<div class="md-rows">
+					{rows.map((r) => (
+						<div class="md-row">
+							<span class="md-k">{r.k}</span>
+							<span class="md-v">{r.v}</span>
+						</div>
+					))}
+				</div>
+
+				<a class="md-ext" href={`https://bgm.tv/subject/${id}`} target="_blank" rel="noopener">
+					Bangumi 词条
+					<Icon name="fa7-solid:arrow-up-right-from-square" class="text-[0.66rem]" />
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7 mt-4">
+		<div class="md-sec-t">简介</div>
+		<p class="md-sum">{meta.summary || "番组计划上还没有简介。"}</p>
+	</div>
+
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7 mt-4">
+		<div class="md-sec-t">
+			评价
+			{d.score !== null && <span class="md-sec-n">{d.score.toFixed(1)}</span>}
+		</div>
+		{hasBody ? <Markdown class="md-review"><Content /></Markdown> : <p class="md-empty">还没写评价。</p>}
+	</div>
+</MainGridLayout>
+
+<style>
+	.md-back {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+		font-size: 0.78rem;
+		color: var(--content-meta);
+		text-decoration: none;
+		margin-bottom: 16px;
+	}
+	.md-back:hover {
+		color: var(--primary);
+	}
+	.md-back :global(svg) {
+		transform: rotate(180deg);
+	}
+
+	.md-head {
+		display: flex;
+		gap: 26px;
+		align-items: flex-start;
+	}
+	.md-cover {
+		width: 210px;
+		flex-shrink: 0;
+	}
+	.md-cover img {
+		width: 100%;
+		display: block;
+		aspect-ratio: 2 / 3;
+		object-fit: cover;
+		border-radius: var(--radius-large);
+		box-shadow: 0 4px 18px rgb(0 0 0 / 0.1);
+		background: var(--btn-regular-bg);
+	}
+	.md-info {
+		flex: 1;
+		min-width: 0;
+		padding-top: 4px;
+	}
+	.md-title {
+		margin: 0;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1.35;
+		color: var(--deep-text);
+	}
+	.md-alt {
+		margin: 5px 0 0;
+		font-size: 0.82rem;
+		color: var(--content-meta);
+	}
+	.md-tags {
+		display: flex;
+		gap: 6px;
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
+	.md-tag {
+		font-size: 0.68rem;
+		padding: 1px 7px;
+		border-radius: 6px;
+		background: var(--btn-regular-bg);
+		color: var(--content-meta);
+	}
+	.md-rows {
+		margin-top: 14px;
+		display: flex;
+		flex-direction: column;
+	}
+	.md-row {
+		display: flex;
+		align-items: baseline;
+		gap: 16px;
+		padding: 8px 0;
+		border-bottom: 1px solid var(--line-divider);
+		font-size: 0.82rem;
+	}
+	.md-row:last-child {
+		border-bottom: none;
+	}
+	.md-k {
+		width: 76px;
+		flex-shrink: 0;
+		color: var(--content-meta);
+	}
+	.md-v {
+		color: var(--deep-text);
+		font-variant-numeric: tabular-nums;
+	}
+	.md-ext {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+		margin-top: 14px;
+		font-size: 0.76rem;
+		color: var(--primary);
+		text-decoration: none;
+	}
+	.md-ext:hover {
+		text-decoration: underline;
+	}
+
+	.md-sec-t {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 0.95rem;
+		font-weight: 700;
+		color: var(--deep-text);
+		margin-bottom: 10px;
+	}
+	.md-sec-n {
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: var(--primary);
+	}
+	.md-sum {
+		margin: 0;
+		font-size: 0.85rem;
+		line-height: 1.9;
+		color: color-mix(in oklch, var(--deep-text) 78%, transparent);
+		white-space: pre-line;
+	}
+	.md-review {
+		font-size: 0.88rem;
+		line-height: 1.9;
+	}
+	.md-empty {
+		font-size: 0.82rem;
+		color: var(--content-meta);
+	}
+
+	@media (max-width: 640px) {
+		.md-head {
+			flex-direction: column;
+			gap: 16px;
+		}
+		.md-cover {
+			width: 150px;
+		}
+	}
+</style>

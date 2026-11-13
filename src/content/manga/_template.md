@@ -1,24 +1,21 @@
 ---
-# 复制一份改名就能用，文件名就是 URL：src/content/manga/xxx.md → /manga/xxx/
-# 这份模板是 draft，不会出现在列表里；复制后记得把 draft 改成 false
+# 复制改名：src/content/manga/305429.md → /manga/305429/
+# 条目信息（封面、原名、简介、卷数、评分）由脚本抓，这里只写我自己的记录
+# 抓取：pnpm fetch:bangumi:manga
+# 这份模板是 draft，不会出现在列表里；复制后把 draft 改成 false
 
-title: "葬送のフリーレン"
-cn: "葬送的芙莉莲"
-alt: "Sousou no Frieren"
-author: "アベツカサ / 山田鐘人"
-publisher: "小学館"
-released: "2020-04-28"
-# 留空则卡片上排书名当占位封
-cover: ""
-# 在读 / 已读完 / 想读 / 弃坑
-status: "在读"
-score: 9.2
-volumes: 14
-read: "第 118 话"
+bgm: 305429
+# 在看 / 看过 / 想看 / 搁置 / 抛弃
+status: "想看"
+score: null
+# 读到哪了，自由文本
+read: ""
+started: ""
 finished: ""
+updated: ""
+# 列表里的一句话短评
+note: ""
 draft: true
 ---
 
-魔王讨伐之后，精灵魔法使芙莉莲重新走一遍当年的路。
-
-这段是详情页的「评价」，Markdown 随便写，不写就显示「还没有写评价」。
+这里写长评，Markdown，不写就显示「还没有写评价」。

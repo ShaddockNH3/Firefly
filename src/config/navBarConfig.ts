@@ -65,11 +65,11 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// galgame 作品
 			LinkPresets.Galgame,
 
-			// 漫画
-			LinkPresets.Manga,
-
 			// 追番记录
 			LinkPresets.Anime,
+
+			// 漫画
+			LinkPresets.Manga,
 
 			// 书单与书源
 			LinkPresets.Novels,

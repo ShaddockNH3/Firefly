@@ -1,82 +1,115 @@
 <script lang="ts">
-import { mangaStatuses } from "@/config/media";
-import { ALL, countAll, countStatuses } from "@/utils/media-utils";
+import { mangaSorts, mangaStatuses } from "@/config/media";
+import { ALL, countStatuses, sortMedia } from "@/utils/media-utils";
 import MediaFilters from "../media/MediaFilters.svelte";
 
-interface Manga {
-	slug: string;
-	title: string;
+interface Item {
+	id: number;
 	cn: string;
-	alt: string;
-	author: string;
-	publisher: string;
-	year: string;
+	jp: string;
 	cover: string;
+	date: string;
+	volumes: number;
+	bgmScore: number | null;
+	rank: number | null;
+	tags: string[];
 	status: string;
 	score: number | null;
-	volumes: number | null;
+	read: string;
+	updated: string;
 }
 
 interface Props {
-	items: Manga[];
+	items: Item[];
 }
 
 let { items }: Props = $props();
 
-let pub = $state(ALL);
 let st = $state(ALL);
+let tag = $state(ALL);
+let sort = $state(mangaSorts[0].key);
+
+// 只收出现两次以上的标签，避免每个条目的标签都变成一枚 chip
+const tagCounts = $derived.by(() => {
+	const map = new Map<string, number>();
+	for (const a of items)
+		for (const t of a.tags) map.set(t, (map.get(t) ?? 0) + 1);
+	return [
+		[ALL, items.length],
+		...[...map.entries()].filter(([, n]) => n >= 2),
+	] as [string, number][];
+});
 
 const rows = $derived([
 	{
-		key: "pub",
-		label: "出版社",
-		items: countAll(items, (g) => g.publisher || "其他"),
-	},
-	{
 		key: "st",
 		label: "状态",
-		items: countStatuses(items, mangaStatuses, (g) => g.status),
+		items: countStatuses(items, mangaStatuses, (a) => a.status),
+	},
+	{ key: "tag", label: "标签", items: tagCounts },
+	{
+		key: "sort",
+		label: "排序",
+		items: mangaSorts.map((s) => [s.label] as [string]),
 	},
 ]);
 
-const values = $derived({ pub, st });
+const sortLabel = $derived(
+	mangaSorts.find((s) => s.key === sort)?.label ?? mangaSorts[0].label,
+);
+const values = $derived({ st, tag, sort: sortLabel });
 
 function pick(key: string, value: string) {
-	if (key === "pub") pub = value;
-	else if (key === "st") st = value;
+	if (key === "st") st = value;
+	else if (key === "tag") tag = value;
+	else if (key === "sort")
+		sort = mangaSorts.find((s) => s.label === value)?.key ?? sort;
 }
 
 const list = $derived(
-	items.filter((g) => {
-		if (pub !== ALL && (g.publisher || "其他") !== pub) return false;
-		if (st !== ALL && g.status !== st) return false;
-		return true;
-	}),
+	sortMedia(
+		items.filter(
+			(a) =>
+				(st === ALL || a.status === st) &&
+				(tag === ALL || a.tags.includes(tag)),
+		),
+		sort,
+		{
+			recent: (a) => a.updated,
+			score: (a) => a.score,
+			external: (a) => a.bgmScore,
+			date: (a) => a.date,
+		},
+	),
 );
 </script>
 
-<MediaFilters {rows} {values} onpick={pick} />
+{#if items.length > 1}
+	<MediaFilters {rows} {values} onpick={pick} />
+{/if}
 
 {#if list.length}
 	<div class="mg-grid">
-		{#each list as g (g.slug)}
-			<a class="mg-item" href={`/manga/${g.slug}/`} title={g.cn || g.title}>
+		{#each list as a (a.id)}
+			<a class="mg-item" href={`/manga/${a.id}/`} title={a.cn}>
 				<div class="mg-cv">
-					{#if g.cover}
-						<img src={g.cover} alt={g.cn || g.title} loading="lazy" referrerpolicy="no-referrer" />
+					{#if a.cover}
+						<img src={a.cover} alt={a.cn} loading="lazy" referrerpolicy="no-referrer" />
 					{:else}
-						<span class="mg-cv-t"><span>{g.cn || g.title}</span></span>
+						<span class="mg-cv-t"><span>{a.cn}</span></span>
 					{/if}
-					{#if g.score !== null}
-						<span class="mg-badge-score">{g.score.toFixed(1)}</span>
+					{#if a.score !== null}
+						<span class="mg-badge-score">{a.score.toFixed(1)}</span>
 					{/if}
-					{#if g.status}
-						<span class="mg-badge-state" data-k={g.status}>{g.status}</span>
+					{#if a.status}
+						<span class="mg-badge-state" data-k={a.status}>{a.status}</span>
 					{/if}
 				</div>
-				<div class="mg-nm">{g.cn || g.title}</div>
+				<div class="mg-nm">{a.cn}</div>
 				<div class="mg-sub">
-					{[g.author || g.publisher, g.year].filter(Boolean).join(" · ")}
+					{[a.date.slice(0, 4), a.volumes ? `${a.volumes} 卷` : ""]
+						.filter(Boolean)
+						.join(" · ")}
 				</div>
 			</a>
 		{/each}

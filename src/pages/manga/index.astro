@@ -1,9 +1,9 @@
 ---
 import { getCollection } from "astro:content";
-import { Icon } from "astro-icon/components";
 import MangaGrid from "@/components/pages/manga/MangaGrid.svelte";
 import MangaTabs from "@/components/pages/manga/MangaTabs.astro";
 import { siteConfig } from "@/config";
+import subjectsData from "@/data/manga/subjects.json";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import "@/styles/pages/media-grid.css";
 
@@ -11,36 +11,53 @@ if (!siteConfig.pages.manga) {
 	return Astro.redirect("/404/");
 }
 
+const subjects = subjectsData.items as Record<
+	string,
+	{
+		cn: string;
+		jp: string;
+		cover: string;
+		date: string;
+		volumes: number;
+		bgmScore: number | null;
+		rank: number | null;
+		tags: string[];
+		summary: string;
+	}
+>;
+
 const entries = (await getCollection("manga")).filter((e) => !e.data.draft);
 
-const items = entries
-	.map((e) => ({
-		slug: e.id,
-		title: e.data.title,
-		cn: e.data.cn,
-		alt: e.data.alt,
-		author: e.data.author,
-		publisher: e.data.publisher,
-		year: (e.data.released || "").slice(0, 4),
-		cover: e.data.cover,
+const items = entries.map((e) => {
+	const id = e.data.bgm || Number(e.id);
+	const meta = subjects[String(id)];
+	if (!meta) {
+		throw new Error(
+			`[manga] ${e.id} 缺少条目信息，先跑 pnpm fetch:bangumi:manga`,
+		);
+	}
+	return {
+		id,
+		cn: meta.cn,
+		jp: meta.jp,
+		cover: meta.cover,
+		date: meta.date,
+		volumes: meta.volumes,
+		bgmScore: meta.bgmScore,
+		rank: meta.rank,
+		tags: meta.tags,
 		status: e.data.status,
 		score: e.data.score,
-		volumes: e.data.volumes,
-	}))
-	// 读完了的按读完日期倒序排前面，没读完的按连载开始时间倒序跟在后面
-	.sort((a, b) => {
-		const fa = entries.find((e) => e.id === a.slug)?.data.finished || "";
-		const fb = entries.find((e) => e.id === b.slug)?.data.finished || "";
-		if (fa && fb) return fb.localeCompare(fa) || a.title.localeCompare(b.title);
-		if (fa) return -1;
-		if (fb) return 1;
-		return (
-			(b.year || "").localeCompare(a.year || "") ||
-			a.title.localeCompare(b.title)
-		);
-	});
+		read: e.data.read,
+		updated:
+			[e.data.finished, e.data.started, e.data.updated]
+				.filter(Boolean)
+				.sort()
+				.at(-1) ?? "",
+	};
+});
 
-const publishers = new Set(items.map((g) => g.publisher || "其他")).size;
+const reading = items.filter((i) => i.status === "在看").length;
 ---
 
 <MainGridLayout title="漫画" description="漫画收藏与阅读记录">
@@ -51,30 +68,21 @@ const publishers = new Set(items.map((g) => g.publisher || "其他")).size;
 			<h2 class="text-lg font-bold text-(--deep-text) m-0">漫画</h2>
 			{
 				items.length > 0 && (
-					<>
-						<span class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums">
-							{items.length} 部
-						</span>
-						{publishers > 0 && (
-							<span class="text-[0.72rem] text-(--content-meta)">{publishers} 家出版社</span>
-						)}
-					</>
+					<span class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums">
+						{items.length} 部
+					</span>
 				)
 			}
+			{reading > 0 && <span class="text-[0.72rem] text-(--content-meta)">在看 {reading}</span>}
 		</div>
 
 		{
 			items.length > 0 ? (
 				<MangaGrid client:load items={items} />
 			) : (
-				<div class="flex flex-col items-center justify-center py-16 text-center">
-					<Icon
-						name="material-symbols:auto-stories"
-						class="mb-4 h-12 w-12 text-(--content-meta) opacity-30"
-					/>
-					<p class="m-0 mb-1 text-[0.9rem] font-semibold text-(--deep-text)">暂无收录</p>
-					<p class="m-0 text-[0.76rem] text-(--content-meta)">一般向作品还没有开始整理</p>
-				</div>
+				<p class="mg-empty">
+					还没有收藏的漫画。在 src/content/manga/ 里加一条就会出现在这里。
+				</p>
 			)
 		}
 	</div>
