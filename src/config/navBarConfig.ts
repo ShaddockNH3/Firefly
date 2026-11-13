@@ -22,17 +22,17 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		url: "#",
 		icon: "material-symbols:article",
 		children: [
-			// 归档
-			LinkPresets.Archive,
+			// 系列（策划的成组文章，信息量最高）
+			LinkPresets.Series,
 
-			// 分类
-			LinkPresets.Categories,
-
-			// 标签
+			// 标签（多对多）
 			LinkPresets.Tags,
 
-			// 系列
-			LinkPresets.Series,
+			// 归档（纯时间轴，与首页重合）
+			LinkPresets.Archive,
+
+			// 分类（与系列一一对应，信息重复，放最后兜底）
+			LinkPresets.Categories,
 		],
 	});
 
@@ -50,36 +50,26 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		],
 	});
 
-	// ACG 及其子菜单：二级用分组小标题分区，具体条目挂在分组下
+	// ACG 及其子菜单
 	links.push({
 		name: "ACG",
 		url: "#",
 		icon: "material-symbols:interests",
 		children: [
-			{ type: "caption", name: "主机游戏", url: "" },
-
 			// 战舰世界
 			LinkPresets.Wows,
-
-			{ type: "caption", name: "二游", url: "" },
 
 			// 碧蓝航线
 			LinkPresets.Azurlane,
 
-			{ type: "caption", name: "galgame", url: "" },
-
 			// galgame 作品
 			LinkPresets.Galgame,
 
-			{ type: "caption", name: "小说", url: "" },
+			// 追番记录
+			LinkPresets.Anime,
 
 			// 书单与书源
 			LinkPresets.Novels,
-
-			{ type: "caption", name: "番剧", url: "" },
-
-			// 追番记录
-			LinkPresets.Anime,
 		],
 	});
 
@@ -250,7 +240,7 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		pageKey: "wows",
 	},
 	Galgame: {
-		name: "作品列表",
+		name: "Galgame",
 		url: "/galgame/",
 		icon: "material-symbols:menu-book",
 		pageKey: "galgame",
