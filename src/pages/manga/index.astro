@@ -1,0 +1,81 @@
+---
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
+import MangaGrid from "@/components/pages/manga/MangaGrid.svelte";
+import MangaTabs from "@/components/pages/manga/MangaTabs.astro";
+import { siteConfig } from "@/config";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import "@/styles/pages/media-grid.css";
+
+if (!siteConfig.pages.manga) {
+	return Astro.redirect("/404/");
+}
+
+const entries = (await getCollection("manga")).filter((e) => !e.data.draft);
+
+const items = entries
+	.map((e) => ({
+		slug: e.id,
+		title: e.data.title,
+		cn: e.data.cn,
+		alt: e.data.alt,
+		author: e.data.author,
+		publisher: e.data.publisher,
+		year: (e.data.released || "").slice(0, 4),
+		cover: e.data.cover,
+		status: e.data.status,
+		score: e.data.score,
+		volumes: e.data.volumes,
+	}))
+	// 读完了的按读完日期倒序排前面，没读完的按连载开始时间倒序跟在后面
+	.sort((a, b) => {
+		const fa = entries.find((e) => e.id === a.slug)?.data.finished || "";
+		const fb = entries.find((e) => e.id === b.slug)?.data.finished || "";
+		if (fa && fb) return fb.localeCompare(fa) || a.title.localeCompare(b.title);
+		if (fa) return -1;
+		if (fb) return 1;
+		return (
+			(b.year || "").localeCompare(a.year || "") ||
+			a.title.localeCompare(b.title)
+		);
+	});
+
+const publishers = new Set(items.map((g) => g.publisher || "其他")).size;
+---
+
+<MainGridLayout title="漫画" description="漫画收藏与阅读记录">
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<MangaTabs active="general" />
+
+		<div class="flex items-center gap-3 flex-wrap mb-4">
+			<h2 class="text-lg font-bold text-(--deep-text) m-0">漫画</h2>
+			{
+				items.length > 0 && (
+					<>
+						<span class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums">
+							{items.length} 部
+						</span>
+						{publishers > 0 && (
+							<span class="text-[0.72rem] text-(--content-meta)">{publishers} 家出版社</span>
+						)}
+					</>
+				)
+			}
+		</div>
+
+		{
+			items.length > 0 ? (
+				<MangaGrid client:load items={items} />
+			) : (
+				<div class="flex flex-col items-center justify-center py-16 text-center">
+					<Icon
+						name="material-symbols:auto-stories"
+						class="mb-4 h-12 w-12 text-(--content-meta) opacity-30"
+					/>
+					<p class="m-0 mb-1 text-[0.9rem] font-semibold text-(--deep-text)">暂无收录</p>
+					<p class="m-0 text-[0.76rem] text-(--content-meta)">一般向作品还没有开始整理</p>
+				</div>
+			)
+		}
+	</div>
+</MainGridLayout>

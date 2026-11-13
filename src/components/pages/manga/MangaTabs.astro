@@ -1,0 +1,64 @@
+---
+interface Props {
+	active: "general" | "adult";
+}
+
+const { active } = Astro.props;
+
+const tabs = [
+	{ key: "general", label: "一般向", href: "/manga/", adult: false },
+	{ key: "adult", label: "成人向", href: "/manga/adult/", adult: true },
+] as const;
+---
+
+<nav class="mg-tabs">
+	{tabs.map((t) => (
+		<a href={t.href} class="mg-tab" data-on={active === t.key}>
+			{t.label}
+			{t.adult && <span class="mg-tab-18">18+</span>}
+		</a>
+	))}
+</nav>
+
+<style>
+	.mg-tabs {
+		display: flex;
+		gap: 6px;
+		margin-bottom: 16px;
+	}
+	.mg-tab {
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+		padding: 6px 16px;
+		border-radius: 999px;
+		font-size: 0.82rem;
+		font-weight: 600;
+		color: var(--content-meta);
+		background: var(--card-bg);
+		border: 1px solid var(--line-divider);
+		text-decoration: none;
+		transition:
+			background 0.15s,
+			color 0.15s;
+	}
+	.mg-tab:hover {
+		background: var(--btn-regular-bg);
+	}
+	.mg-tab[data-on="true"] {
+		background: var(--primary);
+		border-color: transparent;
+		color: #fff;
+	}
+	.mg-tab-18 {
+		font-size: 0.58rem;
+		font-weight: 800;
+		line-height: 1;
+		padding: 2px 4px;
+		border-radius: 4px;
+		background: rgb(0 0 0 / 0.1);
+	}
+	.mg-tab[data-on="true"] .mg-tab-18 {
+		background: rgb(255 255 255 / 0.22);
+	}
+</style>

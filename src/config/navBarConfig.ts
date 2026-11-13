@@ -65,6 +65,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// galgame 作品
 			LinkPresets.Galgame,
 
+			// 漫画
+			LinkPresets.Manga,
+
 			// 追番记录
 			LinkPresets.Anime,
 
@@ -232,6 +235,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/azurlane/",
 		icon: "material-symbols:sailing",
 		pageKey: "azurlane",
+	},
+	Manga: {
+		name: "漫画",
+		url: "/manga/",
+		icon: "material-symbols:auto-stories",
+		pageKey: "manga",
 	},
 	Wows: {
 		name: "战舰世界",

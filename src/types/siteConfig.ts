@@ -101,6 +101,7 @@ export type SiteConfig = {
 		galgame: boolean; // galgame 页面开关
 		novels: boolean; // 小说页面开关
 		anime: boolean; // 番剧页面开关
+		manga: boolean; // 漫画页面开关
 		wows: boolean; // 战舰世界页面开关
 	};
 

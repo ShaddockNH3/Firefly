@@ -54,6 +54,22 @@ type ProjectData = {
 	lang: string;
 };
 
+type MangaData = {
+	title: string;
+	cn: string;
+	alt: string;
+	author: string;
+	publisher: string;
+	released: string;
+	cover: string;
+	status: string;
+	score: number | null;
+	volumes: number | null;
+	read: string;
+	finished: string;
+	draft: boolean;
+};
+
 type GalgameData = {
 	title: string;
 	cn: string;
@@ -195,6 +211,28 @@ const galgameCollection: ContentCollection<GalgameData> = defineCollection({
 	}),
 });
 
+const mangaCollection: ContentCollection<MangaData> = defineCollection({
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/manga" }),
+	schema: z.object({
+		title: z.string(),
+		cn: z.string().optional().default(""),
+		alt: z.string().optional().default(""),
+		author: z.string().optional().default(""),
+		// 出版社（商业志）/ 社团（同人志）
+		publisher: z.string().optional().default(""),
+		released: z.string().optional().default(""),
+		cover: z.string().optional().default(""),
+		// 在读 / 已读完 / 想读 / 弃坑，空表示还没记
+		status: z.string().optional().default(""),
+		score: z.number().nullable().optional().default(null),
+		volumes: z.number().nullable().optional().default(null),
+		// 读到哪了，自由文本，写「第 42 话」或「第 3 卷」
+		read: z.string().optional().default(""),
+		finished: z.string().optional().default(""),
+		draft: z.boolean().optional().default(false),
+	}),
+});
+
 const novelsCollection: ContentCollection<NovelData> = defineCollection({
 	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/novels" }),
 	schema: z.object({
@@ -246,6 +284,7 @@ export const collections: {
 	posts: typeof postsCollection;
 	spec: typeof specCollection;
 	projects: typeof projectsCollection;
+	manga: typeof mangaCollection;
 	galgame: typeof galgameCollection;
 	novels: typeof novelsCollection;
 	anime: typeof animeCollection;
@@ -254,6 +293,7 @@ export const collections: {
 	posts: postsCollection,
 	spec: specCollection,
 	projects: projectsCollection,
+	manga: mangaCollection,
 	galgame: galgameCollection,
 	novels: novelsCollection,
 	anime: animeCollection,

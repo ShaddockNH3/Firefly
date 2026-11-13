@@ -12,6 +12,9 @@ export const novelStatuses = ["在读", "读过", "想读", "弃坑"] as const;
 /** 番剧：追番状态（搁置 / 抛弃 沿用番组计划的说法） */
 export const animeStatuses = ["在看", "看过", "想看", "搁置", "抛弃"] as const;
 
+/** 漫画：阅读状态 */
+export const mangaStatuses = ["在读", "已读完", "想读", "弃坑"] as const;
+
 /** 单机游戏：预留，落地时直接用 */
 export const gameStatuses = ["通关", "在玩", "想玩", "弃坑"] as const;
 

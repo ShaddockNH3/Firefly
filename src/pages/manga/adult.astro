@@ -1,6 +1,12 @@
 ---
+import MangaTabs from "@/components/pages/manga/MangaTabs.astro";
+import { siteConfig } from "@/config";
 import enc from "@/data/manga/adult.enc.json";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+if (!siteConfig.pages.manga) {
+	return Astro.redirect("/404/");
+}
 
 // 这个文件里只有密文。明文由 scripts/export-manga.mjs 在本地生成后立刻加密，
 // 全程不落盘、不进 git。
@@ -9,19 +15,13 @@ const payload = enc.data;
 
 <MainGridLayout title="成人向" description="密码保护的漫画清单">
 	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
-		<div class="flex items-center gap-3 flex-wrap mb-5">
+		<MangaTabs active="adult" />
+
+		<div class="flex items-center gap-3 flex-wrap mb-4">
 			<h2 class="text-lg font-bold text-(--deep-text) m-0">成人向</h2>
-			<span
-				class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content)"
-			>
-				18+
+			<span class="ml-auto inline-flex items-center gap-1 text-[0.7rem] text-(--content-meta)">
+				整页加密 · 密码解锁后显示
 			</span>
-			<a
-				href="/manga/"
-				class="ml-auto text-[0.74rem] text-(--content-meta) hover:text-(--primary) no-underline"
-			>
-				← 一般向
-			</a>
 		</div>
 
 		<!-- 未解锁 -->

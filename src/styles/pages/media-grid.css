@@ -218,10 +218,12 @@
 }
 /* 通关/看过 = 绿；在玩/在看 = 主色 ；搁置 = 灰；弃坑/抛弃 = 深灰 */
 .mg-badge-state[data-k="已通关"],
+.mg-badge-state[data-k="已读完"],
 .mg-badge-state[data-k="看过"] {
     background: rgb(16 138 100 / 0.85);
 }
 .mg-badge-state[data-k="在玩"],
+.mg-badge-state[data-k="在读"],
 .mg-badge-state[data-k="在看"] {
     background: color-mix(in oklch, var(--primary) 88%, black);
 }
