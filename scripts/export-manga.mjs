@@ -15,7 +15,7 @@
 
 import { execFileSync } from "node:child_process";
 import { createCipheriv, createHmac, pbkdf2Sync } from "node:crypto";
-import { existsSync, mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 
 // ---------- 参数 ----------
@@ -55,7 +55,7 @@ function listTables() {
 }
 
 function rowsOf(table) {
-	const sql = `select id, name, author, tags, time from "${table}";`;
+	const sql = `select id, name, author, tags, time, cover_path from "${table}";`;
 	const out = execFileSync("sqlite3", ["-readonly", "-json", DB, sql], {
 		encoding: "utf8",
 		maxBuffer: 32 * 1024 * 1024,
@@ -97,12 +97,14 @@ for (const folder of folders) {
 		const title = cleanTitle(r.name);
 		if (!title) continue;
 		items.push({
+			k: r.id, // 条目 id，笔记按它对
 			t: title, // 展示名
 			s: String(r.author ?? "")
 				.trim()
 				.slice(0, 40), // 社团 / 作者
-			f: folder, // 收藏夹
+			f: folder, // 收藏夹（页面上当分类用）
 			y: yearOf(r.time), // 收录年
+			c: String(r.cover_path ?? "").trim(), // 封面地址，锁着时不可见
 		});
 	}
 }
@@ -110,7 +112,7 @@ for (const folder of folders) {
 // 同名去重（不同汉化组版本），保留先出现的
 const seen = new Set();
 const unique = items.filter((x) => {
-	const k = `${x.t}|${x.s}`;
+	const k = `${x.t}|${x.s}|${x.f}`;
 	if (seen.has(k)) return false;
 	seen.add(k);
 	return true;
@@ -120,6 +122,28 @@ unique.sort(
 	(a, b) =>
 		(b.y || "").localeCompare(a.y || "") || a.t.localeCompare(b.t, "zh"),
 );
+
+// ---------- 笔记 ----------
+// 想给某本写评价，就在 scripts/manga-notes.local.json 里加一条：
+//   { "1234567": { "sc": 8, "nt": "随便写" } }
+// 这个文件被 gitignore 掉，只在本机存在，导出时会一起进密文。
+const NOTES = resolve("scripts/manga-notes.local.json");
+let notes = {};
+if (existsSync(NOTES)) {
+	try {
+		notes = JSON.parse(readFileSync(NOTES, "utf8"));
+	} catch (e) {
+		console.warn(`[!] 笔记文件解析失败，忽略：${e.message}`);
+	}
+}
+let notedCount = 0;
+for (const x of unique) {
+	const n = notes[String(x.k)];
+	if (!n) continue;
+	if (Number.isFinite(n.sc)) x.sc = n.sc;
+	if (n.nt) x.nt = String(n.nt).slice(0, 2000);
+	if (x.sc !== undefined || x.nt) notedCount += 1;
+}
 
 // ---------- 加密 ----------
 // 与 src/utils/crypto-utils.ts 保持一致：base64(salt16 + iv12 + tag16 + ciphertext)
@@ -164,4 +188,8 @@ console.log(
 	`[·] 分布：${[...perFolder.entries()].map(([k, v]) => `${k} ${v}`).join(" · ")}`,
 );
 if (skipped.length) console.log(`[!] 跳过：${skipped.join("；")}`);
+const withCover = unique.filter((x) => x.c).length;
+console.log(
+	`[·] 带封面 ${withCover}/${unique.length}${notedCount ? `，带笔记 ${notedCount}` : ""}`,
+);
 console.log(`[✓] 密文写入 ${OUT}（${payload.length} 字符）`);

@@ -20,6 +20,9 @@ pnpm-debug.log*
 .env
 .env.production
 
+# 本地漫画笔记，内容是明文评价，只在本机存在
+scripts/manga-notes.local.json
+
 # macOS-specific files
 .DS_Store
 

@@ -9,7 +9,7 @@ if (!siteConfig.pages.manga) {
 }
 
 // 这个文件里只有密文。明文由 scripts/export-manga.mjs 在本地生成后立刻加密，
-// 全程不落盘、不进 git。
+// 全程不落盘、不进 git。未解锁时页面里既没有书名，也没有封面地址。
 const payload = enc.data;
 ---
 
@@ -73,9 +73,9 @@ const payload = enc.data;
 
 		<!-- 已解锁 -->
 		<div id="manga-main" class="hidden">
-			<div class="mb-4 flex items-baseline gap-3">
+			<div class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
 				<b class="text-[0.84rem] text-(--deep-text)" id="manga-count"></b>
-				<span class="text-[0.72rem] text-(--content-meta)">仅名称 · 不含封面</span>
+				<span class="text-[0.72rem] text-(--content-meta)" id="manga-hint"></span>
 				<button
 					id="manga-lock"
 					class="ml-auto cursor-pointer border-0 bg-none p-0 text-[0.74rem] text-(--content-meta) hover:text-(--primary)"
@@ -83,10 +83,29 @@ const payload = enc.data;
 					上锁
 				</button>
 			</div>
+
+			<!-- 分类：就是 Venera 里的收藏夹 -->
+			<div id="manga-cats" class="mb-4 flex flex-wrap gap-1.5"></div>
+
 			<div id="manga-list" class="manga-grid"></div>
 		</div>
 	</div>
 </MainGridLayout>
+
+<!-- 详情：解锁后才渲染内容，锁上时清空 -->
+<dialog id="manga-detail" class="manga-dlg">
+	<div class="manga-dlg-in">
+		<div class="manga-dlg-cv" id="manga-dlg-cv"></div>
+		<div class="manga-dlg-body">
+			<div class="manga-dlg-head">
+				<h3 id="manga-dlg-title"></h3>
+				<button id="manga-dlg-close" aria-label="关闭">×</button>
+			</div>
+			<div class="manga-dlg-meta" id="manga-dlg-meta"></div>
+			<div class="manga-dlg-note" id="manga-dlg-note"></div>
+		</div>
+	</div>
+</dialog>
 
 <style is:global>
 	.manga-grid {
@@ -96,6 +115,12 @@ const payload = enc.data;
 	}
 	.manga-card {
 		display: block;
+		cursor: pointer;
+		border: 0;
+		background: none;
+		padding: 0;
+		text-align: left;
+		font: inherit;
 	}
 	.manga-cv {
 		position: relative;
@@ -116,6 +141,13 @@ const payload = enc.data;
 		transition:
 			transform 0.18s,
 			box-shadow 0.18s;
+	}
+	.manga-cv img {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 	.manga-card:hover .manga-cv {
 		transform: translateY(-2px);
@@ -160,6 +192,162 @@ const payload = enc.data;
 		text-overflow: ellipsis;
 		max-width: 100%;
 	}
+	.manga-sc {
+		position: absolute;
+		top: 6px;
+		right: 6px;
+		font-size: 0.64rem;
+		font-weight: 800;
+		padding: 1px 6px;
+		border-radius: 6px;
+		background: rgb(255 255 255 / 0.9);
+		color: var(--primary);
+	}
+	.manga-nm {
+		margin-top: 7px;
+		font-size: 0.74rem;
+		font-weight: 600;
+		line-height: 1.45;
+		color: var(--deep-text);
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	/* 分类 chip：样式跟站内筛选项一致 */
+	.manga-chip {
+		padding: 3px 11px;
+		border-radius: 999px;
+		border: 1px solid var(--line-divider);
+		background: var(--card-bg);
+		color: var(--content-meta);
+		font-size: 0.72rem;
+		font-family: inherit;
+		cursor: pointer;
+		transition:
+			background 0.15s,
+			color 0.15s;
+	}
+	.manga-chip:hover {
+		background: var(--btn-regular-bg);
+	}
+	.manga-chip[data-on="true"] {
+		background: var(--primary);
+		border-color: transparent;
+		color: #fff;
+	}
+	.manga-chip em {
+		font-style: normal;
+		opacity: 0.65;
+		margin-left: 3px;
+	}
+
+	/* 详情弹层 */
+	.manga-dlg {
+		position: fixed;
+		inset: 0;
+		width: 100vw;
+		height: 100vh;
+		max-width: none;
+		max-height: none;
+		margin: 0;
+		padding: 20px;
+		border: none;
+		background: rgb(0 0 0 / 0.7);
+		display: none;
+	}
+	.manga-dlg[open] {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.manga-dlg-in {
+		display: flex;
+		gap: 20px;
+		max-width: 620px;
+		width: 100%;
+		max-height: 86vh;
+		background: var(--card-bg);
+		border-radius: 16px;
+		padding: 18px;
+		overflow: hidden;
+	}
+	.manga-dlg-cv {
+		width: 200px;
+		flex: none;
+		aspect-ratio: 3 / 4;
+		border-radius: 10px;
+		overflow: hidden;
+		background: var(--btn-regular-bg);
+	}
+	.manga-dlg-cv img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.manga-dlg-body {
+		flex: 1;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+	}
+	.manga-dlg-head {
+		display: flex;
+		align-items: flex-start;
+		gap: 10px;
+	}
+	.manga-dlg-head h3 {
+		margin: 0;
+		flex: 1;
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.45;
+		color: var(--deep-text);
+		word-break: break-word;
+	}
+	.manga-dlg-head button {
+		flex: none;
+		border: 0;
+		background: none;
+		padding: 0 2px;
+		font-size: 1.2rem;
+		line-height: 1;
+		color: var(--content-meta);
+		cursor: pointer;
+	}
+	.manga-dlg-meta {
+		margin-top: 8px;
+		font-size: 0.74rem;
+		color: var(--content-meta);
+		line-height: 1.7;
+	}
+	.manga-dlg-note {
+		margin-top: 12px;
+		padding-top: 12px;
+		border-top: 1px solid var(--line-divider);
+		font-size: 0.8rem;
+		line-height: 1.85;
+		color: color-mix(in oklch, var(--deep-text) 82%, transparent);
+		white-space: pre-line;
+	}
+	.manga-dlg-note:empty {
+		display: none;
+	}
+	.manga-dlg-empty {
+		color: var(--content-meta);
+		font-size: 0.76rem;
+	}
+	@media (max-width: 640px) {
+		.manga-dlg-in {
+			flex-direction: column;
+			gap: 14px;
+		}
+		.manga-dlg-cv {
+			width: 130px;
+		}
+	}
 </style>
 
 <div id="manga-data" data-payload={payload} hidden></div>
@@ -180,8 +368,22 @@ const payload = enc.data;
 		var input = document.getElementById("manga-pw");
 		var err = document.getElementById("manga-error");
 		var list = document.getElementById("manga-list");
+		var cats = document.getElementById("manga-cats");
 		var countEl = document.getElementById("manga-count");
+		var hintEl = document.getElementById("manga-hint");
 		var lockBtn = document.getElementById("manga-lock");
+
+		var dlg = document.getElementById("manga-detail");
+		var dlgCv = document.getElementById("manga-dlg-cv");
+		var dlgTitle = document.getElementById("manga-dlg-title");
+		var dlgMeta = document.getElementById("manga-dlg-meta");
+		var dlgNote = document.getElementById("manga-dlg-note");
+		document.getElementById("manga-dlg-close").addEventListener("click", function () {
+			dlg.close();
+		});
+		dlg.addEventListener("click", function (e) {
+			if (e.target === dlg) dlg.close();
+		});
 
 		function b64ToBytes(b64) {
 			var bin = atob(b64);
@@ -222,22 +424,63 @@ const payload = enc.data;
 			return HUES[h % HUES.length];
 		}
 
+		var ALL = "全部";
+		var state = { items: [], cat: ALL };
+
 		function card(item) {
-			var wrap = document.createElement("div");
+			var wrap = document.createElement("button");
+			wrap.type = "button";
 			wrap.className = "manga-card";
 			wrap.title = item.t;
+			wrap.addEventListener("click", function () {
+				openDetail(item);
+			});
 
 			var cv = document.createElement("div");
 			cv.className = "manga-cv";
-			cv.style.setProperty("--h", hueOf(item.t));
+			var hue = hueOf(item.t);
+			cv.style.setProperty("--h", hue);
 
+			if (item.c) {
+				var img = document.createElement("img");
+				img.loading = "lazy";
+				img.referrerPolicy = "no-referrer";
+				img.alt = "";
+				img.src = item.c;
+				// 图床挂了就退回排版封面，不留一个破图标
+				img.addEventListener("error", function () {
+					img.remove();
+					buildFace(cv, item);
+				});
+				cv.appendChild(img);
+			} else {
+				buildFace(cv, item);
+			}
+
+			if (Number.isFinite(item.sc)) {
+				var sc = document.createElement("span");
+				sc.className = "manga-sc";
+				sc.textContent = item.sc.toFixed(1);
+				cv.appendChild(sc);
+			}
+
+			var nm = document.createElement("div");
+			nm.className = "manga-nm";
+			nm.textContent = item.t;
+
+			wrap.append(cv, nm);
+			return wrap;
+		}
+
+		// 没有封面时用书名排版占位
+		function buildFace(cv, item) {
 			var mid = document.createElement("div");
 			mid.className = "manga-mid";
 			var r1 = document.createElement("span");
 			r1.className = "manga-rule";
 			var ttl = document.createElement("span");
 			ttl.className = "manga-ttl";
-			ttl.textContent = item.t; // 用 textContent，不拼 HTML
+			ttl.textContent = item.t;
 			var r2 = document.createElement("span");
 			r2.className = "manga-rule";
 			mid.append(r1, ttl, r2);
@@ -247,16 +490,86 @@ const payload = enc.data;
 			foot.textContent = [item.s, item.y].filter(Boolean).join(" · ");
 
 			cv.append(mid, foot);
-			wrap.append(cv);
-			return wrap;
+		}
+
+		function renderCats() {
+			cats.replaceChildren();
+			var counter = new Map();
+			for (var i = 0; i < state.items.length; i++) {
+				var f = state.items[i].f || "其他";
+				counter.set(f, (counter.get(f) || 0) + 1);
+			}
+			var entries = [[ALL, state.items.length]].concat(
+				[...counter.entries()].sort(function (a, b) {
+					return b[1] - a[1];
+				}),
+			);
+
+			entries.forEach(function (pair) {
+				var b = document.createElement("button");
+				b.type = "button";
+				b.className = "manga-chip";
+				b.dataset.on = String(state.cat === pair[0]);
+				b.textContent = pair[0];
+				var em = document.createElement("em");
+				em.textContent = pair[1];
+				b.appendChild(em);
+				b.addEventListener("click", function () {
+					state.cat = pair[0];
+					renderCats();
+					renderList();
+				});
+				cats.appendChild(b);
+			});
+		}
+
+		function renderList() {
+			list.replaceChildren();
+			var frag = document.createDocumentFragment();
+			var shown = 0;
+			for (var i = 0; i < state.items.length; i++) {
+				var it = state.items[i];
+				if (state.cat !== ALL && (it.f || "其他") !== state.cat) continue;
+				frag.append(card(it));
+				shown += 1;
+			}
+			list.append(frag);
+			countEl.textContent = state.cat === ALL ? "全部 " + shown + " 本" : state.cat + " " + shown + " 本";
+			hintEl.textContent = "按 Venera 收藏夹分类";
+		}
+
+		function openDetail(item) {
+			dlgCv.replaceChildren();
+			if (item.c) {
+				var img = document.createElement("img");
+				img.src = item.c;
+				img.referrerPolicy = "no-referrer";
+				img.alt = "";
+				dlgCv.appendChild(img);
+			}
+			dlgTitle.textContent = item.t;
+
+			var bits = [item.s, item.f, item.y].filter(Boolean);
+			if (Number.isFinite(item.sc)) bits.push("评分 " + item.sc.toFixed(1));
+			dlgMeta.textContent = bits.join(" · ");
+
+			dlgNote.replaceChildren();
+			if (item.nt) {
+				dlgNote.textContent = item.nt;
+			} else {
+				var e = document.createElement("span");
+				e.className = "manga-dlg-empty";
+				e.textContent = "还没写评价。";
+				dlgNote.appendChild(e);
+			}
+			dlg.showModal();
 		}
 
 		function render(data) {
-			list.replaceChildren();
-			var frag = document.createDocumentFragment();
-			for (var i = 0; i < data.items.length; i++) frag.append(card(data.items[i]));
-			list.append(frag);
-			countEl.textContent = "全部 " + data.items.length + " 本";
+			state.items = data.items;
+			state.cat = ALL;
+			renderCats();
+			renderList();
 			gate.classList.add("hidden");
 			main.classList.remove("hidden");
 		}
@@ -265,8 +578,15 @@ const payload = enc.data;
 			main.classList.add("hidden");
 			gate.classList.remove("hidden");
 			list.replaceChildren(); // 上锁时清掉已解密的节点，不只是隐藏
+			cats.replaceChildren();
 			countEl.textContent = "";
+			hintEl.textContent = "";
 			input.value = "";
+			if (dlg.open) dlg.close();
+			dlgCv.replaceChildren();
+			dlgTitle.textContent = "";
+			dlgMeta.textContent = "";
+			dlgNote.replaceChildren();
 			sessionStorage.removeItem(CACHE_KEY);
 		}
 
