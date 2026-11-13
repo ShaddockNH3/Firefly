@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
-import AlTabs from "@/components/pages/azurlane/AlTabs.astro";
 import SkinWall from "@/components/pages/azurlane/SkinWall.svelte";
+import PageTabs from "@/components/pages/media/PageTabs.astro";
 import { siteConfig } from "@/config";
 import profile from "@/data/azurlane/profile.json";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
@@ -31,7 +31,7 @@ if (!siteConfig.pages.azurlane) {
 
 <MainGridLayout title="换装" description="碧蓝航线换装一览">
 	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
-		<AlTabs active="skins" />
+		<PageTabs group="azurlane" active="skins" />
 
 		<div class="flex items-center gap-3 flex-wrap mb-4">
 			<h2 class="text-lg font-bold text-(--deep-text) m-0">换装</h2>

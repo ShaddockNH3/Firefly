@@ -1,6 +1,7 @@
 <script lang="ts">
 import { animeSorts, animeStatuses } from "@/config/media";
 import { ALL, countAll, countStatuses, sortMedia } from "@/utils/media-utils";
+import MediaCard from "../media/MediaCard.svelte";
 import MediaFilters from "../media/MediaFilters.svelte";
 
 interface Item {
@@ -91,25 +92,17 @@ const list = $derived(
 {#if list.length}
 	<div class="mg-grid">
 		{#each list as a (a.id)}
-			<a class="mg-item" href={`/anime/${a.id}/`} title={a.cn}>
-				<div class="mg-cv">
-					{#if a.cover}
-						<img src={a.cover} alt={a.cn} loading="lazy" referrerpolicy="no-referrer" />
-					{/if}
-					{#if a.score !== null}
-						<span class="mg-badge-score">{a.score.toFixed(1)}</span>
-					{/if}
-					{#if a.status}
-						<span class="mg-badge-state" data-k={a.status}>{a.status}</span>
-					{/if}
-				</div>
-				<div class="mg-nm">{a.cn}</div>
-				<div class="mg-sub">{[a.date.slice(0, 4), a.eps ? `${a.eps} 集` : ""].filter(Boolean).join(" · ")}</div>
-				{#if a.status === "在看" && a.ep > 0 && a.eps > 0}
-					<div class="mg-bar"><i style={`width:${Math.min(100, Math.round((a.ep / a.eps) * 100))}%`}></i></div>
-					<div class="mg-bar-t">{a.ep} / {a.eps}</div>
-				{/if}
-			</a>
+			<MediaCard
+				href={`/anime/${a.id}/`}
+				title={a.cn}
+				sub={[a.date.slice(0, 4), a.eps ? `${a.eps} 集` : ""].filter(Boolean).join(" · ")}
+				cover={a.cover}
+				score={a.score}
+				status={a.status}
+				progress={a.status === "在看" && a.ep > 0 && a.eps > 0
+					? { cur: a.ep, total: a.eps }
+					: null}
+			/>
 		{/each}
 	</div>
 {:else}

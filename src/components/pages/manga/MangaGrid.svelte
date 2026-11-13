@@ -1,6 +1,7 @@
 <script lang="ts">
 import { mangaSorts, mangaStatuses } from "@/config/media";
 import { ALL, countStatuses, sortMedia } from "@/utils/media-utils";
+import MediaCard from "../media/MediaCard.svelte";
 import MediaFilters from "../media/MediaFilters.svelte";
 
 interface Item {
@@ -91,59 +92,19 @@ const list = $derived(
 {#if list.length}
 	<div class="mg-grid">
 		{#each list as a (a.id)}
-			<a class="mg-item" href={`/manga/${a.id}/`} title={a.cn}>
-				<div class="mg-cv">
-					{#if a.cover}
-						<img src={a.cover} alt={a.cn} loading="lazy" referrerpolicy="no-referrer" />
-					{:else}
-						<span class="mg-cv-t"><span>{a.cn}</span></span>
-					{/if}
-					{#if a.score !== null}
-						<span class="mg-badge-score">{a.score.toFixed(1)}</span>
-					{/if}
-					{#if a.status}
-						<span class="mg-badge-state" data-k={a.status}>{a.status}</span>
-					{/if}
-				</div>
-				<div class="mg-nm">{a.cn}</div>
-				<div class="mg-sub">
-					{[a.date.slice(0, 4), a.volumes ? `${a.volumes} 卷` : ""]
-						.filter(Boolean)
-						.join(" · ")}
-				</div>
-			</a>
+			<MediaCard
+				href={`/manga/${a.id}/`}
+				title={a.cn}
+				sub={[a.date.slice(0, 4), a.volumes ? `${a.volumes} 卷` : ""]
+					.filter(Boolean)
+					.join(" · ")}
+				cover={a.cover}
+				score={a.score}
+				status={a.status}
+			/>
 		{/each}
 	</div>
 {:else}
 	<p class="mg-empty">没有符合条件的作品。</p>
 {/if}
 
-<style>
-	/* 没有封面时把书名排进卡面，当占位封用，不留一块空白 */
-	.mg-cv-t {
-		position: absolute;
-		inset: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 16px 14px;
-		text-align: center;
-		font-size: 0.82rem;
-		font-weight: 700;
-		line-height: 1.65;
-		letter-spacing: 0.02em;
-		color: var(--deep-text);
-		background: linear-gradient(
-			160deg,
-			color-mix(in oklch, var(--primary) 7%, var(--card-bg)) 0%,
-			color-mix(in oklch, var(--primary) 18%, var(--card-bg)) 100%
-		);
-		word-break: break-word;
-	}
-	.mg-cv-t span {
-		display: -webkit-box;
-		-webkit-line-clamp: 6;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-	}
-</style>

@@ -1,4 +1,6 @@
 <script lang="ts">
+import Icon from "@/components/common/Icon.svelte";
+
 interface Ship {
 	i: string;
 	n: string;
@@ -99,7 +101,7 @@ function pick(setter: (v: string) => void, v: string) {
 
 <div class="al-filters">
 	<label class="al-search">
-		<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5A4.5 4.5 0 0 1 9.5 14"/></svg>
+		<Icon icon="material-symbols:search" class="text-[1rem]" />
 		<input type="search" placeholder="搜舰船名" bind:value={q} oninput={() => (page = 1)} />
 	</label>
 

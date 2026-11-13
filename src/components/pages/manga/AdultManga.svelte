@@ -1,6 +1,8 @@
 <script lang="ts">
 import { onMount } from "svelte";
+import Icon from "@/components/common/Icon.svelte";
 import { ALL, countStatuses } from "@/utils/media-utils";
+import MediaCard from "../media/MediaCard.svelte";
 import MediaFilters from "../media/MediaFilters.svelte";
 
 type Item = {
@@ -212,20 +214,7 @@ onMount(() => {
 		<div
 			class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-(--primary)/10 text-(--primary)"
 		>
-			<svg
-				viewBox="0 0 24 24"
-				width="26"
-				height="26"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="1.7"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				aria-hidden="true"
-			>
-				<rect x="3" y="11" width="18" height="11" rx="2"></rect>
-				<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-			</svg>
+			<Icon icon="material-symbols:lock-outline" class="text-[26px]" />
 		</div>
 		<h3 class="m-0 mb-2 text-base font-bold text-(--deep-text)">本页受密码保护</h3>
 		<p class="m-0 mb-5 text-[0.78rem] leading-relaxed text-(--content-meta)">
@@ -258,19 +247,7 @@ onMount(() => {
 {:else if detail}
 	<!-- 详情：跟一般向详情页同一套结构 -->
 	<button type="button" class="md-back" onclick={closeDetail}>
-		<svg
-			viewBox="0 0 24 24"
-			width="16"
-			height="16"
-			fill="none"
-			stroke="currentColor"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			aria-hidden="true"
-		>
-			<path d="m15 18-6-6 6-6"></path>
-		</svg>
+		<Icon icon="material-symbols:chevron-right-rounded" class="text-[1rem]" />
 		漫画
 	</button>
 
@@ -336,29 +313,18 @@ onMount(() => {
 	{#if list.length}
 		<div class="mg-grid">
 			{#each list as x (x.k)}
-				<a
-					class="mg-item"
+				<MediaCard
 					href={`#${x.k}`}
 					title={x.t}
+					sub={[x.s, x.y].filter(Boolean).join(" · ")}
+					cover={x.c}
+					score={x.sc ?? null}
+					status={isScored(x) ? "" : "未评"}
 					onclick={(e) => {
 						e.preventDefault();
 						openDetail(String(x.k));
 					}}
-				>
-					<div class="mg-cv">
-						{#if x.c}
-							<img src={x.c} alt={x.t} loading="lazy" referrerpolicy="no-referrer" />
-						{/if}
-						{#if Number.isFinite(x.sc)}
-							<span class="mg-badge-score">{x.sc?.toFixed(1)}</span>
-						{/if}
-						{#if !isScored(x)}
-							<span class="mg-badge-state" data-k="想读">未评</span>
-						{/if}
-					</div>
-					<div class="mg-nm">{x.t}</div>
-					<div class="mg-sub">{[x.s, x.y].filter(Boolean).join(" · ")}</div>
-				</a>
+				/>
 			{/each}
 		</div>
 	{:else}

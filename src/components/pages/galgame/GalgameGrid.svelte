@@ -1,6 +1,7 @@
 <script lang="ts">
 import { galgameStatuses } from "@/config/media";
 import { ALL, countAll, countStatuses } from "@/utils/media-utils";
+import MediaCard from "../media/MediaCard.svelte";
 import MediaFilters from "../media/MediaFilters.svelte";
 
 interface Game {
@@ -58,21 +59,14 @@ const list = $derived(
 {#if list.length}
 	<div class="mg-grid">
 		{#each list as g (g.slug)}
-			<a class="mg-item" href={`/galgame/${g.slug}/`} title={g.cn || g.title}>
-				<div class="mg-cv">
-					{#if g.cover}
-						<img src={g.cover} alt={g.cn || g.title} loading="lazy" referrerpolicy="no-referrer" />
-					{/if}
-					{#if g.score !== null}
-						<span class="mg-badge-score">{g.score.toFixed(1)}</span>
-					{/if}
-					{#if g.status}
-						<span class="mg-badge-state" data-k={g.status}>{g.status}</span>
-					{/if}
-				</div>
-				<div class="mg-nm">{g.cn || g.title}</div>
-				<div class="mg-sub">{[g.developer, g.year].filter(Boolean).join(" · ")}</div>
-			</a>
+			<MediaCard
+				href={`/galgame/${g.slug}/`}
+				title={g.cn || g.title}
+				sub={[g.developer, g.year].filter(Boolean).join(" · ")}
+				cover={g.cover}
+				score={g.score}
+				status={g.status}
+			/>
 		{/each}
 	</div>
 {:else}
