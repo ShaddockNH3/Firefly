@@ -6,7 +6,7 @@ category: "异世界"
 tags:
   - 奇幻
   - 公会
-status: ""
+status: "想读"
 score: null
 length: ""
 started: ""

@@ -6,7 +6,7 @@ category: "异世界"
 tags:
   - 转生
   - 建国
-status: ""
+status: "想读"
 score: null
 length: ""
 started: ""

@@ -39,7 +39,7 @@ const PLATS: [string, string][] = [
 	["light", "轻小说"],
 ];
 
-let tab = $state("src");
+let tab = $state(PLATS[0][0]);
 let st = $state(ALL);
 let cat = $state(ALL);
 let sort = $state(novelSorts[0].key);
@@ -111,12 +111,12 @@ async function copyJson() {
 </script>
 
 <div class="mg-tabs">
-	<button class="mg-tab" data-on={tab === "src"} onclick={() => pickTab("src")}>书源分享</button>
 	{#each PLATS as [k, label] (k)}
 		<button class="mg-tab" data-on={tab === k} onclick={() => pickTab(k)}>
 			{label}<span class="mg-tab-n">{books.filter((b) => b.platform === k).length}</span>
 		</button>
 	{/each}
+	<button class="mg-tab" data-on={tab === "src"} onclick={() => pickTab("src")}>书源分享</button>
 </div>
 
 {#if tab === "src"}
@@ -151,23 +151,24 @@ async function copyJson() {
 	<MediaFilters {rows} {values} onpick={pick} />
 
 	{#if list.length}
-		<div class="mg-list">
+		<div class="nb-grid">
 			{#each list as b (b.slug)}
-				<a class="mg-book" href={`/novels/${b.slug}/`}>
-					<div class="mg-book-main">
-						<div class="mg-book-t">
-							<span class="mg-book-n">{b.title}</span>
+				<a class="nb-card" href={`/novels/${b.slug}/`}>
+					<div class="nb-cover" data-plat={b.platform}>
+						<span class="nb-cover-t">{b.title}</span>
+						{#if b.status}<span class="nb-badge">{b.status}</span>{/if}
+					</div>
+					<div class="nb-body">
+						<div class="nb-head">
+							<span class="nb-title">{b.title}</span>
+							{#if b.score !== null}<span class="nb-score">{b.score.toFixed(1)}</span>{/if}
+						</div>
+						<div class="nb-meta">{[b.author, b.length].filter(Boolean).join(" · ")}</div>
+						{#if b.note}<div class="nb-note">{b.note}</div>{/if}
+						<div class="nb-tags">
 							{#if b.category}<span class="mg-tag cat">{b.category}</span>{/if}
 							{#each b.tags as t (t)}<span class="mg-tag">{t}</span>{/each}
 						</div>
-						<div class="mg-book-a">{[b.author, b.length].filter(Boolean).join(" · ")}</div>
-						{#if b.note}<div class="mg-book-d">{b.note}</div>{/if}
-					</div>
-					<div class="mg-book-r">
-						<div class="mg-score" class:none={b.score === null}>
-							{b.score !== null ? b.score.toFixed(1) : "未评"}
-						</div>
-						{#if b.status}<div class="mg-state">{b.status}</div>{/if}
 					</div>
 				</a>
 			{/each}
@@ -176,3 +177,146 @@ async function copyJson() {
 		<p class="mg-empty">这个条件下没有书。</p>
 	{/if}
 {/if}
+
+<style>
+	.nb-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 12px;
+	}
+	@media (max-width: 720px) {
+		.nb-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+	.nb-card {
+		display: flex;
+		gap: 14px;
+		padding: 14px;
+		border: 1px solid var(--line-divider);
+		border-radius: 14px;
+		background: var(--card-bg);
+		text-decoration: none;
+		transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+	}
+	.nb-card:hover {
+		border-color: color-mix(in oklch, var(--primary) 45%, var(--line-divider));
+		box-shadow: 0 6px 18px rgb(0 0 0 / 0.06);
+		transform: translateY(-1px);
+	}
+	.nb-cover {
+		position: relative;
+		width: 86px;
+		height: 116px;
+		flex: none;
+		border-radius: 9px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 9px 7px;
+		overflow: hidden;
+	}
+	.nb-cover[data-plat="fanqie"] {
+		background: linear-gradient(158deg, #fff3ec, #ffdcc9);
+		color: #a33f16;
+		box-shadow: inset 0 0 0 1px rgb(163 63 22 / 0.12);
+	}
+	.nb-cover[data-plat="qidian"] {
+		background: linear-gradient(158deg, #fff0f0, #ffd5d5);
+		color: #9c2020;
+		box-shadow: inset 0 0 0 1px rgb(156 32 32 / 0.12);
+	}
+	.nb-cover[data-plat="light"] {
+		background: linear-gradient(158deg, #f2f1ff, #ddd9ff);
+		color: #4b3f9e;
+		box-shadow: inset 0 0 0 1px rgb(75 63 158 / 0.12);
+	}
+	:global(.dark) .nb-cover[data-plat="fanqie"] {
+		background: linear-gradient(158deg, #3a2419, #2a1a12);
+		color: #f0b394;
+	}
+	:global(.dark) .nb-cover[data-plat="qidian"] {
+		background: linear-gradient(158deg, #3a1d1d, #281414);
+		color: #f0a0a0;
+	}
+	:global(.dark) .nb-cover[data-plat="light"] {
+		background: linear-gradient(158deg, #241f45, #1a1633);
+		color: #b3a9f0;
+	}
+	.nb-cover-t {
+		font-size: 0.66rem;
+		font-weight: 600;
+		line-height: 1.4;
+		text-align: center;
+		display: -webkit-box;
+		-webkit-line-clamp: 5;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		word-break: break-all;
+	}
+	.nb-badge {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		font-size: 0.58rem;
+		font-weight: 700;
+		padding: 1px 5px;
+		border-radius: 5px;
+		background: rgb(255 255 255 / 0.86);
+		color: inherit;
+	}
+	:global(.dark) .nb-badge {
+		background: rgb(0 0 0 / 0.45);
+	}
+	.nb-body {
+		flex: 1;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	.nb-head {
+		display: flex;
+		align-items: baseline;
+		gap: 8px;
+	}
+	.nb-title {
+		font-size: 0.95rem;
+		font-weight: 700;
+		color: var(--deep-text);
+		line-height: 1.35;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+	.nb-score {
+		margin-left: auto;
+		flex: none;
+		font-size: 0.9rem;
+		font-weight: 700;
+		color: var(--primary);
+		font-variant-numeric: tabular-nums;
+	}
+	.nb-meta {
+		font-size: 0.74rem;
+		color: var(--content-meta);
+	}
+	.nb-note {
+		font-size: 0.74rem;
+		color: var(--content-meta);
+		opacity: 0.9;
+		line-height: 1.5;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+	.nb-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		margin-top: auto;
+		padding-top: 4px;
+	}
+</style>
