@@ -137,13 +137,22 @@ if (existsSync(NOTES)) {
 	}
 }
 let notedCount = 0;
+const usedIds = new Set();
+
+// 每次导出都是全量重建：Venera 里改过的标题、社团、封面会跟着更新，删掉的书会消失。
+// 笔记按条目 id 匹配，所以只要 id 不变就一直挂着。
 for (const x of unique) {
 	const n = notes[String(x.k)];
 	if (!n) continue;
 	if (Number.isFinite(n.sc)) x.sc = n.sc;
 	if (n.nt) x.nt = String(n.nt).slice(0, 2000);
 	if (x.sc !== undefined || x.nt) notedCount += 1;
+	usedIds.add(String(x.k));
 }
+
+// 笔记里有、这批导出却找不到对应条目的 id：多半是书被删了，或者 id 抄错。
+// 不报的话这些笔记会安静地丢掉，所以每次列出来。
+const orphanNotes = Object.keys(notes).filter((k) => !usedIds.has(k));
 
 // ---------- 加密 ----------
 // 与 src/utils/crypto-utils.ts 保持一致：base64(salt16 + iv12 + tag16 + ciphertext)
@@ -192,4 +201,9 @@ const withCover = unique.filter((x) => x.c).length;
 console.log(
 	`[·] 带封面 ${withCover}/${unique.length}${notedCount ? `，带笔记 ${notedCount}` : ""}`,
 );
+if (orphanNotes.length) {
+	console.log(
+		`[!] ${orphanNotes.length} 条笔记没有对应条目（书可能已删或 id 写错）：${orphanNotes.slice(0, 5).join("、")}${orphanNotes.length > 5 ? " …" : ""}`,
+	);
+}
 console.log(`[✓] 密文写入 ${OUT}（${payload.length} 字符）`);
