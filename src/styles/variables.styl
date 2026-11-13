@@ -113,6 +113,10 @@
   --line-color: rgba(255, 255, 255, 0.1)
   --meta-divider: rgba(255, 255, 255, 0.2)
   --content-meta: rgba(255, 255, 255, 0.6)
+
+  /* 浅色主题下是接近黑的标题色，暗色必须翻成接近白，否则标题在深底上不可见 */
+  --deep-text: oklch(0.93 0.012 var(--hue))
+  --title-active: oklch(0.75 0.12 var(--hue))
   
   --muted: oklch(0.25 0.015 var(--hue))
   --selection-bg: oklch(0.40 0.08 var(--hue))

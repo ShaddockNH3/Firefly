@@ -106,14 +106,16 @@ const spread = $derived.by(() => {
 	return { needA: build(need), haveA: build(Math.min(have, need)) };
 });
 
-const RAR: Record<string, string> = {
-	普通: "#7c7f86",
-	稀有: "#3c7fc0",
-	精锐: "#7a4fc4",
-	超稀有: "#a97c14",
-	最高方案: "#a97c14",
-	海上传奇: "#c03a70",
-	决战方案: "#c03a70",
+// 稀有度配色：[浅色主题, 暗色主题]。浅色要压深才在纸白上站得住，
+// 暗色要提亮才不和深底糊在一起，所以两套分开，用 CSS 变量切换。
+const RAR: Record<string, [string, string]> = {
+	普通: ["#7c7f86", "#b9bec6"],
+	稀有: ["#3c7fc0", "#7fb3e8"],
+	精锐: ["#7a4fc4", "#b394e8"],
+	超稀有: ["#a97c14", "#e8c37f"],
+	最高方案: ["#a97c14", "#e8c37f"],
+	海上传奇: ["#c03a70", "#f08fb8"],
+	决战方案: ["#c03a70", "#f08fb8"],
 };
 
 let track = $state<HTMLDivElement | null>(null);
@@ -140,7 +142,11 @@ function scrollSkins(dir: number) {
 	<div class="sp-info">
 		<div class="sp-name">
 			{ship.n}
-			<span class="sp-rar" style={`color:${RAR[ship.r] ?? "#7c7f86"}`}>{ship.r}</span>
+			<span
+				class="sp-rar"
+				style={`--rar-light:${(RAR[ship.r] ?? ["#7c7f86", "#b9bec6"])[0]};--rar-dark:${(RAR[ship.r] ?? ["#7c7f86", "#b9bec6"])[1]}`}
+				>{ship.r}</span
+			>
 		</div>
 
 		<div class="sp-meta">
@@ -293,6 +299,10 @@ function scrollSkins(dir: number) {
 		padding: 1px 8px;
 		border-radius: 6px;
 		background: var(--btn-regular-bg);
+		color: var(--rar-light);
+	}
+	:global(.dark) .sp-rar {
+		color: var(--rar-dark);
 	}
 	.sp-meta {
 		display: flex;
@@ -529,6 +539,10 @@ function scrollSkins(dir: number) {
 		color: var(--primary);
 		letter-spacing: 0.03em;
 	}
+	:global(.dark) .sp-badge {
+		background: rgb(0 0 0 / 0.55);
+		color: #fff;
+	}
 	.sp-badge.l2d {
 		color: #b8681f;
 	}
@@ -538,6 +552,15 @@ function scrollSkins(dir: number) {
 		color: var(--content-meta);
 		background: rgb(255 255 255 / 0.95);
 		box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+	}
+	/* 必须写在 .sp-badge.off 之后：两者特异性相同，靠顺序压过白底 */
+	:global(.dark) .sp-badge.off {
+		background: rgb(0 0 0 / 0.6);
+		color: rgb(255 255 255 / 0.82);
+		box-shadow: 0 1px 3px rgb(0 0 0 / 0.3);
+	}
+	:global(.dark) .sp-badge.l2d {
+		color: #f0b374;
 	}
 	.sp-sk-nm {
 		margin-top: 6px;
