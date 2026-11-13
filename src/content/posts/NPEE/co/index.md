@@ -2,15 +2,13 @@
 title: 考研冲刺前的总结 —— 计算机组成原理
 published: 2026-09-11
 description: 考研冲刺前的总结 —— 计算机组成原理
-tags:
-  - 考研
-  - 计算机组成原理
-  - 总结
-category: 考研
-draft: false
 image: ./cover.png
-series: "考研"
+category: 考研
+series: NPEE
 seriesOrder: 4
+tags:
+  - 总结
+draft: false
 ---
 
 ## 前言

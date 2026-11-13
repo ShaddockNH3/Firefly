@@ -2,17 +2,13 @@
 title: 考研冲刺前的总结 —— 数学（高数 + 线代）
 published: 2026-08-31
 description: 考研冲刺前的总结 —— 数学（高数 + 线代）
-tags:
-  - 考研
-  - 数学
-  - 高等数学
-  - 线性代数
-  - 总结
-category: 考研
-draft: false
 image: ./cover.png
-series: "考研"
+category: 考研
+series: NPEE
 seriesOrder: 2
+tags:
+  - 总结
+draft: false
 ---
 
 ## 前言

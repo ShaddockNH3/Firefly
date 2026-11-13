@@ -3,17 +3,16 @@ title: 树莓派 5 部署 ALAS
 published: 2025-12-14
 description: 记录在树莓派 5 上部署 ALAS 的完整过程，包括环境准备、依赖兼容问题、排错过程与最终解决方案，供同类场景参考。
 image: ./cover.png
+category: 折腾
+series: TOSS
+seriesOrder: 1
 tags:
   - ALAS
   - 树莓派
   - 碧蓝航线
-  - 过时
-category: ALAS
-series: ALAS
-seriesOrder: 1
 draft: false
 password: "2004122120070130"
-passwordHint: "我的生日及白的生日"
+passwordHint: 我的生日及白的生日
 ---
 
 > [!WARNING] 文档封存

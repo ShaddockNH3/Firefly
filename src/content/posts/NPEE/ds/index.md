@@ -2,15 +2,13 @@
 title: 考研冲刺前的总结 —— 数据结构
 published: 2026-09-01
 description: 考研冲刺前的总结 —— 数据结构
-tags:
-  - 考研
-  - 数据结构
-  - 总结
-category: 考研
-draft: false
 image: ./cover.png
-series: "考研"
+category: 考研
+series: NPEE
 seriesOrder: 3
+tags:
+  - 总结
+draft: false
 ---
 
 ## 前言

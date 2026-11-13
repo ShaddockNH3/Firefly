@@ -2,16 +2,13 @@
 title: 考研冲刺前的总结 —— 错题本（数学）
 published: 2026-10-01
 description: 考研冲刺前的总结 —— 错题本（数学）
-tags:
-  - 考研
-  - 错题
-  - 数学
-  - 总结
-category: 考研
-draft: false
 image: ./cover.png
-series: "考研"
+category: 考研
+series: NPEE
 seriesOrder: 7
+tags:
+  - 总结
+draft: false
 ---
 
 ## 前言
@@ -10070,6 +10067,12 @@ sqrt(1+x^2)<=1+|x|，这个确实不会。
 4. 特值法以及跳题法
 
 ### 武忠祥最后 17 堂课 5
+
+![1](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCnBq9paNvgfledYEeXuwkzDEBOSeLwACWhdrG9U_uFfNBwAB12MNVZoBAAMCAAN3AAM9BA)
+
+最核心的思想是 f(x0) 与 limf'(x) 无关！
+
+每年的考题都在这上面做文章。
 
 ## 25 超越
 

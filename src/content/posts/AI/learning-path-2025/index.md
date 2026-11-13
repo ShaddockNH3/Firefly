@@ -3,18 +3,16 @@ title: 有关 AI 学习路线的思考
 published: 2025-10-19
 description: 探讨 AI 学习路线的设计思路，分析西二 AI 考核的合理性与不足，并提出一条适合未来 AI 学习者的路线图，涵盖基础、应用与科研等多个层面。
 image: ./cover.png
+category: 人工智能
+series: AI
+seriesOrder: 1
 tags:
-  - AI
   - 学习路线
   - 西二在线
   - 思考
-  - 过时
-category: AI
-series: AI
-seriesOrder: 1
 draft: false
 password: "2004122120070130"
-passwordHint: "我的生日及白的生日"
+passwordHint: 我的生日及白的生日
 ---
 
 > [!WARNING] 文档封存

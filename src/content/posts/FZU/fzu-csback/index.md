@@ -3,14 +3,10 @@ title: 福州大学计算机指北指南
 published: 2027-06-01
 description: 福州大学计算机全路线总纲以及劝退指南
 image: ./cover.png
-tags:
-  - 福州大学
-  - 指北
-  - 计算机
-  - 劝退
-category: 福州大学计算机
+category: 福州大学
 series: FZU
 seriesOrder: 1
+tags: []
 draft: true
 ---
 

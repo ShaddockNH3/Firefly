@@ -2,16 +2,13 @@
 title: 考研冲刺前的总结 —— 英语（二）与政治
 published: 2026-11-01
 description: 考研冲刺前的总结 —— 英语（二）与政治
-tags:
-  - 考研
-  - 英语
-  - 政治
-  - 总结
-category: 考研
 image: ./cover.png
-draft: false
-series: "考研"
+category: 考研
+series: NPEE
 seriesOrder: 1
+tags:
+  - 总结
+draft: false
 ---
 
 ## 时间线

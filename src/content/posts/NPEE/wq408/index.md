@@ -2,16 +2,14 @@
 title: 考研冲刺前的总结 —— 错题本（408）
 published: 2026-10-01
 description: 考研冲刺前的总结 —— 错题本（408）
+image: ./cover.png
+category: 考研
+series: NPEE
+seriesOrder: 8
 tags:
-  - 考研
-  - 错题
   - "408"
   - 总结
-category: 考研
 draft: false
-image: ./cover.png
-series: "考研"
-seriesOrder: 8
 ---
 
 ## 时间线
