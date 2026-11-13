@@ -575,6 +575,7 @@ function scrollSkins(dir: number) {
 		.sp {
 			flex-direction: column;
 			gap: 16px;
+			align-items: stretch;
 		}
 		.sp-media {
 			width: 100%;
