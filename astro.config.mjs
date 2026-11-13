@@ -72,6 +72,20 @@ export default defineConfig({
 	base: "/",
 	trailingSlash: "always",
 
+	// 文章目录改名后的旧地址跳转（静态输出会生成 meta refresh 跳转页）
+	// 目录名改了 URL 就跟着变，这些是改动前已经对外存在的地址
+	redirects: {
+		"/posts/alas/android-host/": "/posts/toss/pi5-android/",
+		"/posts/alas/debian-waydroid/": "/posts/toss/pi5-debian/",
+		"/posts/ai/learning-path-2025/": "/posts/ai/path-2025/",
+		"/posts/ai/how-to-use/": "/posts/ai/use-ai/",
+		"/posts/ai/thoughts-2026/": "/posts/ai/think-2026/",
+		"/posts/fzu/2023-vehicle-to-cs/": "/posts/fzu/vehicle-cs/",
+		"/posts/fzu/fzu-csback/": "/posts/fzu/cs-guide/",
+		"/posts/fzu/open-source-rant/": "/posts/fzu/oss-rant/",
+		"/posts/npee/eg-pol/": "/posts/npee/pol-eg/",
+	},
+
 	// 字体配置 - 只加载实际使用的字体，跳过未引用的以加快构建
 	fonts: (() => {
 		// 禁用字体功能时直接返回空数组，跳过 Astro Font API 集成
