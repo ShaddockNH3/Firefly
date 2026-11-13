@@ -117,6 +117,7 @@ const payload = enc.data;
 						<h1 class="manga-dtitle" id="manga-dtitle"></h1>
 						<div class="manga-dmeta" id="manga-dmeta"></div>
 						<div class="manga-dtags" id="manga-dtags"></div>
+						<button class="manga-did" id="manga-did" type="button" title="点一下复制"></button>
 					</div>
 				</div>
 
@@ -336,6 +337,45 @@ const payload = enc.data;
 		background: var(--btn-regular-bg);
 		color: var(--content-meta);
 	}
+	.manga-did {
+		margin-top: 14px;
+		padding: 0;
+		border: 0;
+		background: none;
+		font: inherit;
+		font-size: 0.7rem;
+		font-variant-numeric: tabular-nums;
+		color: var(--content-meta);
+		opacity: 0.65;
+		cursor: pointer;
+	}
+	.manga-did:hover {
+		opacity: 1;
+		color: var(--primary);
+	}
+
+	/* 列表和详情切换时给一点进场，补上 hash 切换没有的页面过渡感 */
+	@keyframes mangaIn {
+		from {
+			opacity: 0;
+			transform: translateY(6px);
+		}
+		to {
+			opacity: 1;
+			transform: none;
+		}
+	}
+	#manga-list-view:not(.hidden),
+	#manga-detail-view:not(.hidden) {
+		animation: mangaIn 0.16s ease-out;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		#manga-list-view:not(.hidden),
+		#manga-detail-view:not(.hidden) {
+			animation: none;
+		}
+	}
+
 	.manga-dnote {
 		margin-top: 22px;
 		padding-top: 16px;
@@ -398,6 +438,19 @@ const payload = enc.data;
 		var dMeta = document.getElementById("manga-dmeta");
 		var dTags = document.getElementById("manga-dtags");
 		var dNote = document.getElementById("manga-dnote");
+		var dId = document.getElementById("manga-did");
+
+		dId.addEventListener("click", function () {
+			var text = dId.dataset.id || "";
+			if (!text) return;
+			navigator.clipboard.writeText(text).then(function () {
+				var old = dId.textContent;
+				dId.textContent = "已复制 " + text;
+				setTimeout(function () {
+					dId.textContent = old;
+				}, 1200);
+			});
+		});
 
 		document.getElementById("manga-back").addEventListener("click", function () {
 			location.hash = "";
@@ -580,6 +633,8 @@ const payload = enc.data;
 				dCv.appendChild(img);
 			}
 			dTitle.textContent = item.t;
+			dId.dataset.id = String(item.k);
+			dId.textContent = "#" + item.k;
 
 			var bits = [item.s, item.f, item.y].filter(Boolean);
 			if (Number.isFinite(item.sc)) bits.push("评分 " + item.sc.toFixed(1));
@@ -646,6 +701,8 @@ const payload = enc.data;
 			dMeta.textContent = "";
 			dTags.replaceChildren();
 			dNote.replaceChildren();
+			dId.dataset.id = "";
+			dId.textContent = "";
 			showList();
 			sessionStorage.removeItem(CACHE_KEY);
 		}

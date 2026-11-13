@@ -152,7 +152,9 @@ for (const x of unique) {
 
 // 笔记里有、这批导出却找不到对应条目的 id：多半是书被删了，或者 id 抄错。
 // 不报的话这些笔记会安静地丢掉，所以每次列出来。
-const orphanNotes = Object.keys(notes).filter((k) => !usedIds.has(k));
+const orphanNotes = Object.keys(notes).filter(
+	(k) => !k.startsWith("_") && !usedIds.has(k),
+);
 
 // ---------- 加密 ----------
 // 与 src/utils/crypto-utils.ts 保持一致：base64(salt16 + iv12 + tag16 + ciphertext)
