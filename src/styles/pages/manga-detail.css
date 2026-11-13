@@ -1,0 +1,165 @@
+/* ==========================================================================
+   漫画详情：一般向和成人向共用
+   一般向是 Astro 静态页，成人向是解锁后由 JS 生成的 DOM，两边结构不同，
+   但视觉必须一致，所以样式只留这一份，改这里两边一起变。
+   ========================================================================== */
+
+.md-back {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 0.78rem;
+	color: var(--content-meta);
+	text-decoration: none;
+	margin-bottom: 16px;
+	padding: 0;
+	border: 0;
+	background: none;
+	font-family: inherit;
+	cursor: pointer;
+}
+.md-back:hover {
+	color: var(--primary);
+}
+.md-back svg {
+	transform: rotate(180deg);
+}
+
+.md-head {
+	display: flex;
+	gap: 26px;
+	align-items: flex-start;
+}
+.md-cover {
+	width: 210px;
+	flex-shrink: 0;
+}
+.md-cover img,
+.md-cover-t {
+	width: 100%;
+	display: block;
+	aspect-ratio: 2 / 3;
+	object-fit: cover;
+	border-radius: var(--radius-large);
+	box-shadow: 0 4px 18px rgb(0 0 0 / 0.1);
+	background: var(--btn-regular-bg);
+}
+.md-info {
+	flex: 1;
+	min-width: 0;
+	padding-top: 4px;
+}
+.md-title {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.35;
+	color: var(--deep-text);
+	word-break: break-word;
+}
+.md-alt {
+	margin: 5px 0 0;
+	font-size: 0.82rem;
+	color: var(--content-meta);
+}
+.md-tags {
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+.md-tags:empty {
+	display: none;
+}
+.md-tag {
+	font-size: 0.68rem;
+	padding: 1px 7px;
+	border-radius: 6px;
+	background: var(--btn-regular-bg);
+	color: var(--content-meta);
+}
+.md-rows {
+	margin-top: 14px;
+	display: flex;
+	flex-direction: column;
+}
+.md-row {
+	display: flex;
+	align-items: baseline;
+	gap: 16px;
+	padding: 8px 0;
+	border-bottom: 1px solid var(--line-divider);
+	font-size: 0.82rem;
+}
+.md-row:last-child {
+	border-bottom: none;
+}
+.md-k {
+	width: 76px;
+	flex-shrink: 0;
+	color: var(--content-meta);
+}
+.md-v {
+	color: var(--deep-text);
+	font-variant-numeric: tabular-nums;
+}
+.md-ext {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	margin-top: 14px;
+	padding: 0;
+	border: 0;
+	background: none;
+	font-family: inherit;
+	font-size: 0.76rem;
+	color: var(--primary);
+	text-decoration: none;
+	cursor: pointer;
+}
+.md-ext:hover {
+	text-decoration: underline;
+}
+
+.md-sec-t {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 0.95rem;
+	font-weight: 700;
+	color: var(--deep-text);
+	margin-bottom: 10px;
+}
+.md-sec-n {
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: var(--primary);
+	font-variant-numeric: tabular-nums;
+}
+.md-sum {
+	margin: 0;
+	font-size: 0.85rem;
+	line-height: 1.9;
+	color: color-mix(in oklch, var(--deep-text) 78%, transparent);
+	white-space: pre-line;
+}
+.md-review {
+	font-size: 0.88rem;
+	line-height: 1.9;
+}
+.md-empty {
+	font-size: 0.82rem;
+	color: var(--content-meta);
+	margin: 0;
+	padding: 8px 0;
+}
+
+@media (max-width: 640px) {
+	.md-head {
+		flex-direction: column;
+		gap: 16px;
+	}
+	.md-cover {
+		width: 150px;
+	}
+}
