@@ -46,7 +46,15 @@ let {
 	maxed = false,
 }: Props = $props();
 
-type Entry = { n: string; i: string; k: string; sub: string; owned: boolean };
+type Entry = {
+	n: string;
+	i: string;
+	k: string;
+	sub: string;
+	owned: boolean;
+	w?: number;
+	h?: number;
+};
 
 // 通常 → 各套换装 → 改造 → 誓约
 const entries = $derived<Entry[]>([
@@ -57,6 +65,8 @@ const entries = $derived<Entry[]>([
 		k: k.k,
 		sub: [k.th, k.y].filter(Boolean).join(" · "),
 		owned: !!k.owned,
+		w: k.w,
+		h: k.h,
 	})),
 	...(info.refit
 		? [{ n: "改造", i: info.refit, k: "改造", sub: "", owned: true }]
@@ -69,7 +79,7 @@ const entries = $derived<Entry[]>([
 const defIdx = $derived(entries.findIndex((e) => e.k === "改造"));
 
 let picked = $state<number | null>(null);
-const idx = $derived(picked ?? (defIdx >= 0 ? defIdx : 0));
+const idx = $derived(picked ?? Math.max(defIdx, 0));
 
 const skinCount = $derived(entries.length - 1);
 const ownedCount = $derived(
@@ -107,7 +117,7 @@ const RAR: Record<string, string> = {
 };
 
 let track = $state<HTMLDivElement | null>(null);
-let zoom = $state<string | null>(null);
+let zoom = $state<{ src: string; w?: number; h?: number } | null>(null);
 let dlg = $state<HTMLDialogElement | null>(null);
 
 $effect(() => {
@@ -123,7 +133,7 @@ function scrollSkins(dir: number) {
 <div class="sp-wrap">
 <div class="sp">
 	<div class="sp-media">
-		<img src={entries[idx].i} alt={ship.n} referrerpolicy="no-referrer" onclick={() => (zoom = entries[idx].i)} />
+		<img src={entries[idx].i} alt={ship.n} referrerpolicy="no-referrer" onclick={() => (zoom = { src: entries[idx].i, w: entries[idx].w, h: entries[idx].h })} />
 		<div class="sp-cap">{entries[idx].n}</div>
 	</div>
 
@@ -223,7 +233,19 @@ function scrollSkins(dir: number) {
 </div>
 
 <dialog bind:this={dlg} class="sp-zoom" onclick={() => (zoom = null)}>
-	{#if zoom}<img src={zoom} alt="" referrerpolicy="no-referrer" />{/if}
+	{#if zoom}
+		<figure class="sp-zoom-fig">
+			<img
+				src={zoom.src}
+				alt=""
+				referrerpolicy="no-referrer"
+				style={zoom.w && zoom.w < 700 ? `height:auto;max-width:min(90vw, ${Math.round(zoom.w * 1.4)}px)` : ""}
+			/>
+			{#if zoom.w && zoom.w < 700}
+				<figcaption>原图 {zoom.w} × {zoom.h}</figcaption>
+			{/if}
+		</figure>
+	{/if}
 </dialog>
 
 <style>
@@ -562,6 +584,18 @@ function scrollSkins(dir: number) {
 	}
 	.sp-zoom::backdrop {
 		background: rgb(0 0 0 / 0.5);
+	}
+	.sp-zoom-fig {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+	.sp-zoom-fig figcaption {
+		font-size: 0.72rem;
+		color: rgb(255 255 255 / 0.6);
+		letter-spacing: 0.02em;
 	}
 	.sp-zoom img {
 		height: 88vh;

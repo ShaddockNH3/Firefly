@@ -8,7 +8,7 @@ import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import { allSkins } from "@/utils/azurlane-skins";
 
 // 墙上只放缩略图，原图不进客户端（省一半序列化体积）
-const wallSkins = allSkins.map(({ s, n, k, th, y, d, p, i, t }) => ({
+const wallSkins = allSkins.map(({ s, n, k, th, y, d, p, i, t, w, h }) => ({
 	s,
 	n,
 	k,
@@ -18,6 +18,8 @@ const wallSkins = allSkins.map(({ s, n, k, th, y, d, p, i, t }) => ({
 	p,
 	i: t || i,
 	full: i,
+	w,
+	h,
 }));
 
 import mine from "@/data/azurlane/mine.json";

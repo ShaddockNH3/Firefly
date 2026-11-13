@@ -20,7 +20,14 @@ export function getStaticPaths() {
 }
 
 const { ship } = Astro.props;
-const info = (detailData as Record<string, any>)[ship.n] ?? {};
+type Detail = {
+	art?: string;
+	refit?: string;
+	oath?: string;
+	cp?: number;
+	rt?: boolean;
+};
+const info = (detailData as Record<string, Detail>)[ship.n] ?? {};
 const ownedSet = new Set(mine.skins as string[]);
 const copy =
 	(mine.copies as Record<string, { need?: number; have?: number }>)[ship.n] ??

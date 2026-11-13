@@ -27,7 +27,7 @@ let own = $state("全部");
 let type = $state("全部");
 let q = $state("");
 let open = $state<string[]>([]);
-let zoom = $state<string | null>(null);
+let zoom = $state<{ src: string; w?: number; h?: number } | null>(null);
 let dlg = $state<HTMLDialogElement | null>(null);
 
 $effect(() => {
@@ -66,8 +66,18 @@ const groups = $derived.by(() => {
 	const m = new Map<string, Skin[]>();
 	for (const k of list) {
 		const g = k.th || "其他";
-		if (!m.has(g)) m.set(g, []);
-		m.get(g)!.push(k);
+		const bucket = m.get(g);
+		if (bucket) bucket.push(k);
+		else m.set(g, [k]);
+	}
+	// 组内：上线日期新的在前（精确到天），同一天按名字排；没有日期的（改造）沉底
+	for (const arr of m.values()) {
+		arr.sort((a, b) => {
+			const da = a.d || "";
+			const db = b.d || "";
+			if (da !== db) return db.localeCompare(da);
+			return a.n.localeCompare(b.n, "zh");
+		});
 	}
 	return [...m.entries()].sort((a, b) => {
 		const ra = LAST[a[0]] ?? 0;
@@ -155,7 +165,7 @@ function toggle(th: string) {
 		</div>
 		<div class="sw-grid">
 			{#each (open.includes(th) ? arr : arr.slice(0, LIMIT)) as k (k.i)}
-				<div class="sw-i" title={k.n} onclick={() => (zoom = k.full || k.i)}>
+				<div class="sw-i" title={k.n} onclick={() => (zoom = { src: k.full || k.i, w: k.w, h: k.h })}>
 					<div class="sw-cv" data-off={hasRecord && !ownSet.has(k.n)}>
 						<img src={k.t || k.i} alt={k.n} loading="lazy" referrerpolicy="no-referrer" />
 						{#if k.k === "L2D"}
@@ -181,7 +191,19 @@ function toggle(th: string) {
 {/each}
 
 <dialog bind:this={dlg} class="sw-zoom" onclick={() => (zoom = null)}>
-	{#if zoom}<img src={zoom} alt="" referrerpolicy="no-referrer" />{/if}
+	{#if zoom}
+		<figure class="sw-zoom-fig">
+			<img
+				src={zoom.src}
+				alt=""
+				referrerpolicy="no-referrer"
+				style={zoom.w && zoom.w < 700 ? `height:auto;max-width:min(90vw, ${Math.round(zoom.w * 1.4)}px)` : ""}
+			/>
+			{#if zoom.w && zoom.w < 700}
+				<figcaption>原图 {zoom.w} × {zoom.h}</figcaption>
+			{/if}
+		</figure>
+	{/if}
 </dialog>
 
 <style>
@@ -355,6 +377,18 @@ function toggle(th: string) {
 	}
 	.sw-zoom::backdrop {
 		background: rgb(0 0 0 / 0.5);
+	}
+	.sw-zoom-fig {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+	.sw-zoom-fig figcaption {
+		font-size: 0.72rem;
+		color: rgb(255 255 255 / 0.6);
+		letter-spacing: 0.02em;
 	}
 	.sw-zoom img {
 		height: 88vh;

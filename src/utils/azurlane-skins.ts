@@ -22,6 +22,9 @@ export interface Skin {
 	i: string;
 	/** 缩略图（400px，换装墙用；原图本身就不大的话跟 i 相同） */
 	t?: string;
+	/** 原图宽高（灯箱按它决定放大上限；老图只有 350×525） */
+	w?: number;
+	h?: number;
 }
 
 const refitArt = detailData as Record<

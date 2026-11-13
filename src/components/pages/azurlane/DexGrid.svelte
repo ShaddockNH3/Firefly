@@ -58,16 +58,34 @@ let rar = $state("全部");
 let fac = $state("全部");
 let page = $state(1);
 
+// 图鉴顺序：特殊（布里三姐妹，001-003）置顶 → 常规+改造按图鉴号升序（两者共用一套编号）
+// → 方案 → META → 联动。后三组在 wiki 里各自从 001 重新编号，只能整组排到后面
+const GROUP_ORDER: Record<string, number> = {
+	特殊: 0,
+	常规: 1,
+	改造: 1,
+	方案: 2,
+	META: 3,
+	联动: 4,
+};
+
 const filtered = $derived(
-	ships.filter((s) => {
-		if (q && !s.n.includes(q.trim())) return false;
-		if (st === "已拥有" && !ownSet.has(s.n)) return false;
-		if (st === "未拥有" && ownSet.has(s.n)) return false;
-		if (grp !== "全部" && s.g !== grp) return false;
-		if (rar !== "全部" && s.r !== rar) return false;
-		if (fac !== "全部" && s.f !== fac) return false;
-		return true;
-	}),
+	ships
+		.filter((s) => {
+			if (q && !s.n.includes(q.trim())) return false;
+			if (st === "已拥有" && !ownSet.has(s.n)) return false;
+			if (st === "未拥有" && ownSet.has(s.n)) return false;
+			if (grp !== "全部" && s.g !== grp) return false;
+			if (rar !== "全部" && s.r !== rar) return false;
+			if (fac !== "全部" && s.f !== fac) return false;
+			return true;
+		})
+		.sort((a, b) => {
+			const ga = GROUP_ORDER[a.g] ?? 9;
+			const gb = GROUP_ORDER[b.g] ?? 9;
+			if (ga !== gb) return ga - gb;
+			return (a.i || "").localeCompare(b.i || "");
+		}),
 );
 
 const pages = $derived(Math.max(1, Math.ceil(filtered.length / perPage)));
