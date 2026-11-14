@@ -9,4 +9,3 @@ score: null
 updated: "2026-11-06"
 cover: ""
 ---
-睡前躺床上点两下，一局正好。

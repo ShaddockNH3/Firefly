@@ -9,4 +9,3 @@ score: 8.0
 updated: "2025-12-21"
 cover: "/games/origins.jpg"
 ---
-画风最舒服的一代，塔的分支也最清楚。

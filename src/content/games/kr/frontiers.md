@@ -9,4 +9,3 @@ score: null
 updated: "2026-11-10"
 cover: "/games/frontiers.jpg"
 ---
-沙丘和丛林那几关的英雄站位很关键，前排不住就崩。
