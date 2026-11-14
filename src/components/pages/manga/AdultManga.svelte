@@ -1,5 +1,5 @@
 <script lang="ts">
-import { onMount } from "svelte";
+import { onMount, tick } from "svelte";
 import Icon from "@/components/common/Icon.svelte";
 import { ALL, countStatuses } from "@/utils/media-utils";
 import MediaCard from "../media/MediaCard.svelte";
@@ -181,28 +181,65 @@ function onSubmit(e: SubmitEvent) {
 	unlock(p);
 }
 
+// 列表和详情是同一个页面的两个分支，不经过 swup，浏览器不会自动回顶，
+// 所以这里自己记位置：进详情回到顶部，退回列表还原到原来那一屏
+let savedScroll = 0;
+
+// 全局 html 开了 scroll-behavior: smooth，切分支时必须强制瞬时，
+// 否则会从列表底部一路滚上来
+function jumpTo(y: number) {
+	const root = document.documentElement;
+	const prev = root.style.scrollBehavior;
+	root.style.scrollBehavior = "auto";
+	window.scrollTo(0, y);
+	root.style.scrollBehavior = prev;
+}
+
 function lock() {
 	unlocked = false;
 	items = [];
 	pwd = "";
 	st = ALL;
 	tag = ALL;
+	// 先清掉，免得 hashchange 把滚动位置还原回列表
+	hashId = "";
 	location.hash = "";
 	sessionStorage.removeItem(CACHE_KEY);
+	jumpTo(0);
 }
 
 function syncHash() {
-	hashId = location.hash.replace(/^#/, "");
+	const next = location.hash.replace(/^#/, "");
+	// 浏览器后退回到列表（hash 被清空）时，还原到点进详情前的位置
+	if (hashId && !next) {
+		hashId = "";
+		const y = savedScroll;
+		tick().then(() => jumpTo(y));
+		return;
+	}
+	// 浏览器前进重新进详情时，同样从顶部开始
+	if (next && next !== hashId) {
+		hashId = next;
+		tick().then(() => jumpTo(0));
+		return;
+	}
+	hashId = next;
 }
 
-function openDetail(k: string) {
+async function openDetail(k: string) {
+	savedScroll = window.scrollY;
 	hashId = k;
 	location.hash = k;
+	await tick();
+	jumpTo(0);
 }
 
-function closeDetail() {
+async function closeDetail() {
+	const y = savedScroll;
 	hashId = "";
 	location.hash = "";
+	await tick();
+	jumpTo(y);
 }
 
 onMount(() => {

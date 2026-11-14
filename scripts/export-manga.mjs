@@ -32,7 +32,7 @@ const SLUG = pick("slug", "manga-adult");
 const PASSWORD = process.env.MANGA_PW;
 
 // 整类不导出的收藏夹。新增排除项直接往里加。
-const EXCLUDE_FOLDERS = new Set(["萝"]);
+const EXCLUDE_FOLDERS = new Set([""]);
 
 if (!PASSWORD) {
 	console.error("[x] 缺少 MANGA_PW 环境变量。密码只从环境变量读，不写进仓库。");
