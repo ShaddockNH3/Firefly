@@ -41,6 +41,8 @@ const pages = resolvePageToggles({
 	novels: true,
 	// 漫画页面开关
 	manga: true,
+	// 单机游戏页面开关
+	games: true,
 	// 番剧页面开关
 	anime: true,
 	// 战舰世界页面开关

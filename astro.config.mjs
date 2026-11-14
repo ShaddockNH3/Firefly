@@ -75,6 +75,8 @@ export default defineConfig({
 	// 文章目录改名后的旧地址跳转（静态输出会生成 meta refresh 跳转页）
 	// 目录名改了 URL 就跟着变，这些是改动前已经对外存在的地址
 	redirects: {
+		// 第一个游戏的列表挂在 /games/ 上，这个地址留个跳转免得 404
+		"/games/pvz/": "/games/",
 		"/posts/alas/android-host/": "/posts/toss/pi5-android/",
 		"/posts/alas/debian-waydroid/": "/posts/toss/pi5-debian/",
 		"/posts/ai/learning-path-2025/": "/posts/ai/path-2025/",

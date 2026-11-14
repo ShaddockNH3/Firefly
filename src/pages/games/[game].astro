@@ -1,0 +1,15 @@
+---
+import GameListPage from "@/components/pages/games/GameListPage.astro";
+import { firstGameKey, games } from "@/config/games";
+
+// 第一个游戏的列表挂在 /games/ 上，这里只生成其余的，避免同一份内容两个地址
+export function getStaticPaths() {
+	return games
+		.filter((g) => g.key !== firstGameKey)
+		.map((g) => ({ params: { game: g.key } }));
+}
+
+const { game } = Astro.params;
+---
+
+<GameListPage gameKey={game} />

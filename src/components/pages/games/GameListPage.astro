@@ -1,0 +1,86 @@
+---
+import { getCollection } from "astro:content";
+import GamesGrid from "@/components/pages/games/GamesGrid.svelte";
+import PageTabs from "@/components/pages/media/PageTabs.astro";
+import { siteConfig } from "@/config";
+import { gameMeta, gameTabs, isGameKey } from "@/config/games";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import "@/styles/pages/media-shared.css";
+
+interface Props {
+	gameKey: string;
+}
+
+const { gameKey } = Astro.props;
+
+if (!siteConfig.pages.games) {
+	return Astro.redirect("/404/");
+}
+if (!isGameKey(gameKey)) {
+	throw new Error(
+		`[games] 未知的游戏 ${gameKey}，先把它登记到 src/config/games.ts`,
+	);
+}
+
+const meta = gameMeta(gameKey);
+const entries = (await getCollection("games")).filter((e) => !e.data.draft);
+
+const items = entries
+	.map((e) => {
+		const [dir, ...rest] = e.id.split("/");
+		if (!isGameKey(dir)) {
+			throw new Error(
+				`[games] ${e.id} 所在目录 ${dir} 没在 src/config/games.ts 里登记`,
+			);
+		}
+		return { dir, slug: rest.join("/"), data: e.data };
+	})
+	.filter((e) => e.dir === gameKey)
+	.map((e) => ({
+		slug: e.slug,
+		title: e.data.title,
+		kind: e.data.kind,
+		platform: e.data.platform,
+		year: (e.data.released || "").slice(0, 4),
+		difficulty: e.data.difficulty,
+		status: e.data.status,
+		score: e.data.score,
+		updated: e.data.updated,
+		cover: e.data.cover,
+	}));
+
+const cleared = items.filter((i) => i.status === "通关").length;
+const playing = items.filter((i) => i.status === "在玩").length;
+
+const tabs = gameTabs();
+---
+
+<MainGridLayout
+	title={`单机游戏 · ${meta?.name ?? ""}`}
+	description={`${meta?.name ?? ""} 的版本记录与评价`}
+>
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<PageTabs tabs={tabs} active={gameKey} />
+
+		<div class="flex items-center gap-3 flex-wrap mb-4">
+			<h2 class="text-lg font-bold text-(--deep-text) m-0">单机游戏</h2>
+			<span
+				class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums"
+			>
+				{items.length} 个版本
+			</span>
+			{cleared > 0 && <span class="text-[0.72rem] text-(--content-meta)">通关 {cleared}</span>}
+			{playing > 0 && <span class="text-[0.72rem] text-(--content-meta)">在玩 {playing}</span>}
+		</div>
+
+		{
+			items.length > 0 ? (
+				<GamesGrid client:load items={items} detailBase={`/games/${gameKey}/`} />
+			) : (
+				<p class="mg-empty">
+					这个游戏还没有记录。在 src/content/games/{gameKey}/ 里加一条就会出现在这里。
+				</p>
+			)
+		}
+	</div>
+</MainGridLayout>

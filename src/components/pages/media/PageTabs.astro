@@ -3,12 +3,15 @@ import { type PageTab, type PageTabGroup, pageTabs } from "@/config/pageTabs";
 import "@/styles/pages/media-shared.css";
 
 interface Props {
-	group: PageTabGroup;
+	/** 用注册表里的固定分组（漫画 / 碧蓝） */
+	group?: PageTabGroup;
+	/** 或者直接给一份 tab 列表（单机游戏按配置里的游戏生成） */
+	tabs?: PageTab[];
 	active: string;
 }
 
-const { group, active } = Astro.props;
-const tabs: PageTab[] = pageTabs[group];
+const { group, tabs: explicit, active } = Astro.props;
+const tabs: PageTab[] = explicit ?? (group ? pageTabs[group] : []);
 ---
 
 <nav class="mg-tabs">

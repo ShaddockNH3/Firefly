@@ -1,0 +1,12 @@
+---
+title: "前线"
+kind: "原版"
+platform: "PC"
+released: "2013"
+difficulty: 4
+status: "在玩"
+score: null
+updated: "2026-11-10"
+cover: "/games/frontiers.jpg"
+---
+沙丘和丛林那几关的英雄站位很关键，前排不住就崩。

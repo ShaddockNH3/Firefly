@@ -66,6 +66,19 @@ type MangaData = {
 	draft: boolean;
 };
 
+type GameData = {
+	title: string;
+	kind: string;
+	platform: string;
+	released: string;
+	difficulty: number;
+	status: string;
+	score: number | null;
+	updated: string;
+	cover: string;
+	draft: boolean;
+};
+
 type GalgameData = {
 	title: string;
 	cn: string;
@@ -207,6 +220,29 @@ const galgameCollection: ContentCollection<GalgameData> = defineCollection({
 	}),
 });
 
+const gamesCollection: ContentCollection<GameData> = defineCollection({
+	// 一条 = 一个版本。目录名（pvz / mc / kr / plague）就是 tab 的 key，
+	// 必须在 src/config/games.ts 里登记，否则构建时报错
+	loader: glob({ pattern: "**/*.md", base: "./src/content/games" }),
+	schema: z.object({
+		title: z.string(),
+		// 原版 / 改版 / 整合包，自由写，页面按出现过的值汇总成筛选项
+		kind: z.string().optional().default("原版"),
+		platform: z.string().optional().default("PC"),
+		released: z.string().optional().default(""),
+		// 1-5，卡片副标题和详情都会用
+		difficulty: z.number().optional().default(0),
+		// 通关 / 在玩 / 想玩 / 弃坑
+		status: z.string().optional().default(""),
+		score: z.number().nullable().optional().default(null),
+		// 最近一次动过的时间，默认排序用
+		updated: z.string().optional().default(""),
+		// 留空则卡片上不显示封面，把标题排进卡面
+		cover: z.string().optional().default(""),
+		draft: z.boolean().optional().default(false),
+	}),
+});
+
 const mangaCollection: ContentCollection<MangaData> = defineCollection({
 	// 和番剧分工一样：我的记录手写在这里，条目信息（封面/简介/卷数/评分）由
 	// scripts/fetch-bangumi.mjs --collection manga 抓
@@ -281,6 +317,7 @@ export const collections: {
 	spec: typeof specCollection;
 	projects: typeof projectsCollection;
 	manga: typeof mangaCollection;
+	games: typeof gamesCollection;
 	galgame: typeof galgameCollection;
 	novels: typeof novelsCollection;
 	anime: typeof animeCollection;
@@ -290,6 +327,7 @@ export const collections: {
 	spec: specCollection,
 	projects: projectsCollection,
 	manga: mangaCollection,
+	games: gamesCollection,
 	galgame: galgameCollection,
 	novels: novelsCollection,
 	anime: animeCollection,

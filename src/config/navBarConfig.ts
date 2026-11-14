@@ -62,6 +62,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 碧蓝航线
 			LinkPresets.Azurlane,
 
+			// 单机游戏（一个游戏一个 tab）
+			LinkPresets.Games,
+
 			// galgame 作品
 			LinkPresets.Galgame,
 
@@ -247,6 +250,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/wows/",
 		icon: "material-symbols:anchor",
 		pageKey: "wows",
+	},
+	Games: {
+		name: "单机游戏",
+		url: "/games/",
+		icon: "material-symbols:sports-esports",
+		pageKey: "games",
 	},
 	Galgame: {
 		name: "Galgame",
