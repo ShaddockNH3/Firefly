@@ -1,7 +1,7 @@
 ---
 title: "Amairo Chocolata 2"
 cn: "巧可甜恋 2"
-alt: "あまいろショコラータ2"
+alt: "あまいろショコラータ 2"
 developer: "Cabbage Soft"
 released: "2021-05-28"
 cover: "https://t.vndb.org/cv/96/81596.jpg"
