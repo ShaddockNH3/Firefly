@@ -4,7 +4,7 @@ import AnimeGrid from "@/components/pages/anime/AnimeGrid.svelte";
 import { siteConfig } from "@/config";
 import subjectsData from "@/data/anime/subjects.json";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
-import "@/styles/pages/media-grid.css";
+import "@/styles/pages/media-shared.css";
 
 if (!siteConfig.pages.anime) {
 	return Astro.redirect("/404/");

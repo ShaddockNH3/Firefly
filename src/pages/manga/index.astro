@@ -5,7 +5,7 @@ import PageTabs from "@/components/pages/media/PageTabs.astro";
 import { siteConfig } from "@/config";
 import subjectsData from "@/data/manga/subjects.json";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
-import "@/styles/pages/media-grid.css";
+import "@/styles/pages/media-shared.css";
 
 if (!siteConfig.pages.manga) {
 	return Astro.redirect("/404/");
