@@ -36,18 +36,12 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		],
 	});
 
-	//社交及其子菜单
+	// 长线及其子菜单（长期更新的事，一件一个专题）
 	links.push({
-		name: "社交",
+		name: "长线",
 		url: "#",
-		icon: "material-symbols:group",
-		children: [
-			// 友链
-			LinkPresets.Friends,
-
-			// 留言
-			LinkPresets.Guestbook,
-		],
+		icon: "material-symbols:timeline",
+		children: [LinkPresets.Npee, LinkPresets.Health],
 	});
 
 	// ACG 及其子菜单
@@ -76,6 +70,20 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 书单与书源
 			LinkPresets.Novels,
+		],
+	});
+
+	//社交及其子菜单
+	links.push({
+		name: "社交",
+		url: "#",
+		icon: "material-symbols:group",
+		children: [
+			// 友链
+			LinkPresets.Friends,
+
+			// 留言
+			LinkPresets.Guestbook,
 		],
 	});
 
@@ -212,6 +220,18 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/wows/",
 		icon: "material-symbols:anchor",
 		pageKey: "wows",
+	},
+	Npee: {
+		name: "考研",
+		url: "/npee/",
+		icon: "material-symbols:school",
+		pageKey: "npee",
+	},
+	Health: {
+		name: "养生",
+		url: "/health/",
+		icon: "material-symbols:spa",
+		pageKey: "health",
 	},
 	Games: {
 		name: "单机游戏",

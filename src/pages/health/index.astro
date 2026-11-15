@@ -1,0 +1,22 @@
+---
+import { Icon } from "astro-icon/components";
+import { siteConfig } from "@/config";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+if (!siteConfig.pages.health) {
+	return Astro.redirect("/404/");
+}
+---
+
+<MainGridLayout title="养生 · 长线" description="长期更新的养生记录">
+	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
+		<div class="flex items-baseline gap-3 flex-wrap mb-1">
+			<h2 class="text-lg font-bold text-(--deep-text) m-0">养生</h2>
+			<span
+				class="text-[0.72rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content)"
+			>
+				筹备中
+			</span>
+		</div>
+	</div>
+</MainGridLayout>

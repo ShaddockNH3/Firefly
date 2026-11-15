@@ -43,6 +43,10 @@ const pages = resolvePageToggles({
 	manga: true,
 	// 单机游戏页面开关
 	games: true,
+	// 考研专题开关
+	npee: true,
+	// 养生专题开关
+	health: true,
 	// 番剧页面开关
 	anime: true,
 	// 战舰世界页面开关
