@@ -117,6 +117,12 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 					showName: true,
 				},
 				{
+					name: "QQ",
+					icon: "fa7-brands:qq",
+					url: "https://qm.qq.com/q/toPZza2RrO",
+					showName: true,
+				},
+				{
 					name: "Email",
 					icon: "fa7-solid:envelope",
 					url: "mailto:shaddock1122@163.com",
