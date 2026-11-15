@@ -5,8 +5,11 @@ description: ""
 image: ./cover.png
 category: 考研
 series: NPEE
-seriesOrder: 9
+seriesOrder: 0.4
 tags:
   - 总结
+track: "记录"
+subject: "复试记录"
+unlisted: true
 draft: true
 ---

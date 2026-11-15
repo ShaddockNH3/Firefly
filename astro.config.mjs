@@ -77,6 +77,9 @@ export default defineConfig({
 	redirects: {
 		// 第一个游戏的列表挂在 /games/ 上，这个地址留个跳转免得 404
 		"/games/pvz/": "/games/",
+		// 考研：错题本按标题拆成多篇，旧地址指向第一篇（笔记类不再拆，数学仍是整篇）
+		"/posts/npee/pol-eg/": "/posts/npee/pol/",
+		"/posts/npee/wqmath/": "/posts/npee/wqmath/01-前言/",
 		"/posts/alas/android-host/": "/posts/toss/pi5-android/",
 		"/posts/alas/debian-waydroid/": "/posts/toss/pi5-debian/",
 		"/posts/ai/learning-path-2025/": "/posts/ai/path-2025/",

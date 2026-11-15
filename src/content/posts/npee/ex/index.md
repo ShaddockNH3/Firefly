@@ -5,9 +5,12 @@ description: ""
 image: ./cover.png
 category: 考研
 series: NPEE
-seriesOrder: 10
+seriesOrder: 0.3
 tags:
   - 经验贴
+track: "记录"
+subject: "上岸复盘"
+unlisted: true
 draft: true
 ---
 

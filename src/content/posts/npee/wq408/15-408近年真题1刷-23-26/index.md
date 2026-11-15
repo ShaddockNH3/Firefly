@@ -1,0 +1,100 @@
+---
+title: 408 近年真题 1 刷（23-26）
+published: 2026-10-01
+description: "考研冲刺前的总结 —— 错题本（408） · 408 近年真题 1 刷（23-26）"
+image: /covers/npee-wq408.webp
+category: 考研
+series: NPEE
+seriesOrder: 8.15
+tags:
+  - 总结
+track: "错题本"
+subject: "408 错题本"
+unlisted: true
+draft: false
+---
+## 408 近年真题 1 刷（23-26）
+
+### 408 2023 真题
+
+- 完成时间：20261028
+- 分数：
+  - 选择题：-6
+  - 计组：-2
+  - 计网：-2
+- 时间：115+25=140
+
+选择题检查出来一个，大题检查出来置换选择排序第一步错了。
+
+值得注意的是，这次错的俩选择题好像三刷的时候也错了。
+
+![4](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfhq4bNw8n75DYMMuWDvt4jsgI7tfAACXhVrGyANEFdRuV7Juwpu6AEAAwIAA3cAAz0E)
+
+错选为 C，本题构建完哈夫曼树之后不会算了。结果用成了长度除以个数去算。
+
+事实上应该算出来哈夫曼距离后，除以 3+4+5+6+8+10
+
+![16](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCflq4bPnDNkXqPXJNWZjJ_ctQQ7FGgACXxVrGyANEFfQh4ZSfZpSrgEAAwIAA3cAAz0E)
+
+属于低级错误了。又是 CF 的问题。-20 先转义再计算，显然 -20 转义成无符号数是一个很大的数，一个很小的无符号数 - 一个很大的无符号数，显然 CF=1。
+
+![26](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfpq4bP--bemgALtVJll79S2Nfv4IAACYBVrGyANEFc9jMYJ_533ZAEAAwIAA3kAAz0E)
+
+语文阅读理解。完成“后”。
+
+![44](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCftq4bRFdUecnlKQ5EIeHxN05ZdtaAACYhVrGyANEFcliO4dn8tVqAEAAwIAA3cAAz0E)
+
+低级错误 -2，第 2 问分析错误。本题第 2 问要求分析的是第 2 条，我写成了第 7 条。
+
+![47](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCfxq4bSuFR7klC4Iyrkw-djTaJ920QACZBVrGyANEFficWODfcfL9gEAAwIAA3cAAz0E)
+
+第 4 问，没考虑建立 TCP 连接。
+
+### 408 2024 真题
+
+- 完成时间：20261102
+- 分数：130
+  - 选择题：-4
+  - DS：-1
+  - 计组：-5
+  - OS：-6
+  - 计网：-4
+- 时间：120+（检查未定时，只检查了选择题）
+
+这份卷子我不好评价，选择题检查出来 5 个，然后大题没检查。本来我的想法是说，408 只用检查选择题，大题可以相对略去，但是现在我知道了，大题也得二次检查。
+
+这份卷子充分诠释了什么是低级错误扎堆，非常多的，甚至我都在做的时候想到了我可能会错这个错误，然后结果真的错了。
+
+这份卷子不会的题真的有吗，真没有，全都是低级错误。
+
+重视以及强调问题。
+
+第 34 题，计网问题，这个属于背书问题，ASK 是调幅，我想成调幅 + 调相了。PSK 是调相，FSK 是调频
+
+第 39 题，反码求和回卷后再取反，没再取反。
+
+第 43 题
+
+本题 -3。
+
+第一个来源于 OF 的判断，这道题我在做的时候想到了正 + 负，然而，8H=1000B，其对应的应该是负数，而不是正数。
+
+第二个我也不知道为什么我脑子抽了会把 imm 看成其他值，我自己复盘的时候都不知道为什么我会看成我卷子上写的那个值。
+
+第 44 题 -2。
+
+第一个来源于加法错误，加法错误犯了非常多次了。
+
+第二个是看图说话问题（也就是把 slr 的最后几位看成了其他指令的）。这个我非常薄弱（看图说话能力），我在做的时候也想到了，但是就是没做出来。所以我还是觉得，大题也得检查。
+
+第 45 题 -4，这个就是真不应该了，这道题我做过两三次了。
+
+核心原因是取前 10 位再右移两位，想当然把原有的前 3 个 16 进制数取来了，没有把后两位变成 0，从而导致的前 4 问全部错误。
+
+第 46 题 -2，临界区的定义不熟悉
+
+第 47 题 -4，这道题也是重灾区。
+
+在做的时候，我就已经想到了 RIP 协议在第 0 秒的时候就已经交换了，但是在实际算的时候，按的是 bfs，最后没 -1。
+
+剩下俩，RIP 的 RTT 是多少，想多了，设置为 16 而不是 15。

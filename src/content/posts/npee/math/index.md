@@ -6,8 +6,11 @@ image: ./cover.png
 category: 考研
 series: NPEE
 seriesOrder: 2
+track: "笔记"
+subject: "数学"
 tags:
   - 总结
+unlisted: true
 draft: false
 ---
 
