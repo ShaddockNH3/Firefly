@@ -444,9 +444,9 @@ In one series of studies, researchers instructed Chicago-area commuters using pu
 
 ## 英语作文
 
-### 怎么用
+### 一、上手
 
-#### 考场上五步
+#### 1.1 考场五步
 
 题干永远给你两个点。所以第一步不是想内容，是把那两个动词圈出来。
 
@@ -458,102 +458,59 @@ In one series of studies, researchers instructed Chicago-area commuters using pu
 
 五步里只有第 3 步要动脑，其余都是抄。
 
-#### 动词找块
+#### 1.2 中文骨架卡
 
-| 题干里的动词 | 用哪块 |
-| :---------------------------- | :---------- |
-| invite / introduce / welcome | A 邀请 |
-| suggest / advise / recommend | B 建议 |
-| thank / congratulate | C 感谢 |
-| apologize / cancel / postpone | D 道歉 |
-| complain / demand | E 投诉 |
-| 以上都不是 | 见后面的三句结构 |
+看到题先出中文。中文顺了，英文就是翻译。
 
-两个动词就找两块，叠起来用。
+反过来说，中文这一步卡住，英文再熟也写不出来——因为你不知道下一句该说什么。
 
-#### 方括号填什么
+##### 小作文，八步
 
-每个方括号只填两样之一：一个名词短语，或者一个动词原形开头的短语。
+| 步 | 说什么（中文） | 英文开关句 |
+| :--- | :--- | :--- |
+| 1 | 称呼 | `Dear X,` |
+| 2 | 套话开场 | `I hope this email finds you well.` |
+| 3 | 什么活动、哪天、哪儿 | `This is an invitation to ..., which takes place ...` |
+| 4 | 活动一：几点到几点，结束时有什么 | `... runs from ... to ..., and ...` |
+| 5 | 活动二：几点开，有什么 | `... opens at ..., with ...` |
+| 6 | （可选）去年来了多少，今年盼更多 | `Last year about forty came, and this time we expect more.` |
+| 7 | 来了能干什么（接活动二） | `Come if you can: it is the easiest way to learn ...` |
+| 8 | 套话收尾，落款 | `If anything here does not suit you ...` / `Yours sincerely, Li Ming` |
 
-不填句子，不堆形容词。三到八个词就够。
+第 6 步是可选的：加了 119 词，不加 107，两个都在区间里。加了就要从第 7 步砍一句，别两个都留。
 
-想不出漂亮的，就写最土的那个。`the library` 比 `a place of cultural significance` 安全一百倍——后者写错一个介词就露馅。
+##### 大作文，十二步
 
-| 模板位 | 别这么填 | 这么填 |
-| :------------------------ | :---------------------- | :--------------------------------- |
-| `invitation to [活动]` | `a meaningful activity` | `the welcome party` |
-| `a good chance to [好处]` | `improve yourself` | `meet people and practise Chinese` |
-| `I would start with [做法]` | `translation practice` | `one paragraph a day` |
-| `[对象] sits [位置]` | `in a nice place` | `at the north end of the old town` |
+| 步 | 说什么（中文） | 英文开关句 |
+| :--- | :--- | :--- |
+| 1 | 图表讲什么，哪几年 | `The chart tracks ... from ... to ...` |
+| 2 | 内容一的变化 | `[A] moved from [x] to [y]` |
+| 3 | 内容二的变化 | `and [B] from [x] to [y]` |
+| 4 | 内容二占内容一的比例变化 | `The share of [B] rose from ...% to ...%` |
+| 5 | 差距多少，这不是巧合 | `— [n] points, which is no accident.` |
+| 6 | 原因有三个 | `Three forces explain it.` |
+| 7 | 国家（两句） | `The first is national.` |
+| 8 | 市场（两句） | `The second is commercial.` |
+| 9 | 个人（两句） | `The third is personal.` |
+| 10 | 数字不会自己变 | `The trend will not slow down by itself.` |
+| 11 | 我们该干什么 | `For [主体], the useful move is to ...` |
+| 12 | 这样数字才变好 | `That is how a curve becomes a life.` |
 
-一个共性：右边都带**具体名词**，左边都是空话。阅卷看的就是这个差别。
+**只有这 20 个开关句要背，其余全是现场编的。**
 
-#### 走一遍，2018
+第 2 到 5 步是抄数据，第 7 到 9 步的第二句才是真功夫——但那句有固定公式：
 
-题：给 Professor Smith 写信，取消访问，说明情况，另约时间。
+```text
+[谁] + 做了什么 + so + 前后对比
+```
 
-第 1 步，圈出 `apologize and explain` 和 `suggest a future meeting`。
+- 国家：`Policy pushed e-commerce outward, so villages got their first parcel.`
+- 市场：`Platforms built their own networks, so shipping fell to a few yuan.`
+- 个人：`The gap narrowed, so fewer left and those who stayed buy online more.`
 
-第 2 步，`apologize` 对到块 D。
+三句都用 so，三句都有前后对比。**这个 so 就是现场编的抓手**——想不出句子的时候，先把「从前怎样，现在怎样」说出来，再把 so 接上去。
 
-第 3 步，D1 到 D6 顺次抄，91 词，正好收手。
-
-第 4 步，套骨架（含开头句）。第 5 步，查：道歉在 D1、D2，另约在 D3，落款是 `Yours`，98 词在区间里。
-
-写完的样子在后面的成篇示范里。
-
-#### 双块的题怎么接
-
-2016 要写「感谢 + 给建议」，就是 C 全加 B 前四句。
-
-两段中间空一行，什么过渡词都不加。
-
-为什么能不加——上一段已经把「谢谢你」说完了，下一段直接开始给方法，读者不觉得断。硬塞 `Besides` 反而像凑字数。
-
-#### 背的顺序
-
-别从 A 背到 E。按覆盖年份排：
-
-| 顺序 | 背什么 | 一次覆盖 |
-| :- | :------- | :---------------------------- |
-| 1 | 骨架 29 词 | 每封信用 |
-| 2 | 块 A 71 词 | 2013 2015 2020 2021 2022 2025 |
-| 3 | 块 B 71 词 | 2011 2019 2023 2024 |
-| 4 | 块 D 69 词 | 2018 |
-| 5 | 块 C 35 词 | 2010 2016 |
-| 6 | 块 E 74 词 | 2012 |
-
-前四样背完，17 年里能写 12 年。C 和 E 是补漏的，放最后。
-
-每天的排期在本文最后。
-
-#### 怎么算背过了
-
-不是读顺了，是**合上文档默写，拼写和标点一个不错**。
-
-错一个字母，整段重来。
-
-理由很实在：你上次把 `Yours sincerely` 写成 `Your sincerely`，扣的不是知识点，是印象分。
-
-### 为什么推翻重来
-
-旧版 39 句、石雷鹏 20 篇，你两个都不满意，原因不是句子不好，是**记忆单元切错了**。
-
-功能句是零件，考场上要现装。你手写那两篇里的错——`insist in`、`reading ... and recite`、`Your sincerely`——全是装配期的错，不是不懂。
-
-所以这版改成背**整块**：一块 5-6 句，讲完一个信息点，语义完整。考场上只做两件事：选块、换名词。
-
-先把账说清楚，免得又是幻觉：
-
-> 小作文要 100 词，题干永远两个信息点，每块至少 65 词才撑得起一篇。  
-> 覆盖 17 年真题的下限是 **340 词左右**（不含接口句），这个减不掉。  
-> 能减的是**考场的思考量**：从「用哪个块、怎么缝」变成「选一段、换个名词」。
->
-> 全书实际背诵量：小作文 418 词（五块 + 骨架 + 7 个接口句），大作文 147 词，合计 565 词。
-
-下面每个数字都是数出来的，不是估的。
-
-### 五条规则
+#### 1.3 五条铁律
 
 1. **一句不超过 16 词。** 默写错误率和句子长度成正比，你已经在落款上验证过。
 2. **整块背，不拆句。** 块是语义流，比孤立句子好记。
@@ -561,9 +518,9 @@ In one series of studies, researchers instructed Chicago-area commuters using pu
 4. **只有 4 个位置需要现场组织。** 其余全是默写。
 5. **准确优先于华丽。** 写对一句简单句，比写错一句长难句划算。
 
-### 小作文（10 分，100 词）
+### 二、小作文
 
-#### 3.1 骨架（固定，29 词，所有信通用）
+#### 2.1 骨架（29 词，所有信通用）
 
 ```text
 Dear [称呼],
@@ -587,6 +544,8 @@ Li Ming
 
 > 落款是 `Yours`，不是 `Your`。写完回头看一眼。
 
+称呼是最容易漏的。开头句背得再熟，`Dear international students,` 忘了写，格式分当场掉一档——2022 那篇就是这么丢的。
+
 开头句三选一，按场合挑，别每篇都用同一句：
 
 | 用途 | 句子 | 词 |
@@ -599,7 +558,7 @@ Li Ming
 
 真正的内容从下一句开始。
 
-#### 3.2 字数怎么算
+#### 2.2 字数怎么算
 
 先说结论：**`Yours sincerely` 算 2 个词，`Li Ming` 算 2 个词，`Dear Jack,` 也算 2 个词。**
 
@@ -622,21 +581,38 @@ Li Ming
 
 写完数一遍，落在 95 到 110 之间就放心。
 
-#### 3.3 块 A｜邀请 + 细节（72 词，配骨架 101 词）
+#### 2.3 五块
+
+##### 块 A｜邀请 + 细节（78 词）
 
 ```text
 A1  This is an invitation to [活动], which takes place on [日期] at [地点].
-A2  There will be [内容一], [内容二] and [内容三], so there is something
-    for everyone.
-A3  Last year about forty students came, and this time we expect more.
-A4  Come if you can: it is a good chance to [好处].
-A5  Bring a friend if you like — the more the better.
+A2  There will be two parts: [活动一], and [活动二].
+A3  [活动一] runs from [时间] to [时间], and [结束时有什么].
+A4  [活动二] opens at [时间], with [数量] [东西] from [范围].
+A5  Come if you can: it is the easiest way to learn [从活动二学到的东西].
 ```
 
-译：这是……的邀请，活动在……（日期）……（地点）举行。会有……、……和……，总有一项适合你。去年来了四十来个学生，今年预计更多。能来就来：这是……的好机会。愿意的话带个朋友，人越多越好。
+译：这是……的邀请，活动在……（日期）……（地点）举行。分两部分：……和……。……几点开始、几点结束，结束时……。……几点开始，有来自……的……。能来就来：这是了解……最省力的方式。
 
-> A1 是定语从句，一篇里有一条就够。  
-> A4 的 `[好处]` 填**动词原形**：`meet people and practise Chinese`。
+**这一块的结构是「两句话讲两个活动」**，一句一个，不许合并成一个名词清单：
+
+| 位置 | 干什么 | 差的填法 | 好的填法 |
+| :--- | :--- | :--- | :--- |
+| A2 | 只报两个名字 | `cooking contest, tasting food, knowledge contest` | `two parts: a dumpling-making contest, and a tasting table` |
+| A3 | 活动一怎么进行 | `it is interesting` | `runs from four to five, and the winner takes a free bowl` |
+| A4 | 活动二有什么 | `there is much food` | `opens at five, with dishes from eight provinces` |
+| A5 | 学得到什么 | `learn Chinese culture` | `the easiest way to learn what each province tastes like` |
+
+> A2 只报名字是目录，A3 和 A4 才是内容。两句各带一个时间或数量，这一块就实了。
+>
+> A5 必须接**第二个活动**，说「从它身上学到什么」。接不住第二个活动，这句就是空话。
+>
+> 「带个朋友来」删了，纯凑字数。
+>
+> 「去年来了四十人」降级成可选句，字数不够时加在第 5 句后面：
+> `Last year about forty students came, and this time we expect more.`
+> 加了它就到 119 词，得从 A5 或 A3 砍一句回来。
 
 **A1 的介绍版**（2020 介绍景点这种「不请人来，只讲清楚」的题，换这一句就够）：
 
@@ -645,9 +621,9 @@ A1' This is a short introduction to [对象], which sits [位置] and dates
     back to [年代].
 ```
 
-其余 A2-A5 照用，把 A4 的 `[好处]` 换成 `[看点]`。
+其余 A2-A5 照用。A5 的 `[学到什么]` 换成 `[看到什么]`——介绍景点时，「来了能看懂什么」比「学到什么」贴题。
 
-#### 3.4 块 B｜建议 + 理由（71 词，配骨架 100 词）
+##### 块 B｜建议 + 理由（71 词）
 
 ```text
 B1  I would start with [做法]. It costs little and pays off fast.
@@ -662,7 +638,7 @@ B6  The first week is the hardest, so keep it small.
 
 > B1 的 `[做法]` 必须是**动作**：写 `one paragraph a day`，别写 `translation practice`。
 
-#### 3.5 块 C｜感谢 + 影响（35 词，半块）
+##### 块 C｜感谢 + 影响（35 词，半块）
 
 ```text
 C1  Thank you for your congratulations — they came at the right time.
@@ -674,7 +650,7 @@ C3  I still owe you one, and I hope to pay it back soon.
 
 > 这块只干「感谢」一个点，所以不单独成篇，永远配 A 或 B 用。
 
-#### 3.6 块 D｜道歉 + 另约（69 词，配骨架 98 词）
+##### 块 D｜道歉 + 另约（69 词）
 
 ```text
 D1  I am sorry to say I must call off my visit next week.
@@ -689,7 +665,7 @@ D6  I will make the next visit longer to make up for it.
 
 > D3 是题干的任务二（另约时间）。**漏了这句直接掉档**，2018 那篇就栽在这。
 
-#### 3.7 块 E｜投诉 + 要求（74 词，配骨架 103 词）
+##### 块 E｜投诉 + 要求（74 词）
 
 ```text
 E1  I am writing about the dictionary I bought from your store last month.
@@ -702,7 +678,7 @@ E6  I have kept the receipt and can send a photo if needed.
 
 译：我写信说说上个月在你们店买的那本词典。三个键按了弹不回来，屏幕会黑，用起来很费劲。我五号写过一次，没有人回。我希望换一个新的，也希望这件事私下解决。换个新的就能解决，长篇解释不行。收据我留着，需要的话可以拍照发过去。
 
-#### 3.8 接口句（7 个，68 词，每题最多一句）
+#### 2.4 接口句（7 个，68 词）
 
 | 编号 | 句子 | 用在哪 |
 | :- | :------------------------------------------------------------------------------ | :----------- |
@@ -714,7 +690,79 @@ E6  I have kept the receipt and can send a photo if needed.
 | I6 | `I would also like to know where you stayed.` | 2026 想了解更多 |
 | I7 | `Take the exhibition — the robot show will come again; the paintings will not.` | 2023 二选一 |
 
-### 拼装表（2010-2026）
+#### 2.5 选块与填词
+
+##### 动词找块
+
+| 题干里的动词 | 用哪块 |
+| :---------------------------- | :---------- |
+| invite / introduce / welcome | A 邀请 |
+| suggest / advise / recommend | B 建议 |
+| thank / congratulate | C 感谢 |
+| apologize / cancel / postpone | D 道歉 |
+| complain / demand | E 投诉 |
+| 以上都不是 | 见 4.1 的三句结构 |
+
+两个动词就找两块，叠起来用。
+
+##### 方括号填什么
+
+每个方括号只填两样之一：一个名词短语，或者一个动词原形开头的短语。
+
+不填句子，不堆形容词。三到八个词就够。
+
+想不出漂亮的，就写最土的那个。`the library` 比 `a place of cultural significance` 安全一百倍——后者写错一个介词就露馅。
+
+| 模板位 | 别这么填 | 这么填 |
+| :------------------------ | :---------------------- | :--------------------------------- |
+| `invitation to [活动]` | `a meaningful activity` | `the welcome party` |
+| `a good chance to [好处]` | `improve yourself` | `meet people and practise Chinese` |
+| `I would start with [做法]` | `translation practice` | `one paragraph a day` |
+| `[对象] sits [位置]` | `in a nice place` | `at the north end of the old town` |
+
+一个共性：右边都带**具体名词**，左边都是空话。阅卷看的就是这个差别。
+
+**填完还空，是另一回事。**
+
+空的原因只有一个：填了名词，没填细节。
+
+名词罗列不算细节。`a cooking contest and a tasting table` 摆在那儿，读者不知道比什么、吃什么、有没有奖——那是目录，不是内容。
+
+细节是三个问题，每个并列项至少答上一个：
+
+| 问什么 | 差的填法 | 好的填法 |
+| :--- | :--- | :--- |
+| 叫什么？ | `a cooking contest` | `a dumpling-making contest` |
+| 几个、几点、多少人？ | `at the north of campus` | `at the north gate, from two to six` |
+| 来了能得到什么？ | `learn Chinese culture` | `try dishes you have only seen in photos` |
+
+**硬指标：每一块至少有一个数字。** 时间、人数、省数、奖品数，都算。
+
+有数字的句子空不了。没数字的段落，写得再顺也像空话。
+
+#### 2.6 走一遍，2018
+
+题：给 Professor Smith 写信，取消访问，说明情况，另约时间。
+
+第 1 步，圈出 `apologize and explain` 和 `suggest a future meeting`。
+
+第 2 步，`apologize` 对到块 D。
+
+第 3 步，D1 到 D6 顺次抄，91 词，正好收手。
+
+第 4 步，套骨架（含开头句）。第 5 步，查：道歉在 D1、D2，另约在 D3，落款是 `Yours`，98 词在区间里。
+
+写完的样子在 4.2，可以翻过去对。
+
+#### 2.7 双块的题怎么接
+
+2016 要写「感谢 + 给建议」，就是 C 全加 B 前四句。
+
+两段中间空一行，什么过渡词都不加。
+
+为什么能不加——上一段已经把「谢谢你」说完了，下一段直接开始给方法，读者不觉得断。硬塞 `Besides` 反而像凑字数。
+
+#### 2.8 拼装表（2010-2026）
 
 「实算」= 块词数 + 骨架 29，全部按真词数相加，落在 95-112 才算合格。
 
@@ -724,59 +772,25 @@ E6  I have kept the receipt and can send a photo if needed.
 
 | 年份 | 任务 | 用哪几块 | 实算 |
 | :--- | :--- | :--- | :--- |
-| 2010 | 感谢接待 + 邀请来访 | C 前 2 句 + A 前 4 句 | 112 |
+| 2010 | 感谢接待 + 邀请来访 | C1 + A 前 4 句 | 102 |
 | 2011 | 祝贺升学 + 给建议 | I1 + B 前 5 句 | 95 |
 | 2012 | 投诉 + 要求解决 | E 全 | 103 |
-| 2013 | 义卖细节 + 号召参与 | A 全 + I5 | 110 |
-| 2014 | 生活习惯 + 求建议 | 见 4.1 | — |
-| 2015 | 夏令营介绍 + 招志愿者 | A 全 + I5 | 110 |
+| 2013 | 义卖细节 + 号召参与 | A 前 4 句 + I5 | 99 |
+| 2014 | 生活习惯 + 求建议 | 见后面的三句结构 | — |
+| 2015 | 夏令营介绍 + 招志愿者 | A 前 4 句 + I5 | 99 |
 | 2016 | 感谢祝贺 + 翻译建议 | C 全 + B 前 3 句 | 104 |
-| 2017 | 接受邀请 + 讲座要点 | 见 4.1 | — |
+| 2017 | 接受邀请 + 讲座要点 | 见后面的三句结构 | — |
 | 2018 | 道歉说明 + 另约 | D 全 | 98 |
 | 2019 | 建议辩题 + 说明安排 | B 全，B1 换填充 ＋ 自补一句安排 | 100 |
-| 2020 | 介绍景点 + 游览建议 | A 全，首句换 A1' | 101 |
-| 2021 | 邀请参会 + 细节 | A 全 | 101 |
-| 2022 | 介绍美食节 + 邀请 | A 全 | 101 |
+| 2020 | 介绍景点 + 游览建议 | A 全，首句换 A1' | 107 |
+| 2021 | 邀请参会 + 细节 | A 全 | 107 |
+| 2022 | 介绍美食节 + 邀请 | A 全 | 107 |
 | 2023 | 二选一建议 + 理由 | I7 + B 前 5 句 | 104 |
 | 2024 | 提出计划 + 问意见 | B 全 + I2 | 108 |
-| 2025 | 介绍短剧 + 邀请参演 | A 全 | 101 |
+| 2025 | 介绍短剧 + 邀请参演 | A 全 | 107 |
 | 2026 | 谈视频感受 + 想了解更多 | I4 + I6 + 自补 | — |
 
-#### 4.1 模板救不了的三类题
-
-2014（说生活习惯）、2017（讲讲座要点）、2026（谈视频感受）——内容高度个人化，任何模板都只能给框架，剩下 50 词必须自己写。
-
-写法固定成三句，每句一个具体细节：
-
-```text
-第一句：一件具体的事（时间／地点／人）
-第二句：一个可验证的细节（数字／次数／时长）
-第三句：所以这对你意味着什么
-```
-
-2014 的示范：
-
-```text
-I keep early hours and cook most nights, so the kitchen is busy until eight.
-I am out at weekends, which leaves the flat quiet for you.
-Music after eleven is the one thing I cannot sleep through.
-```
-
-> 三句没有生词，但每句都带一个具体信息。这就是内容分的来源——不靠形容词，靠细节。
-
-2017 的示范（三点用「并列 + 各带一个具体」）：
-
-```text
-I would cover three points: how festivals survive in cities, why food
-travels better than language, and what foreign students usually misread.
-Each point comes with one example from my own city, so the talk stays
-concrete rather than abstract.
-```
-
-> 这两句超过了 16 词——因为三项并列压不短。它们属于「现场组织句」，不计入必背，  
-> 但结构要记住：**冒号后三个 how／why／what 头，第二句补一句「每个都带例子」**。
-
-#### 4.2 两篇成篇示范
+#### 2.9 两篇成篇示范
 
 2016（C 全 + B 前 3 句，104 词）：
 
@@ -819,86 +833,154 @@ Li Ming
 
 > 两篇都没加过渡词。第二段开头直接 `I would start with ...`，读者不会觉得断——因为上一段已经把「谢谢你」说完了。
 
-### 大作文（15 分，150 词）
+#### 2.10 模板救不了的三类题
 
-#### 5.1 骨架（9 句，81 词）
+2014（说生活习惯）、2017（讲讲座要点）、2026（谈视频感受）——内容高度个人化，任何模板都只能给框架，剩下 50 词必须自己写。
+
+写法固定成三句，每句一个具体细节：
 
 ```text
-S1  The chart shows how [主题] changed between [年] and [年].
-S2  [A] rose from [x] to [y], while [B] fell from [x] to [y].
-S3  The gap is [n] times, too wide to be chance.
-S4  Two forces explain it.
-S5  The first is practical: [力量] has made [行为] cheaper and easier.
-S6  The second is personal: people now value [新] more than [旧].
-S7  The trend is unlikely to turn around by itself.
-S8  For [主体], the useful move is to [动作].
-S9  That is how a number becomes a benefit.
+第一句：一件具体的事（时间／地点／人）
+第二句：一个可验证的细节（数字／次数／时长）
+第三句：所以这对你意味着什么
 ```
 
-逐句译：图表显示了……在……到……之间的变化。……从……升到……，而……从……降到……。差距是……倍，大到不可能是巧合。两股力量可以解释。第一股是现实的：……让……变得又便宜又容易。第二股是个人的：人们现在更看重……而不是……。这个趋势不会自己掉头。对……来说，有用的做法是……。数字才能变成好处。
+2014 的示范：
 
-> S3 的 `[n] times` 只写整数倍。算不准就换 `The gap is too wide to be chance.`——算错比不写更亏。
->
-> S5 与 S6 必须来自两个系统：一个外部（成本、技术、政策），一个内部（观念、习惯）。两条都归到「方便」，说明你只找到一个原因。
+```text
+I keep early hours and cook most nights, so the kitchen is busy until eight.
+I am out at weekends, which leaves the flat quiet for you.
+Music after eleven is the one thing I cannot sleep through.
+```
 
-#### 5.2 首段三变体（只换 S1-S3）
+> 三句没有生词，但每句都带一个具体信息。这就是内容分的来源——不靠形容词，靠细节。
+
+2017 的示范（三点用「并列 + 各带一个具体」）：
+
+```text
+I would cover three points: how festivals survive in cities, why food
+travels better than language, and what foreign students usually misread.
+Each point comes with one example from my own city, so the talk stays
+concrete rather than abstract.
+```
+
+> 这两句超过了 16 词——因为三项并列压不短。它们属于「现场组织句」，不计入必背，  
+> 但结构要记住：**冒号后三个 how／why／what 头，第二句补一句「每个都带例子」**。
+
+### 三、大作文
+
+#### 3.1 骨架（14 句，约 155 词）
+
+段 1 四句、段 2 七句、段 3 三句。**先写段 2，再按剩下的字数分配头尾**——三原因吃掉大半，头尾必须抠着写。
+
+```text
+段 1｜主题 + 数据 + 差距（52 词）
+S1   The chart tracks [主题] from [年] to [年].
+S2   [A] moved from [x] to [y], and [B] from [x] to [y].
+S3   The share of [B] rose from [x]% to [y]% — [n] points in [年数],
+     which is no accident.
+S4（可选）Neither line shows a dip in between.
+
+段 2｜三个原因（57 词）
+S5   Three forces explain it.
+S6   The first is national.
+S7   [国家层面的动作], and [具体建设].
+S8   The second is commercial.
+S9   [市场主体做了什么], so [成本或时间的前后对比].
+S10  The third is personal.
+S11  [人的变化], so [消费变化].
+
+段 3｜趋势 + 动作 + 回扣（42 词）
+S12  The trend will not slow down by itself.
+S13  For [主体], the useful move is to [具体动作].
+S14  That is how a curve becomes a life.
+```
+
+**逐句译**（背的时候对着这列走，别只看英文）
+
+```text
+S1   图表记录了……从……到……的变化。
+S2   ……从……走到……，而……从……走到……。
+S3   ……的占比从……% 升到……%——[n] 个点，这不会是巧合。
+S4   两条线中间都没有回落。
+S5   三股力量可以解释。
+S6   第一股是国家层面的。
+S7   ……进了政策，……在各省建起来。
+S8   第二股是市场层面的。
+S9   平台自己建网络，于是运费降到几块钱。
+S10  第三股是个人的。
+S11  城乡差距缩小，于是走的人少了，留下的人网购得比父母多得多。
+S12  这个趋势不会自己慢下来。
+S13  对……来说，有用的做法是……。
+S14  曲线才能变成日子。
+```
+
+S2 的 `and [B] from [x] to [y]` 省了动词——前面有 moved，这是评分标准认的省略结构，不是漏写。
+
+S3 的 `[n] points` 是百分点，不是倍数。占比从 25 到 36 就是 `eleven points`，别写成 `too wide to be chance`——那不是倍数，撑不起「宽」。
+
+#### 3.2 三个原因怎么排
+
+顺序不能乱，乱了就是三张并列卡片，不是一条链。
+
+| 序 | 层 | 回答什么 | 例子 |
+| :--- | :--- | :--- | :--- |
+| 一 | 国家 | 为什么整体都在涨 | 政策、平台、行业规范 |
+| 二 | 市场 | 为什么某一部分涨得更快 | 平台、企业、成本、技术 |
+| 三 | 个人 | 为什么需求变了 | 人往哪走、买什么、怎么买 |
+
+**每个原因两句，分工固定：**
+
+- 第一句只有四五个词，下判断——`The first is national.`
+- 第二句十到十五词，给证据——**必须带一个数字或一个前后对比。**
+
+第二句没有对比，这个原因就是空的。`Money went into roads` 是复述政策，`so a week became two days` 才是解释。
+
+#### 3.3 段 1 三变体（只换 S1-S3）
 
 | 图型 | S1 | S2 | S3 |
-| :--------- | :------------------------------------------------------ | :---------------------------------------------- | :------------------------------------- |
-| 柱状／折线（有年份） | `The chart shows how [主题] changed between [年] and [年].` | `[A] rose from [x] to [y], while [B] fell.` | 倍数／拐点 |
-| 饼图／静态柱 | `The chart shows how [主题] are distributed among [对象].` | `[A] leads at [x]%, with [B] at [y]%.` | `The top two together take over half.` |
-| 表格 | 同饼图 | `The youngest group spends most, at [x] hours.` | 最反常识那一格 |
+| :--- | :--- | :--- | :--- |
+| 柱状／折线（有年份） | `The chart tracks [主题] from [年] to [年].` | `[A] moved from [x] to [y], and [B] from [x] to [y].` | `The share of [B] rose from [x]% to [y]% — [n] points, which is no accident.` |
+| 饼图／静态柱 | `The chart breaks [主题] into [n] groups.` | `[A] leads at [x]%, with [B] at [y]%.` | `The top two together take over half, which is no accident.` |
+| 表格 | 同饼图 | 按行说：`The youngest group spends most, at [x] hours.` | 最反常识那一格 |
 
-> 静态图**绝不能写「逐年上升」**。这是最常见的读图硬伤，一见就掉档。
+> 静态图**绝不能写「逐年上升」**。没有时间轴就没有趋势，这是最常见的一处读图出错。
 
-#### 5.3 四个展开位（46 词，唯一要现场组织的部分）
-
-| 位置 | 接在 | 补什么 | 2025 真题的例子 |
-| :- | :--- | :----- | :-------------------------------------------------------------- |
-| X1 | S2 后 | 其余项怎么样 | `The rest are far behind, at under thirty percent each.` |
-| X2 | S5 后 | 机制，用对比 | `A screen costs less than a trip, and it never needs planning.` |
-| X3 | S6 后 | 心理，用对比 | `A familiar programme feels safer than a stranger at the door.` |
-| X4 | S8 后 | 一个具体动作 | `Join them for one walk a week, and let them set the pace.` |
-
-> X2／X3 的写法固定：**A 怎么样，而 B 怎么样**。两个具体名词一对比，内容就实了，不用形容词。
->
-> X1 只在「有第三、第四项」时用。2025 那张图只有两项突出，所以下面那篇跳过了 X1。
-
-#### 5.4 字数不够时加这两句（20 词）
-
-骨架 81 + 展开 46 = 127 词，离 150 差 23，正好这两句补上。差多少加多少，按顺序取：
+#### 3.4 走一遍（2018-2020 快递）
 
 ```text
-P1（放 S3 后）That is a gap most people would not guess.
-P2（放 S7 后）Left alone, it will widen the difference between the two groups.
+The chart tracks the express delivery industry from 2018 to 2020. The country
+moved from 51 to 83 billion parcels, and the county market from 12 to 30. The
+county share rose from 25% to 36% — eleven points in two years, which is no
+accident.
+
+Three forces explain it. The first is national. E-commerce entered policy, and
+logistics parks were built in every province. The second is practical. Money
+went into roads and sorting centres, so a week became two days. The third is
+personal. The gap narrowed, so fewer young people left, and those who stayed
+buy online far more.
+
+The trend will not slow down by itself. For those who have come home, the useful
+move is to bring the habit with them and order for the neighbours who never
+will. That is how a curve becomes a life.
 ```
 
-两句话都不带生词，且都能接住上下文。只缺 10 词就只加 P1。
+三个数都对得上：12/51≈23.5%，30/83≈36.1%，所以占比那句不是编的，是算出来的。**能算的关系要点破，这是内容分。**
 
-#### 5.5 走一遍（2025 真题，150 词）
+#### 3.5 换了题怎么改
 
-```text
-The chart shows how older people in one community spend their leisure
-time. Watching TV leads at 90.8%, with walking at 68.3%. The gap is wide,
-and the easiest activity wins by a large margin. That is a gap most people
-would not guess.
+S9 的 `Platforms built their own networks` 只适合市场主导的题。换题时改这一句就行：
 
-Two forces explain it. The first is practical: cheap screens have made
-home entertainment easier than ever. A screen costs less than a trip, and
-it never needs planning. The second is personal: people now value comfort
-more than novelty. A familiar programme feels safer than a stranger at
-the door.
+| 题的类型 | S9 换成 |
+| :--- | :--- |
+| 平台／企业主导 | `Platforms built their own networks, so shipping fell to a few yuan.` |
+| 技术推动 | `Cheaper devices cut the cost, so a phone became a classroom.` |
+| 政策推动 | `Subsidies lowered the price, so a luxury became a habit.` |
+| 观念变化 | `Advertising changed the norm, so what was odd became ordinary.` |
 
-The trend is unlikely to turn around by itself. Left alone, it will widen
-the difference between the two groups. For families, the useful move is to
-walk with them, not urge them to. Join them for one walk a week, and let
-them set the pace. That is how a number becomes a benefit.
-```
+句式不变：**[力量] + 动词 + 结果，so [前后对比]。**
 
-> 90.8 与 68.3 之间是百分点差，算不出倍数，所以 S3 换成了「差距很大」的说法。  
-> **算不出倍数就别硬算**，写错一个数字比不写更亏。
-
-#### 5.6 万一考图画或材料（合计 30%）
+#### 3.6 万一考图画或材料
 
 只换 S1，S2 起全部不动：
 
@@ -907,7 +989,34 @@ them set the pace. That is how a number becomes a benefit.
 
 第二三段讨论的本来就是「现象、原因、态度」，跟出题形式无关。
 
-### 格式卡
+#### 3.7 对照评分标准
+
+大作文 15 分，第五档 13-15 的原文要求：内容完整、语法词汇丰富、流畅几乎无错、多种衔接、语域恰当。逐条对：
+
+| 标准 | 这套骨架怎么满足 | 落在哪句 |
+| :--- | :--- | :--- |
+| 内容完整 | 描述 / 因果 / 结论三段齐，三原因各两句 | 全篇 |
+| 阐述充分 | 每个原因第二句必须带数字或对比 | S7 S9 S11 |
+| 语法结构 | 定语从句、省略、因果、表语从句各一处 | S2 S3 S9 S14 |
+| 词汇 | 大纲内且有变化：track / move / share / cut / narrow | 全篇 |
+| 衔接 | `Three forces` 加 `The first/second/third`，枚举式，不堆砌 | S5-S10 |
+| 语域 | 中性书面，无口语缩写 | 全篇 |
+| 字数 | 155，落在 150-180 中间 | 全篇 |
+
+**四条语法结构是骨架自带的**，不用另外加。加多了会挤掉原因第二句的字数，得不偿失。
+
+**四种写法会掉档，代价写清楚：**
+
+| 写法 | 后果 |
+| :--- | :--- |
+| 原因第二句只给判断，不给证据 | 11 分，扣在「阐述不充分」 |
+| 主题词前后不统一（cities / counties 混着用） | 8-9 分，读者读不懂 |
+| 占比差写成倍数（`too wide to be chance`） | 8 分，判读图错误 |
+| 三原因写成并列卡片，没有递进 | 11 分，扣在「层次不清」 |
+
+**骨架给不了的一件事：** 每个原因第二句里那个数字或对比。位置留好了，填什么全看平时。这一项直接决定 12 还是 14。
+
+### 四、格式与体例
 
 **通知**（不写称呼，标题居中，落款是单位）：
 
@@ -936,16 +1045,35 @@ The meeting opened with [议题]. After discussion it was agreed that
 [记录人]
 ```
 
-### 七天计划
+### 五、怎么背
 
-按前面那个顺序走，不跳。
+#### 5.1 背的顺序
+
+别从 A 背到 E。按覆盖年份排：
+
+| 顺序 | 背什么 | 一次覆盖 |
+| :- | :------- | :---------------------------- |
+| 1 | 骨架 29 词 | 每封信用 |
+| 2 | 块 A 71 词 | 2013 2015 2020 2021 2022 2025 |
+| 3 | 块 B 71 词 | 2011 2019 2023 2024 |
+| 4 | 块 D 69 词 | 2018 |
+| 5 | 块 C 35 词 | 2010 2016 |
+| 6 | 块 E 74 词 | 2012 |
+
+前四样背完，17 年里能写 12 年。C 和 E 是补漏的，放最后。
+
+每天的排期在第七章。
+
+#### 5.2 七天计划
+
+按第零章那个顺序走，不跳。
 
 | 天 | 任务 | 用时 |
 | :---- | :----------------------- | :--- |
 | Day 1 | 骨架 + 块 A，背完默写 | 40 分 |
 | Day 2 | 块 B | 30 分 |
 | Day 3 | 块 D + 块 C | 40 分 |
-| Day 4 | 大作文 S1-S9 + P1 P2 默写 | 40 分 |
+| Day 4 | 大作文 S1-S14 默写 | 40 分 |
 | Day 5 | 块 E + 七个接口句 | 30 分 |
 | Day 6 | 2016／2018／2021 各写一篇小作文 | 40 分 |
 | Day 7 | 2025／2019 各写一篇大作文，全部默写一遍 | 40 分 |
@@ -954,13 +1082,54 @@ Day 6 和 Day 7 是唯一要动笔的两天，前面五天只做一件事：默�
 
 默写的判定只有一条：**拼写和标点一个不错**。内容对不对是下一步的事。
 
-### 天花板在哪
+#### 5.3 怎么算背过
+
+不是读顺了，是**合上文档默写，拼写和标点一个不错**。
+
+错一个字母，整段重来。
+
+理由很实在：你上次把 `Yours sincerely` 写成 `Your sincerely`，扣的不是知识点，是印象分。
+
+### 六、边界
+
+#### 6.1 为什么推翻重来
+
+旧版 39 句、石雷鹏 20 篇，你两个都不满意，原因不是句子不好，是**记忆单元切错了**。
+
+功能句是零件，考场上要现装。你手写那两篇里的错——`insist in`、`reading ... and recite`、`Your sincerely`——全是装配期的错，不是不懂。
+
+所以这版改成背**整块**：一块 5-6 句，讲完一个信息点，语义完整。考场上只做两件事：选块、换名词。
+
+先把账说清楚，免得又是幻觉：
+
+> 小作文要 100 词，题干永远两个信息点，每块至少 65 词才撑得起一篇。  
+> 覆盖 17 年真题的下限是 **340 词左右**（不含接口句），这个减不掉。  
+> 能减的是**考场的思考量**：从「用哪个块、怎么缝」变成「选一段、换个名词」。
+>
+> 全书实际背诵量：小作文 424 词（五块 + 骨架 + 7 个接口句），大作文 151 词，合计 575 词。
+
+下面每个数字都是数出来的，不是估的。
+
+#### 6.2 天花板在哪
 
 - 小作文稳 8 分，冲 9 分靠信息点写得比块更具体。
-- 大作文稳 11-12 分，冲 13 分靠第二段原因够具体——**这一项模板给不了**，只能靠 X2／X3 填得实。
+- 大作文稳 11-12 分，冲 13 分靠第二段原因够具体——**这一项模板给不了**，只能靠三个原因里的第二个填得实。
 - 上限不是语言，是内容。句子全对但空，最多第四档。
 
-一句话：**语法分靠这 557 词拿稳，内容分靠四个展开位现场填。前者能背，后者只能拿真题练。**
+一句话：**语法分靠这 575 词拿稳，内容分靠三个原因现场填。前者能背，后者只能拿真题练。**
+
+#### 6.3 砍掉了什么
+
+| 砍掉的 | 原因 |
+| :------------------------------------------ | :--------------------------------- |
+| 11 组块库 | 块与块之间要缝合，缝合就是出错的地方 |
+| `This is a short email with one purpose` 外壳 | 一句装两件事，语义不自洽；给教授也不合语域 |
+| 三条结构位（定语从句／非谓语／条件句） | 骨架已自带，再堆会挤掉信息点 |
+| 五大话题词块 | 考前突击性价比低，容易背串 |
+| 石雷鹏式 `it is advisable for you to` | 功能句路线，拼装压力大 |
+| 20 词以上的长句 | 默写错误率陡增，你已在 `Yours sincerely` 上验证过 |
+
+保留的只有一条：**整块背，块间只选不拼。**
 
 ### 小作文真题（2010-2026）
 
@@ -1498,29 +1667,17 @@ xychart-beta
   双块题：两段之间空一行，不加过渡词
 
 大作文
-  S1 图 → S2 数据 → S3 差距 → S4 两股力量
-  S5 外部 → S6 内部 → S7 趋势不掉头 → S8 主体动作 → S9 变成好处
-  四个展开位 X1-X4，字数不够加 P1 P2
-  静态图不写「逐年上升」，算不出倍数就别算
+  S1 主题 → S2 数据 → S3 占比差 → S4 可有可无
+  S5 三股力量 → S6-7 国家 / S8-9 市场 / S10-11 个人
+  S12 趋势不掉头 → S13 主体动作 → S14 曲线变生活
+  每个原因两句：第一句下判断，第二句带数字或对比
+  静态图不写「逐年上升」，占比差不能写成倍数
 
 三处必查
   落款是 Yours，不是 Your
   题干两个点都写了没
   拼写（apologize / congratulations / sincerely）
 ```
-
-### 砍掉了什么
-
-| 砍掉的 | 原因 |
-| :------------------------------------------ | :--------------------------------- |
-| 11 组块库 | 块与块之间要缝合，缝合就是出错的地方 |
-| `This is a short email with one purpose` 外壳 | 一句装两件事，语义不自洽；给教授也不合语域 |
-| 三条结构位（定语从句／非谓语／条件句） | 骨架已自带，再堆会挤掉信息点 |
-| 五大话题词块 | 考前突击性价比低，容易背串 |
-| 石雷鹏式 `it is advisable for you to` | 功能句路线，拼装压力大 |
-| 20 词以上的长句 | 默写错误率陡增，你已在 `Yours sincerely` 上验证过 |
-
-保留的只有一条：**整块背，块间只选不拼。**
 
 ## 单词
 
