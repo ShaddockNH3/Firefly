@@ -23,6 +23,12 @@ type PostData = {
 	passwordHint: string;
 	series: string;
 	seriesOrder?: number;
+	// 不进首页/归档/RSS，只活在自己的专题里
+	unlisted?: boolean;
+	// 专题内的分组：记录 / 笔记 / 错题本
+	track?: string;
+	// 专题内的科目名，目录页直接用它
+	subject?: string;
 	prevTitle: string;
 	prevSlug: string;
 	nextTitle: string;
@@ -150,6 +156,11 @@ const postsCollection: ContentCollection<PostData> = defineCollection({
 		passwordHint: z.string().optional().default(""),
 		series: z.string().optional().default(""),
 		seriesOrder: z.number().optional(),
+		// 只在系列/专题里出现，不进首页、归档、标签、分类、RSS
+		unlisted: z.boolean().optional(),
+		// 专题内的分组（记录 / 笔记 / 错题本）与科目名，目录页直接读，不从路径猜
+		track: z.string().optional(),
+		subject: z.string().optional(),
 
 		/* For internal use */
 		prevTitle: z.string().default(""),

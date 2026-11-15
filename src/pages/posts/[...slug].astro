@@ -10,9 +10,9 @@ import { i18n } from "@i18n/translation";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import "@/styles/banner-post.css";
 import {
+	getAllPosts,
 	getRelatedPosts,
 	getSeriesPosts,
-	getSortedPosts,
 } from "@utils/content-utils";
 import {
 	getCategoryUrl,
@@ -53,7 +53,7 @@ const showSponsorButton =
 const showPostActionCard = siteConfig.post.share || showSponsorButton;
 
 export async function getStaticPaths() {
-	const blogEntries = await getSortedPosts();
+	const blogEntries = await getAllPosts();
 	return blogEntries.map((entry) => {
 		// 将 id 转换为 slug（移除扩展名）以匹配路由参数
 		const slug = removeFileExtension(entry.id);

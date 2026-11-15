@@ -22,9 +22,27 @@ async function getRawSortedPosts() {
 	return sorted;
 }
 
-export async function getSortedPosts(): Promise<CollectionEntry<"posts">[]> {
-	const sorted = await getRawSortedPosts();
+// unlisted 的文章只活在自己的系列/专题里，不参与首页、归档、标签、分类、RSS
+function isListed(data: { unlisted?: boolean }): boolean {
+	return data.unlisted !== true;
+}
 
+// 文章流（首页 / 归档 / RSS / 统计）用这个：排除 unlisted。
+// 名字保持不变，是为了让调用方（8 个上游文件）一行都不用改。
+export async function getSortedPosts(): Promise<CollectionEntry<"posts">[]> {
+	const sorted = (await getRawSortedPosts()).filter((p) => isListed(p.data));
+	setPrevNext(sorted);
+	return sorted;
+}
+
+// 路由用这个：含 unlisted，否则专题页不会生成、上一篇/下一篇也会断
+export async function getAllPosts(): Promise<CollectionEntry<"posts">[]> {
+	const sorted = await getRawSortedPosts();
+	setPrevNext(sorted);
+	return sorted;
+}
+
+function setPrevNext(sorted: CollectionEntry<"posts">[]): void {
 	for (let i = 1; i < sorted.length; i++) {
 		sorted[i].data.nextSlug = sorted[i - 1].id;
 		sorted[i].data.nextTitle = sorted[i - 1].data.title;
@@ -33,15 +51,15 @@ export async function getSortedPosts(): Promise<CollectionEntry<"posts">[]> {
 		sorted[i].data.prevSlug = sorted[i + 1].id;
 		sorted[i].data.prevTitle = sorted[i + 1].data.title;
 	}
-
-	return sorted;
 }
 export type PostForList = {
 	id: string;
 	data: CollectionEntry<"posts">["data"];
 };
 export async function getSortedPostsList(): Promise<PostForList[]> {
-	const sortedFullPosts = await getRawSortedPosts();
+	const sortedFullPosts = (await getRawSortedPosts()).filter((p) =>
+		isListed(p.data),
+	);
 
 	// delete post.body
 	const sortedPostsList = sortedFullPosts.map((post) => ({
@@ -117,12 +135,26 @@ export async function getSeriesPosts(
 	const seriesName = currentPost.data.series.trim();
 	if (!seriesName) return null;
 
-	const allPosts = await getSortedPostsList();
-	const posts = allPosts.filter((p) => p.data.series.trim() === seriesName);
+	// 专题里的文章用 subject 再收一层：数学错题本的导航只列数学错题本，
+	// 不要把整个系列 60 多篇都塞进来
+	const subject = currentPost.data.subject?.trim();
+
+	const allPosts = (await getRawSortedPosts()).map((post) => ({
+		id: post.id,
+		data: post.data,
+	}));
+	const posts = allPosts.filter(
+		(p) =>
+			p.data.series.trim() === seriesName &&
+			(!subject || p.data.subject?.trim() === subject),
+	);
 	posts.sort(sortBySeriesOrder);
 
+	// 只有自己这一篇时，折叠块里就一条，纯噪声，直接不渲染
+	if (posts.length <= 1) return null;
+
 	const currentIndex = posts.findIndex((p) => p.id === currentPost.id);
-	return { seriesName, posts, currentIndex };
+	return { seriesName: subject || seriesName, posts, currentIndex };
 }
 
 export type Series = { name: string; count: number; posts: PostForList[] };
@@ -132,7 +164,10 @@ export type Series = { name: string; count: number; posts: PostForList[] };
  * 供 /series/ 索引页使用
  */
 export async function getSeriesList(): Promise<Series[]> {
-	const allPosts = await getSortedPostsList();
+	// 系列页属于文章流，unlisted 的专题章节不算在内
+	const allPosts = (await getRawSortedPosts())
+		.filter((p) => isListed(p.data))
+		.map((post) => ({ id: post.id, data: post.data }));
 
 	const groupMap = new Map<string, PostForList[]>();
 	for (const post of allPosts) {
@@ -159,7 +194,7 @@ export type Tag = {
 export async function getTagList(): Promise<Tag[]> {
 	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
 		return import.meta.env.PROD ? data.draft !== true : true;
-	});
+	}).then((list) => list.filter((p) => isListed(p.data)));
 
 	const countMap: { [key: string]: number } = {};
 	allBlogPosts.forEach((post: { data: { tags: string[] } }) => {
@@ -186,7 +221,7 @@ export type Category = {
 export async function getCategoryList(): Promise<Category[]> {
 	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
 		return import.meta.env.PROD ? data.draft !== true : true;
-	});
+	}).then((list) => list.filter((p) => isListed(p.data)));
 	const count: { [key: string]: number } = {};
 	allBlogPosts.forEach((post: { data: { category: string | null } }) => {
 		if (!post.data.category) {
