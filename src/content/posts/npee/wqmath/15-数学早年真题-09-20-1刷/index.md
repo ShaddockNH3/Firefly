@@ -203,10 +203,6 @@ $x$ 的积分前面没有 $\frac{1}{2}$（-2）
 
 $\cos\theta$ 积分出来，然后忘了乘上原本在这之前的系数了。（-3）
 
-求 $P$ 的逆错误
-
-错误原因是草稿纸上的 $P$ 和答题卡上的 $P$ 不一致（草稿纸上的 $P$ 抄错了，这进一步说明了要做一步检查一步！（-6）
-
 ![21](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCX5q2LPOXirDHko6HnYdu1xjPnOtawACHhVrG89ByVZjb1Hs1u7WewEAAwIAA3gAAz0E)
 
 低级错误
