@@ -34,7 +34,9 @@ const orderSeen = new Map<number, string>();
 for (const e of entries) {
 	const n = e.data.seriesOrder ?? 0;
 	if (orderSeen.has(n)) {
-		console.warn(`[${series}] seriesOrder ${n} 重复：${orderSeen.get(n)} / ${e.data.title}`);
+		console.warn(
+			`[${series}] seriesOrder ${n} 重复：${orderSeen.get(n)} / ${e.data.title}`,
+		);
 	} else {
 		orderSeen.set(n, e.data.title);
 	}
