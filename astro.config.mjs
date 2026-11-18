@@ -52,6 +52,8 @@ import { remarkImageGrid } from "./src/plugins/remark-image-grid.js";
 import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 import { remarkPlantuml } from "./src/plugins/remark-plantuml.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
+// 本地补丁：`19:00`、`4:1` 会被 remark-directive 误判成行内指令
+import { remarkRestoreInvalidDirective } from "./src/plugins/remark-restore-invalid-directive.js";
 import { remarkWikiLink } from "./src/plugins/remark-wiki-link.js";
 import { collectUsedFontCssVars } from "./src/utils/fontHelper";
 
@@ -315,6 +317,7 @@ export default defineConfig({
 				remarkImageGrid,
 				remarkExcerpt,
 				remarkDirective,
+				remarkRestoreInvalidDirective,
 				remarkSectionize,
 				parseDirectiveNode,
 				remarkMermaid,
