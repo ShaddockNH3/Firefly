@@ -1,0 +1,19 @@
+---
+import TopicIndex from "@/components/pages/topic/TopicIndex.astro";
+import { siteConfig } from "@/config";
+import { algoSeries, algoTrackOrder, algoUngrouped } from "@/config/algo";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+if (!siteConfig.pages.algo) {
+	return Astro.redirect("/404/");
+}
+---
+
+<MainGridLayout title="算法 · 长线" description="算法与数据结构的刷题记录，Go 实现">
+	<TopicIndex
+		series={algoSeries}
+		order={algoTrackOrder}
+		ungrouped={algoUngrouped}
+		heading="算法"
+	/>
+</MainGridLayout>

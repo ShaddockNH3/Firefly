@@ -41,7 +41,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		name: "长线",
 		url: "#",
 		icon: "material-symbols:timeline",
-		children: [LinkPresets.Npee, LinkPresets.Health],
+		children: [LinkPresets.Algorithm, LinkPresets.Npee, LinkPresets.Health],
 	});
 
 	// ACG 及其子菜单
@@ -220,6 +220,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/wows/",
 		icon: "material-symbols:anchor",
 		pageKey: "wows",
+	},
+	Algorithm: {
+		name: "算法",
+		url: "/algo/",
+		icon: "material-symbols:code-blocks",
+		pageKey: "algo",
 	},
 	Npee: {
 		name: "考研",

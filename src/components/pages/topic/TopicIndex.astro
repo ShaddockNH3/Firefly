@@ -1,0 +1,157 @@
+---
+// 长线专题的通用目录页：读 frontmatter 的 track / subject 分组，
+// 考研（/npee/）和算法（/algo/）共用这一套，避免两处各写一遍再慢慢写歪。
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	/** 系列名，对应 frontmatter 的 series */
+	series: string;
+	/** 分组的固定顺序；数据里多出来的分组接在后面 */
+	order: string[];
+	/** 没填 track 的归到这里，排在最后 */
+	ungrouped: string;
+	/** 卡片里的大标题 */
+	heading: string;
+}
+
+const { series, order, ungrouped, heading } = Astro.props;
+
+type Item = { id: string; title: string };
+type Subject = { name: string; items: Item[] };
+
+const entries = (await getCollection("posts"))
+	.filter((e) => e.data.series?.trim() === series && !e.data.draft)
+	// 排序号相同再按标题兜底，避免依赖文件读取顺序
+	.sort(
+		(a, b) =>
+			(a.data.seriesOrder ?? 0) - (b.data.seriesOrder ?? 0) ||
+			a.data.title.localeCompare(b.data.title, "zh"),
+	);
+
+// 排序号重复时静默乱序，很难发现，这里直接告警
+const orderSeen = new Map<number, string>();
+for (const e of entries) {
+	const n = e.data.seriesOrder ?? 0;
+	if (orderSeen.has(n)) {
+		console.warn(`[${series}] seriesOrder ${n} 重复：${orderSeen.get(n)} / ${e.data.title}`);
+	} else {
+		orderSeen.set(n, e.data.title);
+	}
+}
+
+const trackOf = (e: (typeof entries)[number]) =>
+	e.data.track?.trim() || ungrouped;
+const presentTracks = [...new Set(entries.map(trackOf))];
+const orderedTracks = [
+	...order.filter((t) => presentTracks.includes(t)),
+	...presentTracks.filter((t) => !order.includes(t) && t !== ungrouped),
+	...(presentTracks.includes(ungrouped) ? [ungrouped] : []),
+];
+
+const sections = orderedTracks
+	.map((track) => {
+		const list = entries.filter((e) => trackOf(e) === track);
+		const subjects: Subject[] = [];
+		for (const e of list) {
+			const name = e.data.subject ?? e.data.title;
+			let bucket = subjects.find((s) => s.name === name);
+			if (!bucket) {
+				bucket = { name, items: [] };
+				subjects.push(bucket);
+			}
+			bucket.items.push({ id: e.id, title: e.data.title });
+		}
+		return { track, subjects, count: list.length };
+	})
+	.filter((s) => s.count > 0);
+
+const total = entries.length;
+// 是 track × subject 的分组数，不是科目数（同一个科目可能落在两组里）
+const groupCount = sections.reduce((n, s) => n + s.subjects.length, 0);
+---
+
+<div class="card-base px-4 py-5 sm:px-6 sm:py-7 md:px-9">
+	<div class="mb-6 flex flex-wrap items-baseline gap-3">
+		<h2 class="text-(--deep-text) m-0 text-[1.4rem] font-bold">{heading}</h2>
+		<span
+			class="text-(--btn-content) rounded-full bg-(--btn-regular-bg) px-2 py-0.5 text-[0.85rem] font-semibold tabular-nums"
+		>
+			{total} 篇
+		</span>
+		<span class="text-(--content-meta) text-[0.85rem]">{groupCount} 个分组</span>
+	</div>
+
+	{
+		total === 0 && (
+			<p class="text-(--content-meta) m-0">
+				还没有可显示的文章。检查 frontmatter 里的 series 是否为「{series}」、draft 是否为 false。
+			</p>
+		)
+	}
+
+	{
+		sections.map((sec) => (
+			<section class="mb-7 last:mb-0">
+				<div class="border-(--line-divider) mb-3 flex items-baseline gap-2 border-b pb-2">
+					<h3 class="text-(--deep-text) m-0 text-[1.15rem] font-bold">{sec.track}</h3>
+					<span class="text-(--content-meta) text-[0.85rem]">{sec.count} 篇</span>
+				</div>
+
+				{sec.subjects.map((s) =>
+					s.items.length === 1 ? (
+						<a
+							href={`/posts/${s.items[0].id}/`}
+							class="group hover:bg-(--btn-regular-bg) flex items-center gap-2.5 rounded-lg px-2 py-2.5 no-underline"
+						>
+							<Icon
+								name="material-symbols:chevron-right-rounded"
+								class="text-(--content-meta) shrink-0 text-[1.15rem]"
+							/>
+							<span class="text-(--deep-text) group-hover:text-(--primary) text-[1.05rem] font-semibold">
+								{s.name}
+							</span>
+							<span class="text-(--content-meta) text-[0.85rem] tabular-nums">{s.items.length} 篇</span>
+						</a>
+					) : (
+						<details class="topic-subject" open>
+							<summary class="hover:bg-(--btn-regular-bg) flex cursor-pointer list-none items-center gap-2.5 rounded-lg px-2 py-2.5">
+								<Icon
+									name="material-symbols:chevron-right-rounded"
+									class="topic-caret text-(--content-meta) shrink-0 text-[1.15rem]"
+								/>
+								<span class="text-(--deep-text) text-[1.05rem] font-semibold">{s.name}</span>
+								<span class="text-(--content-meta) text-[0.85rem] tabular-nums">{s.items.length} 篇</span>
+							</summary>
+							<div class="pl-8">
+								{s.items.map((it, i) => (
+									<a
+										href={`/posts/${it.id}/`}
+										class="group hover:bg-(--btn-regular-bg) flex items-center gap-3 rounded-lg px-2 py-2 no-underline"
+									>
+										<span class="text-(--content-meta) w-7 shrink-0 text-[0.82rem] tabular-nums">
+											{String(i + 1).padStart(2, "0")}
+										</span>
+										<span class="text-(--deep-text) group-hover:text-(--primary) text-[1rem]">{it.title}</span>
+									</a>
+								))}
+							</div>
+						</details>
+					),
+				)}
+			</section>
+		))
+	}
+</div>
+
+<style>
+	.topic-subject > summary::-webkit-details-marker {
+		display: none;
+	}
+	.topic-subject .topic-caret {
+		transition: transform 0.15s ease;
+	}
+	.topic-subject[open] .topic-caret {
+		transform: rotate(90deg);
+	}
+</style>
