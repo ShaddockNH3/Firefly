@@ -1,122 +1,19 @@
 ---
-import { getCollection } from "astro:content";
-import { Icon } from "astro-icon/components";
+import TopicIndex from "@/components/pages/topic/TopicIndex.astro";
 import { siteConfig } from "@/config";
+import { npeeSeries, npeeTrackOrder, npeeUngrouped } from "@/config/npee";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 
 if (!siteConfig.pages.npee) {
 	return Astro.redirect("/404/");
 }
-
-// 专题文章带 unlisted: true，不进首页/归档/RSS；这里是它们的主场。
-// 分组完全读 frontmatter 的 track / subject，不从目录名推断。
-const entries = (await getCollection("posts"))
-	.filter((e) => e.data.series?.trim() === "NPEE" && !e.data.draft)
-	.sort((a, b) => (a.data.seriesOrder ?? 0) - (b.data.seriesOrder ?? 0));
-
-type Item = { id: string; title: string };
-type Subject = { name: string; items: Item[] };
-
-const TRACKS = ["记录", "笔记", "错题本"];
-
-const sections = TRACKS.map((track) => {
-	const list = entries.filter((e) => (e.data.track ?? "") === track);
-	const subjects: Subject[] = [];
-	for (const e of list) {
-		const name = e.data.subject ?? e.data.title;
-		let bucket = subjects.find((s) => s.name === name);
-		if (!bucket) {
-			bucket = { name, items: [] };
-			subjects.push(bucket);
-		}
-		bucket.items.push({ id: e.id, title: e.data.title });
-	}
-	return { track, subjects, count: list.length };
-}).filter((s) => s.count > 0);
-
-const total = entries.length;
-const subjectCount = sections.reduce((n, s) => n + s.subjects.length, 0);
 ---
 
 <MainGridLayout title="考研 · 长线" description="408 与数学二的备考全过程">
-	<div class="card-base px-4 sm:px-6 md:px-9 py-5 sm:py-7">
-		<div class="flex items-baseline gap-3 flex-wrap mb-6">
-			<h2 class="text-[1.4rem] font-bold text-(--deep-text) m-0">考研</h2>
-			<span
-				class="text-[0.85rem] font-semibold px-2 py-0.5 rounded-full bg-(--btn-regular-bg) text-(--btn-content) tabular-nums"
-			>
-				{total} 篇
-			</span>
-			<span class="text-[0.85rem] text-(--content-meta)">{subjectCount} 个科目</span>
-		</div>
-
-		{
-			sections.map((sec) => (
-				<section class="mb-7 last:mb-0">
-					<div class="flex items-baseline gap-2 mb-3 pb-2 border-b border-(--line-divider)">
-						<h3 class="text-[1.15rem] font-bold text-(--deep-text) m-0">{sec.track}</h3>
-						<span class="text-[0.85rem] text-(--content-meta)">{sec.count} 篇</span>
-					</div>
-
-					{sec.subjects.map((s) =>
-						s.items.length === 1 ? (
-							// 叶子科目：和可折叠科目用同一套排版（同样的图标间距、同样的字重、右侧同样挂数），
-							// 否则和下面的 数学 / 408 并排时会明显错位
-							<a
-								href={`/posts/${s.items[0].id}/`}
-								class="group flex items-center gap-2.5 py-2.5 px-2 rounded-lg no-underline hover:bg-(--btn-regular-bg)"
-							>
-								<Icon
-									name="material-symbols:chevron-right-rounded"
-									class="text-[1.15rem] text-(--content-meta) shrink-0"
-								/>
-								<span class="text-[1.05rem] font-semibold text-(--deep-text) group-hover:text-(--primary)">
-									{s.name}
-								</span>
-								<span class="text-[0.85rem] text-(--content-meta) tabular-nums">{s.items.length} 篇</span>
-							</a>
-						) : (
-							<details class="np-subject" open>
-								<summary class="flex items-center gap-2.5 py-2.5 px-2 rounded-lg cursor-pointer list-none hover:bg-(--btn-regular-bg)">
-									<Icon
-										name="material-symbols:chevron-right-rounded"
-										class="np-caret text-[1.15rem] text-(--content-meta) shrink-0"
-									/>
-									<span class="text-[1.05rem] font-semibold text-(--deep-text)">{s.name}</span>
-									<span class="text-[0.85rem] text-(--content-meta) tabular-nums">{s.items.length} 篇</span>
-								</summary>
-								<div class="pl-8">
-									{s.items.map((it, i) => (
-										<a
-											href={`/posts/${it.id}/`}
-											class="group flex items-center gap-3 py-2 px-2 rounded-lg no-underline hover:bg-(--btn-regular-bg)"
-										>
-											<span class="text-[0.82rem] text-(--content-meta) tabular-nums w-7 shrink-0">
-												{String(i + 1).padStart(2, "0")}
-											</span>
-											<span class="text-[1rem] text-(--deep-text) group-hover:text-(--primary)">
-												{it.title}
-											</span>
-										</a>
-									))}
-								</div>
-							</details>
-						),
-					)}
-				</section>
-			))
-		}
-	</div>
+	<TopicIndex
+		series={npeeSeries}
+		order={npeeTrackOrder}
+		ungrouped={npeeUngrouped}
+		heading="考研"
+	/>
 </MainGridLayout>
-
-<style>
-	.np-subject > summary::-webkit-details-marker {
-		display: none;
-	}
-	.np-subject .np-caret {
-		transition: transform 0.15s ease;
-	}
-	.np-subject[open] .np-caret {
-		transform: rotate(90deg);
-	}
-</style>
