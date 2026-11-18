@@ -1,5 +1,6 @@
 <script lang="ts">
 import ClientPagination from "@/components/common/ClientPagination.svelte";
+import MediaFilters from "../media/MediaFilters.svelte";
 
 interface Ship {
 	shipId: number;
@@ -89,47 +90,46 @@ function pickSort(v: SortKey) {
 	page = 1;
 }
 
+// 筛选行交给主题的 FilterControls（经 MediaFilters 包一层标签）
+const frows = $derived([
+	{
+		key: "type",
+		label: "舰种",
+		items: [["全部", ships.length] as [string, number], ...types],
+	},
+	{ key: "nation", label: "国家", items: [["全部"] as [string], ...nations] },
+	{
+		key: "tier",
+		label: "等级",
+		items: [["全部"] as [string], ...tiers.map((t) => [`T${t}`] as [string])],
+	},
+	{
+		key: "sort",
+		label: "排序",
+		items: SORTS.map((s) => [s.label] as [string]),
+	},
+]);
+const fvalues = $derived({
+	type,
+	nation,
+	tier: tier === "全部" ? "全部" : `T${tier}`,
+	sort: SORTS.find((s) => s.key === sort)?.label ?? SORTS[0].label,
+});
+function pickFilter(key: string, v: string) {
+	if (key === "type") pickType(v);
+	else if (key === "nation") pickNation(v);
+	else if (key === "tier") pickTier(v === "全部" ? "全部" : Number(v.slice(1)));
+	else
+		pickSort((SORTS.find((s) => s.label === v)?.key ?? "battles") as SortKey);
+}
+
 const pct = (v: number) => `${(v * 100).toFixed(1)}%`;
 const num = (v: number) => v.toLocaleString("en-US");
 </script>
 
-<div class="wsp-bar">
-	<div class="wsp-row">
-		<span class="wsp-row-t">舰种</span>
-		<button class="wsp-chip" data-on={type === "全部"} onclick={() => pickType("全部")}>
-			全部<span class="wsp-n">{ships.length}</span>
-		</button>
-		{#each types as [label, n] (label)}
-			<button class="wsp-chip" data-on={type === label} onclick={() => pickType(label)}>
-				{label}<span class="wsp-n">{n}</span>
-			</button>
-		{/each}
-	</div>
-
-	<div class="wsp-row">
-		<span class="wsp-row-t">国家</span>
-		<button class="wsp-chip" data-on={nation === "全部"} onclick={() => pickNation("全部")}>全部</button>
-		{#each nations as [label, n] (label)}
-			<button class="wsp-chip" data-on={nation === label} onclick={() => pickNation(label)}>
-				{label}<span class="wsp-n">{n}</span>
-			</button>
-		{/each}
-	</div>
-
-	<div class="wsp-row">
-		<span class="wsp-row-t">等级</span>
-		<button class="wsp-chip" data-on={tier === "全部"} onclick={() => pickTier("全部")}>全部</button>
-		{#each tiers as t (t)}
-			<button class="wsp-chip" data-on={tier === t} onclick={() => pickTier(t)}>T{t}</button>
-		{/each}
-	</div>
-	<div class="wsp-row">
-		<span class="wsp-row-t">排序</span>
-		{#each SORTS as s (s.key)}
-			<button class="wsp-chip" data-on={sort === s.key} onclick={() => pickSort(s.key)}>{s.label}</button>
-		{/each}
-		<span class="wsp-count">共 {list.length} 艘</span>
-	</div>
+<div class="my-4">
+	<MediaFilters rows={frows} values={fvalues} onpick={pickFilter} />
+	<p class="wsp-count">共 {list.length} 艘</p>
 </div>
 
 {#if view.length}
@@ -171,57 +171,6 @@ const num = (v: number) => v.toLocaleString("en-US");
 {/if}
 
 <style>
-	.wsp-bar {
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-		margin: 16px 0;
-	}
-	.wsp-row {
-		display: flex;
-		align-items: center;
-		gap: 6px;
-		flex-wrap: wrap;
-		row-gap: 7px;
-	}
-	.wsp-row-t {
-		font-size: 0.72rem;
-		color: var(--content-meta);
-		min-width: 46px;
-		opacity: 0.75;
-	}
-	.wsp-chip {
-		display: inline-flex;
-		align-items: center;
-		gap: 4px;
-		padding: 5px 10px;
-		border-radius: 999px;
-		font-size: 0.78rem;
-		font-weight: 500;
-		color: var(--content-meta);
-		background: var(--card-bg);
-		border: 1px solid var(--line-divider);
-		cursor: pointer;
-		transition:
-			background 0.15s,
-			color 0.15s,
-			border-color 0.15s;
-	}
-	.wsp-chip:hover {
-		background: var(--btn-regular-bg);
-	}
-	.wsp-chip[data-on="true"] {
-		background: var(--primary);
-		border-color: transparent;
-		color: #fff;
-	}
-	.wsp-n {
-		font-size: 0.68rem;
-		opacity: 0.55;
-	}
-	.wsp-chip[data-on="true"] .wsp-n {
-		opacity: 0.8;
-	}
 	.wsp-count {
 		margin-left: auto;
 		font-size: 0.72rem;

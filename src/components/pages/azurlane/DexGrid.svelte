@@ -1,5 +1,6 @@
 <script lang="ts">
 import Icon from "@/components/common/Icon.svelte";
+import MediaFilters from "../media/MediaFilters.svelte";
 
 interface Ship {
 	i: string;
@@ -93,6 +94,35 @@ const filtered = $derived(
 const pages = $derived(Math.max(1, Math.ceil(filtered.length / perPage)));
 const view = $derived(filtered.slice((page - 1) * perPage, page * perPage));
 
+// 筛选行交给主题的 FilterControls（经 MediaFilters 包一层标签）
+const frows = $derived([
+	...(hasRecord
+		? [
+				{
+					key: "st",
+					label: "状态",
+					items: [["全部"], ["已拥有"], ["未拥有"]] as [string][],
+				},
+			]
+		: []),
+	{
+		key: "grp",
+		label: "分组",
+		items: groups.map((g) => [g.k, g.n] as [string, number]),
+	},
+	{ key: "rar", label: "稀有度", items: rarities.map((r) => [r] as [string]) },
+	{ key: "fac", label: "阵营", items: factions.map((f) => [f] as [string]) },
+]);
+const fvalues = $derived({ st, grp, rar, fac });
+function pickFilter(key: string, v: string) {
+	pick((val) => {
+		if (key === "st") st = val;
+		else if (key === "grp") grp = val;
+		else if (key === "rar") rar = val;
+		else fac = val;
+	}, v);
+}
+
 function pick(setter: (v: string) => void, v: string) {
 	setter(v);
 	page = 1;
@@ -100,42 +130,20 @@ function pick(setter: (v: string) => void, v: string) {
 </script>
 
 <div class="al-filters">
-	<label class="al-search">
-		<Icon icon="material-symbols:search" class="text-[1rem]" />
-		<input type="search" placeholder="搜舰船名" bind:value={q} oninput={() => (page = 1)} />
+	<label
+		class="flex h-9 w-full max-w-60 items-center gap-2 rounded-full border border-(--line-divider) bg-(--card-bg) px-3 text-(--content-meta)"
+	>
+		<Icon icon="material-symbols:search" class="shrink-0 text-[1rem]" />
+		<input
+			type="search"
+			class="w-full bg-transparent text-sm text-(--deep-text) outline-none placeholder:text-(--content-meta)"
+			placeholder="搜舰船名"
+			bind:value={q}
+			oninput={() => (page = 1)}
+		/>
 	</label>
 
-	{#if hasRecord}
-		<div class="al-row">
-			<span class="al-row-t">状态</span>
-			{#each ["全部", "已拥有", "未拥有"] as k (k)}
-				<button class="al-chip" data-on={st === k} onclick={() => pick((v) => (st = v), k)}>{k}</button>
-			{/each}
-		</div>
-	{/if}
-
-	<div class="al-row">
-		<span class="al-row-t">分组</span>
-		{#each groups as g (g.k)}
-			<button class="al-chip" data-on={grp === g.k} onclick={() => pick((v) => (grp = v), g.k)}>
-				{g.k}<span class="al-chip-n">{g.n}</span>
-			</button>
-		{/each}
-	</div>
-
-	<div class="al-row">
-		<span class="al-row-t">稀有度</span>
-		{#each rarities as k (k)}
-			<button class="al-chip" data-on={rar === k} onclick={() => pick((v) => (rar = v), k)}>{k}</button>
-		{/each}
-	</div>
-
-	<div class="al-row">
-		<span class="al-row-t">阵营</span>
-		{#each factions as k (k)}
-			<button class="al-chip" data-on={fac === k} onclick={() => pick((v) => (fac = v), k)}>{k}</button>
-		{/each}
-	</div>
+	<MediaFilters rows={frows} values={fvalues} onpick={pickFilter} />
 </div>
 
 {#if view.length}
@@ -171,70 +179,6 @@ function pick(setter: (v: string) => void, v: string) {
 		flex-direction: column;
 		gap: 8px;
 		margin-bottom: 14px;
-	}
-	.al-search {
-		display: flex;
-		align-items: center;
-		gap: 7px;
-		height: 34px;
-		width: min(100%, 240px);
-		padding: 0 12px;
-		border-radius: 999px;
-		background: var(--card-bg);
-		border: 1px solid var(--line-divider);
-		color: var(--content-meta);
-	}
-	.al-search input {
-		flex: 1;
-		min-width: 0;
-		border: none;
-		outline: none;
-		background: transparent;
-		font-size: 0.8rem;
-		color: var(--deep-text);
-	}
-	.al-row {
-		display: flex;
-		align-items: center;
-		gap: 6px;
-		flex-wrap: wrap;
-		row-gap: 7px;
-	}
-	.al-row-t {
-		font-size: 0.72rem;
-		color: var(--content-meta);
-		min-width: 46px;
-		white-space: nowrap;
-		opacity: 0.75;
-	}
-	.al-chip {
-		display: inline-flex;
-		align-items: center;
-		gap: 4px;
-		padding: 5px 10px;
-		border-radius: 999px;
-		font-size: 0.78rem;
-		font-weight: 500;
-		color: var(--content-meta);
-		background: var(--card-bg);
-		border: 1px solid var(--line-divider);
-		cursor: pointer;
-		transition: background 0.15s, color 0.15s, border-color 0.15s;
-	}
-	.al-chip:hover {
-		background: var(--btn-regular-bg);
-	}
-	.al-chip[data-on="true"] {
-		background: var(--primary);
-		border-color: transparent;
-		color: white;
-	}
-	.al-chip-n {
-		font-size: 0.68rem;
-		opacity: 0.55;
-	}
-	.al-chip[data-on="true"] .al-chip-n {
-		opacity: 0.8;
 	}
 
 	.al-dex {

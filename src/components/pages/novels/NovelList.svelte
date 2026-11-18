@@ -1,5 +1,6 @@
 <script lang="ts">
 import { onMount } from "svelte";
+import TabNav from "@/components/common/TabNav.svelte";
 import { novelSorts, novelStatuses } from "@/config/media";
 import { ALL, countAll, countStatuses, sortMedia } from "@/utils/media-utils";
 import MediaFilters from "../media/MediaFilters.svelte";
@@ -110,14 +111,19 @@ async function copyJson() {
 }
 </script>
 
-<div class="mg-tabs">
-	{#each PLATS as [k, label] (k)}
-		<button class="mg-tab" data-on={tab === k} onclick={() => pickTab(k)}>
-			{label}<span class="mg-tab-n">{books.filter((b) => b.platform === k).length}</span>
-		</button>
-	{/each}
-	<button class="mg-tab" data-on={tab === "src"} onclick={() => pickTab("src")}>书源分享</button>
-</div>
+<TabNav
+	tabs={[
+		...PLATS.map(([k, label]) => ({
+			id: k,
+			name: label,
+			count: books.filter((b) => b.platform === k).length,
+		})),
+		{ id: "src", name: "书源分享" },
+	]}
+	activeTab={tab}
+	onTabChange={pickTab}
+	useHash={false}
+/>
 
 {#if tab === "src"}
 	<section>

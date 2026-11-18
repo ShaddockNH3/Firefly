@@ -1,4 +1,7 @@
 <script lang="ts">
+import Icon from "@/components/common/Icon.svelte";
+import MediaFilters from "../media/MediaFilters.svelte";
+
 interface Skin {
 	s: string;
 	n: string;
@@ -106,38 +109,52 @@ function setType(v: string) {
 	type = v;
 	open = [];
 }
+// 筛选行交给主题的 FilterControls（经 MediaFilters 包一层标签）
+const frows = $derived([
+	{
+		key: "own",
+		label: "拥有",
+		items: [
+			["全部", countOwn.all],
+			["已拥有", countOwn.yes],
+			["未拥有", countOwn.all - countOwn.yes],
+		] as [string, number][],
+	},
+	{
+		key: "type",
+		label: "类型",
+		items: [
+			["全部", skins.filter(matchQ).length],
+			["L2D", countType.l2d],
+			["改造", countType.refit],
+			["婚纱", countType.oath],
+		] as [string, number][],
+	},
+]);
+const fvalues = $derived({ own, type });
+function pickFilter(key: string, v: string) {
+	if (key === "own") setOwn(v);
+	else setType(v);
+}
+
 function toggle(th: string) {
 	open = open.includes(th) ? open.filter((x) => x !== th) : [...open, th];
 }
 </script>
 
-<div class="sw-bar">
-	<div class="sw-row">
-		<span class="sw-lb">拥有</span>
-		<button class="al-chip" data-on={own === "全部"} onclick={() => setOwn("全部")}>
-			全部 <em>{countOwn.all}</em>
-		</button>
-		<button class="al-chip" data-on={own === "已拥有"} onclick={() => setOwn("已拥有")}>
-			已拥有 <em>{countOwn.yes}</em>
-		</button>
-		<button class="al-chip" data-on={own === "未拥有"} onclick={() => setOwn("未拥有")}>
-			未拥有 <em>{countOwn.all - countOwn.yes}</em>
-		</button>
-	</div>
-	<div class="sw-row">
-		<span class="sw-lb">类型</span>
-		<button class="al-chip" data-on={type === "全部"} onclick={() => setType("全部")}>全部 <em>{skins.filter(matchQ).length}</em></button>
-		<button class="al-chip" data-on={type === "L2D"} onclick={() => setType("L2D")}>
-			L2D <em>{countType.l2d}</em>
-		</button>
-		<button class="al-chip" data-on={type === "改造"} onclick={() => setType("改造")}>
-			改造 <em>{countType.refit}</em>
-		</button>
-		<button class="al-chip" data-on={type === "婚纱"} onclick={() => setType("婚纱")}>
-			婚纱 <em>{countType.oath}</em>
-		</button>
-		<input class="sw-search" bind:value={q} placeholder="搜船名 / 皮肤名" />
-	</div>
+<div class="mb-3 flex flex-col gap-3">
+	<label
+		class="flex h-9 w-full max-w-60 items-center gap-2 rounded-full border border-(--line-divider) bg-(--card-bg) px-3 text-(--content-meta)"
+	>
+		<Icon icon="material-symbols:search" class="shrink-0 text-[1rem]" />
+		<input
+			type="search"
+			class="w-full bg-transparent text-sm text-(--deep-text) outline-none placeholder:text-(--content-meta)"
+			placeholder="搜船名 / 皮肤名"
+			bind:value={q}
+		/>
+	</label>
+	<MediaFilters rows={frows} values={fvalues} onpick={pickFilter} />
 </div>
 
 {#if hasRecord}
@@ -207,66 +224,6 @@ function toggle(th: string) {
 </dialog>
 
 <style>
-	.sw-bar {
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-		margin-bottom: 16px;
-	}
-	.sw-row {
-		display: flex;
-		align-items: center;
-		gap: 6px;
-		flex-wrap: wrap;
-	}
-	.sw-lb {
-		font-size: 0.72rem;
-		color: var(--content-meta);
-		min-width: 30px;
-	}
-	.al-chip {
-		padding: 5px 12px;
-		border-radius: 999px;
-		font-size: 0.78rem;
-		color: var(--content-meta);
-		background: var(--card-bg);
-		border: 1px solid var(--line-divider);
-		cursor: pointer;
-		font-family: inherit;
-	}
-	.al-chip:hover {
-		background: var(--btn-regular-bg);
-	}
-	.al-chip[data-on="true"] {
-		background: var(--primary);
-		border-color: transparent;
-		color: #fff;
-	}
-	.al-chip em {
-		font-style: normal;
-		font-size: 0.68rem;
-		opacity: 0.6;
-		margin-left: 2px;
-		font-variant-numeric: tabular-nums;
-	}
-	.al-chip[data-on="true"] em {
-		opacity: 0.85;
-	}
-	.sw-search {
-		margin-left: auto;
-		width: 160px;
-		padding: 5px 12px;
-		border-radius: 999px;
-		border: 1px solid var(--line-divider);
-		background: var(--card-bg);
-		color: var(--deep-text);
-		font-size: 0.76rem;
-		font-family: inherit;
-		outline: none;
-	}
-	.sw-search::placeholder {
-		color: var(--content-meta);
-	}
 
 	.sw-total {
 		display: flex;
@@ -350,10 +307,6 @@ function toggle(th: string) {
 		.sw-grid {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 			gap: 14px 10px;
-		}
-		.sw-search {
-			margin-left: 0;
-			width: 100%;
 		}
 	}
 	.sw-zoom {

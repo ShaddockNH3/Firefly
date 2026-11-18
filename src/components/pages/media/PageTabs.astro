@@ -1,6 +1,5 @@
 ---
 import { type PageTab, type PageTabGroup, pageTabs } from "@/config/pageTabs";
-import "@/styles/pages/media-shared.css";
 
 interface Props {
 	/** 用注册表里的固定分组（漫画 / 碧蓝） */
@@ -12,20 +11,36 @@ interface Props {
 
 const { group, tabs: explicit, active } = Astro.props;
 const tabs: PageTab[] = explicit ?? (group ? pageTabs[group] : []);
+
+// 外观照抄主题的 TabNav.svelte（同样一串 class，下划线 + 计数胶囊）。
+// 这里不能直接引用它：TabNav 是客户端切换状态的 <button>，而这里是跨页导航的 <a>，
+// 靠 Svelte 组件的 onTabChange 回调没法从 Astro 传进去。
+const tabClass =
+	"inline-block whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-colors duration-200 no-underline";
+const onClass = "border-(--primary) text-(--primary)";
+const offClass =
+	"border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300";
 ---
 
-<nav class="mg-tabs">
-	{
-		tabs.map((t) => (
-			<a
-				href={t.href}
-				class="mg-tab"
-				data-on={active === t.key}
-				aria-current={active === t.key ? "page" : undefined}
-			>
-				{t.label}
-				{t.badge && <span class="mg-tab-18">{t.badge}</span>}
-			</a>
-		))
-	}
-</nav>
+<div class="border-(--line-divider) mb-3 border-b">
+	<div class="overflow-x-auto">
+		<nav class="flex min-w-max space-x-8" aria-label="Tabs">
+			{
+				tabs.map((t) => (
+					<a
+						href={t.href}
+						class:list={[tabClass, active === t.key ? onClass : offClass]}
+						aria-current={active === t.key ? "page" : undefined}
+					>
+						{t.label}
+						{t.badge && (
+							<span class="bg-(--btn-regular-bg) text-(--btn-content) ml-2 inline-block rounded-full px-2 py-0.5 text-xs">
+								{t.badge}
+							</span>
+						)}
+					</a>
+				))
+			}
+		</nav>
+	</div>
+</div>
