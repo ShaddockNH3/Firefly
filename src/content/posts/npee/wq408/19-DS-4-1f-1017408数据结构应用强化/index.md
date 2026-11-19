@@ -5,7 +5,7 @@ description: "考研冲刺前的总结 —— 错题本（408） · DS-4.1f-1017
 image: /covers/npee-wq408.webp
 category: 考研
 series: NPEE
-seriesOrder: 8.18
+seriesOrder: 8.19
 tags:
   - 总结
 track: "错题本"

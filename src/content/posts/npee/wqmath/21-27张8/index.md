@@ -13,7 +13,7 @@ subject: "数学错题本"
 unlisted: true
 draft: false
 ---
-- 完成时间：20261025-20261111
+- 完成时间：20261025-20261119
 - 平均分：
 - 平均作答时间：
 
@@ -292,7 +292,7 @@ sqrt(1+x^2)<=1+|x|，这个确实不会。
 
 ## 27 张 8  5
 
-- 完成时间：20261112
+- 完成时间：20261119
 - 分数：/
   - 选择：/
   - 填空：/
@@ -300,6 +300,42 @@ sqrt(1+x^2)<=1+|x|，这个确实不会。
 - 时间：/
 
 当练习卷做，不设时间。
+
+不过这份卷子，我觉得有特别多可以注意以及二刷的地方（除了最后一题出的确实烂之外）。
+
+这份卷子如果拿去考的话，分数应该不会太高。
+
+![3](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCqZq_sIvTqEgtZI86ZNlaqAizyasGgACgRhrG1aE-Fcv0QgIN8pwMwEAAwIAA3kAAz0E)
+
+本题错选为 C。
+
+可积可以推出什么，这个我有想过，也就是：
+
+有界，有限个第一类或者震荡间断点。
+
+其实有想到，但是只排除出来 2 是错的。
+
+对于 1，可以是一个孤立的点出来。
+
+对于 3，如果 f(x) 不连续，那么该变限积分只是连续，并非可导。
+
+![5](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCqdq_sPeFnLrlCvw6nLiI14jOb3hYAAChBhrG1aE-Fc7GIU99GZSuAEAAwIAA3cAAz0E)
+
+本题错选为 B。
+
+我的想法是，对于前者，上下同时乘一个 e^x 然后洛，前者就可以无损推后者，而后者因为是洛出来的东西无法推前者。
+
+![15](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCqhq_scNVQ9YYzaJ-ykuy93zNGB8SgACjxhrG1aE-FdnWkep9nGnLQEAAwIAA3cAAz0E)
+
+物理应用。在那里一直用 m 讨论，纠结于 m 正负，结果忽略了其实可以直接：(R-m)(R+m)
+
+![20](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACCqVq_sC653A26ONnZ6PzPaXPWq0f3QACfhhrG1aE-Ff6VrQKc73rxgEAAwIAA3cAAz0E)
+
+这道题我觉得出的很有水平，也是我比较薄弱的地方——
+
+对于这类题应该先分析积分区间，得到 D1，D2 和 D，所以本题最后出来应该是 D-2D1，出来这个之后就可以做了。
+
+此外可以注意轮换对称性，有时候即便存在轮换对称性也用不出来。
 
 ## 27 张 8  6
 
@@ -450,3 +486,7 @@ sqrt(1+x^2)<=1+|x|，这个确实不会。
 以及还有一些冷门的知识点可以当补充，比如说张 8 卷子 4 的那个神秘物理题。
 
 尤其是线代选择题，准备穿插写一下 660 的线代选择。
+
+## 27 张 8 复盘
+
+- 完成时间：20261119

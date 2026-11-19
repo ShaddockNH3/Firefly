@@ -5,7 +5,7 @@ description: "考研冲刺前的总结 —— 错题本（408） · 408 深度�
 image: /covers/npee-wq408.webp
 category: 考研
 series: NPEE
-seriesOrder: 8.19
+seriesOrder: 8.2
 tags:
   - 总结
 track: "错题本"
