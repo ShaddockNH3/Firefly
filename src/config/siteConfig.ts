@@ -47,6 +47,8 @@ const pages = resolvePageToggles({
 	algo: true,
 	// 考研专题开关
 	npee: true,
+	// CS 专题开关
+	cs: true,
 	// 养生专题开关
 	health: true,
 	// 番剧页面开关

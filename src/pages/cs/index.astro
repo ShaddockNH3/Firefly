@@ -1,0 +1,19 @@
+---
+import TopicIndex from "@/components/pages/topic/TopicIndex.astro";
+import { siteConfig } from "@/config";
+import { csSeries, csTrackOrder, csUngrouped } from "@/config/cs";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+if (!siteConfig.pages.cs) {
+	return Astro.redirect("/404/");
+}
+---
+
+<MainGridLayout title="CS · 长线" description="计算机基础的学习记录">
+	<TopicIndex
+		series={csSeries}
+		order={csTrackOrder}
+		ungrouped={csUngrouped}
+		heading="CS"
+	/>
+</MainGridLayout>

@@ -105,6 +105,7 @@ export type SiteConfig = {
 		games: boolean; // 单机游戏页面开关
 		algo: boolean; // 算法专题开关
 		npee: boolean; // 考研专题开关
+		cs: boolean; // CS 专题开关
 		health: boolean; // 养生专题开关
 		wows: boolean; // 战舰世界页面开关
 	};
