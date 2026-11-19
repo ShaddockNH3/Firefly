@@ -73,6 +73,24 @@ const homeTextLinksEnable = homeText?.linksEnable !== false;
 )}
 
 <script is:inline>
+    // 窄屏时打字机只打中文那几条：英文一行太长，手机上会折两行还溢出去
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        var tw = document.querySelector("#banner-subtitle .typewriter");
+        if (tw) {
+            try {
+                var list = JSON.parse(tw.dataset.text || "[]");
+                if (Array.isArray(list)) {
+                    var cn = list.filter(function (s) {
+                        return /[\u4e00-\u9fa5]/.test(s);
+                    });
+                    if (cn.length > 0) tw.dataset.text = JSON.stringify(cn);
+                }
+            } catch (e) {
+                /* 不是数组就原样留着 */
+            }
+        }
+    }
+
     function setRandomSubtitle() {
         const subtitleElement = document.getElementById('banner-subtitle');
         if (!subtitleElement) return;

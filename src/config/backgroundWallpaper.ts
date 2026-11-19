@@ -135,12 +135,14 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 					url: "https://blog.cuteleaf.cn/sponsor/",
 				},
 				*/
+				/* 首页不摆 RSS，订阅入口留在侧栏
 				{
 					name: "RSS",
 					icon: "fa7-solid:rss",
 					url: "/rss/",
 					showName: true,
 				},
+				*/
 			],
 		},
 		// 壁纸轮播配置，横幅壁纸和全屏壁纸共享，仅在配置多张图片时生效
